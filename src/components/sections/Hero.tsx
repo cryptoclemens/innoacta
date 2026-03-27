@@ -5,11 +5,12 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { ExternalLink, ChevronDown } from 'lucide-react'
 
 const rotatingPhrases = [
-  'no Slides but Prototypes!',
-  'digitale Transformation erleichtern!',
-  'Innovation auf Knopfdruck!',
-  'skalierbar! bezahlbar! automatisierbar!',
-  'Ausschreibungen automatisieren!',
+  'in 7 Tagen zum Prototypen!',
+  'Kosten senken statt Slides bauen!',
+  'Innovation die wirklich wirkt!',
+  'KMUs fit für die Zukunft machen!',
+  'Ausschreibungen auf Autopilot!',
+  'neue Talente & Partner finden!',
 ]
 
 export default function Hero() {
@@ -49,6 +50,11 @@ export default function Hero() {
           Venture Clienting:
         </h1>
 
+        <p className="text-gray-500 text-sm md:text-base max-w-xl mx-auto mb-4 leading-relaxed">
+          Große Unternehmen kaufen Startups als externe Innovationseinheit – ohne
+          Risiko, ohne Beteiligung. Fail fast, learn faster. Kosten runter, Tempo rauf.
+        </p>
+
         {/* Rotating text */}
         <div className="h-28 sm:h-32 md:h-40 lg:h-48 flex items-center justify-center overflow-hidden mb-8">
           <AnimatePresence mode="wait">
@@ -66,9 +72,9 @@ export default function Hero() {
         </div>
 
         <p className="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
-          Vencly baut KI-Agenten-Plattformen für mittelständische Unternehmen –
-          von der Startup-Suche über Ausschreibungen bis zum smarten
-          Projektmanagement.
+          Vencly automatisiert Ihren gesamten Venture-Clienting-Prozess – von
+          der Startup-Suche über DSGVO-konforme Ausschreibungen bis hin zum
+          funktionsfähigen Prototypen. Für KMUs und öffentliche Träger.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

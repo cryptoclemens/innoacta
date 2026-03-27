@@ -39,9 +39,11 @@ export default function ValueProp() {
               Venture Clienting
             </h2>
             <p className="text-gray-400 leading-relaxed">
-              Vencly automatisiert den gesamten Prozess – von der
-              Marktbeobachtung über die Startup-Auswahl bis hin zur
-              Vertragsgestaltung und Projektumsetzung.
+              Vencly automatisiert den gesamten Venture-Clienting-Prozess –
+              von der Startup-Suche und intelligenten Ausschreibungen über
+              die Vertragsgestaltung bis zum fertigen Prototypen. Für
+              mittelständische Unternehmen und öffentliche Träger, die
+              Innovation wollen – ohne Overhead.
             </p>
           </div>
 

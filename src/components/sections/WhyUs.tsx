@@ -1,18 +1,18 @@
 const whyPoints = [
   {
     number: '01',
-    title: 'Ergebnisorientiert',
-    desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    title: 'Prototyp in 7 Tagen',
+    desc: 'Kein monatelanger Evaluationsprozess, kein Pitch-Deck-Karussell. Wir liefern einen funktionsfähigen Prototypen in einer Woche – mit echten Daten, echten Ergebnissen.',
   },
   {
     number: '02',
-    title: 'Technologie-agnostisch',
-    desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    title: 'Fail fast – Kosten senken',
+    desc: 'Venture Clienting bedeutet: Innovation testen, bevor Sie investieren. Durch die Fail-fast-Methodik sparen unsere Kunden im Schnitt 60–70 % gegenüber klassischen Innovationsprojekten.',
   },
   {
     number: '03',
-    title: 'Enterprise-ready',
-    desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    title: 'Compliance für den öffentlichen Sektor',
+    desc: 'UVgO, VOB, DSGVO – Vencly wurde von Grund auf für öffentliche Auftraggeber und regulierte Branchen entwickelt. Revisionssicher, auditfähig, nachvollziehbar.',
   },
 ]
 
@@ -28,8 +28,8 @@ export default function WhyUs() {
             Warum Unternehmen uns wählen
           </h2>
           <p className="text-gray-500 max-w-xl mx-auto text-sm">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Wir sind kein Berater, der Konzepte erstellt. Wir sind das Team,
+            das umsetzt – schnell, messbar, mit echtem Impact für Ihr Unternehmen.
           </p>
         </div>
 
