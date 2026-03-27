@@ -12,69 +12,62 @@
 ## Meilenstein 1: Repository & Projekt-Setup ✅
 
 - [x] GitHub Repo erstellen (`cryptoclemens/innoacta`)
-- [x] Branch anlegen (`claude/setup-innoacta-repo-Jr9Z4`)
-- [x] `Brief.md`, `CLAUDE.md`, `Tasks.md` erstellen
+- [x] Branch anlegen und nach `main` gemergt
+- [x] `Brief.md`, `CLAUDE.md`, `Tasks.md` erstellt
 - [x] `package.json` mit allen Dependencies
 - [x] `next.config.js` (Static Export, trailingSlash, unoptimized images)
 - [x] `tailwind.config.js` mit custom Vencly-Farben
-- [x] `tsconfig.json`
-- [x] `wrangler.toml`
-- [x] `.github/workflows/deploy.yml`
+- [x] `tsconfig.json`, `wrangler.toml`
 - [x] `README.md`
 
 ---
 
 ## Meilenstein 2: Layout & Routing ✅
 
-- [x] `src/app/layout.tsx` (Root Layout, Metadata, SEO)
-- [x] `src/app/globals.css` (Tailwind Directives, Custom Styles)
-- [x] `src/app/page.tsx` (Startseite, alle Sektionen)
-- [x] `src/app/projects/page.tsx` (Projekt-Seite)
-- [x] `src/app/contact/page.tsx` (Kontaktseite mit Impressum)
-- [x] `src/components/layout/Navbar.tsx`
-- [x] `src/components/layout/Footer.tsx`
+- [x] Root Layout, Metadata, SEO-Tags
+- [x] Startseite `/`
+- [x] Projektseite `/projects`
+- [x] Kontaktseite `/contact` inkl. echtem Impressum (HRB 290524)
+- [x] Navbar (sticky, blur, mobile Hamburger-Menü)
+- [x] Footer
 
 ---
 
 ## Meilenstein 3: Sektionen / Komponenten ✅
 
-- [x] `Hero.tsx` — Rotating-Text-Animation mit Framer Motion
-- [x] `FactsheetCTA.tsx` — PDF-Download Button
-- [x] `ValueProp.tsx` — 5 Bullet-Points KI-Agent Vorteile
-- [x] `Features.tsx` — 3 Feature-Karten (Innovation, Strategie, Einkauf)
-- [x] `WhyUs.tsx` — Platzhalter-Sektion
-- [x] `LogoBar.tsx` — Partner-Logo-Leiste
-- [x] `References.tsx` — Referenz-Logos
+- [x] Hero mit Framer-Motion Rotating-Text (Höhe gefixt)
+- [x] FactsheetCTA, ValueProp, Features, WhyUs
+- [x] LogoBar (Partner-Platzhalter)
+- [x] References mit echten Logos (SWM, MVG, Toll Collect, RWE)
 
 ---
 
-## Meilenstein 4: Assets & SEO ⬜
+## Meilenstein 4: Assets & SEO 🔄
 
-- [ ] Echtes Factsheet-PDF unter `/public/factsheet.pdf` ablegen
-- [ ] Echte Partner-Logos von Webflow-CDN herunterladen
-- [ ] Referenz-Logos (Toll Collect, SWM, MVG) integrieren
-- [ ] `og:image` und Social-Preview-Grafik erstellen
-- [ ] Sitemap.xml generieren
-- [ ] robots.txt konfigurieren
+- [x] Referenz-Logos via GitHub Actions CI heruntergeladen (SWM URL fix in Arbeit)
+- [ ] Echtes Factsheet-PDF unter `/public/factsheet.pdf` ablegen ← **du**
+- [ ] Sitemap.xml generieren ← Claude
+- [ ] robots.txt konfigurieren ← Claude
+- [ ] `og:image` Social-Preview-Grafik ← Claude
+- [ ] Favicon / App-Icons ← Claude
 
 ---
 
-## Meilenstein 5: Deployment & DNS ⬜
+## Meilenstein 5: Deployment & DNS 🔄
 
-- [ ] Cloudflare Pages Projekt anlegen (`vencly`)
-- [ ] `CLOUDFLARE_API_TOKEN` als GitHub Secret hinterlegen
-- [ ] GitHub Actions Workflow testen (Push auf `main`)
-- [ ] DNS: CNAME `vencly.com` → `vencly.pages.dev`
-- [ ] Custom Domain in Cloudflare Pages aktivieren
-- [ ] Lighthouse Audit (Ziel: Performance > 90)
+- [x] Cloudflare Pages Projekt `vencly` angelegt
+- [x] `CLOUDFLARE_API_TOKEN` + `CLOUDFLARE_ACCOUNT_ID` als GitHub Secrets
+- [x] GitHub Actions Workflow funktioniert (Deploy läuft durch)
+- [ ] DNS: `vencly.com` → Cloudflare verbinden ← **du** (gerade in Arbeit)
+- [ ] Custom Domain in Cloudflare Pages aktivieren ← **du**
+- [ ] Lighthouse Audit (Ziel: Performance > 90) ← Claude danach
 
 ---
 
 ## Meilenstein 6: Content-Feinschliff ⬜
 
-- [ ] WhyUs-Sektion mit echtem Content befüllen
-- [ ] Projekte-Seite mit echten Referenzprojekten befüllen
-- [ ] Kontaktseite: echtes Impressum & Datenschutzerklärung
-- [ ] Favicon und App-Icons
+- [ ] WhyUs-Sektion mit echtem Content befüllen ← Texte von dir
+- [ ] Projekte-Seite mit echten Inhalten (Innovation Republic, Geopotatlas, AutoToDo)
+- [ ] Vollständige DSGVO-Datenschutzerklärung ← rechtliche Prüfung
 - [ ] Cookie-Banner (DSGVO-konform)
-- [ ] Analytics (Datenschutz-konform, z.B. Plausible)
+- [ ] Analytics (datenschutzkonform, z.B. Plausible)
