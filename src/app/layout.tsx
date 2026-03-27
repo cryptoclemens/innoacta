@@ -32,12 +32,18 @@ export const metadata: Metadata = {
     title: 'Vencly – KI-Agenten-Plattform für Venture Clienting',
     description:
       'Vencly baut KI-Agenten-Plattformen für mittelständische Unternehmen: Venture Clienting, Ausschreibungsautomatisierung, smartes Projektmanagement und B2B-Prototypen.',
+    images: [{ url: '/og-image.svg', width: 1200, height: 630, alt: 'Vencly' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Vencly – KI-Agenten-Plattform für Venture Clienting',
     description:
       'Vencly baut KI-Agenten-Plattformen für mittelständische Unternehmen: Venture Clienting, Ausschreibungsautomatisierung, smartes Projektmanagement und B2B-Prototypen.',
+    images: ['/og-image.svg'],
+  },
+  icons: {
+    icon: '/favicon.svg',
+    shortcut: '/favicon.svg',
   },
   robots: {
     index: true,

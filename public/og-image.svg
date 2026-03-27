@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#0d0d14"/>
+  <!-- Grid pattern -->
+  <defs>
+    <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M 60 0 L 0 0 0 60" fill="none" stroke="#14b8a6" stroke-width="0.5" opacity="0.15"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  <!-- Glow -->
+  <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#14b8a6" stop-opacity="0.12"/>
+    <stop offset="100%" stop-color="#14b8a6" stop-opacity="0"/>
+  </radialGradient>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <!-- Logo mark -->
+  <rect x="80" y="80" width="64" height="64" rx="16" fill="#14b8a6"/>
+  <text x="112" y="127" font-family="system-ui, sans-serif" font-size="44" font-weight="700" fill="#0d0d14" text-anchor="middle">V</text>
+  <!-- Wordmark -->
+  <text x="80" y="340" font-family="system-ui, sans-serif" font-size="80" font-weight="700" fill="white">Vencly</text>
+  <!-- Tagline -->
+  <text x="80" y="420" font-family="system-ui, sans-serif" font-size="36" fill="#14b8a6">KI-Agenten-Plattform für Venture Clienting</text>
+  <!-- Subtext -->
+  <text x="80" y="480" font-family="system-ui, sans-serif" font-size="24" fill="#6b7280">Startup-Scouting · Ausschreibungen · Projektmanagement</text>
+  <!-- URL -->
+  <text x="80" y="560" font-family="system-ui, sans-serif" font-size="22" fill="#374151">vencly.com</text>
+</svg>
