@@ -50,7 +50,7 @@ export default function Hero() {
         </h1>
 
         {/* Rotating text */}
-        <div className="h-16 sm:h-20 md:h-24 lg:h-28 flex items-center justify-center overflow-hidden mb-8">
+        <div className="h-28 sm:h-32 md:h-40 lg:h-48 flex items-center justify-center overflow-hidden mb-8">
           <AnimatePresence mode="wait">
             <motion.span
               key={index}

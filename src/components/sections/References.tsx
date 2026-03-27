@@ -1,20 +1,30 @@
 import { ExternalLink } from 'lucide-react'
+import Image from 'next/image'
 
 const references = [
-  {
-    name: 'Toll Collect',
-    desc: 'Venture Clienting Plattform',
-    category: 'Mobility & Infrastruktur',
-  },
   {
     name: 'SWM',
     desc: 'Stadtwerke München',
     category: 'Energie & Versorgung',
+    logo: '/logos/swm.svg',
   },
   {
     name: 'MVG',
     desc: 'Münchner Verkehrsgesellschaft',
     category: 'ÖPNV & Smart City',
+    logo: '/logos/mvg.svg',
+  },
+  {
+    name: 'Toll Collect',
+    desc: 'Mauterhebung Deutschland',
+    category: 'Mobility & Infrastruktur',
+    logo: '/logos/toll-collect.svg',
+  },
+  {
+    name: 'RWE',
+    desc: 'Energie & Versorgung',
+    category: 'Energie',
+    logo: '/logos/rwe.svg',
   },
 ]
 
@@ -35,17 +45,20 @@ export default function References() {
           </p>
         </div>
 
-        <div className="grid gap-6 md:grid-cols-3 mb-14">
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4 mb-14">
           {references.map((ref) => (
             <div
               key={ref.name}
-              className="bg-vencly-bg border border-vencly-border rounded-2xl p-8 text-center hover:border-vencly-teal/30 transition-colors"
+              className="bg-vencly-bg border border-vencly-border rounded-2xl p-8 flex flex-col items-center text-center hover:border-vencly-teal/30 transition-colors"
             >
-              {/* Logo placeholder */}
-              <div className="w-16 h-16 bg-vencly-teal/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                <span className="text-vencly-teal font-bold text-xl">
-                  {ref.name.charAt(0)}
-                </span>
+              <div className="h-16 flex items-center justify-center mb-4">
+                <Image
+                  src={ref.logo}
+                  alt={ref.name}
+                  width={120}
+                  height={60}
+                  className="object-contain max-h-16 brightness-0 invert"
+                />
               </div>
               <p className="text-white font-bold mb-1">{ref.name}</p>
               <p className="text-gray-500 text-sm mb-2">{ref.desc}</p>
