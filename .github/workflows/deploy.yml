@@ -27,6 +27,12 @@ jobs:
           curl -sLf --retry 3 "https://upload.wikimedia.org/wikipedia/commons/c/c2/RWE_Logo_2020.svg" -o public/logos/rwe.svg
           echo "Logos downloaded:"
           ls -la public/logos/
+          for f in public/logos/*.svg; do
+            if ! grep -qE '<svg|<\?xml' "$f"; then
+              echo "ERROR: $f is not a valid SVG"; cat "$f"; exit 1
+            fi
+          done
+          echo "All SVGs validated OK"
 
       - name: Build
         run: npm run build

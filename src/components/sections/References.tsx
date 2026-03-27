@@ -51,13 +51,13 @@ export default function References() {
               key={ref.name}
               className="bg-vencly-bg border border-vencly-border rounded-2xl p-8 flex flex-col items-center text-center hover:border-vencly-teal/30 transition-colors"
             >
-              <div className="h-16 flex items-center justify-center mb-4">
+              <div className="h-16 w-full flex items-center justify-center mb-4 bg-white rounded-xl px-4 py-2">
                 <Image
                   src={ref.logo}
                   alt={ref.name}
                   width={120}
-                  height={60}
-                  className="object-contain max-h-16 brightness-0 invert"
+                  height={48}
+                  className="object-contain max-h-12"
                 />
               </div>
               <p className="text-white font-bold mb-1">{ref.name}</p>
