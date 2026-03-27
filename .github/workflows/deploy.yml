@@ -21,10 +21,12 @@ jobs:
       - name: Download customer logos
         run: |
           mkdir -p public/logos
-          curl -sL "https://upload.wikimedia.org/wikipedia/commons/9/98/SWM.svg" -o public/logos/swm.svg
-          curl -sL "https://upload.wikimedia.org/wikipedia/commons/3/31/MVG.svg" -o public/logos/mvg.svg
-          curl -sL "https://upload.wikimedia.org/wikipedia/commons/4/43/Tollcollect-logo.svg" -o public/logos/toll-collect.svg
-          curl -sL "https://upload.wikimedia.org/wikipedia/commons/c/c2/RWE_Logo_2020.svg" -o public/logos/rwe.svg
+          curl -sLf --retry 3 "https://upload.wikimedia.org/wikipedia/commons/6/64/SWM.svg" -o public/logos/swm.svg
+          curl -sLf --retry 3 "https://upload.wikimedia.org/wikipedia/commons/3/31/MVG.svg" -o public/logos/mvg.svg
+          curl -sLf --retry 3 "https://upload.wikimedia.org/wikipedia/commons/4/43/Tollcollect-logo.svg" -o public/logos/toll-collect.svg
+          curl -sLf --retry 3 "https://upload.wikimedia.org/wikipedia/commons/c/c2/RWE_Logo_2020.svg" -o public/logos/rwe.svg
+          echo "Logos downloaded:"
+          ls -la public/logos/
 
       - name: Build
         run: npm run build
