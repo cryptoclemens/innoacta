@@ -11,12 +11,11 @@ export default function FactsheetCTA() {
             </div>
             <div>
               <h2 className="text-white font-bold text-xl md:text-2xl mb-2">
-                Vencly Factsheet
+                Vencly auf zwei Seiten
               </h2>
               <p className="text-gray-400 text-sm leading-relaxed max-w-md">
-                Laden Sie unser Factsheet herunter: Leistungsübersicht,
-                Preismodelle und Case Studies auf zwei Seiten kompakt
-                zusammengefasst.
+                Leistungsübersicht, Methodik und Referenzprojekt kompakt
+                zusammengefasst – für die nächste interne Runde.
               </p>
             </div>
           </div>

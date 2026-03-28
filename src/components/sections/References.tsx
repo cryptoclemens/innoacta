@@ -20,32 +20,53 @@ const references = [
     category: 'Mobility & Infrastruktur',
     logo: '/logos/toll-collect.svg',
   },
-  {
-    name: 'RWE',
-    desc: 'Energie & Versorgung',
-    category: 'Energie',
-    logo: '/logos/rwe.svg',
-  },
 ]
 
 export default function References() {
   return (
-    <section className="bg-vencly-card border-t border-vencly-border py-24 px-4">
+    <section id="referenzen" className="bg-vencly-card border-t border-vencly-border py-24 px-4">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <span className="inline-block text-vencly-teal text-xs font-mono tracking-widest uppercase mb-4">
             Referenzen
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-            Unsere Kunden
+            Aus der Praxis
           </h2>
           <p className="text-gray-400 max-w-xl mx-auto text-sm">
             Namhafte Unternehmen aus der DACH-Region vertrauen auf Vencly für
-            ihre Venture-Clienting- und Innovationsprozesse.
+            strategische Geschäftsfeldentwicklung und Venture-Clienting-Projekte.
           </p>
         </div>
 
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4 mb-14">
+        {/* Anonymous reference card */}
+        <div className="mb-10 rounded-2xl border p-8 md:p-10" style={{ backgroundColor: '#EEF2F8', borderColor: '#B5C8E4' }}>
+          <div className="mb-4">
+            <span className="text-xs font-mono font-semibold tracking-widest uppercase" style={{ color: '#1A2B4A' }}>
+              Energie · Infrastruktur
+            </span>
+          </div>
+          <h3 className="text-xl md:text-2xl font-bold mb-3" style={{ color: '#1A2B4A' }}>
+            Neues Geschäftsfeld Tiefengeothermie<br />
+            für einen deutschen Energieversorger
+          </h3>
+          <p className="text-sm leading-relaxed mb-6" style={{ color: '#3A4A6A' }}>
+            Für einen großen deutschen Energieversorger haben wir die strategische und
+            wirtschaftliche Tragfähigkeit eines neuen Geschäftsfelds im Bereich erneuerbare
+            Wärme entwickelt – von der Technologiebewertung über Marktanalysen bis zur
+            Stakeholder-Kommunikation mit kommunalen Versorgern.
+          </p>
+          <div className="flex flex-wrap gap-4 text-xs" style={{ color: '#3A4A6A' }}>
+            <span><strong>Branche:</strong> Energie / Infrastruktur</span>
+            <span>·</span>
+            <span><strong>Laufzeit:</strong> 6 Monate</span>
+            <span>·</span>
+            <span><strong>Format:</strong> Strategisches Begleitmandat</span>
+          </div>
+        </div>
+
+        {/* Logo grid */}
+        <div className="grid gap-6 sm:grid-cols-3 mb-6">
           {references.map((ref) => (
             <div
               key={ref.name}
@@ -69,13 +90,17 @@ export default function References() {
           ))}
         </div>
 
+        <p className="text-center text-gray-500 text-sm mb-14">
+          Weitere Referenzen auf Anfrage.
+        </p>
+
         {/* Final CTA */}
         <div className="text-center">
           <h3 className="text-white font-bold text-xl md:text-2xl mb-4">
-            Werden Sie Teil des Netzwerks
+            Bereit für das nächste Geschäftsfeld?
           </h3>
           <p className="text-gray-400 mb-6 text-sm">
-            Starten Sie noch heute mit einer kostenlosen Demo.
+            Starten Sie mit einem unverbindlichen Erstgespräch.
           </p>
           <a
             href="https://outlook.office.com/bookwithme/user/9c11749d74b349809103953c39ba26d4@vencly.com?anonymous&ep=pcard"
@@ -83,7 +108,7 @@ export default function References() {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-vencly-teal hover:bg-vencly-teal-dark text-white font-semibold px-8 py-3.5 rounded-xl transition-all teal-glow hover:scale-105"
           >
-            Demo buchen
+            Jetzt Termin vereinbaren
             <ExternalLink size={16} />
           </a>
         </div>

@@ -68,7 +68,7 @@ export default function Navbar() {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-1.5 bg-vencly-teal hover:bg-vencly-teal-dark text-white text-sm font-semibold px-4 py-2 rounded-lg transition-colors"
           >
-            Demo buchen
+            Erstgespräch vereinbaren
             <ExternalLink size={13} />
           </a>
         </div>
@@ -112,7 +112,7 @@ export default function Navbar() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-1.5 bg-vencly-teal hover:bg-vencly-teal-dark text-white text-sm font-semibold px-4 py-2.5 rounded-lg transition-colors"
               >
-                Demo buchen
+                Erstgespräch vereinbaren
                 <ExternalLink size={13} />
               </a>
             </div>

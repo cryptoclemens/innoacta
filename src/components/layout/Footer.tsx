@@ -14,8 +14,9 @@ export default function Footer() {
               <span className="text-white font-bold">Vencly</span>
             </div>
             <p className="text-gray-500 text-sm leading-relaxed">
-              KI-Agenten-Plattformen für Venture Clienting und digitale
-              Transformation im Mittelstand.
+              Vencly begleitet Unternehmen dabei, neue Geschäftsfelder zu
+              entwickeln und zu erschließen – mit unternehmerischem Blick,
+              erprobter Methodik und echter Umsetzungsverantwortung.
             </p>
           </div>
 

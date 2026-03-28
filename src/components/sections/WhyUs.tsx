@@ -1,18 +1,18 @@
 const whyPoints = [
   {
     number: '01',
-    title: 'Prototyp in 7 Tagen',
-    desc: 'Kein monatelanger Evaluationsprozess, kein Pitch-Deck-Karussell. Wir liefern einen funktionsfähigen Prototypen in einer Woche – mit echten Daten, echten Ergebnissen.',
+    title: 'Unternehmerische Perspektive, keine Berater-Distanz',
+    desc: 'Vencly wird von einem Gründer geführt, der selbst Unternehmen aufgebaut, gescheitert und erfolgreich repositioniert hat. Das prägt den Blick auf Ihre Situation.',
   },
   {
     number: '02',
-    title: 'Fail fast – Kosten senken',
-    desc: 'Venture Clienting bedeutet: Innovation testen, bevor Sie investieren. Durch die Fail-fast-Methodik sparen unsere Kunden im Schnitt 60–70 % gegenüber klassischen Innovationsprojekten.',
+    title: 'Methode trifft Erfahrung',
+    desc: 'Über 40 realisierte Venture-Client-Projekte, Transformationsarbeit in der Energie- und Infrastrukturbranche, Aufbau von Innovationsstrukturen in Konzernen und Kommunen. Keine generische Toolbox.',
   },
   {
     number: '03',
-    title: 'Compliance für den öffentlichen Sektor',
-    desc: 'UVgO, VOB, DSGVO – Vencly wurde von Grund auf für öffentliche Auftraggeber und regulierte Branchen entwickelt. Revisionssicher, auditfähig, nachvollziehbar.',
+    title: 'Ehrlichkeit über Machbarkeit',
+    desc: 'Wir sagen auch, wenn ein Geschäftsfeld noch nicht reif ist – oder wenn Venture Clienting nicht das richtige Instrument ist. Vertrauen entsteht durch Klarheit, nicht durch Ja-Sagen.',
   },
 ]
 
@@ -25,11 +25,11 @@ export default function WhyUs() {
             Warum Vencly
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-            Warum Unternehmen uns wählen
+            Kein Konzept-Karussell.
           </h2>
           <p className="text-gray-500 max-w-xl mx-auto text-sm">
             Wir sind kein Berater, der Konzepte erstellt. Wir sind das Team,
-            das umsetzt – schnell, messbar, mit echtem Impact für Ihr Unternehmen.
+            das umsetzt – mit echter Umsetzungsverantwortung und unternehmerischem Blick.
           </p>
         </div>
 

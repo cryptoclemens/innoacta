@@ -2,24 +2,24 @@ import { CheckCircle2 } from 'lucide-react'
 
 const bullets = [
   {
-    title: 'Innovation ohne eigene Abteilung',
-    desc: 'Bezahlbare Innovation für den Mittelstand – ohne Dedicated Innovation Labs oder teure Berater.',
+    title: 'Geschäftsfeldentwicklung',
+    desc: 'Neue Märkte identifizieren, Geschäftsmodelle validieren, Markterprobung begleiten – von der Hypothese zum tragfähigen Modell.',
   },
   {
-    title: '~70 % geringere Prozesskosten',
-    desc: 'Automatisierung von Routineaufgaben in Ausschreibungen, Startup-Scouting und Projektsteuerung.',
+    title: 'Venture Clienting',
+    desc: 'Externe Innovationspartner gezielt einbinden: Startup-Scouting, strukturierte Pilotprojekte, klarer Entscheidungspunkt nach 90 Tagen.',
   },
   {
-    title: 'Skalierbare Innovationszyklen',
-    desc: 'Von einem Piloten zur konzernweiten Plattform – Vencly wächst mit Ihren Anforderungen.',
+    title: 'Strategische Umsetzung',
+    desc: 'Projektsteuerung, Stakeholder-Management und Workshop-Formate für Vorhaben, die intern keine Heimat haben.',
   },
   {
-    title: 'Compliance-ready',
-    desc: 'Vollständig konform mit UVgO, DSGVO und individuellen SLA-Anforderungen.',
+    title: 'Funktioniert in regulierten Branchen',
+    desc: 'Energie, Infrastruktur, öffentliche Hand: Wir kennen die Rahmenbedingungen – und arbeiten innerhalb davon.',
   },
   {
-    title: 'Mitarbeiter als Innovationstreiber',
-    desc: 'Ideen aus dem Team werden systematisch erfasst, bewertet und in Prototypen überführt.',
+    title: 'Ehrlichkeit über Machbarkeit',
+    desc: 'Wir sagen auch, wenn ein Geschäftsfeld noch nicht reif ist. Vertrauen entsteht durch Klarheit, nicht durch Ja-Sagen.',
   },
 ]
 
@@ -31,19 +31,16 @@ export default function ValueProp() {
           {/* Left: Text */}
           <div>
             <span className="inline-block text-vencly-teal text-xs font-mono tracking-widest uppercase mb-4">
-              Ihr Vorteil
+              Was Vencly einbringt
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 leading-snug">
-              Ihr persönlicher{' '}
-              <span className="gradient-text">KI-Agent</span> für
-              Venture Clienting
+              Drei Leistungsfelder –{' '}
+              <span className="gradient-text">eine Umsetzungslogik</span>
             </h2>
             <p className="text-gray-400 leading-relaxed">
-              Vencly automatisiert den gesamten Venture-Clienting-Prozess –
-              von der Startup-Suche und intelligenten Ausschreibungen über
-              die Vertragsgestaltung bis zum fertigen Prototypen. Für
-              mittelständische Unternehmen und öffentliche Träger, die
-              Innovation wollen – ohne Overhead.
+              Wir begleiten Unternehmen von der Potenzialanalyse bis zur
+              operativen Erschließung neuer Geschäftsfelder – mit
+              unternehmerischem Blick und erprobter Methodik.
             </p>
           </div>
 

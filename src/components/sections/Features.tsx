@@ -17,12 +17,12 @@ const features = [
         <circle cx="24" cy="24" r="3" fill="#14b8a6" />
       </svg>
     ),
-    title: 'Innovation & Prozessoptimierung',
-    desc: 'Systematisches Startup-Scouting, automatisiertes Matching und strukturiertes Prototypen-Management in einer Plattform.',
+    title: 'Geschäftsfeldentwicklung',
+    desc: 'Neue Märkte, neue Technologien, neue Wertschöpfung – von der Potenzialanalyse über das Geschäftsmodell bis zur Markterprobung. Für Konzerne, die diversifizieren wollen, und Mittelständler, die den nächsten Wachstumsschritt planen.',
     points: [
-      'Automatisches Startup-Scouting',
-      'Intelligentes Startup-Matching',
-      'Prototypen-Tracking & Reporting',
+      'Markt- & Technologiebewertung',
+      'Geschäftsmodell-Entwicklung',
+      'Validierung & Markterprobung',
     ],
   },
   {
@@ -39,12 +39,12 @@ const features = [
         <path d="M35 29V31L36.5 32.5" stroke="#14b8a6" strokeWidth="1.5" strokeLinecap="round" />
       </svg>
     ),
-    title: 'Strategie, HR & Unternehmensentwicklung',
-    desc: 'KI-gestützte Analyse von Markttrends, Technologie-Roadmaps und strategischer Positionierung für nachhaltiges Wachstum.',
+    title: 'Venture Clienting & Startup-Integration',
+    desc: 'Externe Innovationspartner gezielt einbinden: Startup-Scouting, strukturierte Pilotprojekte, Lieferantenqualifizierung. Schnell, risikokontrolliert, mit klarem Entscheidungspunkt.',
     points: [
-      'Markt- & Trendanalysen',
-      'Technologie-Radar',
-      'Strategische Roadmaps',
+      'Startup-Scouting & Matching',
+      'Strukturierte Pilotprojekte (90 Tage)',
+      'Lieferantenqualifizierung',
     ],
   },
   {
@@ -58,12 +58,12 @@ const features = [
         <path d="M31 10L31 14" stroke="#14b8a6" strokeWidth="2" strokeLinecap="round" />
       </svg>
     ),
-    title: 'Einkauf & Entlastung',
-    desc: 'Ausschreibungen nach UVgO/VOB automatisiert erstellen, veröffentlichen und auswerten – DSGVO-konform und revisionssicher.',
+    title: 'Strategische Begleitung & Umsetzung',
+    desc: 'Nicht Strategie statt Umsetzung – sondern beides. Vencly übernimmt operative Verantwortung in Projekten, die intern keine Heimat haben.',
     points: [
-      'Ausschreibungs-Automatisierung',
-      'UVgO/VOB-Konformität',
-      'Bieter-Kommunikation per KI',
+      'Projektsteuerung & Reporting',
+      'Stakeholder-Management',
+      'Workshop-Formate & Entscheidungsvorlagen',
     ],
   },
 ]
@@ -77,11 +77,11 @@ export default function Features() {
             Leistungen
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-            Drei Cluster – eine Plattform
+            Unsere Leistungsfelder
           </h2>
           <p className="text-gray-400 max-w-xl mx-auto">
-            Vencly deckt die gesamte Wertschöpfungskette von Innovation bis
-            Einkauf mit einem integrierten KI-Agenten-System ab.
+            Von der strategischen Analyse bis zur operativen Umsetzung – Vencly
+            übernimmt Verantwortung über den gesamten Entwicklungsprozess.
           </p>
         </div>
 
