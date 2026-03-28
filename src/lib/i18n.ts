@@ -28,12 +28,12 @@ const de = {
     stats: [
       { value: '40+', label: 'Realisierte Projekte' },
       { value: '6 Mo.', label: 'Ø Projektlaufzeit' },
-      { value: '3', label: 'Fokus-Branchen' },
+      { value: '7', label: 'Fokus-Branchen' },
     ],
   },
   valueProp: {
     label: 'Was Vencly einbringt',
-    h2: 'Drei Leistungsfelder –',
+    h2: 'Fünf Leistungsfelder –',
     h2Highlight: 'eine Umsetzungslogik',
     intro:
       'Wir begleiten Unternehmen von der Potenzialanalyse bis zur operativen Erschließung neuer Geschäftsfelder – mit unternehmerischem Blick und erprobter Methodik.',
@@ -160,12 +160,12 @@ const en: Translations = {
     stats: [
       { value: '40+', label: 'Completed Projects' },
       { value: '6 mo.', label: 'Avg. Project Duration' },
-      { value: '3', label: 'Focus Industries' },
+      { value: '7', label: 'Focus Industries' },
     ],
   },
   valueProp: {
     label: 'What Vencly brings',
-    h2: 'Three service areas –',
+    h2: 'Five service areas –',
     h2Highlight: 'one execution logic',
     intro:
       'We accompany companies from potential analysis to the operational development of new business fields – with an entrepreneurial perspective and proven methodology.',
@@ -292,12 +292,12 @@ const fr: Translations = {
     stats: [
       { value: '40+', label: 'Projets réalisés' },
       { value: '6 mois', label: 'Durée moy. de projet' },
-      { value: '3', label: 'Secteurs prioritaires' },
+      { value: '7', label: 'Secteurs prioritaires' },
     ],
   },
   valueProp: {
     label: 'Ce que Vencly apporte',
-    h2: 'Trois domaines de service –',
+    h2: 'Cinq domaines de service –',
     h2Highlight: 'une logique d\'exécution',
     intro:
       'Nous accompagnons les entreprises de l\'analyse du potentiel jusqu\'au développement opérationnel de nouveaux domaines d\'activité – avec une vision entrepreneuriale et une méthodologie éprouvée.',
@@ -424,12 +424,12 @@ const es: Translations = {
     stats: [
       { value: '40+', label: 'Proyectos realizados' },
       { value: '6 meses', label: 'Duración media' },
-      { value: '3', label: 'Sectores clave' },
+      { value: '7', label: 'Sectores clave' },
     ],
   },
   valueProp: {
     label: 'Lo que aporta Vencly',
-    h2: 'Tres áreas de servicio –',
+    h2: 'Cinco áreas de servicio –',
     h2Highlight: 'una lógica de ejecución',
     intro:
       'Acompañamos a las empresas desde el análisis de potencial hasta el desarrollo operativo de nuevos campos de negocio – con una perspectiva emprendedora y una metodología probada.',
