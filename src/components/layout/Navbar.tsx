@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { Menu, X, ExternalLink, Sun, Moon, Monitor, ChevronDown } from 'lucide-react'
 import { useTheme } from 'next-themes'
 import { useLanguage } from '@/contexts/LanguageContext'
@@ -94,19 +95,21 @@ export default function Navbar() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? 'bg-white/90 dark:bg-[#0d0d14]/90 backdrop-blur-md border-b border-gray-200 dark:border-vencly-border shadow-sm dark:shadow-lg'
+          ? 'bg-white/90 dark:bg-[#0F172A]/90 backdrop-blur-md border-b border-gray-200 dark:border-vencly-border shadow-sm dark:shadow-lg'
           : 'bg-transparent'
       }`}
     >
       <nav className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-2 group">
-          <div className="w-8 h-8 bg-vencly-teal rounded-lg flex items-center justify-center group-hover:bg-vencly-teal-dark transition-colors">
-            <span className="text-white font-bold text-sm">V</span>
-          </div>
-          <span className="text-gray-900 dark:text-white font-bold text-lg tracking-tight">
-            Vencly
-          </span>
+        <Link href="/" className="flex items-center group">
+          <Image
+            src="/logovencly.svg"
+            alt="Vencly"
+            width={120}
+            height={36}
+            className="h-9 w-auto dark:invert"
+            priority
+          />
         </Link>
 
         {/* Desktop Nav */}
@@ -138,7 +141,7 @@ export default function Navbar() {
             href="https://outlook.office.com/bookwithme/user/9c11749d74b349809103953c39ba26d4@vencly.com?anonymous&ep=pcard"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-1.5 bg-vencly-teal hover:bg-vencly-teal-dark text-white text-sm font-semibold px-4 py-2 rounded-lg transition-colors"
+            className="inline-flex items-center gap-1.5 bg-vencly-blue hover:bg-vencly-blue-dark text-white text-sm font-semibold px-4 py-2 rounded-lg transition-colors"
           >
             {t.nav.cta}
             <ExternalLink size={13} />
@@ -186,7 +189,7 @@ export default function Navbar() {
                 href="https://outlook.office.com/bookwithme/user/9c11749d74b349809103953c39ba26d4@vencly.com?anonymous&ep=pcard"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-1.5 bg-vencly-teal hover:bg-vencly-teal-dark text-white text-sm font-semibold px-4 py-2.5 rounded-lg transition-colors"
+                className="inline-flex items-center justify-center gap-1.5 bg-vencly-blue hover:bg-vencly-blue-dark text-white text-sm font-semibold px-4 py-2.5 rounded-lg transition-colors"
               >
                 {t.nav.cta}
                 <ExternalLink size={13} />

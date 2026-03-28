@@ -23,7 +23,8 @@ jobs:
           mkdir -p public/logos
           UA="VenclyBuild/1.0 (https://vencly.com; build@vencly.com)"
           curl -sLf --retry 3 --user-agent "$UA" "https://upload.wikimedia.org/wikipedia/commons/6/64/SWM.svg" -o public/logos/swm.svg
-          curl -sLf --retry 3 --user-agent "$UA" "https://upload.wikimedia.org/wikipedia/commons/3/31/MVG.svg" -o public/logos/mvg.svg
+          curl -sLf --retry 3 --user-agent "$UA" "https://upload.wikimedia.org/wikipedia/commons/c/c2/RWE_Logo_2020.svg" -o public/logos/rwe.svg
+          curl -sLf --retry 3 --user-agent "$UA" "https://s3.eu-central-1.amazonaws.com/ibi-assets/partner/plenum_logo_pos_2c.png" -o public/logos/plenum.png
           curl -sLf --retry 3 --user-agent "$UA" "https://upload.wikimedia.org/wikipedia/commons/4/43/Tollcollect-logo.svg" -o public/logos/toll-collect.svg
           echo "Logos downloaded:"
           ls -la public/logos/
@@ -32,7 +33,10 @@ jobs:
               echo "ERROR: $f is not a valid SVG"; cat "$f"; exit 1
             fi
           done
-          echo "All SVGs validated OK"
+          if [ ! -s public/logos/plenum.png ]; then
+            echo "ERROR: plenum.png is empty or missing"; exit 1
+          fi
+          echo "All logos validated OK"
 
       - name: Build
         run: npm run build

@@ -6,7 +6,8 @@ import { useLanguage } from '@/contexts/LanguageContext'
 
 const logos = [
   { name: 'SWM', desc: 'Stadtwerke München', category: 'Energie & Versorgung', src: '/logos/swm.svg' },
-  { name: 'MVG', desc: 'Münchner Verkehrsgesellschaft', category: 'ÖPNV & Smart City', src: '/logos/mvg.svg' },
+  { name: 'RWE', desc: 'Energie & Versorgung', category: 'Energie', src: '/logos/rwe.svg' },
+  { name: 'Plenum AG', desc: 'Strategie & Transformation', category: 'Beratung', src: '/logos/plenum.png' },
   { name: 'Toll Collect', desc: 'Mauterhebung Deutschland', category: 'Mobility & Infrastruktur', src: '/logos/toll-collect.svg' },
 ]
 
@@ -52,7 +53,7 @@ export default function References() {
         </div>
 
         {/* Logo grid */}
-        <div className="grid gap-6 sm:grid-cols-3 mb-6">
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4 mb-6">
           {logos.map((ref) => (
             <div
               key={ref.name}
@@ -86,7 +87,7 @@ export default function References() {
             href="https://outlook.office.com/bookwithme/user/9c11749d74b349809103953c39ba26d4@vencly.com?anonymous&ep=pcard"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-vencly-teal hover:bg-vencly-teal-dark text-white font-semibold px-8 py-3.5 rounded-xl transition-all teal-glow hover:scale-105"
+            className="inline-flex items-center gap-2 bg-vencly-blue hover:bg-vencly-blue-dark text-white font-semibold px-8 py-3.5 rounded-xl transition-all blue-glow hover:scale-105"
           >
             {t.references.ctaButton}
             <ExternalLink size={16} />

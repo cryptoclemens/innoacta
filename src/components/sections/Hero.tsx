@@ -10,26 +10,26 @@ export default function Hero() {
     <section className="relative min-h-screen flex flex-col items-center justify-center bg-[#F8F7F4] dark:bg-vencly-bg overflow-hidden px-4">
       {/* Background grid */}
       <div
-        className="absolute inset-0 opacity-[0.04] dark:opacity-5"
+        className="absolute inset-0 opacity-[0.06] dark:opacity-[0.07]"
         style={{
           backgroundImage:
-            'linear-gradient(#14b8a6 1px, transparent 1px), linear-gradient(90deg, #14b8a6 1px, transparent 1px)',
+            'linear-gradient(#3B82F6 1px, transparent 1px), linear-gradient(90deg, #3B82F6 1px, transparent 1px)',
           backgroundSize: '60px 60px',
         }}
       />
 
       {/* Radial glow */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-vencly-teal/5 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-vencly-blue/10 dark:bg-vencly-teal/10 rounded-full blur-3xl pointer-events-none" />
 
       {/* Content */}
-      <div className="relative z-10 max-w-4xl mx-auto text-center">
+      <div className="relative z-10 max-w-4xl mx-auto text-center pt-20 md:pt-24">
         <div className="inline-block mb-6">
           <span className="text-vencly-teal text-xs font-mono tracking-widest uppercase border border-vencly-teal/30 bg-vencly-teal/5 px-4 py-1.5 rounded-full">
             {t.hero.eyebrow}
           </span>
         </div>
 
-        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 dark:text-white leading-tight mb-8">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white leading-tight mb-8 max-w-3xl mx-auto">
           {t.hero.h1}{' '}
           <span className="gradient-text">{t.hero.h1Highlight}</span>
         </h1>
@@ -43,17 +43,27 @@ export default function Hero() {
             href="https://outlook.office.com/bookwithme/user/9c11749d74b349809103953c39ba26d4@vencly.com?anonymous&ep=pcard"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-vencly-teal hover:bg-vencly-teal-dark text-white font-semibold px-8 py-3.5 rounded-xl transition-all teal-glow hover:scale-105 text-base"
+            className="inline-flex items-center gap-2 bg-vencly-blue hover:bg-vencly-blue-dark text-white font-semibold px-8 py-3.5 rounded-xl transition-all blue-glow hover:scale-105 text-base"
           >
             {t.hero.ctaPrimary}
             <ExternalLink size={16} />
           </a>
           <a
             href="#referenzen"
-            className="inline-flex items-center gap-2 border border-gray-300 dark:border-vencly-border hover:border-vencly-teal/50 text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white font-semibold px-8 py-3.5 rounded-xl transition-all text-base"
+            className="inline-flex items-center gap-2 border-2 border-vencly-blue/40 hover:border-vencly-blue text-vencly-blue dark:text-vencly-teal hover:bg-vencly-blue/5 font-semibold px-8 py-3.5 rounded-xl transition-all text-base"
           >
             {t.hero.ctaSecondary}
           </a>
+        </div>
+
+        {/* Stats strip */}
+        <div className="flex flex-wrap justify-center gap-10 mt-14 pt-10 border-t border-gray-200 dark:border-white/10">
+          {t.hero.stats.map((stat) => (
+            <div key={stat.label} className="text-center">
+              <div className="text-3xl font-bold text-vencly-blue dark:text-vencly-teal tabular-nums">{stat.value}</div>
+              <div className="text-xs text-gray-500 dark:text-gray-400 mt-1 tracking-wide uppercase">{stat.label}</div>
+            </div>
+          ))}
         </div>
       </div>
 
