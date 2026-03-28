@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { Menu, X, ExternalLink, Sun, Moon, Monitor, ChevronDown } from 'lucide-react'
 import { useTheme } from 'next-themes'
 import { useLanguage } from '@/contexts/LanguageContext'
@@ -100,13 +101,15 @@ export default function Navbar() {
     >
       <nav className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-2 group">
-          <div className="w-8 h-8 bg-vencly-teal rounded-lg flex items-center justify-center group-hover:bg-vencly-teal-dark transition-colors">
-            <span className="text-white font-bold text-sm">V</span>
-          </div>
-          <span className="text-gray-900 dark:text-white font-bold text-lg tracking-tight">
-            Vencly
-          </span>
+        <Link href="/" className="flex items-center group">
+          <Image
+            src="/logovencly.svg"
+            alt="Vencly"
+            width={120}
+            height={36}
+            className="h-9 w-auto"
+            priority
+          />
         </Link>
 
         {/* Desktop Nav */}
