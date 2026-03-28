@@ -10,6 +10,15 @@ const satoshi = localFont({
   variable: '--font-satoshi',
   display: 'swap',
 })
+
+const zodiak = localFont({
+  src: [
+    { path: '../../public/fonts/Zodiak-Variable.woff2', style: 'normal' },
+    { path: '../../public/fonts/Zodiak-VariableItalic.woff2', style: 'italic' },
+  ],
+  variable: '--font-zodiak',
+  display: 'swap',
+})
 import Navbar from '@/components/layout/Navbar'
 import Footer from '@/components/layout/Footer'
 import Providers from '@/components/layout/Providers'
@@ -75,7 +84,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="de" suppressHydrationWarning className={satoshi.variable}>
+    <html lang="de" suppressHydrationWarning className={`${satoshi.variable} ${zodiak.variable}`}>
       <body className="bg-[#F8F7F4] dark:bg-vencly-bg text-gray-900 dark:text-white antialiased font-sans">
         <Providers>
           <Navbar />
