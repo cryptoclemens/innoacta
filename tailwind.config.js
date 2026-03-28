@@ -23,12 +23,10 @@ module.exports = {
       },
       fontFamily: {
         sans: [
+          'var(--font-satoshi)',
           '-apple-system',
           'BlinkMacSystemFont',
           '"Segoe UI"',
-          'Roboto',
-          'Oxygen',
-          'Ubuntu',
           'sans-serif',
         ],
         mono: [
