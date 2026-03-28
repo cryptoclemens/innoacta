@@ -1,73 +1,41 @@
-# Tasks – Meilenstein-Planung & Tracking
+# Tasks & Meilensteine – Vencly Website
 
-## Status-Legende
+## Meilenstein 1: Grundgerüst ✅
+- [x] Next.js 14 App Router mit Static Export
+- [x] Tailwind CSS + Custom Color Palette
+- [x] Framer Motion Hero-Animation (rotierender Text)
+- [x] Alle Sektionen: Hero, ValueProp, Features, WhyUs, LogoBar, References, FactsheetCTA
+- [x] Navbar + Footer
+- [x] TypeScript strict mode
 
-- ✅ Erledigt
-- 🔄 In Arbeit
-- ⬜ Offen
-- ❌ Blockiert
+## Meilenstein 2: Deployment & CI/CD ✅
+- [x] GitHub Repository `cryptoclemens/innoacta`
+- [x] GitHub Actions Workflow (Build + Deploy)
+- [x] Cloudflare Pages Projekt `vencly`
+- [x] Automatischer Deploy bei jedem Push auf `main`
+- [x] Logo-Download in CI (Wikimedia SVGs mit korrektem User-Agent)
 
----
+## Meilenstein 3: SEO & Assets ✅
+- [x] `sitemap.xml` (Next.js MetadataRoute)
+- [x] `robots.txt`
+- [x] SVG Favicon `/public/favicon.svg`
+- [x] OG-Image 1200×630 `/public/og-image.svg`
+- [x] Impressum mit echten Firmendaten (vencly GmbH, HRB 290524)
 
-## Meilenstein 1: Repository & Projekt-Setup ✅
+## Meilenstein 4: Content & UX ✅
+- [x] Hero: Venture Clienting Erklärungstext + rotierende Phrasen
+- [x] WhyUs: Echte Inhalte (7 Tage, Fail fast, Compliance)
+- [x] ValueProp: KMU/öffentlicher Sektor Fokus
+- [x] Build-Versionsnummer unten rechts (Git SHA, auto-update bei Push)
 
-- [x] GitHub Repo erstellen (`cryptoclemens/innoacta`)
-- [x] Branch anlegen und nach `main` gemergt
-- [x] `Brief.md`, `CLAUDE.md`, `Tasks.md` erstellt
-- [x] `package.json` mit allen Dependencies
-- [x] `next.config.js` (Static Export, trailingSlash, unoptimized images)
-- [x] `tailwind.config.js` mit custom Vencly-Farben
-- [x] `tsconfig.json`, `wrangler.toml`
-- [x] `README.md`
+## Meilenstein 5: Domain & Produktion 🔄
+- [ ] DNS-Setup: Nameserver bei Domain-Anbieter auf Cloudflare zeigen
+- [ ] Custom Domain `vencly.com` in Cloudflare Pages aktivieren
+- [ ] SSL-Zertifikat automatisch via Cloudflare
 
----
-
-## Meilenstein 2: Layout & Routing ✅
-
-- [x] Root Layout, Metadata, SEO-Tags
-- [x] Startseite `/`
-- [x] Projektseite `/projects`
-- [x] Kontaktseite `/contact` inkl. echtem Impressum (HRB 290524)
-- [x] Navbar (sticky, blur, mobile Hamburger-Menü)
-- [x] Footer
-
----
-
-## Meilenstein 3: Sektionen / Komponenten ✅
-
-- [x] Hero mit Framer-Motion Rotating-Text (Höhe gefixt)
-- [x] FactsheetCTA, ValueProp, Features, WhyUs
-- [x] LogoBar (Partner-Platzhalter)
-- [x] References mit echten Logos (SWM, MVG, Toll Collect, RWE)
-
----
-
-## Meilenstein 4: Assets & SEO 🔄
-
-- [x] Referenz-Logos via GitHub Actions CI heruntergeladen (SWM URL fix in Arbeit)
-- [ ] Echtes Factsheet-PDF unter `/public/factsheet.pdf` ablegen ← **du**
-- [ ] Sitemap.xml generieren ← Claude
-- [ ] robots.txt konfigurieren ← Claude
-- [ ] `og:image` Social-Preview-Grafik ← Claude
-- [ ] Favicon / App-Icons ← Claude
-
----
-
-## Meilenstein 5: Deployment & DNS 🔄
-
-- [x] Cloudflare Pages Projekt `vencly` angelegt
-- [x] `CLOUDFLARE_API_TOKEN` + `CLOUDFLARE_ACCOUNT_ID` als GitHub Secrets
-- [x] GitHub Actions Workflow funktioniert (Deploy läuft durch)
-- [ ] DNS: `vencly.com` → Cloudflare verbinden ← **du** (gerade in Arbeit)
-- [ ] Custom Domain in Cloudflare Pages aktivieren ← **du**
-- [ ] Lighthouse Audit (Ziel: Performance > 90) ← Claude danach
-
----
-
-## Meilenstein 6: Content-Feinschliff ⬜
-
-- [ ] WhyUs-Sektion mit echtem Content befüllen ← Texte von dir
-- [ ] Projekte-Seite mit echten Inhalten (Innovation Republic, Geopotatlas, AutoToDo)
-- [ ] Vollständige DSGVO-Datenschutzerklärung ← rechtliche Prüfung
-- [ ] Cookie-Banner (DSGVO-konform)
-- [ ] Analytics (datenschutzkonform, z.B. Plausible)
+## Meilenstein 6: Feinschliff 📋
+- [ ] Logos verifizieren: SWM, Toll Collect, RWE korrekt gerendert?
+- [ ] Echtes Factsheet PDF unter `/public/factsheet.pdf` hinterlegen
+- [ ] Partner-Logos durch echte Assets ersetzen (aktuell Wikimedia-Platzhalter)
+- [ ] Lighthouse-Audit (Performance, SEO, Accessibility)
+- [ ] ggf. Cookie-Banner / Analytics (Matomo o.ä.)
