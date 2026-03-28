@@ -43,7 +43,7 @@ export default function Hero() {
             href="https://outlook.office.com/bookwithme/user/9c11749d74b349809103953c39ba26d4@vencly.com?anonymous&ep=pcard"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-vencly-teal hover:bg-vencly-teal-dark text-white font-semibold px-8 py-3.5 rounded-xl transition-all teal-glow hover:scale-105 text-base"
+            className="inline-flex items-center gap-2 bg-vencly-blue hover:bg-vencly-blue-dark text-white font-semibold px-8 py-3.5 rounded-xl transition-all blue-glow hover:scale-105 text-base"
           >
             {t.hero.ctaPrimary}
             <ExternalLink size={16} />
@@ -54,6 +54,16 @@ export default function Hero() {
           >
             {t.hero.ctaSecondary}
           </a>
+        </div>
+
+        {/* Stats strip */}
+        <div className="flex flex-wrap justify-center gap-10 mt-14 pt-10 border-t border-gray-200 dark:border-white/10">
+          {t.hero.stats.map((stat) => (
+            <div key={stat.label} className="text-center">
+              <div className="text-3xl font-bold text-gray-900 dark:text-white tabular-nums">{stat.value}</div>
+              <div className="text-xs text-gray-500 dark:text-gray-400 mt-1 tracking-wide">{stat.label}</div>
+            </div>
+          ))}
         </div>
       </div>
 

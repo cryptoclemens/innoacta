@@ -95,7 +95,7 @@ export default function Navbar() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? 'bg-white/90 dark:bg-[#0d0d14]/90 backdrop-blur-md border-b border-gray-200 dark:border-vencly-border shadow-sm dark:shadow-lg'
+          ? 'bg-white/90 dark:bg-[#0F172A]/90 backdrop-blur-md border-b border-gray-200 dark:border-vencly-border shadow-sm dark:shadow-lg'
           : 'bg-transparent'
       }`}
     >
@@ -141,7 +141,7 @@ export default function Navbar() {
             href="https://outlook.office.com/bookwithme/user/9c11749d74b349809103953c39ba26d4@vencly.com?anonymous&ep=pcard"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-1.5 bg-vencly-teal hover:bg-vencly-teal-dark text-white text-sm font-semibold px-4 py-2 rounded-lg transition-colors"
+            className="inline-flex items-center gap-1.5 bg-vencly-blue hover:bg-vencly-blue-dark text-white text-sm font-semibold px-4 py-2 rounded-lg transition-colors"
           >
             {t.nav.cta}
             <ExternalLink size={13} />
@@ -189,7 +189,7 @@ export default function Navbar() {
                 href="https://outlook.office.com/bookwithme/user/9c11749d74b349809103953c39ba26d4@vencly.com?anonymous&ep=pcard"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-1.5 bg-vencly-teal hover:bg-vencly-teal-dark text-white text-sm font-semibold px-4 py-2.5 rounded-lg transition-colors"
+                className="inline-flex items-center justify-center gap-1.5 bg-vencly-blue hover:bg-vencly-blue-dark text-white text-sm font-semibold px-4 py-2.5 rounded-lg transition-colors"
               >
                 {t.nav.cta}
                 <ExternalLink size={13} />

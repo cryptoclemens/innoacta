@@ -16,6 +16,9 @@ module.exports = {
           teal: '#14b8a6',
           'teal-dark': '#0d9488',
           'teal-light': '#5eead4',
+          navy: '#0F172A',
+          blue: '#0369A1',
+          'blue-dark': '#0284C7',
         },
       },
       fontFamily: {

@@ -25,6 +25,11 @@ const de = {
       'Vencly begleitet Konzerne und den Mittelstand dabei, neue Märkte zu identifizieren, zu bewerten und operativ zu erschließen. Kein Konzept-Karussell. Kein Innovations-Theater. Sondern ein Partner, der selbst Unternehmer ist.',
     ctaPrimary: 'Erstgespräch vereinbaren',
     ctaSecondary: 'Referenzprojekte ansehen',
+    stats: [
+      { value: '40+', label: 'Realisierte Projekte' },
+      { value: '6 Mo.', label: 'Ø Projektlaufzeit' },
+      { value: '3', label: 'Fokus-Branchen' },
+    ],
   },
   valueProp: {
     label: 'Was Vencly einbringt',
@@ -152,6 +157,11 @@ const en: Translations = {
       'Vencly guides corporations and mid-sized companies in identifying, evaluating and operationally developing new markets. No concept carousel. No innovation theatre. Just a partner who is an entrepreneur themselves.',
     ctaPrimary: 'Schedule a Call',
     ctaSecondary: 'View Reference Projects',
+    stats: [
+      { value: '40+', label: 'Completed Projects' },
+      { value: '6 mo.', label: 'Avg. Project Duration' },
+      { value: '3', label: 'Focus Industries' },
+    ],
   },
   valueProp: {
     label: 'What Vencly brings',
@@ -279,6 +289,11 @@ const fr: Translations = {
       'Vencly accompagne les grandes entreprises et les PME dans l\'identification, l\'évaluation et le développement opérationnel de nouveaux marchés. Pas de carrousel de concepts. Pas de théâtre de l\'innovation. Un partenaire qui est lui-même entrepreneur.',
     ctaPrimary: 'Prendre rendez-vous',
     ctaSecondary: 'Voir les projets de référence',
+    stats: [
+      { value: '40+', label: 'Projets réalisés' },
+      { value: '6 mois', label: 'Durée moy. de projet' },
+      { value: '3', label: 'Secteurs prioritaires' },
+    ],
   },
   valueProp: {
     label: 'Ce que Vencly apporte',
@@ -406,6 +421,11 @@ const es: Translations = {
       'Vencly acompaña a grandes empresas y pymes en la identificación, evaluación y desarrollo operativo de nuevos mercados. Sin carrusel de conceptos. Sin teatro de innovación. Un socio que es él mismo empresario.',
     ctaPrimary: 'Concertar una cita',
     ctaSecondary: 'Ver proyectos de referencia',
+    stats: [
+      { value: '40+', label: 'Proyectos realizados' },
+      { value: '6 meses', label: 'Duración media' },
+      { value: '3', label: 'Sectores clave' },
+    ],
   },
   valueProp: {
     label: 'Lo que aporta Vencly',

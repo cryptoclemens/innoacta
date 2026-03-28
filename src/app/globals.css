@@ -17,7 +17,7 @@
 
 /* ── Dark mode ───────────────────────────────────────── */
 html.dark {
-  --color-bg: #0d0d14;
+  --color-bg: #0F172A;
   --color-card: #161622;
   --color-border: #1e1e30;
   --color-teal: #14b8a6;
@@ -64,4 +64,9 @@ body {
 /* Teal glow effect */
 .teal-glow {
   box-shadow: 0 0 20px rgba(20, 184, 166, 0.3);
+}
+
+/* Blue glow effect (for primary CTAs) */
+.blue-glow {
+  box-shadow: 0 0 20px rgba(3, 105, 161, 0.35);
 }
