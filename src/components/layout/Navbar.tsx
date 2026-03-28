@@ -107,7 +107,7 @@ export default function Navbar() {
             alt="Vencly"
             width={120}
             height={36}
-            className="h-9 w-auto"
+            className="h-9 w-auto dark:invert"
             priority
           />
         </Link>

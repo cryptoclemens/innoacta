@@ -22,14 +22,14 @@ export default function Hero() {
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-vencly-blue/10 dark:bg-vencly-teal/10 rounded-full blur-3xl pointer-events-none" />
 
       {/* Content */}
-      <div className="relative z-10 max-w-4xl mx-auto text-center">
+      <div className="relative z-10 max-w-4xl mx-auto text-center pt-20 md:pt-24">
         <div className="inline-block mb-6">
           <span className="text-vencly-teal text-xs font-mono tracking-widest uppercase border border-vencly-teal/30 bg-vencly-teal/5 px-4 py-1.5 rounded-full">
             {t.hero.eyebrow}
           </span>
         </div>
 
-        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 dark:text-white leading-tight mb-8">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white leading-tight mb-8 max-w-3xl mx-auto">
           {t.hero.h1}{' '}
           <span className="gradient-text">{t.hero.h1Highlight}</span>
         </h1>
