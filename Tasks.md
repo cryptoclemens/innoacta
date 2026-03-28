@@ -28,13 +28,16 @@
 - [x] ValueProp: KMU/öffentlicher Sektor Fokus
 - [x] Build-Versionsnummer unten rechts (Git SHA, auto-update bei Push)
 
-## Meilenstein 5: Domain & Produktion 🔄
-- [ ] DNS-Setup: Nameserver bei Domain-Anbieter auf Cloudflare zeigen
-- [ ] Custom Domain `vencly.com` in Cloudflare Pages aktivieren
-- [ ] SSL-Zertifikat automatisch via Cloudflare
+## Meilenstein 5: Domain & Produktion ✅
+- [x] DNS-Setup: Nameserver bei Domain-Anbieter auf Cloudflare zeigen
+- [x] Custom Domain `vencly.com` in Cloudflare Pages aktivieren
+- [x] SSL-Zertifikat automatisch via Cloudflare
 
-## Meilenstein 6: Feinschliff 📋
-- [ ] Logos verifizieren: SWM, Toll Collect, RWE korrekt gerendert?
+## Meilenstein 6: Feinschliff 🔄
+- [x] Dark/Light Mode (System-Präferenz + manuell umschaltbar)
+- [x] Mehrsprachigkeit DE/EN/FR/ES
+- [x] UI/UX Pro Max Skill installiert (global + Projekt)
+- [ ] Logos verifizieren: SWM, Toll Collect korrekt gerendert?
 - [ ] Echtes Factsheet PDF unter `/public/factsheet.pdf` hinterlegen
 - [ ] Partner-Logos durch echte Assets ersetzen (aktuell Wikimedia-Platzhalter)
 - [ ] Lighthouse-Audit (Performance, SEO, Accessibility)
