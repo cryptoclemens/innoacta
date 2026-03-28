@@ -1,27 +1,18 @@
 import type { Metadata } from 'next'
 import localFont from 'next/font/local'
 import './globals.css'
-
-const satoshi = localFont({
-  src: [
-    { path: '../../public/fonts/Satoshi-Variable.woff2', style: 'normal' },
-    { path: '../../public/fonts/Satoshi-VariableItalic.woff2', style: 'italic' },
-  ],
-  variable: '--font-satoshi',
-  display: 'swap',
-})
-
-const zodiak = localFont({
-  src: [
-    { path: '../../public/fonts/Zodiak-Variable.woff2', style: 'normal' },
-    { path: '../../public/fonts/Zodiak-VariableItalic.woff2', style: 'italic' },
-  ],
-  variable: '--font-zodiak',
-  display: 'swap',
-})
 import Navbar from '@/components/layout/Navbar'
 import Footer from '@/components/layout/Footer'
 import Providers from '@/components/layout/Providers'
+
+const nunito = localFont({
+  src: [
+    { path: '../../public/fonts/Nunito-Variable.woff2', style: 'normal' },
+    { path: '../../public/fonts/Nunito-VariableItalic.woff2', style: 'italic' },
+  ],
+  variable: '--font-nunito',
+  display: 'swap',
+})
 
 export const metadata: Metadata = {
   title: {
@@ -84,7 +75,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="de" suppressHydrationWarning className={`${satoshi.variable} ${zodiak.variable}`}>
+    <html lang="de" suppressHydrationWarning className={nunito.variable}>
       <body className="bg-[#F8F7F4] dark:bg-vencly-bg text-gray-900 dark:text-white antialiased font-sans">
         <Providers>
           <Navbar />

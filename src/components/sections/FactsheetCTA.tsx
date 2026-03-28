@@ -15,7 +15,7 @@ export default function FactsheetCTA() {
               <FileText size={24} className="text-vencly-blue" />
             </div>
             <div>
-              <h2 className="font-display text-gray-900 dark:text-white font-bold text-xl md:text-2xl mb-2">
+              <h2 className="text-gray-900 dark:text-white font-bold text-xl md:text-2xl mb-2">
                 {t.factsheet.title}
               </h2>
               <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed max-w-md">
