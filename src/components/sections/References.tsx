@@ -6,7 +6,8 @@ import { useLanguage } from '@/contexts/LanguageContext'
 
 const logos = [
   { name: 'SWM', desc: 'Stadtwerke München', category: 'Energie & Versorgung', src: '/logos/swm.svg' },
-  { name: 'MVG', desc: 'Münchner Verkehrsgesellschaft', category: 'ÖPNV & Smart City', src: '/logos/mvg.svg' },
+  { name: 'RWE', desc: 'Energie & Versorgung', category: 'Energie', src: '/logos/rwe.svg' },
+  { name: 'Plenum AG', desc: 'Strategie & Transformation', category: 'Beratung', src: '/logos/plenum.png' },
   { name: 'Toll Collect', desc: 'Mauterhebung Deutschland', category: 'Mobility & Infrastruktur', src: '/logos/toll-collect.svg' },
 ]
 
@@ -52,7 +53,7 @@ export default function References() {
         </div>
 
         {/* Logo grid */}
-        <div className="grid gap-6 sm:grid-cols-3 mb-6">
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4 mb-6">
           {logos.map((ref) => (
             <div
               key={ref.name}
