@@ -1,53 +1,67 @@
-import { ExternalLink } from 'lucide-react'
+'use client'
 
-const references = [
-  {
-    name: 'Toll Collect',
-    desc: 'Venture Clienting Plattform',
-    category: 'Mobility & Infrastruktur',
-  },
-  {
-    name: 'SWM',
-    desc: 'Stadtwerke München',
-    category: 'Energie & Versorgung',
-  },
-  {
-    name: 'MVG',
-    desc: 'Münchner Verkehrsgesellschaft',
-    category: 'ÖPNV & Smart City',
-  },
+import { ExternalLink } from 'lucide-react'
+import Image from 'next/image'
+import { useLanguage } from '@/contexts/LanguageContext'
+
+const logos = [
+  { name: 'SWM', desc: 'Stadtwerke München', category: 'Energie & Versorgung', src: '/logos/swm.svg' },
+  { name: 'MVG', desc: 'Münchner Verkehrsgesellschaft', category: 'ÖPNV & Smart City', src: '/logos/mvg.svg' },
+  { name: 'Toll Collect', desc: 'Mauterhebung Deutschland', category: 'Mobility & Infrastruktur', src: '/logos/toll-collect.svg' },
 ]
 
 export default function References() {
+  const { t } = useLanguage()
+
   return (
-    <section className="bg-vencly-card border-t border-vencly-border py-24 px-4">
+    <section id="referenzen" className="bg-white dark:bg-vencly-card border-t border-gray-200 dark:border-vencly-border py-24 px-4">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <span className="inline-block text-vencly-teal text-xs font-mono tracking-widest uppercase mb-4">
-            Referenzen
+            {t.references.label}
           </span>
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-            Unsere Kunden
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+            {t.references.h2}
           </h2>
-          <p className="text-gray-400 max-w-xl mx-auto text-sm">
-            Namhafte Unternehmen aus der DACH-Region vertrauen auf Vencly für
-            ihre Venture-Clienting- und Innovationsprozesse.
+          <p className="text-gray-600 dark:text-gray-400 max-w-xl mx-auto text-sm">
+            {t.references.subtext}
           </p>
         </div>
 
-        <div className="grid gap-6 md:grid-cols-3 mb-14">
-          {references.map((ref) => (
+        {/* Anonymous reference card */}
+        <div className="mb-10 rounded-2xl border p-8 md:p-10" style={{ backgroundColor: '#EEF2F8', borderColor: '#B5C8E4' }}>
+          <div className="mb-4">
+            <span className="text-xs font-mono font-semibold tracking-widest uppercase" style={{ color: '#1A2B4A' }}>
+              {t.references.caseTag}
+            </span>
+          </div>
+          <h3 className="text-xl md:text-2xl font-bold mb-3 whitespace-pre-line" style={{ color: '#1A2B4A' }}>
+            {t.references.caseTitle}
+          </h3>
+          <p className="text-sm leading-relaxed mb-6" style={{ color: '#3A4A6A' }}>
+            {t.references.caseText}
+          </p>
+          <div className="flex flex-wrap gap-4 text-xs" style={{ color: '#3A4A6A' }}>
+            {t.references.caseMeta.map((m, i) => (
+              <>
+                {i > 0 && <span key={`sep-${i}`}>·</span>}
+                <span key={m.label}><strong>{m.label}:</strong> {m.value}</span>
+              </>
+            ))}
+          </div>
+        </div>
+
+        {/* Logo grid */}
+        <div className="grid gap-6 sm:grid-cols-3 mb-6">
+          {logos.map((ref) => (
             <div
               key={ref.name}
-              className="bg-vencly-bg border border-vencly-border rounded-2xl p-8 text-center hover:border-vencly-teal/30 transition-colors"
+              className="bg-[#F8F7F4] dark:bg-vencly-bg border border-gray-200 dark:border-vencly-border rounded-2xl p-8 flex flex-col items-center text-center hover:border-vencly-teal/30 transition-colors"
             >
-              {/* Logo placeholder */}
-              <div className="w-16 h-16 bg-vencly-teal/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                <span className="text-vencly-teal font-bold text-xl">
-                  {ref.name.charAt(0)}
-                </span>
+              <div className="h-16 w-full flex items-center justify-center mb-4 bg-white rounded-xl px-4 py-2">
+                <Image src={ref.src} alt={ref.name} width={120} height={48} className="object-contain max-h-12" />
               </div>
-              <p className="text-white font-bold mb-1">{ref.name}</p>
+              <p className="text-gray-900 dark:text-white font-bold mb-1">{ref.name}</p>
               <p className="text-gray-500 text-sm mb-2">{ref.desc}</p>
               <span className="text-xs text-vencly-teal bg-vencly-teal/10 px-2 py-0.5 rounded-full">
                 {ref.category}
@@ -56,13 +70,17 @@ export default function References() {
           ))}
         </div>
 
+        <p className="text-center text-gray-500 text-sm mb-14">
+          {t.references.footnote}
+        </p>
+
         {/* Final CTA */}
         <div className="text-center">
-          <h3 className="text-white font-bold text-xl md:text-2xl mb-4">
-            Werden Sie Teil des Netzwerks
+          <h3 className="text-gray-900 dark:text-white font-bold text-xl md:text-2xl mb-4">
+            {t.references.ctaTitle}
           </h3>
-          <p className="text-gray-400 mb-6 text-sm">
-            Starten Sie noch heute mit einer kostenlosen Demo.
+          <p className="text-gray-500 mb-6 text-sm">
+            {t.references.ctaSubtext}
           </p>
           <a
             href="https://outlook.office.com/bookwithme/user/9c11749d74b349809103953c39ba26d4@vencly.com?anonymous&ep=pcard"
@@ -70,7 +88,7 @@ export default function References() {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-vencly-teal hover:bg-vencly-teal-dark text-white font-semibold px-8 py-3.5 rounded-xl transition-all teal-glow hover:scale-105"
           >
-            Demo buchen
+            {t.references.ctaButton}
             <ExternalLink size={16} />
           </a>
         </div>

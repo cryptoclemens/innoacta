@@ -12,17 +12,44 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '22'
           cache: 'npm'
 
       - name: Install dependencies
         run: npm ci
 
+      - name: Download customer logos
+        run: |
+          mkdir -p public/logos
+          UA="VenclyBuild/1.0 (https://vencly.com; build@vencly.com)"
+          curl -sLf --retry 3 --user-agent "$UA" "https://upload.wikimedia.org/wikipedia/commons/6/64/SWM.svg" -o public/logos/swm.svg
+          curl -sLf --retry 3 --user-agent "$UA" "https://upload.wikimedia.org/wikipedia/commons/3/31/MVG.svg" -o public/logos/mvg.svg
+          curl -sLf --retry 3 --user-agent "$UA" "https://upload.wikimedia.org/wikipedia/commons/4/43/Tollcollect-logo.svg" -o public/logos/toll-collect.svg
+          echo "Logos downloaded:"
+          ls -la public/logos/
+          for f in public/logos/*.svg; do
+            if ! grep -qE '<svg|<\?xml' "$f"; then
+              echo "ERROR: $f is not a valid SVG"; cat "$f"; exit 1
+            fi
+          done
+          echo "All SVGs validated OK"
+
       - name: Build
         run: npm run build
+        env:
+          NEXT_PUBLIC_BUILD_VERSION: ${{ github.sha }}
+
+      - name: Create Pages project (if not exists)
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages project create vencly --production-branch=main
+        continue-on-error: true
 
       - name: Deploy to Cloudflare Pages
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          command: pages deploy out --project-name=vencly
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy out --project-name=vencly --commit-dirty=true

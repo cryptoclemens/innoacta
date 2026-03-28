@@ -38,10 +38,10 @@ export default function ContactPage() {
               Für allgemeine Anfragen und Projektgespräche:
             </p>
             <a
-              href="mailto:info@vencly.com"
+              href="mailto:hello@vencly.com"
               className="text-vencly-teal hover:text-vencly-teal-light transition-colors"
             >
-              info@vencly.com
+              hello@vencly.com
             </a>
           </div>
 
@@ -77,30 +77,59 @@ export default function ContactPage() {
         </div>
 
         {/* Impressum */}
-        <section className="border-t border-vencly-border pt-12 mb-12">
+        <section id="impressum" className="border-t border-vencly-border pt-12 mb-12 scroll-mt-24">
           <h2 className="text-2xl font-bold text-white mb-6">Impressum</h2>
-          <div className="text-gray-400 space-y-2 text-sm leading-relaxed">
-            <p className="text-white font-medium">Vencly GmbH</p>
-            <p>[Straße und Hausnummer – Platzhalter]</p>
-            <p>[PLZ Ort – Platzhalter]</p>
-            <p>Deutschland</p>
-            <p className="pt-2">
-              Geschäftsführer: [Name – Platzhalter]
-            </p>
-            <p>
-              Handelsregister: [Amtsgericht – Platzhalter], HRB [Nummer –
-              Platzhalter]
-            </p>
-            <p>USt-IdNr.: [USt-ID – Platzhalter]</p>
-            <p className="pt-2">
-              E-Mail:{' '}
-              <a
-                href="mailto:info@vencly.com"
-                className="text-vencly-teal hover:underline"
-              >
-                info@vencly.com
-              </a>
-            </p>
+          <div className="text-gray-400 space-y-3 text-sm leading-relaxed">
+            <div>
+              <p className="text-white font-medium">vencly GmbH</p>
+              <p>Leopoldstraße 31</p>
+              <p>80802 München</p>
+              <p>Deutschland</p>
+            </div>
+            <div className="pt-1">
+              <p><span className="text-white">Vertreten durch:</span> Clemens Eugen Theodor Pompeÿ</p>
+            </div>
+            <div className="pt-1">
+              <p>
+                <span className="text-white">E-Mail:</span>{' '}
+                <a href="mailto:hello@vencly.com" className="text-vencly-teal hover:underline">
+                  hello@vencly.com
+                </a>
+              </p>
+            </div>
+            <div className="pt-1">
+              <p><span className="text-white">Registergericht:</span> Amtsgericht München</p>
+              <p><span className="text-white">Handelsregisternummer:</span> HRB 290524</p>
+            </div>
+            <div className="pt-1">
+              <p>
+                <span className="text-white">Umsatzsteuer-Identifikationsnummer</span> gemäß § 27a UStG:
+              </p>
+              <p>DE367131457</p>
+            </div>
+            <div className="pt-3 border-t border-vencly-border">
+              <p className="text-white font-medium mb-1">Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV:</p>
+              <p>Clemens Eugen Theodor Pompeÿ</p>
+              <p>Leopoldstraße 31, 80802 München</p>
+            </div>
+            <div className="pt-3 border-t border-vencly-border">
+              <p className="text-white font-medium mb-1">EU-Streitschlichtung</p>
+              <p>
+                Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit:{' '}
+                <a
+                  href="https://ec.europa.eu/consumers/odr"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-vencly-teal hover:underline"
+                >
+                  https://ec.europa.eu/consumers/odr
+                </a>
+              </p>
+              <p className="mt-2">
+                Wir sind nicht bereit oder verpflichtet, an einem Streitbeilegungsverfahren
+                vor einer Verbraucherschlichtungsstelle teilzunehmen.
+              </p>
+            </div>
           </div>
         </section>
 
