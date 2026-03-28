@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 import Navbar from '@/components/layout/Navbar'
 import Footer from '@/components/layout/Footer'
+import Providers from '@/components/layout/Providers'
 
 export const metadata: Metadata = {
   title: {
@@ -64,14 +65,16 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="de">
-      <body className="bg-vencly-bg text-white antialiased">
-        <Navbar />
-        <main>{children}</main>
-        <Footer />
-        <span className="fixed bottom-3 right-3 z-50 font-mono text-[10px] text-gray-700 select-none pointer-events-none">
-          {process.env.NEXT_PUBLIC_BUILD_VERSION?.slice(0, 7) ?? 'dev'}
-        </span>
+    <html lang="de" suppressHydrationWarning>
+      <body className="bg-[#F8F7F4] dark:bg-vencly-bg text-gray-900 dark:text-white antialiased">
+        <Providers>
+          <Navbar />
+          <main>{children}</main>
+          <Footer />
+          <span className="fixed bottom-3 right-3 z-50 font-mono text-[10px] text-gray-400 dark:text-gray-700 select-none pointer-events-none">
+            {process.env.NEXT_PUBLIC_BUILD_VERSION?.slice(0, 7) ?? 'dev'}
+          </span>
+        </Providers>
       </body>
     </html>
   )

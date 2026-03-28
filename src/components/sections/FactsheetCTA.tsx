@@ -1,8 +1,13 @@
+'use client'
+
 import { Download, FileText } from 'lucide-react'
+import { useLanguage } from '@/contexts/LanguageContext'
 
 export default function FactsheetCTA() {
+  const { t } = useLanguage()
+
   return (
-    <section className="bg-vencly-bg py-16 px-4">
+    <section className="bg-[#F8F7F4] dark:bg-vencly-bg py-16 px-4">
       <div className="max-w-4xl mx-auto">
         <div className="bg-gradient-to-r from-vencly-teal/10 via-vencly-teal/5 to-transparent border border-vencly-teal/20 rounded-2xl p-8 md:p-12 flex flex-col md:flex-row items-center justify-between gap-8">
           <div className="flex items-start gap-4">
@@ -10,12 +15,11 @@ export default function FactsheetCTA() {
               <FileText size={24} className="text-vencly-teal" />
             </div>
             <div>
-              <h2 className="text-white font-bold text-xl md:text-2xl mb-2">
-                Vencly auf zwei Seiten
+              <h2 className="text-gray-900 dark:text-white font-bold text-xl md:text-2xl mb-2">
+                {t.factsheet.title}
               </h2>
-              <p className="text-gray-400 text-sm leading-relaxed max-w-md">
-                Leistungsübersicht, Methodik und Referenzprojekt kompakt
-                zusammengefasst – für die nächste interne Runde.
+              <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed max-w-md">
+                {t.factsheet.desc}
               </p>
             </div>
           </div>
@@ -25,7 +29,7 @@ export default function FactsheetCTA() {
             className="flex-shrink-0 inline-flex items-center gap-2 bg-vencly-teal hover:bg-vencly-teal-dark text-white font-semibold px-7 py-3 rounded-xl transition-all teal-glow hover:scale-105 whitespace-nowrap"
           >
             <Download size={18} />
-            PDF herunterladen
+            {t.factsheet.button}
           </a>
         </div>
       </div>
