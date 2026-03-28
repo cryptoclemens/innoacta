@@ -36,6 +36,8 @@ jobs:
 
       - name: Build
         run: npm run build
+        env:
+          NEXT_PUBLIC_BUILD_VERSION: ${{ github.sha }}
 
       - name: Create Pages project (if not exists)
         uses: cloudflare/wrangler-action@v3

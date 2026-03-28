@@ -69,6 +69,9 @@ export default function RootLayout({
         <Navbar />
         <main>{children}</main>
         <Footer />
+        <span className="fixed bottom-3 right-3 z-50 font-mono text-[10px] text-gray-700 select-none pointer-events-none">
+          {process.env.NEXT_PUBLIC_BUILD_VERSION?.slice(0, 7) ?? 'dev'}
+        </span>
       </body>
     </html>
   )
