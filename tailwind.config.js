@@ -10,15 +10,15 @@ module.exports = {
     extend: {
       colors: {
         vencly: {
-          bg: '#0d0d14',
-          card: '#161622',
-          border: '#1e1e30',
-          teal: '#14b8a6',
-          'teal-dark': '#0d9488',
-          'teal-light': '#5eead4',
+          bg: '#0F172A',
+          card: '#1E293B',
+          border: '#334155',
+          teal: '#3B82F6',
+          'teal-dark': '#2563EB',
+          'teal-light': '#93C5FD',
           navy: '#0F172A',
-          blue: '#0369A1',
-          'blue-dark': '#0284C7',
+          blue: '#2563EB',
+          'blue-dark': '#1D4ED8',
         },
       },
       fontFamily: {

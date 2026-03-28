@@ -6,26 +6,26 @@
 :root {
   --color-bg: #F8F7F4;
   --color-card: #FFFFFF;
-  --color-border: #E2E8F0;
-  --color-teal: #14b8a6;
-  --color-text: #1A2B4A;
-  --color-muted: #64748B;
+  --color-border: #DBEAFE;
+  --color-teal: #2563EB;
+  --color-text: #0F172A;
+  --color-muted: #475569;
   --color-subtle: #94A3B8;
   --scrollbar-bg: #F0EEE9;
-  --scrollbar-thumb: #CBD5E1;
+  --scrollbar-thumb: #BFDBFE;
 }
 
 /* ── Dark mode ───────────────────────────────────────── */
 html.dark {
   --color-bg: #0F172A;
-  --color-card: #161622;
-  --color-border: #1e1e30;
-  --color-teal: #14b8a6;
-  --color-text: #FFFFFF;
-  --color-muted: #9CA3AF;
-  --color-subtle: #6B7280;
-  --scrollbar-bg: #0d0d14;
-  --scrollbar-thumb: #1e1e30;
+  --color-card: #1E293B;
+  --color-border: #334155;
+  --color-teal: #3B82F6;
+  --color-text: #F1F5F9;
+  --color-muted: #94A3B8;
+  --color-subtle: #64748B;
+  --scrollbar-bg: #0F172A;
+  --scrollbar-thumb: #334155;
 }
 
 html {
@@ -55,18 +55,18 @@ body {
 
 /* Gradient text utility */
 .gradient-text {
-  background: linear-gradient(135deg, #14b8a6, #5eead4);
+  background: linear-gradient(135deg, #1D4ED8, #3B82F6);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
-/* Teal glow effect */
+/* Teal glow effect (kept for backwards compat) */
 .teal-glow {
-  box-shadow: 0 0 20px rgba(20, 184, 166, 0.3);
+  box-shadow: 0 0 24px rgba(59, 130, 246, 0.4);
 }
 
 /* Blue glow effect (for primary CTAs) */
 .blue-glow {
-  box-shadow: 0 0 20px rgba(3, 105, 161, 0.35);
+  box-shadow: 0 0 24px rgba(37, 99, 235, 0.45);
 }

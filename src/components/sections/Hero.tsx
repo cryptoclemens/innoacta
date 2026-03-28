@@ -10,16 +10,16 @@ export default function Hero() {
     <section className="relative min-h-screen flex flex-col items-center justify-center bg-[#F8F7F4] dark:bg-vencly-bg overflow-hidden px-4">
       {/* Background grid */}
       <div
-        className="absolute inset-0 opacity-[0.04] dark:opacity-5"
+        className="absolute inset-0 opacity-[0.06] dark:opacity-[0.07]"
         style={{
           backgroundImage:
-            'linear-gradient(#14b8a6 1px, transparent 1px), linear-gradient(90deg, #14b8a6 1px, transparent 1px)',
+            'linear-gradient(#3B82F6 1px, transparent 1px), linear-gradient(90deg, #3B82F6 1px, transparent 1px)',
           backgroundSize: '60px 60px',
         }}
       />
 
       {/* Radial glow */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-vencly-teal/5 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-vencly-blue/10 dark:bg-vencly-teal/10 rounded-full blur-3xl pointer-events-none" />
 
       {/* Content */}
       <div className="relative z-10 max-w-4xl mx-auto text-center">
@@ -50,7 +50,7 @@ export default function Hero() {
           </a>
           <a
             href="#referenzen"
-            className="inline-flex items-center gap-2 border border-gray-300 dark:border-vencly-border hover:border-vencly-teal/50 text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white font-semibold px-8 py-3.5 rounded-xl transition-all text-base"
+            className="inline-flex items-center gap-2 border-2 border-vencly-blue/40 hover:border-vencly-blue text-vencly-blue dark:text-vencly-teal hover:bg-vencly-blue/5 font-semibold px-8 py-3.5 rounded-xl transition-all text-base"
           >
             {t.hero.ctaSecondary}
           </a>
@@ -60,8 +60,8 @@ export default function Hero() {
         <div className="flex flex-wrap justify-center gap-10 mt-14 pt-10 border-t border-gray-200 dark:border-white/10">
           {t.hero.stats.map((stat) => (
             <div key={stat.label} className="text-center">
-              <div className="text-3xl font-bold text-gray-900 dark:text-white tabular-nums">{stat.value}</div>
-              <div className="text-xs text-gray-500 dark:text-gray-400 mt-1 tracking-wide">{stat.label}</div>
+              <div className="text-3xl font-bold text-vencly-blue dark:text-vencly-teal tabular-nums">{stat.value}</div>
+              <div className="text-xs text-gray-500 dark:text-gray-400 mt-1 tracking-wide uppercase">{stat.label}</div>
             </div>
           ))}
         </div>
