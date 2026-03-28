@@ -29,7 +29,7 @@ export default function Hero() {
           </span>
         </div>
 
-        <h1 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white leading-tight mb-8 max-w-3xl mx-auto">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white leading-tight mb-8 max-w-3xl mx-auto">
           {t.hero.h1}{' '}
           <span className="gradient-text">{t.hero.h1Highlight}</span>
         </h1>

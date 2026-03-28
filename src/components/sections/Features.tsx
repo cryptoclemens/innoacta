@@ -41,7 +41,7 @@ export default function Features() {
           <span className="inline-block text-vencly-teal text-xs font-mono tracking-widest uppercase mb-4">
             {t.features.label}
           </span>
-          <h2 className="font-display text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
             {t.features.h2}
           </h2>
           <p className="text-gray-600 dark:text-gray-400 max-w-xl mx-auto">
