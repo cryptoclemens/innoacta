@@ -29,6 +29,11 @@ module.exports = {
           '"Segoe UI"',
           'sans-serif',
         ],
+        display: [
+          'var(--font-zodiak)',
+          'Georgia',
+          'serif',
+        ],
         mono: [
           '"SF Mono"',
           'Menlo',

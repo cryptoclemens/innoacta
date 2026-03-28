@@ -15,7 +15,7 @@ export default function ValueProp() {
             <span className="inline-block text-vencly-teal text-xs font-mono tracking-widest uppercase mb-4">
               {t.valueProp.label}
             </span>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6 leading-snug">
+            <h2 className="font-display text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6 leading-snug">
               {t.valueProp.h2}{' '}
               <span className="gradient-text">{t.valueProp.h2Highlight}</span>
             </h2>
