@@ -12,6 +12,7 @@ export type Translations = typeof de
 const de = {
   nav: {
     home: 'Home',
+    services: 'Leistungen',
     projects: 'Projekte',
     contact: 'Kontakt',
     login: 'Login',
@@ -153,6 +154,7 @@ const de = {
 const en: Translations = {
   nav: {
     home: 'Home',
+    services: 'Services',
     projects: 'Projects',
     contact: 'Contact',
     login: 'Login',
@@ -294,6 +296,7 @@ const en: Translations = {
 const fr: Translations = {
   nav: {
     home: 'Accueil',
+    services: 'Services',
     projects: 'Projets',
     contact: 'Contact',
     login: 'Connexion',
@@ -435,6 +438,7 @@ const fr: Translations = {
 const es: Translations = {
   nav: {
     home: 'Inicio',
+    services: 'Servicios',
     projects: 'Proyectos',
     contact: 'Contacto',
     login: 'Acceder',
