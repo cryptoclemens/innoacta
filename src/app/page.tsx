@@ -1,5 +1,4 @@
 import Hero from '@/components/sections/Hero'
-import FactsheetCTA from '@/components/sections/FactsheetCTA'
 import ValueProp from '@/components/sections/ValueProp'
 import Features from '@/components/sections/Features'
 import WhyUs from '@/components/sections/WhyUs'
@@ -11,7 +10,6 @@ export default function HomePage() {
       <Hero />
       <ValueProp />
       <Features />
-      <FactsheetCTA />
       <WhyUs />
       <References />
     </>

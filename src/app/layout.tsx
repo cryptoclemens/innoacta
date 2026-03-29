@@ -16,11 +16,11 @@ const nunito = localFont({
 
 export const metadata: Metadata = {
   title: {
-    default: 'Vencly – Strategische Geschäftsfeldentwicklung für Konzerne und den Mittelstand',
+    default: 'Vencly – Gründer-Denken für Ihr nächstes Geschäftsfeld.',
     template: '%s | Vencly',
   },
   description:
-    'Vencly begleitet Unternehmen dabei, neue Geschäftsfelder zu identifizieren, zu bewerten und operativ zu erschließen. Methode. Tempo. Echte Ergebnisse.',
+    'Vencly überträgt Startup-Logik auf Konzerne und den Mittelstand: neue Geschäftsfelder entwickeln, validieren und launchen – mit Methode und Tempo.',
   keywords: [
     'Geschäftsfeldentwicklung',
     'Venture Clienting',
@@ -40,16 +40,16 @@ export const metadata: Metadata = {
     locale: 'de_DE',
     url: 'https://vencly.com',
     siteName: 'Vencly',
-    title: 'Vencly – Strategische Geschäftsfeldentwicklung für Konzerne und den Mittelstand',
+    title: 'Vencly – Gründer-Denken für Ihr nächstes Geschäftsfeld.',
     description:
-      'Vencly begleitet Unternehmen dabei, neue Geschäftsfelder zu identifizieren, zu bewerten und operativ zu erschließen. Methode. Tempo. Echte Ergebnisse.',
+      'Vencly überträgt Startup-Logik auf Konzerne und den Mittelstand: neue Geschäftsfelder entwickeln, validieren und launchen – mit Methode und Tempo.',
     images: [{ url: '/og-image.svg', width: 1200, height: 630, alt: 'Vencly' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Vencly – Strategische Geschäftsfeldentwicklung für Konzerne und den Mittelstand',
+    title: 'Vencly – Gründer-Denken für Ihr nächstes Geschäftsfeld.',
     description:
-      'Vencly begleitet Unternehmen dabei, neue Geschäftsfelder zu identifizieren, zu bewerten und operativ zu erschließen. Methode. Tempo. Echte Ergebnisse.',
+      'Vencly überträgt Startup-Logik auf Konzerne und den Mittelstand: neue Geschäftsfelder entwickeln, validieren und launchen – mit Methode und Tempo.',
     images: ['/og-image.svg'],
   },
   icons: {
