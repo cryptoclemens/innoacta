@@ -35,7 +35,7 @@ export default function Features() {
   const { t } = useLanguage()
 
   return (
-    <section className="bg-white dark:bg-vencly-card py-24 px-4 border-t border-b border-gray-200 dark:border-vencly-border">
+    <section id="leistungen" className="bg-white dark:bg-vencly-card py-24 px-4 border-t border-b border-gray-200 dark:border-vencly-border">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <span className="inline-block text-vencly-teal text-xs font-mono tracking-widest uppercase mb-4">
