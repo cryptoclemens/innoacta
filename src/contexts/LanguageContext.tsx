@@ -1,6 +1,6 @@
 'use client'
 
-import { createContext, useContext, useEffect, useState } from 'react'
+import { createContext, useContext, useEffect, useMemo, useState } from 'react'
 import { type Locale, type Translations, translations } from '@/lib/i18n'
 
 type LanguageContextType = {
@@ -19,17 +19,31 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
   const [locale, setLocaleState] = useState<Locale>('de')
 
   useEffect(() => {
-    const stored = localStorage.getItem('vencly-locale') as Locale | null
-    if (stored && stored in translations) setLocaleState(stored)
+    try {
+      const stored = localStorage.getItem('vencly-locale') as Locale | null
+      if (stored && stored in translations) setLocaleState(stored)
+    } catch {
+      // localStorage unavailable (e.g. private mode with strict settings)
+    }
   }, [])
 
   const setLocale = (l: Locale) => {
     setLocaleState(l)
-    localStorage.setItem('vencly-locale', l)
+    try {
+      localStorage.setItem('vencly-locale', l)
+    } catch {
+      // localStorage unavailable
+    }
   }
 
+  const value = useMemo(
+    () => ({ locale, t: translations[locale], setLocale }),
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [locale]
+  )
+
   return (
-    <LanguageContext.Provider value={{ locale, t: translations[locale], setLocale }}>
+    <LanguageContext.Provider value={value}>
       {children}
     </LanguageContext.Provider>
   )
