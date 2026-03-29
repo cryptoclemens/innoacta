@@ -3,11 +3,12 @@
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import { Menu, X, ExternalLink, Sun, Moon, Monitor, ChevronDown } from 'lucide-react'
+import { Menu, X, Sun, Moon, Monitor, ChevronDown } from 'lucide-react'
 import { useTheme } from 'next-themes'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { type Locale, localeLabels } from '@/lib/i18n'
-import { BOOKING_URL, LOGIN_URL } from '@/lib/config'
+import { LOGIN_URL } from '@/lib/config'
+import { calButtonProps } from '@/components/layout/CalProvider'
 
 const locales: Locale[] = ['de', 'en', 'fr', 'es']
 
@@ -140,15 +141,12 @@ export default function Navbar() {
           >
             {t.nav.login}
           </a>
-          <a
-            href={BOOKING_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-1.5 bg-vencly-blue hover:bg-vencly-blue-dark text-white text-sm font-semibold px-4 py-2 rounded-lg transition-colors"
+          <button
+            {...calButtonProps}
+            className="inline-flex items-center gap-1.5 bg-vencly-blue hover:bg-vencly-blue-dark text-white text-sm font-semibold px-4 py-2 rounded-lg transition-colors cursor-pointer"
           >
             {t.nav.cta}
-            <ExternalLink size={13} />
-          </a>
+          </button>
         </div>
 
         {/* Mobile Menu Button */}
@@ -189,15 +187,12 @@ export default function Navbar() {
               >
                 {t.nav.login}
               </a>
-              <a
-                href={BOOKING_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-1.5 bg-vencly-blue hover:bg-vencly-blue-dark text-white text-sm font-semibold px-4 py-2.5 rounded-lg transition-colors"
+              <button
+                {...calButtonProps}
+                className="inline-flex items-center justify-center gap-1.5 bg-vencly-blue hover:bg-vencly-blue-dark text-white text-sm font-semibold px-4 py-2.5 rounded-lg transition-colors cursor-pointer"
               >
                 {t.nav.cta}
-                <ExternalLink size={13} />
-              </a>
+              </button>
             </div>
           </div>
         </div>

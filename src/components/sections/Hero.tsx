@@ -1,8 +1,8 @@
 'use client'
 
-import { ExternalLink, ChevronDown } from 'lucide-react'
+import { ChevronDown } from 'lucide-react'
 import { useLanguage } from '@/contexts/LanguageContext'
-import { BOOKING_URL } from '@/lib/config'
+import { calButtonProps } from '@/components/layout/CalProvider'
 
 export default function Hero() {
   const { t } = useLanguage()
@@ -40,15 +40,12 @@ export default function Hero() {
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <a
-            href={BOOKING_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-vencly-blue hover:bg-vencly-blue-dark text-white font-semibold px-8 py-3.5 rounded-xl transition-all blue-glow hover:scale-105 text-base"
+          <button
+            {...calButtonProps}
+            className="inline-flex items-center gap-2 bg-vencly-blue hover:bg-vencly-blue-dark text-white font-semibold px-8 py-3.5 rounded-xl transition-all blue-glow hover:scale-105 text-base cursor-pointer"
           >
             {t.hero.ctaPrimary}
-            <ExternalLink size={16} />
-          </a>
+          </button>
           <a
             href="#referenzen"
             className="inline-flex items-center gap-2 border-2 border-vencly-blue/40 hover:border-vencly-blue text-vencly-blue dark:text-vencly-teal hover:bg-vencly-blue/5 font-semibold px-8 py-3.5 rounded-xl transition-all text-base"
