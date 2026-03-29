@@ -1,0 +1,17 @@
+{
+  "name": "Vencly",
+  "short_name": "Vencly",
+  "description": "Gründer-Denken für Ihr nächstes Geschäftsfeld.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F8F7F4",
+  "theme_color": "#14b8a6",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

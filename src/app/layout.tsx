@@ -35,9 +35,20 @@ export const metadata: Metadata = {
   authors: [{ name: 'Vencly GmbH' }],
   creator: 'Vencly GmbH',
   metadataBase: new URL('https://vencly.com'),
+  alternates: {
+    canonical: 'https://vencly.com',
+    languages: {
+      'de': 'https://vencly.com',
+      'en': 'https://vencly.com',
+      'fr': 'https://vencly.com',
+      'es': 'https://vencly.com',
+      'x-default': 'https://vencly.com',
+    },
+  },
   openGraph: {
     type: 'website',
     locale: 'de_DE',
+    alternateLocale: ['en_US', 'fr_FR', 'es_ES'],
     url: 'https://vencly.com',
     siteName: 'Vencly',
     title: 'Vencly – Gründer-Denken für Ihr nächstes Geschäftsfeld.',
@@ -56,6 +67,7 @@ export const metadata: Metadata = {
     icon: '/favicon.svg',
     shortcut: '/favicon.svg',
   },
+  manifest: '/manifest.json',
   robots: {
     index: true,
     follow: true,
@@ -74,8 +86,30 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'ProfessionalService',
+    name: 'Vencly GmbH',
+    url: 'https://vencly.com',
+    logo: 'https://vencly.com/logovencly.svg',
+    description:
+      'Vencly überträgt Startup-Logik auf Konzerne und den Mittelstand: neue Geschäftsfelder entwickeln, validieren und launchen – mit Methode und Tempo.',
+    areaServed: ['DE', 'AT', 'CH'],
+    serviceType: ['Geschäftsfeldentwicklung', 'Venture Clienting', 'Strategische Transformation'],
+    knowsLanguage: ['de', 'en', 'fr', 'es'],
+    sameAs: ['https://vencly.com'],
+  }
+
   return (
     <html lang="de" suppressHydrationWarning className={nunito.variable}>
+      <head>
+        <meta name="theme-color" content="#14b8a6" media="(prefers-color-scheme: light)" />
+        <meta name="theme-color" content="#0d0d14" media="(prefers-color-scheme: dark)" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body className="bg-[#F8F7F4] dark:bg-vencly-bg text-gray-900 dark:text-white antialiased font-sans">
         <Providers>
           <Navbar />
