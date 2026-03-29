@@ -1,24 +1,25 @@
 import type { MetadataRoute } from 'next'
 
+const BASE = 'https://vencly.com'
+const locales = ['de', 'en', 'fr', 'es'] as const
+
+function entry(path: string, priority: number, changeFrequency: MetadataRoute.Sitemap[number]['changeFrequency']): MetadataRoute.Sitemap[number][] {
+  const url = `${BASE}${path}`
+  return locales.map((lang) => ({
+    url,
+    lastModified: new Date(),
+    changeFrequency,
+    priority,
+    alternates: {
+      languages: Object.fromEntries(locales.map((l) => [l, url])) as Record<string, string>,
+    },
+  }))
+}
+
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
-    {
-      url: 'https://vencly.com',
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 1,
-    },
-    {
-      url: 'https://vencly.com/projects',
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: 'https://vencly.com/contact',
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.6,
-    },
+    ...entry('', 1, 'weekly'),
+    ...entry('/projects', 0.8, 'monthly'),
+    ...entry('/contact', 0.6, 'monthly'),
   ]
 }
