@@ -109,13 +109,22 @@ const de = {
     subtext:
       'Namhafte Unternehmen aus der DACH-Region vertrauen auf Vencly für strategische Geschäftsfeldentwicklung und Venture-Clienting-Projekte.',
     caseTag: 'ENERGIE · INFRASTRUKTUR',
-    caseTitle: 'Neues Geschäftsfeld Tiefengeothermie\nfür einen deutschen Energieversorger',
+    caseTitle: 'Neues Geschäftsfeld Geothermie\nfür einen deutschen Energieversorger',
     caseText:
       'Für einen großen deutschen Energieversorger haben wir die strategische und wirtschaftliche Tragfähigkeit eines neuen Geschäftsfelds im Bereich erneuerbare Wärme entwickelt – von der Technologiebewertung über Marktanalysen bis zur Stakeholder-Kommunikation mit kommunalen Versorgern.',
     caseMeta: [
       { label: 'Branche', value: 'Energie / Infrastruktur' },
       { label: 'Laufzeit', value: '6 Monate' },
       { label: 'Format', value: 'Strategisches Begleitmandat' },
+    ],
+    case2Tag: 'ÖFFENTLICHER SEKTOR · INNOVATION',
+    case2Title: 'Aufbau einer Venture Client Unit\nfür einen öffentlichen Träger',
+    case2Text:
+      'Für einen öffentlichen Träger haben wir eine strukturierte Venture Client Unit aufgebaut – von der Prozessgestaltung über die Startup-Scouting-Methodik bis zur internen Verankerung. Das Ergebnis: ein wiederholbarer Prozess für die Erprobung externer Innovationspartner innerhalb regulatorischer Rahmenbedingungen.',
+    case2Meta: [
+      { label: 'Branche', value: 'Öffentlicher Sektor' },
+      { label: 'Laufzeit', value: '4 Monate' },
+      { label: 'Format', value: 'Aufbaumandat & Prozessdesign' },
     ],
     footnote: 'Weitere Referenzen auf Anfrage.',
     ctaTitle: 'Bereit für das nächste Geschäftsfeld?',
@@ -241,13 +250,22 @@ const en: Translations = {
     subtext:
       'Leading companies from the DACH region trust Vencly for strategic business field development and venture clienting projects.',
     caseTag: 'ENERGY · INFRASTRUCTURE',
-    caseTitle: 'New Business Field: Deep Geothermal Energy\nfor a German Energy Provider',
+    caseTitle: 'New Business Field: Geothermal Energy\nfor a German Energy Provider',
     caseText:
       'For a major German energy provider, we developed the strategic and economic viability of a new business field in renewable heat – from technology assessment and market analyses to stakeholder communication with municipal utilities.',
     caseMeta: [
       { label: 'Sector', value: 'Energy / Infrastructure' },
       { label: 'Duration', value: '6 months' },
       { label: 'Format', value: 'Strategic advisory mandate' },
+    ],
+    case2Tag: 'PUBLIC SECTOR · INNOVATION',
+    case2Title: 'Building a Venture Client Unit\nfor a Public Organisation',
+    case2Text:
+      'For a public organisation, we built a structured Venture Client Unit – from process design and startup scouting methodology to internal anchoring. The result: a repeatable process for piloting external innovation partners within regulatory constraints.',
+    case2Meta: [
+      { label: 'Sector', value: 'Public Sector' },
+      { label: 'Duration', value: '4 months' },
+      { label: 'Format', value: 'Build mandate & process design' },
     ],
     footnote: 'Further references available on request.',
     ctaTitle: 'Ready for your next business field?',
@@ -373,13 +391,22 @@ const fr: Translations = {
     subtext:
       'Des entreprises de premier plan de la région DACH font confiance à Vencly pour le développement stratégique de nouveaux domaines d\'activité et les projets de Venture Clienting.',
     caseTag: 'ÉNERGIE · INFRASTRUCTURE',
-    caseTitle: 'Nouveau domaine : géothermie profonde\npour un fournisseur d\'énergie allemand',
+    caseTitle: 'Nouveau domaine : géothermie\npour un fournisseur d\'énergie allemand',
     caseText:
       'Pour un grand fournisseur d\'énergie allemand, nous avons développé la viabilité stratégique et économique d\'un nouveau domaine d\'activité dans la chaleur renouvelable – de l\'évaluation technologique aux analyses de marché jusqu\'à la communication avec les services publics municipaux.',
     caseMeta: [
       { label: 'Secteur', value: 'Énergie / Infrastructure' },
       { label: 'Durée', value: '6 mois' },
       { label: 'Format', value: 'Mandat d\'accompagnement stratégique' },
+    ],
+    case2Tag: 'SECTEUR PUBLIC · INNOVATION',
+    case2Title: 'Création d\'une Venture Client Unit\npour un organisme public',
+    case2Text:
+      'Pour un organisme public, nous avons mis en place une Venture Client Unit structurée – de la conception des processus et de la méthodologie de scouting de startups jusqu\'à l\'ancrage interne. Le résultat : un processus reproductible pour tester des partenaires d\'innovation externes dans un cadre réglementaire.',
+    case2Meta: [
+      { label: 'Secteur', value: 'Secteur public' },
+      { label: 'Durée', value: '4 mois' },
+      { label: 'Format', value: 'Mandat de création & conception de processus' },
     ],
     footnote: 'D\'autres références disponibles sur demande.',
     ctaTitle: 'Prêt pour votre prochain domaine d\'activité ?',
@@ -505,13 +532,22 @@ const es: Translations = {
     subtext:
       'Empresas líderes de la región DACH confían en Vencly para el desarrollo estratégico de nuevos campos de negocio y proyectos de Venture Clienting.',
     caseTag: 'ENERGÍA · INFRAESTRUCTURA',
-    caseTitle: 'Nuevo campo: geotermia profunda\npara un proveedor de energía alemán',
+    caseTitle: 'Nuevo campo: geotermia\npara un proveedor de energía alemán',
     caseText:
       'Para un gran proveedor de energía alemán, desarrollamos la viabilidad estratégica y económica de un nuevo campo de negocio en calor renovable – desde la evaluación tecnológica y análisis de mercado hasta la comunicación con servicios municipales.',
     caseMeta: [
       { label: 'Sector', value: 'Energía / Infraestructura' },
       { label: 'Duración', value: '6 meses' },
       { label: 'Formato', value: 'Mandato de acompañamiento estratégico' },
+    ],
+    case2Tag: 'SECTOR PÚBLICO · INNOVACIÓN',
+    case2Title: 'Creación de una Venture Client Unit\npara un organismo público',
+    case2Text:
+      'Para un organismo público, construimos una Venture Client Unit estructurada – desde el diseño de procesos y la metodología de scouting de startups hasta su implantación interna. El resultado: un proceso replicable para probar socios de innovación externos dentro de los marcos regulatorios.',
+    case2Meta: [
+      { label: 'Sector', value: 'Sector público' },
+      { label: 'Duración', value: '4 meses' },
+      { label: 'Formato', value: 'Mandato de creación y diseño de procesos' },
     ],
     footnote: 'Más referencias disponibles bajo solicitud.',
     ctaTitle: '¿Listo para tu próximo campo de negocio?',
