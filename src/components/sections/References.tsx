@@ -1,10 +1,9 @@
 'use client'
 
-import { ExternalLink } from 'lucide-react'
 import Image from 'next/image'
 import { Fragment } from 'react'
 import { useLanguage } from '@/contexts/LanguageContext'
-import { BOOKING_URL } from '@/lib/config'
+import { calButtonProps } from '@/components/layout/CalProvider'
 
 const logos = [
   { name: 'SWM', desc: 'Stadtwerke München', category: 'Energie & Versorgung', src: '/logos/swm.svg' },
@@ -91,15 +90,12 @@ export default function References() {
           <p className="text-gray-500 mb-6 text-sm">
             {t.references.ctaSubtext}
           </p>
-          <a
-            href={BOOKING_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-vencly-blue hover:bg-vencly-blue-dark text-white font-semibold px-8 py-3.5 rounded-xl transition-all blue-glow hover:scale-105"
+          <button
+            {...calButtonProps}
+            className="inline-flex items-center gap-2 bg-vencly-blue hover:bg-vencly-blue-dark text-white font-semibold px-8 py-3.5 rounded-xl transition-all blue-glow hover:scale-105 cursor-pointer"
           >
             {t.references.ctaButton}
-            <ExternalLink size={16} />
-          </a>
+          </button>
         </div>
       </div>
     </section>
