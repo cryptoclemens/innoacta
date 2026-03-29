@@ -7,6 +7,8 @@ import { calButtonProps } from '@/components/layout/CalProvider'
 
 const logos = [
   { name: 'SWM', desc: 'Stadtwerke München', category: 'Energie & Versorgung', src: '/logos/swm.svg' },
+  { name: 'RWE', desc: 'Energie & Versorgung', category: 'Energie', src: '/logos/rwe.svg' },
+  { name: 'SachsenEnergie', desc: 'Energie & Wärme', category: 'Energie & Versorgung', src: '/logos/sachsen-energie.svg' },
   { name: 'Plenum AG', desc: 'Strategie & Transformation', category: 'Beratung', src: '/logos/plenum.png' },
   { name: 'Toll Collect', desc: 'Mauterhebung Deutschland', category: 'Mobility & Infrastruktur', src: '/logos/toll-collect.svg' },
 ]
@@ -60,7 +62,7 @@ export default function References() {
         </div>
 
         {/* Logo grid */}
-        <div className="grid gap-6 sm:grid-cols-3 mb-6">
+        <div className="grid gap-6 grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 mb-6">
           {logos.map((ref) => (
             <div
               key={ref.name}
