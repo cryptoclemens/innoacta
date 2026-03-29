@@ -2,7 +2,9 @@
 
 import { ExternalLink } from 'lucide-react'
 import Image from 'next/image'
+import { Fragment } from 'react'
 import { useLanguage } from '@/contexts/LanguageContext'
+import { BOOKING_URL } from '@/lib/config'
 
 const logos = [
   { name: 'SWM', desc: 'Stadtwerke München', category: 'Energie & Versorgung', src: '/logos/swm.svg' },
@@ -48,10 +50,10 @@ export default function References() {
               </p>
               <div className="flex flex-wrap gap-4 text-xs" style={{ color: '#3A4A6A' }}>
                 {c.meta.map((m, i) => (
-                  <>
-                    {i > 0 && <span key={`sep-${i}`}>·</span>}
-                    <span key={m.label}><strong>{m.label}:</strong> {m.value}</span>
-                  </>
+                  <Fragment key={m.label}>
+                    {i > 0 && <span>·</span>}
+                    <span><strong>{m.label}:</strong> {m.value}</span>
+                  </Fragment>
                 ))}
               </div>
             </div>
@@ -90,7 +92,7 @@ export default function References() {
             {t.references.ctaSubtext}
           </p>
           <a
-            href="https://outlook.office.com/bookwithme/user/9c11749d74b349809103953c39ba26d4@vencly.com?anonymous&ep=pcard"
+            href={BOOKING_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-vencly-blue hover:bg-vencly-blue-dark text-white font-semibold px-8 py-3.5 rounded-xl transition-all blue-glow hover:scale-105"

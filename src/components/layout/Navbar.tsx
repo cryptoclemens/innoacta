@@ -7,6 +7,7 @@ import { Menu, X, ExternalLink, Sun, Moon, Monitor, ChevronDown } from 'lucide-r
 import { useTheme } from 'next-themes'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { type Locale, localeLabels } from '@/lib/i18n'
+import { BOOKING_URL, LOGIN_URL } from '@/lib/config'
 
 const locales: Locale[] = ['de', 'en', 'fr', 'es']
 
@@ -48,6 +49,8 @@ function LanguageSwitcher() {
     <div className="relative">
       <button
         onClick={() => setOpen(!open)}
+        aria-expanded={open}
+        aria-label="Language selector"
         className="flex items-center gap-1 text-xs font-mono font-semibold text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors px-2 py-1.5 rounded-lg hover:bg-gray-100 dark:hover:bg-white/10"
       >
         {localeLabels[locale]}
@@ -130,7 +133,7 @@ export default function Navbar() {
           <ThemeToggle />
           <LanguageSwitcher />
           <a
-            href="https://vencly.app/"
+            href={LOGIN_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white text-sm font-medium transition-colors px-3 py-1.5"
@@ -138,7 +141,7 @@ export default function Navbar() {
             {t.nav.login}
           </a>
           <a
-            href="https://outlook.office.com/bookwithme/user/9c11749d74b349809103953c39ba26d4@vencly.com?anonymous&ep=pcard"
+            href={BOOKING_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-1.5 bg-vencly-blue hover:bg-vencly-blue-dark text-white text-sm font-semibold px-4 py-2 rounded-lg transition-colors"
@@ -152,7 +155,8 @@ export default function Navbar() {
         <button
           className="md:hidden text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors"
           onClick={() => setMenuOpen(!menuOpen)}
-          aria-label="Menü öffnen"
+          aria-label={menuOpen ? 'Menü schließen' : 'Menü öffnen'}
+          aria-expanded={menuOpen}
         >
           {menuOpen ? <X size={22} /> : <Menu size={22} />}
         </button>
@@ -178,7 +182,7 @@ export default function Navbar() {
             </div>
             <div className="flex flex-col gap-2">
               <a
-                href="https://vencly.app/"
+                href={LOGIN_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white text-sm font-medium transition-colors py-1"
@@ -186,7 +190,7 @@ export default function Navbar() {
                 {t.nav.login}
               </a>
               <a
-                href="https://outlook.office.com/bookwithme/user/9c11749d74b349809103953c39ba26d4@vencly.com?anonymous&ep=pcard"
+                href={BOOKING_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-1.5 bg-vencly-blue hover:bg-vencly-blue-dark text-white text-sm font-semibold px-4 py-2.5 rounded-lg transition-colors"

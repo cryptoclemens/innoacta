@@ -2,6 +2,7 @@
 
 import { ExternalLink, ChevronDown } from 'lucide-react'
 import { useLanguage } from '@/contexts/LanguageContext'
+import { BOOKING_URL } from '@/lib/config'
 
 export default function Hero() {
   const { t } = useLanguage()
@@ -40,7 +41,7 @@ export default function Hero() {
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
-            href="https://outlook.office.com/bookwithme/user/9c11749d74b349809103953c39ba26d4@vencly.com?anonymous&ep=pcard"
+            href={BOOKING_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-vencly-blue hover:bg-vencly-blue-dark text-white font-semibold px-8 py-3.5 rounded-xl transition-all blue-glow hover:scale-105 text-base"
