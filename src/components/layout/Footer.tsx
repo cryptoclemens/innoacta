@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { useLanguage } from '@/contexts/LanguageContext'
 
 export default function Footer() {
@@ -12,11 +13,14 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {/* Brand */}
           <div>
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-7 h-7 bg-vencly-teal rounded-md flex items-center justify-center">
-                <span className="text-white font-bold text-xs">V</span>
-              </div>
-              <span className="text-gray-900 dark:text-white font-bold">Vencly</span>
+            <div className="mb-4">
+              <Image
+                src="/logovencly.svg"
+                alt="Vencly"
+                width={120}
+                height={36}
+                className="h-9 w-auto dark:invert"
+              />
             </div>
             <p className="text-gray-500 text-sm leading-relaxed">
               {t.footer.tagline}
