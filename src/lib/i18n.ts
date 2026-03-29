@@ -19,10 +19,10 @@ const de = {
   },
   hero: {
     eyebrow: 'Strategische Geschäftsfeldentwicklung',
-    h1: 'Neue Geschäftsfelder entwickeln –',
-    h1Highlight: 'bevor es andere tun.',
+    h1: 'Gründer-Denken für',
+    h1Highlight: 'Ihr nächstes Geschäftsfeld.',
     subline:
-      'Vencly begleitet Konzerne und den Mittelstand dabei, neue Märkte zu identifizieren, zu bewerten und operativ zu erschließen. Kein Konzept-Karussell. Kein Innovations-Theater. Sondern ein Partner, der selbst Unternehmer ist.',
+      'Wir bringen Startup-Logik in Ihr nächstes Geschäftsfeld. Denn Startups bauen neue Märkte, indem sie schnell testen, klug einkaufen und radikal fokussiert bleiben. Vencly überträgt genau diese Logik auf Konzerne und den Mittelstand.',
     ctaPrimary: 'Erstgespräch vereinbaren',
     ctaSecondary: 'Referenzprojekte ansehen',
     stats: [
@@ -33,26 +33,26 @@ const de = {
   },
   valueProp: {
     label: 'Was Vencly einbringt',
-    h2: 'Fünf Leistungsfelder –',
-    h2Highlight: 'eine Umsetzungslogik',
+    h2: 'Denken wie ein Startup.',
+    h2Highlight: 'Handeln wie ein Marktführer.',
     intro:
-      'Wir begleiten Unternehmen von der Potenzialanalyse bis zur operativen Erschließung neuer Geschäftsfelder – mit unternehmerischem Blick und erprobter Methodik.',
+      'Neue Geschäftsfelder bauen – so wie Gründer es tun: mit minimalem Overhead, maximaler Geschwindigkeit und dem Mut, schnell zu entscheiden. Vencly bringt diese Haltung in Ihren Konzern oder Ihr mittelständisches Unternehmen.',
     items: [
       {
-        title: 'Geschäftsfeldentwicklung',
-        desc: 'Neue Märkte identifizieren, Geschäftsmodelle validieren, Markterprobung begleiten – von der Hypothese zum tragfähigen Modell.',
+        title: 'Validieren statt planen',
+        desc: 'Kein monatelanger Strategieprozess. Wir testen Geschäftsfeld-Hypothesen schnell am Markt – mit echten Daten, echten Kunden, echten Ergebnissen.',
       },
       {
-        title: 'Venture Clienting',
-        desc: 'Externe Innovationspartner gezielt einbinden: Startup-Scouting, strukturierte Pilotprojekte, klarer Entscheidungspunkt nach 90 Tagen.',
+        title: 'Klug einkaufen statt alles selbst bauen',
+        desc: 'Startups kaufen den besten Anbieter am Markt, um schnell zu launchen. Genau das ist Venture Clienting – und genau das bringen wir in Ihr Unternehmen.',
       },
       {
-        title: 'Strategische Umsetzung',
-        desc: 'Projektsteuerung, Stakeholder-Management und Workshop-Formate für Vorhaben, die intern keine Heimat haben.',
+        title: 'Von der Idee zum Markt – in Startup-Geschwindigkeit',
+        desc: 'Keine endlosen Abstimmungsschleifen. Vencly übernimmt operative Verantwortung und liefert – schnell, messbar, mit echtem Impact.',
       },
       {
-        title: 'Funktioniert in regulierten Branchen',
-        desc: 'Energie, Infrastruktur, öffentliche Hand: Wir kennen die Rahmenbedingungen – und arbeiten innerhalb davon.',
+        title: 'Funktioniert auch in regulierten Branchen',
+        desc: 'Energie, Infrastruktur, öffentliche Hand: Startup-Logik kennt keine Branchengrenzen – wenn man weiß, wie man sie anpasst.',
       },
       {
         title: 'Ehrlichkeit über Machbarkeit',
@@ -62,24 +62,24 @@ const de = {
   },
   features: {
     label: 'Leistungen',
-    h2: 'Unsere Leistungsfelder',
+    h2: 'Drei Felder – eine Logik.',
     subtext:
-      'Von der strategischen Analyse bis zur operativen Umsetzung – Vencly übernimmt Verantwortung über den gesamten Entwicklungsprozess.',
+      'Alle unsere Leistungen folgen derselben Startup-Logik: erst verstehen, dann testen, dann skalieren – nie umgekehrt.',
     items: [
       {
         title: 'Geschäftsfeldentwicklung',
-        desc: 'Neue Märkte, neue Technologien, neue Wertschöpfung – von der Potenzialanalyse über das Geschäftsmodell bis zur Markterprobung. Für Konzerne, die diversifizieren wollen, und Mittelständler, die den nächsten Wachstumsschritt planen.',
+        desc: 'Neue Märkte identifizieren, Geschäftsmodelle entwickeln, Markterprobung begleiten – von der ersten Hypothese bis zum validierten Modell.',
         points: ['Markt- & Technologiebewertung', 'Geschäftsmodell-Entwicklung', 'Validierung & Markterprobung'],
       },
       {
-        title: 'Venture Clienting & Startup-Integration',
-        desc: 'Externe Innovationspartner gezielt einbinden: Startup-Scouting, strukturierte Pilotprojekte, Lieferantenqualifizierung. Schnell, risikokontrolliert, mit klarem Entscheidungspunkt.',
-        points: ['Startup-Scouting & Matching', 'Strukturierte Pilotprojekte (90 Tage)', 'Lieferantenqualifizierung'],
+        title: 'Venture Clienting',
+        desc: 'Externe Innovationspartner so einbinden wie ein Startup seinen ersten Dienstleister wählt: gezielt, schnell, mit klarem Testauftrag. Startup-Scouting, strukturierte Pilotprojekte, Entscheidung nach 90 Tagen.',
+        points: ['Startup-Scouting & Matching', 'Strukturierte Pilotprojekte', 'Lieferantenqualifizierung'],
       },
       {
-        title: 'Strategische Begleitung & Umsetzung',
-        desc: 'Nicht Strategie statt Umsetzung – sondern beides. Vencly übernimmt operative Verantwortung in Projekten, die intern keine Heimat haben.',
-        points: ['Projektsteuerung & Reporting', 'Stakeholder-Management', 'Workshop-Formate & Entscheidungsvorlagen'],
+        title: 'Strategische Umsetzung',
+        desc: 'Nicht Strategie statt Umsetzung – sondern beides. Vencly übernimmt operative Verantwortung in Projekten, die intern keine Heimat haben: Projektsteuerung, Stakeholder-Management, Entscheidungsvorlagen.',
+        points: ['Projektsteuerung & Reporting', 'Stakeholder-Management', 'Workshop-Formate'],
       },
     ],
   },
@@ -91,11 +91,11 @@ const de = {
     items: [
       {
         title: 'Unternehmerische Perspektive, keine Berater-Distanz',
-        desc: 'Vencly wird von einem Gründer geführt, der selbst Unternehmen aufgebaut, gescheitert und erfolgreich repositioniert hat. Das prägt den Blick auf Ihre Situation.',
+        desc: 'Vencly wird von einem Gründer geführt, der selbst Unternehmen aufgebaut, Märkte erschlossen und Iterationen durchlebt hat. Das prägt den Blick auf Ihre Situation – und auf das, was wirklich umsetzbar ist.',
       },
       {
         title: 'Methode trifft Erfahrung',
-        desc: 'Über 40 realisierte Venture-Client-Projekte, Transformationsarbeit in der Energie- und Infrastrukturbranche, Aufbau von Innovationsstrukturen in Konzernen und Kommunen. Keine generische Toolbox.',
+        desc: 'Über 40 realisierte Venture-Client-Projekte, Geschäftsfeldentwicklung in der Energie- und Infrastrukturbranche, Innovationsstrukturen für Konzerne und Kommunen. Keine generische Toolbox – sondern erprobte Praxis.',
       },
       {
         title: 'Ehrlichkeit über Machbarkeit',
@@ -105,7 +105,7 @@ const de = {
   },
   references: {
     label: 'Referenzen',
-    h2: 'Aus der Praxis',
+    h2: 'Aus der Praxis.',
     subtext:
       'Namhafte Unternehmen aus der DACH-Region vertrauen auf Vencly für strategische Geschäftsfeldentwicklung und Venture-Clienting-Projekte.',
     caseTag: 'ENERGIE · INFRASTRUKTUR',
@@ -119,7 +119,7 @@ const de = {
     ],
     footnote: 'Weitere Referenzen auf Anfrage.',
     ctaTitle: 'Bereit für das nächste Geschäftsfeld?',
-    ctaSubtext: 'Starten Sie mit einem unverbindlichen Erstgespräch.',
+    ctaSubtext: 'Starten Sie mit einem unverbindlichen Erstgespräch. Kein Pitch-Deck erforderlich.',
     ctaButton: 'Jetzt Termin vereinbaren',
   },
   factsheet: {
@@ -132,7 +132,7 @@ const de = {
   },
   footer: {
     tagline:
-      'Vencly begleitet Unternehmen dabei, neue Geschäftsfelder zu entwickeln und zu erschließen – mit unternehmerischem Blick, erprobter Methodik und echter Umsetzungsverantwortung.',
+      'Vencly bringt Gründer-Denken in neue Geschäftsfelder – für Konzerne und den Mittelstand, die schneller handeln wollen als ihre Konkurrenz.',
     navLabel: 'Navigation',
     legalLabel: 'Rechtliches',
     impressum: 'Impressum',
@@ -151,10 +151,10 @@ const en: Translations = {
   },
   hero: {
     eyebrow: 'Strategic Business Field Development',
-    h1: 'Develop new business fields –',
-    h1Highlight: 'before others do.',
+    h1: 'Founder Thinking for',
+    h1Highlight: 'Your Next Business Field.',
     subline:
-      'Vencly guides corporations and mid-sized companies in identifying, evaluating and operationally developing new markets. No concept carousel. No innovation theatre. Just a partner who is an entrepreneur themselves.',
+      'We bring startup logic to your next business field. Startups build new markets by testing fast, buying smart and staying radically focused. Vencly transfers exactly this logic to corporations and mid-sized companies.',
     ctaPrimary: 'Schedule a Call',
     ctaSecondary: 'View Reference Projects',
     stats: [
@@ -165,26 +165,26 @@ const en: Translations = {
   },
   valueProp: {
     label: 'What Vencly brings',
-    h2: 'Five service areas –',
-    h2Highlight: 'one execution logic',
+    h2: 'Think like a startup.',
+    h2Highlight: 'Act like a market leader.',
     intro:
-      'We accompany companies from potential analysis to the operational development of new business fields – with an entrepreneurial perspective and proven methodology.',
+      'Building new business fields – the way founders do it: with minimal overhead, maximum speed and the courage to decide quickly. Vencly brings this mindset to your corporation or mid-sized company.',
     items: [
       {
-        title: 'Business Field Development',
-        desc: 'Identify new markets, validate business models, accompany market testing – from hypothesis to viable model.',
+        title: 'Validate instead of plan',
+        desc: 'No months-long strategy process. We test business field hypotheses fast in the market – with real data, real customers, real results.',
       },
       {
-        title: 'Venture Clienting',
-        desc: 'Integrate external innovation partners strategically: startup scouting, structured pilot projects, clear decision point after 90 days.',
+        title: 'Buy smart instead of building everything yourself',
+        desc: 'Startups buy the best provider in the market to launch fast. That\'s exactly what Venture Clienting is – and exactly what we bring to your company.',
       },
       {
-        title: 'Strategic Execution',
-        desc: 'Project management, stakeholder management and workshop formats for initiatives that have no internal home.',
+        title: 'From idea to market – at startup speed',
+        desc: 'No endless coordination loops. Vencly takes operational responsibility and delivers – fast, measurable, with real impact.',
       },
       {
-        title: 'Works in regulated industries',
-        desc: 'Energy, infrastructure, public sector: we know the regulatory framework – and operate within it.',
+        title: 'Works in regulated industries too',
+        desc: 'Energy, infrastructure, public sector: startup logic knows no industry boundaries – if you know how to adapt it.',
       },
       {
         title: 'Honest about feasibility',
@@ -194,24 +194,24 @@ const en: Translations = {
   },
   features: {
     label: 'Services',
-    h2: 'Our Service Areas',
+    h2: 'Three fields – one logic.',
     subtext:
-      'From strategic analysis to operational execution – Vencly takes responsibility throughout the entire development process.',
+      'All our services follow the same startup logic: first understand, then test, then scale – never the other way around.',
     items: [
       {
         title: 'Business Field Development',
-        desc: 'New markets, new technologies, new value creation – from potential analysis through the business model to market testing. For corporations looking to diversify and mid-sized companies planning their next growth step.',
+        desc: 'Identify new markets, develop business models, accompany market testing – from the first hypothesis to the validated model.',
         points: ['Market & technology assessment', 'Business model development', 'Validation & market testing'],
       },
       {
-        title: 'Venture Clienting & Startup Integration',
-        desc: 'Integrate external innovation partners strategically: startup scouting, structured pilot projects, supplier qualification. Fast, risk-controlled, with a clear decision point.',
-        points: ['Startup scouting & matching', 'Structured pilot projects (90 days)', 'Supplier qualification'],
+        title: 'Venture Clienting',
+        desc: 'Integrate external innovation partners the way a startup chooses its first service provider: targeted, fast, with a clear test mandate. Startup scouting, structured pilot projects, decision after 90 days.',
+        points: ['Startup scouting & matching', 'Structured pilot projects', 'Supplier qualification'],
       },
       {
-        title: 'Strategic Coaching & Execution',
-        desc: 'Not strategy instead of execution – but both. Vencly takes operational responsibility for projects that have no internal home.',
-        points: ['Project management & reporting', 'Stakeholder management', 'Workshop formats & decision papers'],
+        title: 'Strategic Execution',
+        desc: 'Not strategy instead of execution – but both. Vencly takes operational responsibility for projects that have no internal home: project management, stakeholder management, decision papers.',
+        points: ['Project management & reporting', 'Stakeholder management', 'Workshop formats'],
       },
     ],
   },
@@ -223,11 +223,11 @@ const en: Translations = {
     items: [
       {
         title: 'Entrepreneurial perspective, not consultant distance',
-        desc: 'Vencly is led by a founder who has built companies themselves, failed and successfully repositioned. That shapes the view of your situation.',
+        desc: 'Vencly is led by a founder who has built companies, opened markets and lived through iterations. That shapes the view of your situation – and what is really achievable.',
       },
       {
         title: 'Method meets experience',
-        desc: 'Over 40 completed venture client projects, transformation work in the energy and infrastructure sector, building innovation structures in corporations and municipalities. No generic toolbox.',
+        desc: 'Over 40 completed venture client projects, business field development in the energy and infrastructure sector, innovation structures for corporations and municipalities. No generic toolbox – proven practice.',
       },
       {
         title: 'Honest about feasibility',
@@ -237,7 +237,7 @@ const en: Translations = {
   },
   references: {
     label: 'References',
-    h2: 'From the Field',
+    h2: 'From the Field.',
     subtext:
       'Leading companies from the DACH region trust Vencly for strategic business field development and venture clienting projects.',
     caseTag: 'ENERGY · INFRASTRUCTURE',
@@ -251,7 +251,7 @@ const en: Translations = {
     ],
     footnote: 'Further references available on request.',
     ctaTitle: 'Ready for your next business field?',
-    ctaSubtext: 'Start with a no-obligation introductory call.',
+    ctaSubtext: 'Start with a no-obligation introductory call. No pitch deck required.',
     ctaButton: 'Schedule a Meeting',
   },
   factsheet: {
@@ -264,7 +264,7 @@ const en: Translations = {
   },
   footer: {
     tagline:
-      'Vencly helps companies develop and open up new business fields – with an entrepreneurial perspective, proven methodology and genuine implementation responsibility.',
+      'Vencly brings founder thinking to new business fields – for corporations and mid-sized companies that want to act faster than their competition.',
     navLabel: 'Navigation',
     legalLabel: 'Legal',
     impressum: 'Legal Notice',
@@ -283,10 +283,10 @@ const fr: Translations = {
   },
   hero: {
     eyebrow: 'Développement stratégique de nouveaux marchés',
-    h1: 'Développez de nouveaux marchés –',
-    h1Highlight: 'avant que d\'autres ne le fassent.',
+    h1: 'La pensée entrepreneuriale pour',
+    h1Highlight: 'votre prochain domaine.',
     subline:
-      'Vencly accompagne les grandes entreprises et les PME dans l\'identification, l\'évaluation et le développement opérationnel de nouveaux marchés. Pas de carrousel de concepts. Pas de théâtre de l\'innovation. Un partenaire qui est lui-même entrepreneur.',
+      'Nous apportons la logique des startups à votre prochain domaine d\'activité. Les startups construisent de nouveaux marchés en testant vite, en achetant intelligemment et en restant radicalement focalisées. Vencly transfère exactement cette logique aux grandes entreprises et aux PME.',
     ctaPrimary: 'Prendre rendez-vous',
     ctaSecondary: 'Voir les projets de référence',
     stats: [
@@ -297,26 +297,26 @@ const fr: Translations = {
   },
   valueProp: {
     label: 'Ce que Vencly apporte',
-    h2: 'Cinq domaines de service –',
-    h2Highlight: 'une logique d\'exécution',
+    h2: 'Penser comme une startup.',
+    h2Highlight: 'Agir comme un leader du marché.',
     intro:
-      'Nous accompagnons les entreprises de l\'analyse du potentiel jusqu\'au développement opérationnel de nouveaux domaines d\'activité – avec une vision entrepreneuriale et une méthodologie éprouvée.',
+      'Construire de nouveaux domaines d\'activité – comme le font les fondateurs : avec un minimum de surcharge, une vitesse maximale et le courage de décider rapidement. Vencly apporte cette mentalité à votre groupe ou votre PME.',
     items: [
       {
-        title: 'Développement de nouveaux marchés',
-        desc: 'Identifier de nouveaux marchés, valider des modèles économiques, accompagner les tests de marché – de l\'hypothèse au modèle viable.',
+        title: 'Valider plutôt que planifier',
+        desc: 'Pas de processus stratégique de plusieurs mois. Nous testons rapidement les hypothèses de domaines d\'activité sur le marché – avec de vraies données, de vrais clients, de vrais résultats.',
       },
       {
-        title: 'Venture Clienting',
-        desc: 'Intégrer stratégiquement des partenaires d\'innovation externes : scouting de startups, projets pilotes structurés, point de décision clair après 90 jours.',
+        title: 'Acheter intelligemment plutôt que tout construire soi-même',
+        desc: 'Les startups achètent le meilleur fournisseur du marché pour lancer rapidement. C\'est exactement ce qu\'est le Venture Clienting – et c\'est exactement ce que nous apportons à votre entreprise.',
       },
       {
-        title: 'Exécution stratégique',
-        desc: 'Gestion de projet, gestion des parties prenantes et formats d\'ateliers pour les initiatives sans foyer interne.',
+        title: 'De l\'idée au marché – à la vitesse d\'une startup',
+        desc: 'Pas de boucles de coordination interminables. Vencly prend la responsabilité opérationnelle et livre – vite, de façon mesurable, avec un vrai impact.',
       },
       {
-        title: 'Adapté aux secteurs réglementés',
-        desc: 'Énergie, infrastructures, secteur public : nous connaissons le cadre réglementaire – et travaillons à l\'intérieur.',
+        title: 'Fonctionne aussi dans les secteurs réglementés',
+        desc: 'Énergie, infrastructures, secteur public : la logique startup ne connaît pas de frontières sectorielles – si on sait comment l\'adapter.',
       },
       {
         title: 'Honnêteté sur la faisabilité',
@@ -326,24 +326,24 @@ const fr: Translations = {
   },
   features: {
     label: 'Services',
-    h2: 'Nos domaines de service',
+    h2: 'Trois domaines – une logique.',
     subtext:
-      'De l\'analyse stratégique à l\'exécution opérationnelle – Vencly prend en charge l\'ensemble du processus de développement.',
+      'Tous nos services suivent la même logique startup : d\'abord comprendre, puis tester, puis scaler – jamais dans l\'autre sens.',
     items: [
       {
         title: 'Développement de nouveaux marchés',
-        desc: 'Nouveaux marchés, nouvelles technologies, nouvelle création de valeur – de l\'analyse du potentiel au modèle économique jusqu\'aux tests de marché. Pour les groupes qui souhaitent se diversifier et les PME qui planifient leur prochaine étape de croissance.',
+        desc: 'Identifier de nouveaux marchés, développer des modèles économiques, accompagner les tests de marché – de la première hypothèse au modèle validé.',
         points: ['Évaluation marché & technologie', 'Développement du modèle économique', 'Validation & tests de marché'],
       },
       {
-        title: 'Venture Clienting & intégration de startups',
-        desc: 'Intégrer stratégiquement des partenaires d\'innovation externes : scouting de startups, projets pilotes structurés, qualification des fournisseurs. Rapide, contrôlé en termes de risques, avec un point de décision clair.',
-        points: ['Scouting & matching de startups', 'Projets pilotes structurés (90 jours)', 'Qualification des fournisseurs'],
+        title: 'Venture Clienting',
+        desc: 'Intégrer des partenaires d\'innovation externes comme une startup choisit son premier prestataire : de façon ciblée, rapide, avec un mandat de test clair. Scouting de startups, projets pilotes structurés, décision après 90 jours.',
+        points: ['Scouting & matching de startups', 'Projets pilotes structurés', 'Qualification des fournisseurs'],
       },
       {
-        title: 'Accompagnement stratégique & exécution',
-        desc: 'Pas la stratégie au lieu de l\'exécution – mais les deux. Vencly prend la responsabilité opérationnelle de projets qui n\'ont pas de foyer interne.',
-        points: ['Gestion de projet & reporting', 'Gestion des parties prenantes', 'Ateliers & documents de décision'],
+        title: 'Exécution stratégique',
+        desc: 'Pas la stratégie au lieu de l\'exécution – mais les deux. Vencly prend la responsabilité opérationnelle de projets qui n\'ont pas de foyer interne : gestion de projet, gestion des parties prenantes, documents de décision.',
+        points: ['Gestion de projet & reporting', 'Gestion des parties prenantes', 'Ateliers & formats de décision'],
       },
     ],
   },
@@ -355,11 +355,11 @@ const fr: Translations = {
     items: [
       {
         title: 'Perspective entrepreneuriale, pas de distance de consultant',
-        desc: 'Vencly est dirigé par un fondateur qui a lui-même créé des entreprises, échoué et réussi à se repositionner. Cela façonne le regard porté sur votre situation.',
+        desc: 'Vencly est dirigé par un fondateur qui a lui-même créé des entreprises, ouvert des marchés et vécu des itérations. Cela façonne le regard porté sur votre situation – et sur ce qui est vraiment réalisable.',
       },
       {
         title: 'Méthode et expérience réunies',
-        desc: 'Plus de 40 projets de Venture Clienting réalisés, travail de transformation dans le secteur de l\'énergie et des infrastructures, construction de structures d\'innovation dans des groupes et des communes. Pas de boîte à outils générique.',
+        desc: 'Plus de 40 projets de Venture Clienting réalisés, développement de domaines d\'activité dans le secteur de l\'énergie et des infrastructures, structures d\'innovation pour des groupes et des communes. Pas de boîte à outils générique – de la pratique éprouvée.',
       },
       {
         title: 'Honnêteté sur la faisabilité',
@@ -369,7 +369,7 @@ const fr: Translations = {
   },
   references: {
     label: 'Références',
-    h2: 'Du terrain',
+    h2: 'Du terrain.',
     subtext:
       'Des entreprises de premier plan de la région DACH font confiance à Vencly pour le développement stratégique de nouveaux domaines d\'activité et les projets de Venture Clienting.',
     caseTag: 'ÉNERGIE · INFRASTRUCTURE',
@@ -383,7 +383,7 @@ const fr: Translations = {
     ],
     footnote: 'D\'autres références disponibles sur demande.',
     ctaTitle: 'Prêt pour votre prochain domaine d\'activité ?',
-    ctaSubtext: 'Commencez par un entretien préliminaire sans engagement.',
+    ctaSubtext: 'Commencez par un entretien préliminaire sans engagement. Aucun pitch deck requis.',
     ctaButton: 'Prendre rendez-vous',
   },
   factsheet: {
@@ -396,7 +396,7 @@ const fr: Translations = {
   },
   footer: {
     tagline:
-      'Vencly aide les entreprises à développer et à explorer de nouveaux domaines d\'activité – avec une vision entrepreneuriale, une méthodologie éprouvée et une vraie responsabilité d\'exécution.',
+      'Vencly apporte la pensée entrepreneuriale aux nouveaux domaines d\'activité – pour les grandes entreprises et les PME qui veulent agir plus vite que leur concurrence.',
     navLabel: 'Navigation',
     legalLabel: 'Mentions légales',
     impressum: 'Mentions légales',
@@ -415,10 +415,10 @@ const es: Translations = {
   },
   hero: {
     eyebrow: 'Desarrollo estratégico de nuevos mercados',
-    h1: 'Desarrolla nuevos mercados –',
-    h1Highlight: 'antes que los demás.',
+    h1: 'Pensamiento emprendedor para',
+    h1Highlight: 'tu próximo campo de negocio.',
     subline:
-      'Vencly acompaña a grandes empresas y pymes en la identificación, evaluación y desarrollo operativo de nuevos mercados. Sin carrusel de conceptos. Sin teatro de innovación. Un socio que es él mismo empresario.',
+      'Traemos la lógica de las startups a tu próximo campo de negocio. Las startups construyen nuevos mercados probando rápido, comprando con inteligencia y manteniéndose radicalmente enfocadas. Vencly transfiere exactamente esta lógica a grandes empresas y pymes.',
     ctaPrimary: 'Concertar una cita',
     ctaSecondary: 'Ver proyectos de referencia',
     stats: [
@@ -429,26 +429,26 @@ const es: Translations = {
   },
   valueProp: {
     label: 'Lo que aporta Vencly',
-    h2: 'Cinco áreas de servicio –',
-    h2Highlight: 'una lógica de ejecución',
+    h2: 'Pensar como una startup.',
+    h2Highlight: 'Actuar como líder del mercado.',
     intro:
-      'Acompañamos a las empresas desde el análisis de potencial hasta el desarrollo operativo de nuevos campos de negocio – con una perspectiva emprendedora y una metodología probada.',
+      'Construir nuevos campos de negocio – como lo hacen los fundadores: con mínimos costes generales, máxima velocidad y el coraje de decidir rápido. Vencly trae esta mentalidad a tu empresa o grupo.',
     items: [
       {
-        title: 'Desarrollo de nuevos mercados',
-        desc: 'Identificar nuevos mercados, validar modelos de negocio, acompañar pruebas de mercado – desde la hipótesis al modelo viable.',
+        title: 'Validar en lugar de planificar',
+        desc: 'Sin procesos estratégicos de meses. Probamos hipótesis de campos de negocio rápidamente en el mercado – con datos reales, clientes reales, resultados reales.',
       },
       {
-        title: 'Venture Clienting',
-        desc: 'Integrar socios de innovación externos de forma estratégica: scouting de startups, proyectos piloto estructurados, punto de decisión claro tras 90 días.',
+        title: 'Comprar con inteligencia en lugar de construirlo todo',
+        desc: 'Las startups compran al mejor proveedor del mercado para lanzarse rápido. Eso es exactamente el Venture Clienting – y eso es exactamente lo que traemos a tu empresa.',
       },
       {
-        title: 'Ejecución estratégica',
-        desc: 'Gestión de proyectos, gestión de partes interesadas y formatos de taller para iniciativas que no tienen hogar interno.',
+        title: 'De la idea al mercado – a velocidad startup',
+        desc: 'Sin bucles de coordinación interminables. Vencly asume la responsabilidad operativa y entrega – rápido, medible, con impacto real.',
       },
       {
-        title: 'Funciona en sectores regulados',
-        desc: 'Energía, infraestructuras, sector público: conocemos el marco regulatorio – y trabajamos dentro de él.',
+        title: 'Funciona también en sectores regulados',
+        desc: 'Energía, infraestructuras, sector público: la lógica startup no conoce fronteras sectoriales – si sabes cómo adaptarla.',
       },
       {
         title: 'Honestidad sobre la viabilidad',
@@ -458,24 +458,24 @@ const es: Translations = {
   },
   features: {
     label: 'Servicios',
-    h2: 'Nuestras áreas de servicio',
+    h2: 'Tres áreas – una lógica.',
     subtext:
-      'Del análisis estratégico a la ejecución operativa – Vencly asume la responsabilidad a lo largo de todo el proceso de desarrollo.',
+      'Todos nuestros servicios siguen la misma lógica startup: primero entender, luego probar, luego escalar – nunca al revés.',
     items: [
       {
         title: 'Desarrollo de nuevos mercados',
-        desc: 'Nuevos mercados, nuevas tecnologías, nueva creación de valor – del análisis de potencial al modelo de negocio y las pruebas de mercado. Para grupos que quieren diversificarse y pymes que planifican su próximo paso de crecimiento.',
+        desc: 'Identificar nuevos mercados, desarrollar modelos de negocio, acompañar pruebas de mercado – desde la primera hipótesis hasta el modelo validado.',
         points: ['Evaluación de mercado y tecnología', 'Desarrollo del modelo de negocio', 'Validación y pruebas de mercado'],
       },
       {
-        title: 'Venture Clienting e integración de startups',
-        desc: 'Integrar socios de innovación externos de forma estratégica: scouting de startups, proyectos piloto estructurados, cualificación de proveedores. Rápido, con riesgo controlado y un punto de decisión claro.',
-        points: ['Scouting y matching de startups', 'Proyectos piloto estructurados (90 días)', 'Cualificación de proveedores'],
+        title: 'Venture Clienting',
+        desc: 'Integrar socios de innovación externos como una startup elige a su primer proveedor: de forma selectiva, rápida, con un mandato de prueba claro. Scouting de startups, proyectos piloto estructurados, decisión tras 90 días.',
+        points: ['Scouting y matching de startups', 'Proyectos piloto estructurados', 'Cualificación de proveedores'],
       },
       {
-        title: 'Acompañamiento estratégico y ejecución',
-        desc: 'No estrategia en lugar de ejecución – sino ambas. Vencly asume la responsabilidad operativa en proyectos que no tienen hogar interno.',
-        points: ['Gestión de proyectos y reporting', 'Gestión de partes interesadas', 'Talleres y documentos de decisión'],
+        title: 'Ejecución estratégica',
+        desc: 'No estrategia en lugar de ejecución – sino ambas. Vencly asume la responsabilidad operativa en proyectos que no tienen hogar interno: gestión de proyectos, gestión de partes interesadas, documentos de decisión.',
+        points: ['Gestión de proyectos y reporting', 'Gestión de partes interesadas', 'Talleres y formatos de decisión'],
       },
     ],
   },
@@ -487,11 +487,11 @@ const es: Translations = {
     items: [
       {
         title: 'Perspectiva emprendedora, no distancia de consultor',
-        desc: 'Vencly está liderado por un fundador que ha construido empresas, fracasado y reposicionado con éxito. Eso moldea la visión de tu situación.',
+        desc: 'Vencly está liderado por un fundador que ha construido empresas, abierto mercados y vivido iteraciones. Eso moldea la visión de tu situación – y de lo que es realmente alcanzable.',
       },
       {
         title: 'Método y experiencia juntos',
-        desc: 'Más de 40 proyectos de Venture Clienting realizados, trabajo de transformación en el sector energético e infraestructuras, creación de estructuras de innovación en corporaciones y municipios. Sin caja de herramientas genérica.',
+        desc: 'Más de 40 proyectos de Venture Clienting realizados, desarrollo de campos de negocio en el sector energético e infraestructuras, estructuras de innovación para corporaciones y municipios. Sin caja de herramientas genérica – práctica demostrada.',
       },
       {
         title: 'Honestidad sobre la viabilidad',
@@ -501,7 +501,7 @@ const es: Translations = {
   },
   references: {
     label: 'Referencias',
-    h2: 'De la práctica',
+    h2: 'De la práctica.',
     subtext:
       'Empresas líderes de la región DACH confían en Vencly para el desarrollo estratégico de nuevos campos de negocio y proyectos de Venture Clienting.',
     caseTag: 'ENERGÍA · INFRAESTRUCTURA',
@@ -515,7 +515,7 @@ const es: Translations = {
     ],
     footnote: 'Más referencias disponibles bajo solicitud.',
     ctaTitle: '¿Listo para tu próximo campo de negocio?',
-    ctaSubtext: 'Empieza con una primera conversación sin compromiso.',
+    ctaSubtext: 'Empieza con una primera conversación sin compromiso. No se necesita pitch deck.',
     ctaButton: 'Reservar una cita',
   },
   factsheet: {
@@ -528,7 +528,7 @@ const es: Translations = {
   },
   footer: {
     tagline:
-      'Vencly acompaña a las empresas en el desarrollo y la apertura de nuevos campos de negocio – con perspectiva emprendedora, metodología probada y verdadera responsabilidad de ejecución.',
+      'Vencly lleva el pensamiento emprendedor a nuevos campos de negocio – para empresas y pymes que quieren actuar más rápido que su competencia.',
     navLabel: 'Navegación',
     legalLabel: 'Legal',
     impressum: 'Aviso legal',
