@@ -74,7 +74,7 @@ export default function VentureClientingPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <div className="min-h-screen bg-vencly-bg pt-24 pb-20">
+      <div className="min-h-screen bg-[#F8F7F4] dark:bg-vencly-bg pt-24 pb-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
 
           {/* Hero */}
@@ -82,18 +82,18 @@ export default function VentureClientingPage() {
             <span className="inline-block text-vencly-teal text-sm font-mono tracking-widest uppercase mb-4">
               Leistung
             </span>
-            <h1 className="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">
+            <h1 className="text-3xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6 leading-tight">
               Venture Clienting –{' '}
               <span className="text-vencly-teal">die smartere Art</span>, externe Innovation einzukaufen.
             </h1>
-            <p className="text-gray-400 text-lg max-w-2xl leading-relaxed mb-8">
+            <p className="text-gray-600 dark:text-gray-400 text-lg max-w-2xl leading-relaxed mb-8">
               Etablierte Unternehmen kämpfen mit demselben Problem: Der Markt bewegt sich schnell,
               aber der eigene Innovationsprozess nicht. Venture Clienting löst das – indem Sie externe
               Anbieter so einbinden, wie ein Startup seinen ersten strategischen Partner wählt:
               gezielt, schnell, mit klarem Testauftrag.
             </p>
-            <blockquote className="border-l-4 border-vencly-teal pl-6 py-2 my-8 bg-vencly-card rounded-r-xl">
-              <p className="text-white text-xl font-semibold leading-snug">
+            <blockquote className="border-l-4 border-vencly-teal pl-6 py-2 my-8 bg-gray-100 dark:bg-vencly-card rounded-r-xl">
+              <p className="text-gray-900 dark:text-white text-xl font-semibold leading-snug">
                 „Am Ende interessiert die beste Lösung<br className="hidden sm:block" /> für die eigene Herausforderung –<br className="hidden sm:block" /> nicht die coolste Entität."
               </p>
             </blockquote>
@@ -101,24 +101,24 @@ export default function VentureClientingPage() {
 
           {/* USP: Not just startups */}
           <section className="mb-20">
-            <h2 className="text-2xl font-bold text-white mb-3">
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">
               Wir suchen überall. Nicht nur bei Startups.
             </h2>
-            <p className="text-gray-400 mb-8 max-w-2xl">
+            <p className="text-gray-600 dark:text-gray-400 mb-8 max-w-2xl">
               Die meisten Venture-Clienting-Ansätze fokussieren sich auf Startups. Das ist zu eng.
               Vencly sucht automatisiert und strukturiert unter{' '}
-              <strong className="text-white">Startups, Scaleups und innovativen Unternehmen</strong>{' '}
+              <strong className="text-gray-900 dark:text-white">Startups, Scaleups und innovativen Unternehmen</strong>{' '}
               aller Größen – denn der beste Anbieter für Ihre Herausforderung sitzt nicht
               zwingend in einem Berliner Co-Working-Space.
             </p>
             <div className="grid gap-6 sm:grid-cols-3">
               {differentiators.map(({ icon: Icon, title, desc }) => (
-                <div key={title} className="bg-vencly-card border border-vencly-border rounded-2xl p-6">
+                <div key={title} className="bg-white dark:bg-vencly-card border border-gray-200 dark:border-vencly-border rounded-2xl p-6">
                   <div className="w-10 h-10 bg-vencly-teal/10 rounded-xl flex items-center justify-center mb-4">
                     <Icon size={20} className="text-vencly-teal" />
                   </div>
-                  <h3 className="text-white font-semibold mb-2">{title}</h3>
-                  <p className="text-gray-400 text-sm leading-relaxed">{desc}</p>
+                  <h3 className="text-gray-900 dark:text-white font-semibold mb-2">{title}</h3>
+                  <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">{desc}</p>
                 </div>
               ))}
             </div>
@@ -126,16 +126,16 @@ export default function VentureClientingPage() {
 
           {/* Process */}
           <section className="mb-20">
-            <h2 className="text-2xl font-bold text-white mb-8">
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-8">
               Der Vencly-Prozess: von der Herausforderung zur Entscheidung.
             </h2>
             <div className="space-y-6">
               {steps.map((s) => (
-                <div key={s.n} className="flex gap-6 bg-vencly-card border border-vencly-border rounded-2xl p-6">
+                <div key={s.n} className="flex gap-6 bg-white dark:bg-vencly-card border border-gray-200 dark:border-vencly-border rounded-2xl p-6">
                   <span className="text-vencly-teal font-mono text-2xl font-bold shrink-0 mt-0.5">{s.n}</span>
                   <div>
-                    <h3 className="text-white font-semibold mb-1">{s.title}</h3>
-                    <p className="text-gray-400 text-sm leading-relaxed">{s.desc}</p>
+                    <h3 className="text-gray-900 dark:text-white font-semibold mb-1">{s.title}</h3>
+                    <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">{s.desc}</p>
                   </div>
                 </div>
               ))}
@@ -144,7 +144,7 @@ export default function VentureClientingPage() {
 
           {/* What you get */}
           <section className="mb-20">
-            <h2 className="text-2xl font-bold text-white mb-6">Was Sie bekommen.</h2>
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">Was Sie bekommen.</h2>
             <ul className="space-y-3">
               {[
                 'Qualifizierte Shortlist passender Anbieter – mit Bewertung statt roher Liste',
@@ -153,7 +153,7 @@ export default function VentureClientingPage() {
                 'Entscheidungsvorlage für Ihr Management nach 90 Tagen',
                 'Optional: Aufbau eines wiederholbaren internen Venture-Client-Prozesses',
               ].map((item) => (
-                <li key={item} className="flex items-start gap-3 text-gray-300">
+                <li key={item} className="flex items-start gap-3 text-gray-700 dark:text-gray-300">
                   <CheckCircle2 size={18} className="text-vencly-teal mt-0.5 shrink-0" />
                   <span>{item}</span>
                 </li>
@@ -163,14 +163,14 @@ export default function VentureClientingPage() {
 
           {/* Medium article */}
           <section className="mb-20">
-            <div className="bg-vencly-card border border-vencly-border rounded-2xl p-8">
+            <div className="bg-white dark:bg-vencly-card border border-gray-200 dark:border-vencly-border rounded-2xl p-8">
               <span className="text-vencly-teal text-xs font-mono tracking-widest uppercase mb-3 block">
                 Weiterführend
               </span>
-              <h2 className="text-white font-bold text-xl mb-3">
+              <h2 className="text-gray-900 dark:text-white font-bold text-xl mb-3">
                 Startup-Zusammenarbeit als Chance in wirtschaftlichen Krisenzeiten
               </h2>
-              <p className="text-gray-400 text-sm mb-5">
+              <p className="text-gray-600 dark:text-gray-400 text-sm mb-5">
                 Warum Venture Clienting gerade jetzt das richtige Instrument ist – und wie
                 Unternehmen externe Partner strategisch einsetzen können, statt Innovation zu delegieren.
               </p>
@@ -188,10 +188,10 @@ export default function VentureClientingPage() {
 
           {/* CTA */}
           <section className="bg-gradient-to-r from-vencly-teal/10 to-vencly-teal/5 border border-vencly-teal/20 rounded-2xl p-10 text-center">
-            <h2 className="text-2xl font-bold text-white mb-3">
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">
               Bereit, den besten Anbieter für Ihre Herausforderung zu finden?
             </h2>
-            <p className="text-gray-400 mb-6">
+            <p className="text-gray-600 dark:text-gray-400 mb-6">
               Kein Pitch-Deck nötig. Erzählen Sie uns, welches Problem Sie lösen wollen.
             </p>
             <button

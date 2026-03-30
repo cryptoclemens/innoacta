@@ -71,7 +71,7 @@ export default function StrategischeUmsetzungPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <div className="min-h-screen bg-vencly-bg pt-24 pb-20">
+      <div className="min-h-screen bg-[#F8F7F4] dark:bg-vencly-bg pt-24 pb-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
 
           {/* Hero */}
@@ -79,27 +79,27 @@ export default function StrategischeUmsetzungPage() {
             <span className="inline-block text-vencly-teal text-sm font-mono tracking-widest uppercase mb-4">
               Leistung
             </span>
-            <h1 className="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">
+            <h1 className="text-3xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6 leading-tight">
               Strategische Umsetzung –{' '}
               <span className="text-vencly-teal">operativ</span>, nicht nur konzeptionell.
             </h1>
-            <p className="text-gray-400 text-lg max-w-2xl leading-relaxed mb-6">
+            <p className="text-gray-600 dark:text-gray-400 text-lg max-w-2xl leading-relaxed mb-6">
               Die beste Strategie ist wertlos, wenn sie nicht umgesetzt wird. Viele
               Innovationsprojekte scheitern nicht am Konzept, sondern daran, dass intern niemand
               die operative Verantwortung übernimmt – weil das Tagesgeschäft dominiert und das
               Neue keine Heimat hat.
             </p>
-            <p className="text-gray-400 text-lg max-w-2xl leading-relaxed">
+            <p className="text-gray-600 dark:text-gray-400 text-lg max-w-2xl leading-relaxed">
               Vencly füllt genau diese Lücke:{' '}
-              <strong className="text-white">Wir übernehmen operative Verantwortung</strong>{' '}
+              <strong className="text-gray-900 dark:text-white">Wir übernehmen operative Verantwortung</strong>{' '}
               in Projekten, die strategisch wichtig, aber intern strukturell schwierig zu verankern sind.
             </p>
           </div>
 
           {/* Not strategy vs execution */}
           <section className="mb-16">
-            <blockquote className="border-l-4 border-vencly-teal pl-6 py-2 bg-vencly-card rounded-r-xl">
-              <p className="text-white text-xl font-semibold">
+            <blockquote className="border-l-4 border-vencly-teal pl-6 py-2 bg-gray-100 dark:bg-vencly-card rounded-r-xl">
+              <p className="text-gray-900 dark:text-white text-xl font-semibold">
                 „Nicht Strategie <em>statt</em> Umsetzung – sondern beides."
               </p>
             </blockquote>
@@ -107,17 +107,17 @@ export default function StrategischeUmsetzungPage() {
 
           {/* Services */}
           <section className="mb-20">
-            <h2 className="text-2xl font-bold text-white mb-8">Was wir konkret übernehmen.</h2>
-            <div className="grid gap-6 sm:grid-cols-1">
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-8">Was wir konkret übernehmen.</h2>
+            <div className="grid gap-6">
               {services.map(({ icon: Icon, title, desc }) => (
-                <div key={title} className="bg-vencly-card border border-vencly-border rounded-2xl p-8">
+                <div key={title} className="bg-white dark:bg-vencly-card border border-gray-200 dark:border-vencly-border rounded-2xl p-8">
                   <div className="flex items-start gap-5">
                     <div className="w-11 h-11 bg-vencly-teal/10 rounded-xl flex items-center justify-center shrink-0">
                       <Icon size={20} className="text-vencly-teal" />
                     </div>
                     <div>
-                      <h3 className="text-white font-bold text-lg mb-2">{title}</h3>
-                      <p className="text-gray-400 text-sm leading-relaxed">{desc}</p>
+                      <h3 className="text-gray-900 dark:text-white font-bold text-lg mb-2">{title}</h3>
+                      <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">{desc}</p>
                     </div>
                   </div>
                 </div>
@@ -127,7 +127,7 @@ export default function StrategischeUmsetzungPage() {
 
           {/* When it fits */}
           <section className="mb-20">
-            <h2 className="text-2xl font-bold text-white mb-6">Wann passt dieses Leistungsbild?</h2>
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">Wann passt dieses Leistungsbild?</h2>
             <ul className="space-y-3">
               {[
                 'Sie haben ein strategisches Projekt, das intern keine klare Heimat hat',
@@ -136,7 +136,7 @@ export default function StrategischeUmsetzungPage() {
                 'Externe Berater liefern Konzepte – Sie brauchen jemanden, der die Umsetzung verantwortet',
                 'Ihr Projekt hat regulatorische Komplexität oder viele Stakeholder',
               ].map((item) => (
-                <li key={item} className="flex items-start gap-3 text-gray-300">
+                <li key={item} className="flex items-start gap-3 text-gray-700 dark:text-gray-300">
                   <CheckCircle2 size={18} className="text-vencly-teal mt-0.5 shrink-0" />
                   <span>{item}</span>
                 </li>
@@ -146,10 +146,10 @@ export default function StrategischeUmsetzungPage() {
 
           {/* CTA */}
           <section className="bg-gradient-to-r from-vencly-teal/10 to-vencly-teal/5 border border-vencly-teal/20 rounded-2xl p-10 text-center">
-            <h2 className="text-2xl font-bold text-white mb-3">
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">
               Welches Projekt braucht eine verlässliche operative Hand?
             </h2>
-            <p className="text-gray-400 mb-6">
+            <p className="text-gray-600 dark:text-gray-400 mb-6">
               Erzählen Sie uns, was liegt – wir sagen Ihnen ehrlich, wie wir helfen können.
             </p>
             <button

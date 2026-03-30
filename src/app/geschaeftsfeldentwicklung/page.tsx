@@ -34,6 +34,7 @@ const phases = [
     title: 'Markt- & Technologiebewertung',
     desc: 'Wir analysieren Marktgröße, Wettbewerb, Technologiereife und regulatorische Rahmenbedingungen. Schnell, fokussiert, ohne monatelange Studien.',
     points: ['Marktgröße & Segmentierung', 'Wettbewerbslandschaft', 'Regulatorik & Eintrittsbarrieren'],
+    ventureClientingHint: false,
   },
   {
     icon: BarChart3,
@@ -41,6 +42,7 @@ const phases = [
     title: 'Geschäftsmodell-Entwicklung',
     desc: 'Aus Marktchancen werden konkrete Geschäftsmodelle – mit klaren Annahmen, die testbar sind. Kein Powerpoint-Schönwettermodell, sondern ein robustes Fundament.',
     points: ['Wertversprechen & Zielgruppen', 'Erlös- und Kostenmodell', 'Risikobewertung & Szenarien'],
+    ventureClientingHint: false,
   },
   {
     icon: Rocket,
@@ -59,7 +61,7 @@ export default function GeschaeftsfeldentwicklungPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <div className="min-h-screen bg-vencly-bg pt-24 pb-20">
+      <div className="min-h-screen bg-[#F8F7F4] dark:bg-vencly-bg pt-24 pb-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
 
           {/* Hero */}
@@ -67,11 +69,11 @@ export default function GeschaeftsfeldentwicklungPage() {
             <span className="inline-block text-vencly-teal text-sm font-mono tracking-widest uppercase mb-4">
               Leistung
             </span>
-            <h1 className="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight break-words hyphens-auto">
+            <h1 className="text-3xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6 leading-tight break-words hyphens-auto">
               Geschäftsfeldentwicklung –{' '}
               <span className="text-vencly-teal">neue Märkte</span> mit Gründer-Denken erschließen.
             </h1>
-            <p className="text-gray-400 text-lg max-w-2xl leading-relaxed">
+            <p className="text-gray-600 dark:text-gray-400 text-lg max-w-2xl leading-relaxed">
               Konzerne und Mittelständler, die neue Geschäftsfelder erschließen wollen, stehen vor
               demselben Problem: Interne Strukturen wurden für das bestehende Kerngeschäft gebaut –
               nicht für das Neue. Vencly bringt die Agilität und Methodik von Gründern in Ihre
@@ -81,47 +83,47 @@ export default function GeschaeftsfeldentwicklungPage() {
 
           {/* Why startup logic */}
           <section className="mb-20">
-            <h2 className="text-2xl font-bold text-white mb-4">
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
               Warum klassische Strategieprozesse hier versagen.
             </h2>
-            <p className="text-gray-400 mb-6 max-w-2xl leading-relaxed">
+            <p className="text-gray-600 dark:text-gray-400 mb-6 max-w-2xl leading-relaxed">
               Strategieprojekte dauern zu lange, kosten zu viel und enden häufig mit einem Konzept,
               das niemand umsetzt. Startups machen es anders: Sie bauen einen MVP, testen ihn am
               echten Markt, iterieren und entscheiden auf Basis von Daten.
             </p>
-            <p className="text-gray-400 max-w-2xl leading-relaxed">
+            <p className="text-gray-600 dark:text-gray-400 max-w-2xl leading-relaxed">
               Vencly überträgt genau diese Logik auf Ihr nächstes Geschäftsfeld –{' '}
-              <strong className="text-white">mit kurzen Iterationszyklen, klaren Entscheidungspunkten
+              <strong className="text-gray-900 dark:text-white">mit kurzen Iterationszyklen, klaren Entscheidungspunkten
               und messbarem Output in 3–6 Monaten</strong>.
             </p>
           </section>
 
           {/* Phases */}
           <section className="mb-20">
-            <h2 className="text-2xl font-bold text-white mb-8">
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-8">
               Unser Vorgehen in drei Phasen.
             </h2>
             <div className="space-y-6">
               {phases.map(({ icon: Icon, phase, title, desc, points, ventureClientingHint }) => (
-                <div key={phase} className="bg-vencly-card border border-vencly-border rounded-2xl p-8">
+                <div key={phase} className="bg-white dark:bg-vencly-card border border-gray-200 dark:border-vencly-border rounded-2xl p-8">
                   <div className="flex items-start gap-5">
                     <div className="w-11 h-11 bg-vencly-teal/10 rounded-xl flex items-center justify-center shrink-0">
                       <Icon size={20} className="text-vencly-teal" />
                     </div>
                     <div className="flex-1">
                       <span className="text-vencly-teal text-xs font-mono tracking-widest uppercase">{phase}</span>
-                      <h3 className="text-white font-bold text-lg mt-1 mb-2">{title}</h3>
-                      <p className="text-gray-400 text-sm leading-relaxed mb-4">{desc}</p>
+                      <h3 className="text-gray-900 dark:text-white font-bold text-lg mt-1 mb-2">{title}</h3>
+                      <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-4">{desc}</p>
                       <ul className="space-y-1 mb-4">
                         {points.map((p) => (
-                          <li key={p} className="flex items-center gap-2 text-gray-300 text-sm">
+                          <li key={p} className="flex items-center gap-2 text-gray-700 dark:text-gray-300 text-sm">
                             <CheckCircle2 size={14} className="text-vencly-teal shrink-0" />
                             {p}
                           </li>
                         ))}
                       </ul>
                       {ventureClientingHint && (
-                        <p className="text-sm text-gray-400 border-t border-vencly-border pt-4 mt-2">
+                        <p className="text-sm text-gray-600 dark:text-gray-400 border-t border-gray-200 dark:border-vencly-border pt-4 mt-2">
                           Die Einbindung externer Anbieter erfolgt strukturiert über unseren{' '}
                           <Link href="/venture-clienting" className="text-vencly-teal hover:underline font-medium">
                             Venture-Clienting-Ansatz
@@ -138,8 +140,8 @@ export default function GeschaeftsfeldentwicklungPage() {
 
           {/* Sectors */}
           <section className="mb-20">
-            <h2 className="text-2xl font-bold text-white mb-4">Besondere Stärke: regulierte Branchen.</h2>
-            <p className="text-gray-400 max-w-2xl leading-relaxed">
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Besondere Stärke: regulierte Branchen.</h2>
+            <p className="text-gray-600 dark:text-gray-400 max-w-2xl leading-relaxed">
               Energie, Infrastruktur, öffentliche Hand – Branchen, in denen Startup-Logik oft als
               nicht anwendbar gilt. Vencly hat bewiesen, dass das falsch ist. Wir kennen die
               regulatorischen Rahmenbedingungen, die Stakeholder-Strukturen und die besonderen
@@ -149,10 +151,10 @@ export default function GeschaeftsfeldentwicklungPage() {
 
           {/* CTA */}
           <section className="bg-gradient-to-r from-vencly-teal/10 to-vencly-teal/5 border border-vencly-teal/20 rounded-2xl p-10 text-center">
-            <h2 className="text-2xl font-bold text-white mb-3">
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">
               Welches Geschäftsfeld wollen Sie als nächstes erschließen?
             </h2>
-            <p className="text-gray-400 mb-6">
+            <p className="text-gray-600 dark:text-gray-400 mb-6">
               In einem ersten Gespräch klären wir, ob und wie Vencly helfen kann.
             </p>
             <button
