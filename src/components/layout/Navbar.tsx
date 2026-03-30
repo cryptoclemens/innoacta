@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { Menu, X, Sun, Moon, Monitor, ChevronDown } from 'lucide-react'
@@ -11,6 +11,59 @@ import { LOGIN_URL } from '@/lib/config'
 import { calButtonProps } from '@/components/layout/CalProvider'
 
 const locales: Locale[] = ['de', 'en', 'fr', 'es']
+
+const serviceLinks = [
+  { href: '/venture-clienting', label: 'Venture Clienting' },
+  { href: '/geschaeftsfeldentwicklung', label: 'Geschäftsfeldentwicklung' },
+  { href: '/strategische-umsetzung', label: 'Strategische Umsetzung' },
+]
+
+function ServicesDropdown({ label }: { label: string }) {
+  const [open, setOpen] = useState(false)
+  const ref = useRef<HTMLDivElement>(null)
+
+  useEffect(() => {
+    const handler = (e: MouseEvent) => {
+      if (ref.current && !ref.current.contains(e.target as Node)) setOpen(false)
+    }
+    document.addEventListener('mousedown', handler)
+    return () => document.removeEventListener('mousedown', handler)
+  }, [])
+
+  return (
+    <div ref={ref} className="relative">
+      <button
+        onClick={() => setOpen((o) => !o)}
+        aria-expanded={open}
+        className="flex items-center gap-1 text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white text-sm font-medium transition-colors"
+      >
+        {label}
+        <ChevronDown size={13} className={`transition-transform ${open ? 'rotate-180' : ''}`} />
+      </button>
+      {open && (
+        <div className="absolute left-0 top-full mt-2 bg-white dark:bg-vencly-card border border-gray-200 dark:border-vencly-border rounded-xl shadow-lg overflow-hidden z-50 min-w-[240px]">
+          <Link
+            href="/#leistungen"
+            onClick={() => setOpen(false)}
+            className="block px-4 py-3 text-xs font-mono tracking-widest uppercase text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-white/5 border-b border-gray-100 dark:border-vencly-border transition-colors"
+          >
+            Alle Leistungen ↓
+          </Link>
+          {serviceLinks.map((s) => (
+            <Link
+              key={s.href}
+              href={s.href}
+              onClick={() => setOpen(false)}
+              className="block px-4 py-3 text-sm text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-white/5 transition-colors border-b border-gray-100 dark:border-vencly-border last:border-0"
+            >
+              {s.label}
+            </Link>
+          ))}
+        </div>
+      )}
+    </div>
+  )
+}
 
 function ThemeToggle() {
   const { theme, setTheme, resolvedTheme } = useTheme()
@@ -85,7 +138,6 @@ export default function Navbar() {
 
   const navLinks = [
     { label: t.nav.home, href: '/' },
-    { label: t.nav.services, href: '/#leistungen' },
     { label: t.nav.projects, href: '/projects' },
     { label: t.nav.contact, href: '/contact' },
   ]
@@ -119,6 +171,13 @@ export default function Navbar() {
 
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center gap-8">
+          <Link
+            href="/"
+            className="text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white text-sm font-medium transition-colors"
+          >
+            {t.nav.home}
+          </Link>
+          <ServicesDropdown label={t.nav.services} />
           {navLinks.map((link) => (
             <Link
               key={link.href}
@@ -165,6 +224,18 @@ export default function Navbar() {
       {menuOpen && (
         <div className="md:hidden bg-white dark:bg-vencly-card border-b border-gray-200 dark:border-vencly-border">
           <div className="max-w-6xl mx-auto px-4 py-4 flex flex-col gap-4">
+            <Link href="/" onClick={() => setMenuOpen(false)} className="text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white text-sm font-medium transition-colors py-1">
+              {t.nav.home}
+            </Link>
+            <div>
+              <span className="text-xs font-mono tracking-widest uppercase text-gray-400 block mb-2">{t.nav.services}</span>
+              <div className="pl-3 flex flex-col gap-2 border-l border-gray-200 dark:border-vencly-border">
+                <Link href="/#leistungen" onClick={() => setMenuOpen(false)} className="text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white text-sm transition-colors">Alle Leistungen</Link>
+                {serviceLinks.map((s) => (
+                  <Link key={s.href} href={s.href} onClick={() => setMenuOpen(false)} className="text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white text-sm transition-colors">{s.label}</Link>
+                ))}
+              </div>
+            </div>
             {navLinks.map((link) => (
               <Link
                 key={link.href}
