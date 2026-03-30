@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Link from 'next/link'
 import { ArrowRight, CheckCircle2, Lightbulb, BarChart3, Rocket } from 'lucide-react'
 import { calButtonProps } from '@/components/layout/CalProvider'
 
@@ -45,8 +46,9 @@ const phases = [
     icon: Rocket,
     phase: 'Phase 3',
     title: 'Validierung & Markterprobung',
-    desc: 'Die entscheidende Phase: Wir testen zentrale Annahmen mit echten Kunden und echten Daten. Kein Simulieren – echtes Testen.',
-    points: ['Hypothesen-Priorisierung', 'Kundeninterviews & Markttest', 'Go/No-Go-Empfehlung'],
+    desc: 'Die entscheidende Phase: Wir testen zentrale Annahmen mit echten Kunden und echten Daten. Kein Simulieren – echtes Testen. In der anfänglichen Make-or-Buy-Phase binden wir gezielt externe Dienstleister ein – Startups, Scaleups und innovative Unternehmen – um Zeit und Kosten zu optimieren, bevor eigene Kapazitäten aufgebaut werden.',
+    points: ['Hypothesen-Priorisierung', 'Kundeninterviews & Markttest', 'Einbindung externer Anbieter via Venture Clienting', 'Go/No-Go-Empfehlung'],
+    ventureClientingHint: true,
   },
 ]
 
@@ -100,7 +102,7 @@ export default function GeschaeftsfeldentwicklungPage() {
               Unser Vorgehen in drei Phasen.
             </h2>
             <div className="space-y-6">
-              {phases.map(({ icon: Icon, phase, title, desc, points }) => (
+              {phases.map(({ icon: Icon, phase, title, desc, points, ventureClientingHint }) => (
                 <div key={phase} className="bg-vencly-card border border-vencly-border rounded-2xl p-8">
                   <div className="flex items-start gap-5">
                     <div className="w-11 h-11 bg-vencly-teal/10 rounded-xl flex items-center justify-center shrink-0">
@@ -110,7 +112,7 @@ export default function GeschaeftsfeldentwicklungPage() {
                       <span className="text-vencly-teal text-xs font-mono tracking-widest uppercase">{phase}</span>
                       <h3 className="text-white font-bold text-lg mt-1 mb-2">{title}</h3>
                       <p className="text-gray-400 text-sm leading-relaxed mb-4">{desc}</p>
-                      <ul className="space-y-1">
+                      <ul className="space-y-1 mb-4">
                         {points.map((p) => (
                           <li key={p} className="flex items-center gap-2 text-gray-300 text-sm">
                             <CheckCircle2 size={14} className="text-vencly-teal shrink-0" />
@@ -118,6 +120,15 @@ export default function GeschaeftsfeldentwicklungPage() {
                           </li>
                         ))}
                       </ul>
+                      {ventureClientingHint && (
+                        <p className="text-sm text-gray-400 border-t border-vencly-border pt-4 mt-2">
+                          Die Einbindung externer Anbieter erfolgt strukturiert über unseren{' '}
+                          <Link href="/venture-clienting" className="text-vencly-teal hover:underline font-medium">
+                            Venture-Clienting-Ansatz
+                          </Link>{' '}
+                          – mit dem Ziel, in der Make-or-Buy-Phase Zeit und Kosten zu optimieren.
+                        </p>
+                      )}
                     </div>
                   </div>
                 </div>
