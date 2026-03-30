@@ -13,8 +13,8 @@ import { calButtonProps } from '@/components/layout/CalProvider'
 const locales: Locale[] = ['de', 'en', 'fr', 'es']
 
 const serviceLinks = [
-  { href: '/venture-clienting', label: 'Venture Clienting' },
   { href: '/geschaeftsfeldentwicklung', label: 'Geschäftsfeldentwicklung' },
+  { href: '/venture-clienting', label: 'Venture Clienting' },
   { href: '/strategische-umsetzung', label: 'Strategische Umsetzung' },
 ]
 
