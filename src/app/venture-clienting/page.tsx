@@ -82,10 +82,9 @@ export default function VentureClientingPage() {
             <span className="inline-block text-vencly-teal text-sm font-mono tracking-widest uppercase mb-4">
               Leistung
             </span>
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
-              Venture Clienting –<br />
-              <span className="text-vencly-teal">die smartere Art</span>, externe<br />
-              Innovation einzukaufen.
+            <h1 className="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">
+              Venture Clienting –{' '}
+              <span className="text-vencly-teal">die smartere Art</span>, externe Innovation einzukaufen.
             </h1>
             <p className="text-gray-400 text-lg max-w-2xl leading-relaxed mb-8">
               Etablierte Unternehmen kämpfen mit demselben Problem: Der Markt bewegt sich schnell,

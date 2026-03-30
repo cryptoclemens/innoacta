@@ -65,10 +65,9 @@ export default function GeschaeftsfeldentwicklungPage() {
             <span className="inline-block text-vencly-teal text-sm font-mono tracking-widest uppercase mb-4">
               Leistung
             </span>
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
-              Geschäftsfeldentwicklung –<br />
-              <span className="text-vencly-teal">neue Märkte</span> mit<br />
-              Gründer-Denken erschließen.
+            <h1 className="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">
+              Geschäftsfeldentwicklung –{' '}
+              <span className="text-vencly-teal">neue Märkte</span> mit Gründer-Denken erschließen.
             </h1>
             <p className="text-gray-400 text-lg max-w-2xl leading-relaxed">
               Konzerne und Mittelständler, die neue Geschäftsfelder erschließen wollen, stehen vor

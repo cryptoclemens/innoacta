@@ -1,6 +1,14 @@
 'use client'
 
+import Link from 'next/link'
+import { ArrowRight } from 'lucide-react'
 import { useLanguage } from '@/contexts/LanguageContext'
+
+const serviceHrefs = [
+  '/geschaeftsfeldentwicklung',
+  '/venture-clienting',
+  '/strategische-umsetzung',
+]
 
 const icons = [
   (
@@ -53,7 +61,7 @@ export default function Features() {
           {t.features.items.map((feature, i) => (
             <div
               key={feature.title}
-              className="bg-[#F8F7F4] dark:bg-vencly-bg border border-gray-200 dark:border-vencly-border rounded-2xl p-8 hover:border-vencly-teal/40 transition-all duration-300 group"
+              className="bg-[#F8F7F4] dark:bg-vencly-bg border border-gray-200 dark:border-vencly-border rounded-2xl p-8 hover:border-vencly-teal/40 transition-all duration-300 group flex flex-col"
             >
               <div className="mb-6">{icons[i]}</div>
               <h3 className="text-gray-900 dark:text-white font-bold text-lg mb-3 group-hover:text-vencly-teal transition-colors">
@@ -62,7 +70,7 @@ export default function Features() {
               <p className="text-gray-500 text-sm leading-relaxed mb-5">
                 {feature.desc}
               </p>
-              <ul className="space-y-2">
+              <ul className="space-y-2 mb-6">
                 {feature.points.map((point) => (
                   <li key={point} className="flex items-center gap-2 text-xs text-gray-500 dark:text-gray-400">
                     <span className="w-1.5 h-1.5 bg-vencly-teal rounded-full flex-shrink-0" />
@@ -70,6 +78,15 @@ export default function Features() {
                   </li>
                 ))}
               </ul>
+              <div className="mt-auto">
+                <Link
+                  href={serviceHrefs[i]}
+                  className="inline-flex items-center gap-1.5 text-vencly-teal hover:text-teal-400 text-sm font-medium transition-colors"
+                >
+                  Mehr erfahren
+                  <ArrowRight size={14} />
+                </Link>
+              </div>
             </div>
           ))}
         </div>
