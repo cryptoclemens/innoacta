@@ -1,11 +1,11 @@
 import type { Metadata } from 'next'
-import { ArrowRight, CheckCircle2, Users, FileText, PresentationIcon } from 'lucide-react'
+import { ArrowRight, CheckCircle2, Users, FileText, PresentationIcon, TrendingUp, Building2, Target, BarChart3 } from 'lucide-react'
 import { calButtonProps } from '@/components/layout/CalProvider'
 
 export const metadata: Metadata = {
   title: 'Strategische Umsetzung – operativ, nicht nur konzeptionell',
   description:
-    'Vencly übernimmt operative Verantwortung in Projekten, die intern keine Heimat haben. Projektsteuerung, Stakeholder-Management, Entscheidungsvorlagen – mit Gründer-Blick.',
+    'Vencly übernimmt operative Verantwortung in neuen Geschäftsfeldern: Go-to-Market, Geschäftsmodell-Festlegung, Organisationsdesign, Ausgründung, Pilotkunden-Akquise und Steuerungs-KPIs.',
   alternates: { canonical: 'https://vencly.com/strategische-umsetzung' },
   openGraph: {
     title: 'Strategische Umsetzung | Vencly',
@@ -31,6 +31,26 @@ const services = [
     icon: FileText,
     title: 'Projektsteuerung & Reporting',
     desc: 'Wir übernehmen die operative Leitung von Projekten: Meilensteinplanung, Statusreporting, Eskalationsmanagement. Sie bekommen einen Partner, der liefert – nicht nur empfiehlt.',
+  },
+  {
+    icon: TrendingUp,
+    title: 'Go-to-Market & Geschäftsmodell-Festlegung',
+    desc: 'Von der validierten Idee zur Markteinführung: Wir entwickeln das Go-to-Market-Konzept, legen Geschäftsmodellvarianten verbindlich fest und begleiten die Entscheidung für den richtigen Ansatz – mit Blick auf Skalierbarkeit und Ressourceneffizienz.',
+  },
+  {
+    icon: Building2,
+    title: 'Organisationsdesign & Ausgründung',
+    desc: 'Neue Geschäftsfelder brauchen neue Strukturen. Wir prüfen, ob eine eigenständige Ausgründung sinnvoll ist, gestalten das Organisationsdesign und begleiten die Umsetzung – von der Holdingstruktur bis zur operativen Einheit.',
+  },
+  {
+    icon: Target,
+    title: 'Pilotkunden-Akquise',
+    desc: 'Der erste zahlende Kunde ist der härteste Beweis. Wir unterstützen aktiv bei der Identifikation und Ansprache von Pilotkunden – mit einem strukturierten Ansatz, der Lernen und Umsatz von Anfang an verbindet.',
+  },
+  {
+    icon: BarChart3,
+    title: 'Steuerungs-KPIs',
+    desc: 'Was nicht gemessen wird, wächst nicht. Wir leiten die richtigen Steuerungskennzahlen für das neue Geschäftsfeld ab – passend zur Reifephase, verständlich für Management und Board.',
   },
   {
     icon: Users,
