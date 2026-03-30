@@ -65,7 +65,7 @@ export default function GeschaeftsfeldentwicklungPage() {
             <span className="inline-block text-vencly-teal text-sm font-mono tracking-widest uppercase mb-4">
               Leistung
             </span>
-            <h1 className="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">
+            <h1 className="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight break-words hyphens-auto">
               Geschäftsfeldentwicklung –{' '}
               <span className="text-vencly-teal">neue Märkte</span> mit Gründer-Denken erschließen.
             </h1>
