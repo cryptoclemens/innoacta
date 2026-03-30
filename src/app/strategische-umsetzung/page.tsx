@@ -59,10 +59,9 @@ export default function StrategischeUmsetzungPage() {
             <span className="inline-block text-vencly-teal text-sm font-mono tracking-widest uppercase mb-4">
               Leistung
             </span>
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
-              Strategische Umsetzung –<br />
-              <span className="text-vencly-teal">operativ</span>, nicht<br />
-              nur konzeptionell.
+            <h1 className="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">
+              Strategische Umsetzung –{' '}
+              <span className="text-vencly-teal">operativ</span>, nicht nur konzeptionell.
             </h1>
             <p className="text-gray-400 text-lg max-w-2xl leading-relaxed mb-6">
               Die beste Strategie ist wertlos, wenn sie nicht umgesetzt wird. Viele
