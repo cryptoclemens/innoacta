@@ -23,6 +23,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...entry('/geschaeftsfeldentwicklung', 0.9, 'monthly'),
     ...entry('/strategische-umsetzung', 0.9, 'monthly'),
     ...entry('/projects', 0.8, 'monthly'),
+    ...entry('/optaimum', 0.85, 'monthly'),
     ...entry('/contact', 0.6, 'monthly'),
   ]
 }

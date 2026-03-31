@@ -18,7 +18,19 @@ const serviceLinks = [
   { href: '/strategische-umsetzung', label: 'Strategische Umsetzung' },
 ]
 
-function ServicesDropdown({ label }: { label: string }) {
+const projectLinks = [
+  { href: '/projects#innovation-republic', label: 'Innovation Republic' },
+  { href: '/projects#geopotatlas', label: 'Geopotatlas' },
+  { href: '/projects#autotodo', label: 'AutoToDo' },
+  { href: '/optaimum', label: 'OptAImum' },
+]
+
+function NavDropdown({ label, allHref, allLabel, links }: {
+  label: string
+  allHref: string
+  allLabel: string
+  links: { href: string; label: string }[]
+}) {
   const [open, setOpen] = useState(false)
   const ref = useRef<HTMLDivElement>(null)
 
@@ -41,15 +53,15 @@ function ServicesDropdown({ label }: { label: string }) {
         <ChevronDown size={13} className={`transition-transform ${open ? 'rotate-180' : ''}`} />
       </button>
       {open && (
-        <div className="absolute left-0 top-full mt-2 bg-white dark:bg-vencly-card border border-gray-200 dark:border-vencly-border rounded-xl shadow-lg overflow-hidden z-50 min-w-[240px]">
+        <div className="absolute left-0 top-full mt-2 bg-white dark:bg-vencly-card border border-gray-200 dark:border-vencly-border rounded-xl shadow-lg overflow-hidden z-50 min-w-[220px]">
           <Link
-            href="/#leistungen"
+            href={allHref}
             onClick={() => setOpen(false)}
             className="block px-4 py-3 text-xs font-mono tracking-widest uppercase text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-white/5 border-b border-gray-100 dark:border-vencly-border transition-colors"
           >
-            Alle Leistungen ↓
+            {allLabel}
           </Link>
-          {serviceLinks.map((s) => (
+          {links.map((s) => (
             <Link
               key={s.href}
               href={s.href}
@@ -63,6 +75,14 @@ function ServicesDropdown({ label }: { label: string }) {
       )}
     </div>
   )
+}
+
+function ServicesDropdown({ label }: { label: string }) {
+  return <NavDropdown label={label} allHref="/#leistungen" allLabel="Alle Leistungen ↓" links={serviceLinks} />
+}
+
+function ProjectsDropdown({ label }: { label: string }) {
+  return <NavDropdown label={label} allHref="/projects" allLabel="Alle Projekte" links={projectLinks} />
 }
 
 function ThemeToggle() {
@@ -138,7 +158,6 @@ export default function Navbar() {
 
   const navLinks = [
     { label: t.nav.home, href: '/' },
-    { label: t.nav.projects, href: '/projects' },
     { label: t.nav.contact, href: '/contact' },
   ]
 
@@ -178,6 +197,7 @@ export default function Navbar() {
             {t.nav.home}
           </Link>
           <ServicesDropdown label={t.nav.services} />
+          <ProjectsDropdown label={t.nav.projects} />
           {navLinks.map((link) => (
             <Link
               key={link.href}
@@ -232,6 +252,15 @@ export default function Navbar() {
               <div className="pl-3 flex flex-col gap-2 border-l border-gray-200 dark:border-vencly-border">
                 <Link href="/#leistungen" onClick={() => setMenuOpen(false)} className="text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white text-sm transition-colors">Alle Leistungen</Link>
                 {serviceLinks.map((s) => (
+                  <Link key={s.href} href={s.href} onClick={() => setMenuOpen(false)} className="text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white text-sm transition-colors">{s.label}</Link>
+                ))}
+              </div>
+            </div>
+            <div>
+              <span className="text-xs font-mono tracking-widest uppercase text-gray-400 block mb-2">{t.nav.projects}</span>
+              <div className="pl-3 flex flex-col gap-2 border-l border-gray-200 dark:border-vencly-border">
+                <Link href="/projects" onClick={() => setMenuOpen(false)} className="text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white text-sm transition-colors">Alle Projekte</Link>
+                {projectLinks.map((s) => (
                   <Link key={s.href} href={s.href} onClick={() => setMenuOpen(false)} className="text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white text-sm transition-colors">{s.label}</Link>
                 ))}
               </div>
