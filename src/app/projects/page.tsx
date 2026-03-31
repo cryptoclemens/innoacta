@@ -34,12 +34,12 @@ const projects = [
   {
     id: 'autotodo',
     name: 'AutoToDo',
-    category: 'Smartes Projektmanagement',
+    category: 'KI-gestütztes LOP-Management',
     description:
-      'KI-basiertes Task-Management-System, das aus E-Mails, Meetings und Dokumenten automatisch Aufgaben ableitet und priorisiert.',
-    tags: ['Taskmanagement', 'NLP', 'Produktivität'],
-    status: 'Beta',
-    href: null,
+      'Meeting-Transkript hochladen, KI extrahiert automatisch alle Aufgaben und Statusänderungen, Vorschläge prüfen und als Excel exportieren. Multi-Tenant SaaS mit BYOK.',
+    tags: ['KI-Extraktion', 'LOP-Management', 'SaaS'],
+    status: 'Live',
+    href: '/autotodo',
   },
   {
     id: 'optaimum',

@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Link from 'next/link'
 import { ArrowRight, CheckCircle2, Clock, Layers, Shuffle } from 'lucide-react'
 import { calButtonProps } from '@/components/layout/CalProvider'
 
@@ -49,6 +50,7 @@ const features = [
   {
     n: '01',
     badge: 'Starter-Tipp',
+    href: '/optaimum/profil-md',
     title: 'Profil-MD Creator',
     subtitle: 'Persönlicher Kontext über dich – wer du bist, wie du kommunizierst, was du vermeidest.',
     desc: 'Ein geführter Wizard erfasst deine Sprachpräferenz, dein Erfahrungslevel, deinen Kommunikationsstil und deine Anwendungsfälle. Das Ergebnis: ein strukturiertes Profil-Markdown, das du direkt in Claude.ai, ChatGPT oder als PROFILE.md in Claude Code einsetzen kannst.',
@@ -57,6 +59,7 @@ const features = [
   {
     n: '02',
     badge: 'Workflow',
+    href: '/optaimum/skill-md',
     title: 'Skill-MD Generator',
     subtitle: 'Fachlicher Kontext für einen spezifischen Use-Case oder eine Aufgabe.',
     desc: 'Definiere Output-Formate (Fließtext, Bullet Points, Code, Tabellen, JSON), das technische Level und deine eingesetzten Tools und Frameworks. Optionale Einschränkungen wie DSGVO-Konformität oder maximale Wortanzahl werden automatisch eingebettet.',
@@ -65,6 +68,7 @@ const features = [
   {
     n: '03',
     badge: 'Automatisierung',
+    href: '/optaimum/hook-md',
     title: 'Hook-MD Creator',
     subtitle: 'Verhaltensregeln & Automatisierungen – was die KI immer/nie tun soll.',
     desc: 'Lege fest, was die KI immer oder nie tun soll, welche Antwortformate bevorzugt werden und wann eine Bestätigung angefordert werden muss (Dateioperationen, API-Calls, permanente Änderungen). Automatisierungsregeln wie "Nach jeder Aufgabe eine kurze Zusammenfassung ausgeben" werden direkt generiert.',
@@ -73,6 +77,7 @@ const features = [
   {
     n: '04',
     badge: 'Flexibilität',
+    href: '/optaimum/llm-wechsel',
     title: 'LLM-Wechsel in Minuten',
     subtitle: 'Wechsle deinen KI-Anbieter ohne Datenverlust. Deine Einstellungen, dein Stil und dein Kontext kommen mit.',
     desc: 'OptAImum generiert einen individuellen Schritt-für-Schritt-Migrationsplan für jeden Anbieterwechsel (ChatGPT ↔ Claude ↔ Gemini ↔ Copilot) – inklusive Zeitschätzung, Schwierigkeitsgrad und einem herunterladbaren Kontext-Export-Template.',
@@ -81,6 +86,7 @@ const features = [
   {
     n: '05',
     badge: 'Anfänger-freundlich',
+    href: '/optaimum/prompt-generator',
     title: 'Prompt-Generator',
     subtitle: 'Sofort einsetzbare Prompts für deine KI-Agenten – auch ohne Vorkenntnisse.',
     desc: '12 Quick-Start-Templates (E-Mails, Code-Debugging, Präsentationen, Recherche, Gehaltsverhandlung u.v.m.), ein Level-Slider von Beginner bis Pro und optionale Gemini-KI-Unterstützung. Funktioniert für Claude Cowork, claude.ai, ChatGPT, Gemini, GitHub Copilot und Cursor AI.',
@@ -89,6 +95,7 @@ const features = [
   {
     n: '06',
     badge: 'Developer',
+    href: '/optaimum/vm-setup',
     title: 'VM & Sandbox Setup',
     subtitle: 'Vergleiche Anbieter, finde das beste Preis-Leistungs-Verhältnis und setze deine KI-Sandbox in Minuten auf.',
     desc: 'Anbietervergleich (Oracle Cloud free tier, Hetzner ab €4,50/mo, DigitalOcean ab ~$12/mo) mit Empfehlungen nach Use-Case. Inkl. fertigem Setup-Script für Ubuntu 22.04 LTS und Post-Setup-Anleitung für Anthropic API Key und Claude Code.',
@@ -165,15 +172,15 @@ export default function OptAImumPage() {
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-8">Die 6 Tools im Detail.</h2>
             <div className="space-y-6">
               {features.map((f) => (
-                <div key={f.n} className="bg-white dark:bg-vencly-card border border-gray-200 dark:border-vencly-border rounded-2xl p-8">
+                <Link key={f.n} href={f.href} className="block bg-white dark:bg-vencly-card border border-gray-200 dark:border-vencly-border rounded-2xl p-8 hover:border-vencly-teal/40 transition-colors group">
                   <div className="flex items-start justify-between mb-3">
                     <span className="text-vencly-teal font-mono text-lg font-bold">{f.n}</span>
                     <span className="text-xs font-mono text-vencly-teal bg-vencly-teal/10 px-2 py-1 rounded-full">{f.badge}</span>
                   </div>
-                  <h3 className="text-gray-900 dark:text-white font-bold text-lg mb-1">{f.title}</h3>
+                  <h3 className="text-gray-900 dark:text-white font-bold text-lg mb-1 group-hover:text-vencly-teal transition-colors">{f.title}</h3>
                   <p className="text-vencly-teal text-sm mb-3 italic">{f.subtitle}</p>
                   <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-4">{f.desc}</p>
-                  <ul className="grid grid-cols-2 gap-1">
+                  <ul className="grid grid-cols-2 gap-1 mb-4">
                     {f.points.map((p) => (
                       <li key={p} className="flex items-center gap-2 text-gray-700 dark:text-gray-300 text-xs">
                         <CheckCircle2 size={12} className="text-vencly-teal shrink-0" />
@@ -181,7 +188,10 @@ export default function OptAImumPage() {
                       </li>
                     ))}
                   </ul>
-                </div>
+                  <span className="inline-flex items-center gap-1 text-vencly-teal text-sm font-medium">
+                    Tool öffnen <ArrowRight size={13} />
+                  </span>
+                </Link>
               ))}
             </div>
           </section>
