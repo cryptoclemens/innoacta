@@ -119,7 +119,7 @@ const de = {
       { label: 'Format', value: 'Strategisches Begleitmandat' },
     ],
     case2Tag: 'ÖFFENTLICHER SEKTOR · INNOVATION',
-    case2Title: 'Aufbau einer Venture Client Unit\nfür einen öffentlichen Träger',
+    case2Title: 'Aufbau einer Venture Client Unit für einen öffentlichen Träger',
     case2Text:
       'Für einen öffentlichen Träger haben wir eine strukturierte Venture Client Unit aufgebaut – von der Prozessgestaltung über die Startup-Scouting-Methodik bis zur internen Verankerung. Das Ergebnis: ein wiederholbarer Prozess für die Erprobung externer Innovationspartner innerhalb regulatorischer Rahmenbedingungen.',
     case2Meta: [
@@ -261,7 +261,7 @@ const en: Translations = {
       { label: 'Format', value: 'Strategic advisory mandate' },
     ],
     case2Tag: 'PUBLIC SECTOR · INNOVATION',
-    case2Title: 'Building a Venture Client Unit\nfor a Public Organisation',
+    case2Title: 'Building a Venture Client Unit for a Public Organisation',
     case2Text:
       'For a public organisation, we built a structured Venture Client Unit – from process design and startup scouting methodology to internal anchoring. The result: a repeatable process for piloting external innovation partners within regulatory constraints.',
     case2Meta: [
@@ -403,7 +403,7 @@ const fr: Translations = {
       { label: 'Format', value: 'Mandat d\'accompagnement stratégique' },
     ],
     case2Tag: 'SECTEUR PUBLIC · INNOVATION',
-    case2Title: 'Création d\'une Venture Client Unit\npour un organisme public',
+    case2Title: 'Création d\'une Venture Client Unit pour un organisme public',
     case2Text:
       'Pour un organisme public, nous avons mis en place une Venture Client Unit structurée – de la conception des processus et de la méthodologie de scouting de startups jusqu\'à l\'ancrage interne. Le résultat : un processus reproductible pour tester des partenaires d\'innovation externes dans un cadre réglementaire.',
     case2Meta: [
@@ -545,7 +545,7 @@ const es: Translations = {
       { label: 'Formato', value: 'Mandato de acompañamiento estratégico' },
     ],
     case2Tag: 'SECTOR PÚBLICO · INNOVACIÓN',
-    case2Title: 'Creación de una Venture Client Unit\npara un organismo público',
+    case2Title: 'Creación de una Venture Client Unit para un organismo público',
     case2Text:
       'Para un organismo público, construimos una Venture Client Unit estructurada – desde el diseño de procesos y la metodología de scouting de startups hasta su implantación interna. El resultado: un proceso replicable para probar socios de innovación externos dentro de los marcos regulatorios.',
     case2Meta: [
