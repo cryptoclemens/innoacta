@@ -21,7 +21,7 @@ const serviceLinks = [
 const projectLinks = [
   { href: '/projects#innovation-republic', label: 'Innovation Republic' },
   { href: '/projects#geopotatlas', label: 'Geopotatlas' },
-  { href: '/projects#autotodo', label: 'AutoToDo' },
+  { href: '/autotodo', label: 'AutoToDo' },
   { href: '/optaimum', label: 'OptAImum' },
 ]
 

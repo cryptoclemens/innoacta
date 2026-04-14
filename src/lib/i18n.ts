@@ -20,8 +20,8 @@ const de = {
   },
   hero: {
     eyebrow: 'Strategische Geschäftsfeldentwicklung',
-    h1: 'Gründer-Denken für',
-    h1Highlight: 'Ihr nächstes Geschäftsfeld.',
+    h1: 'Innovatives Gründer-Denken für',
+    h1Highlight: 'Unternehmen mit Tradition.',
     subline:
       'Wir bringen Startup-Logik in Ihr nächstes Geschäftsfeld. Denn Startups bauen neue Märkte, indem sie schnell testen, klug einkaufen und radikal fokussiert bleiben. Vencly überträgt genau diese Logik auf Konzerne und den Mittelstand.',
     ctaPrimary: 'Erstgespräch vereinbaren',

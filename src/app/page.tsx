@@ -6,7 +6,7 @@ import WhyUs from '@/components/sections/WhyUs'
 import References from '@/components/sections/References'
 
 export const metadata: Metadata = {
-  title: 'Vencly – Gründer-Denken für Ihr nächstes Geschäftsfeld.',
+  title: 'Vencly – Innovatives Gründer-Denken für Unternehmen mit Tradition.',
   description:
     'Vencly überträgt Startup-Logik auf Konzerne und den Mittelstand: neue Geschäftsfelder entwickeln, validieren und launchen – mit Methode und Tempo.',
   alternates: {
