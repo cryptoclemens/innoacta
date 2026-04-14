@@ -61,6 +61,14 @@ body {
   background-clip: text;
 }
 
+/* Orange gradient for energetic/innovation text */
+.gradient-text-orange {
+  background: linear-gradient(135deg, #F97316, #FBBF24);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
 /* Teal glow effect (kept for backwards compat) */
 .teal-glow {
   box-shadow: 0 0 24px rgba(59, 130, 246, 0.4);
