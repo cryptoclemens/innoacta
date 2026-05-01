@@ -20,6 +20,14 @@ const breadcrumbJsonLd = {
 
 const articles = [
   {
+    slug: 'christoph-werner-dm-wirtschaftspolitik-freiheit',
+    category: 'Wirtschaftspolitik',
+    title: 'Fußball und Wirtschaft: Was Christoph Werner (dm) der Politik ins Stammbuch schreibt',
+    excerpt: 'Beim Mittelstands-Tag des Ludwig Erhard Preises brachte dm-Chef Christoph Werner eine Fußballanalogie, die sitzt: Regeln ja — aber die Spielzüge müssen frei bleiben. Ein Plädoyer für Ordnungspolitik statt Detailregulierung.',
+    readTime: '5 Min.',
+    date: '30. April 2026',
+  },
+  {
     slug: 'ki-beratung-mittelstand',
     category: 'KI & Strategie',
     title: 'KI-Beratung im Mittelstand: Geschäftsfeldentwicklung und -validierung mit KI',
