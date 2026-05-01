@@ -26,6 +26,63 @@ const jsonLd = {
   serviceType: 'Venture Clienting',
 }
 
+const faqJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'Was ist Venture Clienting?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Venture Clienting ist ein strukturierter Ansatz, bei dem etablierte Unternehmen externe Innovationspartner – Startups, Scaleups oder innovative Mittelständler – als erste zahlende Kunden einbinden. Anders als beim Corporate Venture Capital geht es nicht um Beteiligungen, sondern um echte Geschäftsbeziehungen mit klarem Testauftrag und Entscheidung innerhalb von 90 Tagen.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Was ist der Unterschied zwischen Venture Clienting und Corporate Venture Capital?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Corporate Venture Capital (CVC) bedeutet, dass ein Unternehmen Anteile an einem Startup erwirbt. Venture Clienting hingegen bedeutet, dass das Unternehmen das Startup als Dienstleister oder Lieferanten engagiert – ohne Beteiligung. Venture Clienting ist schneller, risikoärmer und näher am operativen Nutzen.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Wie lange dauert ein Venture-Clienting-Prozess bei Vencly?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Vencly strebt eine go/no-go Entscheidung innerhalb von 90 Tagen an. Der gesamte Prozess – von der Problemdefinition über das Scouting bis zum strukturierten Pilotprojekt – ist so konzipiert, dass er in bestehende Unternehmensstrukturen passt, ohne Jahre zu dauern.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Muss der beste Partner immer ein Startup sein?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Nein. Vencly sucht nach der besten Lösung für die jeweilige Herausforderung – nicht nach der coolsten Entität. Das kann ein Startup, ein Scaleup oder ein innovativer Mittelständler sein. Am Ende zählt die Lösung, nicht das Alter des Unternehmens.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Für welche Unternehmensgrößen eignet sich Venture Clienting?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Venture Clienting eignet sich besonders für Konzerne und mittelständische Unternehmen ab ca. 100 Mitarbeitern, die externe Innovationen schnell und risikoarm testen wollen – insbesondere in regulierten Branchen wie Energie, Infrastruktur oder dem öffentlichen Sektor.',
+      },
+    },
+  ],
+}
+
+const breadcrumbJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://vencly.com' },
+    { '@type': 'ListItem', position: 2, name: 'Leistungen', item: 'https://vencly.com/#leistungen' },
+    { '@type': 'ListItem', position: 3, name: 'Venture Clienting', item: 'https://vencly.com/venture-clienting' },
+  ],
+}
+
 const steps = [
   {
     n: '01',
@@ -70,10 +127,9 @@ const differentiators = [
 export default function VentureClientingPage() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       <div className="min-h-screen bg-[#F8F7F4] dark:bg-vencly-bg pt-24 pb-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
 

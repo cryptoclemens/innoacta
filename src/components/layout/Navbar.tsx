@@ -158,6 +158,7 @@ export default function Navbar() {
 
   const navLinks = [
     { label: t.nav.home, href: '/' },
+    { label: 'Blog', href: '/blog' },
     { label: t.nav.contact, href: '/contact' },
   ]
 

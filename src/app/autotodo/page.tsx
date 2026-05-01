@@ -60,6 +60,15 @@ export default function AutoTodoPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://vencly.com' },
+          { '@type': 'ListItem', position: 2, name: 'Projekte', item: 'https://vencly.com/projects' },
+          { '@type': 'ListItem', position: 3, name: 'AutoToDo', item: 'https://vencly.com/autotodo' },
+        ],
+      }) }} />
       <div className="min-h-screen bg-[#F8F7F4] dark:bg-vencly-bg pt-24 pb-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
 
