@@ -1,10 +1,12 @@
 import type { Metadata } from 'next'
 import localFont from 'next/font/local'
 import { Fraunces } from 'next/font/google'
+import Script from 'next/script'
 import './globals.css'
 import Navbar from '@/components/layout/Navbar'
 import Footer from '@/components/layout/Footer'
 import Providers from '@/components/layout/Providers'
+import CookieBanner from '@/components/layout/CookieBanner'
 
 const nunito = localFont({
   src: [
@@ -109,12 +111,35 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
+        {/* GA Consent Mode v2 defaults – must fire before gtag loads */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('consent', 'default', {
+  analytics_storage: 'denied',
+  ad_storage: 'denied',
+  wait_for_update: 500
+});
+gtag('js', new Date());
+`.trim(),
+          }}
+        />
       </head>
       <body className="bg-[#F8F7F4] dark:bg-vencly-bg text-gray-900 dark:text-white antialiased font-sans">
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-NEDCRSRHND"
+          strategy="afterInteractive"
+        />
+        <Script id="ga-config" strategy="afterInteractive">
+          {`gtag('config', 'G-NEDCRSRHND', { send_page_view: true });`}
+        </Script>
         <Providers>
           <Navbar />
           <main>{children}</main>
           <Footer />
+          <CookieBanner />
           <span className="fixed bottom-3 right-3 z-50 font-mono text-[10px] text-gray-400 dark:text-gray-700 select-none pointer-events-none">
             {process.env.NEXT_PUBLIC_BUILD_VERSION?.slice(0, 7) ?? 'dev'}
           </span>

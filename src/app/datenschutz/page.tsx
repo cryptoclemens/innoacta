@@ -120,11 +120,48 @@ export default function DatenschutzPage() {
           </section>
 
           <section>
-            <h2 className="text-base font-semibold text-gray-900 dark:text-white mb-3">6. Keine Analyse-Tools, kein Tracking</h2>
+            <h2 className="text-base font-semibold text-gray-900 dark:text-white mb-3">6. Google Analytics 4</h2>
             <p>
-              Wir setzen keine Webanalyse-Dienste (z. B. Google Analytics, Matomo, Meta Pixel) ein.
-              Es werden keine Nutzungsprofile erstellt, keine Retargeting-Maßnahmen durchgeführt und
-              keine personenbezogenen Daten zu Werbezwecken verarbeitet.
+              Diese Website nutzt Google Analytics 4 (GA4), einen Webanalysedienst der Google LLC,
+              1600 Amphitheatre Parkway, Mountain View, CA 94043, USA (innerhalb der EU betrieben
+              durch Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland).
+              GA4 wird nur aktiviert, wenn Sie Ihre Einwilligung über das Cookie-Banner erteilen.
+            </p>
+            <p className="mt-2">
+              <strong className="text-gray-900 dark:text-white">Zweck:</strong> Analyse der Websitenutzung
+              (Seitenaufrufe, Verweildauer, Einstiegs-/Ausstiegsseiten) zur Verbesserung unseres Angebots.
+              Es werden keine personenbezogenen Daten für Werbezwecke verarbeitet und kein Retargeting
+              durchgeführt. IP-Adressen werden vor der Speicherung anonymisiert (IP-Masking).
+            </p>
+            <p className="mt-2">
+              <strong className="text-gray-900 dark:text-white">Rechtsgrundlage:</strong> Art. 6 Abs. 1
+              lit. a DSGVO (Einwilligung). Ihre Einwilligung können Sie jederzeit mit Wirkung für die
+              Zukunft widerrufen, indem Sie den lokalen Speicher Ihres Browsers löschen oder uns unter{' '}
+              <a href="mailto:datenschutz@vencly.com" className="text-vencly-teal hover:underline">
+                datenschutz@vencly.com
+              </a>{' '}
+              kontaktieren.
+            </p>
+            <p className="mt-2">
+              <strong className="text-gray-900 dark:text-white">Drittlandtransfer:</strong> Google LLC ist
+              nach dem EU-US Data Privacy Framework (DPF) zertifiziert (Angemessenheitsbeschluss der
+              EU-Kommission vom 10. Juli 2023). Weitere Informationen:{' '}
+              <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" className="text-vencly-teal hover:underline">
+                policies.google.com/privacy
+              </a>
+            </p>
+            <p className="mt-2">
+              <strong className="text-gray-900 dark:text-white">Speicherdauer:</strong> Analysedaten werden
+              in Google Analytics standardmäßig für 14 Monate gespeichert. Cookies werden für die Dauer
+              der Browsersitzung bzw. maximal 2 Jahre gesetzt.
+            </p>
+            <p className="mt-2">
+              <strong className="text-gray-900 dark:text-white">Opt-out:</strong> Zusätzlich können Sie
+              die Erfassung durch GA4 für alle Websites mit dem{' '}
+              <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener noreferrer" className="text-vencly-teal hover:underline">
+                Google Analytics Opt-out Browser-Add-on
+              </a>{' '}
+              dauerhaft deaktivieren.
             </p>
           </section>
 
