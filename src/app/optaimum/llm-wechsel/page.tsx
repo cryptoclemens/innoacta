@@ -86,12 +86,12 @@ export default function LlmWechselPage() {
           <p className="text-gray-600 dark:text-gray-400 text-sm mt-1">Wechsle den KI-Anbieter ohne Datenverlust.</p>
         </div>
 
-        <div className="bg-white dark:bg-vencly-card border border-gray-200 dark:border-vencly-border rounded-2xl p-8 mb-8">
+        <div className="bg-white dark:bg-vencly-card border border-gray-200 dark:border-vencly-border rounded p-8 mb-8">
           <div className="grid grid-cols-[1fr,auto,1fr] gap-4 items-end">
             <div>
               <label className="text-xs font-mono text-gray-500 uppercase tracking-wider block mb-2">Von</label>
               <select value={from} onChange={e => setFrom(e.target.value)}
-                className="w-full px-3 py-2.5 text-sm rounded-lg border border-gray-200 dark:border-vencly-border bg-white dark:bg-vencly-bg text-gray-900 dark:text-white focus:outline-none focus:border-vencly-teal">
+                className="w-full px-3 py-2.5 text-sm rounded border border-gray-200 dark:border-vencly-border bg-white dark:bg-vencly-bg text-gray-900 dark:text-white focus:outline-none focus:border-vencly-teal">
                 <option value="">Auswählen...</option>
                 {providers.map(p => <option key={p} value={p}>{p}</option>)}
               </select>
@@ -100,7 +100,7 @@ export default function LlmWechselPage() {
             <div>
               <label className="text-xs font-mono text-gray-500 uppercase tracking-wider block mb-2">Nach</label>
               <select value={to} onChange={e => setTo(e.target.value)}
-                className="w-full px-3 py-2.5 text-sm rounded-lg border border-gray-200 dark:border-vencly-border bg-white dark:bg-vencly-bg text-gray-900 dark:text-white focus:outline-none focus:border-vencly-teal">
+                className="w-full px-3 py-2.5 text-sm rounded border border-gray-200 dark:border-vencly-border bg-white dark:bg-vencly-bg text-gray-900 dark:text-white focus:outline-none focus:border-vencly-teal">
                 <option value="">Auswählen...</option>
                 {providers.filter(p => p !== from).map(p => <option key={p} value={p}>{p}</option>)}
               </select>
@@ -122,7 +122,7 @@ export default function LlmWechselPage() {
             </div>
             <div className="space-y-4">
               {displayGuide.steps.map((s, i) => (
-                <div key={i} className="bg-white dark:bg-vencly-card border border-gray-200 dark:border-vencly-border rounded-xl p-5">
+                <div key={i} className="bg-white dark:bg-vencly-card border border-gray-200 dark:border-vencly-border rounded p-5">
                   <div className="flex items-start gap-4">
                     <div className="flex items-center justify-center w-7 h-7 rounded-full bg-vencly-teal/10 text-vencly-teal text-xs font-bold shrink-0 mt-0.5">{i + 1}</div>
                     <div className="flex-1">
@@ -136,7 +136,7 @@ export default function LlmWechselPage() {
                 </div>
               ))}
             </div>
-            <div className="mt-6 p-4 bg-vencly-teal/5 border border-vencly-teal/20 rounded-xl flex items-center gap-3">
+            <div className="mt-6 p-4 bg-vencly-teal/5 border border-vencly-teal/20 rounded flex items-center gap-3">
               <CheckCircle2 size={16} className="text-vencly-teal shrink-0" />
               <p className="text-sm text-gray-700 dark:text-gray-300">
                 Tipp: Erstelle zuerst dein{' '}

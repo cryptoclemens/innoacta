@@ -162,8 +162,8 @@ export default function OptAImumPage() {
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">Warum OptAImum?</h2>
             <div className="grid gap-6 sm:grid-cols-3">
               {whyItems.map(({ icon: Icon, title, desc }) => (
-                <div key={title} className="bg-white dark:bg-vencly-card border border-gray-200 dark:border-vencly-border rounded-2xl p-6">
-                  <div className="w-10 h-10 bg-vencly-teal/10 rounded-xl flex items-center justify-center mb-4">
+                <div key={title} className="bg-white dark:bg-vencly-card border border-gray-200 dark:border-vencly-border rounded p-6">
+                  <div className="w-10 h-10 bg-vencly-teal/10 rounded flex items-center justify-center mb-4">
                     <Icon size={20} className="text-vencly-teal" />
                   </div>
                   <h3 className="text-gray-900 dark:text-white font-semibold mb-2">{title}</h3>
@@ -178,7 +178,7 @@ export default function OptAImumPage() {
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-8">Die 6 Tools im Detail.</h2>
             <div className="space-y-6">
               {features.map((f) => (
-                <Link key={f.n} href={f.href} className="block bg-white dark:bg-vencly-card border border-gray-200 dark:border-vencly-border rounded-2xl p-8 hover:border-vencly-teal/40 transition-colors group">
+                <Link key={f.n} href={f.href} className="block bg-white dark:bg-vencly-card border border-gray-200 dark:border-vencly-border rounded p-8 hover:border-vencly-teal/40 transition-colors group">
                   <div className="flex items-start justify-between mb-3">
                     <span className="text-vencly-teal font-mono text-lg font-bold">{f.n}</span>
                     <span className="text-xs font-mono text-vencly-teal bg-vencly-teal/10 px-2 py-1 rounded-full">{f.badge}</span>
@@ -205,7 +205,7 @@ export default function OptAImumPage() {
           {/* LLM comparison */}
           <section className="mb-20">
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">Claude vs. ChatGPT – Quick Reference.</h2>
-            <div className="bg-white dark:bg-vencly-card border border-gray-200 dark:border-vencly-border rounded-2xl overflow-hidden">
+            <div className="bg-white dark:bg-vencly-card border border-gray-200 dark:border-vencly-border rounded overflow-hidden">
               <table className="w-full text-sm">
                 <thead>
                   <tr className="border-b border-gray-200 dark:border-vencly-border">
@@ -229,7 +229,7 @@ export default function OptAImumPage() {
 
           {/* Open source */}
           <section className="mb-20">
-            <div className="bg-white dark:bg-vencly-card border border-gray-200 dark:border-vencly-border rounded-2xl p-8 text-center">
+            <div className="bg-white dark:bg-vencly-card border border-gray-200 dark:border-vencly-border rounded p-8 text-center">
               <span className="text-vencly-teal text-xs font-mono tracking-widest uppercase mb-3 block">MIT License · v0.1.5</span>
               <h2 className="text-gray-900 dark:text-white font-bold text-xl mb-3">Für die KI-Community</h2>
               <p className="text-gray-600 dark:text-gray-400 text-sm max-w-lg mx-auto mb-2">
@@ -241,7 +241,7 @@ export default function OptAImumPage() {
           </section>
 
           {/* CTA */}
-          <section className="bg-gradient-to-r from-vencly-teal/10 to-vencly-teal/5 border border-vencly-teal/20 rounded-2xl p-10 text-center">
+          <section className="bg-gradient-to-r from-vencly-teal/10 to-vencly-teal/5 border border-vencly-teal/20 rounded p-10 text-center">
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">
               OptAImum für Ihr Team einführen?
             </h2>
@@ -250,7 +250,7 @@ export default function OptAImumPage() {
             </p>
             <button
               {...calButtonProps}
-              className="inline-flex items-center gap-2 bg-vencly-teal hover:bg-teal-600 text-white font-semibold px-8 py-3 rounded-xl transition-colors cursor-pointer"
+              className="inline-flex items-center gap-2 bg-vencly-teal hover:bg-teal-600 text-white font-semibold px-8 py-3 rounded transition-colors cursor-pointer"
             >
               Gespräch vereinbaren
               <ArrowRight size={16} />

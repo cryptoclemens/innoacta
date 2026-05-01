@@ -170,8 +170,8 @@ export default function VentureClientingPage() {
             </p>
             <div className="grid gap-6 sm:grid-cols-3">
               {differentiators.map(({ icon: Icon, title, desc }) => (
-                <div key={title} className="bg-white dark:bg-vencly-card border border-gray-200 dark:border-vencly-border rounded-2xl p-6">
-                  <div className="w-10 h-10 bg-vencly-teal/10 rounded-xl flex items-center justify-center mb-4">
+                <div key={title} className="bg-white dark:bg-vencly-card border border-gray-200 dark:border-vencly-border rounded p-6">
+                  <div className="w-10 h-10 bg-vencly-teal/10 rounded flex items-center justify-center mb-4">
                     <Icon size={20} className="text-vencly-teal" />
                   </div>
                   <h3 className="text-gray-900 dark:text-white font-semibold mb-2">{title}</h3>
@@ -188,7 +188,7 @@ export default function VentureClientingPage() {
             </h2>
             <div className="space-y-6">
               {steps.map((s) => (
-                <div key={s.n} className="flex gap-6 bg-white dark:bg-vencly-card border border-gray-200 dark:border-vencly-border rounded-2xl p-6">
+                <div key={s.n} className="flex gap-6 bg-white dark:bg-vencly-card border border-gray-200 dark:border-vencly-border rounded p-6">
                   <span className="text-vencly-teal font-mono text-2xl font-bold shrink-0 mt-0.5">{s.n}</span>
                   <div>
                     <h3 className="text-gray-900 dark:text-white font-semibold mb-1">{s.title}</h3>
@@ -220,7 +220,7 @@ export default function VentureClientingPage() {
 
           {/* Medium article */}
           <section className="mb-20">
-            <div className="bg-white dark:bg-vencly-card border border-gray-200 dark:border-vencly-border rounded-2xl p-8">
+            <div className="bg-white dark:bg-vencly-card border border-gray-200 dark:border-vencly-border rounded p-8">
               <span className="text-vencly-teal text-xs font-mono tracking-widest uppercase mb-3 block">
                 Weiterführend
               </span>
@@ -253,7 +253,7 @@ export default function VentureClientingPage() {
                 { href: '/blog/startup-zusammenarbeit-venture-client', cat: 'Venture Clienting', title: 'Startup-Zusammenarbeit als Chance in wirtschaftlichen Krisenzeiten' },
                 { href: '/blog/venture-clienting-regulierte-branchen', cat: 'Praxis', title: 'Venture Clienting in regulierten Branchen: Energie, Infrastruktur, öffentlicher Sektor' },
               ].map(a => (
-                <Link key={a.href} href={a.href} className="block bg-white dark:bg-vencly-card border border-gray-200 dark:border-vencly-border rounded-xl p-5 hover:border-vencly-teal/40 transition-colors group">
+                <Link key={a.href} href={a.href} className="block bg-white dark:bg-vencly-card border border-gray-200 dark:border-vencly-border rounded p-5 hover:border-vencly-teal/40 transition-colors group">
                   <span className="text-xs font-mono text-vencly-teal">{a.cat}</span>
                   <p className="text-sm font-semibold text-gray-900 dark:text-white group-hover:text-vencly-teal transition-colors mt-1 leading-snug">{a.title}</p>
                 </Link>
@@ -262,7 +262,7 @@ export default function VentureClientingPage() {
           </section>
 
           {/* CTA */}
-          <section className="bg-gradient-to-r from-vencly-teal/10 to-vencly-teal/5 border border-vencly-teal/20 rounded-2xl p-10 text-center">
+          <section className="bg-gradient-to-r from-vencly-teal/10 to-vencly-teal/5 border border-vencly-teal/20 rounded p-10 text-center">
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">
               Bereit, den besten Anbieter für Ihre Herausforderung zu finden?
             </h2>
@@ -271,7 +271,7 @@ export default function VentureClientingPage() {
             </p>
             <button
               {...calButtonProps}
-              className="inline-flex items-center gap-2 bg-vencly-teal hover:bg-teal-600 text-white font-semibold px-8 py-3 rounded-xl transition-colors cursor-pointer"
+              className="inline-flex items-center gap-2 bg-vencly-teal hover:bg-teal-600 text-white font-semibold px-8 py-3 rounded transition-colors cursor-pointer"
             >
               Erstgespräch vereinbaren
               <ArrowRight size={16} />

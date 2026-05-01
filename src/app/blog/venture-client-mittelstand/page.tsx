@@ -215,7 +215,7 @@ export default function ArticlePage() {
                 { href: '/blog/venture-clienting-regulierte-branchen', cat: 'Praxis', title: 'Venture Clienting in regulierten Branchen: Energie, Infrastruktur, öffentlicher Sektor' },
                 { href: '/blog/ki-beratung-mittelstand', cat: 'KI & Strategie', title: 'KI-Beratung im Mittelstand: Geschäftsfeldentwicklung und -validierung mit KI' },
               ].map(a => (
-                <Link key={a.href} href={a.href} className="block bg-white dark:bg-vencly-card border border-gray-200 dark:border-vencly-border rounded-xl p-4 hover:border-vencly-teal/40 transition-colors group">
+                <Link key={a.href} href={a.href} className="block bg-white dark:bg-vencly-card border border-gray-200 dark:border-vencly-border rounded p-4 hover:border-vencly-teal/40 transition-colors group">
                   <span className="text-xs font-mono text-vencly-teal">{a.cat}</span>
                   <p className="text-sm font-semibold text-gray-900 dark:text-white group-hover:text-vencly-teal transition-colors mt-1 leading-snug">{a.title}</p>
                 </Link>
@@ -233,13 +233,13 @@ export default function ArticlePage() {
             </div>
           </div>
 
-          <div className="mt-12 bg-white dark:bg-vencly-card border border-gray-200 dark:border-vencly-border rounded-2xl p-8 text-center">
+          <div className="mt-12 bg-white dark:bg-vencly-card border border-gray-200 dark:border-vencly-border rounded p-8 text-center">
             <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">Venture Clienting für Ihr Unternehmen starten?</h3>
             <p className="text-gray-600 dark:text-gray-400 mb-6">Wir begleiten mittelständische Unternehmen vom ersten Pilotprojekt bis zur skalierten Zusammenarbeit – unverbindlich besprechen.</p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <button
                 {...calButtonProps}
-                className="inline-flex items-center gap-2 bg-vencly-teal hover:bg-teal-600 text-white font-semibold px-6 py-3 rounded-xl transition-colors cursor-pointer"
+                className="inline-flex items-center gap-2 bg-vencly-teal hover:bg-teal-600 text-white font-semibold px-6 py-3 rounded transition-colors cursor-pointer"
               >
                 Erstgespräch vereinbaren <ArrowRight size={16} />
               </button>

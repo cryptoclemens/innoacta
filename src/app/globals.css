@@ -6,13 +6,13 @@
 :root {
   --color-bg: #F8F7F4;
   --color-card: #FFFFFF;
-  --color-border: #DBEAFE;
-  --color-teal: #2563EB;
+  --color-border: #D1E8E4;
+  --color-teal: #0b5c4f;
   --color-text: #0F172A;
   --color-muted: #475569;
   --color-subtle: #94A3B8;
   --scrollbar-bg: #F0EEE9;
-  --scrollbar-thumb: #BFDBFE;
+  --scrollbar-thumb: #9AC4BE;
 }
 
 /* ── Dark mode ───────────────────────────────────────── */
@@ -20,7 +20,7 @@ html.dark {
   --color-bg: #0F172A;
   --color-card: #1E293B;
   --color-border: #334155;
-  --color-teal: #3B82F6;
+  --color-teal: #0f766e;
   --color-text: #F1F5F9;
   --color-muted: #94A3B8;
   --color-subtle: #64748B;
@@ -53,9 +53,9 @@ body {
   background: var(--color-teal);
 }
 
-/* Gradient text utility */
+/* Gradient text utility — petrol family */
 .gradient-text {
-  background: linear-gradient(135deg, #1D4ED8, #3B82F6);
+  background: linear-gradient(135deg, #0b5c4f, #0f9d8e);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -69,12 +69,33 @@ body {
   background-clip: text;
 }
 
-/* Teal glow effect (kept for backwards compat) */
+/* Petrol glow effect */
 .teal-glow {
-  box-shadow: 0 0 24px rgba(59, 130, 246, 0.4);
+  box-shadow: 0 0 24px rgba(15, 118, 110, 0.35);
 }
 
-/* Blue glow effect (for primary CTAs) */
 .blue-glow {
-  box-shadow: 0 0 24px rgba(37, 99, 235, 0.45);
+  box-shadow: 0 0 24px rgba(15, 118, 110, 0.4);
+}
+
+/* Section eyebrow decoration */
+.section-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-nunito), monospace;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #0f766e;
+}
+
+.section-eyebrow::before {
+  content: '';
+  display: block;
+  width: 28px;
+  height: 1px;
+  background: currentColor;
+  opacity: 0.6;
 }

@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import localFont from 'next/font/local'
+import { Fraunces } from 'next/font/google'
 import './globals.css'
 import Navbar from '@/components/layout/Navbar'
 import Footer from '@/components/layout/Footer'
@@ -12,6 +13,13 @@ const nunito = localFont({
   ],
   variable: '--font-nunito',
   display: 'swap',
+})
+
+const fraunces = Fraunces({
+  subsets: ['latin'],
+  variable: '--font-fraunces',
+  display: 'swap',
+  weight: ['300', '400', '500', '600', '700'],
 })
 
 export const metadata: Metadata = {
@@ -101,7 +109,7 @@ export default function RootLayout({
   }
 
   return (
-    <html lang="de" suppressHydrationWarning className={nunito.variable}>
+    <html lang="de" suppressHydrationWarning className={`${nunito.variable} ${fraunces.variable}`}>
       <head>
         <meta name="theme-color" content="#14b8a6" media="(prefers-color-scheme: light)" />
         <meta name="theme-color" content="#0d0d14" media="(prefers-color-scheme: dark)" />

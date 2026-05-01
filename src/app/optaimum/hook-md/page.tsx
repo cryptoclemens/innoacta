@@ -56,7 +56,7 @@ export default function HookMdPage() {
     <div className="flex flex-wrap gap-2">
       {options.map(o => (
         <button key={o} onClick={() => onToggle(o)}
-          className={`px-3 py-1.5 rounded-lg text-sm border transition-colors ${selected.includes(o) ? 'bg-vencly-teal text-white border-vencly-teal' : 'border-gray-200 dark:border-vencly-border text-gray-700 dark:text-gray-300 hover:border-vencly-teal/60'}`}>
+          className={`px-3 py-1.5 rounded text-sm border transition-colors ${selected.includes(o) ? 'bg-vencly-teal text-white border-vencly-teal' : 'border-gray-200 dark:border-vencly-border text-gray-700 dark:text-gray-300 hover:border-vencly-teal/60'}`}>
           {o}
         </button>
       ))}
@@ -67,7 +67,7 @@ export default function HookMdPage() {
     <div className="flex flex-col gap-2">
       {options.map(o => (
         <button key={o} onClick={() => onChange(o)}
-          className={`text-left px-4 py-3 rounded-lg text-sm border transition-colors ${value === o ? 'bg-vencly-teal text-white border-vencly-teal' : 'border-gray-200 dark:border-vencly-border text-gray-700 dark:text-gray-300 hover:border-vencly-teal/60'}`}>
+          className={`text-left px-4 py-3 rounded text-sm border transition-colors ${value === o ? 'bg-vencly-teal text-white border-vencly-teal' : 'border-gray-200 dark:border-vencly-border text-gray-700 dark:text-gray-300 hover:border-vencly-teal/60'}`}>
           {o}
         </button>
       ))}
@@ -95,13 +95,13 @@ export default function HookMdPage() {
           ))}
         </div>
 
-        <div className="bg-white dark:bg-vencly-card border border-gray-200 dark:border-vencly-border rounded-2xl p-8">
+        <div className="bg-white dark:bg-vencly-card border border-gray-200 dark:border-vencly-border rounded p-8">
           {step === 0 && (
             <>
               <h2 className="text-gray-900 dark:text-white font-bold text-lg mb-2">Immer-Regeln</h2>
               <p className="text-gray-500 text-sm mb-6">Was soll die KI bei jeder Antwort tun?</p>
               <ChipGroup options={alwaysOptions} selected={always} onToggle={v => toggle(always, setAlways, v)} />
-              <input className="mt-4 w-full px-3 py-2 text-sm rounded-lg border border-gray-200 dark:border-vencly-border bg-transparent text-gray-900 dark:text-white placeholder-gray-400 focus:outline-none focus:border-vencly-teal"
+              <input className="mt-4 w-full px-3 py-2 text-sm rounded border border-gray-200 dark:border-vencly-border bg-transparent text-gray-900 dark:text-white placeholder-gray-400 focus:outline-none focus:border-vencly-teal"
                 placeholder="Eigene Regel..." value={customAlways} onChange={e => setCustomAlways(e.target.value)} />
             </>
           )}
@@ -110,7 +110,7 @@ export default function HookMdPage() {
               <h2 className="text-gray-900 dark:text-white font-bold text-lg mb-2">Nie-Regeln</h2>
               <p className="text-gray-500 text-sm mb-6">Was soll die KI niemals tun?</p>
               <ChipGroup options={neverOptions} selected={never} onToggle={v => toggle(never, setNever, v)} />
-              <input className="mt-4 w-full px-3 py-2 text-sm rounded-lg border border-gray-200 dark:border-vencly-border bg-transparent text-gray-900 dark:text-white placeholder-gray-400 focus:outline-none focus:border-vencly-teal"
+              <input className="mt-4 w-full px-3 py-2 text-sm rounded border border-gray-200 dark:border-vencly-border bg-transparent text-gray-900 dark:text-white placeholder-gray-400 focus:outline-none focus:border-vencly-teal"
                 placeholder="Eigene Regel..." value={customNever} onChange={e => setCustomNever(e.target.value)} />
             </>
           )}
@@ -132,7 +132,7 @@ export default function HookMdPage() {
             <>
               <h2 className="text-gray-900 dark:text-white font-bold text-lg mb-2">Automatisierungsregeln</h2>
               <p className="text-gray-500 text-sm mb-4">Optional: Eigene Automatisierungen beschreiben.</p>
-              <textarea className="w-full px-3 py-2 text-sm rounded-lg border border-gray-200 dark:border-vencly-border bg-transparent text-gray-900 dark:text-white placeholder-gray-400 focus:outline-none focus:border-vencly-teal resize-none h-28"
+              <textarea className="w-full px-3 py-2 text-sm rounded border border-gray-200 dark:border-vencly-border bg-transparent text-gray-900 dark:text-white placeholder-gray-400 focus:outline-none focus:border-vencly-teal resize-none h-28"
                 placeholder="z.B. Nach jeder Aufgabe eine kurze Zusammenfassung ausgeben. Bei Codeänderungen immer einen Test vorschlagen."
                 value={automation} onChange={e => setAutomation(e.target.value)} />
             </>
@@ -145,7 +145,7 @@ export default function HookMdPage() {
                   {copied ? <><Check size={14} /> Kopiert!</> : <><Copy size={14} /> Kopieren</>}
                 </button>
               </div>
-              <pre className="bg-gray-50 dark:bg-vencly-bg rounded-xl p-4 text-xs text-gray-800 dark:text-gray-300 whitespace-pre-wrap overflow-auto max-h-80 font-mono border border-gray-200 dark:border-vencly-border">{md}</pre>
+              <pre className="bg-gray-50 dark:bg-vencly-bg rounded p-4 text-xs text-gray-800 dark:text-gray-300 whitespace-pre-wrap overflow-auto max-h-80 font-mono border border-gray-200 dark:border-vencly-border">{md}</pre>
               <p className="mt-4 text-xs text-gray-500 dark:text-gray-400">Tipp: Speichere als <code className="text-vencly-teal">HOOKS.md</code> oder füge in deinen System-Prompt ein.</p>
             </>
           )}
@@ -156,7 +156,7 @@ export default function HookMdPage() {
             ) : <span />}
             {step < STEPS ? (
               <button onClick={() => setStep(s => s + 1)} disabled={!canNext}
-                className="inline-flex items-center gap-1.5 bg-vencly-teal hover:bg-teal-600 disabled:opacity-40 text-white text-sm font-semibold px-5 py-2 rounded-lg transition-colors">
+                className="inline-flex items-center gap-1.5 bg-vencly-teal hover:bg-teal-600 disabled:opacity-40 text-white text-sm font-semibold px-5 py-2 rounded transition-colors">
                 Weiter <ChevronRight size={14} />
               </button>
             ) : (

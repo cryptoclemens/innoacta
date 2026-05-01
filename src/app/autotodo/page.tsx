@@ -97,7 +97,7 @@ export default function AutoTodoPage() {
               href="https://autotodo.vencly.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-vencly-teal hover:bg-teal-600 text-white font-semibold px-8 py-4 rounded-xl transition-colors text-base shadow-lg shadow-teal-500/20"
+              className="inline-flex items-center gap-2 bg-vencly-teal hover:bg-teal-600 text-white font-semibold px-8 py-4 rounded transition-colors text-base shadow-lg shadow-teal-500/20"
             >
               AutoToDo öffnen
               <ExternalLink size={18} />
@@ -109,7 +109,7 @@ export default function AutoTodoPage() {
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">So funktioniert AutoToDo.</h2>
             <div className="grid gap-4 sm:grid-cols-2">
               {workflow.map(w => (
-                <div key={w.n} className="bg-white dark:bg-vencly-card border border-gray-200 dark:border-vencly-border rounded-xl p-6 flex gap-4">
+                <div key={w.n} className="bg-white dark:bg-vencly-card border border-gray-200 dark:border-vencly-border rounded p-6 flex gap-4">
                   <span className="text-vencly-teal font-mono text-xl font-bold shrink-0">{w.n}</span>
                   <div>
                     <h3 className="text-gray-900 dark:text-white font-semibold mb-1">{w.title}</h3>
@@ -125,8 +125,8 @@ export default function AutoTodoPage() {
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">Features im Detail.</h2>
             <div className="grid gap-6 sm:grid-cols-2">
               {features.map(({ icon: Icon, title, desc }) => (
-                <div key={title} className="bg-white dark:bg-vencly-card border border-gray-200 dark:border-vencly-border rounded-2xl p-6">
-                  <div className="w-10 h-10 bg-vencly-teal/10 rounded-xl flex items-center justify-center mb-4">
+                <div key={title} className="bg-white dark:bg-vencly-card border border-gray-200 dark:border-vencly-border rounded p-6">
+                  <div className="w-10 h-10 bg-vencly-teal/10 rounded flex items-center justify-center mb-4">
                     <Icon size={20} className="text-vencly-teal" />
                   </div>
                   <h3 className="text-gray-900 dark:text-white font-bold mb-2">{title}</h3>
@@ -156,11 +156,11 @@ export default function AutoTodoPage() {
           </section>
 
           {/* CTA bottom */}
-          <section className="bg-gradient-to-r from-vencly-teal/10 to-vencly-teal/5 border border-vencly-teal/20 rounded-2xl p-10 text-center">
+          <section className="bg-gradient-to-r from-vencly-teal/10 to-vencly-teal/5 border border-vencly-teal/20 rounded p-10 text-center">
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">Jetzt ausprobieren</h2>
             <p className="text-gray-600 dark:text-gray-400 mb-6">Kostenlos starten – kein Kreditkarte erforderlich.</p>
             <a href="https://autotodo.vencly.com" target="_blank" rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-vencly-teal hover:bg-teal-600 text-white font-semibold px-8 py-3 rounded-xl transition-colors">
+              className="inline-flex items-center gap-2 bg-vencly-teal hover:bg-teal-600 text-white font-semibold px-8 py-3 rounded transition-colors">
               AutoToDo öffnen <ExternalLink size={16} />
             </a>
           </section>

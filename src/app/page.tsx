@@ -3,6 +3,7 @@ import Hero from '@/components/sections/Hero'
 import ValueProp from '@/components/sections/ValueProp'
 import Features from '@/components/sections/Features'
 import WhyUs from '@/components/sections/WhyUs'
+import PullQuote from '@/components/sections/PullQuote'
 import References from '@/components/sections/References'
 
 export const metadata: Metadata = {
@@ -56,6 +57,7 @@ export default function HomePage() {
       <ValueProp />
       <Features />
       <WhyUs />
+      <PullQuote />
       <References />
     </>
   )
