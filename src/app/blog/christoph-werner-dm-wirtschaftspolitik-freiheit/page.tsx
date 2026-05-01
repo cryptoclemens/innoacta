@@ -6,12 +6,12 @@ import { calButtonProps } from '@/components/layout/CalProvider'
 export const metadata: Metadata = {
   title: 'Fußball und Wirtschaft: Was Christoph Werner (dm) der Politik ins Stammbuch schreibt',
   description:
-    'Beim Mittelstands-Tag des Ludwig Erhard Preises brachte dm-Chef Christoph Werner die Sache auf den Punkt: Fußball funktioniert, weil die Spielzüge frei sind – nicht weil sie reglementiert werden. Ein Plädoyer für Ordnungspolitik statt Detailregulierung.',
+    'Beim Ludwig Erhard Gipfel brachte dm-Chef Christoph Werner die Sache auf den Punkt: Fußball funktioniert, weil die Spielzüge frei sind – nicht weil sie reglementiert werden. Ein Plädoyer für Ordnungspolitik statt Detailregulierung.',
   alternates: { canonical: 'https://vencly.com/blog/christoph-werner-dm-wirtschaftspolitik-freiheit' },
   openGraph: {
-    title: 'Fußball und Wirtschaft: Christoph Werner (dm) beim Ludwig Erhard Preis',
+    title: 'Fußball und Wirtschaft: Christoph Werner (dm) beim Ludwig Erhard Gipfel',
     description:
-      'dm-Chef Christoph Werner beim Mittelstands-Tag: Warum Überregulierung den Wettbewerb genauso tötet wie ein Fußballspiel, in dem auch die Spielzüge per Regelwerk vorgegeben wären.',
+      'dm-Chef Christoph Werner beim Ludwig Erhard Gipfel: Warum Überregulierung den Wettbewerb genauso tötet wie ein Fußballspiel, in dem auch die Spielzüge per Regelwerk vorgegeben wären.',
   },
 }
 
@@ -20,7 +20,7 @@ const articleJsonLd = {
   '@type': 'Article',
   headline: 'Fußball und Wirtschaft: Was Christoph Werner (dm) der Politik ins Stammbuch schreibt',
   description:
-    'dm-Chef Christoph Werner beim Mittelstands-Tag des Ludwig Erhard Preises: Über Fußball, Freiheit und was die Politik daraus lernen sollte.',
+    'dm-Chef Christoph Werner beim Ludwig Erhard Gipfel: Über Fußball, Freiheit und was die Politik daraus lernen sollte.',
   author: { '@type': 'Person', name: 'Clemens Pompeÿ', url: 'https://vencly.com/ueber-uns' },
   publisher: { '@type': 'Organization', name: 'Vencly GmbH', url: 'https://vencly.com' },
   url: 'https://vencly.com/blog/christoph-werner-dm-wirtschaftspolitik-freiheit',
@@ -60,14 +60,14 @@ export default function ArticlePage() {
               Fußball und Wirtschaft: Was Christoph Werner (dm) der Politik ins Stammbuch schreibt
             </h1>
             <p className="text-xl text-gray-600 dark:text-gray-400 leading-relaxed">
-              Beim Mittelstands-Tag des Ludwig Erhard Preises brachte dm-Chef Christoph Werner eine der klarsten Diagnosen zur Lage des deutschen Unternehmertums — verpackt in eine Fußballanalogie, die jeder sofort versteht.
+              Beim <a href="https://www.ludwig-erhard-gipfel.de" target="_blank" rel="noopener noreferrer">Ludwig Erhard Gipfel</a> brachte dm-Chef Christoph Werner eine der klarsten Diagnosen zur Lage des deutschen Unternehmertums — verpackt in eine Fußballanalogie, die jeder sofort versteht.
             </p>
           </div>
 
           <article className="prose prose-lg dark:prose-invert max-w-none prose-headings:font-bold prose-headings:text-gray-900 dark:prose-headings:text-white prose-h2:text-xl prose-h2:mt-10 prose-p:text-gray-700 dark:prose-p:text-gray-300 prose-p:leading-relaxed prose-li:text-gray-700 dark:prose-li:text-gray-300 prose-li:leading-relaxed prose-a:text-vencly-teal prose-strong:text-gray-800 dark:prose-strong:text-white prose-blockquote:border-vencly-teal dark:prose-blockquote:text-gray-300">
 
             <p>
-              Es gibt Momente auf Veranstaltungen, in denen ein einziger Satz mehr transportiert als eine ganze Keynote. Beim diesjährigen Mittelstands-Tag des Ludwig Erhard Preises war das für mich der Moment, als Christoph Werner, Vorsitzender der Geschäftsführung von dm, über Fußball sprach.
+              Es gibt Momente auf Veranstaltungen, in denen ein einziger Satz mehr transportiert als eine ganze Keynote. Beim diesjährigen Ludwig Erhard Gipfel war das für mich der Moment, als Christoph Werner, Vorsitzender der Geschäftsführung von dm, über Fußball sprach.
             </p>
 
             <h2>Die Analogie, die sitzt</h2>
@@ -85,7 +85,7 @@ export default function ArticlePage() {
 
             <h2>Was Ludwig Erhard dazu gesagt hätte</h2>
             <p>
-              Der Rahmen des Abends war kein Zufall. Der Ludwig Erhard Preis wird an Persönlichkeiten vergeben, die unternehmerisches Denken, Eigenverantwortung und marktwirtschaftliche Prinzipien verkörpern. Ludwig Erhard selbst war der Architekt der Sozialen Marktwirtschaft — und sein Kerngedanke war genau dieser: Der Staat setzt den Rahmen (Wettbewerbsordnung, Eigentumsrechte, Vertragsfreiheit), aber er spielt nicht selbst. Er greift nicht in die Spielzüge ein.
+              Der Rahmen war kein Zufall. Der Ludwig Erhard Gipfel versammelt jedes Jahr Persönlichkeiten, die unternehmerisches Denken, Eigenverantwortung und marktwirtschaftliche Prinzipien verkörpern. Ludwig Erhard selbst war der Architekt der Sozialen Marktwirtschaft — und sein Kerngedanke war genau dieser: Der Staat setzt den Rahmen (Wettbewerbsordnung, Eigentumsrechte, Vertragsfreiheit), aber er spielt nicht selbst. Er greift nicht in die Spielzüge ein.
             </p>
             <p>
               Der Ordoliberalismus, den Erhard vertrat, war kein Plädoyer für Chaos. Im Gegenteil: Stabile, verlässliche Spielregeln sind die Voraussetzung dafür, dass Unternehmer überhaupt langfristig investieren und riskieren. Was Erhard — und heute Werner — ablehnen, ist die schleichende Ausweitung staatlicher Vorgaben von der Regelebene auf die Spielzugebene.
@@ -126,7 +126,7 @@ export default function ArticlePage() {
 
             <h2>Ein Satz, der bleibt</h2>
             <p>
-              Veranstaltungen wie der Mittelstands-Tag des Ludwig Erhard Preises haben genau dann Wert, wenn jemand auf der Bühne steht, der nicht redet, um zu gefallen — sondern um etwas zu sagen. Christoph Werner hat das gestern getan.
+              Veranstaltungen wie der Ludwig Erhard Gipfel haben genau dann Wert, wenn jemand auf der Bühne steht, der nicht redet, um zu gefallen — sondern um etwas zu sagen. Christoph Werner hat das gestern getan.
             </p>
             <p>
               Seine Fußballanalogie ist deshalb so wirksam, weil sie keiner langen Erklärung bedarf. Jeder, der einmal Fußball gespielt hat, versteht sofort, was gemeint ist. Und wer ein Unternehmen führt, versteht noch etwas mehr: dass das Spiel dann am schönsten ist — und am erfolgreichsten — wenn man innerhalb klarer Regeln wirklich frei agieren kann.
@@ -159,7 +159,7 @@ export default function ArticlePage() {
               <div className="w-12 h-12 rounded-full bg-vencly-teal/20 flex items-center justify-center text-vencly-teal font-bold text-lg">C</div>
               <div>
                 <div className="font-semibold text-gray-900 dark:text-white">Clemens Pompeÿ</div>
-                <div className="text-sm text-gray-500 dark:text-gray-400">Gründer, Vencly GmbH · Mittelstands-Tag des Ludwig Erhard Preises, April 2026</div>
+                <div className="text-sm text-gray-500 dark:text-gray-400">Gründer, Vencly GmbH · Ludwig Erhard Gipfel, April 2026</div>
               </div>
             </div>
           </div>
