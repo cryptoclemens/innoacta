@@ -1,12 +1,12 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { ArrowLeft, ArrowRight } from 'lucide-react'
+import { ArrowLeft, ArrowRight, CheckCircle2 } from 'lucide-react'
 import { calButtonProps } from '@/components/layout/CalProvider'
 
 export const metadata: Metadata = {
   title: 'KI-Beratung im Mittelstand: Geschäftsfeldentwicklung & -validierung mit KI',
   description:
-    'Wie mittelständische Unternehmen KI konkret für Geschäftsfeldentwicklung und Geschäftsfeldvalidierung einsetzen – praxisnah, ohne Overhead und mit messbarem Ergebnis.',
+    'Wie mittelständische Unternehmen KI konkret für Geschäftsfeldentwicklung und Geschäftsfeldvalidierung einsetzen – mit Tools, Prozess, DSGVO-Hinweisen und Praxisbeispiel.',
   alternates: { canonical: 'https://vencly.com/blog/ki-beratung-mittelstand' },
   openGraph: {
     title: 'KI-Beratung im Mittelstand: Geschäftsfeldentwicklung & -validierung mit KI',
@@ -20,7 +20,7 @@ const articleJsonLd = {
   '@type': 'Article',
   headline: 'KI-Beratung im Mittelstand: Geschäftsfeldentwicklung und -validierung mit KI',
   description:
-    'Wie mittelständische Unternehmen KI konkret für Geschäftsfeldentwicklung und Geschäftsfeldvalidierung einsetzen – praxisnah, ohne Overhead und mit messbarem Ergebnis.',
+    'Wie mittelständische Unternehmen KI konkret für Geschäftsfeldentwicklung, Marktvalidierung und Geschäftsfeldvalidierung einsetzen – mit Tools, DSGVO und Praxisbeispiel.',
   author: { '@type': 'Person', name: 'Clemens Pompeÿ', url: 'https://vencly.com' },
   publisher: { '@type': 'Organization', name: 'Vencly GmbH', url: 'https://vencly.com' },
   url: 'https://vencly.com/blog/ki-beratung-mittelstand',
@@ -31,6 +31,7 @@ const articleJsonLd = {
     { '@type': 'Thing', name: 'Künstliche Intelligenz' },
     { '@type': 'Thing', name: 'Mittelstand' },
     { '@type': 'Thing', name: 'Geschäftsfeldentwicklung' },
+    { '@type': 'Thing', name: 'Marktvalidierung' },
     { '@type': 'Thing', name: 'Geschäftsfeldvalidierung' },
   ],
 }
@@ -44,7 +45,7 @@ const faqJsonLd = {
       name: 'Wie kann KI bei der Geschäftsfeldentwicklung im Mittelstand helfen?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'KI beschleunigt konkret drei Phasen: Marktanalyse (Signale aus tausenden Quellen in Stunden statt Wochen), Kundenvalidierung (Interviewauswertung, Mustererkennung in Feedbackdaten) und Wettbewerbsanalyse (kontinuierliches Monitoring von Marktveränderungen). Der größte Hebel liegt nicht in der Automatisierung, sondern in der Entscheidungsqualität: KI macht Hypothesen schneller testbar.',
+        text: 'KI beschleunigt konkret drei Phasen: Marktanalyse (Signale aus tausenden Quellen in Stunden statt Wochen), Kundenvalidierung (Interviewauswertung, Mustererkennung in Feedbackdaten) und Wettbewerbsanalyse (kontinuierliches Monitoring von Marktveränderungen). Konkrete Tools: LLMs wie Claude oder GPT-4 für Interview-Auswertung, automatisierte Web-Pipelines für Markt-Monitoring, Vektor-Datenbanken für Dokumentenanalyse.',
       },
     },
     {
@@ -52,7 +53,15 @@ const faqJsonLd = {
       name: 'Was ist Geschäftsfeldvalidierung und wie unterstützt KI dabei?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Geschäftsfeldvalidierung bezeichnet den Prozess, mit dem ein Unternehmen prüft, ob ein neues Marktfeld tatsächlich erschließbar ist – bevor größere Ressourcen investiert werden. KI unterstützt durch automatisierte Marktgrößenschätzungen, Analyse von Kundeninterviews auf Kaufsignale, Simulation von Wettbewerbsreaktionen und die schnelle Überprüfung von Annahmen anhand öffentlich verfügbarer Daten.',
+        text: 'Geschäftsfeldvalidierung bezeichnet den Prozess, mit dem ein Unternehmen prüft, ob ein neues Marktfeld tatsächlich erschließbar ist – bevor größere Ressourcen investiert werden. KI-Tools für die Marktvalidierung: automatisierte Marktgrößenschätzung aus öffentlichen Daten, LLM-gestützte Auswertung von Kundeninterviews, Analogieanalyse vergleichbarer Märkte, Risikosimulation durch strukturierte Szenarioanalyse.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Ist KI-gestützte Geschäftsfeldentwicklung DSGVO-konform?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Ja, wenn die richtigen Maßnahmen getroffen werden. Für DACH-Unternehmen empfehlen sich: Verarbeitung personenbezogener Daten (z.B. aus Interviews) ausschließlich mit EU-Hosting oder auf eigener Infrastruktur, Einsatz von DSGVO-konformen API-Anbietern mit Auftragsverarbeitungsvertrag, keine Weitergabe vertraulicher Unternehmensdaten an Consumer-KI-Produkte ohne Datenschutzprüfung.',
       },
     },
     {
@@ -60,7 +69,7 @@ const faqJsonLd = {
       name: 'Was kostet KI-Beratung für Geschäftsfeldentwicklung im Mittelstand?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'KI-gestützte Geschäftsfeldentwicklung kostet typischerweise weniger als klassische Strategieberatung, weil Analysen schneller durchgeführt werden. Ein strukturierter Prozess von der Marktanalyse bis zur go/no-go Entscheidung dauert 8–12 Wochen. Der Vorteil: Anstatt ein teures Konzept zu kaufen, kauft man validierte Entscheidungsgrundlagen – mit klarer Empfehlung, ob ein Feld weiterverfolgt werden soll oder nicht.',
+        text: 'KI-gestützte Geschäftsfeldentwicklung kostet typischerweise weniger als klassische Strategieberatung, weil Analysen schneller durchgeführt werden. Ein strukturierter Prozess von der Marktanalyse bis zur go/no-go Entscheidung dauert 8–12 Wochen. Das Ergebnis ist keine Präsentation, sondern eine Entscheidung: Weitermachen, pivotieren oder stoppen.',
       },
     },
   ],
@@ -75,6 +84,14 @@ const breadcrumbJsonLd = {
     { '@type': 'ListItem', position: 3, name: 'KI-Beratung im Mittelstand', item: 'https://vencly.com/blog/ki-beratung-mittelstand' },
   ],
 }
+
+const selfCheckItems = [
+  'Wir haben eine konkrete Idee für ein neues Geschäftsfeld, aber keine Zeit für monatelange Analyse.',
+  'Wir wissen nicht, ob der Markt groß genug ist – oder ob Kunden wirklich zahlen würden.',
+  'Wir haben intern keine Ressourcen, die sich dem Thema vollständig widmen können.',
+  'Wir wollen eine fundierte go/no-go Entscheidung – kein weiteres Konzeptpapier.',
+  'Datenschutz und Vertraulichkeit sind für uns nicht verhandelbar.',
+]
 
 export default function ArticlePage() {
   return (
@@ -92,7 +109,7 @@ export default function ArticlePage() {
           <div className="mb-12">
             <div className="flex items-center gap-3 mb-4">
               <span className="text-xs font-mono text-vencly-teal bg-vencly-teal/10 px-3 py-1 rounded-full">KI & Strategie</span>
-              <span className="text-xs text-gray-500 dark:text-gray-500">1. Mai 2025 · 8 Min. Lesezeit</span>
+              <span className="text-xs text-gray-500 dark:text-gray-500">1. Mai 2025 · 9 Min. Lesezeit</span>
             </div>
             <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white leading-tight mb-6">
               KI-Beratung im Mittelstand: Geschäftsfeldentwicklung und -validierung mit KI
@@ -109,106 +126,124 @@ export default function ArticlePage() {
               Wenn ein mittelständisches Unternehmen ein neues Geschäftsfeld erschließen will, stehen typischerweise zwei Wege zur Verfügung: monatelange Eigenrecherche durch überbelastete Mitarbeitende – oder der Einkauf einer teuren Strategieberatung, die am Ende ein Konzeptpapier liefert, das niemand umsetzt.
             </p>
             <p>
-              Beide Wege haben dasselbe Problem: Sie dauern zu lang, kosten zu viel und liefern zu wenig belastbare Entscheidungsgrundlagen. KI verändert diese Gleichung grundlegend.
+              Beide Wege haben dasselbe Problem: Sie dauern zu lang, kosten zu viel und liefern zu wenig belastbare Entscheidungsgrundlagen für eine echte Marktvalidierung. KI verändert diese Gleichung grundlegend.
             </p>
 
-            <h2>Was KI in der Geschäftsfeldentwicklung wirklich leistet</h2>
+            <h2>Was KI konkret macht – und welche Tools dabei zum Einsatz kommen</h2>
             <p>
               KI ist kein Ersatz für unternehmerisches Urteil. Aber sie ist ein außerordentlich leistungsfähiges Werkzeug für die drei zeitintensivsten Phasen jeder Geschäftsfeldentwicklung:
             </p>
             <ul>
               <li>
-                <strong>Marktanalyse und Signalerfassung.</strong> Was früher Wochen dauerte – das systematische Auswerten von Branchenberichten, Patentdatenbanken, Stellenanzeigen der Wettbewerber, Förderbekanntmachungen und Fachpublikationen – lässt sich mit KI in Stunden durchführen. Das Ergebnis: ein vollständigeres Bild des Marktes, früher im Prozess.
+                <strong>Marktanalyse und Signalerfassung.</strong> Automatisierte Pipelines durchsuchen Branchenberichte, Patentdatenbanken, Stellenanzeigen der Wettbewerber, Förderbekanntmachungen und Fachpublikationen – und verdichten die Ergebnisse in Stunden statt Wochen. Konkrete Tools: Web-Scraping-Pipelines kombiniert mit LLMs (Claude, GPT-4) für die inhaltliche Auswertung und Mustererkennung.
               </li>
               <li>
-                <strong>Kundenvalidierung.</strong> Interviews mit potenziellen Kunden sind der wertvollste Input jeder Marktvalidierung. KI unterstützt bei der Auswertung: Muster in Antworten erkennen, Kaufsignale von Höflichkeiten unterscheiden, Hypothesen gegen gesammeltes Feedback prüfen. Zehn Interviews in einem Tag auswerten statt in einer Woche.
+                <strong>Kundenvalidierung.</strong> Interviews mit potenziellen Kunden sind der wertvollste Input jeder Marktvalidierung. LLMs werten Transkripte strukturiert aus: Kaufsignale von Höflichkeiten trennen, wiederkehrende Schmerzpunkte identifizieren, Hypothesen gegen das gesammelte Feedback prüfen. Zehn Interviews in einem Tag auswerten statt in einer Woche.
               </li>
               <li>
-                <strong>Wettbewerbsbeobachtung.</strong> Wer betritt gerade dasselbe Feld? Welche Startups haben zuletzt Finanzierungen bekommen? Was kommunizieren etablierte Wettbewerber über ihre Roadmap? KI-gestütztes Monitoring gibt Antworten, bevor die Informationen veraltet sind.
+                <strong>Wettbewerbsbeobachtung.</strong> Wer betritt gerade dasselbe Feld? Welche Startups haben zuletzt Finanzierungen bekommen? Was kommunizieren etablierte Wettbewerber über ihre Roadmap? KI-Agenten monitoring kontinuierlich relevante Quellen und liefern wöchentliche Zusammenfassungen.
               </li>
             </ul>
+
+            <h2>Vorher / Nachher: Ein Praxisbeispiel</h2>
+          </article>
+
+          {/* Before/After visual - outside prose for full control */}
+          <div className="not-prose my-8 grid sm:grid-cols-2 gap-4">
+            <div className="bg-red-50 dark:bg-red-950/30 border border-red-200 dark:border-red-800 rounded-xl p-6">
+              <div className="text-xs font-mono font-semibold text-red-500 uppercase tracking-widest mb-3">Ohne KI-gestützte Methoden</div>
+              <div className="text-sm font-semibold text-gray-800 dark:text-gray-200 mb-3">Maschinenbauer, ~200 MA, neues Servicegeschäft</div>
+              <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-400">
+                <li>⏱ 6 Monate interne Analyse</li>
+                <li>📄 80-seitiges Strategiepapier</li>
+                <li>❌ Kein Kundenfeedback vor Entscheidung</li>
+                <li>💶 ~40.000 € Beraterkosten</li>
+                <li>🔄 Projekt nach 8 Monaten gestoppt</li>
+              </ul>
+            </div>
+            <div className="bg-green-50 dark:bg-green-950/30 border border-green-200 dark:border-green-800 rounded-xl p-6">
+              <div className="text-xs font-mono font-semibold text-green-600 uppercase tracking-widest mb-3">Mit KI-gestützten Methoden</div>
+              <div className="text-sm font-semibold text-gray-800 dark:text-gray-200 mb-3">Vergleichbarer Maschinenbauer, ~180 MA</div>
+              <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-400">
+                <li>⏱ 4 Wochen Marktanalyse + 3 Wochen Interviews</li>
+                <li>📋 12 Kundeninterviews, KI-ausgewertet</li>
+                <li>✅ go/no-go nach 7 Wochen</li>
+                <li>💶 ~18.000 € Gesamtkosten</li>
+                <li>🚀 Pivot in validiertes Nachbarfeld, heute im Markt</li>
+              </ul>
+            </div>
+          </div>
+
+          <article className="prose prose-lg dark:prose-invert max-w-none prose-headings:font-bold prose-headings:text-gray-900 dark:prose-headings:text-white prose-h2:text-xl prose-h2:mt-10 prose-p:text-gray-700 dark:prose-p:text-gray-300 prose-p:leading-relaxed prose-li:text-gray-700 dark:prose-li:text-gray-300 prose-li:leading-relaxed prose-a:text-vencly-teal prose-strong:text-gray-800 dark:prose-strong:text-white prose-blockquote:border-vencly-teal dark:prose-blockquote:text-gray-300">
 
             <h2>Geschäftsfeldvalidierung: Hypothesen schneller töten</h2>
             <p>
               Das Ziel der Validierung ist nicht, zu beweisen, dass eine Idee funktioniert. Das Ziel ist, so schnell wie möglich herauszufinden, ob sie es <em>nicht</em> tut – bevor größere Ressourcen investiert werden.
             </p>
-            <p>
-              KI beschleunigt diesen Prozess an mehreren Stellen:
-            </p>
             <ol>
               <li>
-                <strong>Marktgrößenschätzung:</strong> Wie groß ist der adressierbare Markt wirklich? KI kann aus öffentlich verfügbaren Daten – Branchenstatistiken, Unternehmensregistern, Ausschreibungsdatenbanken – belastbare Größenordnungen ableiten, die eine erste Plausibilitätsprüfung ermöglichen.
+                <strong>Marktgrößenschätzung:</strong> KI leitet aus Branchenstatistiken, Unternehmensregistern und Ausschreibungsdatenbanken belastbare Größenordnungen ab – als Grundlage für die erste Plausibilitätsprüfung, lange bevor ein Berater eine Folie dazu erstellt hätte.
               </li>
               <li>
-                <strong>Annahmenprüfung:</strong> Jedes neue Geschäftsfeld basiert auf Annahmen: „Kunden haben dieses Problem", „Sie zahlen dafür X €", „Wettbewerb ist noch nicht etabliert". KI kann helfen, diese Annahmen explizit zu machen und systematisch gegen verfügbare Daten zu prüfen – bevor man Interviews führt.
+                <strong>Annahmenprüfung:</strong> Jedes neue Geschäftsfeld basiert auf Annahmen. LLMs helfen, diese explizit zu machen und systematisch gegen verfügbare Daten zu prüfen – vor dem ersten Interview.
               </li>
               <li>
-                <strong>Analogieanalyse:</strong> In welchen anderen Märkten oder Ländern wurde dieses Geschäftsmodell bereits realisiert? Was lässt sich aus diesen Fällen ableiten? KI kann relevante Analogien in Minuten identifizieren, die ein menschlicher Analyst in Tagen finden würde.
+                <strong>Analogieanalyse:</strong> Wo wurde dieses Modell in anderen Märkten oder Ländern bereits realisiert? KI findet relevante Analogien in Minuten, die ein Analyst in Tagen finden würde. Ein unterschätztes Tool für die frühe Validierungsphase.
               </li>
               <li>
-                <strong>Risikosimulation:</strong> Was sind die drei wahrscheinlichsten Gründe, warum dieses Feld scheitert? Eine strukturierte KI-gestützte Szenarioanalyse deckt blinde Flecken auf, bevor das Pilotprojekt beginnt.
+                <strong>Risikosimulation:</strong> Was sind die drei wahrscheinlichsten Gründe, warum dieses Feld scheitert? Strukturierte KI-Szenarioanalysen decken blinde Flecken auf – bevor das Pilotprojekt beginnt.
               </li>
             </ol>
-
-            <h2>KI als Berater-Verstärker – nicht als Berater-Ersatz</h2>
-            <p>
-              Eine wichtige Klarstellung: KI ersetzt nicht die Erfahrung eines Beraters, der hundert ähnliche Projekte gesehen hat, oder das Urteil eines Unternehmers, der seine Branche seit Jahrzehnten kennt.
-            </p>
-            <p>
-              Was KI tut: Sie hebt das Qualitätsniveau der Informationsbasis auf ein Niveau, das früher nur mit großen Beratungsteams erreichbar war. Das bedeutet für mittelständische Unternehmen: bessere Entscheidungen, schneller, zu einem Bruchteil der Kosten klassischer Strategieberatung.
-            </p>
 
             <blockquote>
               <p>„KI macht Hypothesen nicht wahr. Sie macht sie schneller testbar."</p>
             </blockquote>
 
-            <h2>Konkrete Anwendungsfälle im Mittelstand</h2>
+            <h2>Datenschutz und DSGVO: Was DACH-Unternehmen wissen müssen</h2>
             <p>
-              Wo setzen mittelständische Unternehmen KI heute konkret in der Geschäftsfeldentwicklung ein?
+              Der häufigste Einwand bei KI-gestützten Projekten im Mittelstand: „Was passiert mit unseren Daten?" Das ist eine berechtigte Frage – und eine lösbare.
+            </p>
+            <p>
+              Für die Geschäftsfeldentwicklung gibt es zwei Datenkategorien mit unterschiedlichem Schutzbedarf:
             </p>
             <ul>
-              <li>
-                <strong>Maschinenbau & Automobilzulieferer:</strong> Neue Servicegeschäfte rund um Predictive Maintenance, Remote Monitoring oder digitale Ersatzteilversorgung. KI analysiert, welche Kunden welchen Servicebedarf haben und welche Preisbereitschaft existiert.
-              </li>
-              <li>
-                <strong>Energie & Infrastruktur:</strong> Neue Geschäftsfelder im Bereich erneuerbare Wärme, Energieeffizienz-Services oder Netzdigitalisierung. KI wertet Förderlandschaft, regulatorische Entwicklungen und Wettbewerbsaktivitäten systematisch aus.
-              </li>
-              <li>
-                <strong>Handel & Dienstleistung:</strong> Expansion in angrenzende Segmente oder Regionen. KI-gestützte Marktanalysen ersetzen aufwendige manuelle Recherchen und liefern Entscheidungsgrundlagen in Tagen statt Monaten.
-              </li>
-              <li>
-                <strong>Produzierendes Gewerbe:</strong> Validierung von Produktinnovationen oder neuen Zielgruppen. KI analysiert Kundenrezensionen, Forenbeiträge und Support-Anfragen der Wettbewerber auf unerfüllte Bedürfnisse.
-              </li>
+              <li><strong>Öffentliche Marktdaten</strong> (Branchenberichte, Patente, Stellenanzeigen): Kein Datenschutzproblem. Diese können uneingeschränkt mit KI-Tools verarbeitet werden.</li>
+              <li><strong>Interne oder personenbezogene Daten</strong> (Kundeninterviews, Umsatzdaten, Strategie-Dokumente): Hier gelten DSGVO-Anforderungen. Empfehlung: ausschließlich Verarbeitung über API-Anbieter mit EU-Hosting und Auftragsverarbeitungsvertrag (AVV), keine Weitergabe an Consumer-KI-Produkte (ChatGPT Free, Copilot ohne Enterprise-Lizenz) ohne Datenschutzprüfung.</li>
+            </ul>
+            <p>
+              In der Praxis bedeutet das: Anonymisierung von Interviewtranskripten vor der KI-Auswertung, Nutzung von Enterprise-APIs statt Consumer-Produkte, und eine klare Datenverarbeitungsvereinbarung mit dem Beratungspartner. Das ist kein Showstopper – es ist eine Checkliste.
+            </p>
+
+            <h2>KI als Berater-Verstärker – nicht als Berater-Ersatz</h2>
+            <p>
+              KI ersetzt nicht die Erfahrung, die hundert ähnliche Projekte geben, oder das Branchenurteil nach Jahrzehnten im Markt. Was KI tut: Sie hebt das Niveau der Informationsbasis auf ein Niveau, das früher nur mit großen Teams erreichbar war.
+            </p>
+            <ul>
+              <li><strong>Iterativ statt linear.</strong> Klassische Beratung liefert am Ende ein Ergebnis. KI-gestützte Beratung arbeitet in Schleifen: Hypothese, Test, Verfeinerung. Das Ergebnis ist robuster.</li>
+              <li><strong>Datenbasiert statt meinungsbasiert.</strong> Weniger „wir glauben, dass der Markt X groß ist" – mehr „auf Basis dieser Quellen schätzen wir X mit dieser Unsicherheit".</li>
+              <li><strong>Transparent statt opak.</strong> Welche Quellen? Welche Annahmen? Welche Grenzen? Das ermöglicht eigene Urteilsbildung statt Abhängigkeit vom Berater.</li>
+              <li><strong>Schnell statt langwierig.</strong> Was früher 12 Wochen dauerte, ist in 4–6 Wochen erreichbar.</li>
             </ul>
 
-            <h2>Was KI-gestützte Beratung von klassischer Beratung unterscheidet</h2>
-            <p>
-              Der entscheidende Unterschied ist nicht die Technologie – es ist die Arbeitsweise:
-            </p>
+            <h2>Konkrete Anwendungsfälle: KI-Marktvalidierung nach Branche</h2>
             <ul>
-              <li><strong>Iterativ statt linear.</strong> Klassische Beratung liefert am Ende ein Ergebnis. KI-gestützte Beratung arbeitet in Schleifen: Hypothese aufstellen, testen, verfeinern, erneut testen. Das Ergebnis ist robuster, weil es mehrfach gegen die Realität geprüft wurde.</li>
-              <li><strong>Datenbasiert statt meinungsbasiert.</strong> Weniger „wir glauben, dass der Markt X groß ist" – mehr „auf Basis dieser drei Datenquellen schätzen wir X mit dieser Unsicherheit".</li>
-              <li><strong>Transparent statt opak.</strong> KI-gestützte Analysen sind nachvollziehbar: Welche Quellen? Welche Annahmen? Welche Grenzen? Das ermöglicht eigene Urteilsbildung statt Abhängigkeit vom Berater.</li>
-              <li><strong>Schnell statt langwierig.</strong> Was früher 12 Wochen dauerte, ist in 4–6 Wochen erreichbar – weil die zeitintensiven Analyseaufgaben automatisiert werden.</li>
+              <li><strong>Maschinenbau & Automobilzulieferer:</strong> Neue Servicegeschäfte rund um Predictive Maintenance oder Remote Monitoring. KI analysiert Kundenbedarf und Preisbereitschaft aus öffentlichen Datenquellen – als Grundlage für Geschäftsfeldvalidierung vor dem ersten Kundengespräch.</li>
+              <li><strong>Energie & Infrastruktur:</strong> Neue Felder in erneuerbarer Wärme, Energieeffizienz-Services oder Netzdigitalisierung. KI wertet Förderlandschaft und regulatorische Entwicklungen systematisch aus – ein entscheidender Vorteil für die Marktvalidierung in regulierten Märkten.</li>
+              <li><strong>Handel & Dienstleistung:</strong> Expansion in angrenzende Segmente. KI-gestützte Marktanalysen ersetzen aufwendige manuelle Recherchen und liefern Entscheidungsgrundlagen in Tagen statt Monaten.</li>
+              <li><strong>Produzierendes Gewerbe:</strong> Validierung neuer Zielgruppen oder Produktinnovationen. KI analysiert Kundenrezensionen und Wettbewerber-Support-Anfragen auf unerfüllte Bedürfnisse – klassische Geschäftsfeldentwicklung mit KI-Werkzeugen.</li>
             </ul>
 
             <h2>Wie ein KI-gestützter Validierungsprozess aussieht</h2>
-            <p>
-              Ein typischer Ablauf für die KI-gestützte Geschäftsfeldvalidierung im Mittelstand:
-            </p>
             <ol>
               <li><strong>Hypothesenworkshop (1 Tag):</strong> Gemeinsame Definition des Suchfeldes, der zentralen Annahmen und der Erfolgskriterien. Was muss wahr sein, damit dieses Feld funktioniert?</li>
-              <li><strong>KI-gestützte Marktanalyse (1–2 Wochen):</strong> Systematische Analyse von Marktgröße, Wettbewerb, regulatorischem Umfeld und Kundenverhalten auf Basis verfügbarer Daten.</li>
-              <li><strong>Kundeninterviews (2–3 Wochen):</strong> 12–15 strukturierte Gespräche mit potenziellen Kunden. KI-gestützte Auswertung auf Muster und Kaufsignale.</li>
-              <li><strong>Synthese und Entscheidungsvorlage (1 Woche):</strong> Klare Empfehlung: Weitermachen, pivotieren oder stoppen – mit vollständiger Begründung und Risikobewertung.</li>
+              <li><strong>KI-gestützte Marktanalyse (1–2 Wochen):</strong> Automatisierte Analyse von Marktgröße, Wettbewerb, regulatorischem Umfeld und Kundenverhalten. Toolset: Web-Pipelines, LLM-Auswertung, Analogieanalyse.</li>
+              <li><strong>Kundeninterviews (2–3 Wochen):</strong> 12–15 strukturierte Gespräche mit potenziellen Kunden. KI-gestützte Transkript-Auswertung auf Kaufsignale und Muster.</li>
+              <li><strong>Synthese und Entscheidungsvorlage (1 Woche):</strong> Klare Empfehlung: Weitermachen, pivotieren oder stoppen – mit vollständiger Begründung und Risikobewertung. DSGVO-konformes Datenhandling dokumentiert.</li>
             </ol>
 
             <h2>Vencly: KI-gestützte Geschäftsfeldentwicklung in der Praxis</h2>
             <p>
-              Vencly setzt KI-gestützte Methoden in jedem Geschäftsfeldentwicklungsprojekt ein – nicht als Technologie-Showcase, sondern weil es die Qualität der Entscheidungsgrundlagen verbessert und den Prozess beschleunigt. Das beginnt bei der datengestützten Suchfeldanalyse, geht über die KI-unterstützte Auswertung von Kundeninterviews bis zur systematischen Wettbewerbsbeobachtung während des Pilotprojekts.
-            </p>
-            <p>
-              Für mittelständische Unternehmen bedeutet das: Zugang zu Analysetiefe, die früher nur mit großen Beratungsteams erreichbar war – in einem Zeitrahmen und zu Kosten, die zur Projektgröße passen. Das Ergebnis ist keine Präsentation, sondern eine fundierte Entscheidung: Weitermachen, pivotieren oder stoppen.
+              Vencly setzt KI-gestützte Methoden in jedem Geschäftsfeldentwicklungsprojekt ein – nicht als Technologie-Showcase, sondern weil es bessere Entscheidungen in kürzerer Zeit ermöglicht. Das beginnt bei der datengestützten Suchfeldanalyse, geht über LLM-gestützte Auswertung von Kundeninterviews bis zur systematischen Wettbewerbsbeobachtung während des Pilotprojekts – alles DSGVO-konform und auf Basis klar definierter Datenverarbeitungsverträge.
             </p>
 
             <h2>Fazit: Weniger Konzept, mehr Entscheidung</h2>
@@ -220,6 +255,7 @@ export default function ArticlePage() {
             </p>
           </article>
 
+          {/* Author */}
           <div className="mt-12 pt-8 border-t border-gray-200 dark:border-vencly-border">
             <div className="flex items-center gap-4">
               <div className="w-12 h-12 rounded-full bg-vencly-teal/20 flex items-center justify-center text-vencly-teal font-bold text-lg">C</div>
@@ -230,17 +266,26 @@ export default function ArticlePage() {
             </div>
           </div>
 
-          <div className="mt-12 bg-white dark:bg-vencly-card border border-gray-200 dark:border-vencly-border rounded-2xl p-8 text-center">
-            <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">Neues Geschäftsfeld validieren?</h3>
-            <p className="text-gray-600 dark:text-gray-400 mb-6">Wir begleiten mittelständische Unternehmen mit KI-gestützten Methoden – von der ersten Hypothese bis zur fundierten go/no-go Entscheidung.</p>
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+          {/* Self-Check CTA */}
+          <div className="mt-12 bg-white dark:bg-vencly-card border border-gray-200 dark:border-vencly-border rounded-2xl p-8">
+            <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">Ist Ihr Geschäftsfeld bereit zur Validierung?</h3>
+            <p className="text-gray-500 dark:text-gray-400 text-sm mb-6">Wenn Sie mindestens 3 der folgenden Aussagen mit Ja beantworten, lohnt sich ein Gespräch:</p>
+            <ul className="space-y-3 mb-8">
+              {selfCheckItems.map((item) => (
+                <li key={item} className="flex items-start gap-3 text-sm text-gray-700 dark:text-gray-300">
+                  <CheckCircle2 size={18} className="text-vencly-teal shrink-0 mt-0.5" />
+                  {item}
+                </li>
+              ))}
+            </ul>
+            <div className="flex flex-col sm:flex-row items-center gap-4">
               <button
                 {...calButtonProps}
                 className="inline-flex items-center gap-2 bg-vencly-teal hover:bg-teal-600 text-white font-semibold px-6 py-3 rounded-xl transition-colors cursor-pointer"
               >
-                Erstgespräch vereinbaren <ArrowRight size={16} />
+                Kostenlos besprechen <ArrowRight size={16} />
               </button>
-              <Link href="/geschaeftsfeldentwicklung" className="inline-flex items-center gap-2 text-vencly-teal hover:text-teal-400 font-medium transition-colors">
+              <Link href="/geschaeftsfeldentwicklung" className="inline-flex items-center gap-2 text-vencly-teal hover:text-teal-400 font-medium transition-colors text-sm">
                 Unsere Leistung: Geschäftsfeldentwicklung <ArrowRight size={14} />
               </Link>
             </div>
