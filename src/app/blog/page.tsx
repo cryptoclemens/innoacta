@@ -20,6 +20,14 @@ const breadcrumbJsonLd = {
 
 const articles = [
   {
+    slug: 'ki-beratung-mittelstand',
+    category: 'KI & Strategie',
+    title: 'KI-Beratung im Mittelstand: Geschäftsfeldentwicklung und -validierung mit KI',
+    excerpt: 'KI verändert, wie Unternehmen neue Märkte erschließen. Für mittelständische Unternehmen bedeutet das schnellere Entscheidungen mit besserer Datenbasis – statt monatelanger Konzeptarbeit.',
+    readTime: '8 Min.',
+    date: '1. Mai 2025',
+  },
+  {
     slug: 'venture-client-mittelstand',
     category: 'Mittelstand',
     title: 'Venture Client im Mittelstand: Chancen, Hürden und wie es gelingt',

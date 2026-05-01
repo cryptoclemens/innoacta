@@ -36,6 +36,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...entry('/autotodo', 0.8, 'monthly'),
     ...entry('/contact', 0.6, 'monthly'),
     blogEntry('/blog'),
+    blogEntry('/blog/ki-beratung-mittelstand'),
     blogEntry('/blog/venture-client-mittelstand'),
     blogEntry('/blog/was-ist-venture-clienting'),
     blogEntry('/blog/geschaeftsfeldentwicklung-methoden'),
