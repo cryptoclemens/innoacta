@@ -15,7 +15,7 @@ const articleJsonLd = {
   '@type': 'Article',
   headline: 'Was ist Venture Clienting? Definition, Prozess und Praxisbeispiele',
   description: 'Venture Clienting einfach erklärt: Definition, Unterschied zu CVC, der 90-Tage-Prozess und Praxisbeispiele.',
-  author: { '@type': 'Person', name: 'Clemens Kreuz', url: 'https://vencly.com' },
+  author: { '@type': 'Person', name: 'Clemens Pompeÿ', url: 'https://vencly.com' },
   publisher: { '@type': 'Organization', name: 'Vencly GmbH', url: 'https://vencly.com' },
   url: 'https://vencly.com/blog/was-ist-venture-clienting',
   datePublished: '2025-02-10',
@@ -148,13 +148,21 @@ export default function ArticlePage() {
             <p>
               Die relevante Frage ist: <strong>Wer hat die beste Lösung für unser Problem?</strong> Das kann ein zwei Jahre altes Startup sein. Oder ein Scaleup mit 200 Mitarbeitern. Oder ein mittelständischer Nischenanbieter, der das Problem seit zehn Jahren löst. Wer nur nach Startups sucht, findet nicht zwingend die beste Lösung – sondern nur die jüngste.
             </p>
+
+            <h2>Wie Vencly den Prozess begleitet</h2>
+            <p>
+              Vencly übernimmt den vollständigen Venture-Clienting-Prozess für Unternehmen, die keine eigene Venture-Client-Unit aufbauen wollen oder können. Das beginnt mit der Problemdefinition – gemeinsam mit dem internen Team –, geht über ein strukturiertes Scouting über alle relevanten Anbietertypen hinweg bis zur Vorbereitung und Begleitung des Pilotprojekts.
+            </p>
+            <p>
+              Aus über 40 Projekten in Energie, Infrastruktur und Mittelstand hat Vencly einen Prozess entwickelt, der für schnelle Ergebnisse optimiert ist: von der ersten Problemdefinition bis zur go/no-go Entscheidung in 90 Tagen. Kein Overhead, kein Konzeptpapier – sondern ein Anbieter, der liefert, und eine Entscheidung, die auf echten Daten basiert.
+            </p>
           </article>
 
           <div className="mt-12 pt-8 border-t border-gray-200 dark:border-vencly-border">
             <div className="flex items-center gap-4">
               <div className="w-12 h-12 rounded-full bg-vencly-teal/20 flex items-center justify-center text-vencly-teal font-bold text-lg">C</div>
               <div>
-                <div className="font-semibold text-gray-900 dark:text-white">Clemens Kreuz</div>
+                <div className="font-semibold text-gray-900 dark:text-white">Clemens Pompeÿ</div>
                 <div className="text-sm text-gray-500 dark:text-gray-400">Gründer, Vencly GmbH · Über 40 Venture-Clienting-Projekte</div>
               </div>
             </div>

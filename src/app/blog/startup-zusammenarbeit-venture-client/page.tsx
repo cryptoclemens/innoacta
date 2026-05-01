@@ -21,7 +21,7 @@ const articleJsonLd = {
   headline: 'Startup-Zusammenarbeit als Chance in wirtschaftlichen Krisenzeiten: Venture Clienting',
   description:
     'Warum wirtschaftliche Krisen der beste Zeitpunkt für Venture Clienting sind – und wie etablierte Unternehmen von der Zusammenarbeit mit Startups profitieren.',
-  author: { '@type': 'Person', name: 'Clemens Kreuz', url: 'https://vencly.com' },
+  author: { '@type': 'Person', name: 'Clemens Pompeÿ', url: 'https://vencly.com' },
   publisher: { '@type': 'Organization', name: 'Vencly GmbH', url: 'https://vencly.com' },
   url: 'https://vencly.com/blog/startup-zusammenarbeit-venture-client',
   datePublished: '2024-01-15',
@@ -159,6 +159,14 @@ export default function ArticlePage() {
               Das würde Venture Clienting für Unternehmen zugänglich machen, die bisher keinen Zugang zu Innovationsprogrammen hatten: kleinere Mittelständler, Unternehmen außerhalb der großen Wirtschaftszentren, öffentliche Institutionen mit begrenzten Ressourcen. Die Demokratisierung des strukturierten Innovationseinkaufs ist das eigentliche Versprechen des Modells.
             </p>
 
+            <h2>Was Vencly konkret übernimmt</h2>
+            <p>
+              Vencly begleitet Unternehmen durch den gesamten Venture-Clienting-Prozess – von der Problemdefinition über das Scouting bis zur Pilotbegleitung. Gerade in wirtschaftlich angespannten Phasen ist das entlastend: Der interne Aufwand bleibt gering, weil Vencly die zeitintensiven Teile übernimmt – strukturierte Anbietersuche, Shortlisting, Vertragsrahmen, Pilotsteuerung.
+            </p>
+            <p>
+              Das Modell ist bewusst schlank: kein Retainer, kein langfristiger Beratungsvertrag, sondern projektbasierte Zusammenarbeit, die mit einem konkreten Piloten beginnt. Unternehmen, die selbst unter Kostendruck stehen, brauchen keinen Berater, der ihnen Konzepte verkauft – sie brauchen jemanden, der liefert.
+            </p>
+
             <h2>Fazit: Krisen als Chance nutzen</h2>
             <p>
               Wirtschaftlicher Druck schafft Entscheidungsfreude. Venture Clienting ist das Instrument, das diese Entscheidungsfreude in messbare Ergebnisse verwandelt – ohne die Risiken von Beteiligungen, ohne die Langsamkeit von Eigenentwicklung, ohne das Konzeptpapier-Bingo, das niemand umsetzt.
@@ -173,7 +181,7 @@ export default function ArticlePage() {
             <div className="flex items-center gap-4">
               <div className="w-12 h-12 rounded-full bg-vencly-teal/20 flex items-center justify-center text-vencly-teal font-bold text-lg">C</div>
               <div>
-                <div className="font-semibold text-gray-900 dark:text-white">Clemens Kreuz</div>
+                <div className="font-semibold text-gray-900 dark:text-white">Clemens Pompeÿ</div>
                 <div className="text-sm text-gray-500 dark:text-gray-400">Gründer, Vencly GmbH · Venture Clienting & Geschäftsfeldentwicklung</div>
               </div>
             </div>

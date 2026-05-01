@@ -16,7 +16,7 @@ const articleJsonLd = {
   headline: 'Venture Clienting in regulierten Branchen: Energie, Infrastruktur, öffentlicher Sektor',
   description:
     'Vergaberecht, lange Entscheidungsprozesse, konservative Strukturen – warum Venture Clienting trotzdem funktioniert und wie man die typischen Hindernisse überwindet.',
-  author: { '@type': 'Person', name: 'Clemens Kreuz', url: 'https://vencly.com' },
+  author: { '@type': 'Person', name: 'Clemens Pompeÿ', url: 'https://vencly.com' },
   publisher: { '@type': 'Organization', name: 'Vencly GmbH', url: 'https://vencly.com' },
   url: 'https://vencly.com/blog/venture-clienting-regulierte-branchen',
   datePublished: '2025-04-05',
@@ -175,6 +175,14 @@ export default function ArticlePage() {
               </li>
             </ul>
 
+            <h2>Vencly: Erfahrung in regulierten Märkten</h2>
+            <p>
+              Vencly hat einen Schwerpunkt in genau den Branchen, die für Venture Clienting als schwierig gelten: Energie, Infrastruktur und öffentlicher Sektor. Das bedeutet: Vertrautheit mit Vergabeprozessen, belastbare Kontakte zu relevanten Anbietern und ein Prozessrahmen, der Compliance-Anforderungen von Anfang an mitdenkt.
+            </p>
+            <p>
+              Konkret übernimmt Vencly die Schnittstellenfunktion zwischen internen Entscheidern, Einkauf, Rechtsabteilung und externen Anbietern – sodass das Pilotprojekt nicht an internen Abstimmungsprozessen scheitert, bevor es begonnen hat. Der interne Champion muss das Projekt vertreten, nicht operativ führen.
+            </p>
+
             <h2>Fazit: Die interessantesten Anwendungsfälle sind die schwierigsten</h2>
             <p>
               Venture Clienting ist in regulierten Branchen nicht einfacher als in Tech-Unternehmen. Es braucht mehr Vorbereitung, mehr interne Überzeugungsarbeit und mehr Sorgfalt bei der Pilotarchitektur.
@@ -188,7 +196,7 @@ export default function ArticlePage() {
             <div className="flex items-center gap-4">
               <div className="w-12 h-12 rounded-full bg-vencly-teal/20 flex items-center justify-center text-vencly-teal font-bold text-lg">C</div>
               <div>
-                <div className="font-semibold text-gray-900 dark:text-white">Clemens Kreuz</div>
+                <div className="font-semibold text-gray-900 dark:text-white">Clemens Pompeÿ</div>
                 <div className="text-sm text-gray-500 dark:text-gray-400">Gründer, Vencly GmbH · Schwerpunkt: Energie, Infrastruktur, öffentlicher Sektor</div>
               </div>
             </div>

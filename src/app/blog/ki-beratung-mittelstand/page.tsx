@@ -21,7 +21,7 @@ const articleJsonLd = {
   headline: 'KI-Beratung im Mittelstand: Geschäftsfeldentwicklung und -validierung mit KI',
   description:
     'Wie mittelständische Unternehmen KI konkret für Geschäftsfeldentwicklung und Geschäftsfeldvalidierung einsetzen – praxisnah, ohne Overhead und mit messbarem Ergebnis.',
-  author: { '@type': 'Person', name: 'Clemens Kreuz', url: 'https://vencly.com' },
+  author: { '@type': 'Person', name: 'Clemens Pompeÿ', url: 'https://vencly.com' },
   publisher: { '@type': 'Organization', name: 'Vencly GmbH', url: 'https://vencly.com' },
   url: 'https://vencly.com/blog/ki-beratung-mittelstand',
   datePublished: '2025-05-01',
@@ -203,6 +203,14 @@ export default function ArticlePage() {
               <li><strong>Synthese und Entscheidungsvorlage (1 Woche):</strong> Klare Empfehlung: Weitermachen, pivotieren oder stoppen – mit vollständiger Begründung und Risikobewertung.</li>
             </ol>
 
+            <h2>Vencly: KI-gestützte Geschäftsfeldentwicklung in der Praxis</h2>
+            <p>
+              Vencly setzt KI-gestützte Methoden in jedem Geschäftsfeldentwicklungsprojekt ein – nicht als Technologie-Showcase, sondern weil es die Qualität der Entscheidungsgrundlagen verbessert und den Prozess beschleunigt. Das beginnt bei der datengestützten Suchfeldanalyse, geht über die KI-unterstützte Auswertung von Kundeninterviews bis zur systematischen Wettbewerbsbeobachtung während des Pilotprojekts.
+            </p>
+            <p>
+              Für mittelständische Unternehmen bedeutet das: Zugang zu Analysetiefe, die früher nur mit großen Beratungsteams erreichbar war – in einem Zeitrahmen und zu Kosten, die zur Projektgröße passen. Das Ergebnis ist keine Präsentation, sondern eine fundierte Entscheidung: Weitermachen, pivotieren oder stoppen.
+            </p>
+
             <h2>Fazit: Weniger Konzept, mehr Entscheidung</h2>
             <p>
               Das Versprechen von KI-gestützter Beratung im Mittelstand ist nicht, dass KI die Arbeit übernimmt. Es ist, dass Entscheidungen über neue Geschäftsfelder schneller, günstiger und auf einer besseren Informationsbasis getroffen werden können.
@@ -216,7 +224,7 @@ export default function ArticlePage() {
             <div className="flex items-center gap-4">
               <div className="w-12 h-12 rounded-full bg-vencly-teal/20 flex items-center justify-center text-vencly-teal font-bold text-lg">C</div>
               <div>
-                <div className="font-semibold text-gray-900 dark:text-white">Clemens Kreuz</div>
+                <div className="font-semibold text-gray-900 dark:text-white">Clemens Pompeÿ</div>
                 <div className="text-sm text-gray-500 dark:text-gray-400">Gründer, Vencly GmbH · KI-gestützte Geschäftsfeldentwicklung im Mittelstand</div>
               </div>
             </div>

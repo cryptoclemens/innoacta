@@ -16,7 +16,7 @@ const articleJsonLd = {
   headline: 'Geschäftsfeldentwicklung: Methoden, Phasen und häufige Fehler',
   description:
     'Wie entwickelt man ein neues Geschäftsfeld systematisch – ohne monatelange Strategieprozesse? Methoden, Phasen und die häufigsten Fehler aus über 40 Projekten.',
-  author: { '@type': 'Person', name: 'Clemens Kreuz', url: 'https://vencly.com' },
+  author: { '@type': 'Person', name: 'Clemens Pompeÿ', url: 'https://vencly.com' },
   publisher: { '@type': 'Organization', name: 'Vencly GmbH', url: 'https://vencly.com' },
   url: 'https://vencly.com/blog/geschaeftsfeldentwicklung-methoden',
   datePublished: '2025-03-28',
@@ -178,6 +178,14 @@ export default function ArticlePage() {
               Das spart Entwicklungszeit, schont interne Ressourcen und erzeugt schneller belastbare Marktdaten als jede interne Analyse. Besonders relevant, wenn das neue Feld technologisch anspruchsvoll ist oder in einem Bereich liegt, in dem externe Anbieter bereits bessere Lösungen haben.
             </p>
 
+            <h2>Wie Vencly Geschäftsfeldentwicklung begleitet</h2>
+            <p>
+              Vencly übernimmt die operative Führung von Geschäftsfeldentwicklungsprojekten für mittelständische Unternehmen und Konzerne in Energie, Infrastruktur und produzierendem Gewerbe. Das bedeutet konkret: Durchführung der Suchfeldanalyse, Planung und Auswertung von Kundeninterviews, Entwicklung des Pilotkonzepts und Begleitung bis zur go/no-go Entscheidung.
+            </p>
+            <p>
+              Der Ansatz unterscheidet sich bewusst von klassischer Strategieberatung: Vencly liefert keine Konzeptpapiere, die das Unternehmen anschließend selbst umsetzen muss. Die Begleitung endet erst, wenn eine fundierte Entscheidung über das neue Geschäftsfeld getroffen werden kann – mit echten Kundendaten, nicht mit Annahmen.
+            </p>
+
             <h2>Fazit: Geschwindigkeit schlägt Perfektion</h2>
             <p>
               Das größte Risiko in der Geschäftsfeldentwicklung ist nicht das Scheitern eines Piloten. Es ist die jahrelange Konzeptarbeit, die am Ende zu nichts führt.
@@ -191,7 +199,7 @@ export default function ArticlePage() {
             <div className="flex items-center gap-4">
               <div className="w-12 h-12 rounded-full bg-vencly-teal/20 flex items-center justify-center text-vencly-teal font-bold text-lg">C</div>
               <div>
-                <div className="font-semibold text-gray-900 dark:text-white">Clemens Kreuz</div>
+                <div className="font-semibold text-gray-900 dark:text-white">Clemens Pompeÿ</div>
                 <div className="text-sm text-gray-500 dark:text-gray-400">Gründer, Vencly GmbH · Über 40 Projekte in Geschäftsfeldentwicklung & Venture Clienting</div>
               </div>
             </div>

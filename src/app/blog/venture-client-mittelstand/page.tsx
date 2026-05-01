@@ -21,7 +21,7 @@ const articleJsonLd = {
   headline: 'Venture Client im Mittelstand: Chancen, Hürden und wie es gelingt',
   description:
     'Wie mittelständische Unternehmen Venture Clienting erfolgreich einsetzen – ohne eigene Innovation-Unit, ohne DAX-Budget und mit klarem Fokus auf operative Ergebnisse.',
-  author: { '@type': 'Person', name: 'Clemens Kreuz', url: 'https://vencly.com' },
+  author: { '@type': 'Person', name: 'Clemens Pompeÿ', url: 'https://vencly.com' },
   publisher: { '@type': 'Organization', name: 'Vencly GmbH', url: 'https://vencly.com' },
   url: 'https://vencly.com/blog/venture-client-mittelstand',
   datePublished: '2025-05-01',
@@ -189,6 +189,14 @@ export default function ArticlePage() {
               <li><strong>Die Entscheider stehen dahinter.</strong> Ein Pilotprojekt ohne Rückendeckung der Geschäftsführung wird nicht die nötigen Ressourcen und Entscheidungen bekommen.</li>
             </ol>
 
+            <h2>Wie Vencly mittelständische Unternehmen konkret unterstützt</h2>
+            <p>
+              Vencly ist auf die Situation mittelständischer Unternehmen ausgerichtet: kein Konzernbudget, keine eigene Innovations-Abteilung, aber klare Probleme und kurze Entscheidungswege. Das Leistungsmodell passt sich daran an: Vencly übernimmt das Scouting, bereitet die Pilotentscheidung vor und begleitet das Testprojekt operativ – der interne Aufwand bleibt auf ein Minimum beschränkt.
+            </p>
+            <p>
+              Aus über 40 Projekten weiß Vencly, welche Anbieter in welchen Segmenten tatsächlich liefern – und welche gut klingen, aber nicht zu mittelständischen Strukturen passen. Diese Erfahrung verkürzt das Scouting erheblich und erhöht die Trefferquote bei der Anbieterauswahl.
+            </p>
+
             <h2>Fazit: Mittelstand ist kein Handicap – er ist ein Vorteil</h2>
             <p>
               Die Konzerne haben die Venture-Client-Programme. Der Mittelstand hat etwas Wertvolleres: die Fähigkeit, schnell zu entscheiden, sofort umzusetzen und echte Probleme ohne politische Abstimmungsschleifen anzugehen.
@@ -202,7 +210,7 @@ export default function ArticlePage() {
             <div className="flex items-center gap-4">
               <div className="w-12 h-12 rounded-full bg-vencly-teal/20 flex items-center justify-center text-vencly-teal font-bold text-lg">C</div>
               <div>
-                <div className="font-semibold text-gray-900 dark:text-white">Clemens Kreuz</div>
+                <div className="font-semibold text-gray-900 dark:text-white">Clemens Pompeÿ</div>
                 <div className="text-sm text-gray-500 dark:text-gray-400">Gründer, Vencly GmbH · Schwerpunkt: Mittelstand, Energie, Infrastruktur</div>
               </div>
             </div>
