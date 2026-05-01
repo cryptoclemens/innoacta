@@ -15,7 +15,7 @@ const de = {
     services: 'Leistungen',
     projects: 'Projekte',
     contact: 'Kontakt',
-    login: 'Referenzen',
+    login: 'Schnell-Check',
     cta: 'Erstgespräch vereinbaren',
   },
   hero: {
@@ -157,7 +157,7 @@ const en: Translations = {
     services: 'Services',
     projects: 'Projects',
     contact: 'Contact',
-    login: 'References',
+    login: 'Quick Check',
     cta: 'Book a Call',
   },
   hero: {
@@ -299,7 +299,7 @@ const fr: Translations = {
     services: 'Services',
     projects: 'Projets',
     contact: 'Contact',
-    login: 'Références',
+    login: 'Vérification rapide',
     cta: 'Prendre rendez-vous',
   },
   hero: {
@@ -441,7 +441,7 @@ const es: Translations = {
     services: 'Servicios',
     projects: 'Proyectos',
     contact: 'Contacto',
-    login: 'Referencias',
+    login: 'Verificación rápida',
     cta: 'Solicitar una llamada',
   },
   hero: {

@@ -59,7 +59,7 @@ export default function ProjectsPage() {
       {/* Header */}
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mb-16">
         <div className="text-center">
-          <span className="inline-block text-vencly-teal text-sm font-mono tracking-widest uppercase mb-4">
+          <span className="section-eyebrow mb-4">
             Referenzprojekte
           </span>
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">

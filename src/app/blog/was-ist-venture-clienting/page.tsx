@@ -15,7 +15,7 @@ const articleJsonLd = {
   '@type': 'Article',
   headline: 'Was ist Venture Clienting? Definition, Prozess und Praxisbeispiele',
   description: 'Venture Clienting einfach erklärt: Definition, Unterschied zu CVC, der 90-Tage-Prozess und Praxisbeispiele.',
-  author: { '@type': 'Person', name: 'Clemens Pompeÿ', url: 'https://vencly.com' },
+  author: { '@type': 'Person', name: 'Clemens Pompeÿ', url: 'https://vencly.com/ueber-uns' },
   publisher: { '@type': 'Organization', name: 'Vencly GmbH', url: 'https://vencly.com' },
   url: 'https://vencly.com/blog/was-ist-venture-clienting',
   datePublished: '2025-02-10',

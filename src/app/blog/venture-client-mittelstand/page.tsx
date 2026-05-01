@@ -21,7 +21,7 @@ const articleJsonLd = {
   headline: 'Venture Client im Mittelstand: Chancen, Hürden und wie es gelingt',
   description:
     'Wie mittelständische Unternehmen Venture Clienting erfolgreich einsetzen – ohne eigene Innovation-Unit, ohne DAX-Budget und mit klarem Fokus auf operative Ergebnisse.',
-  author: { '@type': 'Person', name: 'Clemens Pompeÿ', url: 'https://vencly.com' },
+  author: { '@type': 'Person', name: 'Clemens Pompeÿ', url: 'https://vencly.com/ueber-uns' },
   publisher: { '@type': 'Organization', name: 'Vencly GmbH', url: 'https://vencly.com' },
   url: 'https://vencly.com/blog/venture-client-mittelstand',
   datePublished: '2025-05-01',

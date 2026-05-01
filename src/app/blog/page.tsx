@@ -78,7 +78,7 @@ export default function BlogPage() {
 
           {/* Header */}
           <div className="mb-16">
-            <span className="inline-block text-vencly-teal text-sm font-mono tracking-widest uppercase mb-4">Wissen & Praxis</span>
+            <span className="section-eyebrow mb-4">Wissen & Praxis</span>
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
               Blog
             </h1>

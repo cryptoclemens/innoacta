@@ -45,18 +45,10 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://vencly.com'),
   alternates: {
     canonical: 'https://vencly.com',
-    languages: {
-      'de': 'https://vencly.com',
-      'en': 'https://vencly.com',
-      'fr': 'https://vencly.com',
-      'es': 'https://vencly.com',
-      'x-default': 'https://vencly.com',
-    },
   },
   openGraph: {
     type: 'website',
     locale: 'de_DE',
-    alternateLocale: ['en_US', 'fr_FR', 'es_ES'],
     url: 'https://vencly.com',
     siteName: 'Vencly',
     title: 'Vencly – Innovatives Gründer-Denken für Unternehmen mit Tradition.',
@@ -111,8 +103,8 @@ export default function RootLayout({
   return (
     <html lang="de" suppressHydrationWarning className={`${nunito.variable} ${fraunces.variable}`}>
       <head>
-        <meta name="theme-color" content="#14b8a6" media="(prefers-color-scheme: light)" />
-        <meta name="theme-color" content="#0d0d14" media="(prefers-color-scheme: dark)" />
+        <meta name="theme-color" content="#0f766e" media="(prefers-color-scheme: light)" />
+        <meta name="theme-color" content="#0f766e" media="(prefers-color-scheme: dark)" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

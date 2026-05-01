@@ -16,7 +16,7 @@ const articleJsonLd = {
   headline: 'Venture Clienting in regulierten Branchen: Energie, Infrastruktur, öffentlicher Sektor',
   description:
     'Vergaberecht, lange Entscheidungsprozesse, konservative Strukturen – warum Venture Clienting trotzdem funktioniert und wie man die typischen Hindernisse überwindet.',
-  author: { '@type': 'Person', name: 'Clemens Pompeÿ', url: 'https://vencly.com' },
+  author: { '@type': 'Person', name: 'Clemens Pompeÿ', url: 'https://vencly.com/ueber-uns' },
   publisher: { '@type': 'Organization', name: 'Vencly GmbH', url: 'https://vencly.com' },
   url: 'https://vencly.com/blog/venture-clienting-regulierte-branchen',
   datePublished: '2025-04-05',

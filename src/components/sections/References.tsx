@@ -37,23 +37,23 @@ export default function References() {
             { tag: t.references.caseTag, title: t.references.caseTitle, text: t.references.caseText, meta: t.references.caseMeta },
             { tag: t.references.case2Tag, title: t.references.case2Title, text: t.references.case2Text, meta: t.references.case2Meta },
           ].map((c) => (
-            <div key={c.tag} className="rounded border p-8" style={{ backgroundColor: '#EEF2F8', borderColor: '#B5C8E4' }}>
+            <div key={c.tag} className="rounded border border-vencly-teal/20 bg-vencly-teal/5 p-8">
               <div className="mb-4">
-                <span className="text-xs font-mono font-semibold tracking-widest uppercase" style={{ color: '#1A2B4A' }}>
+                <span className="text-xs font-mono font-semibold tracking-widest uppercase text-vencly-teal">
                   {c.tag}
                 </span>
               </div>
-              <h3 className="text-lg md:text-xl font-bold mb-3 whitespace-pre-line" style={{ color: '#1A2B4A' }}>
+              <h3 className="font-display text-lg md:text-xl font-normal text-gray-900 dark:text-white mb-3 whitespace-pre-line">
                 {c.title}
               </h3>
-              <p className="text-sm leading-relaxed mb-6" style={{ color: '#3A4A6A' }}>
+              <p className="text-sm leading-relaxed mb-6 text-gray-600 dark:text-gray-400">
                 {c.text}
               </p>
-              <div className="flex flex-wrap gap-4 text-xs" style={{ color: '#3A4A6A' }}>
+              <div className="flex flex-wrap gap-4 text-xs text-gray-500 dark:text-gray-400">
                 {c.meta.map((m, i) => (
                   <Fragment key={m.label}>
                     {i > 0 && <span>·</span>}
-                    <span><strong>{m.label}:</strong> {m.value}</span>
+                    <span><strong className="text-gray-700 dark:text-gray-300">{m.label}:</strong> {m.value}</span>
                   </Fragment>
                 ))}
               </div>

@@ -122,10 +122,10 @@ export default function GeschaeftsfeldentwicklungPage() {
 
           {/* Hero */}
           <div className="mb-20">
-            <span className="inline-block text-vencly-teal text-sm font-mono tracking-widest uppercase mb-4">
+            <span className="section-eyebrow mb-4">
               Leistung
             </span>
-            <h1 className="text-3xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6 leading-tight break-words hyphens-auto">
+            <h1 className="font-display text-3xl md:text-5xl font-normal text-gray-900 dark:text-white mb-6 leading-tight break-words hyphens-auto">
               Geschäftsfeldentwicklung –{' '}
               <span className="text-vencly-teal">neue Märkte</span> mit Gründer-Denken erschließen.
             </h1>

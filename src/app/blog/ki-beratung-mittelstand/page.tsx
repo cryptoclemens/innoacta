@@ -21,7 +21,7 @@ const articleJsonLd = {
   headline: 'KI-Beratung im Mittelstand: Geschäftsfeldentwicklung und -validierung mit KI',
   description:
     'Wie mittelständische Unternehmen KI konkret für Geschäftsfeldentwicklung, Marktvalidierung und Geschäftsfeldvalidierung einsetzen – mit Tools, DSGVO und Praxisbeispiel.',
-  author: { '@type': 'Person', name: 'Clemens Pompeÿ', url: 'https://vencly.com' },
+  author: { '@type': 'Person', name: 'Clemens Pompeÿ', url: 'https://vencly.com/ueber-uns' },
   publisher: { '@type': 'Organization', name: 'Vencly GmbH', url: 'https://vencly.com' },
   url: 'https://vencly.com/blog/ki-beratung-mittelstand',
   datePublished: '2025-05-01',

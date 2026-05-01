@@ -16,7 +16,7 @@ const articleJsonLd = {
   headline: 'Geschäftsfeldentwicklung: Methoden, Phasen und häufige Fehler',
   description:
     'Wie entwickelt man ein neues Geschäftsfeld systematisch – ohne monatelange Strategieprozesse? Methoden, Phasen und die häufigsten Fehler aus über 40 Projekten.',
-  author: { '@type': 'Person', name: 'Clemens Pompeÿ', url: 'https://vencly.com' },
+  author: { '@type': 'Person', name: 'Clemens Pompeÿ', url: 'https://vencly.com/ueber-uns' },
   publisher: { '@type': 'Organization', name: 'Vencly GmbH', url: 'https://vencly.com' },
   url: 'https://vencly.com/blog/geschaeftsfeldentwicklung-methoden',
   datePublished: '2025-03-28',

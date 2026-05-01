@@ -21,7 +21,7 @@ const articleJsonLd = {
   headline: 'Startup-Zusammenarbeit als Chance in wirtschaftlichen Krisenzeiten: Venture Clienting',
   description:
     'Warum wirtschaftliche Krisen der beste Zeitpunkt für Venture Clienting sind – und wie etablierte Unternehmen von der Zusammenarbeit mit Startups profitieren.',
-  author: { '@type': 'Person', name: 'Clemens Pompeÿ', url: 'https://vencly.com' },
+  author: { '@type': 'Person', name: 'Clemens Pompeÿ', url: 'https://vencly.com/ueber-uns' },
   publisher: { '@type': 'Organization', name: 'Vencly GmbH', url: 'https://vencly.com' },
   url: 'https://vencly.com/blog/startup-zusammenarbeit-venture-client',
   datePublished: '2024-01-15',

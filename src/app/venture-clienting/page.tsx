@@ -136,10 +136,10 @@ export default function VentureClientingPage() {
 
           {/* Hero */}
           <div className="mb-20">
-            <span className="inline-block text-vencly-teal text-sm font-mono tracking-widest uppercase mb-4">
+            <span className="section-eyebrow mb-4">
               Leistung
             </span>
-            <h1 className="text-3xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6 leading-tight">
+            <h1 className="font-display text-3xl md:text-5xl font-normal text-gray-900 dark:text-white mb-6 leading-tight">
               Venture Clienting –{' '}
               <span className="text-vencly-teal">die smartere Art</span>, externe Innovation einzukaufen.
             </h1>

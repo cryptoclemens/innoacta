@@ -9,14 +9,14 @@ export const metadata: Metadata = {
 
 export default function ContactPage() {
   return (
-    <div className="min-h-screen bg-vencly-bg pt-24 pb-20">
+    <div className="min-h-screen bg-[#F8F7F4] dark:bg-vencly-bg pt-24 pb-20">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
-          <span className="inline-block text-vencly-teal text-sm font-mono tracking-widest uppercase mb-4">
+          <span className="section-eyebrow mb-4">
             Kontakt
           </span>
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
+          <h1 className="font-display text-4xl md:text-5xl font-normal text-gray-900 dark:text-white mb-6">
             Sprechen wir
           </h1>
           <p className="text-gray-400 text-lg max-w-xl mx-auto">

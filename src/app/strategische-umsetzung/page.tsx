@@ -27,6 +27,37 @@ const jsonLd = {
   serviceType: 'Strategische Umsetzung',
 }
 
+const faqJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'Was bedeutet strategische Umsetzung bei Vencly?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Vencly übernimmt operative Verantwortung in neuen Geschäftsfeldern – von der Go-to-Market-Planung über Stakeholder-Management bis zur Pilotkunden-Akquise. Wir liefern nicht nur Empfehlungen, sondern arbeiten aktiv im Projekt mit.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Wann ist strategische Umsetzung mit Vencly sinnvoll?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Wenn ein neues Geschäftsfeld oder Innovationsprojekt intern keine ausreichenden Ressourcen oder Strukturen hat. Vencly übernimmt in solchen Fällen temporär operative Verantwortung und schafft damit die Grundlage für eine spätere Übergabe ins Unternehmen.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Wie lange dauert ein typisches Umsetzungsmandat mit Vencly?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Typische Mandate laufen 2–4 Monate, abhängig von Komplexität und Reifegrad des Projekts. Vencly arbeitet in kurzen Sprints mit klaren Meilensteinen und Übergabepunkten.',
+      },
+    },
+  ],
+}
+
 const services = [
   {
     icon: FileText,
@@ -69,6 +100,7 @@ export default function StrategischeUmsetzungPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         '@context': 'https://schema.org',
         '@type': 'BreadcrumbList',
@@ -83,10 +115,10 @@ export default function StrategischeUmsetzungPage() {
 
           {/* Hero */}
           <div className="mb-20">
-            <span className="inline-block text-vencly-teal text-sm font-mono tracking-widest uppercase mb-4">
+            <span className="section-eyebrow mb-4">
               Leistung
             </span>
-            <h1 className="text-3xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6 leading-tight">
+            <h1 className="font-display text-3xl md:text-5xl font-normal text-gray-900 dark:text-white mb-6 leading-tight">
               Strategische Umsetzung –{' '}
               <span className="text-vencly-teal">operativ</span>, nicht nur konzeptionell.
             </h1>

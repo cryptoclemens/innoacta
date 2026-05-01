@@ -3,7 +3,7 @@
 import { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import { Menu, X, Sun, Moon, Monitor, ChevronDown, ExternalLink } from 'lucide-react'
+import { Menu, X, Sun, Moon, Monitor, ChevronDown, CheckCircle2, Circle, ArrowRight } from 'lucide-react'
 import { useTheme } from 'next-themes'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { type Locale, localeLabels } from '@/lib/i18n'
@@ -24,16 +24,21 @@ const projectLinks = [
   { href: '/optaimum', label: 'OptAImum' },
 ]
 
-const referenceLogos = [
-  { name: 'SWM', category: 'Energie & Versorgung', src: '/logos/swm.svg' },
-  { name: 'RWE', category: 'Energie', src: '/logos/rwe.svg' },
-  { name: 'SachsenEnergie', category: 'Energie & Wärme', src: '/logos/sachsen-energie.svg' },
-  { name: 'Plenum AG', category: 'Strategie & Transformation', src: '/logos/plenum.png' },
-  { name: 'Toll Collect', category: 'Mobility & Infrastruktur', src: '/logos/toll-collect.svg' },
+const checkItems = [
+  'Wir wollen ein neues Geschäftsfeld erschließen, haben aber keinen klaren Fahrplan.',
+  'Wir wissen nicht, ob der Markt groß genug ist – oder ob Kunden wirklich zahlen würden.',
+  'Wir haben intern keine Kapazität, das Thema strukturiert anzugehen.',
+  'Wir stehen unter Zeitdruck – monatelange Konzeptphasen sind keine Option.',
+  'Wir brauchen eine fundierte go/no-go-Entscheidung, kein weiteres Konzeptpapier.',
+  'Wir wollen externes Know-how einbinden, ohne langen Onboarding-Prozess.',
 ]
 
-function ReferencesModal({ onClose }: { onClose: () => void }) {
+function ValidationCheckModal({ onClose }: { onClose: () => void }) {
   const ref = useRef<HTMLDivElement>(null)
+  const [checked, setChecked] = useState<boolean[]>(Array(checkItems.length).fill(false))
+
+  const score = checked.filter(Boolean).length
+  const fits = score >= 3
 
   useEffect(() => {
     const handler = (e: MouseEvent) => {
@@ -50,56 +55,100 @@ function ReferencesModal({ onClose }: { onClose: () => void }) {
     }
   }, [onClose])
 
+  const toggle = (i: number) =>
+    setChecked((prev) => prev.map((v, idx) => (idx === i ? !v : v)))
+
   return (
-    <div className="fixed inset-0 z-[100] flex items-start justify-center pt-24 px-4"
-      style={{ background: 'rgba(15, 23, 42, 0.6)', backdropFilter: 'blur(4px)' }}>
+    <div
+      className="fixed inset-0 z-[100] flex items-start justify-center pt-20 px-4 pb-8 overflow-y-auto"
+      style={{ background: 'rgba(11, 26, 23, 0.75)', backdropFilter: 'blur(6px)' }}
+    >
       <div
         ref={ref}
-        className="bg-white dark:bg-vencly-card border border-gray-200 dark:border-vencly-border rounded shadow-2xl w-full max-w-lg"
+        className="bg-white dark:bg-vencly-card border border-gray-200 dark:border-vencly-border rounded shadow-2xl w-full max-w-lg my-auto"
       >
         {/* Header */}
-        <div className="flex items-center justify-between px-6 py-4 border-b border-gray-100 dark:border-vencly-border">
+        <div className="flex items-start justify-between px-6 py-5 border-b border-gray-100 dark:border-vencly-border">
           <div>
-            <span className="section-eyebrow text-xs">Referenzkunden</span>
-            <p className="text-xs text-gray-400 mt-0.5">Ausgewählte Unternehmen aus der DACH-Region</p>
+            <span className="section-eyebrow text-xs">Schnell-Check</span>
+            <h2 className="font-display text-lg font-normal text-gray-900 dark:text-white mt-1">
+              Passt Vencly zu Ihnen?
+            </h2>
+            <p className="text-xs text-gray-400 mt-0.5">Haken Sie an, was auf Ihr Unternehmen zutrifft.</p>
           </div>
           <button
             onClick={onClose}
             aria-label="Schließen"
-            className="text-gray-400 hover:text-gray-700 dark:hover:text-white transition-colors p-1"
+            className="text-gray-400 hover:text-gray-700 dark:hover:text-white transition-colors p-1 mt-0.5 flex-shrink-0"
           >
             <X size={18} />
           </button>
         </div>
 
-        {/* Logo grid */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 p-6">
-          {referenceLogos.map((ref) => (
-            <div
-              key={ref.name}
-              className="bg-gray-50 dark:bg-vencly-bg border border-gray-100 dark:border-vencly-border rounded p-4 flex flex-col items-center text-center gap-2 hover:border-vencly-teal/40 transition-colors"
-            >
-              <div className="h-10 w-full flex items-center justify-center bg-white rounded px-2 py-1">
-                <Image src={ref.src} alt={ref.name} width={90} height={36} className="object-contain max-h-8" />
-              </div>
-              <p className="text-xs font-semibold text-gray-800 dark:text-white">{ref.name}</p>
-              <span className="text-[10px] text-vencly-teal bg-vencly-teal/10 px-2 py-0.5 rounded-full leading-tight">
-                {ref.category}
-              </span>
-            </div>
+        {/* Checklist */}
+        <ul className="px-6 py-5 space-y-3">
+          {checkItems.map((item, i) => (
+            <li key={i}>
+              <button
+                onClick={() => toggle(i)}
+                className="w-full flex items-start gap-3 text-left group"
+              >
+                <span className="mt-0.5 flex-shrink-0">
+                  {checked[i]
+                    ? <CheckCircle2 size={18} className="text-vencly-teal" />
+                    : <Circle size={18} className="text-gray-300 dark:text-gray-600 group-hover:text-vencly-teal/50 transition-colors" />
+                  }
+                </span>
+                <span className={`text-sm leading-snug transition-colors ${
+                  checked[i]
+                    ? 'text-gray-900 dark:text-white font-medium'
+                    : 'text-gray-500 dark:text-gray-400'
+                }`}>
+                  {item}
+                </span>
+              </button>
+            </li>
           ))}
+        </ul>
+
+        {/* Result */}
+        <div className={`mx-6 mb-6 rounded p-4 transition-all ${
+          score === 0
+            ? 'bg-gray-50 dark:bg-vencly-bg border border-gray-100 dark:border-vencly-border'
+            : fits
+            ? 'bg-vencly-teal/8 border border-vencly-teal/30'
+            : 'bg-amber-50 dark:bg-amber-900/10 border border-amber-200 dark:border-amber-800/40'
+        }`}>
+          {score === 0 && (
+            <p className="text-xs text-gray-400 text-center">Wählen Sie die Punkte aus, die auf Sie zutreffen.</p>
+          )}
+          {score > 0 && !fits && (
+            <p className="text-xs text-gray-600 dark:text-gray-400">
+              <span className="font-semibold text-amber-700 dark:text-amber-400">{score} von 6 Punkten.</span>{' '}
+              Vielleicht noch kein akuter Bedarf – aber sprechen Sie uns gerne an.
+            </p>
+          )}
+          {fits && (
+            <div>
+              <p className="text-sm font-semibold text-vencly-teal mb-1">
+                {score} von 6 – Vencly könnte sehr gut passen.
+              </p>
+              <p className="text-xs text-gray-600 dark:text-gray-400">
+                Das klingt nach einem Projekt, das wir gemeinsam angehen können.
+              </p>
+            </div>
+          )}
         </div>
 
-        {/* Footer */}
-        <div className="px-6 py-4 border-t border-gray-100 dark:border-vencly-border flex items-center justify-between">
-          <p className="text-xs text-gray-400">Weitere Referenzen auf Anfrage.</p>
-          <Link
-            href="/#referenzen"
+        {/* CTA */}
+        <div className="px-6 pb-6 flex gap-3">
+          <button
+            {...calButtonProps}
             onClick={onClose}
-            className="inline-flex items-center gap-1 text-xs text-vencly-teal hover:underline font-medium"
+            className="flex-1 inline-flex items-center justify-center gap-2 bg-vencly-blue hover:bg-vencly-blue-dark text-white text-sm font-semibold px-4 py-2.5 rounded transition-colors cursor-pointer blue-glow"
           >
-            Alle Projekte <ExternalLink size={11} />
-          </Link>
+            Erstgespräch vereinbaren <ArrowRight size={14} />
+          </button>
         </div>
       </div>
     </div>
@@ -235,7 +284,7 @@ function LanguageSwitcher() {
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
-  const [refsOpen, setRefsOpen] = useState(false)
+  const [checkOpen, setCheckOpen] = useState(false)
   const { t } = useLanguage()
 
   const navLinks = [
@@ -251,7 +300,7 @@ export default function Navbar() {
 
   return (
     <>
-      {refsOpen && <ReferencesModal onClose={() => setRefsOpen(false)} />}
+      {checkOpen && <ValidationCheckModal onClose={() => setCheckOpen(false)} />}
 
       <header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
@@ -299,7 +348,7 @@ export default function Navbar() {
             <ThemeToggle />
             <LanguageSwitcher />
             <button
-              onClick={() => setRefsOpen(true)}
+              onClick={() => setCheckOpen(true)}
               className="text-gray-500 dark:text-gray-400 hover:text-vencly-teal dark:hover:text-vencly-teal text-sm font-medium transition-colors px-3 py-1.5"
             >
               {t.nav.login}
@@ -364,7 +413,7 @@ export default function Navbar() {
               </div>
               <div className="flex flex-col gap-2">
                 <button
-                  onClick={() => { setMenuOpen(false); setRefsOpen(true) }}
+                  onClick={() => { setMenuOpen(false); setCheckOpen(true) }}
                   className="text-left text-vencly-teal text-sm font-medium transition-colors py-1"
                 >
                   {t.nav.login}
