@@ -12,10 +12,10 @@ export default function ValueProp() {
         <div className="grid md:grid-cols-2 gap-16 items-center">
           {/* Left: Text */}
           <div>
-            <span className="inline-block text-vencly-teal text-xs font-mono tracking-widest uppercase mb-4">
+            <span className="section-eyebrow mb-4">
               {t.valueProp.label}
             </span>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6 leading-snug">
+            <h2 className="font-display text-3xl md:text-4xl font-normal text-gray-900 dark:text-white mb-6 leading-snug mt-3">
               {t.valueProp.h2}{' '}
               <span className="gradient-text">{t.valueProp.h2Highlight}</span>
             </h2>

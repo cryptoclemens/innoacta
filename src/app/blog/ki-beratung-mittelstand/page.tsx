@@ -150,7 +150,7 @@ export default function ArticlePage() {
 
           {/* Before/After visual - outside prose for full control */}
           <div className="not-prose my-8 grid sm:grid-cols-2 gap-4">
-            <div className="bg-red-50 dark:bg-red-950/30 border border-red-200 dark:border-red-800 rounded-xl p-6">
+            <div className="bg-red-50 dark:bg-red-950/30 border border-red-200 dark:border-red-800 rounded p-6">
               <div className="text-xs font-mono font-semibold text-red-500 uppercase tracking-widest mb-3">Ohne KI-gestützte Methoden</div>
               <div className="text-sm font-semibold text-gray-800 dark:text-gray-200 mb-3">Maschinenbauer, ~200 MA, neues Servicegeschäft</div>
               <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-400">
@@ -161,7 +161,7 @@ export default function ArticlePage() {
                 <li>🔄 Projekt nach 8 Monaten gestoppt</li>
               </ul>
             </div>
-            <div className="bg-green-50 dark:bg-green-950/30 border border-green-200 dark:border-green-800 rounded-xl p-6">
+            <div className="bg-green-50 dark:bg-green-950/30 border border-green-200 dark:border-green-800 rounded p-6">
               <div className="text-xs font-mono font-semibold text-green-600 uppercase tracking-widest mb-3">Mit KI-gestützten Methoden</div>
               <div className="text-sm font-semibold text-gray-800 dark:text-gray-200 mb-3">Vergleichbarer Maschinenbauer, ~180 MA</div>
               <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-400">
@@ -264,7 +264,7 @@ export default function ArticlePage() {
                 { href: '/blog/was-ist-venture-clienting', cat: 'Venture Clienting', title: 'Was ist Venture Clienting? Definition, Prozess und Praxisbeispiele' },
                 { href: '/blog/startup-zusammenarbeit-venture-client', cat: 'Venture Clienting', title: 'Startup-Zusammenarbeit als Chance in wirtschaftlichen Krisenzeiten' },
               ].map(a => (
-                <Link key={a.href} href={a.href} className="block bg-white dark:bg-vencly-card border border-gray-200 dark:border-vencly-border rounded-xl p-4 hover:border-vencly-teal/40 transition-colors group">
+                <Link key={a.href} href={a.href} className="block bg-white dark:bg-vencly-card border border-gray-200 dark:border-vencly-border rounded p-4 hover:border-vencly-teal/40 transition-colors group">
                   <span className="text-xs font-mono text-vencly-teal">{a.cat}</span>
                   <p className="text-sm font-semibold text-gray-900 dark:text-white group-hover:text-vencly-teal transition-colors mt-1 leading-snug">{a.title}</p>
                 </Link>
@@ -284,7 +284,7 @@ export default function ArticlePage() {
           </div>
 
           {/* Self-Check CTA */}
-          <div className="mt-12 bg-white dark:bg-vencly-card border border-gray-200 dark:border-vencly-border rounded-2xl p-8">
+          <div className="mt-12 bg-white dark:bg-vencly-card border border-gray-200 dark:border-vencly-border rounded p-8">
             <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">Ist Ihr Geschäftsfeld bereit zur Validierung?</h3>
             <p className="text-gray-500 dark:text-gray-400 text-sm mb-6">Wenn Sie mindestens 3 der folgenden Aussagen mit Ja beantworten, lohnt sich ein Gespräch:</p>
             <ul className="space-y-3 mb-8">
@@ -298,7 +298,7 @@ export default function ArticlePage() {
             <div className="flex flex-col sm:flex-row items-center gap-4">
               <button
                 {...calButtonProps}
-                className="inline-flex items-center gap-2 bg-vencly-teal hover:bg-teal-600 text-white font-semibold px-6 py-3 rounded-xl transition-colors cursor-pointer"
+                className="inline-flex items-center gap-2 bg-vencly-teal hover:bg-teal-600 text-white font-semibold px-6 py-3 rounded transition-colors cursor-pointer"
               >
                 Kostenlos besprechen <ArrowRight size={16} />
               </button>

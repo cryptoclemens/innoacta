@@ -20,10 +20,10 @@ export default function References() {
     <section id="referenzen" className="bg-white dark:bg-vencly-card border-t border-gray-200 dark:border-vencly-border py-24 px-4">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <span className="inline-block text-vencly-teal text-xs font-mono tracking-widest uppercase mb-4">
+          <span className="section-eyebrow justify-center mb-4">
             {t.references.label}
           </span>
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+          <h2 className="font-display text-3xl md:text-4xl font-normal text-gray-900 dark:text-white mb-4 mt-3">
             {t.references.h2}
           </h2>
           <p className="text-gray-600 dark:text-gray-400 max-w-xl mx-auto text-sm">
@@ -37,7 +37,7 @@ export default function References() {
             { tag: t.references.caseTag, title: t.references.caseTitle, text: t.references.caseText, meta: t.references.caseMeta },
             { tag: t.references.case2Tag, title: t.references.case2Title, text: t.references.case2Text, meta: t.references.case2Meta },
           ].map((c) => (
-            <div key={c.tag} className="rounded-2xl border p-8" style={{ backgroundColor: '#EEF2F8', borderColor: '#B5C8E4' }}>
+            <div key={c.tag} className="rounded border p-8" style={{ backgroundColor: '#EEF2F8', borderColor: '#B5C8E4' }}>
               <div className="mb-4">
                 <span className="text-xs font-mono font-semibold tracking-widest uppercase" style={{ color: '#1A2B4A' }}>
                   {c.tag}
@@ -66,9 +66,9 @@ export default function References() {
           {logos.map((ref) => (
             <div
               key={ref.name}
-              className="bg-[#F8F7F4] dark:bg-vencly-bg border border-gray-200 dark:border-vencly-border rounded-2xl p-8 flex flex-col items-center text-center hover:border-vencly-teal/30 transition-colors"
+              className="bg-[#F8F7F4] dark:bg-vencly-bg border border-gray-200 dark:border-vencly-border rounded p-8 flex flex-col items-center text-center hover:border-vencly-teal/30 transition-colors"
             >
-              <div className="h-16 w-full flex items-center justify-center mb-4 bg-white rounded-xl px-4 py-2">
+              <div className="h-16 w-full flex items-center justify-center mb-4 bg-white rounded px-4 py-2">
                 <Image src={ref.src} alt={ref.name} width={120} height={48} className="object-contain max-h-12" />
               </div>
               <p className="text-gray-900 dark:text-white font-bold mb-1">{ref.name}</p>
@@ -94,7 +94,7 @@ export default function References() {
           </p>
           <button
             {...calButtonProps}
-            className="inline-flex items-center gap-2 bg-vencly-blue hover:bg-vencly-blue-dark text-white font-semibold px-8 py-3.5 rounded-xl transition-all blue-glow hover:scale-105 cursor-pointer"
+            className="inline-flex items-center gap-2 bg-vencly-blue hover:bg-vencly-blue-dark text-white font-semibold px-8 py-3.5 rounded transition-all blue-glow hover:scale-105 cursor-pointer"
           >
             {t.references.ctaButton}
           </button>

@@ -161,9 +161,9 @@ export default function GeschaeftsfeldentwicklungPage() {
             </h2>
             <div className="space-y-6">
               {phases.map(({ icon: Icon, phase, title, desc, points, ventureClientingHint }) => (
-                <div key={phase} className="bg-white dark:bg-vencly-card border border-gray-200 dark:border-vencly-border rounded-2xl p-8">
+                <div key={phase} className="bg-white dark:bg-vencly-card border border-gray-200 dark:border-vencly-border rounded p-8">
                   <div className="flex items-start gap-5">
-                    <div className="w-11 h-11 bg-vencly-teal/10 rounded-xl flex items-center justify-center shrink-0">
+                    <div className="w-11 h-11 bg-vencly-teal/10 rounded flex items-center justify-center shrink-0">
                       <Icon size={20} className="text-vencly-teal" />
                     </div>
                     <div className="flex-1">
@@ -215,7 +215,7 @@ export default function GeschaeftsfeldentwicklungPage() {
                 { href: '/blog/venture-client-mittelstand', cat: 'Mittelstand', title: 'Venture Client im Mittelstand: Chancen, Hürden und wie es gelingt' },
                 { href: '/blog/startup-zusammenarbeit-venture-client', cat: 'Venture Clienting', title: 'Startup-Zusammenarbeit als Chance in wirtschaftlichen Krisenzeiten' },
               ].map(a => (
-                <Link key={a.href} href={a.href} className="block bg-white dark:bg-vencly-card border border-gray-200 dark:border-vencly-border rounded-xl p-5 hover:border-vencly-teal/40 transition-colors group">
+                <Link key={a.href} href={a.href} className="block bg-white dark:bg-vencly-card border border-gray-200 dark:border-vencly-border rounded p-5 hover:border-vencly-teal/40 transition-colors group">
                   <span className="text-xs font-mono text-vencly-teal">{a.cat}</span>
                   <p className="text-sm font-semibold text-gray-900 dark:text-white group-hover:text-vencly-teal transition-colors mt-1 leading-snug">{a.title}</p>
                 </Link>
@@ -224,7 +224,7 @@ export default function GeschaeftsfeldentwicklungPage() {
           </section>
 
           {/* CTA */}
-          <section className="bg-gradient-to-r from-vencly-teal/10 to-vencly-teal/5 border border-vencly-teal/20 rounded-2xl p-10 text-center">
+          <section className="bg-gradient-to-r from-vencly-teal/10 to-vencly-teal/5 border border-vencly-teal/20 rounded p-10 text-center">
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">
               Welches Geschäftsfeld wollen Sie als nächstes erschließen?
             </h2>
@@ -233,7 +233,7 @@ export default function GeschaeftsfeldentwicklungPage() {
             </p>
             <button
               {...calButtonProps}
-              className="inline-flex items-center gap-2 bg-vencly-teal hover:bg-teal-600 text-white font-semibold px-8 py-3 rounded-xl transition-colors cursor-pointer"
+              className="inline-flex items-center gap-2 bg-vencly-teal hover:bg-teal-600 text-white font-semibold px-8 py-3 rounded transition-colors cursor-pointer"
             >
               Erstgespräch vereinbaren
               <ArrowRight size={16} />

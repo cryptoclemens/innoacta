@@ -76,18 +76,18 @@ export default function PromptGeneratorPage() {
           <div className="flex flex-wrap gap-2">
             {templates.map(t => (
               <button key={t.label} onClick={() => applyTemplate(t)}
-                className="px-3 py-1.5 text-xs rounded-lg border border-gray-200 dark:border-vencly-border text-gray-600 dark:text-gray-400 hover:border-vencly-teal hover:text-vencly-teal transition-colors">
+                className="px-3 py-1.5 text-xs rounded border border-gray-200 dark:border-vencly-border text-gray-600 dark:text-gray-400 hover:border-vencly-teal hover:text-vencly-teal transition-colors">
                 {t.label}
               </button>
             ))}
           </div>
         </div>
 
-        <div className="bg-white dark:bg-vencly-card border border-gray-200 dark:border-vencly-border rounded-2xl p-8 space-y-6">
+        <div className="bg-white dark:bg-vencly-card border border-gray-200 dark:border-vencly-border rounded p-8 space-y-6">
           <div>
             <label className="text-xs font-mono text-gray-500 uppercase tracking-wider block mb-2">Ziel-KI (optional)</label>
             <select value={agent} onChange={e => setAgent(e.target.value)}
-              className="w-full px-3 py-2.5 text-sm rounded-lg border border-gray-200 dark:border-vencly-border bg-white dark:bg-vencly-bg text-gray-900 dark:text-white focus:outline-none focus:border-vencly-teal">
+              className="w-full px-3 py-2.5 text-sm rounded border border-gray-200 dark:border-vencly-border bg-white dark:bg-vencly-bg text-gray-900 dark:text-white focus:outline-none focus:border-vencly-teal">
               <option value="">Allgemein (alle KIs)</option>
               {agents.map(a => <option key={a} value={a}>{a}</option>)}
             </select>
@@ -96,14 +96,14 @@ export default function PromptGeneratorPage() {
           <div>
             <label className="text-xs font-mono text-gray-500 uppercase tracking-wider block mb-2">Aufgabe *</label>
             <textarea value={task} onChange={e => setTask(e.target.value)}
-              className="w-full px-3 py-2 text-sm rounded-lg border border-gray-200 dark:border-vencly-border bg-transparent text-gray-900 dark:text-white placeholder-gray-400 focus:outline-none focus:border-vencly-teal resize-none h-24"
+              className="w-full px-3 py-2 text-sm rounded border border-gray-200 dark:border-vencly-border bg-transparent text-gray-900 dark:text-white placeholder-gray-400 focus:outline-none focus:border-vencly-teal resize-none h-24"
               placeholder="Was soll die KI tun? Beschreibe die Aufgabe..." />
           </div>
 
           <div>
             <label className="text-xs font-mono text-gray-500 uppercase tracking-wider block mb-2">Kontext & Regeln (optional)</label>
             <textarea value={context} onChange={e => setContext(e.target.value)}
-              className="w-full px-3 py-2 text-sm rounded-lg border border-gray-200 dark:border-vencly-border bg-transparent text-gray-900 dark:text-white placeholder-gray-400 focus:outline-none focus:border-vencly-teal resize-none h-20"
+              className="w-full px-3 py-2 text-sm rounded border border-gray-200 dark:border-vencly-border bg-transparent text-gray-900 dark:text-white placeholder-gray-400 focus:outline-none focus:border-vencly-teal resize-none h-20"
               placeholder="Ton, Länge, Zielgruppe, Einschränkungen..." />
           </div>
 
@@ -112,7 +112,7 @@ export default function PromptGeneratorPage() {
             <div className="flex gap-2">
               {['Einsteiger', 'Standard', 'Pro'].map((l, i) => (
                 <button key={l} onClick={() => setLevel(i)}
-                  className={`flex-1 py-2 rounded-lg text-sm border transition-colors ${level === i ? 'bg-vencly-teal text-white border-vencly-teal' : 'border-gray-200 dark:border-vencly-border text-gray-700 dark:text-gray-300 hover:border-vencly-teal/60'}`}>
+                  className={`flex-1 py-2 rounded text-sm border transition-colors ${level === i ? 'bg-vencly-teal text-white border-vencly-teal' : 'border-gray-200 dark:border-vencly-border text-gray-700 dark:text-gray-300 hover:border-vencly-teal/60'}`}>
                   {l}
                 </button>
               ))}
@@ -121,7 +121,7 @@ export default function PromptGeneratorPage() {
         </div>
 
         {canGenerate && (
-          <div className="mt-6 bg-white dark:bg-vencly-card border border-gray-200 dark:border-vencly-border rounded-2xl p-8">
+          <div className="mt-6 bg-white dark:bg-vencly-card border border-gray-200 dark:border-vencly-border rounded p-8">
             <div className="flex items-center justify-between mb-4">
               <div className="flex items-center gap-2">
                 <Sparkles size={16} className="text-vencly-teal" />
@@ -131,7 +131,7 @@ export default function PromptGeneratorPage() {
                 {copied ? <><Check size={14} /> Kopiert!</> : <><Copy size={14} /> Kopieren</>}
               </button>
             </div>
-            <pre className="bg-gray-50 dark:bg-vencly-bg rounded-xl p-4 text-sm text-gray-800 dark:text-gray-300 whitespace-pre-wrap font-mono border border-gray-200 dark:border-vencly-border">{prompt}</pre>
+            <pre className="bg-gray-50 dark:bg-vencly-bg rounded p-4 text-sm text-gray-800 dark:text-gray-300 whitespace-pre-wrap font-mono border border-gray-200 dark:border-vencly-border">{prompt}</pre>
           </div>
         )}
       </div>

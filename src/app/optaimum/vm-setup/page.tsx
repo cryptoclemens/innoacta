@@ -75,7 +75,7 @@ export default function VmSetupPage() {
         {/* Tier comparison */}
         <section className="mb-10">
           <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-4">Welcher Tier passt zu dir?</h2>
-          <div className="bg-white dark:bg-vencly-card border border-gray-200 dark:border-vencly-border rounded-2xl overflow-hidden">
+          <div className="bg-white dark:bg-vencly-card border border-gray-200 dark:border-vencly-border rounded overflow-hidden">
             <table className="w-full text-sm">
               <thead>
                 <tr className="border-b border-gray-200 dark:border-vencly-border bg-gray-50 dark:bg-vencly-bg">
@@ -102,7 +102,7 @@ export default function VmSetupPage() {
           <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-4">Anbietervergleich</h2>
           <div className="space-y-4">
             {providers.map(p => (
-              <div key={p.name} className={`bg-white dark:bg-vencly-card rounded-2xl p-6 border ${p.highlight ? 'border-vencly-teal/40' : 'border-gray-200 dark:border-vencly-border'}`}>
+              <div key={p.name} className={`bg-white dark:bg-vencly-card rounded p-6 border ${p.highlight ? 'border-vencly-teal/40' : 'border-gray-200 dark:border-vencly-border'}`}>
                 <div className="flex items-start justify-between mb-3">
                   <div>
                     <span className={`text-xs font-mono px-2 py-1 rounded-full ${p.highlight ? 'bg-vencly-teal/10 text-vencly-teal' : 'bg-gray-100 dark:bg-vencly-bg text-gray-500'}`}>{p.badge}</span>
@@ -123,7 +123,7 @@ export default function VmSetupPage() {
         {/* Setup Script */}
         <section className="mb-10">
           <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-4">Setup-Script für Ubuntu 22.04 LTS</h2>
-          <div className="bg-white dark:bg-vencly-card border border-gray-200 dark:border-vencly-border rounded-2xl overflow-hidden">
+          <div className="bg-white dark:bg-vencly-card border border-gray-200 dark:border-vencly-border rounded overflow-hidden">
             <div className="flex items-center justify-between px-5 py-3 bg-gray-50 dark:bg-vencly-bg border-b border-gray-200 dark:border-vencly-border">
               <span className="text-xs font-mono text-gray-500">bash</span>
               <button
@@ -153,7 +153,7 @@ export default function VmSetupPage() {
               </li>
             ))}
           </ul>
-          <div className="mt-6 p-4 bg-vencly-teal/5 border border-vencly-teal/20 rounded-xl text-sm text-gray-700 dark:text-gray-300">
+          <div className="mt-6 p-4 bg-vencly-teal/5 border border-vencly-teal/20 rounded text-sm text-gray-700 dark:text-gray-300">
             Erstelle danach dein{' '}
             <Link href="/optaimum/profil-md" className="text-vencly-teal hover:underline font-medium">Profil-Markdown</Link>
             {' '}– so ist Claude Code von Anfang an auf deinen Stil abgestimmt.

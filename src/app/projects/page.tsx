@@ -78,7 +78,7 @@ export default function ProjectsPage() {
           {projects.map((project) => {
             const card = (
               <div
-                className={`bg-white dark:bg-vencly-card border border-gray-200 dark:border-vencly-border rounded-2xl p-8 hover:border-vencly-teal/40 transition-all duration-300 group h-full flex flex-col ${project.href ? 'cursor-pointer' : ''}`}
+                className={`bg-white dark:bg-vencly-card border border-gray-200 dark:border-vencly-border rounded p-8 hover:border-vencly-teal/40 transition-all duration-300 group h-full flex flex-col ${project.href ? 'cursor-pointer' : ''}`}
               >
                 <div className="flex items-start justify-between mb-4">
                   <span className="text-xs font-mono text-vencly-teal bg-vencly-teal/10 px-3 py-1 rounded-full">
@@ -132,7 +132,7 @@ export default function ProjectsPage() {
           </p>
           <button
             {...calButtonProps}
-            className="inline-flex items-center gap-2 bg-vencly-teal hover:bg-teal-600 text-white font-semibold px-8 py-3 rounded-xl transition-colors cursor-pointer"
+            className="inline-flex items-center gap-2 bg-vencly-teal hover:bg-teal-600 text-white font-semibold px-8 py-3 rounded transition-colors cursor-pointer"
           >
             Gespräch vereinbaren
             <ArrowRight size={16} />

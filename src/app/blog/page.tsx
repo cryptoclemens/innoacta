@@ -93,7 +93,7 @@ export default function BlogPage() {
               <Link
                 key={article.slug}
                 href={`/blog/${article.slug}`}
-                className="block bg-white dark:bg-vencly-card border border-gray-200 dark:border-vencly-border rounded-2xl p-8 hover:border-vencly-teal/40 transition-colors group"
+                className="block bg-white dark:bg-vencly-card border border-gray-200 dark:border-vencly-border rounded p-8 hover:border-vencly-teal/40 transition-colors group"
               >
                 <div className="flex items-center gap-3 mb-3">
                   <span className="text-xs font-mono text-vencly-teal bg-vencly-teal/10 px-3 py-1 rounded-full">{article.category}</span>

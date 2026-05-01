@@ -27,9 +27,9 @@ export default function ContactPage() {
 
         {/* Contact Cards */}
         <div className="grid gap-6 md:grid-cols-2 mb-16">
-          <div className="bg-vencly-card border border-vencly-border rounded-2xl p-8">
+          <div className="bg-vencly-card border border-vencly-border rounded p-8">
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 bg-vencly-teal/10 rounded-xl flex items-center justify-center">
+              <div className="w-10 h-10 bg-vencly-teal/10 rounded flex items-center justify-center">
                 <Mail size={20} className="text-vencly-teal" />
               </div>
               <h2 className="text-white font-semibold">E-Mail</h2>
@@ -45,9 +45,9 @@ export default function ContactPage() {
             </a>
           </div>
 
-          <div className="bg-vencly-card border border-vencly-border rounded-2xl p-8">
+          <div className="bg-vencly-card border border-vencly-border rounded p-8">
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 bg-vencly-teal/10 rounded-xl flex items-center justify-center">
+              <div className="w-10 h-10 bg-vencly-teal/10 rounded flex items-center justify-center">
                 <MapPin size={20} className="text-vencly-teal" />
               </div>
               <h2 className="text-white font-semibold">Standort</h2>
@@ -58,7 +58,7 @@ export default function ContactPage() {
         </div>
 
         {/* Demo CTA */}
-        <div className="bg-gradient-to-r from-vencly-teal/10 to-vencly-teal/5 border border-vencly-teal/20 rounded-2xl p-10 text-center mb-20">
+        <div className="bg-gradient-to-r from-vencly-teal/10 to-vencly-teal/5 border border-vencly-teal/20 rounded p-10 text-center mb-20">
           <h2 className="text-2xl font-bold text-white mb-3">
             Lieber direkt ein Gespräch?
           </h2>
@@ -69,7 +69,7 @@ export default function ContactPage() {
             href="https://outlook.office.com/bookwithme/user/9c11749d74b349809103953c39ba26d4@vencly.com?anonymous&ep=pcard"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-vencly-teal hover:bg-vencly-teal-dark text-white font-semibold px-8 py-3 rounded-xl transition-colors teal-glow"
+            className="inline-flex items-center gap-2 bg-vencly-teal hover:bg-vencly-teal-dark text-white font-semibold px-8 py-3 rounded transition-colors teal-glow"
           >
             Demo buchen
             <ExternalLink size={16} />

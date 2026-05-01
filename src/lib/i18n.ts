@@ -15,7 +15,7 @@ const de = {
     services: 'Leistungen',
     projects: 'Projekte',
     contact: 'Kontakt',
-    login: 'Login',
+    login: 'Referenzen',
     cta: 'Erstgespräch vereinbaren',
   },
   hero: {
@@ -28,7 +28,7 @@ const de = {
     ctaSecondary: 'Referenzprojekte ansehen',
     stats: [
       { value: '40+', label: 'Realisierte Projekte' },
-      { value: '6 Mo.', label: 'Ø Projektlaufzeit' },
+      { value: '5–6 Wo.', label: 'Ø Projektlaufzeit' },
       { value: '7', label: 'Fokus-Branchen' },
     ],
   },
@@ -157,7 +157,7 @@ const en: Translations = {
     services: 'Services',
     projects: 'Projects',
     contact: 'Contact',
-    login: 'Login',
+    login: 'References',
     cta: 'Book a Call',
   },
   hero: {
@@ -170,7 +170,7 @@ const en: Translations = {
     ctaSecondary: 'View Case Studies',
     stats: [
       { value: '40+', label: 'Completed Projects' },
-      { value: '6 months', label: 'Avg. Project Duration' },
+      { value: '5–6 wks', label: 'Avg. Project Duration' },
       { value: '7', label: 'Focus Industries' },
     ],
   },
@@ -299,7 +299,7 @@ const fr: Translations = {
     services: 'Services',
     projects: 'Projets',
     contact: 'Contact',
-    login: 'Connexion',
+    login: 'Références',
     cta: 'Prendre rendez-vous',
   },
   hero: {
@@ -312,7 +312,7 @@ const fr: Translations = {
     ctaSecondary: 'Voir les cas clients',
     stats: [
       { value: '40+', label: 'Projets réalisés' },
-      { value: '6 mois', label: 'Durée moy. de projet' },
+      { value: '5–6 sem.', label: 'Durée moy. de projet' },
       { value: '7', label: 'Secteurs prioritaires' },
     ],
   },
@@ -441,7 +441,7 @@ const es: Translations = {
     services: 'Servicios',
     projects: 'Proyectos',
     contact: 'Contacto',
-    login: 'Acceder',
+    login: 'Referencias',
     cta: 'Solicitar una llamada',
   },
   hero: {
@@ -454,7 +454,7 @@ const es: Translations = {
     ctaSecondary: 'Ver casos de éxito',
     stats: [
       { value: '40+', label: 'Proyectos realizados' },
-      { value: '6 meses', label: 'Duración media' },
+      { value: '5–6 sem.', label: 'Duración media' },
       { value: '7', label: 'Sectores clave' },
     ],
   },
