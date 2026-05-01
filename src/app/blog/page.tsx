@@ -20,6 +20,14 @@ const breadcrumbJsonLd = {
 
 const articles = [
   {
+    slug: 'venture-client-mittelstand',
+    category: 'Mittelstand',
+    title: 'Venture Client im Mittelstand: Chancen, Hürden und wie es gelingt',
+    excerpt: 'Venture Clienting funktioniert nicht nur für Konzerne. Gerade mittelständische Unternehmen profitieren besonders – wenn die Methode auf ihre spezifische Situation angepasst wird.',
+    readTime: '8 Min.',
+    date: '1. Mai 2025',
+  },
+  {
     slug: 'was-ist-venture-clienting',
     category: 'Venture Clienting',
     title: 'Was ist Venture Clienting? Definition, Prozess und Praxisbeispiele',
