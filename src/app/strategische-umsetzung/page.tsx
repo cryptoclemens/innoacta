@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Link from 'next/link'
 import { ArrowRight, CheckCircle2, Users, FileText, PresentationIcon, TrendingUp, Building2, Target, BarChart3 } from 'lucide-react'
 import { calButtonProps } from '@/components/layout/CalProvider'
 
@@ -148,6 +149,22 @@ export default function StrategischeUmsetzungPage() {
                 </li>
               ))}
             </ul>
+          </section>
+
+          {/* Related articles */}
+          <section className="mb-16">
+            <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-6">Weiterführende Artikel</h2>
+            <div className="grid gap-4 sm:grid-cols-2">
+              {[
+                { href: '/blog/geschaeftsfeldentwicklung-methoden', cat: 'Geschäftsfeldentwicklung', title: 'Geschäftsfeldentwicklung: Methoden, Phasen und häufige Fehler' },
+                { href: '/blog/ki-beratung-mittelstand', cat: 'KI & Strategie', title: 'KI-Beratung im Mittelstand: Geschäftsfeldentwicklung und -validierung mit KI' },
+              ].map(a => (
+                <Link key={a.href} href={a.href} className="block bg-white dark:bg-vencly-card border border-gray-200 dark:border-vencly-border rounded-xl p-5 hover:border-vencly-teal/40 transition-colors group">
+                  <span className="text-xs font-mono text-vencly-teal">{a.cat}</span>
+                  <p className="text-sm font-semibold text-gray-900 dark:text-white group-hover:text-vencly-teal transition-colors mt-1 leading-snug">{a.title}</p>
+                </Link>
+              ))}
+            </div>
           </section>
 
           {/* CTA */}

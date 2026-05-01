@@ -206,7 +206,24 @@ export default function ArticlePage() {
             </p>
           </article>
 
-          <div className="mt-12 pt-8 border-t border-gray-200 dark:border-vencly-border">
+          <div className="mt-12 mb-12">
+            <h3 className="text-base font-bold text-gray-900 dark:text-white mb-4">Weitere Artikel</h3>
+            <div className="grid gap-3 sm:grid-cols-2">
+              {[
+                { href: '/blog/was-ist-venture-clienting', cat: 'Venture Clienting', title: 'Was ist Venture Clienting? Definition, Prozess und Praxisbeispiele' },
+                { href: '/blog/geschaeftsfeldentwicklung-methoden', cat: 'Geschäftsfeldentwicklung', title: 'Geschäftsfeldentwicklung: Methoden, Phasen und häufige Fehler' },
+                { href: '/blog/venture-clienting-regulierte-branchen', cat: 'Praxis', title: 'Venture Clienting in regulierten Branchen: Energie, Infrastruktur, öffentlicher Sektor' },
+                { href: '/blog/ki-beratung-mittelstand', cat: 'KI & Strategie', title: 'KI-Beratung im Mittelstand: Geschäftsfeldentwicklung und -validierung mit KI' },
+              ].map(a => (
+                <Link key={a.href} href={a.href} className="block bg-white dark:bg-vencly-card border border-gray-200 dark:border-vencly-border rounded-xl p-4 hover:border-vencly-teal/40 transition-colors group">
+                  <span className="text-xs font-mono text-vencly-teal">{a.cat}</span>
+                  <p className="text-sm font-semibold text-gray-900 dark:text-white group-hover:text-vencly-teal transition-colors mt-1 leading-snug">{a.title}</p>
+                </Link>
+              ))}
+            </div>
+          </div>
+
+          <div className="pt-8 border-t border-gray-200 dark:border-vencly-border">
             <div className="flex items-center gap-4">
               <div className="w-12 h-12 rounded-full bg-vencly-teal/20 flex items-center justify-center text-vencly-teal font-bold text-lg">C</div>
               <div>

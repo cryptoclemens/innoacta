@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Link from 'next/link'
 import { ArrowRight, ExternalLink, CheckCircle2, Zap, Target, Search } from 'lucide-react'
 import { calButtonProps } from '@/components/layout/CalProvider'
 
@@ -239,6 +240,24 @@ export default function VentureClientingPage() {
                 Artikel auf Medium lesen
                 <ExternalLink size={14} />
               </a>
+            </div>
+          </section>
+
+          {/* Related articles */}
+          <section className="mb-16">
+            <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-6">Weiterführende Artikel</h2>
+            <div className="grid gap-4 sm:grid-cols-2">
+              {[
+                { href: '/blog/was-ist-venture-clienting', cat: 'Venture Clienting', title: 'Was ist Venture Clienting? Definition, Prozess und Praxisbeispiele' },
+                { href: '/blog/venture-client-mittelstand', cat: 'Mittelstand', title: 'Venture Client im Mittelstand: Chancen, Hürden und wie es gelingt' },
+                { href: '/blog/startup-zusammenarbeit-venture-client', cat: 'Venture Clienting', title: 'Startup-Zusammenarbeit als Chance in wirtschaftlichen Krisenzeiten' },
+                { href: '/blog/venture-clienting-regulierte-branchen', cat: 'Praxis', title: 'Venture Clienting in regulierten Branchen: Energie, Infrastruktur, öffentlicher Sektor' },
+              ].map(a => (
+                <Link key={a.href} href={a.href} className="block bg-white dark:bg-vencly-card border border-gray-200 dark:border-vencly-border rounded-xl p-5 hover:border-vencly-teal/40 transition-colors group">
+                  <span className="text-xs font-mono text-vencly-teal">{a.cat}</span>
+                  <p className="text-sm font-semibold text-gray-900 dark:text-white group-hover:text-vencly-teal transition-colors mt-1 leading-snug">{a.title}</p>
+                </Link>
+              ))}
             </div>
           </section>
 
