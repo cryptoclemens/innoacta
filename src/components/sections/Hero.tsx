@@ -114,8 +114,12 @@ export default function Hero() {
           <span className="gradient-text">{t.hero.h1Highlight}</span>
         </h1>
 
-        <p className="text-gray-600 dark:text-gray-400 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
+        <p className="text-gray-600 dark:text-gray-400 text-lg md:text-xl max-w-2xl mx-auto mb-6 leading-relaxed">
           {t.hero.subline}
+        </p>
+
+        <p className="font-display text-xl md:text-2xl font-normal text-vencly-teal mb-10">
+          Vencly steht für eines: Umsetzung von Chancen.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
