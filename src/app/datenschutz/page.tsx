@@ -16,7 +16,7 @@ export default function DatenschutzPage() {
         <h1 className="font-display text-3xl md:text-4xl font-normal text-gray-900 dark:text-white mt-3 mb-2">
           Datenschutzerklärung
         </h1>
-        <p className="text-xs text-gray-400 mb-10">Stand: Mai 2025</p>
+        <p className="text-xs text-gray-400 mb-10">Stand: Mai 2026</p>
 
         <div className="space-y-10 text-sm text-gray-700 dark:text-gray-300 leading-relaxed">
 
@@ -208,6 +208,35 @@ export default function DatenschutzPage() {
                 www.lda.bayern.de
               </a>
             </p>
+          </section>
+
+          <section>
+            <h2 className="text-base font-semibold text-gray-900 dark:text-white mb-3">10. Auftragsverarbeitungsverträge (Art. 28 DSGVO)</h2>
+            <p>
+              Mit allen Dienstleistern, die personenbezogene Daten in unserem Auftrag verarbeiten,
+              haben wir Auftragsverarbeitungsverträge (AVV) gemäß Art. 28 DSGVO abgeschlossen.
+              Die archivierten Dokumente können hier eingesehen werden:
+            </p>
+            <ul className="mt-3 space-y-2">
+              <li>
+                <a href="/legal/avv-anthropic-2026.pdf" target="_blank" rel="noopener noreferrer" className="text-vencly-teal hover:underline">
+                  Anthropic, Inc. – Data Processing Addendum (DPA)
+                </a>
+              </li>
+              <li>
+                <a href="/legal/avv-resend-2026.pdf" target="_blank" rel="noopener noreferrer" className="text-vencly-teal hover:underline">
+                  Resend, Inc. – Data Processing Addendum (DPA)
+                </a>
+              </li>
+              <li>
+                <a href="/legal/avv-cloudflare-2026.pdf" target="_blank" rel="noopener noreferrer" className="text-vencly-teal hover:underline">
+                  Cloudflare, Inc. – Data Processing Addendum v6.4 (April 2026)
+                </a>
+              </li>
+              <li className="text-gray-500 dark:text-gray-400">
+                Hetzner Online GmbH – AVV über Kundenportal (Robot/Cloud Console) akzeptiert
+              </li>
+            </ul>
           </section>
 
           <div className="pt-6 border-t border-gray-200 dark:border-vencly-border">
