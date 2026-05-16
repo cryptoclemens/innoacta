@@ -48,6 +48,12 @@
 - [x] Zodiak Variable (Headlines H1/H2) — self-hosted via `next/font/local`
 - [x] Beide Fonts von Fontshare, kein externer Runtime-Request
 
+## Meilenstein 8: DSGVO-Compliance ✅
+- [x] AVV-Dokumente (Anthropic, Resend, Cloudflare) unter `/public/legal/` hinterlegt
+- [x] Datenschutzseite: Abschnitt 10 „Auftragsverarbeitungsverträge (Art. 28 DSGVO)" mit Download-Links
+- [x] Stand Datenschutzerklärung auf Mai 2026 aktualisiert
+- [x] Hetzner AVV: Portal-Akzeptanz dokumentiert (kein öffentliches PDF)
+
 ## Offen 🔄
 - [ ] Echtes Factsheet PDF unter `/public/factsheet.pdf` hinterlegen
 - [ ] Logos visuell prüfen: SWM, Toll Collect, RWE, Plenum AG
