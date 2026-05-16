@@ -56,14 +56,12 @@ export const metadata: Metadata = {
     title: 'Vencly – Innovatives Gründer-Denken für Unternehmen mit Tradition.',
     description:
       'Vencly überträgt Startup-Logik auf Konzerne und den Mittelstand: neue Geschäftsfelder entwickeln, validieren und launchen – mit Methode und Tempo.',
-    images: [{ url: '/og-image.svg', width: 1200, height: 630, alt: 'Vencly' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Vencly – Innovatives Gründer-Denken für Unternehmen mit Tradition.',
     description:
       'Vencly überträgt Startup-Logik auf Konzerne und den Mittelstand: neue Geschäftsfelder entwickeln, validieren und launchen – mit Methode und Tempo.',
-    images: ['/og-image.svg'],
   },
   icons: {
     icon: '/favicon.svg',

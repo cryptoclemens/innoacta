@@ -20,6 +20,14 @@ const breadcrumbJsonLd = {
 
 const articles = [
   {
+    slug: 'innovation-republic-kmu-innovation',
+    category: 'KMU & Innovation',
+    title: 'Innovation Republic: Strukturierte KMU-Innovation für den Mittelstand',
+    excerpt: 'Innovation Republic ist eine kuratierte Plattform, die mittelständische Unternehmen strukturiert mit passenden Innovationspartnern verbindet. Was die Initiative leistet und warum sie keine klassische Beratung ist.',
+    readTime: '7 Min.',
+    date: '16. Mai 2026',
+  },
+  {
     slug: 'christoph-werner-dm-wirtschaftspolitik-freiheit',
     category: 'Wirtschaftspolitik',
     title: 'Fußball und Wirtschaft: Was Christoph Werner (dm) der Politik ins Stammbuch schreibt',

@@ -25,7 +25,7 @@ const articleJsonLd = {
   publisher: { '@type': 'Organization', name: 'Vencly GmbH', url: 'https://vencly.com' },
   url: 'https://vencly.com/blog/startup-zusammenarbeit-venture-client',
   datePublished: '2024-01-15',
-  dateModified: '2025-05-01',
+  dateModified: '2026-05-16',
   inLanguage: 'de',
   about: [
     { '@type': 'Thing', name: 'Venture Clienting' },

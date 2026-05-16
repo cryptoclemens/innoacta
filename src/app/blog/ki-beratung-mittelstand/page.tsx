@@ -25,7 +25,7 @@ const articleJsonLd = {
   publisher: { '@type': 'Organization', name: 'Vencly GmbH', url: 'https://vencly.com' },
   url: 'https://vencly.com/blog/ki-beratung-mittelstand',
   datePublished: '2025-05-01',
-  dateModified: '2025-05-01',
+  dateModified: '2026-05-16',
   inLanguage: 'de',
   about: [
     { '@type': 'Thing', name: 'Künstliche Intelligenz' },

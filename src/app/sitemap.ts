@@ -1,19 +1,14 @@
 import type { MetadataRoute } from 'next'
 
 const BASE = 'https://vencly.com'
-const locales = ['de', 'en', 'fr', 'es'] as const
 
-function entry(path: string, priority: number, changeFrequency: MetadataRoute.Sitemap[number]['changeFrequency']): MetadataRoute.Sitemap[number][] {
-  const url = `${BASE}${path}`
-  return locales.map((lang) => ({
-    url,
+function entry(path: string, priority: number, changeFrequency: MetadataRoute.Sitemap[number]['changeFrequency']): MetadataRoute.Sitemap[number] {
+  return {
+    url: `${BASE}${path}`,
     lastModified: new Date(),
     changeFrequency,
     priority,
-    alternates: {
-      languages: Object.fromEntries(locales.map((l) => [l, url])) as Record<string, string>,
-    },
-  }))
+  }
 }
 
 function blogEntry(path: string): MetadataRoute.Sitemap[number] {
@@ -27,14 +22,14 @@ function blogEntry(path: string): MetadataRoute.Sitemap[number] {
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
-    ...entry('', 1, 'weekly'),
-    ...entry('/venture-clienting', 0.9, 'monthly'),
-    ...entry('/geschaeftsfeldentwicklung', 0.9, 'monthly'),
-    ...entry('/strategische-umsetzung', 0.9, 'monthly'),
-    ...entry('/projects', 0.8, 'monthly'),
-    ...entry('/optaimum', 0.85, 'monthly'),
-    ...entry('/autotodo', 0.8, 'monthly'),
-    ...entry('/contact', 0.6, 'monthly'),
+    entry('', 1, 'weekly'),
+    entry('/venture-clienting', 0.9, 'monthly'),
+    entry('/geschaeftsfeldentwicklung', 0.9, 'monthly'),
+    entry('/strategische-umsetzung', 0.9, 'monthly'),
+    entry('/projects', 0.8, 'monthly'),
+    entry('/optaimum', 0.85, 'monthly'),
+    entry('/autotodo', 0.8, 'monthly'),
+    entry('/contact', 0.6, 'monthly'),
     blogEntry('/blog'),
     blogEntry('/blog/ki-beratung-mittelstand'),
     blogEntry('/blog/venture-client-mittelstand'),
@@ -42,5 +37,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     blogEntry('/blog/geschaeftsfeldentwicklung-methoden'),
     blogEntry('/blog/startup-zusammenarbeit-venture-client'),
     blogEntry('/blog/venture-clienting-regulierte-branchen'),
+    blogEntry('/blog/innovation-republic-kmu-innovation'),
   ]
 }

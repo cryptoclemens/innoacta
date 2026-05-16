@@ -19,7 +19,7 @@ const articleJsonLd = {
   publisher: { '@type': 'Organization', name: 'Vencly GmbH', url: 'https://vencly.com' },
   url: 'https://vencly.com/blog/was-ist-venture-clienting',
   datePublished: '2025-02-10',
-  dateModified: '2025-05-01',
+  dateModified: '2026-05-16',
   inLanguage: 'de',
 }
 

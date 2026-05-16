@@ -36,6 +36,7 @@ const jsonLd = {
   ],
   sameAs: [
     'https://medium.com/@clemens.pompey',
+    'https://www.linkedin.com/in/clemens-pompey',
   ],
 }
 
