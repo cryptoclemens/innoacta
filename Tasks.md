@@ -54,6 +54,13 @@
 - [x] Stand Datenschutzerklärung auf Mai 2026 aktualisiert
 - [x] Hetzner AVV: Portal-Akzeptanz dokumentiert (kein öffentliches PDF)
 
+## Meilenstein 9: SEO/AEO-Sprint ✅ (2026-05-16)
+- [x] OG-Image-Fix: SVG-Referenz aus `layout.tsx` entfernt → `opengraph-image.tsx` PNG wird automatisch genutzt
+- [x] hreflang-Bereinigung: Same-URL-hreflang aus `sitemap.ts` entfernt, 60 → 15 Sitemap-Einträge
+- [x] LinkedIn `sameAs` in Person-Schema (`ueber-uns/page.tsx`) eingetragen
+- [x] `dateModified` in allen 6 Blog-Artikeln auf 2026-05-16 aktualisiert
+- [x] Neuer Blog-Artikel: `blog/innovation-republic-kmu-innovation/` mit Article + FAQPage + BreadcrumbList JSON-LD
+
 ## Offen 🔄
 - [ ] Echtes Factsheet PDF unter `/public/factsheet.pdf` hinterlegen
 - [ ] Logos visuell prüfen: SWM, Toll Collect, RWE, Plenum AG
