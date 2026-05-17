@@ -1,0 +1,25 @@
+/*
+  # Prevent clickjacking
+  X-Frame-Options: SAMEORIGIN
+
+  # Prevent MIME-type sniffing
+  X-Content-Type-Options: nosniff
+
+  # Control referrer information
+  Referrer-Policy: strict-origin-when-cross-origin
+
+  # HSTS – enforce HTTPS for 1 year
+  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+
+  # Disable browser features not needed
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=()
+
+  # Content Security Policy
+  # - script-src: self + GTM (GA4) + Cal.com embed
+  # - style-src: unsafe-inline required for Tailwind/Next.js
+  # - frame-src: Cal.com booking widget only
+  # - connect-src: GA4 endpoints + Cal.com API
+  # - img-src: self + data URIs (inline SVGs) + GA pixel
+  # - font-src: self (fonts are bundled at build time via next/font)
+  # - object-src / base-uri: locked down
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://cal.eu; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://www.google-analytics.com; font-src 'self'; frame-src https://cal.eu; connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://cal.eu; object-src 'none'; base-uri 'self'; form-action 'self'
