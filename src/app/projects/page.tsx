@@ -6,7 +6,7 @@ import { calButtonProps } from '@/components/layout/CalProvider'
 export const metadata: Metadata = {
   title: 'Referenzprojekte',
   description:
-    'Vencly-Projekte: Innovation Republic, Geopotatlas, AutoToDo, OptAImum und weitere KI- und Strategielösungen.',
+    'Vencly-Projekte: Innovation Republic, Geopotatlas, AutoToDo, OptAImum, Souffleur und weitere KI- und Strategielösungen.',
   alternates: { canonical: 'https://vencly.com/projects' },
 }
 
@@ -50,6 +50,16 @@ const projects = [
     tags: ['KI-Optimierung', 'Prompt Engineering', 'Developer Tools'],
     status: 'Live',
     href: '/optaimum',
+  },
+  {
+    id: 'souffleur',
+    name: 'Souffleur',
+    category: 'KI-Verhandlungs-Coach',
+    description:
+      'Privacy-first Live-Coaching für Verhandlungen auf macOS: lokale Transkription per Whisper, Echtzeit-Abgleich mit eigenem Spickzettel, strukturiertes Meeting-Summary – vollständig DSGVO-konform, kein Cloud-Recording, BYOK.',
+    tags: ['Whisper', 'BYOK', 'macOS', 'Datenschutz'],
+    status: 'In Entwicklung',
+    href: null,
   },
 ]
 
