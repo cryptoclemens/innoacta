@@ -61,6 +61,16 @@
 - [x] `dateModified` in allen 6 Blog-Artikeln auf 2026-05-16 aktualisiert
 - [x] Neuer Blog-Artikel: `blog/innovation-republic-kmu-innovation/` mit Article + FAQPage + BreadcrumbList JSON-LD
 
+## Meilenstein 10: Souffleur-Sprint ✅ (2026-06-05)
+- [x] Souffleur auf `/projects` als 5. Projekt ergänzt (Karte, Status "In Entwicklung")
+- [x] Navbar-Dropdown: Souffleur ergänzt; alle Projekt-Links auf direkte Routen umgestellt
+- [x] Unterseite `/innovation-republic` erstellt (Workflow, Features, Metriken, CTA)
+- [x] Unterseite `/geopotatlas` erstellt (Workflow, Features, Metriken, CTA)
+- [x] Unterseite `/souffleur` erstellt (Workflow, Features, Käuferseite-Zitat, CTA)
+- [x] Alle 5 Projekt-Karten auf `/projects` klickbar (href gesetzt)
+- [x] Blog-Artikel `/blog/souffleur-ki-verhandlungscoach` erstellt (~8 Min., Article + FAQPage + BreadcrumbList JSON-LD)
+- [x] `sitemap.ts` um 5 neue Einträge erweitert
+
 ## Offen 🔄
 - [ ] Echtes Factsheet PDF unter `/public/factsheet.pdf` hinterlegen
 - [ ] Logos visuell prüfen: SWM, Toll Collect, RWE, Plenum AG
