@@ -40,6 +40,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     blogEntry('/blog/geschaeftsfeldentwicklung-methoden'),
     blogEntry('/blog/startup-zusammenarbeit-venture-client'),
     blogEntry('/blog/venture-clienting-regulierte-branchen'),
+    blogEntry('/blog/souffleur-ki-verhandlungscoach'),
     blogEntry('/blog/innovation-republic-kmu-innovation'),
   ]
 }

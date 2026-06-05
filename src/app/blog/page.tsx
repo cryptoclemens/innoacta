@@ -20,6 +20,14 @@ const breadcrumbJsonLd = {
 
 const articles = [
   {
+    slug: 'souffleur-ki-verhandlungscoach',
+    category: 'KI & Verhandlung',
+    title: 'KI-Verhandlungscoaching für die Käuferseite – der Souffleur-Ansatz',
+    excerpt: 'Gong, Clari und Co. coachen Verkäufer. Die Gegenseite ging bisher leer aus. Souffleur schließt diese Lücke: lokal transkribiert via Whisper, cheat-sheet-gesteuert, DSGVO-konform, BYOK.',
+    readTime: '8 Min.',
+    date: '5. Juni 2026',
+  },
+  {
     slug: 'innovation-republic-kmu-innovation',
     category: 'KMU & Innovation',
     title: 'Innovation Republic: Strukturierte KMU-Innovation für den Mittelstand',
