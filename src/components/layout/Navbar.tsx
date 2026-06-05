@@ -18,11 +18,11 @@ const serviceLinks = [
 ]
 
 const projectLinks = [
-  { href: '/projects#innovation-republic', label: 'Innovation Republic' },
-  { href: '/projects#geopotatlas', label: 'Geopotatlas' },
+  { href: '/innovation-republic', label: 'Innovation Republic' },
+  { href: '/geopotatlas', label: 'Geopotatlas' },
   { href: '/autotodo', label: 'AutoToDo' },
   { href: '/optaimum', label: 'OptAImum' },
-  { href: '/projects#souffleur', label: 'Souffleur' },
+  { href: '/souffleur', label: 'Souffleur' },
 ]
 
 const checkItems = [

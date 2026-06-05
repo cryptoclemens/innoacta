@@ -19,7 +19,7 @@ const projects = [
       'Eine KI-gestützte Plattform zur automatisierten Startup-Identifikation und -Matching für mittelständische Unternehmen. Reduzierung des Scouting-Aufwands um bis zu 70 %.',
     tags: ['KI-Agenten', 'Startup-Matching', 'Automatisierung'],
     status: 'Live',
-    href: null,
+    href: '/innovation-republic',
   },
   {
     id: 'geopotatlas',
@@ -29,7 +29,7 @@ const projects = [
       'Intelligente Auswertung von Geodaten für strategische Standortentscheidungen und Marktanalysen. Integration mit bestehenden ERP-Systemen.',
     tags: ['Geodaten', 'Business Intelligence', 'ERP-Integration'],
     status: 'Live',
-    href: null,
+    href: '/geopotatlas',
   },
   {
     id: 'autotodo',
@@ -59,7 +59,7 @@ const projects = [
       'Privacy-first Live-Coaching für Verhandlungen auf macOS: lokale Transkription per Whisper, Echtzeit-Abgleich mit eigenem Spickzettel, strukturiertes Meeting-Summary – vollständig DSGVO-konform, kein Cloud-Recording, BYOK.',
     tags: ['Whisper', 'BYOK', 'macOS', 'Datenschutz'],
     status: 'In Entwicklung',
-    href: null,
+    href: '/souffleur',
   },
 ]
 
