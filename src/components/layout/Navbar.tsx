@@ -22,6 +22,7 @@ const projectLinks = [
   { href: '/projects#geopotatlas', label: 'Geopotatlas' },
   { href: '/autotodo', label: 'AutoToDo' },
   { href: '/optaimum', label: 'OptAImum' },
+  { href: '/projects#souffleur', label: 'Souffleur' },
 ]
 
 const checkItems = [
