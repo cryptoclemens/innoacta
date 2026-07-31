@@ -97,6 +97,11 @@ export default function ProjectDetailPage({ params }: { params: { slug: string }
                 {cta.label} <ArrowRight size={18} />
               </Link>
             ))}
+
+            <p className="mt-6 text-sm text-gray-500 dark:text-gray-400">
+              Ein Produkt der{' '}
+              <Link href="/impressum" className="text-vencly-teal hover:underline font-medium">Vencly GmbH</Link>.
+            </p>
           </div>
 
           {/* Workflow */}
