@@ -27,6 +27,20 @@ export interface ProjectStep {
   desc: string
 }
 
+export interface ProjectCard {
+  tag?: string
+  title: string
+  desc: string
+}
+
+export interface ProjectPlan {
+  name: string
+  price: string
+  per?: string
+  desc: string
+  highlight?: boolean
+}
+
 export interface Project {
   slug: string
   name: string
@@ -45,10 +59,12 @@ export interface Project {
     titleTail?: string
     intro: string
   }
+  problem?: { heading: string; intro?: string; cards: ProjectCard[] }
   workflowHeading?: string
   workflow?: ProjectStep[]
   featuresHeading?: string
   features?: ProjectFeature[]
+  plans?: { heading: string; intro?: string; tiers: ProjectPlan[]; addons?: string[]; note?: string }
   stack?: string[]
   stackNote?: string
   cta?: { heading: string; text: string; label: string; href: string; external?: boolean }
@@ -131,6 +147,16 @@ export const projects: Project[] = [
       intro:
         'Kitalo entlastet Kita-Leitungen von wiederkehrender Verwaltung und bindet Eltern zeitgemäß digital ein: faire Dienst- und Ausfallplanung, automatische Notfall-Eskalation, quelloffener Kern mit gehostetem Freemium. Gewachsen aus der live erprobten Zappels-App.',
     },
+    problem: {
+      heading: 'Warum Kitalo?',
+      intro: 'Kita-Leitungen versinken in wiederkehrender, betriebskritischer Verwaltung — mit Papier, Excel und unsicheren E-Mails.',
+      cards: [
+        { tag: 'Alltag', title: 'Kind krank, Erzieher krank', desc: 'Ausfälle müssen sofort aufgefangen werden — kritisch für einen reibungslosen Kita-Tag.' },
+        { tag: 'Aufwand', title: 'Immer dieselben Aufgaben', desc: 'Wiederkehrende Abläufe fressen täglich die Zeit der Leitung — planen, nachfassen, abstimmen.' },
+        { tag: 'Werkzeuge', title: 'Papier, Excel, unsichere E-Mail', desc: 'Ein Flickenteppich, der nicht ineinandergreift — inklusive DSGVO-Risiko.' },
+        { tag: 'Eltern', title: 'Kaum digital eingebunden', desc: 'Elternkommunikation läuft analog und zerstreut, statt zeitgemäß an einem Ort.' },
+      ],
+    },
     workflowHeading: 'So funktioniert Kitalo.',
     workflow: [
       { n: '01', title: 'Kita einrichten', desc: 'Self-service-Onboarding: eigene Instanz mit Name, Admin und Leitung in Minuten.' },
@@ -145,6 +171,18 @@ export const projects: Project[] = [
       { icon: 'Layers', title: 'Multi-Kita-Plattform', desc: 'Jede Kita erhält eine eigene, isolierte Instanz aus einem gemeinsamen Kern (Silo-Prinzip). Verbesserungen wirken beim nächsten Deploy auf alle Einrichtungen.' },
       { icon: 'Sparkles', title: 'Freemium, fair bepreist', desc: 'Voll funktionsfähiger Gratis-Kern mit Telegram + E-Mail. WhatsApp-Integration, eigene Domain und White-Label als bezahlte Add-ons – gestaffelt nach Kita-Größe.' },
     ],
+    plans: {
+      heading: 'Frei starten, mitwachsen.',
+      intro: 'Der Kern ist offen und kostenlos – bezahlt wird nur der Komfort. Preise gestaffelt nach Kita-Größe.',
+      tiers: [
+        { name: 'Frei', price: '0 €', desc: 'Voller Planungs-Kern, Telegram + E-Mail, 1 Admin. Self-hostbar als Open-Source-Kern.', highlight: true },
+        { name: 'Plus · S', price: '9,99 €', per: '/ Monat', desc: 'bis 20 Familien. Schaltet WhatsApp + Multi-Admin frei.' },
+        { name: 'Plus · M', price: '18,99 €', per: '/ Monat', desc: 'bis 40 Familien.' },
+        { name: 'Plus · L', price: '29,99 €', per: '/ Monat', desc: 'über 40 Familien.' },
+      ],
+      addons: ['Eigene Domain', 'White-Label', 'Prioritäts-Support'],
+      note: 'Preise vorläufig; Zahlungsabwicklung über Mollie ab v2.',
+    },
     stack: [
       'Next.js 14 + TypeScript',
       'PostgreSQL + Prisma',

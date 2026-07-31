@@ -104,6 +104,23 @@ export default function ProjectDetailPage({ params }: { params: { slug: string }
             </p>
           </div>
 
+          {/* Problem */}
+          {p.problem && (
+            <section className="mb-16">
+              <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">{p.problem.heading}</h2>
+              {p.problem.intro && <p className="text-gray-600 dark:text-gray-400 mb-6 max-w-2xl">{p.problem.intro}</p>}
+              <div className="grid gap-4 sm:grid-cols-2">
+                {p.problem.cards.map((c) => (
+                  <div key={c.title} className="bg-white dark:bg-vencly-card border border-gray-200 dark:border-vencly-border rounded p-6">
+                    {c.tag && <span className="text-xs font-mono uppercase tracking-widest text-vencly-teal">{c.tag}</span>}
+                    <h3 className="text-gray-900 dark:text-white font-semibold mt-1 mb-1">{c.title}</h3>
+                    <p className="text-gray-600 dark:text-gray-400 text-sm">{c.desc}</p>
+                  </div>
+                ))}
+              </div>
+            </section>
+          )}
+
           {/* Workflow */}
           {p.workflow && p.workflow.length > 0 && (
             <section className="mb-16">
@@ -140,6 +157,33 @@ export default function ProjectDetailPage({ params }: { params: { slug: string }
                   )
                 })}
               </div>
+            </section>
+          )}
+
+          {/* Plans */}
+          {p.plans && (
+            <section className="mb-16">
+              <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">{p.plans.heading}</h2>
+              {p.plans.intro && <p className="text-gray-600 dark:text-gray-400 mb-6 max-w-2xl">{p.plans.intro}</p>}
+              <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+                {p.plans.tiers.map((t) => (
+                  <div key={t.name} className={`rounded p-6 flex flex-col border ${t.highlight ? 'bg-vencly-teal/5 border-vencly-teal/30' : 'bg-white dark:bg-vencly-card border-gray-200 dark:border-vencly-border'}`}>
+                    <span className="text-gray-900 dark:text-white font-semibold">{t.name}</span>
+                    <span className="mt-1 text-2xl font-bold text-gray-900 dark:text-white">
+                      {t.price}{t.per && <span className="text-sm font-normal text-gray-500 dark:text-gray-400"> {t.per}</span>}
+                    </span>
+                    <p className="mt-2 text-gray-600 dark:text-gray-400 text-sm">{t.desc}</p>
+                  </div>
+                ))}
+              </div>
+              {p.plans.addons && p.plans.addons.length > 0 && (
+                <div className="flex flex-wrap gap-2 mt-4">
+                  {p.plans.addons.map((a) => (
+                    <span key={a} className="text-xs text-gray-600 dark:text-gray-400 bg-gray-100 dark:bg-white/5 px-3 py-1 rounded-full">+ {a}</span>
+                  ))}
+                </div>
+              )}
+              {p.plans.note && <p className="mt-4 text-sm text-gray-500 dark:text-gray-400">{p.plans.note}</p>}
             </section>
           )}
 
