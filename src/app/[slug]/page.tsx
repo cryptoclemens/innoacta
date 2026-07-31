@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import Image from 'next/image'
 import { notFound } from 'next/navigation'
 import {
   CheckCircle2, ArrowLeft, ArrowRight, ExternalLink,
@@ -74,6 +75,13 @@ export default function ProjectDetailPage({ params }: { params: { slug: string }
 
           {/* Hero */}
           <div className="mb-10">
+            {p.logo && (
+              <div className="mb-6">
+                <span className="inline-flex items-center bg-white rounded-lg px-4 py-3 shadow-sm ring-1 ring-black/5">
+                  <Image src={p.logo.src} alt={p.logo.alt} width={2253} height={668} priority className="h-9 w-auto" />
+                </span>
+              </div>
+            )}
             <div className="flex items-center gap-3 mb-4">
               <span className="inline-block text-vencly-teal text-sm font-mono tracking-widest uppercase">{hero?.eyebrow ?? p.category}</span>
               <span className={`text-xs px-2 py-1 rounded-full font-medium ${

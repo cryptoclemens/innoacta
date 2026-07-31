@@ -52,6 +52,8 @@ export interface Project {
   href?: string
 
   // ── Content below is used only by the auto-generated detail template ──
+  /** Optional wordmark/logo shown in the hero (path under /public). */
+  logo?: { src: string; alt: string }
   hero?: {
     eyebrow: string
     titleLead: string
@@ -137,6 +139,7 @@ export const projects: Project[] = [
     tags: ['Open Core', 'Multi-Tenant', 'Kita', 'DSGVO'],
     status: 'In Entwicklung',
     // No `href` → detail page auto-generated at /kitalo from the fields below.
+    logo: { src: '/kitalo-wordmark.png', alt: 'Kitalo' },
     seoDescription:
       'Kitalo entlastet Kita-Leitungen von wiederkehrender Verwaltung und bindet Eltern digital ein: faire Dienst- und Ausfallplanung, Open-Source-Kern (AGPL) mit gehostetem Freemium. Gewachsen aus der live erprobten Zappels-App.',
     hero: {
