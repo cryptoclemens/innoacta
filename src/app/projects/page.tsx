@@ -61,6 +61,16 @@ const projects = [
     status: 'In Entwicklung',
     href: '/souffleur',
   },
+  {
+    id: 'kitalo',
+    name: 'Kitalo',
+    category: 'Betriebssystem für Kitas',
+    description:
+      'Das digitale Betriebssystem für Kitas: faire Dienst- und Ausfallplanung, Eltern zeitgemäß digital eingebunden, Leitung von wiederkehrender Verwaltung entlastet. Open-Source-Kern (AGPL) mit gehostetem Freemium – gewachsen aus der live erprobten Zappels-App.',
+    tags: ['Open Core', 'Multi-Tenant', 'Kita', 'DSGVO'],
+    status: 'In Entwicklung',
+    href: '/kitalo',
+  },
 ]
 
 export default function ProjectsPage() {

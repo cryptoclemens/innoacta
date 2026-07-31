@@ -32,6 +32,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     entry('/optaimum', 0.85, 'monthly'),
     entry('/autotodo', 0.8, 'monthly'),
     entry('/souffleur', 0.75, 'monthly'),
+    entry('/kitalo', 0.8, 'monthly'),
     entry('/contact', 0.6, 'monthly'),
     blogEntry('/blog'),
     blogEntry('/blog/ki-beratung-mittelstand'),
