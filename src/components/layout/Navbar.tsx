@@ -8,6 +8,7 @@ import { useTheme } from 'next-themes'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { type Locale, localeLabels } from '@/lib/i18n'
 import { calButtonProps } from '@/components/layout/CalProvider'
+import { projects, projectPath } from '@/lib/projects'
 
 const locales: Locale[] = ['de', 'en', 'fr', 'es']
 
@@ -17,13 +18,9 @@ const serviceLinks = [
   { href: '/strategische-umsetzung', label: 'Strategische Umsetzung' },
 ]
 
-const projectLinks = [
-  { href: '/innovation-republic', label: 'Innovation Republic' },
-  { href: '/geopotatlas', label: 'Geopotatlas' },
-  { href: '/autotodo', label: 'AutoToDo' },
-  { href: '/optaimum', label: 'OptAImum' },
-  { href: '/souffleur', label: 'Souffleur' },
-]
+// Derived from the single source of truth in src/lib/projects.ts — new projects
+// added there appear here automatically.
+const projectLinks = projects.map((p) => ({ href: projectPath(p), label: p.name }))
 
 const checkItems = [
   'Wir wollen ein neues Geschäftsfeld erschließen, haben aber keinen klaren Fahrplan.',

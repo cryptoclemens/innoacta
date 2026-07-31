@@ -2,76 +2,14 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
 import { calButtonProps } from '@/components/layout/CalProvider'
+import { projects, projectPath } from '@/lib/projects'
 
 export const metadata: Metadata = {
   title: 'Referenzprojekte',
   description:
-    'Vencly-Projekte: Innovation Republic, Geopotatlas, AutoToDo, OptAImum, Souffleur und weitere KI- und Strategielösungen.',
+    'Vencly-Projekte: Innovation Republic, Geopotatlas, AutoToDo, OptAImum, Souffleur, Kitalo und weitere KI- und Strategielösungen.',
   alternates: { canonical: 'https://vencly.com/projects' },
 }
-
-const projects = [
-  {
-    id: 'innovation-republic',
-    name: 'Innovation Republic',
-    category: 'Venture Clienting Plattform',
-    description:
-      'Eine KI-gestützte Plattform zur automatisierten Startup-Identifikation und -Matching für mittelständische Unternehmen. Reduzierung des Scouting-Aufwands um bis zu 70 %.',
-    tags: ['KI-Agenten', 'Startup-Matching', 'Automatisierung'],
-    status: 'Live',
-    href: '/innovation-republic',
-  },
-  {
-    id: 'geopotatlas',
-    name: 'Geopotatlas',
-    category: 'Geodaten-Intelligence',
-    description:
-      'Intelligente Auswertung von Geodaten für strategische Standortentscheidungen und Marktanalysen. Integration mit bestehenden ERP-Systemen.',
-    tags: ['Geodaten', 'Business Intelligence', 'ERP-Integration'],
-    status: 'Live',
-    href: '/geopotatlas',
-  },
-  {
-    id: 'autotodo',
-    name: 'AutoToDo',
-    category: 'KI-gestütztes LOP-Management',
-    description:
-      'Meeting-Transkript hochladen, KI extrahiert automatisch alle Aufgaben und Statusänderungen, Vorschläge prüfen und als Excel exportieren. Multi-Tenant SaaS mit BYOK.',
-    tags: ['KI-Extraktion', 'LOP-Management', 'SaaS'],
-    status: 'Live',
-    href: '/autotodo',
-  },
-  {
-    id: 'optaimum',
-    name: 'OptAImum',
-    category: 'KI-Produktivitätstool',
-    description:
-      'Profile, Skill- & Hook-Markdowns erstellen, LLM-Anbieter in Minuten wechseln, Prompts generieren und KI-Sandboxen aufsetzen – alles an einem Ort. Für alle, die KI-Tools wirklich beherrschen wollen.',
-    tags: ['KI-Optimierung', 'Prompt Engineering', 'Developer Tools'],
-    status: 'Live',
-    href: '/optaimum',
-  },
-  {
-    id: 'souffleur',
-    name: 'Souffleur',
-    category: 'KI-Verhandlungs-Coach',
-    description:
-      'Privacy-first Live-Coaching für Verhandlungen auf macOS: lokale Transkription per Whisper, Echtzeit-Abgleich mit eigenem Spickzettel, strukturiertes Meeting-Summary – vollständig DSGVO-konform, kein Cloud-Recording, BYOK.',
-    tags: ['Whisper', 'BYOK', 'macOS', 'Datenschutz'],
-    status: 'In Entwicklung',
-    href: '/souffleur',
-  },
-  {
-    id: 'kitalo',
-    name: 'Kitalo',
-    category: 'Betriebssystem für Kitas',
-    description:
-      'Das digitale Betriebssystem für Kitas: faire Dienst- und Ausfallplanung, Eltern zeitgemäß digital eingebunden, Leitung von wiederkehrender Verwaltung entlastet. Open-Source-Kern (AGPL) mit gehostetem Freemium – gewachsen aus der live erprobten Zappels-App.',
-    tags: ['Open Core', 'Multi-Tenant', 'Kita', 'DSGVO'],
-    status: 'In Entwicklung',
-    href: '/kitalo',
-  },
-]
 
 export default function ProjectsPage() {
   return (
@@ -95,11 +33,9 @@ export default function ProjectsPage() {
       {/* Project Cards */}
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {projects.map((project) => {
-            const card = (
-              <div
-                className={`bg-white dark:bg-vencly-card border border-gray-200 dark:border-vencly-border rounded p-8 hover:border-vencly-teal/40 transition-all duration-300 group h-full flex flex-col ${project.href ? 'cursor-pointer' : ''}`}
-              >
+          {projects.map((project) => (
+            <Link key={project.slug} id={project.slug} href={projectPath(project)}>
+              <div className="bg-white dark:bg-vencly-card border border-gray-200 dark:border-vencly-border rounded p-8 hover:border-vencly-teal/40 transition-all duration-300 group h-full flex flex-col cursor-pointer">
                 <div className="flex items-start justify-between mb-4">
                   <span className="text-xs font-mono text-vencly-teal bg-vencly-teal/10 px-3 py-1 rounded-full">
                     {project.category}
@@ -125,24 +61,12 @@ export default function ProjectsPage() {
                     </span>
                   ))}
                 </div>
-                {project.href && (
-                  <span className="inline-flex items-center gap-1.5 text-vencly-teal text-sm font-medium mt-auto">
-                    Mehr erfahren <ArrowRight size={14} />
-                  </span>
-                )}
+                <span className="inline-flex items-center gap-1.5 text-vencly-teal text-sm font-medium mt-auto">
+                  Mehr erfahren <ArrowRight size={14} />
+                </span>
               </div>
-            )
-
-            return project.href ? (
-              <Link key={project.id} id={project.id} href={project.href}>
-                {card}
-              </Link>
-            ) : (
-              <div key={project.id} id={project.id}>
-                {card}
-              </div>
-            )
-          })}
+            </Link>
+          ))}
         </div>
 
         {/* CTA */}
