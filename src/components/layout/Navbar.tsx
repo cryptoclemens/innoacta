@@ -20,7 +20,7 @@ const serviceLinks = [
 
 // Derived from the single source of truth in src/lib/projects.ts — new projects
 // added there appear here automatically.
-const projectLinks = projects.map((p) => ({ href: projectPath(p), label: p.name }))
+const projectLinks = projects.map((p) => ({ href: projectPath(p), label: p.name.de }))
 
 const checkItems = [
   'Wir wollen ein neues Geschäftsfeld erschließen, haben aber keinen klaren Fahrplan.',

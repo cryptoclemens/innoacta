@@ -33,12 +33,14 @@ function getProject(slug: string): Project | undefined {
 export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
   const p = getProject(params.slug)
   if (!p) return {}
-  const description = p.seoDescription ?? p.description
+  const name = p.name.de
+  const category = p.category.de
+  const description = p.seoDescription ?? p.description.de
   return {
-    title: `${p.name} – ${p.category}`,
+    title: `${name} – ${category}`,
     description,
     alternates: { canonical: `https://vencly.com/${p.slug}` },
-    openGraph: { title: `${p.name} | Vencly`, description },
+    openGraph: { title: `${name} | Vencly`, description },
   }
 }
 
@@ -47,13 +49,13 @@ export default function ProjectDetailPage({ params }: { params: { slug: string }
   if (!p) notFound()
 
   const { hero, cta } = p
-  const description = p.seoDescription ?? p.description
+  const description = p.seoDescription ?? p.description.de
 
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         '@context': 'https://schema.org', '@type': 'SoftwareApplication',
-        name: p.name, applicationCategory: 'BusinessApplication', operatingSystem: 'Web',
+        name: p.name.de, applicationCategory: 'BusinessApplication', operatingSystem: 'Web',
         url: `https://vencly.com/${p.slug}`, description,
         author: { '@type': 'Organization', name: 'Vencly GmbH', url: 'https://vencly.com' },
       }) }} />
@@ -62,7 +64,7 @@ export default function ProjectDetailPage({ params }: { params: { slug: string }
         itemListElement: [
           { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://vencly.com' },
           { '@type': 'ListItem', position: 2, name: 'Projekte', item: 'https://vencly.com/projects' },
-          { '@type': 'ListItem', position: 3, name: p.name, item: `https://vencly.com/${p.slug}` },
+          { '@type': 'ListItem', position: 3, name: p.name.de, item: `https://vencly.com/${p.slug}` },
         ],
       }) }} />
       <div className="min-h-screen bg-[#F8F7F4] dark:bg-vencly-bg pt-24 pb-20">
@@ -83,7 +85,7 @@ export default function ProjectDetailPage({ params }: { params: { slug: string }
               </div>
             )}
             <div className="flex items-center gap-3 mb-4">
-              <span className="inline-block text-vencly-teal text-sm font-mono tracking-widest uppercase">{hero?.eyebrow ?? p.category}</span>
+              <span className="inline-block text-vencly-teal text-sm font-mono tracking-widest uppercase">{hero?.eyebrow ?? p.category.de}</span>
               <span className={`text-xs px-2 py-1 rounded-full font-medium ${
                 p.status === 'Live'
                   ? 'bg-green-500/20 text-green-600 dark:text-green-400'
@@ -93,7 +95,7 @@ export default function ProjectDetailPage({ params }: { params: { slug: string }
             <h1 className="text-3xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6 leading-tight">
               {hero ? (
                 <>{hero.titleLead}{' '}<span className="text-vencly-teal">{hero.titleAccent}</span>{hero.titleTail ? ` ${hero.titleTail}` : ''}</>
-              ) : p.name}
+              ) : p.name.de}
             </h1>
             <p className="text-gray-600 dark:text-gray-400 text-lg max-w-2xl leading-relaxed mb-8">{hero?.intro ?? description}</p>
             {cta && (cta.external ? (
@@ -132,7 +134,7 @@ export default function ProjectDetailPage({ params }: { params: { slug: string }
           {/* Workflow */}
           {p.workflow && p.workflow.length > 0 && (
             <section className="mb-16">
-              <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">{p.workflowHeading ?? `So funktioniert ${p.name}.`}</h2>
+              <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">{p.workflowHeading ?? `So funktioniert ${p.name.de}.`}</h2>
               <div className="grid gap-4 sm:grid-cols-2">
                 {p.workflow.map((w) => (
                   <div key={w.n} className="bg-white dark:bg-vencly-card border border-gray-200 dark:border-vencly-border rounded p-6 flex gap-4">

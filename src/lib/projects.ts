@@ -12,6 +12,8 @@
 // No new file needed per project.
 // ─────────────────────────────────────────────────────────────────────────────
 
+import type { Locale } from '@/lib/i18n'
+
 export type ProjectStatus = 'Live' | 'In Entwicklung'
 
 /** `icon` is a lucide-react icon name resolved in the detail template. */
@@ -43,9 +45,9 @@ export interface ProjectPlan {
 
 export interface Project {
   slug: string
-  name: string
-  category: string
-  description: string
+  name: Record<Locale, string>
+  category: Record<Locale, string>
+  description: Record<Locale, string>
   tags: string[]
   status: ProjectStatus
   /** Bespoke page path (e.g. '/autotodo'). Omit to auto-generate at /<slug>. */
@@ -82,60 +84,114 @@ export function projectPath(p: Project): string {
 export const projects: Project[] = [
   {
     slug: 'innovation-republic',
-    name: 'Innovation Republic',
-    category: 'Venture Clienting Plattform',
-    description:
-      'Eine KI-gestützte Plattform zur automatisierten Startup-Identifikation und -Matching für mittelständische Unternehmen. Reduzierung des Scouting-Aufwands um bis zu 70 %.',
+    name: { de: 'Innovation Republic', en: 'Innovation Republic', fr: 'Innovation Republic', es: 'Innovation Republic' },
+    category: {
+      de: 'Venture Clienting Plattform',
+      en: 'Venture Clienting Platform',
+      fr: 'Plateforme de Venture Clienting',
+      es: 'Plataforma de Venture Clienting',
+    },
+    description: {
+      de: 'Eine KI-gestützte Plattform zur automatisierten Startup-Identifikation und -Matching für mittelständische Unternehmen. Reduzierung des Scouting-Aufwands um bis zu 70 %.',
+      en: 'An AI-powered platform for automated startup identification and matching for mid-market companies. Reduces scouting effort by up to 70%.',
+      fr: "Une plateforme propulsée par l'IA pour l'identification et le matching automatisés de startups pour les ETI. Réduit l'effort de scouting jusqu'à 70 %.",
+      es: 'Una plataforma impulsada por IA para la identificación y el matching automatizado de startups para pymes. Reduce el esfuerzo de scouting hasta un 70 %.',
+    },
     tags: ['KI-Agenten', 'Startup-Matching', 'Automatisierung'],
     status: 'Live',
     href: '/innovation-republic',
   },
   {
     slug: 'geopotatlas',
-    name: 'Geopotatlas',
-    category: 'Geodaten-Intelligence',
-    description:
-      'Intelligente Auswertung von Geodaten für strategische Standortentscheidungen und Marktanalysen. Integration mit bestehenden ERP-Systemen.',
+    name: { de: 'Geopotatlas', en: 'Geopotatlas', fr: 'Geopotatlas', es: 'Geopotatlas' },
+    category: {
+      de: 'Geodaten-Intelligence',
+      en: 'Geodata Intelligence',
+      fr: 'Intelligence géodonnées',
+      es: 'Inteligencia geodatos',
+    },
+    description: {
+      de: 'Intelligente Auswertung von Geodaten für strategische Standortentscheidungen und Marktanalysen. Integration mit bestehenden ERP-Systemen.',
+      en: 'Intelligent analysis of geodata for strategic location decisions and market analyses. Integration with existing ERP systems.',
+      fr: 'Analyse intelligente des géodonnées pour les décisions stratégiques de localisation et les analyses de marché. Intégration avec les systèmes ERP existants.',
+      es: 'Análisis inteligente de geodatos para decisiones estratégicas de ubicación y análisis de mercado. Integración con sistemas ERP existentes.',
+    },
     tags: ['Geodaten', 'Business Intelligence', 'ERP-Integration'],
     status: 'Live',
     href: '/geopotatlas',
   },
   {
     slug: 'autotodo',
-    name: 'AutoToDo',
-    category: 'KI-gestütztes LOP-Management',
-    description:
-      'Meeting-Transkript hochladen, KI extrahiert automatisch alle Aufgaben und Statusänderungen, Vorschläge prüfen und als Excel exportieren. Multi-Tenant SaaS mit BYOK.',
+    name: { de: 'AutoToDo', en: 'AutoToDo', fr: 'AutoToDo', es: 'AutoToDo' },
+    category: {
+      de: 'KI-gestütztes LOP-Management',
+      en: 'AI-Powered Action Item Management',
+      fr: "Gestion IA des points d'action",
+      es: 'Gestión IA de puntos de acción',
+    },
+    description: {
+      de: 'Meeting-Transkript hochladen, KI extrahiert automatisch alle Aufgaben und Statusänderungen, Vorschläge prüfen und als Excel exportieren. Multi-Tenant SaaS mit BYOK.',
+      en: 'Upload a meeting transcript, AI automatically extracts all action items and status changes, review suggestions and export as Excel. Multi-tenant SaaS with BYOK.',
+      fr: "Téléchargez un transcript de réunion, l'IA extrait automatiquement toutes les tâches et modifications de statut, vérifiez les suggestions et exportez en Excel. SaaS multi-tenant avec BYOK.",
+      es: 'Sube una transcripción de reunión, la IA extrae automáticamente todos los puntos de acción y cambios de estado, revisa las sugerencias y exporta a Excel. SaaS multi-tenant con BYOK.',
+    },
     tags: ['KI-Extraktion', 'LOP-Management', 'SaaS'],
     status: 'Live',
     href: '/autotodo',
   },
   {
     slug: 'optaimum',
-    name: 'OptAImum',
-    category: 'KI-Produktivitätstool',
-    description:
-      'Profile, Skill- & Hook-Markdowns erstellen, LLM-Anbieter in Minuten wechseln, Prompts generieren und KI-Sandboxen aufsetzen – alles an einem Ort. Für alle, die KI-Tools wirklich beherrschen wollen.',
+    name: { de: 'OptAImum', en: 'OptAImum', fr: 'OptAImum', es: 'OptAImum' },
+    category: {
+      de: 'KI-Produktivitätstool',
+      en: 'AI Productivity Tool',
+      fr: 'Outil de productivité IA',
+      es: 'Herramienta de productividad IA',
+    },
+    description: {
+      de: 'Profile, Skill- & Hook-Markdowns erstellen, LLM-Anbieter in Minuten wechseln, Prompts generieren und KI-Sandboxen aufsetzen – alles an einem Ort. Für alle, die KI-Tools wirklich beherrschen wollen.',
+      en: 'Create profile, skill & hook markdowns, switch LLM providers in minutes, generate prompts and set up AI sandboxes — all in one place. For everyone who wants to truly master AI tools.',
+      fr: "Créez des markdowns de profil, compétences et hooks, changez de fournisseur LLM en quelques minutes, générez des prompts et configurez des bacs à sable IA — tout en un seul endroit. Pour ceux qui veulent vraiment maîtriser les outils IA.",
+      es: 'Crea markdowns de perfil, habilidades y hooks, cambia de proveedor LLM en minutos, genera prompts y configura sandboxes de IA — todo en un solo lugar. Para quienes quieren dominar de verdad las herramientas de IA.',
+    },
     tags: ['KI-Optimierung', 'Prompt Engineering', 'Developer Tools'],
     status: 'Live',
     href: '/optaimum',
   },
   {
     slug: 'souffleur',
-    name: 'Souffleur',
-    category: 'KI-Verhandlungs-Coach',
-    description:
-      'Privacy-first Live-Coaching für Verhandlungen auf macOS: lokale Transkription per Whisper, Echtzeit-Abgleich mit eigenem Spickzettel, strukturiertes Meeting-Summary – vollständig DSGVO-konform, kein Cloud-Recording, BYOK.',
+    name: { de: 'Souffleur', en: 'Souffleur', fr: 'Souffleur', es: 'Souffleur' },
+    category: {
+      de: 'KI-Verhandlungs-Coach',
+      en: 'AI Negotiation Coach',
+      fr: 'Coach de négociation IA',
+      es: 'Coach de negociación IA',
+    },
+    description: {
+      de: 'Privacy-first Live-Coaching für Verhandlungen auf macOS: lokale Transkription per Whisper, Echtzeit-Abgleich mit eigenem Spickzettel, strukturiertes Meeting-Summary – vollständig DSGVO-konform, kein Cloud-Recording, BYOK.',
+      en: 'Privacy-first live coaching for negotiations on macOS: local transcription via Whisper, real-time matching against your own cheat sheet, structured meeting summary — fully GDPR-compliant, no cloud recording, BYOK.',
+      fr: "Coaching en direct centré sur la confidentialité pour les négociations sur macOS : transcription locale via Whisper, correspondance en temps réel avec votre propre fiche mémo, résumé de réunion structuré — entièrement conforme au RGPD, sans enregistrement cloud, BYOK.",
+      es: 'Coaching en directo centrado en la privacidad para negociaciones en macOS: transcripción local vía Whisper, comparación en tiempo real con tu propia chuleta, resumen de reunión estructurado — totalmente conforme al RGPD, sin grabación en la nube, BYOK.',
+    },
     tags: ['Whisper', 'BYOK', 'macOS', 'Datenschutz'],
     status: 'In Entwicklung',
     href: '/souffleur',
   },
   {
     slug: 'kitalo',
-    name: 'Kitalo',
-    category: 'Betriebssystem für Kitas',
-    description:
-      'Das digitale Betriebssystem für Kitas: faire Dienst- und Ausfallplanung, Eltern zeitgemäß digital eingebunden, Leitung von wiederkehrender Verwaltung entlastet. Open-Source-Kern (AGPL) mit gehostetem Freemium – gewachsen aus der live erprobten Zappels-App.',
+    name: { de: 'Kitalo', en: 'Kitalo', fr: 'Kitalo', es: 'Kitalo' },
+    category: {
+      de: 'Betriebssystem für Kitas',
+      en: 'Operating System for Childcare',
+      fr: 'Système d\'exploitation pour crèches',
+      es: 'Sistema operativo para guarderías',
+    },
+    description: {
+      de: 'Das digitale Betriebssystem für Kitas: faire Dienst- und Ausfallplanung, Eltern zeitgemäß digital eingebunden, Leitung von wiederkehrender Verwaltung entlastet. Open-Source-Kern (AGPL) mit gehostetem Freemium – gewachsen aus der live erprobten Zappels-App.',
+      en: 'The digital operating system for childcare centres: fair duty and absence scheduling, parents engaged digitally, management relieved of recurring admin. Open-source core (AGPL) with hosted freemium — grown from the live-tested Zappels app.',
+      fr: "Le système d'exploitation numérique pour les crèches : planification équitable des services et absences, parents impliqués digitalement, direction déchargée de l'administration récurrente. Noyau open-source (AGPL) avec freemium hébergé — issu de l'application Zappels testée en production.",
+      es: 'El sistema operativo digital para guarderías: planificación equitativa de turnos y ausencias, padres integrados digitalmente, dirección liberada de la administración recurrente. Núcleo open-source (AGPL) con freemium alojado — desarrollado a partir de la app Zappels probada en producción.',
+    },
     tags: ['Open Core', 'Multi-Tenant', 'Kita', 'DSGVO'],
     status: 'In Entwicklung',
     // No `href` → detail page auto-generated at /kitalo from the fields below.

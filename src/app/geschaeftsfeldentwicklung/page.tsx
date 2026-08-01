@@ -1,19 +1,8 @@
-import type { Metadata } from 'next'
+'use client'
 import Link from 'next/link'
 import { ArrowRight, CheckCircle2, Lightbulb, BarChart3, Rocket } from 'lucide-react'
 import { calButtonProps } from '@/components/layout/CalProvider'
-
-export const metadata: Metadata = {
-  title: 'Geschäftsfeldentwicklung – neue Märkte mit Gründer-Denken',
-  description:
-    'Vencly entwickelt neue Geschäftsfelder für Konzerne und Mittelstand: schnell validiert, marktgetestet und mit echter Umsetzungsverantwortung. Von der Hypothese bis zum validierten Modell.',
-  alternates: { canonical: 'https://vencly.com/geschaeftsfeldentwicklung' },
-  openGraph: {
-    title: 'Geschäftsfeldentwicklung | Vencly',
-    description:
-      'Neue Märkte erschließen wie ein Gründer: schnell, validierungsgetrieben, mit klarem Fokus auf Markterfolg.',
-  },
-}
+import { usePageTranslation } from '@/lib/hooks/usePageTranslation'
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -84,34 +73,12 @@ const breadcrumbJsonLd = {
   ],
 }
 
-const phases = [
-  {
-    icon: Lightbulb,
-    phase: 'Phase 1',
-    title: 'Markt- & Technologiebewertung',
-    desc: 'Wir analysieren Marktgröße, Wettbewerb, Technologiereife und regulatorische Rahmenbedingungen. Schnell, fokussiert, ohne monatelange Studien.',
-    points: ['Marktgröße & Segmentierung', 'Wettbewerbslandschaft', 'Regulatorik & Eintrittsbarrieren'],
-    ventureClientingHint: false,
-  },
-  {
-    icon: BarChart3,
-    phase: 'Phase 2',
-    title: 'Geschäftsmodell-Entwicklung',
-    desc: 'Aus Marktchancen werden konkrete Geschäftsmodelle – mit klaren Annahmen, die testbar sind. Kein Powerpoint-Schönwettermodell, sondern ein robustes Fundament.',
-    points: ['Wertversprechen & Zielgruppen', 'Erlös- und Kostenmodell', 'Risikobewertung & Szenarien'],
-    ventureClientingHint: false,
-  },
-  {
-    icon: Rocket,
-    phase: 'Phase 3',
-    title: 'Validierung & Markterprobung',
-    desc: 'Die entscheidende Phase: Wir testen zentrale Annahmen mit echten Kunden und echten Daten. Kein Simulieren – echtes Testen. In der anfänglichen Make-or-Buy-Phase binden wir gezielt externe Dienstleister ein – Startups, Scaleups und innovative Unternehmen – um Zeit und Kosten zu optimieren, bevor eigene Kapazitäten aufgebaut werden.',
-    points: ['Hypothesen-Priorisierung', 'Kundeninterviews & Markttest', 'Einbindung externer Anbieter via Venture Clienting', 'Go/No-Go-Empfehlung'],
-    ventureClientingHint: true,
-  },
-]
+const phaseIcons = [Lightbulb, BarChart3, Rocket]
 
 export default function GeschaeftsfeldentwicklungPage() {
+  const p = usePageTranslation()
+  const gf = p.geschaeftsfeldentwicklung
+
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
@@ -123,98 +90,87 @@ export default function GeschaeftsfeldentwicklungPage() {
           {/* Hero */}
           <div className="mb-20">
             <span className="section-eyebrow mb-4">
-              Leistung
+              {gf.eyebrow}
             </span>
             <h1 className="font-display text-3xl md:text-5xl font-normal text-gray-900 dark:text-white mb-6 leading-tight break-words hyphens-auto">
-              Geschäftsfeldentwicklung –{' '}
-              <span className="text-vencly-teal">neue Märkte</span> mit Gründer-Denken erschließen.
+              {gf.h1Lead}{' '}
+              <span className="text-vencly-teal">{gf.h1Accent}</span>{gf.h1Tail}
             </h1>
             <p className="text-gray-600 dark:text-gray-400 text-lg max-w-2xl leading-relaxed">
-              Konzerne und Mittelständler, die neue Geschäftsfelder erschließen wollen, stehen vor
-              demselben Problem: Interne Strukturen wurden für das bestehende Kerngeschäft gebaut –
-              nicht für das Neue. Vencly bringt die Agilität und Methodik von Gründern in Ihre
-              Organisation, ohne die Stabilität des Kerngeschäfts zu gefährden.
+              {gf.intro}
             </p>
           </div>
 
           {/* Why startup logic */}
           <section className="mb-20">
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-              Warum klassische Strategieprozesse hier versagen.
+              {gf.whyH2}
             </h2>
             <p className="text-gray-600 dark:text-gray-400 mb-6 max-w-2xl leading-relaxed">
-              Strategieprojekte dauern zu lange, kosten zu viel und enden häufig mit einem Konzept,
-              das niemand umsetzt. Startups machen es anders: Sie bauen einen MVP, testen ihn am
-              echten Markt, iterieren und entscheiden auf Basis von Daten.
+              {gf.whyP1}
             </p>
             <p className="text-gray-600 dark:text-gray-400 max-w-2xl leading-relaxed">
-              Vencly überträgt genau diese Logik auf Ihr nächstes Geschäftsfeld –{' '}
-              <strong className="text-gray-900 dark:text-white">mit kurzen Iterationszyklen, klaren Entscheidungspunkten
-              und messbarem Output in 3–6 Monaten</strong>.
+              {gf.whyP2Prefix}{' '}
+              <strong className="text-gray-900 dark:text-white">{gf.whyP2Bold}</strong>{gf.whyP2Suffix}
             </p>
           </section>
 
           {/* Phases */}
           <section className="mb-20">
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-8">
-              Unser Vorgehen in drei Phasen.
+              {gf.phasesH2}
             </h2>
             <div className="space-y-6">
-              {phases.map(({ icon: Icon, phase, title, desc, points, ventureClientingHint }) => (
-                <div key={phase} className="bg-white dark:bg-vencly-card border border-gray-200 dark:border-vencly-border rounded p-8">
-                  <div className="flex items-start gap-5">
-                    <div className="w-11 h-11 bg-vencly-teal/10 rounded flex items-center justify-center shrink-0">
-                      <Icon size={20} className="text-vencly-teal" />
-                    </div>
-                    <div className="flex-1">
-                      <span className="text-vencly-teal text-xs font-mono tracking-widest uppercase">{phase}</span>
-                      <h3 className="text-gray-900 dark:text-white font-bold text-lg mt-1 mb-2">{title}</h3>
-                      <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-4">{desc}</p>
-                      <ul className="space-y-1 mb-4">
-                        {points.map((p) => (
-                          <li key={p} className="flex items-center gap-2 text-gray-700 dark:text-gray-300 text-sm">
-                            <CheckCircle2 size={14} className="text-vencly-teal shrink-0" />
-                            {p}
-                          </li>
-                        ))}
-                      </ul>
-                      {ventureClientingHint && (
-                        <p className="text-sm text-gray-600 dark:text-gray-400 border-t border-gray-200 dark:border-vencly-border pt-4 mt-2">
-                          Die Einbindung externer Anbieter erfolgt strukturiert über unseren{' '}
-                          <Link href="/venture-clienting" className="text-vencly-teal hover:underline font-medium">
-                            Venture-Clienting-Ansatz
-                          </Link>{' '}
-                          – mit dem Ziel, in der Make-or-Buy-Phase Zeit und Kosten zu optimieren.
-                        </p>
-                      )}
+              {gf.phases.map(({ phase, title, desc, points, ventureClientingHint }, i) => {
+                const Icon = phaseIcons[i]
+                return (
+                  <div key={phase} className="bg-white dark:bg-vencly-card border border-gray-200 dark:border-vencly-border rounded p-8">
+                    <div className="flex items-start gap-5">
+                      <div className="w-11 h-11 bg-vencly-teal/10 rounded flex items-center justify-center shrink-0">
+                        <Icon size={20} className="text-vencly-teal" />
+                      </div>
+                      <div className="flex-1">
+                        <span className="text-vencly-teal text-xs font-mono tracking-widest uppercase">{phase}</span>
+                        <h3 className="text-gray-900 dark:text-white font-bold text-lg mt-1 mb-2">{title}</h3>
+                        <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-4">{desc}</p>
+                        <ul className="space-y-1 mb-4">
+                          {points.map((pt) => (
+                            <li key={pt} className="flex items-center gap-2 text-gray-700 dark:text-gray-300 text-sm">
+                              <CheckCircle2 size={14} className="text-vencly-teal shrink-0" />
+                              {pt}
+                            </li>
+                          ))}
+                        </ul>
+                        {ventureClientingHint && (
+                          <p className="text-sm text-gray-600 dark:text-gray-400 border-t border-gray-200 dark:border-vencly-border pt-4 mt-2">
+                            {gf.ventureClientingHintPrefix}{' '}
+                            <Link href="/venture-clienting" className="text-vencly-teal hover:underline font-medium">
+                              {gf.ventureClientingHintLinkText}
+                            </Link>{' '}
+                            {gf.ventureClientingHintSuffix}
+                          </p>
+                        )}
+                      </div>
                     </div>
                   </div>
-                </div>
-              ))}
+                )
+              })}
             </div>
           </section>
 
           {/* Sectors */}
           <section className="mb-20">
-            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Besondere Stärke: regulierte Branchen.</h2>
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">{gf.sectorsH2}</h2>
             <p className="text-gray-600 dark:text-gray-400 max-w-2xl leading-relaxed">
-              Energie, Infrastruktur, öffentliche Hand – Branchen, in denen Startup-Logik oft als
-              nicht anwendbar gilt. Vencly hat bewiesen, dass das falsch ist. Wir kennen die
-              regulatorischen Rahmenbedingungen, die Stakeholder-Strukturen und die besonderen
-              Anforderungen dieser Sektoren.
+              {gf.sectorsP}
             </p>
           </section>
 
           {/* Related articles */}
           <section className="mb-16">
-            <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-6">Weiterführende Artikel</h2>
+            <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-6">{gf.relatedH2}</h2>
             <div className="grid gap-4 sm:grid-cols-2">
-              {[
-                { href: '/blog/geschaeftsfeldentwicklung-methoden', cat: 'Geschäftsfeldentwicklung', title: 'Geschäftsfeldentwicklung: Methoden, Phasen und häufige Fehler' },
-                { href: '/blog/ki-beratung-mittelstand', cat: 'KI & Strategie', title: 'KI-Beratung im Mittelstand: Geschäftsfeldentwicklung und -validierung mit KI' },
-                { href: '/blog/venture-client-mittelstand', cat: 'Mittelstand', title: 'Venture Client im Mittelstand: Chancen, Hürden und wie es gelingt' },
-                { href: '/blog/startup-zusammenarbeit-venture-client', cat: 'Venture Clienting', title: 'Startup-Zusammenarbeit als Chance in wirtschaftlichen Krisenzeiten' },
-              ].map(a => (
+              {gf.relatedArticles.map(a => (
                 <Link key={a.href} href={a.href} className="block bg-white dark:bg-vencly-card border border-gray-200 dark:border-vencly-border rounded p-5 hover:border-vencly-teal/40 transition-colors group">
                   <span className="text-xs font-mono text-vencly-teal">{a.cat}</span>
                   <p className="text-sm font-semibold text-gray-900 dark:text-white group-hover:text-vencly-teal transition-colors mt-1 leading-snug">{a.title}</p>
@@ -226,16 +182,16 @@ export default function GeschaeftsfeldentwicklungPage() {
           {/* CTA */}
           <section className="bg-gradient-to-r from-vencly-teal/10 to-vencly-teal/5 border border-vencly-teal/20 rounded p-10 text-center">
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">
-              Welches Geschäftsfeld wollen Sie als nächstes erschließen?
+              {gf.ctaH2}
             </h2>
             <p className="text-gray-600 dark:text-gray-400 mb-6">
-              In einem ersten Gespräch klären wir, ob und wie Vencly helfen kann.
+              {gf.ctaP}
             </p>
             <button
               {...calButtonProps}
               className="inline-flex items-center gap-2 bg-vencly-teal hover:bg-teal-600 text-white font-semibold px-8 py-3 rounded transition-colors cursor-pointer"
             >
-              Erstgespräch vereinbaren
+              {gf.ctaButton}
               <ArrowRight size={16} />
             </button>
           </section>

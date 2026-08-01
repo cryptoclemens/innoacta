@@ -1,19 +1,8 @@
-import type { Metadata } from 'next'
+'use client'
 import Link from 'next/link'
 import { ArrowRight, ExternalLink, CheckCircle2, Zap, Target, Search } from 'lucide-react'
 import { calButtonProps } from '@/components/layout/CalProvider'
-
-export const metadata: Metadata = {
-  title: 'Venture Clienting – die smartere Art, externe Innovation einzukaufen',
-  description:
-    'Vencly findet automatisiert und strukturiert die beste Lösung für Ihre Herausforderung – egal ob Startup, Scaleup oder innovativer Mittelständler. Kein Berater-Bingo, sondern Ergebnisse.',
-  alternates: { canonical: 'https://vencly.com/venture-clienting' },
-  openGraph: {
-    title: 'Venture Clienting | Vencly',
-    description:
-      'Die beste Lösung für Ihre Herausforderung – nicht die coolste Entität. Vencly sucht smart und automatisiert nach dem richtigen Anbieter.',
-  },
-}
+import { usePageTranslation } from '@/lib/hooks/usePageTranslation'
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -84,48 +73,12 @@ const breadcrumbJsonLd = {
   ],
 }
 
-const steps = [
-  {
-    n: '01',
-    title: 'Herausforderung schärfen',
-    desc: 'Bevor wir suchen, verstehen wir genau, was Sie wirklich brauchen – nicht welche Art von Anbieter, sondern welches Problem gelöst werden muss.',
-  },
-  {
-    n: '02',
-    title: 'Smarte Anbietersuche',
-    desc: 'Automatisiertes Screening von Startups, Scaleups und innovativen Unternehmen aus relevanten Märkten weltweit. Wir suchen nach der besten Lösung – nicht nach dem bekanntesten Namen.',
-  },
-  {
-    n: '03',
-    title: 'Strukturiertes Matching',
-    desc: 'Die Kandidaten werden nach Lösungsfit, Skalierbarkeit, Risiko und kulturellem Match bewertet. Sie erhalten eine qualifizierte Shortlist statt einer Excel-Tabelle mit 200 Einträgen.',
-  },
-  {
-    n: '04',
-    title: 'Pilotprojekt in 90 Tagen',
-    desc: 'Kein endloser Auswahlprozess. Wir starten ein konkretes Pilotprojekt mit klarem Testauftrag, messbaren KPIs und einer Entscheidung nach spätestens 90 Tagen.',
-  },
-]
-
-const differentiators = [
-  {
-    icon: Search,
-    title: 'Nicht nur Startups',
-    desc: 'Wir suchen unter Startups, Scaleups und innovativen Mittelständlern. Am Ende zählt die beste Lösung – nicht die coolste Entität.',
-  },
-  {
-    icon: Zap,
-    title: 'Automatisiert & strukturiert',
-    desc: 'Statt manueller Recherche: systematisches Screening mit klaren Kriterien. Effizienz, die Beraterhäuser nicht abbilden können.',
-  },
-  {
-    icon: Target,
-    title: 'Ergebnis, nicht Prozess',
-    desc: 'Wir denken wie MyHammer, nicht wie ein klassisches Beratungshaus. Sie brauchen den richtigen Anbieter – wir bringen ihn zu Ihnen.',
-  },
-]
+const differentiatorIcons = [Search, Zap, Target]
 
 export default function VentureClientingPage() {
+  const p = usePageTranslation()
+  const vc = p.ventureClienting
+
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
@@ -137,21 +90,18 @@ export default function VentureClientingPage() {
           {/* Hero */}
           <div className="mb-20">
             <span className="section-eyebrow mb-4">
-              Leistung
+              {vc.eyebrow}
             </span>
             <h1 className="font-display text-3xl md:text-5xl font-normal text-gray-900 dark:text-white mb-6 leading-tight">
-              Venture Clienting –{' '}
-              <span className="text-vencly-teal">die smartere Art</span>, externe Innovation einzukaufen.
+              {vc.h1Lead}{' '}
+              <span className="text-vencly-teal">{vc.h1Accent}</span>{vc.h1Tail}
             </h1>
             <p className="text-gray-600 dark:text-gray-400 text-lg max-w-2xl leading-relaxed mb-8">
-              Etablierte Unternehmen kämpfen mit demselben Problem: Der Markt bewegt sich schnell,
-              aber der eigene Innovationsprozess nicht. Venture Clienting löst das – indem Sie externe
-              Anbieter so einbinden, wie ein Startup seinen ersten strategischen Partner wählt:
-              gezielt, schnell, mit klarem Testauftrag.
+              {vc.intro}
             </p>
             <blockquote className="border-l-4 border-vencly-teal pl-6 py-2 my-8 bg-gray-100 dark:bg-vencly-card rounded-r-xl">
               <p className="text-gray-900 dark:text-white text-xl font-semibold leading-snug">
-                „Am Ende interessiert die beste Lösung<br className="hidden sm:block" /> für die eigene Herausforderung –<br className="hidden sm:block" /> nicht die coolste Entität."
+                {vc.quote}
               </p>
             </blockquote>
           </div>
@@ -159,35 +109,36 @@ export default function VentureClientingPage() {
           {/* USP: Not just startups */}
           <section className="mb-20">
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">
-              Wir suchen überall. Nicht nur bei Startups.
+              {vc.uspH2}
             </h2>
             <p className="text-gray-600 dark:text-gray-400 mb-8 max-w-2xl">
-              Die meisten Venture-Clienting-Ansätze fokussieren sich auf Startups. Das ist zu eng.
-              Vencly sucht automatisiert und strukturiert unter{' '}
-              <strong className="text-gray-900 dark:text-white">Startups, Scaleups und innovativen Unternehmen</strong>{' '}
-              aller Größen – denn der beste Anbieter für Ihre Herausforderung sitzt nicht
-              zwingend in einem Berliner Co-Working-Space.
+              {vc.uspIntroPrefix}{' '}
+              <strong className="text-gray-900 dark:text-white">{vc.uspIntroBold}</strong>{' '}
+              {vc.uspIntroSuffix}
             </p>
             <div className="grid gap-6 sm:grid-cols-3">
-              {differentiators.map(({ icon: Icon, title, desc }) => (
-                <div key={title} className="bg-white dark:bg-vencly-card border border-gray-200 dark:border-vencly-border rounded p-6">
-                  <div className="w-10 h-10 bg-vencly-teal/10 rounded flex items-center justify-center mb-4">
-                    <Icon size={20} className="text-vencly-teal" />
+              {vc.differentiators.map(({ title, desc }, i) => {
+                const Icon = differentiatorIcons[i]
+                return (
+                  <div key={title} className="bg-white dark:bg-vencly-card border border-gray-200 dark:border-vencly-border rounded p-6">
+                    <div className="w-10 h-10 bg-vencly-teal/10 rounded flex items-center justify-center mb-4">
+                      <Icon size={20} className="text-vencly-teal" />
+                    </div>
+                    <h3 className="text-gray-900 dark:text-white font-semibold mb-2">{title}</h3>
+                    <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">{desc}</p>
                   </div>
-                  <h3 className="text-gray-900 dark:text-white font-semibold mb-2">{title}</h3>
-                  <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">{desc}</p>
-                </div>
-              ))}
+                )
+              })}
             </div>
           </section>
 
           {/* Process */}
           <section className="mb-20">
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-8">
-              Der Vencly-Prozess: von der Herausforderung zur Entscheidung.
+              {vc.processH2}
             </h2>
             <div className="space-y-6">
-              {steps.map((s) => (
+              {vc.steps.map((s) => (
                 <div key={s.n} className="flex gap-6 bg-white dark:bg-vencly-card border border-gray-200 dark:border-vencly-border rounded p-6">
                   <span className="text-vencly-teal font-mono text-2xl font-bold shrink-0 mt-0.5">{s.n}</span>
                   <div>
@@ -201,15 +152,9 @@ export default function VentureClientingPage() {
 
           {/* What you get */}
           <section className="mb-20">
-            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">Was Sie bekommen.</h2>
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">{vc.whatYouGetH2}</h2>
             <ul className="space-y-3">
-              {[
-                'Qualifizierte Shortlist passender Anbieter – mit Bewertung statt roher Liste',
-                'Strukturierter Pilotrahmen mit klaren KPIs und Entscheidungskriterien',
-                'Begleitung der Pilotphase durch Vencly',
-                'Entscheidungsvorlage für Ihr Management nach 90 Tagen',
-                'Optional: Aufbau eines wiederholbaren internen Venture-Client-Prozesses',
-              ].map((item) => (
+              {vc.deliverables.map((item) => (
                 <li key={item} className="flex items-start gap-3 text-gray-700 dark:text-gray-300">
                   <CheckCircle2 size={18} className="text-vencly-teal mt-0.5 shrink-0" />
                   <span>{item}</span>
@@ -222,14 +167,13 @@ export default function VentureClientingPage() {
           <section className="mb-20">
             <div className="bg-white dark:bg-vencly-card border border-gray-200 dark:border-vencly-border rounded p-8">
               <span className="text-vencly-teal text-xs font-mono tracking-widest uppercase mb-3 block">
-                Weiterführend
+                {vc.articleTag}
               </span>
               <h2 className="text-gray-900 dark:text-white font-bold text-xl mb-3">
-                Startup-Zusammenarbeit als Chance in wirtschaftlichen Krisenzeiten
+                {vc.articleH2}
               </h2>
               <p className="text-gray-600 dark:text-gray-400 text-sm mb-5">
-                Warum Venture Clienting gerade jetzt das richtige Instrument ist – und wie
-                Unternehmen externe Partner strategisch einsetzen können, statt Innovation zu delegieren.
+                {vc.articleP}
               </p>
               <a
                 href="https://medium.com/@clemens.pompey/startup-zusammenarbeit-als-chance-in-wirtschaftlichen-krisenzeiten-venture-client-cb72d2e216da"
@@ -237,7 +181,7 @@ export default function VentureClientingPage() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-vencly-teal hover:underline font-medium text-sm"
               >
-                Artikel auf Medium lesen
+                {vc.articleLink}
                 <ExternalLink size={14} />
               </a>
             </div>
@@ -245,14 +189,9 @@ export default function VentureClientingPage() {
 
           {/* Related articles */}
           <section className="mb-16">
-            <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-6">Weiterführende Artikel</h2>
+            <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-6">{vc.relatedH2}</h2>
             <div className="grid gap-4 sm:grid-cols-2">
-              {[
-                { href: '/blog/was-ist-venture-clienting', cat: 'Venture Clienting', title: 'Was ist Venture Clienting? Definition, Prozess und Praxisbeispiele' },
-                { href: '/blog/venture-client-mittelstand', cat: 'Mittelstand', title: 'Venture Client im Mittelstand: Chancen, Hürden und wie es gelingt' },
-                { href: '/blog/startup-zusammenarbeit-venture-client', cat: 'Venture Clienting', title: 'Startup-Zusammenarbeit als Chance in wirtschaftlichen Krisenzeiten' },
-                { href: '/blog/venture-clienting-regulierte-branchen', cat: 'Praxis', title: 'Venture Clienting in regulierten Branchen: Energie, Infrastruktur, öffentlicher Sektor' },
-              ].map(a => (
+              {vc.relatedArticles.map(a => (
                 <Link key={a.href} href={a.href} className="block bg-white dark:bg-vencly-card border border-gray-200 dark:border-vencly-border rounded p-5 hover:border-vencly-teal/40 transition-colors group">
                   <span className="text-xs font-mono text-vencly-teal">{a.cat}</span>
                   <p className="text-sm font-semibold text-gray-900 dark:text-white group-hover:text-vencly-teal transition-colors mt-1 leading-snug">{a.title}</p>
@@ -264,16 +203,16 @@ export default function VentureClientingPage() {
           {/* CTA */}
           <section className="bg-gradient-to-r from-vencly-teal/10 to-vencly-teal/5 border border-vencly-teal/20 rounded p-10 text-center">
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">
-              Bereit, den besten Anbieter für Ihre Herausforderung zu finden?
+              {vc.ctaH2}
             </h2>
             <p className="text-gray-600 dark:text-gray-400 mb-6">
-              Kein Pitch-Deck nötig. Erzählen Sie uns, welches Problem Sie lösen wollen.
+              {vc.ctaP}
             </p>
             <button
               {...calButtonProps}
               className="inline-flex items-center gap-2 bg-vencly-teal hover:bg-teal-600 text-white font-semibold px-8 py-3 rounded transition-colors cursor-pointer"
             >
-              Erstgespräch vereinbaren
+              {vc.ctaButton}
               <ArrowRight size={16} />
             </button>
           </section>

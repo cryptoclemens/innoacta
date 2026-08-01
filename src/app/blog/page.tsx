@@ -1,13 +1,7 @@
-import type { Metadata } from 'next'
+'use client'
 import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
-
-export const metadata: Metadata = {
-  title: 'Blog – Wissen zu Venture Clienting & Geschäftsfeldentwicklung',
-  description:
-    'Praxiswissen zu Venture Clienting, Geschäftsfeldentwicklung und strategischer Umsetzung. Erkenntnisse aus über 40 Projekten in Energie, Infrastruktur und Mittelstand.',
-  alternates: { canonical: 'https://vencly.com/blog' },
-}
+import { usePageTranslation } from '@/lib/hooks/usePageTranslation'
 
 const breadcrumbJsonLd = {
   '@context': 'https://schema.org',
@@ -94,6 +88,9 @@ const articles = [
 ]
 
 export default function BlogPage() {
+  const p = usePageTranslation()
+  const bl = p.blog
+
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
@@ -102,12 +99,12 @@ export default function BlogPage() {
 
           {/* Header */}
           <div className="mb-16">
-            <span className="section-eyebrow mb-4">Wissen & Praxis</span>
+            <span className="section-eyebrow mb-4">{bl.eyebrow}</span>
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
-              Blog
+              {bl.h1}
             </h1>
             <p className="text-gray-600 dark:text-gray-400 text-lg max-w-2xl">
-              Praxiswissen zu Venture Clienting, Geschäftsfeldentwicklung und strategischer Umsetzung – aus über 40 Projekten in Energie, Infrastruktur und Mittelstand.
+              {bl.subtitle}
             </p>
           </div>
 
@@ -126,7 +123,7 @@ export default function BlogPage() {
                 <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-3 group-hover:text-vencly-teal transition-colors">{article.title}</h2>
                 <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-4">{article.excerpt}</p>
                 <span className="inline-flex items-center gap-1.5 text-vencly-teal text-sm font-medium">
-                  Artikel lesen <ArrowRight size={14} />
+                  {bl.readMore} <ArrowRight size={14} />
                 </span>
               </Link>
             ))}
