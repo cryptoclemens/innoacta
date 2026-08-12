@@ -109,6 +109,12 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
+        {/* Booking button redirect – data-booking="contact" → /contact/ */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `document.addEventListener('click',function(e){var el=e.target.closest('[data-booking="contact"]');if(el){window.location.href='https://www.vencly.com/contact/';}});`,
+          }}
+        />
         {/* GA Consent Mode v2 defaults – must fire before gtag loads */}
         <script
           dangerouslySetInnerHTML={{
