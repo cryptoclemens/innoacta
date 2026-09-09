@@ -53,7 +53,51 @@ Wildcard im Muster ist der Platzhalter `$1`, bei zweien `$2`.
 
 ## E-Mail
 
-Die Adressen `hello@` und `datenschutz@` laufen weiterhin über `vencly.com`.
-Sie sind in `src/lib/brand.ts` gekapselt und tragen dort ein
-`TODO(DNS-Switch)`; der Wechsel ist eine Zeile, sobald die Postfächer unter
-innovation.today stehen.
+Postfächer laufen über **Microsoft 365** (Tenant `prototypebiz`), Newsletter und
+Transaktionsmails über **Brevo**. Adressen: `hello@innovation.today` und
+`datenschutz@innovation.today`, gekapselt in `src/lib/brand.ts`.
+
+### Authentifizierung (Stand 09.09.2026, vollständig)
+
+| Mechanismus | Wert |
+|---|---|
+| MX | `innovation-today.mail.protection.outlook.com` |
+| SPF | `v=spf1 include:spf.protection.outlook.com include:spf.brevo.com -all` |
+| DMARC | `v=DMARC1; p=none; pct=100; rua=mailto:dmarc@huetec.net,mailto:rua@dmarc.brevo.com; ruf=mailto:dmarc@huetec.net` |
+| DKIM Microsoft | `selector1`/`selector2._domainkey` → `selector{1,2}-innovation-today._domainkey.prototypebiz.e-v1.dkim.mail.microsoft` |
+| DKIM Brevo | `brevo1`/`brevo2._domainkey` → `b{1,2}.innovation-today.dkim.brevo.com` |
+
+### Vier Fallstricke
+
+**1. `-all` ist ein Hardfail.** Jeder neue Dienst, der in unserem Namen Mails
+verschickt — Newsletter-Tool, CRM, Ticketsystem, Bewerbungsplattform — muss
+**vor der ersten Mail** in den SPF. Sonst verschwinden seine Nachrichten
+wortlos, ohne Bounce beim Absender. Aktuell 2 von maximal 10 erlaubten
+DNS-Lookups belegt.
+
+**2. Nur ein DMARC-Record je Domain.** Mehrere machen DMARC nach RFC 7489
+komplett ungültig — ohne Fehlermeldung. Weitere Berichtsempfänger gehören
+kommasepariert in dasselbe `rua=`, niemals in einen zweiten TXT-Eintrag.
+
+**3. DMARC-Berichte an fremde Domains brauchen dort eine Freigabe.** Die
+Empfängerdomain muss `<unsere-domain>._report._dmarc.<ihre-domain>` mit dem
+Inhalt `"v=DMARC1;"` anlegen. Brevo hat das getan, **huetec.net bislang nicht**
+— dorthin werden aktuell keine Berichte zugestellt, obwohl die Adresse im
+Record steht.
+
+**4. DKIM-CNAMEs müssen bei Cloudflare auf „DNS only" stehen.** Die orange
+Wolke überschreibt CNAME-Ziele und bricht damit die Signaturkette.
+
+### Microsoft-DKIM neu einrichten
+
+Die CNAME-Werte **nicht raten**: Microsoft nutzt für neu angelegte Domains das
+Format `<tenant>.e-v1.dkim.mail.microsoft` (TLD `.microsoft`), für ältere
+dagegen `<tenant>.onmicrosoft.com` — bei `vencly.com` steht noch die alte Form.
+Die exakten Werte nennt das Defender-Portal im Fehlertext des ersten
+Aktivierungsversuchs: `security.microsoft.com` → Policies & Rules → Threat
+Policies → Email Authentication Settings → DKIM.
+
+### Prüfen
+
+Testmail an eine Gmail-Adresse senden, dort „Original anzeigen". Erwartet:
+`SPF: PASS`, `DKIM: PASS with domain innovation.today`, `DMARC: PASS`.

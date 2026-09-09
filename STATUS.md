@@ -1,19 +1,27 @@
-# Status – Website (innoacta)
+# Status – Website innovation.today
 
 **Stand: 2026-09-09**
 
 ## Live
-- **URL:** https://vencly.com (Cloudflare Pages, Auto-Deploy auf `main`)
+- **URL:** https://www.innovation.today (Cloudflare Pages, Auto-Deploy auf `main`)
+- **Weiterleitungen:** `vencly.com`, `www.vencly.com` und `innovation.today`
+  leiten pfaderhaltend per 301 auf die www-Form — siehe `docs/domains.md`
 - **Framework:** Next.js 14 Static Export
-- **Deployment:** Cloudflare Pages (`cryptoclemens/innoacta` → main)
+- **Deployment:** Cloudflare Pages, Projekt `vencly` (Name bleibt: Deployment-Identität)
 
-## Laufend: Rebranding Vencly → innovation.today (seit 2026-09-09)
+## Abgeschlossen: Rebranding Vencly → innovation.today (2026-09-09)
 
-- **Firmierung:** bleibt **Vencly GmbH** — nur Marke/Website werden umbenannt
-- **Zieldomain:** `innovation.today` wird zentrale Homepage; `vencly.com` leitet danach dorthin weiter
-- **Brand-Assets:** Wortmarke (Nunito Sans Bold, in Pfade konvertiert), geliefert 2026-09-09
-  - Navy `#14304A` · Teal `#0F766E` · auf dunkel: Weiß + Mint `#5EEAD4` · Nachtblau `#0F2540`
-  - Quelle: `public/brand-assets.zip` auf Branch `claude/setup-innoacta-repo-Jr9Z4`
+Alle fünf Phasen umgesetzt und live. Einzelheiten im `CHANGELOG.md`.
+
+- **Firmierung:** unverändert **Vencly GmbH** — Impressum, Datenschutz und
+  JSON-LD `legalName` inhaltlich nicht angetastet, lediglich der Hinweis
+  „innovation.today ist ein Angebot der Vencly GmbH." ergänzt
+- **Marke:** 208 Textstellen, neue Wortmarke, Favicon-Set, OG-Image
+- **Schrift:** Nunito als einzige Schrift, Fraunces vollständig entfernt
+- **Farben:** sechs Markentoken (`brand-*`), alle Altfarben ersetzt, WCAG AA geprüft
+- **E-Mail:** `hello@` und `datenschutz@innovation.today`, SPF/DKIM/DMARC
+  vollständig eingerichtet
+- **Übergangs-Modal:** befristet bis **2026-12-09**, danach rückstandslos entfernbar
 
 ### 🔒 Backup des Vencly-Standes (jederzeit wiederherstellbar)
 
@@ -28,6 +36,13 @@ Vollständige Sicherung vor Beginn des Rebrandings, Commit `a59ca06`:
 Rückweg: `git reset --hard pre-rebrand-innovation-today`
 
 Tag und Branch bleiben erhalten, bis das Rebranding final abgenommen ist.
+
+## Offene Punkte
+
+- [ ] Rebranding-Modal nach dem 2026-12-09 entfernen (`RebrandNotice.tsx`, Import in `layout.tsx`)
+- [ ] huetec.net um den DMARC-Freigabe-Record bitten (siehe `docs/domains.md`)
+- [ ] Google Search Console: Domain-Property anlegen, Adressänderung beantragen
+- [ ] Handelsregister-Vermerk und Markenanmeldung (DPMA/EUIPO)
 
 ## Zuletzt geliefert (2026-06-05) — Souffleur-Sprint — Commits `95d11b3`–`586de6b`
 - `projects/page.tsx`: Souffleur als 5. Projekt ergänzt; alle 5 Karten jetzt klickbar (href gesetzt)

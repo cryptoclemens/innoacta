@@ -1,12 +1,12 @@
-# Projektbeschreibung – Vencly Website (Next.js)
+# Projektbeschreibung – Website innovation.today (Next.js)
 
 ## Ziel
 
-Dieses Repository enthält den Quellcode der **Vencly-Marketing-Website**, aufgebaut als statische Next.js 14-App und gehostet auf **Cloudflare Pages** unter `vencly.com`. Sie löst die frühere Webflow-Seite ab und ist vollständig SEO-optimiert.
+Dieses Repository enthält den Quellcode der **Marketing-Website innovation.today**, aufgebaut als statische Next.js 14-App und gehostet auf **Cloudflare Pages** unter `vencly.com`. Sie löst die frühere Webflow-Seite ab und ist vollständig SEO-optimiert.
 
 ## Firma & Positionierung
 
-Vencly ist spezialisiert auf **Strategische Geschäftsfeldentwicklung** für Konzerne und den Mittelstand:
+innovation.today ist spezialisiert auf **Strategische Geschäftsfeldentwicklung** für Konzerne und den Mittelstand:
 - Neue Märkte identifizieren, bewerten und operativ erschließen
 - Venture Clienting & Startup-Integration
 - Strategische Begleitung & Umsetzung
@@ -47,7 +47,7 @@ Inhalte in `/src/lib/i18n.ts`
 
 ## Wichtige Links
 
-- Live: https://vencly.com
+- Live: https://www.innovation.today (vormals vencly.com, leitet weiter)
 - Demo-Booking: https://outlook.office.com/bookwithme/user/9c11749d74b349809103953c39ba26d4@vencly.com?anonymous&ep=pcard
 - Login: https://vencly.app/
 - Factsheet: `/public/factsheet.pdf` (Platzhalter — echtes PDF ausstehend)

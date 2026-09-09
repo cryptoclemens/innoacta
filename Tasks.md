@@ -1,4 +1,4 @@
-# Tasks & Meilensteine – Vencly Website
+# Tasks & Meilensteine – Website innovation.today
 
 ## Meilenstein 1: Grundgerüst ✅
 - [x] Next.js 14 App Router mit Static Export
@@ -76,3 +76,27 @@
 - [ ] Logos visuell prüfen: SWM, Toll Collect, RWE, Plenum AG
 - [ ] Lighthouse-Audit (Performance, SEO, Accessibility)
 - [ ] Cookie-Banner / Analytics (optional, z.B. Matomo)
+
+---
+
+## Rebranding vencly → innovation.today (09.09.2026)
+
+- [x] Brand-Assets eingebunden (`public/brand/`)
+- [x] Analyse aller Vorkommen (`docs/rebrand-analyse.md`)
+- [x] Markenstrings ersetzt, zentrale Konfiguration `src/lib/brand.ts`
+- [x] Nunito als einzige Schrift, Fraunces entfernt
+- [x] Markenpalette `brand-*`, WCAG AA geprüft
+- [x] Wortmarke, Favicon-Set, OG-Image
+- [x] Übergangs-Modal und Seite `/rebranding`
+- [x] Domainwechsel auf www.innovation.today, Weiterleitungen aktiv
+- [x] E-Mail-Authentifizierung: SPF, DKIM (Microsoft + Brevo), DMARC
+- [x] Code-Review, Befunde behoben
+
+### Offen
+
+- [ ] Rebranding-Modal nach dem **2026-12-09** entfernen (Import in `layout.tsx` + Datei)
+- [ ] huetec.net: DMARC-Freigabe-Record anfragen (`docs/domains.md`)
+- [ ] Google Search Console: Domain-Property + Adressänderung
+- [ ] LinkedIn: Banner, Slogan, Beschreibung, Rebrand-Beitrag
+- [ ] Handelsregister-Vermerk „innovation.today" als Geschäftsbezeichnung
+- [ ] Markenanmeldung DPMA/EUIPO (Klassen 35 und 42)
