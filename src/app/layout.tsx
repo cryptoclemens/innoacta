@@ -1,6 +1,4 @@
 import type { Metadata } from 'next'
-import localFont from 'next/font/local'
-import { Fraunces } from 'next/font/google'
 import Script from 'next/script'
 import './globals.css'
 import Navbar from '@/components/layout/Navbar'
@@ -9,21 +7,8 @@ import Providers from '@/components/layout/Providers'
 import CookieBanner from '@/components/layout/CookieBanner'
 import { BRAND_NAME, LEGAL_ENTITY, SITE_URL, TAGLINE } from '@/lib/brand'
 
-const nunito = localFont({
-  src: [
-    { path: '../../public/fonts/Nunito-Variable.woff2', style: 'normal' },
-    { path: '../../public/fonts/Nunito-VariableItalic.woff2', style: 'italic' },
-  ],
-  variable: '--font-nunito',
-  display: 'swap',
-})
-
-const fraunces = Fraunces({
-  subsets: ['latin'],
-  variable: '--font-fraunces',
-  display: 'swap',
-  weight: ['300', '400', '500', '600', '700'],
-})
+// Nunito wird per @font-face in globals.css eingebunden und unten im <head>
+// vorgeladen. Bewusst ohne next/font, damit unicode-range steuerbar bleibt.
 
 export const metadata: Metadata = {
   title: {
@@ -67,8 +52,13 @@ export const metadata: Metadata = {
       'innovation.today überträgt Startup-Logik auf Konzerne und den Mittelstand: neue Geschäftsfelder entwickeln, validieren und launchen – mit Methode und Tempo.',
   },
   icons: {
-    icon: '/favicon.svg',
-    shortcut: '/favicon.svg',
+    icon: [
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+      { url: '/favicon-32.png', sizes: '32x32', type: 'image/png' },
+      { url: '/favicon-16.png', sizes: '16x16', type: 'image/png' },
+    ],
+    shortcut: '/favicon.ico',
+    apple: '/apple-touch-icon.png',
   },
   manifest: '/manifest.json',
   robots: {
@@ -105,10 +95,19 @@ export default function RootLayout({
   }
 
   return (
-    <html lang="de" suppressHydrationWarning className={`${nunito.variable} ${fraunces.variable}`}>
+    <html lang="de" suppressHydrationWarning>
       <head>
-        <meta name="theme-color" content="#0f766e" media="(prefers-color-scheme: light)" />
-        <meta name="theme-color" content="#0f766e" media="(prefers-color-scheme: dark)" />
+        {/* Nunito vorladen — crossOrigin ist bei Fonts Pflicht, sonst laedt der
+            Browser die Datei ein zweites Mal. */}
+        <link
+          rel="preload"
+          href="/fonts/Nunito-Variable.woff2"
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
+        />
+        <meta name="theme-color" content="#0F766E" media="(prefers-color-scheme: light)" />
+        <meta name="theme-color" content="#0F2540" media="(prefers-color-scheme: dark)" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -136,7 +135,7 @@ gtag('js', new Date());
           }}
         />
       </head>
-      <body className="bg-[#F8F7F4] dark:bg-vencly-bg text-gray-900 dark:text-white antialiased font-sans">
+      <body className="bg-brand-sky dark:bg-brand-night text-gray-900 dark:text-white antialiased font-sans">
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-NEDCRSRHND"
           strategy="afterInteractive"

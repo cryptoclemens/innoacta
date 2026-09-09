@@ -66,7 +66,7 @@ export default function StrategischeUmsetzungPage() {
           { '@type': 'ListItem', position: 3, name: 'Strategische Umsetzung', item: 'https://vencly.com/strategische-umsetzung' },
         ],
       }) }} />
-      <div className="min-h-screen bg-[#F8F7F4] dark:bg-vencly-bg pt-24 pb-20">
+      <div className="min-h-screen bg-brand-sky dark:bg-brand-night pt-24 pb-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
 
           {/* Hero */}
@@ -74,9 +74,9 @@ export default function StrategischeUmsetzungPage() {
             <span className="section-eyebrow mb-4">
               {su.eyebrow}
             </span>
-            <h1 className="font-display text-3xl md:text-5xl font-normal text-gray-900 dark:text-white mb-6 leading-tight">
+            <h1 className="text-3xl md:text-5xl font-extrabold text-gray-900 dark:text-white mb-6 leading-tight">
               {su.h1Lead}{' '}
-              <span className="text-vencly-teal">{su.h1Accent}</span>{su.h1Tail}
+              <span className="text-brand-teal dark:text-brand-mint">{su.h1Accent}</span>{su.h1Tail}
             </h1>
             <p className="text-gray-600 dark:text-gray-400 text-lg max-w-2xl leading-relaxed mb-6">
               {su.intro1}
@@ -90,7 +90,7 @@ export default function StrategischeUmsetzungPage() {
 
           {/* Not strategy vs execution */}
           <section className="mb-16">
-            <blockquote className="border-l-4 border-vencly-teal pl-6 py-2 bg-gray-100 dark:bg-vencly-card rounded-r-xl">
+            <blockquote className="border-l-4 border-brand-teal pl-6 py-2 bg-gray-100 dark:bg-brand-card rounded-r-xl">
               <p
                 className="text-gray-900 dark:text-white text-xl font-semibold"
                 dangerouslySetInnerHTML={{ __html: su.quote }}
@@ -105,10 +105,10 @@ export default function StrategischeUmsetzungPage() {
               {su.services.map(({ title, desc }, i) => {
                 const Icon = serviceIcons[i]
                 return (
-                  <div key={title} className="bg-white dark:bg-vencly-card border border-gray-200 dark:border-vencly-border rounded p-8">
+                  <div key={title} className="bg-white dark:bg-brand-card border border-gray-200 dark:border-brand-border rounded p-8">
                     <div className="flex items-start gap-5">
-                      <div className="w-11 h-11 bg-vencly-teal/10 rounded flex items-center justify-center shrink-0">
-                        <Icon size={20} className="text-vencly-teal" />
+                      <div className="w-11 h-11 bg-brand-teal/10 rounded flex items-center justify-center shrink-0">
+                        <Icon size={20} className="text-brand-teal dark:text-brand-mint" />
                       </div>
                       <div>
                         <h3 className="text-gray-900 dark:text-white font-bold text-lg mb-2">{title}</h3>
@@ -127,7 +127,7 @@ export default function StrategischeUmsetzungPage() {
             <ul className="space-y-3">
               {su.whenItems.map((item) => (
                 <li key={item} className="flex items-start gap-3 text-gray-700 dark:text-gray-300">
-                  <CheckCircle2 size={18} className="text-vencly-teal mt-0.5 shrink-0" />
+                  <CheckCircle2 size={18} className="text-brand-teal dark:text-brand-mint mt-0.5 shrink-0" />
                   <span>{item}</span>
                 </li>
               ))}
@@ -139,16 +139,16 @@ export default function StrategischeUmsetzungPage() {
             <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-6">{su.relatedH2}</h2>
             <div className="grid gap-4 sm:grid-cols-2">
               {su.relatedArticles.map(a => (
-                <Link key={a.href} href={a.href} className="block bg-white dark:bg-vencly-card border border-gray-200 dark:border-vencly-border rounded p-5 hover:border-vencly-teal/40 transition-colors group">
-                  <span className="text-xs font-mono text-vencly-teal">{a.cat}</span>
-                  <p className="text-sm font-semibold text-gray-900 dark:text-white group-hover:text-vencly-teal transition-colors mt-1 leading-snug">{a.title}</p>
+                <Link key={a.href} href={a.href} className="block bg-white dark:bg-brand-card border border-gray-200 dark:border-brand-border rounded p-5 hover:border-brand-teal/40 transition-colors group">
+                  <span className="text-xs font-mono text-brand-teal dark:text-brand-mint">{a.cat}</span>
+                  <p className="text-sm font-semibold text-gray-900 dark:text-white group-hover:text-brand-teal transition-colors mt-1 leading-snug">{a.title}</p>
                 </Link>
               ))}
             </div>
           </section>
 
           {/* CTA */}
-          <section className="bg-gradient-to-r from-vencly-teal/10 to-vencly-teal/5 border border-vencly-teal/20 rounded p-10 text-center">
+          <section className="bg-gradient-to-r from-brand-teal/10 to-brand-teal/5 border border-brand-teal/20 rounded p-10 text-center">
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">
               {su.ctaH2}
             </h2>
@@ -157,7 +157,7 @@ export default function StrategischeUmsetzungPage() {
             </p>
             <button
               {...calButtonProps}
-              className="inline-flex items-center gap-2 bg-vencly-teal hover:bg-teal-600 text-white font-semibold px-8 py-3 rounded transition-colors cursor-pointer"
+              className="inline-flex items-center gap-2 bg-brand-teal hover:bg-teal-600 text-white font-semibold px-8 py-3 rounded transition-colors cursor-pointer"
             >
               {su.ctaButton}
               <ArrowRight size={16} />

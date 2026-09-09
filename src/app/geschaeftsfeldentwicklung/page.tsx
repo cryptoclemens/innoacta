@@ -84,7 +84,7 @@ export default function GeschaeftsfeldentwicklungPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
-      <div className="min-h-screen bg-[#F8F7F4] dark:bg-vencly-bg pt-24 pb-20">
+      <div className="min-h-screen bg-brand-sky dark:bg-brand-night pt-24 pb-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
 
           {/* Hero */}
@@ -92,9 +92,9 @@ export default function GeschaeftsfeldentwicklungPage() {
             <span className="section-eyebrow mb-4">
               {gf.eyebrow}
             </span>
-            <h1 className="font-display text-3xl md:text-5xl font-normal text-gray-900 dark:text-white mb-6 leading-tight break-words hyphens-auto">
+            <h1 className="text-3xl md:text-5xl font-extrabold text-gray-900 dark:text-white mb-6 leading-tight break-words hyphens-auto">
               {gf.h1Lead}{' '}
-              <span className="text-vencly-teal">{gf.h1Accent}</span>{gf.h1Tail}
+              <span className="text-brand-teal dark:text-brand-mint">{gf.h1Accent}</span>{gf.h1Tail}
             </h1>
             <p className="text-gray-600 dark:text-gray-400 text-lg max-w-2xl leading-relaxed">
               {gf.intro}
@@ -124,27 +124,27 @@ export default function GeschaeftsfeldentwicklungPage() {
               {gf.phases.map(({ phase, title, desc, points, ventureClientingHint }, i) => {
                 const Icon = phaseIcons[i]
                 return (
-                  <div key={phase} className="bg-white dark:bg-vencly-card border border-gray-200 dark:border-vencly-border rounded p-8">
+                  <div key={phase} className="bg-white dark:bg-brand-card border border-gray-200 dark:border-brand-border rounded p-8">
                     <div className="flex items-start gap-5">
-                      <div className="w-11 h-11 bg-vencly-teal/10 rounded flex items-center justify-center shrink-0">
-                        <Icon size={20} className="text-vencly-teal" />
+                      <div className="w-11 h-11 bg-brand-teal/10 rounded flex items-center justify-center shrink-0">
+                        <Icon size={20} className="text-brand-teal dark:text-brand-mint" />
                       </div>
                       <div className="flex-1">
-                        <span className="text-vencly-teal text-xs font-mono tracking-widest uppercase">{phase}</span>
+                        <span className="text-brand-teal dark:text-brand-mint text-xs font-mono tracking-widest uppercase">{phase}</span>
                         <h3 className="text-gray-900 dark:text-white font-bold text-lg mt-1 mb-2">{title}</h3>
                         <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-4">{desc}</p>
                         <ul className="space-y-1 mb-4">
                           {points.map((pt) => (
                             <li key={pt} className="flex items-center gap-2 text-gray-700 dark:text-gray-300 text-sm">
-                              <CheckCircle2 size={14} className="text-vencly-teal shrink-0" />
+                              <CheckCircle2 size={14} className="text-brand-teal dark:text-brand-mint shrink-0" />
                               {pt}
                             </li>
                           ))}
                         </ul>
                         {ventureClientingHint && (
-                          <p className="text-sm text-gray-600 dark:text-gray-400 border-t border-gray-200 dark:border-vencly-border pt-4 mt-2">
+                          <p className="text-sm text-gray-600 dark:text-gray-400 border-t border-gray-200 dark:border-brand-border pt-4 mt-2">
                             {gf.ventureClientingHintPrefix}{' '}
-                            <Link href="/venture-clienting" className="text-vencly-teal hover:underline font-medium">
+                            <Link href="/venture-clienting" className="text-brand-teal dark:text-brand-mint hover:underline font-medium">
                               {gf.ventureClientingHintLinkText}
                             </Link>{' '}
                             {gf.ventureClientingHintSuffix}
@@ -171,16 +171,16 @@ export default function GeschaeftsfeldentwicklungPage() {
             <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-6">{gf.relatedH2}</h2>
             <div className="grid gap-4 sm:grid-cols-2">
               {gf.relatedArticles.map(a => (
-                <Link key={a.href} href={a.href} className="block bg-white dark:bg-vencly-card border border-gray-200 dark:border-vencly-border rounded p-5 hover:border-vencly-teal/40 transition-colors group">
-                  <span className="text-xs font-mono text-vencly-teal">{a.cat}</span>
-                  <p className="text-sm font-semibold text-gray-900 dark:text-white group-hover:text-vencly-teal transition-colors mt-1 leading-snug">{a.title}</p>
+                <Link key={a.href} href={a.href} className="block bg-white dark:bg-brand-card border border-gray-200 dark:border-brand-border rounded p-5 hover:border-brand-teal/40 transition-colors group">
+                  <span className="text-xs font-mono text-brand-teal dark:text-brand-mint">{a.cat}</span>
+                  <p className="text-sm font-semibold text-gray-900 dark:text-white group-hover:text-brand-teal transition-colors mt-1 leading-snug">{a.title}</p>
                 </Link>
               ))}
             </div>
           </section>
 
           {/* CTA */}
-          <section className="bg-gradient-to-r from-vencly-teal/10 to-vencly-teal/5 border border-vencly-teal/20 rounded p-10 text-center">
+          <section className="bg-gradient-to-r from-brand-teal/10 to-brand-teal/5 border border-brand-teal/20 rounded p-10 text-center">
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">
               {gf.ctaH2}
             </h2>
@@ -189,7 +189,7 @@ export default function GeschaeftsfeldentwicklungPage() {
             </p>
             <button
               {...calButtonProps}
-              className="inline-flex items-center gap-2 bg-vencly-teal hover:bg-teal-600 text-white font-semibold px-8 py-3 rounded transition-colors cursor-pointer"
+              className="inline-flex items-center gap-2 bg-brand-teal hover:bg-teal-600 text-white font-semibold px-8 py-3 rounded transition-colors cursor-pointer"
             >
               {gf.ctaButton}
               <ArrowRight size={16} />

@@ -29,5 +29,8 @@ next-env.d.ts
 *.jpeg
 .claude/worktrees/
 
-# Brand-Assets sind vom globalen *.png-Ausschluss ausgenommen
+# Brand-Assets und generierte Favicons sind vom globalen *.png-Ausschluss ausgenommen
 !public/brand/png/*.png
+!public/favicon-*.png
+!public/apple-touch-icon.png
+!public/icon-*.png

@@ -9,31 +9,32 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        vencly: {
-          bg: '#0F172A',
-          card: '#1E293B',
-          border: '#334155',
-          teal: '#0f766e',
-          'teal-dark': '#0d6b61',
-          'teal-light': '#14b8a6',
-          navy: '#0F172A',
-          blue: '#0f766e',
-          'blue-dark': '#0d6b61',
+        // Markenpalette innovation.today. Verbindliche Werte aus
+        // public/brand/README.md — keine weiteren Farben ergaenzen.
+        brand: {
+          navy: '#14304A',   // Primaertext, Headlines, Buttons
+          teal: '#0F766E',   // Akzent, Links, CTAs, „today“
+          mint: '#5EEAD4',   // Akzent auf dunklem Grund
+          night: '#0F2540',  // dunkle Flaechen, Footer, Dark-Mode-Grund
+          sky: '#EAF4FC',    // helle Akzentflaechen, Karten
+          ink: '#1E293B',    // Fliesstext
+
+          // Abgeleitete Werte fuer Flaechen und Trennlinien. Nicht Teil der
+          // Kernpalette, aber noetig fuer Karten, Rahmen und Hover-Zustaende.
+          'teal-dark': '#0B5A54',
+          card: '#16324F',
+          border: '#244059',
         },
       },
       fontFamily: {
+        // Nunito ist die einzige Schrift der Website. Kein zweiter Stack.
         sans: [
-          'var(--font-nunito)',
+          'Nunito',
+          'system-ui',
           '-apple-system',
-          'BlinkMacSystemFont',
           '"Segoe UI"',
+          'Roboto',
           'sans-serif',
-        ],
-        display: [
-          'var(--font-fraunces)',
-          'Georgia',
-          '"Times New Roman"',
-          'serif',
         ],
         mono: [
           '"SF Mono"',
@@ -44,6 +45,13 @@ module.exports = {
           '"Courier New"',
           'monospace',
         ],
+      },
+      borderRadius: {
+        // Markenvorgabe: 8px an Buttons und Bedienelementen, nicht vollrund.
+        DEFAULT: '8px',
+      },
+      letterSpacing: {
+        headline: '-0.015em',
       },
     },
   },

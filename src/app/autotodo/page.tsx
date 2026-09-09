@@ -69,23 +69,23 @@ export default function AutoTodoPage() {
           { '@type': 'ListItem', position: 3, name: 'AutoToDo', item: 'https://vencly.com/autotodo' },
         ],
       }) }} />
-      <div className="min-h-screen bg-[#F8F7F4] dark:bg-vencly-bg pt-24 pb-20">
+      <div className="min-h-screen bg-brand-sky dark:bg-brand-night pt-24 pb-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
 
           {/* Back */}
-          <Link href="/projects" className="inline-flex items-center gap-2 text-gray-500 dark:text-gray-400 hover:text-vencly-teal transition-colors mb-8 text-sm">
+          <Link href="/projects" className="inline-flex items-center gap-2 text-gray-500 dark:text-gray-400 hover:text-brand-teal transition-colors mb-8 text-sm">
             <ArrowLeft size={16} /> Zurück zu Projekten
           </Link>
 
           {/* Hero */}
           <div className="mb-10">
             <div className="flex items-center gap-3 mb-4">
-              <span className="inline-block text-vencly-teal text-sm font-mono tracking-widest uppercase">Produkt · SaaS · v0.1.78</span>
+              <span className="inline-block text-brand-teal dark:text-brand-mint text-sm font-mono tracking-widest uppercase">Produkt · SaaS · v0.1.78</span>
               <span className="text-xs bg-green-500/20 text-green-600 dark:text-green-400 px-2 py-1 rounded-full font-medium">Live</span>
             </div>
             <h1 className="text-3xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6 leading-tight">
               AutoToDo –{' '}
-              <span className="text-vencly-teal">KI-gestütztes</span> LOP-Management.
+              <span className="text-brand-teal dark:text-brand-mint">KI-gestütztes</span> LOP-Management.
             </h1>
             <p className="text-gray-600 dark:text-gray-400 text-lg max-w-2xl leading-relaxed mb-8">
               Meeting-Transkript hochladen, KI extrahiert automatisch alle Aufgaben und Statusänderungen,
@@ -97,7 +97,7 @@ export default function AutoTodoPage() {
               href="https://autotodo.vencly.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-vencly-teal hover:bg-teal-600 text-white font-semibold px-8 py-4 rounded transition-colors text-base shadow-lg shadow-teal-500/20"
+              className="inline-flex items-center gap-2 bg-brand-teal hover:bg-teal-600 text-white font-semibold px-8 py-4 rounded transition-colors text-base shadow-lg shadow-teal-500/20"
             >
               AutoToDo öffnen
               <ExternalLink size={18} />
@@ -109,8 +109,8 @@ export default function AutoTodoPage() {
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">So funktioniert AutoToDo.</h2>
             <div className="grid gap-4 sm:grid-cols-2">
               {workflow.map(w => (
-                <div key={w.n} className="bg-white dark:bg-vencly-card border border-gray-200 dark:border-vencly-border rounded p-6 flex gap-4">
-                  <span className="text-vencly-teal font-mono text-xl font-bold shrink-0">{w.n}</span>
+                <div key={w.n} className="bg-white dark:bg-brand-card border border-gray-200 dark:border-brand-border rounded p-6 flex gap-4">
+                  <span className="text-brand-teal dark:text-brand-mint font-mono text-xl font-bold shrink-0">{w.n}</span>
                   <div>
                     <h3 className="text-gray-900 dark:text-white font-semibold mb-1">{w.title}</h3>
                     <p className="text-gray-600 dark:text-gray-400 text-sm">{w.desc}</p>
@@ -125,9 +125,9 @@ export default function AutoTodoPage() {
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">Features im Detail.</h2>
             <div className="grid gap-6 sm:grid-cols-2">
               {features.map(({ icon: Icon, title, desc }) => (
-                <div key={title} className="bg-white dark:bg-vencly-card border border-gray-200 dark:border-vencly-border rounded p-6">
-                  <div className="w-10 h-10 bg-vencly-teal/10 rounded flex items-center justify-center mb-4">
-                    <Icon size={20} className="text-vencly-teal" />
+                <div key={title} className="bg-white dark:bg-brand-card border border-gray-200 dark:border-brand-border rounded p-6">
+                  <div className="w-10 h-10 bg-brand-teal/10 rounded flex items-center justify-center mb-4">
+                    <Icon size={20} className="text-brand-teal dark:text-brand-mint" />
                   </div>
                   <h3 className="text-gray-900 dark:text-white font-bold mb-2">{title}</h3>
                   <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">{desc}</p>
@@ -142,25 +142,25 @@ export default function AutoTodoPage() {
             <ul className="space-y-2">
               {stack.map(s => (
                 <li key={s} className="flex items-center gap-3 text-gray-700 dark:text-gray-300 text-sm">
-                  <CheckCircle2 size={16} className="text-vencly-teal shrink-0" />
+                  <CheckCircle2 size={16} className="text-brand-teal dark:text-brand-mint shrink-0" />
                   {s}
                 </li>
               ))}
             </ul>
             <p className="mt-4 text-sm text-gray-500 dark:text-gray-400">
               Self-Hosting über Docker/Coolify möglich.{' '}
-              <a href="https://github.com/cryptoclemens/AutoToDo" target="_blank" rel="noopener noreferrer" className="text-vencly-teal hover:underline inline-flex items-center gap-1">
+              <a href="https://github.com/cryptoclemens/AutoToDo" target="_blank" rel="noopener noreferrer" className="text-brand-teal dark:text-brand-mint hover:underline inline-flex items-center gap-1">
                 GitHub Repository <ExternalLink size={12} />
               </a>
             </p>
           </section>
 
           {/* CTA bottom */}
-          <section className="bg-gradient-to-r from-vencly-teal/10 to-vencly-teal/5 border border-vencly-teal/20 rounded p-10 text-center">
+          <section className="bg-gradient-to-r from-brand-teal/10 to-brand-teal/5 border border-brand-teal/20 rounded p-10 text-center">
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">Jetzt ausprobieren</h2>
             <p className="text-gray-600 dark:text-gray-400 mb-6">Kostenlos starten – kein Kreditkarte erforderlich.</p>
             <a href="https://autotodo.vencly.com" target="_blank" rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-vencly-teal hover:bg-teal-600 text-white font-semibold px-8 py-3 rounded transition-colors">
+              className="inline-flex items-center gap-2 bg-brand-teal hover:bg-teal-600 text-white font-semibold px-8 py-3 rounded transition-colors">
               AutoToDo öffnen <ExternalLink size={16} />
             </a>
           </section>

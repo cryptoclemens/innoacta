@@ -67,11 +67,11 @@ export default function ProjectDetailPage({ params }: { params: { slug: string }
           { '@type': 'ListItem', position: 3, name: p.name.de, item: `https://vencly.com/${p.slug}` },
         ],
       }) }} />
-      <div className="min-h-screen bg-[#F8F7F4] dark:bg-vencly-bg pt-24 pb-20">
+      <div className="min-h-screen bg-brand-sky dark:bg-brand-night pt-24 pb-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
 
           {/* Back */}
-          <Link href="/projects" className="inline-flex items-center gap-2 text-gray-500 dark:text-gray-400 hover:text-vencly-teal transition-colors mb-8 text-sm">
+          <Link href="/projects" className="inline-flex items-center gap-2 text-gray-500 dark:text-gray-400 hover:text-brand-teal transition-colors mb-8 text-sm">
             <ArrowLeft size={16} /> Zurück zu Projekten
           </Link>
 
@@ -85,7 +85,7 @@ export default function ProjectDetailPage({ params }: { params: { slug: string }
               </div>
             )}
             <div className="flex items-center gap-3 mb-4">
-              <span className="inline-block text-vencly-teal text-sm font-mono tracking-widest uppercase">{hero?.eyebrow ?? p.category.de}</span>
+              <span className="inline-block text-brand-teal dark:text-brand-mint text-sm font-mono tracking-widest uppercase">{hero?.eyebrow ?? p.category.de}</span>
               <span className={`text-xs px-2 py-1 rounded-full font-medium ${
                 p.status === 'Live'
                   ? 'bg-green-500/20 text-green-600 dark:text-green-400'
@@ -94,23 +94,23 @@ export default function ProjectDetailPage({ params }: { params: { slug: string }
             </div>
             <h1 className="text-3xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6 leading-tight">
               {hero ? (
-                <>{hero.titleLead}{' '}<span className="text-vencly-teal">{hero.titleAccent}</span>{hero.titleTail ? ` ${hero.titleTail}` : ''}</>
+                <>{hero.titleLead}{' '}<span className="text-brand-teal dark:text-brand-mint">{hero.titleAccent}</span>{hero.titleTail ? ` ${hero.titleTail}` : ''}</>
               ) : p.name.de}
             </h1>
             <p className="text-gray-600 dark:text-gray-400 text-lg max-w-2xl leading-relaxed mb-8">{hero?.intro ?? description}</p>
             {cta && (cta.external ? (
-              <a href={cta.href} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-vencly-teal hover:bg-teal-600 text-white font-semibold px-8 py-4 rounded transition-colors text-base shadow-lg shadow-teal-500/20">
+              <a href={cta.href} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-brand-teal hover:bg-teal-600 text-white font-semibold px-8 py-4 rounded transition-colors text-base shadow-lg shadow-teal-500/20">
                 {cta.label} <ExternalLink size={18} />
               </a>
             ) : (
-              <Link href={cta.href} className="inline-flex items-center gap-2 bg-vencly-teal hover:bg-teal-600 text-white font-semibold px-8 py-4 rounded transition-colors text-base shadow-lg shadow-teal-500/20">
+              <Link href={cta.href} className="inline-flex items-center gap-2 bg-brand-teal hover:bg-teal-600 text-white font-semibold px-8 py-4 rounded transition-colors text-base shadow-lg shadow-teal-500/20">
                 {cta.label} <ArrowRight size={18} />
               </Link>
             ))}
 
             <p className="mt-6 text-sm text-gray-500 dark:text-gray-400">
               Ein Produkt der{' '}
-              <Link href="/impressum" className="text-vencly-teal hover:underline font-medium">Vencly GmbH</Link>.
+              <Link href="/impressum" className="text-brand-teal dark:text-brand-mint hover:underline font-medium">Vencly GmbH</Link>.
             </p>
           </div>
 
@@ -121,8 +121,8 @@ export default function ProjectDetailPage({ params }: { params: { slug: string }
               {p.problem.intro && <p className="text-gray-600 dark:text-gray-400 mb-6 max-w-2xl">{p.problem.intro}</p>}
               <div className="grid gap-4 sm:grid-cols-2">
                 {p.problem.cards.map((c) => (
-                  <div key={c.title} className="bg-white dark:bg-vencly-card border border-gray-200 dark:border-vencly-border rounded p-6">
-                    {c.tag && <span className="text-xs font-mono uppercase tracking-widest text-vencly-teal">{c.tag}</span>}
+                  <div key={c.title} className="bg-white dark:bg-brand-card border border-gray-200 dark:border-brand-border rounded p-6">
+                    {c.tag && <span className="text-xs font-mono uppercase tracking-widest text-brand-teal dark:text-brand-mint">{c.tag}</span>}
                     <h3 className="text-gray-900 dark:text-white font-semibold mt-1 mb-1">{c.title}</h3>
                     <p className="text-gray-600 dark:text-gray-400 text-sm">{c.desc}</p>
                   </div>
@@ -137,8 +137,8 @@ export default function ProjectDetailPage({ params }: { params: { slug: string }
               <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">{p.workflowHeading ?? `So funktioniert ${p.name.de}.`}</h2>
               <div className="grid gap-4 sm:grid-cols-2">
                 {p.workflow.map((w) => (
-                  <div key={w.n} className="bg-white dark:bg-vencly-card border border-gray-200 dark:border-vencly-border rounded p-6 flex gap-4">
-                    <span className="text-vencly-teal font-mono text-xl font-bold shrink-0">{w.n}</span>
+                  <div key={w.n} className="bg-white dark:bg-brand-card border border-gray-200 dark:border-brand-border rounded p-6 flex gap-4">
+                    <span className="text-brand-teal dark:text-brand-mint font-mono text-xl font-bold shrink-0">{w.n}</span>
                     <div>
                       <h3 className="text-gray-900 dark:text-white font-semibold mb-1">{w.title}</h3>
                       <p className="text-gray-600 dark:text-gray-400 text-sm">{w.desc}</p>
@@ -157,9 +157,9 @@ export default function ProjectDetailPage({ params }: { params: { slug: string }
                 {p.features.map((f) => {
                   const Icon = ICONS[f.icon] ?? Sparkles
                   return (
-                    <div key={f.title} className="bg-white dark:bg-vencly-card border border-gray-200 dark:border-vencly-border rounded p-6">
-                      <div className="w-10 h-10 bg-vencly-teal/10 rounded flex items-center justify-center mb-4">
-                        <Icon size={20} className="text-vencly-teal" />
+                    <div key={f.title} className="bg-white dark:bg-brand-card border border-gray-200 dark:border-brand-border rounded p-6">
+                      <div className="w-10 h-10 bg-brand-teal/10 rounded flex items-center justify-center mb-4">
+                        <Icon size={20} className="text-brand-teal dark:text-brand-mint" />
                       </div>
                       <h3 className="text-gray-900 dark:text-white font-bold mb-2">{f.title}</h3>
                       <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">{f.desc}</p>
@@ -177,7 +177,7 @@ export default function ProjectDetailPage({ params }: { params: { slug: string }
               {p.plans.intro && <p className="text-gray-600 dark:text-gray-400 mb-6 max-w-2xl">{p.plans.intro}</p>}
               <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
                 {p.plans.tiers.map((t) => (
-                  <div key={t.name} className={`rounded p-6 flex flex-col border ${t.highlight ? 'bg-vencly-teal/5 border-vencly-teal/30' : 'bg-white dark:bg-vencly-card border-gray-200 dark:border-vencly-border'}`}>
+                  <div key={t.name} className={`rounded p-6 flex flex-col border ${t.highlight ? 'bg-brand-teal/5 border-brand-teal/30' : 'bg-white dark:bg-brand-card border-gray-200 dark:border-brand-border'}`}>
                     <span className="text-gray-900 dark:text-white font-semibold">{t.name}</span>
                     <span className="mt-1 text-2xl font-bold text-gray-900 dark:text-white">
                       {t.price}{t.per && <span className="text-sm font-normal text-gray-500 dark:text-gray-400"> {t.per}</span>}
@@ -204,7 +204,7 @@ export default function ProjectDetailPage({ params }: { params: { slug: string }
               <ul className="space-y-2">
                 {p.stack.map((s) => (
                   <li key={s} className="flex items-center gap-3 text-gray-700 dark:text-gray-300 text-sm">
-                    <CheckCircle2 size={16} className="text-vencly-teal shrink-0" /> {s}
+                    <CheckCircle2 size={16} className="text-brand-teal dark:text-brand-mint shrink-0" /> {s}
                   </li>
                 ))}
               </ul>
@@ -214,15 +214,15 @@ export default function ProjectDetailPage({ params }: { params: { slug: string }
 
           {/* CTA bottom */}
           {cta && (
-            <section className="bg-gradient-to-r from-vencly-teal/10 to-vencly-teal/5 border border-vencly-teal/20 rounded p-10 text-center">
+            <section className="bg-gradient-to-r from-brand-teal/10 to-brand-teal/5 border border-brand-teal/20 rounded p-10 text-center">
               <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">{cta.heading}</h2>
               <p className="text-gray-600 dark:text-gray-400 mb-6">{cta.text}</p>
               {cta.external ? (
-                <a href={cta.href} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-vencly-teal hover:bg-teal-600 text-white font-semibold px-8 py-3 rounded transition-colors">
+                <a href={cta.href} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-brand-teal hover:bg-teal-600 text-white font-semibold px-8 py-3 rounded transition-colors">
                   {cta.label} <ExternalLink size={16} />
                 </a>
               ) : (
-                <Link href={cta.href} className="inline-flex items-center gap-2 bg-vencly-teal hover:bg-teal-600 text-white font-semibold px-8 py-3 rounded transition-colors">
+                <Link href={cta.href} className="inline-flex items-center gap-2 bg-brand-teal hover:bg-teal-600 text-white font-semibold px-8 py-3 rounded transition-colors">
                   {cta.label} <ArrowRight size={16} />
                 </Link>
               )}

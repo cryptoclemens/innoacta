@@ -8,13 +8,13 @@ export default function ContactPage() {
   const ct = p.contact
 
   return (
-    <div className="min-h-screen bg-[#F8F7F4] dark:bg-vencly-bg pt-24 pb-20">
+    <div className="min-h-screen bg-brand-sky dark:bg-brand-night pt-24 pb-20">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Header */}
         <div className="text-center mb-16">
           <span className="section-eyebrow justify-center mb-4">{ct.eyebrow}</span>
-          <h1 className="font-display text-4xl md:text-5xl font-normal text-gray-900 dark:text-white mt-3 mb-6">
+          <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 dark:text-white mt-3 mb-6">
             {ct.h1}
           </h1>
           <p className="text-gray-600 dark:text-gray-400 text-lg max-w-xl mx-auto">
@@ -24,10 +24,10 @@ export default function ContactPage() {
 
         {/* Contact Cards */}
         <div className="grid gap-6 md:grid-cols-2 mb-16">
-          <div className="bg-white dark:bg-vencly-card border border-gray-200 dark:border-vencly-border rounded p-8">
+          <div className="bg-white dark:bg-brand-card border border-gray-200 dark:border-brand-border rounded p-8">
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 bg-vencly-teal/10 rounded flex items-center justify-center">
-                <Mail size={20} className="text-vencly-teal" />
+              <div className="w-10 h-10 bg-brand-teal/10 rounded flex items-center justify-center">
+                <Mail size={20} className="text-brand-teal dark:text-brand-mint" />
               </div>
               <h2 className="text-gray-900 dark:text-white font-semibold">{ct.emailLabel}</h2>
             </div>
@@ -36,16 +36,16 @@ export default function ContactPage() {
             </p>
             <a
               href="mailto:hello@vencly.com"
-              className="text-vencly-teal hover:text-vencly-teal-light transition-colors"
+              className="text-brand-teal dark:text-brand-mint hover:text-brand-mint transition-colors"
             >
               hello@vencly.com
             </a>
           </div>
 
-          <div className="bg-white dark:bg-vencly-card border border-gray-200 dark:border-vencly-border rounded p-8">
+          <div className="bg-white dark:bg-brand-card border border-gray-200 dark:border-brand-border rounded p-8">
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 bg-vencly-teal/10 rounded flex items-center justify-center">
-                <MapPin size={20} className="text-vencly-teal" />
+              <div className="w-10 h-10 bg-brand-teal/10 rounded flex items-center justify-center">
+                <MapPin size={20} className="text-brand-teal dark:text-brand-mint" />
               </div>
               <h2 className="text-gray-900 dark:text-white font-semibold">{ct.locationLabel}</h2>
             </div>
@@ -55,8 +55,8 @@ export default function ContactPage() {
         </div>
 
         {/* Demo CTA */}
-        <div className="bg-vencly-teal/5 border border-vencly-teal/20 rounded p-10 text-center mb-20">
-          <h2 className="font-display text-2xl font-normal text-gray-900 dark:text-white mb-3">
+        <div className="bg-brand-teal/5 border border-brand-teal/20 rounded p-10 text-center mb-20">
+          <h2 className="text-2xl font-extrabold text-gray-900 dark:text-white mb-3">
             {ct.demoH2}
           </h2>
           <p className="text-gray-500 mb-6 text-sm">
@@ -66,7 +66,7 @@ export default function ContactPage() {
             href="https://outlook.office.com/bookwithme/user/9c11749d74b349809103953c39ba26d4@vencly.com?anonymous&ep=pcard"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-vencly-blue hover:bg-vencly-blue-dark text-white font-semibold px-8 py-3 rounded transition-colors blue-glow"
+            className="inline-flex items-center gap-2 bg-brand-navy hover:bg-brand-night dark:bg-brand-mint dark:hover:bg-white text-white dark:text-brand-navy font-semibold px-8 py-3 rounded transition-colors"
           >
             {ct.demoButton}
             <ExternalLink size={16} />
@@ -74,30 +74,30 @@ export default function ContactPage() {
         </div>
 
         {/* Legal links */}
-        <div className="border-t border-gray-200 dark:border-vencly-border pt-12">
-          <h2 className="font-display text-xl font-normal text-gray-900 dark:text-white mb-6">{ct.legalH2}</h2>
+        <div className="border-t border-gray-200 dark:border-brand-border pt-12">
+          <h2 className="text-xl font-extrabold text-gray-900 dark:text-white mb-6">{ct.legalH2}</h2>
           <div className="grid gap-4 sm:grid-cols-2">
             <Link
               href="/impressum"
-              className="flex items-center gap-4 bg-white dark:bg-vencly-card border border-gray-200 dark:border-vencly-border rounded p-5 hover:border-vencly-teal/40 transition-colors group"
+              className="flex items-center gap-4 bg-white dark:bg-brand-card border border-gray-200 dark:border-brand-border rounded p-5 hover:border-brand-teal/40 transition-colors group"
             >
-              <div className="w-9 h-9 bg-vencly-teal/10 rounded flex items-center justify-center flex-shrink-0">
-                <FileText size={17} className="text-vencly-teal" />
+              <div className="w-9 h-9 bg-brand-teal/10 rounded flex items-center justify-center flex-shrink-0">
+                <FileText size={17} className="text-brand-teal dark:text-brand-mint" />
               </div>
               <div>
-                <p className="font-semibold text-gray-900 dark:text-white text-sm group-hover:text-vencly-teal transition-colors">{ct.impressumLabel}</p>
+                <p className="font-semibold text-gray-900 dark:text-white text-sm group-hover:text-brand-teal transition-colors">{ct.impressumLabel}</p>
                 <p className="text-xs text-gray-400 mt-0.5">{ct.impressumNote}</p>
               </div>
             </Link>
             <Link
               href="/datenschutz"
-              className="flex items-center gap-4 bg-white dark:bg-vencly-card border border-gray-200 dark:border-vencly-border rounded p-5 hover:border-vencly-teal/40 transition-colors group"
+              className="flex items-center gap-4 bg-white dark:bg-brand-card border border-gray-200 dark:border-brand-border rounded p-5 hover:border-brand-teal/40 transition-colors group"
             >
-              <div className="w-9 h-9 bg-vencly-teal/10 rounded flex items-center justify-center flex-shrink-0">
-                <Shield size={17} className="text-vencly-teal" />
+              <div className="w-9 h-9 bg-brand-teal/10 rounded flex items-center justify-center flex-shrink-0">
+                <Shield size={17} className="text-brand-teal dark:text-brand-mint" />
               </div>
               <div>
-                <p className="font-semibold text-gray-900 dark:text-white text-sm group-hover:text-vencly-teal transition-colors">{ct.datenschutzLabel}</p>
+                <p className="font-semibold text-gray-900 dark:text-white text-sm group-hover:text-brand-teal transition-colors">{ct.datenschutzLabel}</p>
                 <p className="text-xs text-gray-400 mt-0.5">{ct.datenschutzNote}</p>
               </div>
             </Link>

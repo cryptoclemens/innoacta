@@ -8,18 +8,18 @@ export default function Footer() {
   const { t } = useLanguage()
 
   return (
-    <footer className="bg-white dark:bg-vencly-card border-t border-gray-200 dark:border-vencly-border">
+    <footer className="bg-white dark:bg-brand-night border-t border-gray-200 dark:border-brand-border">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
           {/* Brand */}
           <div className="md:col-span-2">
             <div className="mb-4">
               <Image
-                src="/logovencly.svg"
+                src="/brand/wordmark_light.svg"
                 alt="innovation.today"
-                width={120}
-                height={36}
-                className="h-9 w-auto dark:invert"
+                width={133}
+                height={32}
+                className="h-8 w-auto dark:brightness-0 dark:invert"
               />
             </div>
             <p className="text-gray-500 text-sm leading-relaxed max-w-xs">
@@ -43,7 +43,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-gray-500 hover:text-vencly-teal text-sm transition-colors"
+                    className="text-gray-500 hover:text-brand-teal dark:text-brand-mint text-sm transition-colors"
                   >
                     {link.label}
                   </Link>
@@ -59,17 +59,17 @@ export default function Footer() {
             </h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/impressum" className="text-gray-500 hover:text-vencly-teal text-sm transition-colors">
+                <Link href="/impressum" className="text-gray-500 hover:text-brand-teal dark:text-brand-mint text-sm transition-colors">
                   {t.footer.impressum}
                 </Link>
               </li>
               <li>
-                <Link href="/datenschutz" className="text-gray-500 hover:text-vencly-teal text-sm transition-colors">
+                <Link href="/datenschutz" className="text-gray-500 hover:text-brand-teal dark:text-brand-mint text-sm transition-colors">
                   {t.footer.datenschutz}
                 </Link>
               </li>
               <li>
-                <a href="mailto:datenschutz@vencly.com" className="text-gray-500 hover:text-vencly-teal text-sm transition-colors">
+                <a href="mailto:datenschutz@vencly.com" className="text-gray-500 hover:text-brand-teal dark:text-brand-mint text-sm transition-colors">
                   datenschutz@vencly.com
                 </a>
               </li>
@@ -77,13 +77,13 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-10 pt-6 border-t border-gray-200 dark:border-vencly-border flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div className="mt-10 pt-6 border-t border-gray-200 dark:border-brand-border flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-gray-400 text-xs">
             © {new Date().getFullYear()} Vencly GmbH. {t.footer.rights}
           </p>
           <Link
             href="/ueber-uns"
-            className="text-gray-400 hover:text-vencly-teal text-xs transition-colors"
+            className="text-gray-400 hover:text-brand-teal dark:text-brand-mint text-xs transition-colors"
           >
             Über Clemens Pompeÿ →
           </Link>

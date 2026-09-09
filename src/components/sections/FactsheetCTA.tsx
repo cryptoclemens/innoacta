@@ -7,12 +7,12 @@ export default function FactsheetCTA() {
   const { t } = useLanguage()
 
   return (
-    <section className="bg-[#F8F7F4] dark:bg-vencly-bg py-16 px-4">
+    <section className="bg-brand-sky dark:bg-brand-night py-16 px-4">
       <div className="max-w-4xl mx-auto">
-        <div className="bg-gradient-to-r from-vencly-blue/10 via-vencly-blue/5 to-transparent border border-vencly-blue/20 rounded p-8 md:p-12 flex flex-col md:flex-row items-center justify-between gap-8">
+        <div className="bg-gradient-to-r from-brand-teal/10 via-brand-teal/5 to-transparent border border-brand-teal/20 rounded p-8 md:p-12 flex flex-col md:flex-row items-center justify-between gap-8">
           <div className="flex items-start gap-4">
-            <div className="w-12 h-12 bg-vencly-blue/10 rounded flex items-center justify-center flex-shrink-0">
-              <FileText size={24} className="text-vencly-blue" />
+            <div className="w-12 h-12 bg-brand-teal/10 rounded flex items-center justify-center flex-shrink-0">
+              <FileText size={24} className="text-brand-teal dark:text-brand-mint" />
             </div>
             <div>
               <h2 className="text-gray-900 dark:text-white font-bold text-xl md:text-2xl mb-2">
@@ -26,7 +26,7 @@ export default function FactsheetCTA() {
           <a
             href="/factsheet.pdf"
             download
-            className="flex-shrink-0 inline-flex items-center gap-2 bg-vencly-blue hover:bg-vencly-blue-dark text-white font-semibold px-7 py-3 rounded transition-all blue-glow hover:scale-105 whitespace-nowrap cursor-pointer"
+            className="flex-shrink-0 inline-flex items-center gap-2 bg-brand-navy hover:bg-brand-night dark:bg-brand-mint dark:hover:bg-white text-white dark:text-brand-navy font-semibold px-7 py-3 rounded transition-all hover:scale-105 whitespace-nowrap cursor-pointer"
           >
             <Download size={18} />
             {t.factsheet.button}

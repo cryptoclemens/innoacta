@@ -122,19 +122,19 @@ export default function OptAImumPage() {
           { '@type': 'ListItem', position: 3, name: 'OptAImum', item: 'https://vencly.com/optaimum' },
         ],
       }) }} />
-      <div className="min-h-screen bg-[#F8F7F4] dark:bg-vencly-bg pt-24 pb-20">
+      <div className="min-h-screen bg-brand-sky dark:bg-brand-night pt-24 pb-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
 
           {/* Hero */}
           <div className="mb-20">
             <div className="flex items-center gap-3 mb-4">
-              <span className="inline-block text-vencly-teal text-sm font-mono tracking-widest uppercase">
+              <span className="inline-block text-brand-teal dark:text-brand-mint text-sm font-mono tracking-widest uppercase">
                 Produkt · Open Source · Kostenlos
               </span>
             </div>
             <h1 className="text-3xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6 leading-tight">
               OptAImum –{' '}
-              <span className="text-vencly-teal">KI-Nutzung</span>{' '}
+              <span className="text-brand-teal dark:text-brand-mint">KI-Nutzung</span>{' '}
               auf das Maximum optimiert.
             </h1>
             <p className="text-gray-600 dark:text-gray-400 text-lg max-w-2xl leading-relaxed mb-4">
@@ -149,7 +149,7 @@ export default function OptAImumPage() {
 
           {/* CTA quote */}
           <section className="mb-20">
-            <blockquote className="border-l-4 border-vencly-teal pl-6 py-2 bg-gray-100 dark:bg-vencly-card rounded-r-xl">
+            <blockquote className="border-l-4 border-brand-teal pl-6 py-2 bg-gray-100 dark:bg-brand-card rounded-r-xl">
               <p className="text-gray-900 dark:text-white text-xl font-semibold">
                 „Starte mit dem MD-Creator –{' '}
                 in 5 Minuten hast du dein erstes personalisiertes Profil."
@@ -162,9 +162,9 @@ export default function OptAImumPage() {
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">Warum OptAImum?</h2>
             <div className="grid gap-6 sm:grid-cols-3">
               {whyItems.map(({ icon: Icon, title, desc }) => (
-                <div key={title} className="bg-white dark:bg-vencly-card border border-gray-200 dark:border-vencly-border rounded p-6">
-                  <div className="w-10 h-10 bg-vencly-teal/10 rounded flex items-center justify-center mb-4">
-                    <Icon size={20} className="text-vencly-teal" />
+                <div key={title} className="bg-white dark:bg-brand-card border border-gray-200 dark:border-brand-border rounded p-6">
+                  <div className="w-10 h-10 bg-brand-teal/10 rounded flex items-center justify-center mb-4">
+                    <Icon size={20} className="text-brand-teal dark:text-brand-mint" />
                   </div>
                   <h3 className="text-gray-900 dark:text-white font-semibold mb-2">{title}</h3>
                   <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">{desc}</p>
@@ -178,23 +178,23 @@ export default function OptAImumPage() {
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-8">Die 6 Tools im Detail.</h2>
             <div className="space-y-6">
               {features.map((f) => (
-                <Link key={f.n} href={f.href} className="block bg-white dark:bg-vencly-card border border-gray-200 dark:border-vencly-border rounded p-8 hover:border-vencly-teal/40 transition-colors group">
+                <Link key={f.n} href={f.href} className="block bg-white dark:bg-brand-card border border-gray-200 dark:border-brand-border rounded p-8 hover:border-brand-teal/40 transition-colors group">
                   <div className="flex items-start justify-between mb-3">
-                    <span className="text-vencly-teal font-mono text-lg font-bold">{f.n}</span>
-                    <span className="text-xs font-mono text-vencly-teal bg-vencly-teal/10 px-2 py-1 rounded-full">{f.badge}</span>
+                    <span className="text-brand-teal dark:text-brand-mint font-mono text-lg font-bold">{f.n}</span>
+                    <span className="text-xs font-mono text-brand-teal dark:text-brand-mint bg-brand-teal/10 px-2 py-1 rounded-full">{f.badge}</span>
                   </div>
-                  <h3 className="text-gray-900 dark:text-white font-bold text-lg mb-1 group-hover:text-vencly-teal transition-colors">{f.title}</h3>
-                  <p className="text-vencly-teal text-sm mb-3 italic">{f.subtitle}</p>
+                  <h3 className="text-gray-900 dark:text-white font-bold text-lg mb-1 group-hover:text-brand-teal transition-colors">{f.title}</h3>
+                  <p className="text-brand-teal dark:text-brand-mint text-sm mb-3 italic">{f.subtitle}</p>
                   <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-4">{f.desc}</p>
                   <ul className="grid grid-cols-2 gap-1 mb-4">
                     {f.points.map((p) => (
                       <li key={p} className="flex items-center gap-2 text-gray-700 dark:text-gray-300 text-xs">
-                        <CheckCircle2 size={12} className="text-vencly-teal shrink-0" />
+                        <CheckCircle2 size={12} className="text-brand-teal dark:text-brand-mint shrink-0" />
                         {p}
                       </li>
                     ))}
                   </ul>
-                  <span className="inline-flex items-center gap-1 text-vencly-teal text-sm font-medium">
+                  <span className="inline-flex items-center gap-1 text-brand-teal dark:text-brand-mint text-sm font-medium">
                     Tool öffnen <ArrowRight size={13} />
                   </span>
                 </Link>
@@ -205,18 +205,18 @@ export default function OptAImumPage() {
           {/* LLM comparison */}
           <section className="mb-20">
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">Claude vs. ChatGPT – Quick Reference.</h2>
-            <div className="bg-white dark:bg-vencly-card border border-gray-200 dark:border-vencly-border rounded overflow-hidden">
+            <div className="bg-white dark:bg-brand-card border border-gray-200 dark:border-brand-border rounded overflow-hidden">
               <table className="w-full text-sm">
                 <thead>
-                  <tr className="border-b border-gray-200 dark:border-vencly-border">
+                  <tr className="border-b border-gray-200 dark:border-brand-border">
                     <th className="text-left px-6 py-3 text-gray-500 dark:text-gray-400 font-mono text-xs uppercase tracking-wider">Feature</th>
-                    <th className="text-left px-6 py-3 text-vencly-teal font-semibold">Claude</th>
+                    <th className="text-left px-6 py-3 text-brand-teal dark:text-brand-mint font-semibold">Claude</th>
                     <th className="text-left px-6 py-3 text-gray-600 dark:text-gray-400 font-semibold">ChatGPT</th>
                   </tr>
                 </thead>
                 <tbody>
                   {llmComparison.map((row, i) => (
-                    <tr key={row.feature} className={i < llmComparison.length - 1 ? 'border-b border-gray-100 dark:border-vencly-border' : ''}>
+                    <tr key={row.feature} className={i < llmComparison.length - 1 ? 'border-b border-gray-100 dark:border-brand-border' : ''}>
                       <td className="px-6 py-4 text-gray-600 dark:text-gray-400">{row.feature}</td>
                       <td className="px-6 py-4 text-gray-900 dark:text-white font-medium">{row.claude}</td>
                       <td className="px-6 py-4 text-gray-600 dark:text-gray-400">{row.chatgpt}</td>
@@ -229,8 +229,8 @@ export default function OptAImumPage() {
 
           {/* Open source */}
           <section className="mb-20">
-            <div className="bg-white dark:bg-vencly-card border border-gray-200 dark:border-vencly-border rounded p-8 text-center">
-              <span className="text-vencly-teal text-xs font-mono tracking-widest uppercase mb-3 block">MIT License · v0.1.5</span>
+            <div className="bg-white dark:bg-brand-card border border-gray-200 dark:border-brand-border rounded p-8 text-center">
+              <span className="text-brand-teal dark:text-brand-mint text-xs font-mono tracking-widest uppercase mb-3 block">MIT License · v0.1.5</span>
               <h2 className="text-gray-900 dark:text-white font-bold text-xl mb-3">Für die KI-Community</h2>
               <p className="text-gray-600 dark:text-gray-400 text-sm max-w-lg mx-auto mb-2">
                 OptAImum ist ein Open-Source-Community-Projekt – kostenlos, ohne externe Abhängigkeiten,
@@ -241,7 +241,7 @@ export default function OptAImumPage() {
           </section>
 
           {/* CTA */}
-          <section className="bg-gradient-to-r from-vencly-teal/10 to-vencly-teal/5 border border-vencly-teal/20 rounded p-10 text-center">
+          <section className="bg-gradient-to-r from-brand-teal/10 to-brand-teal/5 border border-brand-teal/20 rounded p-10 text-center">
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">
               OptAImum für Ihr Team einführen?
             </h2>
@@ -250,7 +250,7 @@ export default function OptAImumPage() {
             </p>
             <button
               {...calButtonProps}
-              className="inline-flex items-center gap-2 bg-vencly-teal hover:bg-teal-600 text-white font-semibold px-8 py-3 rounded transition-colors cursor-pointer"
+              className="inline-flex items-center gap-2 bg-brand-teal hover:bg-teal-600 text-white font-semibold px-8 py-3 rounded transition-colors cursor-pointer"
             >
               Gespräch vereinbaren
               <ArrowRight size={16} />

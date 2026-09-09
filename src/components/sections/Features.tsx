@@ -43,13 +43,13 @@ export default function Features() {
   const { t } = useLanguage()
 
   return (
-    <section id="leistungen" className="bg-white dark:bg-vencly-card py-24 px-4 border-t border-b border-gray-200 dark:border-vencly-border">
+    <section id="leistungen" className="bg-white dark:bg-brand-card py-24 px-4 border-t border-b border-gray-200 dark:border-brand-border">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <span className="section-eyebrow justify-center mb-4">
             {t.features.label}
           </span>
-          <h2 className="font-display text-3xl md:text-4xl font-normal text-gray-900 dark:text-white mb-4 mt-3">
+          <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 dark:text-white mb-4 mt-3">
             {t.features.h2}
           </h2>
           <p className="text-gray-600 dark:text-gray-400 max-w-xl mx-auto">
@@ -61,10 +61,10 @@ export default function Features() {
           {t.features.items.map((feature, i) => (
             <div
               key={feature.title}
-              className="bg-[#F8F7F4] dark:bg-vencly-bg border border-gray-200 dark:border-vencly-border rounded p-8 hover:border-vencly-teal/40 transition-all duration-300 group flex flex-col"
+              className="bg-brand-sky dark:bg-brand-night border border-gray-200 dark:border-brand-border rounded p-8 hover:border-brand-teal/40 transition-all duration-300 group flex flex-col"
             >
               <div className="mb-6">{icons[i]}</div>
-              <h3 className="text-gray-900 dark:text-white font-bold text-lg mb-3 group-hover:text-vencly-teal transition-colors">
+              <h3 className="text-gray-900 dark:text-white font-bold text-lg mb-3 group-hover:text-brand-teal transition-colors">
                 {feature.title}
               </h3>
               <p className="text-gray-500 text-sm leading-relaxed mb-5">
@@ -73,7 +73,7 @@ export default function Features() {
               <ul className="space-y-2 mb-6">
                 {feature.points.map((point) => (
                   <li key={point} className="flex items-center gap-2 text-xs text-gray-500 dark:text-gray-400">
-                    <span className="w-1.5 h-1.5 bg-vencly-teal rounded-full flex-shrink-0" />
+                    <span className="w-1.5 h-1.5 bg-brand-teal rounded-full flex-shrink-0" />
                     {point}
                   </li>
                 ))}
@@ -81,7 +81,7 @@ export default function Features() {
               <div className="mt-auto">
                 <Link
                   href={serviceHrefs[i]}
-                  className="inline-flex items-center gap-1.5 text-vencly-teal hover:text-vencly-teal-light text-sm font-medium transition-colors"
+                  className="inline-flex items-center gap-1.5 text-brand-teal dark:text-brand-mint hover:text-brand-mint text-sm font-medium transition-colors"
                 >
                   Mehr erfahren
                   <ArrowRight size={14} />

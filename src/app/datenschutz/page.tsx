@@ -11,10 +11,10 @@ export const metadata: Metadata = {
 
 export default function DatenschutzPage() {
   return (
-    <div className="min-h-screen bg-[#F8F7F4] dark:bg-vencly-bg pt-28 pb-20 px-4">
+    <div className="min-h-screen bg-brand-sky dark:bg-brand-night pt-28 pb-20 px-4">
       <div className="max-w-2xl mx-auto">
         <span className="section-eyebrow mb-4">Rechtliches</span>
-        <h1 className="font-display text-3xl md:text-4xl font-normal text-gray-900 dark:text-white mt-3 mb-2">
+        <h1 className="text-3xl md:text-4xl font-extrabold text-gray-900 dark:text-white mt-3 mb-2">
           Datenschutzerklärung
         </h1>
         <p className="text-xs text-gray-400 mb-10">Stand: Mai 2026</p>
@@ -27,7 +27,7 @@ export default function DatenschutzPage() {
               Vencly GmbH<br />
               Leopoldstraße 31, 80802 München<br />
               E-Mail:{' '}
-              <a href={`mailto:${PRIVACY_EMAIL}`} className="text-vencly-teal hover:underline">
+              <a href={`mailto:${PRIVACY_EMAIL}`} className="text-brand-teal dark:text-brand-mint hover:underline">
                 {PRIVACY_EMAIL}
               </a>
             </p>
@@ -58,7 +58,7 @@ export default function DatenschutzPage() {
             <p className="mt-2">
               <strong className="text-gray-900 dark:text-white">Speicherdauer:</strong> Serverlogs werden
               typischerweise bis zu 30 Tage gespeichert. Weitere Informationen:{' '}
-              <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener noreferrer" className="text-vencly-teal hover:underline">
+              <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener noreferrer" className="text-brand-teal dark:text-brand-mint hover:underline">
                 cloudflare.com/privacypolicy
               </a>
             </p>
@@ -85,9 +85,9 @@ export default function DatenschutzPage() {
               <strong className="text-gray-900 dark:text-white">Speicherdauer:</strong> Buchungsdaten werden
               gelöscht, sobald der Zweck der Terminverwaltung entfällt und keine gesetzlichen Aufbewahrungspflichten
               entgegenstehen. Datenschutzerklärungen:{' '}
-              <a href="https://cal.com/privacy" target="_blank" rel="noopener noreferrer" className="text-vencly-teal hover:underline">cal.com/privacy</a>
+              <a href="https://cal.com/privacy" target="_blank" rel="noopener noreferrer" className="text-brand-teal dark:text-brand-mint hover:underline">cal.com/privacy</a>
               {' '}|{' '}
-              <a href="https://privacy.microsoft.com/de-de/privacystatement" target="_blank" rel="noopener noreferrer" className="text-vencly-teal hover:underline">privacy.microsoft.com</a>
+              <a href="https://privacy.microsoft.com/de-de/privacystatement" target="_blank" rel="noopener noreferrer" className="text-brand-teal dark:text-brand-mint hover:underline">privacy.microsoft.com</a>
             </p>
           </section>
 
@@ -139,7 +139,7 @@ export default function DatenschutzPage() {
               <strong className="text-gray-900 dark:text-white">Rechtsgrundlage:</strong> Art. 6 Abs. 1
               lit. a DSGVO (Einwilligung). Ihre Einwilligung können Sie jederzeit mit Wirkung für die
               Zukunft widerrufen, indem Sie den lokalen Speicher Ihres Browsers löschen oder uns unter{' '}
-              <a href="mailto:datenschutz@vencly.com" className="text-vencly-teal hover:underline">
+              <a href="mailto:datenschutz@vencly.com" className="text-brand-teal dark:text-brand-mint hover:underline">
                 datenschutz@vencly.com
               </a>{' '}
               kontaktieren.
@@ -148,7 +148,7 @@ export default function DatenschutzPage() {
               <strong className="text-gray-900 dark:text-white">Drittlandtransfer:</strong> Google LLC ist
               nach dem EU-US Data Privacy Framework (DPF) zertifiziert (Angemessenheitsbeschluss der
               EU-Kommission vom 10. Juli 2023). Weitere Informationen:{' '}
-              <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" className="text-vencly-teal hover:underline">
+              <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" className="text-brand-teal dark:text-brand-mint hover:underline">
                 policies.google.com/privacy
               </a>
             </p>
@@ -160,7 +160,7 @@ export default function DatenschutzPage() {
             <p className="mt-2">
               <strong className="text-gray-900 dark:text-white">Opt-out:</strong> Zusätzlich können Sie
               die Erfassung durch GA4 für alle Websites mit dem{' '}
-              <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener noreferrer" className="text-vencly-teal hover:underline">
+              <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener noreferrer" className="text-brand-teal dark:text-brand-mint hover:underline">
                 Google Analytics Opt-out Browser-Add-on
               </a>{' '}
               dauerhaft deaktivieren.
@@ -191,7 +191,7 @@ export default function DatenschutzPage() {
             </ul>
             <p className="mt-3">
               Zur Ausübung Ihrer Rechte wenden Sie sich bitte an:{' '}
-              <a href="mailto:datenschutz@vencly.com" className="text-vencly-teal hover:underline">
+              <a href="mailto:datenschutz@vencly.com" className="text-brand-teal dark:text-brand-mint hover:underline">
                 datenschutz@vencly.com
               </a>
             </p>
@@ -206,7 +206,7 @@ export default function DatenschutzPage() {
             <p className="mt-2">
               Bayerisches Landesamt für Datenschutzaufsicht (BayLDA)<br />
               Promenade 27, 91522 Ansbach<br />
-              <a href="https://www.lda.bayern.de" target="_blank" rel="noopener noreferrer" className="text-vencly-teal hover:underline">
+              <a href="https://www.lda.bayern.de" target="_blank" rel="noopener noreferrer" className="text-brand-teal dark:text-brand-mint hover:underline">
                 www.lda.bayern.de
               </a>
             </p>
@@ -221,17 +221,17 @@ export default function DatenschutzPage() {
             </p>
             <ul className="mt-3 space-y-2">
               <li>
-                <a href="/legal/avv-anthropic-2026.pdf" target="_blank" rel="noopener noreferrer" className="text-vencly-teal hover:underline">
+                <a href="/legal/avv-anthropic-2026.pdf" target="_blank" rel="noopener noreferrer" className="text-brand-teal dark:text-brand-mint hover:underline">
                   Anthropic, Inc. – Data Processing Addendum (DPA)
                 </a>
               </li>
               <li>
-                <a href="/legal/avv-resend-2026.pdf" target="_blank" rel="noopener noreferrer" className="text-vencly-teal hover:underline">
+                <a href="/legal/avv-resend-2026.pdf" target="_blank" rel="noopener noreferrer" className="text-brand-teal dark:text-brand-mint hover:underline">
                   Resend, Inc. – Data Processing Addendum (DPA)
                 </a>
               </li>
               <li>
-                <a href="/legal/avv-cloudflare-2026.pdf" target="_blank" rel="noopener noreferrer" className="text-vencly-teal hover:underline">
+                <a href="/legal/avv-cloudflare-2026.pdf" target="_blank" rel="noopener noreferrer" className="text-brand-teal dark:text-brand-mint hover:underline">
                   Cloudflare, Inc. – Data Processing Addendum v6.4 (April 2026)
                 </a>
               </li>
@@ -241,8 +241,8 @@ export default function DatenschutzPage() {
             </ul>
           </section>
 
-          <div className="pt-6 border-t border-gray-200 dark:border-vencly-border">
-            <Link href="/impressum" className="text-vencly-teal hover:underline text-sm">
+          <div className="pt-6 border-t border-gray-200 dark:border-brand-border">
+            <Link href="/impressum" className="text-brand-teal dark:text-brand-mint hover:underline text-sm">
               → Zum Impressum
             </Link>
           </div>

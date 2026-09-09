@@ -4,14 +4,32 @@
   "description": "Gründer-Denken für Ihr nächstes Geschäftsfeld.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#F8F7F4",
+  "background_color": "#FFFFFF",
   "theme_color": "#0F766E",
   "icons": [
     {
       "src": "/favicon.svg",
       "sizes": "any",
       "type": "image/svg+xml",
-      "purpose": "any maskable"
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
     }
   ]
 }

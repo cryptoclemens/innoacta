@@ -49,18 +49,18 @@ export default function ArticlePage() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
-      <div className="min-h-screen bg-[#F8F7F4] dark:bg-vencly-bg pt-24 pb-20">
+      <div className="min-h-screen bg-brand-sky dark:bg-brand-night pt-24 pb-20">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
 
           {/* Back */}
-          <Link href="/blog" className="inline-flex items-center gap-2 text-vencly-teal hover:text-teal-400 text-sm mb-10 transition-colors">
+          <Link href="/blog" className="inline-flex items-center gap-2 text-brand-teal dark:text-brand-mint hover:text-teal-400 text-sm mb-10 transition-colors">
             <ArrowLeft size={16} /> Alle Artikel
           </Link>
 
           {/* Header */}
           <div className="mb-12">
             <div className="flex items-center gap-3 mb-4">
-              <span className="text-xs font-mono text-vencly-teal bg-vencly-teal/10 px-3 py-1 rounded-full">Venture Clienting</span>
+              <span className="text-xs font-mono text-brand-teal dark:text-brand-mint bg-brand-teal/10 px-3 py-1 rounded-full">Venture Clienting</span>
               <span className="text-xs text-gray-500 dark:text-gray-500">15. Januar 2024 · 8 Min. Lesezeit</span>
             </div>
             <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white leading-tight mb-6">
@@ -72,7 +72,7 @@ export default function ArticlePage() {
           </div>
 
           {/* Article Body */}
-          <article className="prose prose-lg dark:prose-invert max-w-none prose-headings:font-bold prose-headings:text-gray-900 dark:prose-headings:text-white prose-h2:text-xl prose-h2:mt-10 prose-p:text-gray-700 dark:prose-p:text-gray-300 prose-p:leading-relaxed prose-li:text-gray-700 dark:prose-li:text-gray-300 prose-li:leading-relaxed prose-a:text-vencly-teal prose-strong:text-gray-800 dark:prose-strong:text-white prose-blockquote:border-vencly-teal dark:prose-blockquote:text-gray-300">
+          <article className="prose prose-lg dark:prose-invert max-w-none prose-headings:font-bold prose-headings:text-gray-900 dark:prose-headings:text-white prose-h2:text-xl prose-h2:mt-10 prose-p:text-gray-700 dark:prose-p:text-gray-300 prose-p:leading-relaxed prose-li:text-gray-700 dark:prose-li:text-gray-300 prose-li:leading-relaxed prose-a:text-brand-teal dark:text-brand-mint prose-strong:text-gray-800 dark:prose-strong:text-white prose-blockquote:border-brand-teal dark:prose-blockquote:text-gray-300">
 
             <h2>Das Venture-Client-Modell: Kunde statt Investor</h2>
             <p>
@@ -185,18 +185,18 @@ export default function ArticlePage() {
                 { href: '/blog/venture-client-mittelstand', cat: 'Mittelstand', title: 'Venture Client im Mittelstand: Chancen, Hürden und wie es gelingt' },
                 { href: '/blog/geschaeftsfeldentwicklung-methoden', cat: 'Geschäftsfeldentwicklung', title: 'Geschäftsfeldentwicklung: Methoden, Phasen und häufige Fehler' },
               ].map(a => (
-                <Link key={a.href} href={a.href} className="block bg-white dark:bg-vencly-card border border-gray-200 dark:border-vencly-border rounded p-4 hover:border-vencly-teal/40 transition-colors group">
-                  <span className="text-xs font-mono text-vencly-teal">{a.cat}</span>
-                  <p className="text-sm font-semibold text-gray-900 dark:text-white group-hover:text-vencly-teal transition-colors mt-1 leading-snug">{a.title}</p>
+                <Link key={a.href} href={a.href} className="block bg-white dark:bg-brand-card border border-gray-200 dark:border-brand-border rounded p-4 hover:border-brand-teal/40 transition-colors group">
+                  <span className="text-xs font-mono text-brand-teal dark:text-brand-mint">{a.cat}</span>
+                  <p className="text-sm font-semibold text-gray-900 dark:text-white group-hover:text-brand-teal transition-colors mt-1 leading-snug">{a.title}</p>
                 </Link>
               ))}
             </div>
           </div>
 
           {/* Author */}
-          <div className="pt-8 border-t border-gray-200 dark:border-vencly-border">
+          <div className="pt-8 border-t border-gray-200 dark:border-brand-border">
             <div className="flex items-center gap-4">
-              <div className="w-12 h-12 rounded-full bg-vencly-teal/20 flex items-center justify-center text-vencly-teal font-bold text-lg">C</div>
+              <div className="w-12 h-12 rounded-full bg-brand-teal/20 flex items-center justify-center text-brand-teal dark:text-brand-mint font-bold text-lg">C</div>
               <div>
                 <div className="font-semibold text-gray-900 dark:text-white">Clemens Pompeÿ</div>
                 <div className="text-sm text-gray-500 dark:text-gray-400">Gründer, Vencly GmbH · Venture Clienting & Geschäftsfeldentwicklung</div>
@@ -205,17 +205,17 @@ export default function ArticlePage() {
           </div>
 
           {/* CTA */}
-          <div className="mt-12 bg-white dark:bg-vencly-card border border-gray-200 dark:border-vencly-border rounded p-8 text-center">
+          <div className="mt-12 bg-white dark:bg-brand-card border border-gray-200 dark:border-brand-border rounded p-8 text-center">
             <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">Venture Clienting für Ihr Unternehmen?</h3>
             <p className="text-gray-600 dark:text-gray-400 mb-6">Sprechen Sie mit uns über einen strukturierten Einstieg – in einem unverbindlichen Erstgespräch.</p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <button
                 {...calButtonProps}
-                className="inline-flex items-center gap-2 bg-vencly-teal hover:bg-teal-600 text-white font-semibold px-6 py-3 rounded transition-colors cursor-pointer"
+                className="inline-flex items-center gap-2 bg-brand-teal hover:bg-teal-600 text-white font-semibold px-6 py-3 rounded transition-colors cursor-pointer"
               >
                 Erstgespräch vereinbaren <ArrowRight size={16} />
               </button>
-              <Link href="/venture-clienting" className="inline-flex items-center gap-2 text-vencly-teal hover:text-teal-400 font-medium transition-colors">
+              <Link href="/venture-clienting" className="inline-flex items-center gap-2 text-brand-teal dark:text-brand-mint hover:text-teal-400 font-medium transition-colors">
                 Mehr zu Venture Clienting <ArrowRight size={14} />
               </Link>
             </div>

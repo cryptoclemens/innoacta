@@ -30,7 +30,7 @@ export default function LogoBar() {
   const { t } = useLanguage()
 
   return (
-    <section className="bg-white dark:bg-vencly-card border-t border-b border-gray-200 dark:border-vencly-border py-12 px-4">
+    <section className="bg-white dark:bg-brand-card border-t border-b border-gray-200 dark:border-brand-border py-12 px-4">
       <div className="max-w-6xl mx-auto">
         <p className="text-center text-gray-400 dark:text-gray-600 text-xs font-mono tracking-widest uppercase mb-8">
           {t.logoBar.label}

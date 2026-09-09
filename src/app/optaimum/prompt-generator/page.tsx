@@ -59,13 +59,13 @@ export default function PromptGeneratorPage() {
   }
 
   return (
-    <div className="min-h-screen bg-[#F8F7F4] dark:bg-vencly-bg pt-24 pb-20">
+    <div className="min-h-screen bg-brand-sky dark:bg-brand-night pt-24 pb-20">
       <div className="max-w-2xl mx-auto px-4 sm:px-6">
-        <Link href="/optaimum" className="inline-flex items-center gap-2 text-gray-500 dark:text-gray-400 hover:text-vencly-teal transition-colors mb-8 text-sm">
+        <Link href="/optaimum" className="inline-flex items-center gap-2 text-gray-500 dark:text-gray-400 hover:text-brand-teal transition-colors mb-8 text-sm">
           <ArrowLeft size={16} /> Zurück zu OptAImum
         </Link>
         <div className="mb-8">
-          <span className="text-vencly-teal text-xs font-mono tracking-widest uppercase">OptAImum Tool</span>
+          <span className="text-brand-teal dark:text-brand-mint text-xs font-mono tracking-widest uppercase">OptAImum Tool</span>
           <h1 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mt-2">Prompt-Generator</h1>
           <p className="text-gray-600 dark:text-gray-400 text-sm mt-1">Sofort einsetzbare Prompts – auch ohne Vorkenntnisse.</p>
         </div>
@@ -76,18 +76,18 @@ export default function PromptGeneratorPage() {
           <div className="flex flex-wrap gap-2">
             {templates.map(t => (
               <button key={t.label} onClick={() => applyTemplate(t)}
-                className="px-3 py-1.5 text-xs rounded border border-gray-200 dark:border-vencly-border text-gray-600 dark:text-gray-400 hover:border-vencly-teal hover:text-vencly-teal transition-colors">
+                className="px-3 py-1.5 text-xs rounded border border-gray-200 dark:border-brand-border text-gray-600 dark:text-gray-400 hover:border-brand-teal hover:text-brand-teal transition-colors">
                 {t.label}
               </button>
             ))}
           </div>
         </div>
 
-        <div className="bg-white dark:bg-vencly-card border border-gray-200 dark:border-vencly-border rounded p-8 space-y-6">
+        <div className="bg-white dark:bg-brand-card border border-gray-200 dark:border-brand-border rounded p-8 space-y-6">
           <div>
             <label className="text-xs font-mono text-gray-500 uppercase tracking-wider block mb-2">Ziel-KI (optional)</label>
             <select value={agent} onChange={e => setAgent(e.target.value)}
-              className="w-full px-3 py-2.5 text-sm rounded border border-gray-200 dark:border-vencly-border bg-white dark:bg-vencly-bg text-gray-900 dark:text-white focus:outline-none focus:border-vencly-teal">
+              className="w-full px-3 py-2.5 text-sm rounded border border-gray-200 dark:border-brand-border bg-white dark:bg-brand-night text-gray-900 dark:text-white focus:outline-none focus:border-brand-teal">
               <option value="">Allgemein (alle KIs)</option>
               {agents.map(a => <option key={a} value={a}>{a}</option>)}
             </select>
@@ -96,14 +96,14 @@ export default function PromptGeneratorPage() {
           <div>
             <label className="text-xs font-mono text-gray-500 uppercase tracking-wider block mb-2">Aufgabe *</label>
             <textarea value={task} onChange={e => setTask(e.target.value)}
-              className="w-full px-3 py-2 text-sm rounded border border-gray-200 dark:border-vencly-border bg-transparent text-gray-900 dark:text-white placeholder-gray-400 focus:outline-none focus:border-vencly-teal resize-none h-24"
+              className="w-full px-3 py-2 text-sm rounded border border-gray-200 dark:border-brand-border bg-transparent text-gray-900 dark:text-white placeholder-gray-400 focus:outline-none focus:border-brand-teal resize-none h-24"
               placeholder="Was soll die KI tun? Beschreibe die Aufgabe..." />
           </div>
 
           <div>
             <label className="text-xs font-mono text-gray-500 uppercase tracking-wider block mb-2">Kontext & Regeln (optional)</label>
             <textarea value={context} onChange={e => setContext(e.target.value)}
-              className="w-full px-3 py-2 text-sm rounded border border-gray-200 dark:border-vencly-border bg-transparent text-gray-900 dark:text-white placeholder-gray-400 focus:outline-none focus:border-vencly-teal resize-none h-20"
+              className="w-full px-3 py-2 text-sm rounded border border-gray-200 dark:border-brand-border bg-transparent text-gray-900 dark:text-white placeholder-gray-400 focus:outline-none focus:border-brand-teal resize-none h-20"
               placeholder="Ton, Länge, Zielgruppe, Einschränkungen..." />
           </div>
 
@@ -112,7 +112,7 @@ export default function PromptGeneratorPage() {
             <div className="flex gap-2">
               {['Einsteiger', 'Standard', 'Pro'].map((l, i) => (
                 <button key={l} onClick={() => setLevel(i)}
-                  className={`flex-1 py-2 rounded text-sm border transition-colors ${level === i ? 'bg-vencly-teal text-white border-vencly-teal' : 'border-gray-200 dark:border-vencly-border text-gray-700 dark:text-gray-300 hover:border-vencly-teal/60'}`}>
+                  className={`flex-1 py-2 rounded text-sm border transition-colors ${level === i ? 'bg-brand-teal text-white border-brand-teal' : 'border-gray-200 dark:border-brand-border text-gray-700 dark:text-gray-300 hover:border-brand-teal/60'}`}>
                   {l}
                 </button>
               ))}
@@ -121,17 +121,17 @@ export default function PromptGeneratorPage() {
         </div>
 
         {canGenerate && (
-          <div className="mt-6 bg-white dark:bg-vencly-card border border-gray-200 dark:border-vencly-border rounded p-8">
+          <div className="mt-6 bg-white dark:bg-brand-card border border-gray-200 dark:border-brand-border rounded p-8">
             <div className="flex items-center justify-between mb-4">
               <div className="flex items-center gap-2">
-                <Sparkles size={16} className="text-vencly-teal" />
+                <Sparkles size={16} className="text-brand-teal dark:text-brand-mint" />
                 <h2 className="text-gray-900 dark:text-white font-bold">Generierter Prompt</h2>
               </div>
-              <button onClick={copy} className="inline-flex items-center gap-1.5 text-sm text-vencly-teal hover:text-teal-500 transition-colors">
+              <button onClick={copy} className="inline-flex items-center gap-1.5 text-sm text-brand-teal dark:text-brand-mint hover:text-teal-500 transition-colors">
                 {copied ? <><Check size={14} /> Kopiert!</> : <><Copy size={14} /> Kopieren</>}
               </button>
             </div>
-            <pre className="bg-gray-50 dark:bg-vencly-bg rounded p-4 text-sm text-gray-800 dark:text-gray-300 whitespace-pre-wrap font-mono border border-gray-200 dark:border-vencly-border">{prompt}</pre>
+            <pre className="bg-gray-50 dark:bg-brand-night rounded p-4 text-sm text-gray-800 dark:text-gray-300 whitespace-pre-wrap font-mono border border-gray-200 dark:border-brand-border">{prompt}</pre>
           </div>
         )}
       </div>

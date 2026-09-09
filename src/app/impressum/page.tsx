@@ -11,10 +11,10 @@ export const metadata: Metadata = {
 
 export default function ImpressumPage() {
   return (
-    <div className="min-h-screen bg-[#F8F7F4] dark:bg-vencly-bg pt-28 pb-20 px-4">
+    <div className="min-h-screen bg-brand-sky dark:bg-brand-night pt-28 pb-20 px-4">
       <div className="max-w-2xl mx-auto">
         <span className="section-eyebrow mb-4">Rechtliches</span>
-        <h1 className="font-display text-3xl md:text-4xl font-normal text-gray-900 dark:text-white mt-3 mb-10">
+        <h1 className="text-3xl md:text-4xl font-extrabold text-gray-900 dark:text-white mt-3 mb-10">
           Impressum
         </h1>
 
@@ -38,7 +38,7 @@ export default function ImpressumPage() {
             <h2 className="text-base font-semibold text-gray-900 dark:text-white mb-2">Kontakt</h2>
             <p>
               E-Mail:{' '}
-              <a href="mailto:hello@vencly.com" className="text-vencly-teal hover:underline">
+              <a href="mailto:hello@vencly.com" className="text-brand-teal dark:text-brand-mint hover:underline">
                 hello@vencly.com
               </a>
             </p>
@@ -78,7 +78,7 @@ export default function ImpressumPage() {
                 href="https://ec.europa.eu/consumers/odr"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-vencly-teal hover:underline"
+                className="text-brand-teal dark:text-brand-mint hover:underline"
               >
                 https://ec.europa.eu/consumers/odr
               </a>
@@ -108,8 +108,8 @@ export default function ImpressumPage() {
             </p>
           </section>
 
-          <div className="pt-6 border-t border-gray-200 dark:border-vencly-border">
-            <Link href="/datenschutz" className="text-vencly-teal hover:underline text-sm">
+          <div className="pt-6 border-t border-gray-200 dark:border-brand-border">
+            <Link href="/datenschutz" className="text-brand-teal dark:text-brand-mint hover:underline text-sm">
               → Zur Datenschutzerklärung
             </Link>
           </div>

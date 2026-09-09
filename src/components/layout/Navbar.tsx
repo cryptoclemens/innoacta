@@ -63,13 +63,13 @@ function ValidationCheckModal({ onClose }: { onClose: () => void }) {
     >
       <div
         ref={ref}
-        className="bg-white dark:bg-vencly-card border border-gray-200 dark:border-vencly-border rounded shadow-2xl w-full max-w-lg my-auto"
+        className="bg-white dark:bg-brand-card border border-gray-200 dark:border-brand-border rounded shadow-2xl w-full max-w-lg my-auto"
       >
         {/* Header */}
-        <div className="flex items-start justify-between px-6 py-5 border-b border-gray-100 dark:border-vencly-border">
+        <div className="flex items-start justify-between px-6 py-5 border-b border-gray-100 dark:border-brand-border">
           <div>
             <span className="section-eyebrow text-xs">Schnell-Check</span>
-            <h2 className="font-display text-lg font-normal text-gray-900 dark:text-white mt-1">
+            <h2 className="text-lg font-extrabold text-gray-900 dark:text-white mt-1">
               Passt innovation.today zu Ihnen?
             </h2>
             <p className="text-xs text-gray-400 mt-0.5">Haken Sie an, was auf Ihr Unternehmen zutrifft.</p>
@@ -93,8 +93,8 @@ function ValidationCheckModal({ onClose }: { onClose: () => void }) {
               >
                 <span className="mt-0.5 flex-shrink-0">
                   {checked[i]
-                    ? <CheckCircle2 size={18} className="text-vencly-teal" />
-                    : <Circle size={18} className="text-gray-300 dark:text-gray-600 group-hover:text-vencly-teal/50 transition-colors" />
+                    ? <CheckCircle2 size={18} className="text-brand-teal dark:text-brand-mint" />
+                    : <Circle size={18} className="text-gray-300 dark:text-gray-600 group-hover:text-brand-teal/50 transition-colors" />
                   }
                 </span>
                 <span className={`text-sm leading-snug transition-colors ${
@@ -112,9 +112,9 @@ function ValidationCheckModal({ onClose }: { onClose: () => void }) {
         {/* Result */}
         <div className={`mx-6 mb-6 rounded p-4 transition-all ${
           score === 0
-            ? 'bg-gray-50 dark:bg-vencly-bg border border-gray-100 dark:border-vencly-border'
+            ? 'bg-gray-50 dark:bg-brand-night border border-gray-100 dark:border-brand-border'
             : fits
-            ? 'bg-vencly-teal/8 border border-vencly-teal/30'
+            ? 'bg-brand-teal/8 border border-brand-teal/30'
             : 'bg-amber-50 dark:bg-amber-900/10 border border-amber-200 dark:border-amber-800/40'
         }`}>
           {score === 0 && (
@@ -128,7 +128,7 @@ function ValidationCheckModal({ onClose }: { onClose: () => void }) {
           )}
           {fits && (
             <div>
-              <p className="text-sm font-semibold text-vencly-teal mb-1">
+              <p className="text-sm font-semibold text-brand-teal dark:text-brand-mint mb-1">
                 {score} von 6 – innovation.today könnte sehr gut passen.
               </p>
               <p className="text-xs text-gray-600 dark:text-gray-400">
@@ -143,7 +143,7 @@ function ValidationCheckModal({ onClose }: { onClose: () => void }) {
           <button
             {...calButtonProps}
             onClick={onClose}
-            className="flex-1 inline-flex items-center justify-center gap-2 bg-vencly-blue hover:bg-vencly-blue-dark text-white text-sm font-semibold px-4 py-2.5 rounded transition-colors cursor-pointer blue-glow"
+            className="flex-1 inline-flex items-center justify-center gap-2 bg-brand-navy hover:bg-brand-night dark:bg-brand-mint dark:hover:bg-white text-white dark:text-brand-navy text-sm font-semibold px-4 py-2.5 rounded transition-colors cursor-pointer"
           >
             Erstgespräch vereinbaren <ArrowRight size={14} />
           </button>
@@ -181,11 +181,11 @@ function NavDropdown({ label, allHref, allLabel, links }: {
         <ChevronDown size={13} className={`transition-transform ${open ? 'rotate-180' : ''}`} />
       </button>
       {open && (
-        <div className="absolute left-0 top-full mt-2 bg-white dark:bg-vencly-card border border-gray-200 dark:border-vencly-border rounded shadow-lg overflow-hidden z-50 min-w-[220px]">
+        <div className="absolute left-0 top-full mt-2 bg-white dark:bg-brand-card border border-gray-200 dark:border-brand-border rounded shadow-lg overflow-hidden z-50 min-w-[220px]">
           <Link
             href={allHref}
             onClick={() => setOpen(false)}
-            className="block px-4 py-3 text-xs font-mono tracking-widest uppercase text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-white/5 border-b border-gray-100 dark:border-vencly-border transition-colors"
+            className="block px-4 py-3 text-xs font-mono tracking-widest uppercase text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-white/5 border-b border-gray-100 dark:border-brand-border transition-colors"
           >
             {allLabel}
           </Link>
@@ -194,7 +194,7 @@ function NavDropdown({ label, allHref, allLabel, links }: {
               key={s.href}
               href={s.href}
               onClick={() => setOpen(false)}
-              className="block px-4 py-3 text-sm text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-white/5 transition-colors border-b border-gray-100 dark:border-vencly-border last:border-0"
+              className="block px-4 py-3 text-sm text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-white/5 transition-colors border-b border-gray-100 dark:border-brand-border last:border-0"
             >
               {s.label}
             </Link>
@@ -259,14 +259,14 @@ function LanguageSwitcher() {
         <ChevronDown size={11} className={`transition-transform ${open ? 'rotate-180' : ''}`} />
       </button>
       {open && (
-        <div className="absolute right-0 top-full mt-1 bg-white dark:bg-vencly-card border border-gray-200 dark:border-vencly-border rounded shadow-lg overflow-hidden z-50 min-w-[72px]">
+        <div className="absolute right-0 top-full mt-1 bg-white dark:bg-brand-card border border-gray-200 dark:border-brand-border rounded shadow-lg overflow-hidden z-50 min-w-[72px]">
           {locales.map((l) => (
             <button
               key={l}
               onClick={() => { setLocale(l); setOpen(false) }}
               className={`w-full text-left px-3 py-2 text-xs font-mono font-semibold transition-colors
                 ${l === locale
-                  ? 'text-vencly-teal bg-vencly-teal/5'
+                  ? 'text-brand-teal bg-brand-teal/5'
                   : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-white/5'
                 }`}
             >
@@ -303,19 +303,24 @@ export default function Navbar() {
       <header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
           scrolled
-            ? 'bg-white/90 dark:bg-[#0F172A]/90 backdrop-blur-md border-b border-gray-200 dark:border-vencly-border shadow-sm dark:shadow-lg'
+            ? 'bg-white/90 dark:bg-brand-night/90 backdrop-blur-md border-b border-gray-200 dark:border-brand-border shadow-sm dark:shadow-lg'
             : 'bg-transparent'
         }`}
       >
         <nav className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center group">
+            {/* Wortmarke 32 px hoch (Markenvorgabe 28–32 px). Bewusst die
+                transparente Fassung: der Header ist ungescrollt durchsichtig,
+                die Variante wordmark_dark trägt eine opake Nachtblau-Fläche.
+                Im Dark Mode wird sie einfarbig weiß gesetzt — entspricht
+                wordmark_mono_white, nur ohne Hintergrundfläche. */}
             <Image
-              src="/logovencly.svg"
+              src="/brand/wordmark_light.svg"
               alt="innovation.today"
-              width={120}
-              height={36}
-              className="h-9 w-auto dark:invert"
+              width={133}
+              height={32}
+              className="h-8 w-auto dark:brightness-0 dark:invert"
               priority
             />
           </Link>
@@ -347,13 +352,13 @@ export default function Navbar() {
             <LanguageSwitcher />
             <button
               onClick={() => setCheckOpen(true)}
-              className="text-gray-500 dark:text-gray-400 hover:text-vencly-teal dark:hover:text-vencly-teal text-sm font-medium transition-colors px-3 py-1.5"
+              className="text-gray-500 dark:text-gray-400 hover:text-brand-teal dark:hover:text-brand-teal text-sm font-medium transition-colors px-3 py-1.5"
             >
               {t.nav.login}
             </button>
             <button
               {...calButtonProps}
-              className="inline-flex items-center gap-1.5 bg-vencly-blue hover:bg-vencly-blue-dark text-white text-sm font-semibold px-4 py-2 rounded transition-colors cursor-pointer"
+              className="inline-flex items-center gap-1.5 bg-brand-navy hover:bg-brand-night dark:bg-brand-mint dark:hover:bg-white text-white dark:text-brand-navy text-sm font-semibold px-4 py-2 rounded transition-colors cursor-pointer"
             >
               {t.nav.cta}
             </button>
@@ -372,14 +377,14 @@ export default function Navbar() {
 
         {/* Mobile Menu */}
         {menuOpen && (
-          <div className="md:hidden bg-white dark:bg-vencly-card border-b border-gray-200 dark:border-vencly-border">
+          <div className="md:hidden bg-white dark:bg-brand-card border-b border-gray-200 dark:border-brand-border">
             <div className="max-w-6xl mx-auto px-4 py-4 flex flex-col gap-4">
               <Link href="/" onClick={() => setMenuOpen(false)} className="text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white text-sm font-medium transition-colors py-1">
                 {t.nav.home}
               </Link>
               <div>
                 <span className="text-xs font-mono tracking-widest uppercase text-gray-400 block mb-2">{t.nav.services}</span>
-                <div className="pl-3 flex flex-col gap-2 border-l border-gray-200 dark:border-vencly-border">
+                <div className="pl-3 flex flex-col gap-2 border-l border-gray-200 dark:border-brand-border">
                   <Link href="/#leistungen" onClick={() => setMenuOpen(false)} className="text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white text-sm transition-colors">Alle Leistungen</Link>
                   {serviceLinks.map((s) => (
                     <Link key={s.href} href={s.href} onClick={() => setMenuOpen(false)} className="text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white text-sm transition-colors">{s.label}</Link>
@@ -388,7 +393,7 @@ export default function Navbar() {
               </div>
               <div>
                 <span className="text-xs font-mono tracking-widest uppercase text-gray-400 block mb-2">{t.nav.projects}</span>
-                <div className="pl-3 flex flex-col gap-2 border-l border-gray-200 dark:border-vencly-border">
+                <div className="pl-3 flex flex-col gap-2 border-l border-gray-200 dark:border-brand-border">
                   <Link href="/projects" onClick={() => setMenuOpen(false)} className="text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white text-sm transition-colors">Alle Projekte</Link>
                   {projectLinks.map((s) => (
                     <Link key={s.href} href={s.href} onClick={() => setMenuOpen(false)} className="text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white text-sm transition-colors">{s.label}</Link>
@@ -405,20 +410,20 @@ export default function Navbar() {
                   {link.label}
                 </Link>
               ))}
-              <div className="flex items-center gap-3 pt-2 border-t border-gray-200 dark:border-vencly-border">
+              <div className="flex items-center gap-3 pt-2 border-t border-gray-200 dark:border-brand-border">
                 <ThemeToggle />
                 <LanguageSwitcher />
               </div>
               <div className="flex flex-col gap-2">
                 <button
                   onClick={() => { setMenuOpen(false); setCheckOpen(true) }}
-                  className="text-left text-vencly-teal text-sm font-medium transition-colors py-1"
+                  className="text-left text-brand-teal dark:text-brand-mint text-sm font-medium transition-colors py-1"
                 >
                   {t.nav.login}
                 </button>
                 <button
                   {...calButtonProps}
-                  className="inline-flex items-center justify-center gap-1.5 bg-vencly-blue hover:bg-vencly-blue-dark text-white text-sm font-semibold px-4 py-2.5 rounded transition-colors cursor-pointer"
+                  className="inline-flex items-center justify-center gap-1.5 bg-brand-navy hover:bg-brand-night dark:bg-brand-mint dark:hover:bg-white text-white dark:text-brand-navy text-sm font-semibold px-4 py-2.5 rounded transition-colors cursor-pointer"
                 >
                   {t.nav.cta}
                 </button>

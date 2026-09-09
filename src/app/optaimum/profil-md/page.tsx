@@ -65,7 +65,7 @@ export default function ProfilMdPage() {
     <div className="flex flex-wrap gap-2">
       {options.map(o => (
         <button key={o} onClick={() => onToggle(o)}
-          className={`px-3 py-1.5 rounded text-sm border transition-colors ${selected.includes(o) ? 'bg-vencly-teal text-white border-vencly-teal' : 'border-gray-200 dark:border-vencly-border text-gray-700 dark:text-gray-300 hover:border-vencly-teal/60'}`}>
+          className={`px-3 py-1.5 rounded text-sm border transition-colors ${selected.includes(o) ? 'bg-brand-teal text-white border-brand-teal' : 'border-gray-200 dark:border-brand-border text-gray-700 dark:text-gray-300 hover:border-brand-teal/60'}`}>
           {o}
         </button>
       ))}
@@ -76,7 +76,7 @@ export default function ProfilMdPage() {
     <div className="flex flex-wrap gap-2">
       {options.map(o => (
         <button key={o} onClick={() => onChange(o)}
-          className={`px-4 py-2 rounded text-sm border transition-colors ${value === o ? 'bg-vencly-teal text-white border-vencly-teal' : 'border-gray-200 dark:border-vencly-border text-gray-700 dark:text-gray-300 hover:border-vencly-teal/60'}`}>
+          className={`px-4 py-2 rounded text-sm border transition-colors ${value === o ? 'bg-brand-teal text-white border-brand-teal' : 'border-gray-200 dark:border-brand-border text-gray-700 dark:text-gray-300 hover:border-brand-teal/60'}`}>
           {o}
         </button>
       ))}
@@ -84,14 +84,14 @@ export default function ProfilMdPage() {
   )
 
   return (
-    <div className="min-h-screen bg-[#F8F7F4] dark:bg-vencly-bg pt-24 pb-20">
+    <div className="min-h-screen bg-brand-sky dark:bg-brand-night pt-24 pb-20">
       <div className="max-w-2xl mx-auto px-4 sm:px-6">
-        <Link href="/optaimum" className="inline-flex items-center gap-2 text-gray-500 dark:text-gray-400 hover:text-vencly-teal transition-colors mb-8 text-sm">
+        <Link href="/optaimum" className="inline-flex items-center gap-2 text-gray-500 dark:text-gray-400 hover:text-brand-teal transition-colors mb-8 text-sm">
           <ArrowLeft size={16} /> Zurück zu OptAImum
         </Link>
 
         <div className="mb-8">
-          <span className="text-vencly-teal text-xs font-mono tracking-widest uppercase">OptAImum Tool</span>
+          <span className="text-brand-teal dark:text-brand-mint text-xs font-mono tracking-widest uppercase">OptAImum Tool</span>
           <h1 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mt-2">Profil-MD Creator</h1>
           <p className="text-gray-600 dark:text-gray-400 text-sm mt-1">Persönlicher Kontext für deine KI – in 5 Minuten.</p>
         </div>
@@ -99,11 +99,11 @@ export default function ProfilMdPage() {
         {/* Progress */}
         <div className="flex gap-1 mb-8">
           {STEPS.slice(0, -1).map((s, i) => (
-            <div key={s} className={`flex-1 h-1 rounded-full transition-colors ${i <= step ? 'bg-vencly-teal' : 'bg-gray-200 dark:bg-vencly-border'}`} />
+            <div key={s} className={`flex-1 h-1 rounded-full transition-colors ${i <= step ? 'bg-brand-teal' : 'bg-gray-200 dark:bg-brand-border'}`} />
           ))}
         </div>
 
-        <div className="bg-white dark:bg-vencly-card border border-gray-200 dark:border-vencly-border rounded p-8">
+        <div className="bg-white dark:bg-brand-card border border-gray-200 dark:border-brand-border rounded p-8">
           {step === 0 && (
             <>
               <h2 className="text-gray-900 dark:text-white font-bold text-lg mb-2">Bevorzugte Sprache</h2>
@@ -138,7 +138,7 @@ export default function ProfilMdPage() {
               <p className="text-gray-500 text-sm mb-6">Wähle aus oder schreib deine eigenen Regeln.</p>
               <ChipGroup options={avoidOptions} selected={avoid} onToggle={v => toggle(avoid, setAvoid, v)} />
               <input
-                className="mt-4 w-full px-3 py-2 text-sm rounded border border-gray-200 dark:border-vencly-border bg-transparent text-gray-900 dark:text-white placeholder-gray-400 focus:outline-none focus:border-vencly-teal"
+                className="mt-4 w-full px-3 py-2 text-sm rounded border border-gray-200 dark:border-brand-border bg-transparent text-gray-900 dark:text-white placeholder-gray-400 focus:outline-none focus:border-brand-teal"
                 placeholder="Eigene Regel hinzufügen..."
                 value={customAvoid}
                 onChange={e => setCustomAvoid(e.target.value)}
@@ -149,17 +149,17 @@ export default function ProfilMdPage() {
             <>
               <div className="flex items-center justify-between mb-4">
                 <h2 className="text-gray-900 dark:text-white font-bold text-lg">Dein Profil-Markdown</h2>
-                <button onClick={copy} className="inline-flex items-center gap-1.5 text-sm text-vencly-teal hover:text-teal-500 transition-colors">
+                <button onClick={copy} className="inline-flex items-center gap-1.5 text-sm text-brand-teal dark:text-brand-mint hover:text-teal-500 transition-colors">
                   {copied ? <><Check size={14} /> Kopiert!</> : <><Copy size={14} /> Kopieren</>}
                 </button>
               </div>
-              <pre className="bg-gray-50 dark:bg-vencly-bg rounded p-4 text-xs text-gray-800 dark:text-gray-300 whitespace-pre-wrap overflow-auto max-h-80 font-mono border border-gray-200 dark:border-vencly-border">{md}</pre>
-              <div className="mt-6 p-4 bg-vencly-teal/5 border border-vencly-teal/20 rounded">
+              <pre className="bg-gray-50 dark:bg-brand-night rounded p-4 text-xs text-gray-800 dark:text-gray-300 whitespace-pre-wrap overflow-auto max-h-80 font-mono border border-gray-200 dark:border-brand-border">{md}</pre>
+              <div className="mt-6 p-4 bg-brand-teal/5 border border-brand-teal/20 rounded">
                 <p className="text-sm font-semibold text-gray-900 dark:text-white mb-2">Wo einfügen?</p>
                 <ul className="text-sm text-gray-600 dark:text-gray-400 space-y-1">
                   <li>· <strong className="text-gray-900 dark:text-white">Claude.ai:</strong> Einstellungen → Personalization → Custom Instructions</li>
                   <li>· <strong className="text-gray-900 dark:text-white">ChatGPT:</strong> Einstellungen → Personalization → Custom Instructions</li>
-                  <li>· <strong className="text-gray-900 dark:text-white">Claude Code:</strong> speichern als <code className="text-vencly-teal">~/.claude/PROFILE.md</code></li>
+                  <li>· <strong className="text-gray-900 dark:text-white">Claude Code:</strong> speichern als <code className="text-brand-teal dark:text-brand-mint">~/.claude/PROFILE.md</code></li>
                 </ul>
               </div>
             </>
@@ -171,12 +171,12 @@ export default function ProfilMdPage() {
             ) : <span />}
             {step < 5 ? (
               <button onClick={() => setStep(s => s + 1)} disabled={!canNext}
-                className="inline-flex items-center gap-1.5 bg-vencly-teal hover:bg-teal-600 disabled:opacity-40 text-white text-sm font-semibold px-5 py-2 rounded transition-colors">
+                className="inline-flex items-center gap-1.5 bg-brand-teal hover:bg-teal-600 disabled:opacity-40 text-white text-sm font-semibold px-5 py-2 rounded transition-colors">
                 Weiter <ChevronRight size={14} />
               </button>
             ) : (
               <button onClick={() => { setStep(0); setLevel(''); setStyle(''); setUses([]); setAvoid([]); setCustomAvoid('') }}
-                className="text-sm text-gray-500 dark:text-gray-400 hover:text-vencly-teal transition-colors">
+                className="text-sm text-gray-500 dark:text-gray-400 hover:text-brand-teal transition-colors">
                 Neu starten
               </button>
             )}

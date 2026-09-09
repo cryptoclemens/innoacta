@@ -6,13 +6,13 @@ export default function WhyUs() {
   const { t } = useLanguage()
 
   return (
-    <section className="bg-[#F8F7F4] dark:bg-vencly-bg py-24 px-4">
+    <section className="bg-brand-sky dark:bg-brand-night py-24 px-4">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <span className="section-eyebrow justify-center mb-4">
             {t.whyUs.label}
           </span>
-          <h2 className="font-display text-3xl md:text-4xl font-normal text-gray-900 dark:text-white mb-4 mt-3">
+          <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 dark:text-white mb-4 mt-3">
             {t.whyUs.h2}
           </h2>
           <p className="text-gray-500 max-w-xl mx-auto text-sm">
@@ -24,9 +24,9 @@ export default function WhyUs() {
           {t.whyUs.items.map((point, i) => (
             <div
               key={point.title}
-              className="bg-white dark:bg-vencly-card border border-gray-200 dark:border-vencly-border rounded p-8"
+              className="bg-white dark:bg-brand-card border border-gray-200 dark:border-brand-border rounded p-8"
             >
-              <span className="font-mono text-vencly-teal/50 text-4xl font-bold block mb-4">
+              <span className="font-mono text-brand-teal dark:text-brand-mint/50 text-4xl font-bold block mb-4">
                 {String(i + 1).padStart(2, '0')}
               </span>
               <h3 className="text-gray-900 dark:text-white font-bold text-lg mb-3">
