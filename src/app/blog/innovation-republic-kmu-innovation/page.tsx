@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description:
     'Innovation Republic verbindet mittelständische Unternehmen kuratiert mit Innovationspartnern. Wie strukturierte KMU-Innovation funktioniert und was sie von Beratung unterscheidet.',
   keywords: ['KMU Innovation', 'Innovation für Mittelstand', 'Innovation Republic'],
-  alternates: { canonical: 'https://vencly.com/blog/innovation-republic-kmu-innovation' },
+  alternates: { canonical: 'https://www.vencly.com/blog/innovation-republic-kmu-innovation' },
 }
 
 const articleJsonLd = {
@@ -17,9 +17,9 @@ const articleJsonLd = {
   headline: 'Innovation Republic: Strukturierte KMU-Innovation für den Mittelstand',
   description:
     'Wie Innovation Republic mittelständische Unternehmen kuratiert mit Innovationslösungen verbindet – und was strukturierte KMU-Innovation von klassischer Beratung unterscheidet.',
-  author: { '@type': 'Person', name: 'Clemens Pompeÿ', url: 'https://vencly.com/ueber-uns' },
-  publisher: { '@type': 'Organization', name: 'innovation.today', legalName: 'Vencly GmbH', url: 'https://vencly.com' },
-  url: 'https://vencly.com/blog/innovation-republic-kmu-innovation',
+  author: { '@type': 'Person', name: 'Clemens Pompeÿ', url: 'https://www.vencly.com/ueber-uns' },
+  publisher: { '@type': 'Organization', name: 'innovation.today', legalName: 'Vencly GmbH', url: 'https://www.vencly.com' },
+  url: 'https://www.vencly.com/blog/innovation-republic-kmu-innovation',
   datePublished: '2026-05-16',
   dateModified: '2026-05-16',
   inLanguage: 'de',
@@ -74,13 +74,13 @@ const breadcrumbJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://vencly.com' },
-    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://vencly.com/blog' },
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.vencly.com' },
+    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://www.vencly.com/blog' },
     {
       '@type': 'ListItem',
       position: 3,
       name: 'Innovation Republic: Strukturierte KMU-Innovation für den Mittelstand',
-      item: 'https://vencly.com/blog/innovation-republic-kmu-innovation',
+      item: 'https://www.vencly.com/blog/innovation-republic-kmu-innovation',
     },
   ],
 }

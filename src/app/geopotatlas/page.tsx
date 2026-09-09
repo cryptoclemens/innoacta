@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: 'Geopotatlas – Geodaten-Intelligence für strategische Entscheidungen',
   description:
     'Geopotatlas wertet Geodaten intelligent aus: strategische Standortentscheidungen, Marktanalysen und ERP-Integration für mittelständische Unternehmen.',
-  alternates: { canonical: 'https://vencly.com/geopotatlas' },
+  alternates: { canonical: 'https://www.vencly.com/geopotatlas' },
   openGraph: {
     title: 'Geopotatlas | innovation.today',
     description: 'Intelligente Geodaten-Auswertung für Standortentscheidungen und Marktanalysen. Integration mit bestehenden ERP-Systemen.',
@@ -21,7 +21,7 @@ const jsonLd = {
   applicationCategory: 'BusinessApplication',
   operatingSystem: 'Web',
   description: 'Intelligente Auswertung von Geodaten für strategische Standortentscheidungen und Marktanalysen mit ERP-Integration.',
-  author: { '@type': 'Organization', name: 'innovation.today', legalName: 'Vencly GmbH', url: 'https://vencly.com' },
+  author: { '@type': 'Organization', name: 'innovation.today', legalName: 'Vencly GmbH', url: 'https://www.vencly.com' },
 }
 
 const features = [
@@ -70,9 +70,9 @@ export default function GeopotatlasPage() {
         '@context': 'https://schema.org',
         '@type': 'BreadcrumbList',
         itemListElement: [
-          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://vencly.com' },
-          { '@type': 'ListItem', position: 2, name: 'Projekte', item: 'https://vencly.com/projects' },
-          { '@type': 'ListItem', position: 3, name: 'Geopotatlas', item: 'https://vencly.com/geopotatlas' },
+          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.vencly.com' },
+          { '@type': 'ListItem', position: 2, name: 'Projekte', item: 'https://www.vencly.com/projects' },
+          { '@type': 'ListItem', position: 3, name: 'Geopotatlas', item: 'https://www.vencly.com/geopotatlas' },
         ],
       }) }} />
       <div className="min-h-screen bg-brand-sky dark:bg-brand-night pt-24 pb-20">

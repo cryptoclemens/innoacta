@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: 'Innovation Republic – Venture-Clienting-Plattform',
   description:
     'Innovation Republic: KI-gestützte Plattform zur automatisierten Startup-Identifikation und -Matching für mittelständische Unternehmen. Scouting-Aufwand um bis zu 70 % reduziert.',
-  alternates: { canonical: 'https://vencly.com/innovation-republic' },
+  alternates: { canonical: 'https://www.vencly.com/innovation-republic' },
   openGraph: {
     title: 'Innovation Republic | innovation.today',
     description: 'KI-Agenten identifizieren und matchen Startups für Mittelständler – vollautomatisiert, transparent, skalierbar.',
@@ -21,7 +21,7 @@ const jsonLd = {
   applicationCategory: 'BusinessApplication',
   operatingSystem: 'Web',
   description: 'KI-gestützte Venture-Clienting-Plattform zur automatisierten Startup-Identifikation und -Matching für mittelständische Unternehmen.',
-  author: { '@type': 'Organization', name: 'innovation.today', legalName: 'Vencly GmbH', url: 'https://vencly.com' },
+  author: { '@type': 'Organization', name: 'innovation.today', legalName: 'Vencly GmbH', url: 'https://www.vencly.com' },
 }
 
 const features = [
@@ -70,9 +70,9 @@ export default function InnovationRepublicPage() {
         '@context': 'https://schema.org',
         '@type': 'BreadcrumbList',
         itemListElement: [
-          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://vencly.com' },
-          { '@type': 'ListItem', position: 2, name: 'Projekte', item: 'https://vencly.com/projects' },
-          { '@type': 'ListItem', position: 3, name: 'Innovation Republic', item: 'https://vencly.com/innovation-republic' },
+          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.vencly.com' },
+          { '@type': 'ListItem', position: 2, name: 'Projekte', item: 'https://www.vencly.com/projects' },
+          { '@type': 'ListItem', position: 3, name: 'Innovation Republic', item: 'https://www.vencly.com/innovation-republic' },
         ],
       }) }} />
       <div className="min-h-screen bg-brand-sky dark:bg-brand-night pt-24 pb-20">

@@ -4,7 +4,7 @@ export const metadata: Metadata = {
   title: 'Strategische Umsetzung – operativ, nicht nur konzeptionell',
   description:
     'innovation.today übernimmt operative Verantwortung in neuen Geschäftsfeldern: Go-to-Market, Geschäftsmodell-Festlegung, Organisationsdesign, Ausgründung, Pilotkunden-Akquise und Steuerungs-KPIs.',
-  alternates: { canonical: 'https://vencly.com/strategische-umsetzung' },
+  alternates: { canonical: 'https://www.vencly.com/strategische-umsetzung' },
   openGraph: {
     title: 'Strategische Umsetzung | innovation.today',
     description:

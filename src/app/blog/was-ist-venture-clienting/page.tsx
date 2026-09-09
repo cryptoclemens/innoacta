@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: 'Was ist Venture Clienting? Definition, Prozess & Beispiele',
   description:
     'Venture Clienting einfach erklärt: Definition, Unterschied zu Corporate Venture Capital, der 90-Tage-Prozess und Praxisbeispiele aus Energie, Infrastruktur und Mittelstand.',
-  alternates: { canonical: 'https://vencly.com/blog/was-ist-venture-clienting' },
+  alternates: { canonical: 'https://www.vencly.com/blog/was-ist-venture-clienting' },
 }
 
 const articleJsonLd = {
@@ -15,9 +15,9 @@ const articleJsonLd = {
   '@type': 'Article',
   headline: 'Was ist Venture Clienting? Definition, Prozess und Praxisbeispiele',
   description: 'Venture Clienting einfach erklärt: Definition, Unterschied zu CVC, der 90-Tage-Prozess und Praxisbeispiele.',
-  author: { '@type': 'Person', name: 'Clemens Pompeÿ', url: 'https://vencly.com/ueber-uns' },
-  publisher: { '@type': 'Organization', name: 'innovation.today', legalName: 'Vencly GmbH', url: 'https://vencly.com' },
-  url: 'https://vencly.com/blog/was-ist-venture-clienting',
+  author: { '@type': 'Person', name: 'Clemens Pompeÿ', url: 'https://www.vencly.com/ueber-uns' },
+  publisher: { '@type': 'Organization', name: 'innovation.today', legalName: 'Vencly GmbH', url: 'https://www.vencly.com' },
+  url: 'https://www.vencly.com/blog/was-ist-venture-clienting',
   datePublished: '2025-02-10',
   dateModified: '2026-05-16',
   inLanguage: 'de',
@@ -58,9 +58,9 @@ const breadcrumbJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://vencly.com' },
-    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://vencly.com/blog' },
-    { '@type': 'ListItem', position: 3, name: 'Was ist Venture Clienting?', item: 'https://vencly.com/blog/was-ist-venture-clienting' },
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.vencly.com' },
+    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://www.vencly.com/blog' },
+    { '@type': 'ListItem', position: 3, name: 'Was ist Venture Clienting?', item: 'https://www.vencly.com/blog/was-ist-venture-clienting' },
   ],
 }
 

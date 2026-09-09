@@ -5,7 +5,7 @@ import { LEGAL_NOTICE, PRIVACY_EMAIL } from '@/lib/brand'
 export const metadata: Metadata = {
   title: 'Datenschutzerklärung',
   description: 'Datenschutzerklärung der Vencly GmbH gemäß DSGVO.',
-  alternates: { canonical: 'https://vencly.com/datenschutz' },
+  alternates: { canonical: 'https://www.vencly.com/datenschutz' },
   robots: { index: true, follow: false },
 }
 

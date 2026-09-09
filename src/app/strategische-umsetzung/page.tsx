@@ -8,8 +8,8 @@ const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Service',
   name: 'Strategische Umsetzung',
-  provider: { '@type': 'Organization', name: 'innovation.today', legalName: 'Vencly GmbH', url: 'https://vencly.com' },
-  url: 'https://vencly.com/strategische-umsetzung',
+  provider: { '@type': 'Organization', name: 'innovation.today', legalName: 'Vencly GmbH', url: 'https://www.vencly.com' },
+  url: 'https://www.vencly.com/strategische-umsetzung',
   description:
     'Operative Verantwortung für Projekte ohne interne Heimat: Projektsteuerung, Stakeholder-Management, Entscheidungsvorlagen und Workshop-Formate – mit unternehmerischem Blick.',
   areaServed: ['DE', 'AT', 'CH'],
@@ -61,9 +61,9 @@ export default function StrategischeUmsetzungPage() {
         '@context': 'https://schema.org',
         '@type': 'BreadcrumbList',
         itemListElement: [
-          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://vencly.com' },
-          { '@type': 'ListItem', position: 2, name: 'Leistungen', item: 'https://vencly.com/#leistungen' },
-          { '@type': 'ListItem', position: 3, name: 'Strategische Umsetzung', item: 'https://vencly.com/strategische-umsetzung' },
+          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.vencly.com' },
+          { '@type': 'ListItem', position: 2, name: 'Leistungen', item: 'https://www.vencly.com/#leistungen' },
+          { '@type': 'ListItem', position: 3, name: 'Strategische Umsetzung', item: 'https://www.vencly.com/strategische-umsetzung' },
         ],
       }) }} />
       <div className="min-h-screen bg-brand-sky dark:bg-brand-night pt-24 pb-20">

@@ -4,9 +4,9 @@
 # nicht ausgewertet, solange sie `_redirects.template` heißt.
 #
 # AKTIVIEREN (erst nach Go-Live von innovation.today):
-#   1. innovation.today als Custom Domain im Cloudflare-Pages-Projekt `vencly`
+#   1. www.innovation.today als Custom Domain im Cloudflare-Pages-Projekt `vencly`
 #      hinterlegen und ausliefern lassen.
-#   2. SITE_URL in src/lib/brand.ts auf 'https://innovation.today' umstellen
+#   2. SITE_URL in src/lib/brand.ts auf 'https://www.innovation.today' umstellen
 #      und alle TODO(DNS-Switch)-Stellen abarbeiten.
 #   3. Diese Datei nach `public/_redirects` umbenennen.
 #   4. Deploy — danach mit `curl -I https://vencly.com/blog/` prüfen,
@@ -18,5 +18,5 @@
 # ACHTUNG: Erst aktivieren, wenn innovation.today produktiv antwortet — sonst
 # leiten alle bestehenden Links ins Leere.
 
-https://vencly.com/*      https://innovation.today/:splat      301
-https://www.vencly.com/*  https://innovation.today/:splat      301
+https://vencly.com/*      https://www.innovation.today/:splat      301
+https://www.vencly.com/*  https://www.innovation.today/:splat      301

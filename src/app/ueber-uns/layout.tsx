@@ -4,7 +4,7 @@ export const metadata: Metadata = {
   title: 'Über uns – Clemens Pompeÿ & innovation.today',
   description:
     'Clemens Pompeÿ ist Gründer von innovation.today. Mit über 40 realisierten Venture-Client-Projekten und tiefer Branchenkenntnis in Energie, Infrastruktur und öffentlichem Sektor begleitet er Konzerne und Mittelstand bei der Entwicklung neuer Geschäftsfelder.',
-  alternates: { canonical: 'https://vencly.com/ueber-uns' },
+  alternates: { canonical: 'https://www.vencly.com/ueber-uns' },
   openGraph: {
     title: 'Über Clemens Pompeÿ – innovation.today',
     description:

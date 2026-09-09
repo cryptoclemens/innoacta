@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: 'Fußball und Wirtschaft: Was Christoph Werner (dm) der Politik ins Stammbuch schreibt',
   description:
     'Beim Ludwig Erhard Gipfel brachte dm-Chef Christoph Werner die Sache auf den Punkt: Fußball funktioniert, weil die Spielzüge frei sind – nicht weil sie reglementiert werden. Ein Plädoyer für Ordnungspolitik statt Detailregulierung.',
-  alternates: { canonical: 'https://vencly.com/blog/christoph-werner-dm-wirtschaftspolitik-freiheit' },
+  alternates: { canonical: 'https://www.vencly.com/blog/christoph-werner-dm-wirtschaftspolitik-freiheit' },
   openGraph: {
     title: 'Fußball und Wirtschaft: Christoph Werner (dm) beim Ludwig Erhard Gipfel',
     description:
@@ -21,9 +21,9 @@ const articleJsonLd = {
   headline: 'Fußball und Wirtschaft: Was Christoph Werner (dm) der Politik ins Stammbuch schreibt',
   description:
     'dm-Chef Christoph Werner beim Ludwig Erhard Gipfel: Über Fußball, Freiheit und was die Politik daraus lernen sollte.',
-  author: { '@type': 'Person', name: 'Clemens Pompeÿ', url: 'https://vencly.com/ueber-uns' },
-  publisher: { '@type': 'Organization', name: 'innovation.today', legalName: 'Vencly GmbH', url: 'https://vencly.com' },
-  url: 'https://vencly.com/blog/christoph-werner-dm-wirtschaftspolitik-freiheit',
+  author: { '@type': 'Person', name: 'Clemens Pompeÿ', url: 'https://www.vencly.com/ueber-uns' },
+  publisher: { '@type': 'Organization', name: 'innovation.today', legalName: 'Vencly GmbH', url: 'https://www.vencly.com' },
+  url: 'https://www.vencly.com/blog/christoph-werner-dm-wirtschaftspolitik-freiheit',
   datePublished: '2026-04-30',
   dateModified: '2026-04-30',
   inLanguage: 'de',
@@ -33,9 +33,9 @@ const breadcrumbJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://vencly.com' },
-    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://vencly.com/blog' },
-    { '@type': 'ListItem', position: 3, name: 'Christoph Werner (dm): Fußball und Wirtschaftsfreiheit', item: 'https://vencly.com/blog/christoph-werner-dm-wirtschaftspolitik-freiheit' },
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.vencly.com' },
+    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://www.vencly.com/blog' },
+    { '@type': 'ListItem', position: 3, name: 'Christoph Werner (dm): Fußball und Wirtschaftsfreiheit', item: 'https://www.vencly.com/blog/christoph-werner-dm-wirtschaftspolitik-freiheit' },
   ],
 }
 

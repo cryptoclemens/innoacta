@@ -4,7 +4,7 @@ export const metadata: Metadata = {
   title: 'Geschäftsfeldentwicklung – neue Märkte mit Gründer-Denken',
   description:
     'innovation.today entwickelt neue Geschäftsfelder für Konzerne und Mittelstand: schnell validiert, marktgetestet und mit echter Umsetzungsverantwortung. Von der Hypothese bis zum validierten Modell.',
-  alternates: { canonical: 'https://vencly.com/geschaeftsfeldentwicklung' },
+  alternates: { canonical: 'https://www.vencly.com/geschaeftsfeldentwicklung' },
   openGraph: {
     title: 'Geschäftsfeldentwicklung | innovation.today',
     description:

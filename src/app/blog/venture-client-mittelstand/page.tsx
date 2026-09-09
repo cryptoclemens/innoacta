@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: 'Venture Client im Mittelstand: Chancen, Hürden und wie es gelingt',
   description:
     'Wie mittelständische Unternehmen Venture Clienting erfolgreich einsetzen – ohne eigene Innovation-Unit, ohne DAX-Budget und mit klarem Fokus auf operative Ergebnisse.',
-  alternates: { canonical: 'https://vencly.com/blog/venture-client-mittelstand' },
+  alternates: { canonical: 'https://www.vencly.com/blog/venture-client-mittelstand' },
   openGraph: {
     title: 'Venture Client im Mittelstand – Chancen, Hürden und wie es gelingt',
     description:
@@ -21,9 +21,9 @@ const articleJsonLd = {
   headline: 'Venture Client im Mittelstand: Chancen, Hürden und wie es gelingt',
   description:
     'Wie mittelständische Unternehmen Venture Clienting erfolgreich einsetzen – ohne eigene Innovation-Unit, ohne DAX-Budget und mit klarem Fokus auf operative Ergebnisse.',
-  author: { '@type': 'Person', name: 'Clemens Pompeÿ', url: 'https://vencly.com/ueber-uns' },
-  publisher: { '@type': 'Organization', name: 'innovation.today', legalName: 'Vencly GmbH', url: 'https://vencly.com' },
-  url: 'https://vencly.com/blog/venture-client-mittelstand',
+  author: { '@type': 'Person', name: 'Clemens Pompeÿ', url: 'https://www.vencly.com/ueber-uns' },
+  publisher: { '@type': 'Organization', name: 'innovation.today', legalName: 'Vencly GmbH', url: 'https://www.vencly.com' },
+  url: 'https://www.vencly.com/blog/venture-client-mittelstand',
   datePublished: '2025-05-01',
   dateModified: '2026-05-16',
   inLanguage: 'de',
@@ -69,9 +69,9 @@ const breadcrumbJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://vencly.com' },
-    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://vencly.com/blog' },
-    { '@type': 'ListItem', position: 3, name: 'Venture Client im Mittelstand', item: 'https://vencly.com/blog/venture-client-mittelstand' },
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.vencly.com' },
+    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://www.vencly.com/blog' },
+    { '@type': 'ListItem', position: 3, name: 'Venture Client im Mittelstand', item: 'https://www.vencly.com/blog/venture-client-mittelstand' },
   ],
 }
 

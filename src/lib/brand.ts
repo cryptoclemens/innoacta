@@ -21,14 +21,20 @@ export const LEGAL_NOTICE = `${BRAND_NAME} ist ein Angebot der ${LEGAL_ENTITY}.`
 export const TAGLINE = 'Innovatives Gründer-Denken für Unternehmen mit Tradition.'
 
 /**
- * TODO(DNS-Switch): Sobald innovation.today produktiv ausgeliefert wird, hier auf
- * 'https://innovation.today' umstellen. Steuert canonical-URLs, Sitemap, OG-URLs
- * und JSON-LD. Bis dahin bleibt vencly.com die ausliefernde Domain.
+ * Kanonische Adresse der Website — steuert canonical-URLs, Sitemap, OG-URLs
+ * und JSON-LD.
+ *
+ * WICHTIG: mit www. Die Form ohne www antwortet mit 301 auf die www-Form;
+ * canonical-Angaben und Sitemap müssen deshalb direkt auf www zeigen, sonst
+ * verweist jede angegebene Adresse auf eine Weiterleitung.
+ *
+ * TODO(DNS-Switch): auf 'https://www.innovation.today' umstellen, sobald die
+ * Zieldomain ausliefert.
  */
-export const SITE_URL = 'https://vencly.com'
+export const SITE_URL = 'https://www.vencly.com'
 
 /** Zieldomain des Rebrandings. Bereits reserviert, noch nicht ausliefernd. */
-export const TARGET_URL = 'https://innovation.today'
+export const TARGET_URL = 'https://www.innovation.today'
 
 /** TODO(DNS-Switch): auf hello@innovation.today umstellen, sobald Postfach steht. */
 export const SUPPORT_EMAIL = 'hello@vencly.com'

@@ -8,8 +8,8 @@ const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Service',
   name: 'Venture Clienting',
-  provider: { '@type': 'Organization', name: 'innovation.today', legalName: 'Vencly GmbH', url: 'https://vencly.com' },
-  url: 'https://vencly.com/venture-clienting',
+  provider: { '@type': 'Organization', name: 'innovation.today', legalName: 'Vencly GmbH', url: 'https://www.vencly.com' },
+  url: 'https://www.vencly.com/venture-clienting',
   description:
     'Strukturierter Prozess zur Identifikation und Erprobung externer Innovationspartner – Startups, Scaleups und innovative Unternehmen. Ziel: die beste Lösung für die eigene Herausforderung, nicht die coolste Entität.',
   areaServed: ['DE', 'AT', 'CH'],
@@ -67,9 +67,9 @@ const breadcrumbJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://vencly.com' },
-    { '@type': 'ListItem', position: 2, name: 'Leistungen', item: 'https://vencly.com/#leistungen' },
-    { '@type': 'ListItem', position: 3, name: 'Venture Clienting', item: 'https://vencly.com/venture-clienting' },
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.vencly.com' },
+    { '@type': 'ListItem', position: 2, name: 'Leistungen', item: 'https://www.vencly.com/#leistungen' },
+    { '@type': 'ListItem', position: 3, name: 'Venture Clienting', item: 'https://www.vencly.com/venture-clienting' },
   ],
 }
 

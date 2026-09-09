@@ -8,8 +8,8 @@ const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Service',
   name: 'Geschäftsfeldentwicklung',
-  provider: { '@type': 'Organization', name: 'innovation.today', legalName: 'Vencly GmbH', url: 'https://vencly.com' },
-  url: 'https://vencly.com/geschaeftsfeldentwicklung',
+  provider: { '@type': 'Organization', name: 'innovation.today', legalName: 'Vencly GmbH', url: 'https://www.vencly.com' },
+  url: 'https://www.vencly.com/geschaeftsfeldentwicklung',
   description:
     'Neue Geschäftsfelder identifizieren, Geschäftsmodelle entwickeln und am Markt validieren – von der ersten Hypothese bis zum skalierbaren Modell. Für Konzerne und Mittelstand.',
   areaServed: ['DE', 'AT', 'CH'],
@@ -67,9 +67,9 @@ const breadcrumbJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://vencly.com' },
-    { '@type': 'ListItem', position: 2, name: 'Leistungen', item: 'https://vencly.com/#leistungen' },
-    { '@type': 'ListItem', position: 3, name: 'Geschäftsfeldentwicklung', item: 'https://vencly.com/geschaeftsfeldentwicklung' },
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.vencly.com' },
+    { '@type': 'ListItem', position: 2, name: 'Leistungen', item: 'https://www.vencly.com/#leistungen' },
+    { '@type': 'ListItem', position: 3, name: 'Geschäftsfeldentwicklung', item: 'https://www.vencly.com/geschaeftsfeldentwicklung' },
   ],
 }
 

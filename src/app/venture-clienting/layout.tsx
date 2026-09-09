@@ -4,7 +4,7 @@ export const metadata: Metadata = {
   title: 'Venture Clienting – die smartere Art, externe Innovation einzukaufen',
   description:
     'innovation.today findet automatisiert und strukturiert die beste Lösung für Ihre Herausforderung – egal ob Startup, Scaleup oder innovativer Mittelständler. Kein Berater-Bingo, sondern Ergebnisse.',
-  alternates: { canonical: 'https://vencly.com/venture-clienting' },
+  alternates: { canonical: 'https://www.vencly.com/venture-clienting' },
   openGraph: {
     title: 'Venture Clienting | innovation.today',
     description:
