@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description:
     'Gong, Clari und Co. coachen Verkäufer. Souffleur coacht die Gegenseite: lokal, DSGVO-konform, cheat-sheet-gesteuert. Warum KI-Coaching in Verhandlungen bisher einseitig war – und wie sich das ändert.',
   keywords: ['KI Verhandlung', 'Souffleur', 'Verhandlungscoach macOS', 'BYOK', 'Whisper lokal', 'DSGVO Verhandlung'],
-  alternates: { canonical: 'https://www.vencly.com/blog/souffleur-ki-verhandlungscoach' },
+  alternates: { canonical: 'https://www.innovation.today/blog/souffleur-ki-verhandlungscoach' },
   openGraph: {
     title: 'KI-Verhandlungscoaching für die Käuferseite | innovation.today Blog',
     description: 'Warum KI-Coaching in Verhandlungen bisher nur Verkäufern half – und wie Souffleur die Lücke auf der Käuferseite schließt.',
@@ -21,9 +21,9 @@ const articleJsonLd = {
   headline: 'KI-Verhandlungscoaching für die Käuferseite – der Souffleur-Ansatz',
   description:
     'Gong, Clari und Co. coachen Verkäufer. Souffleur coacht die Gegenseite: lokal, DSGVO-konform, cheat-sheet-gesteuert.',
-  author: { '@type': 'Person', name: 'Clemens Pompeÿ', url: 'https://www.vencly.com/ueber-uns' },
-  publisher: { '@type': 'Organization', name: 'innovation.today', legalName: 'Vencly GmbH', url: 'https://www.vencly.com' },
-  url: 'https://www.vencly.com/blog/souffleur-ki-verhandlungscoach',
+  author: { '@type': 'Person', name: 'Clemens Pompeÿ', url: 'https://www.innovation.today/ueber-uns' },
+  publisher: { '@type': 'Organization', name: 'innovation.today', legalName: 'Vencly GmbH', url: 'https://www.innovation.today' },
+  url: 'https://www.innovation.today/blog/souffleur-ki-verhandlungscoach',
   datePublished: '2026-06-05',
   dateModified: '2026-06-05',
   inLanguage: 'de',
@@ -70,13 +70,13 @@ const breadcrumbJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.vencly.com' },
-    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://www.vencly.com/blog' },
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.innovation.today' },
+    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://www.innovation.today/blog' },
     {
       '@type': 'ListItem',
       position: 3,
       name: 'KI-Verhandlungscoaching für die Käuferseite – der Souffleur-Ansatz',
-      item: 'https://www.vencly.com/blog/souffleur-ki-verhandlungscoach',
+      item: 'https://www.innovation.today/blog/souffleur-ki-verhandlungscoach',
     },
   ],
 }

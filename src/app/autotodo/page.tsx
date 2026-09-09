@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: 'AutoToDo – KI-gestütztes LOP-Management',
   description:
     'AutoToDo automatisiert die Pflege von Maßnahmenlisten aus Meeting-Transkripten: Aufgaben per KI extrahieren, überprüfen und als Excel exportieren.',
-  alternates: { canonical: 'https://www.vencly.com/autotodo' },
+  alternates: { canonical: 'https://www.innovation.today/autotodo' },
   openGraph: {
     title: 'AutoToDo | innovation.today',
     description: 'Meeting-Transkript hochladen, KI extrahiert Aufgaben und Statusänderungen, exportieren als Excel. Multi-Tenant SaaS mit BYOK.',
@@ -21,7 +21,7 @@ const jsonLd = {
   operatingSystem: 'Web',
   url: 'https://autotodo.vencly.com',
   description: 'KI-gestütztes LOP-Management: Meeting-Transkript hochladen, Aufgaben automatisch extrahieren, überprüfen und als Excel exportieren.',
-  author: { '@type': 'Organization', name: 'innovation.today', legalName: 'Vencly GmbH', url: 'https://www.vencly.com' },
+  author: { '@type': 'Organization', name: 'innovation.today', legalName: 'Vencly GmbH', url: 'https://www.innovation.today' },
 }
 
 const features = [
@@ -64,9 +64,9 @@ export default function AutoTodoPage() {
         '@context': 'https://schema.org',
         '@type': 'BreadcrumbList',
         itemListElement: [
-          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.vencly.com' },
-          { '@type': 'ListItem', position: 2, name: 'Projekte', item: 'https://www.vencly.com/projects' },
-          { '@type': 'ListItem', position: 3, name: 'AutoToDo', item: 'https://www.vencly.com/autotodo' },
+          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.innovation.today' },
+          { '@type': 'ListItem', position: 2, name: 'Projekte', item: 'https://www.innovation.today/projects' },
+          { '@type': 'ListItem', position: 3, name: 'AutoToDo', item: 'https://www.innovation.today/autotodo' },
         ],
       }) }} />
       <div className="min-h-screen bg-brand-sky dark:bg-brand-night pt-24 pb-20">

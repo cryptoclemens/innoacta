@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: 'OptAImum – KI-Nutzung auf das Maximum optimieren',
   description:
     'OptAImum ist das kostenlose All-in-One-Tool für effiziente KI-Nutzung: Profile, Skill- & Hook-Markdowns erstellen, LLM-Anbieter wechseln, Prompts generieren und KI-Sandboxen aufsetzen.',
-  alternates: { canonical: 'https://www.vencly.com/optaimum' },
+  alternates: { canonical: 'https://www.innovation.today/optaimum' },
   openGraph: {
     title: 'OptAImum | innovation.today',
     description: 'Deine KI-Nutzung. Auf das Maximum optimiert. Kostenlos, ohne Installation, funktioniert mit Claude, ChatGPT, Gemini & Co.',
@@ -20,10 +20,10 @@ const jsonLd = {
   name: 'OptAImum',
   applicationCategory: 'ProductivityApplication',
   operatingSystem: 'Web',
-  url: 'https://www.vencly.com/optaimum',
+  url: 'https://www.innovation.today/optaimum',
   description:
     'Kostenloses Browser-Tool zur Optimierung der KI-Nutzung. Profile-MD, Skill-MD, Hook-MD erstellen, LLM-Anbieter wechseln, Prompts generieren, VM-Sandbox aufsetzen.',
-  author: { '@type': 'Organization', name: 'innovation.today', legalName: 'Vencly GmbH', url: 'https://www.vencly.com' },
+  author: { '@type': 'Organization', name: 'innovation.today', legalName: 'Vencly GmbH', url: 'https://www.innovation.today' },
   offers: { '@type': 'Offer', price: '0', priceCurrency: 'EUR' },
   license: 'https://opensource.org/licenses/MIT',
 }
@@ -117,9 +117,9 @@ export default function OptAImumPage() {
         '@context': 'https://schema.org',
         '@type': 'BreadcrumbList',
         itemListElement: [
-          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.vencly.com' },
-          { '@type': 'ListItem', position: 2, name: 'Projekte', item: 'https://www.vencly.com/projects' },
-          { '@type': 'ListItem', position: 3, name: 'OptAImum', item: 'https://www.vencly.com/optaimum' },
+          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.innovation.today' },
+          { '@type': 'ListItem', position: 2, name: 'Projekte', item: 'https://www.innovation.today/projects' },
+          { '@type': 'ListItem', position: 3, name: 'OptAImum', item: 'https://www.innovation.today/optaimum' },
         ],
       }) }} />
       <div className="min-h-screen bg-brand-sky dark:bg-brand-night pt-24 pb-20">

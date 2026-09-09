@@ -12,9 +12,9 @@ const jsonLd = {
     '@type': 'Organization',
     name: 'innovation.today',
     legalName: 'Vencly GmbH',
-    url: 'https://www.vencly.com',
+    url: 'https://www.innovation.today',
   },
-  url: 'https://www.vencly.com/ueber-uns',
+  url: 'https://www.innovation.today/ueber-uns',
   description:
     'Clemens Pompeÿ ist Gründer von innovation.today und Experte für Venture Clienting und Geschäftsfeldentwicklung mit über 40 realisierten Projekten in Energie, Infrastruktur und öffentlichem Sektor.',
   knowsAbout: [

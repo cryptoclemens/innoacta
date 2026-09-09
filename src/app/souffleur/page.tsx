@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: 'Souffleur – Privacy-first KI-Verhandlungs-Coach für macOS',
   description:
     'Souffleur transkribiert Verhandlungen lokal per Whisper, gleicht Gesprächspunkte in Echtzeit mit Ihrem Spickzettel ab und erstellt anonymisierte Summaries – ohne Cloud, DSGVO-konform, BYOK.',
-  alternates: { canonical: 'https://www.vencly.com/souffleur' },
+  alternates: { canonical: 'https://www.innovation.today/souffleur' },
   openGraph: {
     title: 'Souffleur | innovation.today',
     description: 'Live-Coaching für Verhandlungen auf macOS: lokal, privat, cheat-sheet-gesteuert. Kein Cloud-Recording, BYOK, DSGVO-first.',
@@ -21,7 +21,7 @@ const jsonLd = {
   applicationCategory: 'BusinessApplication',
   operatingSystem: 'macOS',
   description: 'Privacy-first, BYOK Live-Verhandlungs-Coach für macOS. Lokale Transkription, Echtzeit-Spickzettel-Abgleich, DSGVO-konform.',
-  author: { '@type': 'Organization', name: 'innovation.today', legalName: 'Vencly GmbH', url: 'https://www.vencly.com' },
+  author: { '@type': 'Organization', name: 'innovation.today', legalName: 'Vencly GmbH', url: 'https://www.innovation.today' },
 }
 
 const features = [
@@ -70,9 +70,9 @@ export default function SouffleurPage() {
         '@context': 'https://schema.org',
         '@type': 'BreadcrumbList',
         itemListElement: [
-          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.vencly.com' },
-          { '@type': 'ListItem', position: 2, name: 'Projekte', item: 'https://www.vencly.com/projects' },
-          { '@type': 'ListItem', position: 3, name: 'Souffleur', item: 'https://www.vencly.com/souffleur' },
+          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.innovation.today' },
+          { '@type': 'ListItem', position: 2, name: 'Projekte', item: 'https://www.innovation.today/projects' },
+          { '@type': 'ListItem', position: 3, name: 'Souffleur', item: 'https://www.innovation.today/souffleur' },
         ],
       }) }} />
       <div className="min-h-screen bg-brand-sky dark:bg-brand-night pt-24 pb-20">

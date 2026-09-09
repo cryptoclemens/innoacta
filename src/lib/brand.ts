@@ -28,13 +28,13 @@ export const TAGLINE = 'Innovatives Gründer-Denken für Unternehmen mit Traditi
  * canonical-Angaben und Sitemap müssen deshalb direkt auf www zeigen, sonst
  * verweist jede angegebene Adresse auf eine Weiterleitung.
  *
- * TODO(DNS-Switch): auf 'https://www.innovation.today' umstellen, sobald die
- * Zieldomain ausliefert.
+ * Seit 09.09.2026 ist www.innovation.today die ausliefernde Domain;
+ * vencly.com und innovation.today leiten dauerhaft (301) hierher.
  */
-export const SITE_URL = 'https://www.vencly.com'
+export const SITE_URL = 'https://www.innovation.today'
 
-/** Zieldomain des Rebrandings. Bereits reserviert, noch nicht ausliefernd. */
-export const TARGET_URL = 'https://www.innovation.today'
+/** Vorherige Domain. Leitet per 301 auf SITE_URL, bleibt für Bestandslinks aktiv. */
+export const LEGACY_URL = 'https://www.vencly.com'
 
 /** TODO(DNS-Switch): auf hello@innovation.today umstellen, sobald Postfach steht. */
 export const SUPPORT_EMAIL = 'hello@vencly.com'

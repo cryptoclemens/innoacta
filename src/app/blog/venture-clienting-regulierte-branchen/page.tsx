@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: 'Venture Clienting in regulierten Branchen: Energie, Infrastruktur, öffentlicher Sektor',
   description:
     'Vergaberecht, lange Entscheidungsprozesse, konservative Strukturen – warum Venture Clienting trotzdem funktioniert und wie man typische Hindernisse in Energie, Infrastruktur und öffentlichem Sektor überwindet.',
-  alternates: { canonical: 'https://www.vencly.com/blog/venture-clienting-regulierte-branchen' },
+  alternates: { canonical: 'https://www.innovation.today/blog/venture-clienting-regulierte-branchen' },
 }
 
 const articleJsonLd = {
@@ -16,9 +16,9 @@ const articleJsonLd = {
   headline: 'Venture Clienting in regulierten Branchen: Energie, Infrastruktur, öffentlicher Sektor',
   description:
     'Vergaberecht, lange Entscheidungsprozesse, konservative Strukturen – warum Venture Clienting trotzdem funktioniert und wie man die typischen Hindernisse überwindet.',
-  author: { '@type': 'Person', name: 'Clemens Pompeÿ', url: 'https://www.vencly.com/ueber-uns' },
-  publisher: { '@type': 'Organization', name: 'innovation.today', legalName: 'Vencly GmbH', url: 'https://www.vencly.com' },
-  url: 'https://www.vencly.com/blog/venture-clienting-regulierte-branchen',
+  author: { '@type': 'Person', name: 'Clemens Pompeÿ', url: 'https://www.innovation.today/ueber-uns' },
+  publisher: { '@type': 'Organization', name: 'innovation.today', legalName: 'Vencly GmbH', url: 'https://www.innovation.today' },
+  url: 'https://www.innovation.today/blog/venture-clienting-regulierte-branchen',
   datePublished: '2025-04-05',
   dateModified: '2026-05-16',
   inLanguage: 'de',
@@ -56,9 +56,9 @@ const breadcrumbJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.vencly.com' },
-    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://www.vencly.com/blog' },
-    { '@type': 'ListItem', position: 3, name: 'Venture Clienting in regulierten Branchen', item: 'https://www.vencly.com/blog/venture-clienting-regulierte-branchen' },
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.innovation.today' },
+    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://www.innovation.today/blog' },
+    { '@type': 'ListItem', position: 3, name: 'Venture Clienting in regulierten Branchen', item: 'https://www.innovation.today/blog/venture-clienting-regulierte-branchen' },
   ],
 }
 

@@ -7,8 +7,8 @@ const breadcrumbJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.vencly.com' },
-    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://www.vencly.com/blog' },
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.innovation.today' },
+    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://www.innovation.today/blog' },
   ],
 }
 

@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description:
     'innovation.today überträgt Startup-Logik auf Konzerne und den Mittelstand: neue Geschäftsfelder entwickeln, validieren und launchen – mit Methode und Tempo.',
   alternates: {
-    canonical: 'https://www.vencly.com',
+    canonical: 'https://www.innovation.today',
   },
 }
 

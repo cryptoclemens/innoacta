@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: 'KI-Beratung im Mittelstand: Geschäftsfeldentwicklung & -validierung mit KI',
   description:
     'Wie mittelständische Unternehmen KI konkret für Geschäftsfeldentwicklung und Geschäftsfeldvalidierung einsetzen – mit Tools, Prozess, DSGVO-Hinweisen und Praxisbeispiel.',
-  alternates: { canonical: 'https://www.vencly.com/blog/ki-beratung-mittelstand' },
+  alternates: { canonical: 'https://www.innovation.today/blog/ki-beratung-mittelstand' },
   openGraph: {
     title: 'KI-Beratung im Mittelstand: Geschäftsfeldentwicklung & -validierung mit KI',
     description:
@@ -21,9 +21,9 @@ const articleJsonLd = {
   headline: 'KI-Beratung im Mittelstand: Geschäftsfeldentwicklung und -validierung mit KI',
   description:
     'Wie mittelständische Unternehmen KI konkret für Geschäftsfeldentwicklung, Marktvalidierung und Geschäftsfeldvalidierung einsetzen – mit Tools, DSGVO und Praxisbeispiel.',
-  author: { '@type': 'Person', name: 'Clemens Pompeÿ', url: 'https://www.vencly.com/ueber-uns' },
-  publisher: { '@type': 'Organization', name: 'innovation.today', legalName: 'Vencly GmbH', url: 'https://www.vencly.com' },
-  url: 'https://www.vencly.com/blog/ki-beratung-mittelstand',
+  author: { '@type': 'Person', name: 'Clemens Pompeÿ', url: 'https://www.innovation.today/ueber-uns' },
+  publisher: { '@type': 'Organization', name: 'innovation.today', legalName: 'Vencly GmbH', url: 'https://www.innovation.today' },
+  url: 'https://www.innovation.today/blog/ki-beratung-mittelstand',
   datePublished: '2025-05-01',
   dateModified: '2026-05-16',
   inLanguage: 'de',
@@ -79,9 +79,9 @@ const breadcrumbJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.vencly.com' },
-    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://www.vencly.com/blog' },
-    { '@type': 'ListItem', position: 3, name: 'KI-Beratung im Mittelstand', item: 'https://www.vencly.com/blog/ki-beratung-mittelstand' },
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.innovation.today' },
+    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://www.innovation.today/blog' },
+    { '@type': 'ListItem', position: 3, name: 'KI-Beratung im Mittelstand', item: 'https://www.innovation.today/blog/ki-beratung-mittelstand' },
   ],
 }
 

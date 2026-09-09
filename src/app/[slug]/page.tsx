@@ -39,7 +39,7 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   return {
     title: `${name} – ${category}`,
     description,
-    alternates: { canonical: `https://www.vencly.com/${p.slug}` },
+    alternates: { canonical: `https://www.innovation.today/${p.slug}` },
     openGraph: { title: `${name} | innovation.today`, description },
   }
 }
@@ -56,15 +56,15 @@ export default function ProjectDetailPage({ params }: { params: { slug: string }
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         '@context': 'https://schema.org', '@type': 'SoftwareApplication',
         name: p.name.de, applicationCategory: 'BusinessApplication', operatingSystem: 'Web',
-        url: `https://www.vencly.com/${p.slug}`, description,
-        author: { '@type': 'Organization', name: 'innovation.today', legalName: 'Vencly GmbH', url: 'https://www.vencly.com' },
+        url: `https://www.innovation.today/${p.slug}`, description,
+        author: { '@type': 'Organization', name: 'innovation.today', legalName: 'Vencly GmbH', url: 'https://www.innovation.today' },
       }) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         '@context': 'https://schema.org', '@type': 'BreadcrumbList',
         itemListElement: [
-          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.vencly.com' },
-          { '@type': 'ListItem', position: 2, name: 'Projekte', item: 'https://www.vencly.com/projects' },
-          { '@type': 'ListItem', position: 3, name: p.name.de, item: `https://www.vencly.com/${p.slug}` },
+          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.innovation.today' },
+          { '@type': 'ListItem', position: 2, name: 'Projekte', item: 'https://www.innovation.today/projects' },
+          { '@type': 'ListItem', position: 3, name: p.name.de, item: `https://www.innovation.today/${p.slug}` },
         ],
       }) }} />
       <div className="min-h-screen bg-brand-sky dark:bg-brand-night pt-24 pb-20">
