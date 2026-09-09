@@ -41,6 +41,14 @@ Angebot der Vencly GmbH."
 - Einmaliges Hinweis-Modal und die Seite `/rebranding` mit FAQ. Beides ist
   befristet bis **2026-12-09** und rückstandslos entfernbar
 
+### Domain-Umstellung (09.09.2026, live)
+- **`www.innovation.today` ist die ausliefernde Domain.** `vencly.com`,
+  `www.vencly.com` und `innovation.today` leiten pfaderhaltend per 301 dorthin
+- Umgesetzt über Cloudflare Page Rules mit exakten Mustern — die 18 Subdomains
+  unter vencly.com (augur, geotherm, autotodo, gitlab, traefik …) laufen
+  unverändert weiter
+- Details in `docs/domains.md`
+
 ### Nebenbefund behoben
 - `src/app/robots.ts` überschrieb `public/robots.txt`, wodurch die
   AI-Crawler-Freigaben (GPTBot, ClaudeBot, PerplexityBot u. a.) **nie**
