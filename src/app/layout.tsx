@@ -5,6 +5,9 @@ import Navbar from '@/components/layout/Navbar'
 import Footer from '@/components/layout/Footer'
 import Providers from '@/components/layout/Providers'
 import CookieBanner from '@/components/layout/CookieBanner'
+// TEMPORÄR bis 2026-12-09: Übergangs-Hinweis zur Markenumbenennung.
+// Zum Entfernen genügt diese Zeile und die Verwendung unten — siehe Kopf der Datei.
+import RebrandNotice from '@/components/layout/RebrandNotice'
 import { BRAND_NAME, LEGAL_ENTITY, SITE_URL, TAGLINE } from '@/lib/brand'
 
 // Nunito wird per @font-face in globals.css eingebunden und unten im <head>
@@ -147,6 +150,7 @@ gtag('js', new Date());
           <Navbar />
           <main>{children}</main>
           <Footer />
+          <RebrandNotice />
           <CookieBanner />
           <span className="fixed bottom-3 right-3 z-50 font-mono text-[10px] text-gray-400 dark:text-gray-700 select-none pointer-events-none">
             {process.env.NEXT_PUBLIC_BUILD_VERSION?.slice(0, 7) ?? 'dev'}
