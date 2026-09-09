@@ -8,7 +8,7 @@ import CookieBanner from '@/components/layout/CookieBanner'
 // TEMPORÄR bis 2026-12-09: Übergangs-Hinweis zur Markenumbenennung.
 // Zum Entfernen genügt diese Zeile und die Verwendung unten — siehe Kopf der Datei.
 import RebrandNotice from '@/components/layout/RebrandNotice'
-import { BRAND_NAME, LEGAL_ENTITY, SITE_URL, TAGLINE } from '@/lib/brand'
+import { BRAND_NAME, LEGAL_ENTITY, SITE_URL } from '@/lib/brand'
 
 // Nunito wird per @font-face in globals.css eingebunden und unten im <head>
 // vorgeladen. Bewusst ohne next/font, damit unicode-range steuerbar bleibt.
@@ -34,7 +34,6 @@ export const metadata: Metadata = {
   // authors nennt bewusst die Rechtstraegerin, creator die Marke.
   authors: [{ name: LEGAL_ENTITY }],
   creator: BRAND_NAME,
-  // TODO(DNS-Switch): SITE_URL in @/lib/brand auf innovation.today umstellen.
   metadataBase: new URL(SITE_URL),
   alternates: {
     canonical: SITE_URL,

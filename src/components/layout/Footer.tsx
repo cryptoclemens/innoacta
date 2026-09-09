@@ -44,7 +44,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-gray-500 hover:text-brand-teal dark:text-brand-mint text-sm transition-colors"
+                    className="text-gray-500 hover:text-brand-teal dark:hover:text-brand-mint text-sm transition-colors"
                   >
                     {link.label}
                   </Link>
@@ -60,17 +60,17 @@ export default function Footer() {
             </h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/impressum" className="text-gray-500 hover:text-brand-teal dark:text-brand-mint text-sm transition-colors">
+                <Link href="/impressum" className="text-gray-500 hover:text-brand-teal dark:hover:text-brand-mint text-sm transition-colors">
                   {t.footer.impressum}
                 </Link>
               </li>
               <li>
-                <Link href="/datenschutz" className="text-gray-500 hover:text-brand-teal dark:text-brand-mint text-sm transition-colors">
+                <Link href="/datenschutz" className="text-gray-500 hover:text-brand-teal dark:hover:text-brand-mint text-sm transition-colors">
                   {t.footer.datenschutz}
                 </Link>
               </li>
               <li>
-                <a href={`mailto:${PRIVACY_EMAIL}`} className="text-gray-500 hover:text-brand-teal dark:text-brand-mint text-sm transition-colors">
+                <a href={`mailto:${PRIVACY_EMAIL}`} className="text-gray-500 hover:text-brand-teal dark:hover:text-brand-mint text-sm transition-colors">
                   {PRIVACY_EMAIL}
                 </a>
               </li>
@@ -84,7 +84,7 @@ export default function Footer() {
           </p>
           <Link
             href="/ueber-uns"
-            className="text-gray-400 hover:text-brand-teal dark:text-brand-mint text-xs transition-colors"
+            className="text-gray-400 hover:text-brand-teal dark:hover:text-brand-mint text-xs transition-colors"
           >
             Über Clemens Pompeÿ →
           </Link>

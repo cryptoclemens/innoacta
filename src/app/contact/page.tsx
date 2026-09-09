@@ -1,7 +1,7 @@
 'use client'
 import Link from 'next/link'
 import { Mail, MapPin, ExternalLink, FileText, Shield } from 'lucide-react'
-import { SUPPORT_EMAIL } from '@/lib/brand'
+import { BOOKING_URL, SUPPORT_EMAIL } from '@/lib/brand'
 import { usePageTranslation } from '@/lib/hooks/usePageTranslation'
 
 export default function ContactPage() {
@@ -37,7 +37,7 @@ export default function ContactPage() {
             </p>
             <a
               href={`mailto:${SUPPORT_EMAIL}`}
-              className="text-brand-teal dark:text-brand-mint hover:text-brand-mint transition-colors"
+              className="text-brand-teal dark:text-brand-mint hover:text-brand-teal-dark transition-colors"
             >
               {SUPPORT_EMAIL}
             </a>
@@ -64,7 +64,7 @@ export default function ContactPage() {
             {ct.demoP}
           </p>
           <a
-            href="https://outlook.office.com/bookwithme/user/9c11749d74b349809103953c39ba26d4@vencly.com?anonymous&ep=pcard"
+            href={BOOKING_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-brand-navy hover:bg-brand-night dark:bg-brand-mint dark:hover:bg-white text-white dark:text-brand-navy font-semibold px-8 py-3 rounded transition-colors"

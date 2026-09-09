@@ -36,7 +36,9 @@ final abgenommen ist.
 - `output: 'export'` in `next.config.js` — **kein** Node.js-Server, kein `getServerSideProps`
 - `images: { unoptimized: true }` — kein `next/image` Optimization (Cloudflare Pages kompatibel)
 - `trailingSlash: true` — für korrekte Cloudflare Pages Routing
-- Keine Google Fonts oder externen Font-Loads (System-Font-Stack)
+- Keine Google Fonts oder externen Font-Loads. **Nunito** ist die einzige
+  Schrift, self-gehostet per `@font-face` in `globals.css` (WOFF2 unter
+  `public/fonts/`), Preload im `<head>`. Keine zweite Schrift ergänzen.
 - Keine Authentifizierung, kein CMS, kein Backend
 
 ## Entwicklungsregeln
@@ -56,13 +58,40 @@ npm run build   # erzeugt /out Ordner
 npm run dev     # lokale Entwicklung auf :3000
 ```
 
-## Farben (Tailwind custom)
+## Farben (Markenpalette innovation.today)
 
-- Background: `#0d0d14` (vencly-bg)
-- Card: `#161622` (vencly-card)
-- Accent Teal: `#14b8a6` (vencly-teal)
-- Text Primary: white
-- Text Secondary: gray-400
+Verbindliche Werte aus `public/brand/README.md`. Als Tailwind-Token `brand-*`
+und als CSS-Variablen in `globals.css`. **Keine weiteren Farben ergänzen.**
+
+| Token | Wert | Einsatz |
+|---|---|---|
+| `brand-navy` | `#14304A` | Primärtext, Headlines, Buttons |
+| `brand-teal` | `#0F766E` | Akzent, Links, CTAs, „today" |
+| `brand-mint` | `#5EEAD4` | Akzent auf dunklem Grund |
+| `brand-night` | `#0F2540` | dunkle Flächen, Footer, Dark-Mode-Grund |
+| `brand-sky` | `#EAF4FC` | helle Akzentflächen, Seitengrund |
+| `brand-ink` | `#1E293B` | Fließtext |
+
+Abgeleitet für Flächen und Rahmen: `brand-teal-dark`, `brand-card`, `brand-border`.
+
+**Dark Mode:** Teal auf Nachtblau erreicht nur 2,8:1 und Navy sogar 1,1:1 —
+auf dunklem Grund gehört deshalb immer `dark:*-brand-mint` bzw. eine
+Mint-Fläche mit Navy-Text. Kontraste vor dem Commit nachrechnen (WCAG AA, 4,5:1).
+
+## Typografie
+
+- Headlines h1–h3: 800, h4–h6 und Buttons/Navigation: 700, Fließtext: 400
+- Laufweite der Headlines −0.015em, Zeilenhöhen 1.15 (Headlines) / 1.6 (Text)
+- Wortmarke im Text: `innovation.` in Navy, `today` in Teal, Gewicht 700
+
+## Marke und Domains
+
+- Markenname **immer klein mit Punkt**: `innovation.today` — nie „Innovation Today"
+- Rechtsträgerin bleibt die **Vencly GmbH**; Impressum und Datenschutz nicht
+  inhaltlich ändern
+- Ausliefernde Domain ist `www.innovation.today`, siehe `docs/domains.md`
+- Nicht umbenennen: Cloudflare-Projekt `vencly`, LocalStorage-Schlüssel
+  `vencly-locale`, die Outlook-Booking-ID und `vencly.app` als Login-Ziel
 
 ## Bekannte Einschränkungen
 

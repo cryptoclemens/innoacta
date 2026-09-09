@@ -1,7 +1,6 @@
 import type { MetadataRoute } from 'next'
 import { SITE_URL } from '@/lib/brand'
 
-// TODO(DNS-Switch): folgt automatisch SITE_URL aus @/lib/brand.
 const BASE = SITE_URL
 
 function page(

@@ -26,7 +26,6 @@ export default function robots(): MetadataRoute.Robots {
       // KI- und Suchmaschinen-Crawler ausdrücklich zugelassen (AEO).
       ...aiCrawlers.map((userAgent) => ({ userAgent, allow: '/' })),
     ],
-    // TODO(DNS-Switch): folgt automatisch SITE_URL aus @/lib/brand.
     sitemap: `${SITE_URL}/sitemap.xml`,
   }
 }

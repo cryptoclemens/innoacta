@@ -15,11 +15,12 @@
   Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=()
 
   # Content Security Policy
-  # - script-src: self + GTM (GA4) + Cal.com embed
+  # - script-src: self + GTM (GA4)
   # - style-src: unsafe-inline required for Tailwind/Next.js
-  # - frame-src: Cal.com booking widget only
-  # - connect-src: GA4 endpoints + Cal.com API
+  # - connect-src: GA4 endpoints
   # - img-src: self + data URIs (inline SVGs) + GA pixel
-  # - font-src: self (fonts are bundled at build time via next/font)
+  # - font-src: self (Nunito via @font-face aus /fonts, self-hosted)
   # - object-src / base-uri: locked down
-  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://cal.eu; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://www.google-analytics.com; font-src 'self'; frame-src https://cal.eu; connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://cal.eu; object-src 'none'; base-uri 'self'; form-action 'self'
+  # Cal.com wurde 09/2026 entfernt — die Erstgespraechs-Buttons fuehren auf
+  # /contact/. Deshalb kein cal.eu mehr in script-/frame-/connect-src.
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://www.google-analytics.com; font-src 'self'; connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://region1.google-analytics.com; object-src 'none'; base-uri 'self'; form-action 'self'

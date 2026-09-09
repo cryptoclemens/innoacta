@@ -1,9 +1,12 @@
 /**
  * Zentrale Marken- und Rechtsträger-Konfiguration.
  *
- * Einzige Quelle für Markenname, Rechtsträger, Domain und Kontaktadressen.
- * Komponenten, Metadaten und JSON-LD lesen ausschließlich von hier — so ist der
- * spätere Domain-Wechsel ein Einzeiler statt einer Suchen-und-Ersetzen-Aktion.
+ * Quelle für Markenname, Rechtsträgerin, Domain und Kontaktadressen.
+ *
+ * Hinweis: Layout, Sitemap, robots und die Kontaktseite lesen von hier. Die
+ * einzelnen Seiten unter src/app tragen ihre canonical- und JSON-LD-URLs
+ * dagegen noch hart kodiert — ein erneuter Domainwechsel erfordert dort ein
+ * Suchen-und-Ersetzen. Neue Stellen bitte von hier lesen.
  *
  * Rebranding-Kontext: Der Markenauftritt heißt seit 09/2026 innovation.today.
  * Rechtsträgerin bleibt unverändert die Vencly GmbH.
@@ -33,8 +36,6 @@ export const TAGLINE = 'Innovatives Gründer-Denken für Unternehmen mit Traditi
  */
 export const SITE_URL = 'https://www.innovation.today'
 
-/** Vorherige Domain. Leitet per 301 auf SITE_URL, bleibt für Bestandslinks aktiv. */
-export const LEGACY_URL = 'https://www.vencly.com'
 
 /** Allgemeine Kontaktadresse. Seit 09.09.2026 unter innovation.today. */
 export const SUPPORT_EMAIL = 'hello@innovation.today'
@@ -56,13 +57,3 @@ export const BOOKING_URL =
 /** Ziel der Erstgesprächs-Buttons (siehe CalProvider). */
 export const CONTACT_URL = `${SITE_URL}/contact/`
 
-/** Anschrift der Rechtsträgerin — juristisch abgestimmt, nicht ändern. */
-export const LEGAL_ADDRESS = {
-  street: 'Leopoldstraße 31',
-  postalCode: '80802',
-  city: 'München',
-  country: 'DE',
-  register: 'HRB 290524',
-  registerCourt: 'Amtsgericht München',
-  managingDirector: 'Clemens Eugen Theodor Pompeÿ',
-} as const

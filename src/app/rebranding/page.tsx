@@ -1,11 +1,12 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import { SITE_URL } from '@/lib/brand'
 
 export const metadata: Metadata = {
   title: 'Aus vencly wird innovation.today',
   description:
     'Die Marke vencly heißt jetzt innovation.today. Neuer Name, gleiches Team, gleiche Leistung – Rechtsträgerin bleibt die Vencly GmbH.',
-  alternates: { canonical: 'https://innovation.today/rebranding' },
+  alternates: { canonical: `${SITE_URL}/rebranding/` },
   robots: { index: true, follow: true },
 }
 

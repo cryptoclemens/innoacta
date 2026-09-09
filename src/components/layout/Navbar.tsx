@@ -352,7 +352,7 @@ export default function Navbar() {
             <LanguageSwitcher />
             <button
               onClick={() => setCheckOpen(true)}
-              className="text-gray-500 dark:text-gray-400 hover:text-brand-teal dark:hover:text-brand-teal text-sm font-medium transition-colors px-3 py-1.5"
+              className="text-gray-500 dark:text-gray-400 hover:text-brand-teal dark:hover:text-brand-mint text-sm font-medium transition-colors px-3 py-1.5"
             >
               {t.nav.login}
             </button>

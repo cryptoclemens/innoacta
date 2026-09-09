@@ -169,13 +169,51 @@ export default function RebrandNotice() {
   useEffect(() => {
     setMounted(true)
     if (!REBRAND_NOTICE_ENABLED) return
-    if (isExcludedPath) return
+    // Beim Navigieren auf eine ausgeschlossene Seite ein offenes Modal schliessen.
+    if (isExcludedPath) {
+      setOpen(false)
+      return
+    }
     if (!isWithinCampaignWindow()) return
     if (wasRecentlyDismissed()) return
     if (cameFromNewDomain()) return
 
-    const timer = window.setTimeout(() => setOpen(true), SHOW_DELAY_MS)
-    return () => window.clearTimeout(timer)
+    // Der Cookie-Banner hat Vorrang: Er erfüllt eine Rechtspflicht und liegt auf
+    // Mobilgeräten als Bottom-Sheet genau über den Schaltflächen dieses Modals.
+    // Deshalb warten, bis eine Entscheidung getroffen wurde — danach in Ruhe zeigen.
+    let timer = 0
+    let poll = 0
+
+    const consentGiven = () => {
+      try {
+        return localStorage.getItem('cookie-consent') !== null
+      } catch {
+        // Kein Zugriff (Private Mode): Banner erscheint dann ebenfalls nicht
+        // zuverlässig — Modal nicht dauerhaft blockieren.
+        return true
+      }
+    }
+
+    const show = () => {
+      timer = window.setTimeout(() => setOpen(true), SHOW_DELAY_MS)
+    }
+
+    if (consentGiven()) {
+      show()
+    } else {
+      poll = window.setInterval(() => {
+        if (consentGiven()) {
+          window.clearInterval(poll)
+          poll = 0
+          show()
+        }
+      }, 400)
+    }
+
+    return () => {
+      if (timer) window.clearTimeout(timer)
+      if (poll) window.clearInterval(poll)
+    }
   }, [isExcludedPath])
 
   const close = useCallback(() => {
@@ -210,7 +248,10 @@ export default function RebrandNotice() {
       body.style.right = prev.right
       body.style.width = prev.width
       body.style.overflow = prev.overflow
-      window.scrollTo(0, scrollYRef.current)
+      // globals.css setzt `html { scroll-behavior: smooth }`. Ohne 'instant'
+      // würde die Wiederherstellung sichtbar von oben nach unten scrollen,
+      // statt die Position einfach zu halten.
+      window.scrollTo({ top: scrollYRef.current, left: 0, behavior: 'instant' })
     }
   }, [open])
 
@@ -254,10 +295,15 @@ export default function RebrandNotice() {
       const last = items[items.length - 1]
       const active = document.activeElement
 
-      if (event.shiftKey && (active === first || !card.contains(active))) {
+      // Der Fokus kann auch ausserhalb der Karte liegen — etwa wenn der
+      // Cookie-Banner geschlossen wurde und der Fokus auf <body> zurückfiel.
+      // Dann in beide Richtungen zurück in die Karte holen.
+      const outside = !card.contains(active)
+
+      if (event.shiftKey && (active === first || outside)) {
         event.preventDefault()
         last.focus()
-      } else if (!event.shiftKey && active === last) {
+      } else if (!event.shiftKey && (active === last || outside)) {
         event.preventDefault()
         first.focus()
       }
@@ -317,6 +363,9 @@ export default function RebrandNotice() {
           role="dialog"
           aria-modal="true"
           aria-labelledby="it-rebrand-headline"
+          aria-describedby="it-rebrand-body"
+          /* Karte bleibt in beiden Themes weiss — deshalb tragen ihre Kinder
+             bewusst KEINE dark:-Varianten. */
           className={`it-rebrand-card it-rebrand-anim relative w-full max-w-[520px] rounded-t-2xl bg-white px-6 pt-6 font-sans shadow-[0_12px_40px_rgba(15,37,64,0.18)] sm:rounded-2xl sm:px-10 sm:pt-10 ${
             entered ? 'translate-y-0 opacity-100' : 'translate-y-2 opacity-0'
           }`}
@@ -346,12 +395,12 @@ export default function RebrandNotice() {
             <img
               src="/logovencly.svg"
               alt="vencly"
-              className="h-6 w-auto opacity-60 grayscale dark:invert"
+              className="h-6 w-auto opacity-60 grayscale"
               width={945}
               height={317}
             />
             <svg
-              className="h-4 w-4 shrink-0 text-brand-teal dark:text-brand-mint/70 sm:h-3.5 sm:w-3.5"
+              className="h-4 w-4 shrink-0 text-brand-teal sm:h-3.5 sm:w-3.5"
               viewBox="0 0 16 16"
               fill="none"
               stroke="currentColor"
@@ -386,7 +435,9 @@ export default function RebrandNotice() {
             {copy.headline}
           </h2>
 
-          <p className="mt-3 text-base font-normal leading-[1.6] text-brand-ink">{copy.body}</p>
+          <p id="it-rebrand-body" className="mt-3 text-base font-normal leading-[1.6] text-brand-ink">
+            {copy.body}
+          </p>
 
           <div className="mt-7 flex flex-col items-center gap-3 sm:items-start">
             <button
@@ -400,7 +451,7 @@ export default function RebrandNotice() {
             <Link
               href="/rebranding/"
               onClick={close}
-              className="rounded text-sm font-bold text-brand-teal dark:text-brand-mint underline-offset-4 hover:underline focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-teal"
+              className="rounded text-sm font-bold text-brand-teal underline-offset-4 hover:underline focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-teal"
             >
               {copy.link}
             </Link>
