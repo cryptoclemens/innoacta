@@ -33,7 +33,7 @@ const faqJsonLd = {
       name: 'Wie unterscheidet sich Geschäftsfeldentwicklung von klassischer Strategieberatung?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Klassische Strategieberatung endet oft mit einem Konzeptpapier. Geschäftsfeldentwicklung nach Vencly-Methodik endet mit einem validierten Marktmodell – getestet mit echten Kunden und echten Daten. Wir übernehmen operative Verantwortung statt nur Empfehlungen zu liefern.',
+        text: 'Klassische Strategieberatung endet oft mit einem Konzeptpapier. Geschäftsfeldentwicklung nach innovation.today-Methodik endet mit einem validierten Marktmodell – getestet mit echten Kunden und echten Daten. Wir übernehmen operative Verantwortung statt nur Empfehlungen zu liefern.',
       },
     },
     {

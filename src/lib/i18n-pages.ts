@@ -30,7 +30,7 @@ const dePage = {
         desc: 'Wir denken wie MyHammer, nicht wie ein klassisches Beratungshaus. Sie brauchen den richtigen Anbieter – wir bringen ihn zu Ihnen.',
       },
     ],
-    processH2: 'Der Vencly-Prozess: von der Herausforderung zur Entscheidung.',
+    processH2: 'Der innovation.today-Prozess: von der Herausforderung zur Entscheidung.',
     steps: [
       {
         n: '01',
@@ -238,7 +238,7 @@ const dePage = {
         desc: 'Mehrjährige Erfahrung als Gründer und in operativer Verantwortung – die Basis für den unternehmerischen Blick, den innovation.today in jedes Projekt einbringt.',
       },
     ],
-    approachH2: 'Der Vencly-Ansatz',
+    approachH2: 'Der innovation.today-Ansatz',
     approachP1:
       'innovation.today ist kein klassisches Beratungshaus. Wir übernehmen operative Verantwortung, arbeiten mit unternehmerischer Haltung und liefern messbare Ergebnisse — keine weiteren Konzeptpapiere.',
     approachP2:

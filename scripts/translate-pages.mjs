@@ -200,7 +200,8 @@ Rules:
 - Preserve the EXACT TypeScript/JS object literal syntax (curly braces, quotes, commas, arrays, nested objects)
 - Keep all property KEYS unchanged — do NOT translate keys
 - Translate only string VALUES
-- Do NOT translate: company names (Vencly, Clemens Pompeÿ, dm), email addresses, URLs, legal references, proper nouns
+- Do NOT translate: brand and company names (innovation.today, Vencly GmbH, Clemens Pompeÿ, dm), email addresses, URLs, legal references, proper nouns
+- The brand name is always written lowercase with a dot: "innovation.today" — never "Innovation Today", never capitalised, not even at the start of a sentence
 - Keep numeric values, boolean values, and non-string values unchanged
 - Preserve \\n escape sequences inside strings exactly as they appear
 - Use single quotes where the original uses single quotes, double quotes where it uses double quotes

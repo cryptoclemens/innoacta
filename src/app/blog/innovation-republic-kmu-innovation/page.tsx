@@ -181,7 +181,7 @@ export default function ArticlePage() {
               Das ist eine bewusste Reduktion. Plattformen, die alles gleichzeitig sein wollen – Datenbank, Pitch-Event, Mentoring, Investment –, scheitern an dieser Breite. Innovation Republic konzentriert sich auf den einen Schritt, der im Mittelstand am häufigsten fehlt: vom Problem zum Pilotvertrag in einem überschaubaren Zeitraum.
             </p>
 
-            <h2>Wie passt Innovation Republic zum Vencly-Ansatz?</h2>
+            <h2>Wie passt Innovation Republic zum innovation.today-Ansatz?</h2>
             <p>
               innovation.today hat in über 40 Projekten Venture-Clienting-Prozesse für Unternehmen begleitet – überwiegend für größere Mittelständler und Konzerne in Energie, Infrastruktur und im öffentlichen Sektor. Innovation Republic überträgt diese Methodik in eine plattformbasierte, skalierbarere Form, die auch für kleinere KMU zugänglich ist.
             </p>
