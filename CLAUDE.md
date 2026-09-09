@@ -2,7 +2,34 @@
 
 ## Projektüberblick
 
-Next.js 14 Static-Export-App für die Vencly-Marketing-Website. Deployment auf Cloudflare Pages.
+Next.js 14 Static-Export-App für die Marketing-Website. Deployment auf Cloudflare Pages.
+
+**Rebranding läuft:** Vencly → **innovation.today**. Die Gesellschaft heißt weiterhin
+**Vencly GmbH** (Impressum, Datenschutz, Schema.org `legalName` bleiben unverändert) —
+umbenannt wird ausschließlich die Marke bzw. Website. Nach Abschluss leitet `vencly.com`
+dauerhaft auf `innovation.today` weiter; `innovation.today` wird die zentrale Homepage.
+
+## ⚠️ Backup: Wiederherstellung des Vencly-Standes
+
+Der vollständige Stand **vor** dem Rebranding ist gesichert und jederzeit
+wiederherstellbar (angelegt 2026-09-09, Commit `a59ca06`):
+
+| Ebene | Referenz |
+|---|---|
+| Git-Tag | `pre-rebrand-innovation-today` (auf GitHub) |
+| Git-Branch | `backup/pre-rebrand-innovation-today` (auf GitHub) |
+| Server-Archiv | `/root/backups/innoacta/innoacta-pre-rebrand-20260909-2024.tar.gz` |
+
+```bash
+# Kompletten Vencly-Stand zurückholen
+git reset --hard pre-rebrand-innovation-today
+
+# Nur eine einzelne Datei zurückholen
+git checkout pre-rebrand-innovation-today -- pfad/zur/datei.tsx
+```
+
+Tag und Branch **nicht löschen oder überschreiben**, solange das Rebranding nicht
+final abgenommen ist.
 
 ## Wichtige Constraints
 

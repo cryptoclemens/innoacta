@@ -1,6 +1,17 @@
-# Vencly Website
+# Website (Vencly → innovation.today)
 
-Statische Next.js 14 Marketing-Website für Vencly, deployed auf Cloudflare Pages.
+Statische Next.js 14 Marketing-Website, deployed auf Cloudflare Pages.
+Betreiberin ist die **Vencly GmbH**; die Marke wird derzeit auf **innovation.today** umgestellt.
+
+## Rückweg zum Vencly-Stand
+
+Der Stand vor dem Rebranding ist als Tag **`pre-rebrand-innovation-today`** und Branch
+`backup/pre-rebrand-innovation-today` gesichert, zusätzlich als Archiv unter
+`/root/backups/innoacta/` auf dem Server:
+
+```bash
+git reset --hard pre-rebrand-innovation-today
+```
 
 ## Lokales Setup
 
