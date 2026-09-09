@@ -28,3 +28,6 @@ next-env.d.ts
 *.png
 *.jpeg
 .claude/worktrees/
+
+# Brand-Assets sind vom globalen *.png-Ausschluss ausgenommen
+!public/brand/png/*.png
