@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { LEGAL_NOTICE } from '@/lib/brand'
+import { LEGAL_NOTICE, SUPPORT_EMAIL } from '@/lib/brand'
 
 export const metadata: Metadata = {
   title: 'Impressum',
@@ -38,8 +38,8 @@ export default function ImpressumPage() {
             <h2 className="text-base font-semibold text-gray-900 dark:text-white mb-2">Kontakt</h2>
             <p>
               E-Mail:{' '}
-              <a href="mailto:hello@vencly.com" className="text-brand-teal dark:text-brand-mint hover:underline">
-                hello@vencly.com
+              <a href={`mailto:${SUPPORT_EMAIL}`} className="text-brand-teal dark:text-brand-mint hover:underline">
+                {SUPPORT_EMAIL}
               </a>
             </p>
           </section>

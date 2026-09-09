@@ -139,8 +139,8 @@ export default function DatenschutzPage() {
               <strong className="text-gray-900 dark:text-white">Rechtsgrundlage:</strong> Art. 6 Abs. 1
               lit. a DSGVO (Einwilligung). Ihre Einwilligung können Sie jederzeit mit Wirkung für die
               Zukunft widerrufen, indem Sie den lokalen Speicher Ihres Browsers löschen oder uns unter{' '}
-              <a href="mailto:datenschutz@vencly.com" className="text-brand-teal dark:text-brand-mint hover:underline">
-                datenschutz@vencly.com
+              <a href={`mailto:${PRIVACY_EMAIL}`} className="text-brand-teal dark:text-brand-mint hover:underline">
+                {PRIVACY_EMAIL}
               </a>{' '}
               kontaktieren.
             </p>
@@ -191,8 +191,8 @@ export default function DatenschutzPage() {
             </ul>
             <p className="mt-3">
               Zur Ausübung Ihrer Rechte wenden Sie sich bitte an:{' '}
-              <a href="mailto:datenschutz@vencly.com" className="text-brand-teal dark:text-brand-mint hover:underline">
-                datenschutz@vencly.com
+              <a href={`mailto:${PRIVACY_EMAIL}`} className="text-brand-teal dark:text-brand-mint hover:underline">
+                {PRIVACY_EMAIL}
               </a>
             </p>
           </section>

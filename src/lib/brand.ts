@@ -36,11 +36,11 @@ export const SITE_URL = 'https://www.innovation.today'
 /** Vorherige Domain. Leitet per 301 auf SITE_URL, bleibt für Bestandslinks aktiv. */
 export const LEGACY_URL = 'https://www.vencly.com'
 
-/** TODO(DNS-Switch): auf hello@innovation.today umstellen, sobald Postfach steht. */
-export const SUPPORT_EMAIL = 'hello@vencly.com'
+/** Allgemeine Kontaktadresse. Seit 09.09.2026 unter innovation.today. */
+export const SUPPORT_EMAIL = 'hello@innovation.today'
 
-/** TODO(DNS-Switch): auf datenschutz@innovation.today umstellen, sobald Postfach steht. */
-export const PRIVACY_EMAIL = 'datenschutz@vencly.com'
+/** Datenschutzanfragen. Erscheint in der Datenschutzerklärung — Änderungen dort abstimmen. */
+export const PRIVACY_EMAIL = 'datenschutz@innovation.today'
 
 /** Login-Ziel der Anwendung. Bleibt bewusst unter vencly.app — kein DNS-Switch. */
 export const LOGIN_URL = 'https://vencly.app/'

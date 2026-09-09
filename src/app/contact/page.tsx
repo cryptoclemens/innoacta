@@ -1,6 +1,7 @@
 'use client'
 import Link from 'next/link'
 import { Mail, MapPin, ExternalLink, FileText, Shield } from 'lucide-react'
+import { SUPPORT_EMAIL } from '@/lib/brand'
 import { usePageTranslation } from '@/lib/hooks/usePageTranslation'
 
 export default function ContactPage() {
@@ -35,10 +36,10 @@ export default function ContactPage() {
               {ct.emailDesc}
             </p>
             <a
-              href="mailto:hello@vencly.com"
+              href={`mailto:${SUPPORT_EMAIL}`}
               className="text-brand-teal dark:text-brand-mint hover:text-brand-mint transition-colors"
             >
-              hello@vencly.com
+              {SUPPORT_EMAIL}
             </a>
           </div>
 

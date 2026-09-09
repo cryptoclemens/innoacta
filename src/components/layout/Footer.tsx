@@ -2,6 +2,7 @@
 
 import Link from 'next/link'
 import Image from 'next/image'
+import { PRIVACY_EMAIL } from '@/lib/brand'
 import { useLanguage } from '@/contexts/LanguageContext'
 
 export default function Footer() {
@@ -69,8 +70,8 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <a href="mailto:datenschutz@vencly.com" className="text-gray-500 hover:text-brand-teal dark:text-brand-mint text-sm transition-colors">
-                  datenschutz@vencly.com
+                <a href={`mailto:${PRIVACY_EMAIL}`} className="text-gray-500 hover:text-brand-teal dark:text-brand-mint text-sm transition-colors">
+                  {PRIVACY_EMAIL}
                 </a>
               </li>
             </ul>
