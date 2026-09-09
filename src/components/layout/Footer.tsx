@@ -16,7 +16,7 @@ export default function Footer() {
             <div className="mb-4">
               <Image
                 src="/logovencly.svg"
-                alt="Vencly"
+                alt="innovation.today"
                 width={120}
                 height={36}
                 className="h-9 w-auto dark:invert"

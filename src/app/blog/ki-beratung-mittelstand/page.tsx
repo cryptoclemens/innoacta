@@ -22,7 +22,7 @@ const articleJsonLd = {
   description:
     'Wie mittelständische Unternehmen KI konkret für Geschäftsfeldentwicklung, Marktvalidierung und Geschäftsfeldvalidierung einsetzen – mit Tools, DSGVO und Praxisbeispiel.',
   author: { '@type': 'Person', name: 'Clemens Pompeÿ', url: 'https://vencly.com/ueber-uns' },
-  publisher: { '@type': 'Organization', name: 'Vencly GmbH', url: 'https://vencly.com' },
+  publisher: { '@type': 'Organization', name: 'innovation.today', legalName: 'Vencly GmbH', url: 'https://vencly.com' },
   url: 'https://vencly.com/blog/ki-beratung-mittelstand',
   datePublished: '2025-05-01',
   dateModified: '2026-05-16',
@@ -241,9 +241,9 @@ export default function ArticlePage() {
               <li><strong>Synthese und Entscheidungsvorlage (1 Woche):</strong> Klare Empfehlung: Weitermachen, pivotieren oder stoppen – mit vollständiger Begründung und Risikobewertung. DSGVO-konformes Datenhandling dokumentiert.</li>
             </ol>
 
-            <h2>Vencly: KI-gestützte Geschäftsfeldentwicklung in der Praxis</h2>
+            <h2>innovation.today: KI-gestützte Geschäftsfeldentwicklung in der Praxis</h2>
             <p>
-              Vencly setzt KI-gestützte Methoden in jedem Geschäftsfeldentwicklungsprojekt ein – nicht als Technologie-Showcase, sondern weil es bessere Entscheidungen in kürzerer Zeit ermöglicht. Das beginnt bei der datengestützten Suchfeldanalyse, geht über LLM-gestützte Auswertung von Kundeninterviews bis zur systematischen Wettbewerbsbeobachtung während des Pilotprojekts – alles DSGVO-konform und auf Basis klar definierter Datenverarbeitungsverträge.
+              innovation.today setzt KI-gestützte Methoden in jedem Geschäftsfeldentwicklungsprojekt ein – nicht als Technologie-Showcase, sondern weil es bessere Entscheidungen in kürzerer Zeit ermöglicht. Das beginnt bei der datengestützten Suchfeldanalyse, geht über LLM-gestützte Auswertung von Kundeninterviews bis zur systematischen Wettbewerbsbeobachtung während des Pilotprojekts – alles DSGVO-konform und auf Basis klar definierter Datenverarbeitungsverträge.
             </p>
 
             <h2>Fazit: Weniger Konzept, mehr Entscheidung</h2>

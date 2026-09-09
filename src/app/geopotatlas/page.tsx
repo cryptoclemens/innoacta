@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     'Geopotatlas wertet Geodaten intelligent aus: strategische Standortentscheidungen, Marktanalysen und ERP-Integration für mittelständische Unternehmen.',
   alternates: { canonical: 'https://vencly.com/geopotatlas' },
   openGraph: {
-    title: 'Geopotatlas | Vencly',
+    title: 'Geopotatlas | innovation.today',
     description: 'Intelligente Geodaten-Auswertung für Standortentscheidungen und Marktanalysen. Integration mit bestehenden ERP-Systemen.',
   },
 }
@@ -21,7 +21,7 @@ const jsonLd = {
   applicationCategory: 'BusinessApplication',
   operatingSystem: 'Web',
   description: 'Intelligente Auswertung von Geodaten für strategische Standortentscheidungen und Marktanalysen mit ERP-Integration.',
-  author: { '@type': 'Organization', name: 'Vencly GmbH', url: 'https://vencly.com' },
+  author: { '@type': 'Organization', name: 'innovation.today', legalName: 'Vencly GmbH', url: 'https://vencly.com' },
 }
 
 const features = [

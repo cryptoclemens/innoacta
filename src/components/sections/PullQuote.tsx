@@ -11,7 +11,7 @@ export default function PullQuote() {
         <div className="flex items-center justify-center gap-3">
           <div className="h-px w-8 bg-vencly-teal opacity-50" />
           <p className="text-vencly-teal-light text-sm font-mono tracking-widest uppercase">
-            Clemens Pompeÿ — Vencly
+            Clemens Pompeÿ — innovation.today
           </p>
           <div className="h-px w-8 bg-vencly-teal opacity-50" />
         </div>

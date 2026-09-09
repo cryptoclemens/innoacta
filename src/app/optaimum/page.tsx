@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     'OptAImum ist das kostenlose All-in-One-Tool für effiziente KI-Nutzung: Profile, Skill- & Hook-Markdowns erstellen, LLM-Anbieter wechseln, Prompts generieren und KI-Sandboxen aufsetzen.',
   alternates: { canonical: 'https://vencly.com/optaimum' },
   openGraph: {
-    title: 'OptAImum | Vencly',
+    title: 'OptAImum | innovation.today',
     description: 'Deine KI-Nutzung. Auf das Maximum optimiert. Kostenlos, ohne Installation, funktioniert mit Claude, ChatGPT, Gemini & Co.',
   },
 }
@@ -23,7 +23,7 @@ const jsonLd = {
   url: 'https://vencly.com/optaimum',
   description:
     'Kostenloses Browser-Tool zur Optimierung der KI-Nutzung. Profile-MD, Skill-MD, Hook-MD erstellen, LLM-Anbieter wechseln, Prompts generieren, VM-Sandbox aufsetzen.',
-  author: { '@type': 'Organization', name: 'Vencly GmbH', url: 'https://vencly.com' },
+  author: { '@type': 'Organization', name: 'innovation.today', legalName: 'Vencly GmbH', url: 'https://vencly.com' },
   offers: { '@type': 'Offer', price: '0', priceCurrency: 'EUR' },
   license: 'https://opensource.org/licenses/MIT',
 }

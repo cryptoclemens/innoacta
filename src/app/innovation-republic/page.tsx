@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     'Innovation Republic: KI-gestützte Plattform zur automatisierten Startup-Identifikation und -Matching für mittelständische Unternehmen. Scouting-Aufwand um bis zu 70 % reduziert.',
   alternates: { canonical: 'https://vencly.com/innovation-republic' },
   openGraph: {
-    title: 'Innovation Republic | Vencly',
+    title: 'Innovation Republic | innovation.today',
     description: 'KI-Agenten identifizieren und matchen Startups für Mittelständler – vollautomatisiert, transparent, skalierbar.',
   },
 }
@@ -21,7 +21,7 @@ const jsonLd = {
   applicationCategory: 'BusinessApplication',
   operatingSystem: 'Web',
   description: 'KI-gestützte Venture-Clienting-Plattform zur automatisierten Startup-Identifikation und -Matching für mittelständische Unternehmen.',
-  author: { '@type': 'Organization', name: 'Vencly GmbH', url: 'https://vencly.com' },
+  author: { '@type': 'Organization', name: 'innovation.today', legalName: 'Vencly GmbH', url: 'https://vencly.com' },
 }
 
 const features = [

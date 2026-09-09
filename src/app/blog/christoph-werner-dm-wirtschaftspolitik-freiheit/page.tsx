@@ -22,7 +22,7 @@ const articleJsonLd = {
   description:
     'dm-Chef Christoph Werner beim Ludwig Erhard Gipfel: Über Fußball, Freiheit und was die Politik daraus lernen sollte.',
   author: { '@type': 'Person', name: 'Clemens Pompeÿ', url: 'https://vencly.com/ueber-uns' },
-  publisher: { '@type': 'Organization', name: 'Vencly GmbH', url: 'https://vencly.com' },
+  publisher: { '@type': 'Organization', name: 'innovation.today', legalName: 'Vencly GmbH', url: 'https://vencly.com' },
   url: 'https://vencly.com/blog/christoph-werner-dm-wirtschaftspolitik-freiheit',
   datePublished: '2026-04-30',
   dateModified: '2026-04-30',

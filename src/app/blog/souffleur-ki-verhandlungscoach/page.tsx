@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   keywords: ['KI Verhandlung', 'Souffleur', 'Verhandlungscoach macOS', 'BYOK', 'Whisper lokal', 'DSGVO Verhandlung'],
   alternates: { canonical: 'https://vencly.com/blog/souffleur-ki-verhandlungscoach' },
   openGraph: {
-    title: 'KI-Verhandlungscoaching für die Käuferseite | Vencly Blog',
+    title: 'KI-Verhandlungscoaching für die Käuferseite | innovation.today Blog',
     description: 'Warum KI-Coaching in Verhandlungen bisher nur Verkäufern half – und wie Souffleur die Lücke auf der Käuferseite schließt.',
   },
 }
@@ -22,7 +22,7 @@ const articleJsonLd = {
   description:
     'Gong, Clari und Co. coachen Verkäufer. Souffleur coacht die Gegenseite: lokal, DSGVO-konform, cheat-sheet-gesteuert.',
   author: { '@type': 'Person', name: 'Clemens Pompeÿ', url: 'https://vencly.com/ueber-uns' },
-  publisher: { '@type': 'Organization', name: 'Vencly GmbH', url: 'https://vencly.com' },
+  publisher: { '@type': 'Organization', name: 'innovation.today', legalName: 'Vencly GmbH', url: 'https://vencly.com' },
   url: 'https://vencly.com/blog/souffleur-ki-verhandlungscoach',
   datePublished: '2026-06-05',
   dateModified: '2026-06-05',
@@ -60,7 +60,7 @@ const faqJsonLd = {
       name: 'Ist Souffleur DSGVO-konform?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Ja. Souffleur verarbeitet Audio ausschließlich im Arbeitsspeicher des lokalen Geräts. Es werden keine Audiodaten auf Festplatte geschrieben, keine Inhalte an externe Server übertragen und keine Gesprächsdaten gespeichert oder geteilt. Der verwendete API-Key für Anthropic Claude wird verschlüsselt im macOS Keychain gespeichert. Nutzende bringen ihren eigenen Schlüssel mit (BYOK) – Vencly hat keinen Zugriff.',
+        text: 'Ja. Souffleur verarbeitet Audio ausschließlich im Arbeitsspeicher des lokalen Geräts. Es werden keine Audiodaten auf Festplatte geschrieben, keine Inhalte an externe Server übertragen und keine Gesprächsdaten gespeichert oder geteilt. Der verwendete API-Key für Anthropic Claude wird verschlüsselt im macOS Keychain gespeichert. Nutzende bringen ihren eigenen Schlüssel mit (BYOK) – innovation.today hat keinen Zugriff.',
       },
     },
   ],
@@ -162,7 +162,7 @@ export default function ArticlePage() {
               Souffleur löst dieses Problem durch ein anderes Architekturprinzip: Es gibt keine Cloud.
               Das Audio verlässt das Gerät nicht. Whisper läuft lokal. Die einzige externe Verbindung, die
               Souffleur aufbaut, ist der API-Call an Anthropic Claude – und auch dieser geht über den eigenen
-              API-Key des Nutzers, nicht über einen geteilten Souffleur-Account. Weder Vencly noch ein
+              API-Key des Nutzers, nicht über einen geteilten Souffleur-Account. Weder innovation.today noch ein
               Drittanbieter sieht Gesprächsinhalte.
             </p>
 
@@ -170,7 +170,7 @@ export default function ArticlePage() {
             <p>
               BYOK – Bring Your Own Key – ist keine technische Spielerei, sondern eine Designentscheidung mit
               datenschutzrechtlicher Bedeutung. Wenn Souffleur über den eigenen Anthropic-Key des Nutzers
-              operiert, ist Vencly kein Auftragsverarbeiter im Sinne der DSGVO für den KI-Inhalt des Gesprächs.
+              operiert, ist innovation.today kein Auftragsverarbeiter im Sinne der DSGVO für den KI-Inhalt des Gesprächs.
               Die Datenbeziehung besteht direkt zwischen dem Nutzer und Anthropic – und Anthropic bietet
               EU-API-Endpunkte sowie einen Auftragsverarbeitungsvertrag (AVV nach Art. 28 DSGVO) an.
             </p>

@@ -7,9 +7,9 @@ import PullQuote from '@/components/sections/PullQuote'
 import References from '@/components/sections/References'
 
 export const metadata: Metadata = {
-  title: 'Vencly – Innovatives Gründer-Denken für Unternehmen mit Tradition.',
+  title: 'innovation.today – Innovatives Gründer-Denken für Unternehmen mit Tradition.',
   description:
-    'Vencly überträgt Startup-Logik auf Konzerne und den Mittelstand: neue Geschäftsfelder entwickeln, validieren und launchen – mit Methode und Tempo.',
+    'innovation.today überträgt Startup-Logik auf Konzerne und den Mittelstand: neue Geschäftsfelder entwickeln, validieren und launchen – mit Methode und Tempo.',
   alternates: {
     canonical: 'https://vencly.com',
   },
@@ -21,10 +21,10 @@ const faqJsonLd = {
   mainEntity: [
     {
       '@type': 'Question',
-      name: 'Was macht Vencly?',
+      name: 'Was macht innovation.today?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Vencly entwickelt neue Geschäftsfelder für Konzerne und den Mittelstand mit Startup-Methodik: schnell, validierungsgetrieben und mit klarem Fokus auf Markterfolg.',
+        text: 'innovation.today entwickelt neue Geschäftsfelder für Konzerne und den Mittelstand mit Startup-Methodik: schnell, validierungsgetrieben und mit klarem Fokus auf Markterfolg.',
       },
     },
     {
@@ -37,10 +37,10 @@ const faqJsonLd = {
     },
     {
       '@type': 'Question',
-      name: 'Für wen ist Vencly geeignet?',
+      name: 'Für wen ist innovation.today geeignet?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Vencly arbeitet mit Konzernen und mittelständischen Unternehmen, die neue Geschäftsfelder erschließen oder Innovationsprozesse beschleunigen wollen – besonders in regulierten Branchen wie Energie, Infrastruktur und öffentlichem Sektor.',
+        text: 'innovation.today arbeitet mit Konzernen und mittelständischen Unternehmen, die neue Geschäftsfelder erschließen oder Innovationsprozesse beschleunigen wollen – besonders in regulierten Branchen wie Energie, Infrastruktur und öffentlichem Sektor.',
       },
     },
   ],

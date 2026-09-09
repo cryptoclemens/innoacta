@@ -22,7 +22,7 @@ const articleJsonLd = {
   description:
     'Warum wirtschaftliche Krisen der beste Zeitpunkt für Venture Clienting sind – und wie etablierte Unternehmen von der Zusammenarbeit mit Startups profitieren.',
   author: { '@type': 'Person', name: 'Clemens Pompeÿ', url: 'https://vencly.com/ueber-uns' },
-  publisher: { '@type': 'Organization', name: 'Vencly GmbH', url: 'https://vencly.com' },
+  publisher: { '@type': 'Organization', name: 'innovation.today', legalName: 'Vencly GmbH', url: 'https://vencly.com' },
   url: 'https://vencly.com/blog/startup-zusammenarbeit-venture-client',
   datePublished: '2024-01-15',
   dateModified: '2026-05-16',
@@ -159,9 +159,9 @@ export default function ArticlePage() {
               Das würde Venture Clienting für Unternehmen zugänglich machen, die bisher keinen Zugang zu Innovationsprogrammen hatten: kleinere Mittelständler, Unternehmen außerhalb der großen Wirtschaftszentren, öffentliche Institutionen mit begrenzten Ressourcen. Die Demokratisierung des strukturierten Innovationseinkaufs ist das eigentliche Versprechen des Modells.
             </p>
 
-            <h2>Was Vencly konkret übernimmt</h2>
+            <h2>Was innovation.today konkret übernimmt</h2>
             <p>
-              Vencly begleitet Unternehmen durch den gesamten Venture-Clienting-Prozess – von der Problemdefinition über das Scouting bis zur Pilotbegleitung. Gerade in wirtschaftlich angespannten Phasen ist das entlastend: Der interne Aufwand bleibt gering, weil Vencly die zeitintensiven Teile übernimmt – strukturierte Anbietersuche, Shortlisting, Vertragsrahmen, Pilotsteuerung.
+              innovation.today begleitet Unternehmen durch den gesamten Venture-Clienting-Prozess – von der Problemdefinition über das Scouting bis zur Pilotbegleitung. Gerade in wirtschaftlich angespannten Phasen ist das entlastend: Der interne Aufwand bleibt gering, weil innovation.today die zeitintensiven Teile übernimmt – strukturierte Anbietersuche, Shortlisting, Vertragsrahmen, Pilotsteuerung.
             </p>
             <p>
               Das Modell ist bewusst schlank: kein Retainer, kein langfristiger Beratungsvertrag, sondern projektbasierte Zusammenarbeit, die mit einem konkreten Piloten beginnt. Unternehmen, die selbst unter Kostendruck stehen, brauchen keinen Berater, der ihnen Konzepte verkauft – sie brauchen jemanden, der liefert.

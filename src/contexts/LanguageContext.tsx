@@ -15,12 +15,22 @@ const LanguageContext = createContext<LanguageContextType>({
   setLocale: () => {},
 })
 
+/**
+ * LocalStorage-Schlüssel der Sprachwahl.
+ *
+ * ACHTUNG: bewusst NICHT auf innovation.today umbenannt. Der Schlüssel liegt in
+ * den Browsern bestehender Besucher; ein neuer Name würde deren Sprachwahl
+ * stillschweigend zurücksetzen. Sieht aus wie ein Tailwind-Token, ist aber keins
+ * — bei Umbenennungen der `vencly-*`-Design-Token nicht mitziehen.
+ */
+const LOCALE_STORAGE_KEY = 'vencly-locale'
+
 export function LanguageProvider({ children }: { children: React.ReactNode }) {
   const [locale, setLocaleState] = useState<Locale>('de')
 
   useEffect(() => {
     try {
-      const stored = localStorage.getItem('vencly-locale') as Locale | null
+      const stored = localStorage.getItem(LOCALE_STORAGE_KEY) as Locale | null
       if (stored && stored in translations) setLocaleState(stored)
     } catch {
       // localStorage unavailable (e.g. private mode with strict settings)
@@ -30,7 +40,7 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
   const setLocale = (l: Locale) => {
     setLocaleState(l)
     try {
-      localStorage.setItem('vencly-locale', l)
+      localStorage.setItem(LOCALE_STORAGE_KEY, l)
     } catch {
       // localStorage unavailable
     }

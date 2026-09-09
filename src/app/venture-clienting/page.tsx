@@ -8,7 +8,7 @@ const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Service',
   name: 'Venture Clienting',
-  provider: { '@type': 'Organization', name: 'Vencly GmbH', url: 'https://vencly.com' },
+  provider: { '@type': 'Organization', name: 'innovation.today', legalName: 'Vencly GmbH', url: 'https://vencly.com' },
   url: 'https://vencly.com/venture-clienting',
   description:
     'Strukturierter Prozess zur Identifikation und Erprobung externer Innovationspartner – Startups, Scaleups und innovative Unternehmen. Ziel: die beste Lösung für die eigene Herausforderung, nicht die coolste Entität.',
@@ -38,10 +38,10 @@ const faqJsonLd = {
     },
     {
       '@type': 'Question',
-      name: 'Wie lange dauert ein Venture-Clienting-Prozess bei Vencly?',
+      name: 'Wie lange dauert ein Venture-Clienting-Prozess bei innovation.today?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Vencly strebt eine go/no-go Entscheidung innerhalb von 90 Tagen an. Der gesamte Prozess – von der Problemdefinition über das Scouting bis zum strukturierten Pilotprojekt – ist so konzipiert, dass er in bestehende Unternehmensstrukturen passt, ohne Jahre zu dauern.',
+        text: 'innovation.today strebt eine go/no-go Entscheidung innerhalb von 90 Tagen an. Der gesamte Prozess – von der Problemdefinition über das Scouting bis zum strukturierten Pilotprojekt – ist so konzipiert, dass er in bestehende Unternehmensstrukturen passt, ohne Jahre zu dauern.',
       },
     },
     {
@@ -49,7 +49,7 @@ const faqJsonLd = {
       name: 'Muss der beste Partner immer ein Startup sein?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Nein. Vencly sucht nach der besten Lösung für die jeweilige Herausforderung – nicht nach der coolsten Entität. Das kann ein Startup, ein Scaleup oder ein innovativer Mittelständler sein. Am Ende zählt die Lösung, nicht das Alter des Unternehmens.',
+        text: 'Nein. innovation.today sucht nach der besten Lösung für die jeweilige Herausforderung – nicht nach der coolsten Entität. Das kann ein Startup, ein Scaleup oder ein innovativer Mittelständler sein. Am Ende zählt die Lösung, nicht das Alter des Unternehmens.',
       },
     },
     {

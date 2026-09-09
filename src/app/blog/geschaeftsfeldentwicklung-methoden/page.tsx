@@ -17,7 +17,7 @@ const articleJsonLd = {
   description:
     'Wie entwickelt man ein neues Geschäftsfeld systematisch – ohne monatelange Strategieprozesse? Methoden, Phasen und die häufigsten Fehler aus über 40 Projekten.',
   author: { '@type': 'Person', name: 'Clemens Pompeÿ', url: 'https://vencly.com/ueber-uns' },
-  publisher: { '@type': 'Organization', name: 'Vencly GmbH', url: 'https://vencly.com' },
+  publisher: { '@type': 'Organization', name: 'innovation.today', legalName: 'Vencly GmbH', url: 'https://vencly.com' },
   url: 'https://vencly.com/blog/geschaeftsfeldentwicklung-methoden',
   datePublished: '2025-03-28',
   dateModified: '2026-05-16',
@@ -178,12 +178,12 @@ export default function ArticlePage() {
               Das spart Entwicklungszeit, schont interne Ressourcen und erzeugt schneller belastbare Marktdaten als jede interne Analyse. Besonders relevant, wenn das neue Feld technologisch anspruchsvoll ist oder in einem Bereich liegt, in dem externe Anbieter bereits bessere Lösungen haben.
             </p>
 
-            <h2>Wie Vencly Geschäftsfeldentwicklung begleitet</h2>
+            <h2>Wie innovation.today Geschäftsfeldentwicklung begleitet</h2>
             <p>
-              Vencly übernimmt die operative Führung von Geschäftsfeldentwicklungsprojekten für mittelständische Unternehmen und Konzerne in Energie, Infrastruktur und produzierendem Gewerbe. Das bedeutet konkret: Durchführung der Suchfeldanalyse, Planung und Auswertung von Kundeninterviews, Entwicklung des Pilotkonzepts und Begleitung bis zur go/no-go Entscheidung.
+              innovation.today übernimmt die operative Führung von Geschäftsfeldentwicklungsprojekten für mittelständische Unternehmen und Konzerne in Energie, Infrastruktur und produzierendem Gewerbe. Das bedeutet konkret: Durchführung der Suchfeldanalyse, Planung und Auswertung von Kundeninterviews, Entwicklung des Pilotkonzepts und Begleitung bis zur go/no-go Entscheidung.
             </p>
             <p>
-              Der Ansatz unterscheidet sich bewusst von klassischer Strategieberatung: Vencly liefert keine Konzeptpapiere, die das Unternehmen anschließend selbst umsetzen muss. Die Begleitung endet erst, wenn eine fundierte Entscheidung über das neue Geschäftsfeld getroffen werden kann – mit echten Kundendaten, nicht mit Annahmen.
+              Der Ansatz unterscheidet sich bewusst von klassischer Strategieberatung: innovation.today liefert keine Konzeptpapiere, die das Unternehmen anschließend selbst umsetzen muss. Die Begleitung endet erst, wenn eine fundierte Entscheidung über das neue Geschäftsfeld getroffen werden kann – mit echten Kundendaten, nicht mit Annahmen.
             </p>
 
             <h2>Fazit: Geschwindigkeit schlägt Perfektion</h2>

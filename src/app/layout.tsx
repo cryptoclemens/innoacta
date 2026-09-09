@@ -7,6 +7,7 @@ import Navbar from '@/components/layout/Navbar'
 import Footer from '@/components/layout/Footer'
 import Providers from '@/components/layout/Providers'
 import CookieBanner from '@/components/layout/CookieBanner'
+import { BRAND_NAME, LEGAL_ENTITY, SITE_URL, TAGLINE } from '@/lib/brand'
 
 const nunito = localFont({
   src: [
@@ -26,11 +27,11 @@ const fraunces = Fraunces({
 
 export const metadata: Metadata = {
   title: {
-    default: 'Vencly – Innovatives Gründer-Denken für Unternehmen mit Tradition.',
-    template: '%s | Vencly',
+    default: 'innovation.today – Innovatives Gründer-Denken für Unternehmen mit Tradition.',
+    template: '%s | innovation.today',
   },
   description:
-    'Vencly überträgt Startup-Logik auf Konzerne und den Mittelstand: neue Geschäftsfelder entwickeln, validieren und launchen – mit Methode und Tempo.',
+    'innovation.today überträgt Startup-Logik auf Konzerne und den Mittelstand: neue Geschäftsfelder entwickeln, validieren und launchen – mit Methode und Tempo.',
   keywords: [
     'Geschäftsfeldentwicklung',
     'Venture Clienting',
@@ -42,26 +43,28 @@ export const metadata: Metadata = {
     'Neue Märkte',
     'Unternehmensberatung',
   ],
-  authors: [{ name: 'Vencly GmbH' }],
-  creator: 'Vencly GmbH',
-  metadataBase: new URL('https://vencly.com'),
+  // authors nennt bewusst die Rechtstraegerin, creator die Marke.
+  authors: [{ name: LEGAL_ENTITY }],
+  creator: BRAND_NAME,
+  // TODO(DNS-Switch): SITE_URL in @/lib/brand auf innovation.today umstellen.
+  metadataBase: new URL(SITE_URL),
   alternates: {
-    canonical: 'https://vencly.com',
+    canonical: SITE_URL,
   },
   openGraph: {
     type: 'website',
     locale: 'de_DE',
-    url: 'https://vencly.com',
-    siteName: 'Vencly',
-    title: 'Vencly – Innovatives Gründer-Denken für Unternehmen mit Tradition.',
+    url: SITE_URL,
+    siteName: 'innovation.today',
+    title: 'innovation.today – Innovatives Gründer-Denken für Unternehmen mit Tradition.',
     description:
-      'Vencly überträgt Startup-Logik auf Konzerne und den Mittelstand: neue Geschäftsfelder entwickeln, validieren und launchen – mit Methode und Tempo.',
+      'innovation.today überträgt Startup-Logik auf Konzerne und den Mittelstand: neue Geschäftsfelder entwickeln, validieren und launchen – mit Methode und Tempo.',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Vencly – Innovatives Gründer-Denken für Unternehmen mit Tradition.',
+    title: 'innovation.today – Innovatives Gründer-Denken für Unternehmen mit Tradition.',
     description:
-      'Vencly überträgt Startup-Logik auf Konzerne und den Mittelstand: neue Geschäftsfelder entwickeln, validieren und launchen – mit Methode und Tempo.',
+      'innovation.today überträgt Startup-Logik auf Konzerne und den Mittelstand: neue Geschäftsfelder entwickeln, validieren und launchen – mit Methode und Tempo.',
   },
   icons: {
     icon: '/favicon.svg',
@@ -89,15 +92,16 @@ export default function RootLayout({
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'ProfessionalService',
-    name: 'Vencly GmbH',
-    url: 'https://vencly.com',
-    logo: 'https://vencly.com/logovencly.svg',
+    name: BRAND_NAME,
+    legalName: LEGAL_ENTITY,
+    url: SITE_URL,
+    logo: `${SITE_URL}/brand/wordmark_light.svg`,
     description:
-      'Vencly überträgt Startup-Logik auf Konzerne und den Mittelstand: neue Geschäftsfelder entwickeln, validieren und launchen – mit Methode und Tempo.',
+      'innovation.today überträgt Startup-Logik auf Konzerne und den Mittelstand: neue Geschäftsfelder entwickeln, validieren und launchen – mit Methode und Tempo.',
     areaServed: ['DE', 'AT', 'CH'],
     serviceType: ['Geschäftsfeldentwicklung', 'Venture Clienting', 'Strategische Transformation'],
     knowsLanguage: ['de', 'en', 'fr', 'es'],
-    sameAs: ['https://vencly.com'],
+    sameAs: [SITE_URL],
   }
 
   return (
@@ -109,10 +113,11 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
-        {/* Booking button redirect – data-booking="contact" → /contact/ */}
+        {/* Erstgespraechs-Buttons: data-booking="contact" → /contact/.
+            Bewusst relativ, damit der Link den Domainwechsel unveraendert uebersteht. */}
         <script
           dangerouslySetInnerHTML={{
-            __html: `document.addEventListener('click',function(e){var el=e.target.closest('[data-booking="contact"]');if(el){window.location.href='https://www.vencly.com/contact/';}});`,
+            __html: `document.addEventListener('click',function(e){var el=e.target.closest('[data-booking="contact"]');if(el){window.location.href='/contact/';}});`,
           }}
         />
         {/* GA Consent Mode v2 defaults – must fire before gtag loads */}

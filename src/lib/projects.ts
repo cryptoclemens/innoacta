@@ -1,5 +1,5 @@
 // ─────────────────────────────────────────────────────────────────────────────
-// Single source of truth for all Vencly projects.
+// Single source of truth for all innovation.today projects.
 //
 // Add a project here ONCE and it appears automatically in:
 //   • the "Projekte" dropdown in the navbar (src/components/layout/Navbar.tsx)

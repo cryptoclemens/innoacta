@@ -12,7 +12,7 @@ const dePage = {
       '„Am Ende interessiert die beste Lösung für die eigene Herausforderung – nicht die coolste Entität."',
     uspH2: 'Wir suchen überall. Nicht nur bei Startups.',
     uspIntroPrefix:
-      'Die meisten Venture-Clienting-Ansätze fokussieren sich auf Startups. Das ist zu eng. Vencly sucht automatisiert und strukturiert unter',
+      'Die meisten Venture-Clienting-Ansätze fokussieren sich auf Startups. Das ist zu eng. innovation.today sucht automatisiert und strukturiert unter',
     uspIntroBold: 'Startups, Scaleups und innovativen Unternehmen',
     uspIntroSuffix:
       'aller Größen – denn der beste Anbieter für Ihre Herausforderung sitzt nicht zwingend in einem Berliner Co-Working-Space.',
@@ -57,7 +57,7 @@ const dePage = {
     deliverables: [
       'Qualifizierte Shortlist passender Anbieter – mit Bewertung statt roher Liste',
       'Strukturierter Pilotrahmen mit klaren KPIs und Entscheidungskriterien',
-      'Begleitung der Pilotphase durch Vencly',
+      'Begleitung der Pilotphase durch innovation.today',
       'Entscheidungsvorlage für Ihr Management nach 90 Tagen',
       'Optional: Aufbau eines wiederholbaren internen Venture-Client-Prozesses',
     ],
@@ -84,11 +84,11 @@ const dePage = {
     h1Accent: 'neue Märkte',
     h1Tail: ' mit Gründer-Denken erschließen.',
     intro:
-      'Konzerne und Mittelständler, die neue Geschäftsfelder erschließen wollen, stehen vor demselben Problem: Interne Strukturen wurden für das bestehende Kerngeschäft gebaut – nicht für das Neue. Vencly bringt die Agilität und Methodik von Gründern in Ihre Organisation, ohne die Stabilität des Kerngeschäfts zu gefährden.',
+      'Konzerne und Mittelständler, die neue Geschäftsfelder erschließen wollen, stehen vor demselben Problem: Interne Strukturen wurden für das bestehende Kerngeschäft gebaut – nicht für das Neue. innovation.today bringt die Agilität und Methodik von Gründern in Ihre Organisation, ohne die Stabilität des Kerngeschäfts zu gefährden.',
     whyH2: 'Warum klassische Strategieprozesse hier versagen.',
     whyP1:
       'Strategieprojekte dauern zu lange, kosten zu viel und enden häufig mit einem Konzept, das niemand umsetzt. Startups machen es anders: Sie bauen einen MVP, testen ihn am echten Markt, iterieren und entscheiden auf Basis von Daten.',
-    whyP2Prefix: 'Vencly überträgt genau diese Logik auf Ihr nächstes Geschäftsfeld –',
+    whyP2Prefix: 'innovation.today überträgt genau diese Logik auf Ihr nächstes Geschäftsfeld –',
     whyP2Bold:
       'mit kurzen Iterationszyklen, klaren Entscheidungspunkten und messbarem Output in 3–6 Monaten',
     whyP2Suffix: '.',
@@ -126,7 +126,7 @@ const dePage = {
     ventureClientingHintSuffix: '– mit dem Ziel, in der Make-or-Buy-Phase Zeit und Kosten zu optimieren.',
     sectorsH2: 'Besondere Stärke: regulierte Branchen.',
     sectorsP:
-      'Energie, Infrastruktur, öffentliche Hand – Branchen, in denen Startup-Logik oft als nicht anwendbar gilt. Vencly hat bewiesen, dass das falsch ist. Wir kennen die regulatorischen Rahmenbedingungen, die Stakeholder-Strukturen und die besonderen Anforderungen dieser Sektoren.',
+      'Energie, Infrastruktur, öffentliche Hand – Branchen, in denen Startup-Logik oft als nicht anwendbar gilt. innovation.today hat bewiesen, dass das falsch ist. Wir kennen die regulatorischen Rahmenbedingungen, die Stakeholder-Strukturen und die besonderen Anforderungen dieser Sektoren.',
     relatedH2: 'Weiterführende Artikel',
     relatedArticles: [
       { href: '/blog/geschaeftsfeldentwicklung-methoden', cat: 'Geschäftsfeldentwicklung', title: 'Geschäftsfeldentwicklung: Methoden, Phasen und häufige Fehler' },
@@ -135,7 +135,7 @@ const dePage = {
       { href: '/blog/startup-zusammenarbeit-venture-client', cat: 'Venture Clienting', title: 'Startup-Zusammenarbeit als Chance in wirtschaftlichen Krisenzeiten' },
     ],
     ctaH2: 'Welches Geschäftsfeld wollen Sie als nächstes erschließen?',
-    ctaP: 'In einem ersten Gespräch klären wir, ob und wie Vencly helfen kann.',
+    ctaP: 'In einem ersten Gespräch klären wir, ob und wie innovation.today helfen kann.',
     ctaButton: 'Erstgespräch vereinbaren',
   },
 
@@ -146,7 +146,7 @@ const dePage = {
     h1Tail: ', nicht nur konzeptionell.',
     intro1:
       'Die beste Strategie ist wertlos, wenn sie nicht umgesetzt wird. Viele Innovationsprojekte scheitern nicht am Konzept, sondern daran, dass intern niemand die operative Verantwortung übernimmt – weil das Tagesgeschäft dominiert und das Neue keine Heimat hat.',
-    intro2Prefix: 'Vencly füllt genau diese Lücke:',
+    intro2Prefix: 'innovation.today füllt genau diese Lücke:',
     intro2Bold: 'Wir übernehmen operative Verantwortung',
     intro2Suffix:
       'in Projekten, die strategisch wichtig, aber intern strukturell schwierig zu verankern sind.',
@@ -175,7 +175,7 @@ const dePage = {
       },
       {
         title: 'Stakeholder-Management',
-        desc: 'Komplexe Projekte scheitern selten am Konzept, sondern an internen Widerständen. Vencly navigiert Stakeholder-Landschaften mit Erfahrung aus Konzernen, Kommunen und öffentlichen Trägern.',
+        desc: 'Komplexe Projekte scheitern selten am Konzept, sondern an internen Widerständen. innovation.today navigiert Stakeholder-Landschaften mit Erfahrung aus Konzernen, Kommunen und öffentlichen Trägern.',
       },
       {
         title: 'Workshop-Formate & Entscheidungsvorlagen',
@@ -201,12 +201,12 @@ const dePage = {
   },
 
   ueberUns: {
-    eyebrow: 'Über Vencly',
+    eyebrow: 'Über innovation.today',
     h1: 'Clemens Pompeÿ',
     intro:
-      'Gründer von Vencly. Unternehmer, Venture-Client-Experte und Sparringspartner für Unternehmen, die neue Geschäftsfelder erschließen wollen — mit Methode, Tempo und unternehmerischer Haltung.',
+      'Gründer von innovation.today. Unternehmer, Venture-Client-Experte und Sparringspartner für Unternehmen, die neue Geschäftsfelder erschließen wollen — mit Methode, Tempo und unternehmerischer Haltung.',
     quote:
-      '„Ich glaube, dass etablierte Unternehmen die Gründerlogik nicht imitieren müssen — sie müssen sie nur selektiv einsetzen. Genau das ist Vencly."',
+      '„Ich glaube, dass etablierte Unternehmen die Gründerlogik nicht imitieren müssen — sie müssen sie nur selektiv einsetzen. Genau das ist innovation.today."',
     expertiseH2: 'Expertise',
     expertise: [
       'Venture Clienting',
@@ -223,26 +223,26 @@ const dePage = {
         period: '2022 – heute',
         role: 'Gründer & Geschäftsführer',
         org: 'Vencly GmbH',
-        desc: 'Aufbau von Vencly als Beratungsunternehmen für Venture Clienting und Geschäftsfeldentwicklung. Über 40 realisierte Projekte in Energie, Infrastruktur, öffentlichem Sektor und Mittelstand.',
+        desc: 'Aufbau von innovation.today als Beratungsunternehmen für Venture Clienting und Geschäftsfeldentwicklung. Über 40 realisierte Projekte in Energie, Infrastruktur, öffentlichem Sektor und Mittelstand.',
       },
       {
         period: '2018 – 2022',
         role: 'Venture Client & Innovation',
         org: 'Konzernumfeld Energie / Infrastruktur',
-        desc: 'Aufbau und Betrieb strukturierter Venture-Client-Programme. Entwicklung und Erprobung der Methodik, die heute die Grundlage von Vencly bildet.',
+        desc: 'Aufbau und Betrieb strukturierter Venture-Client-Programme. Entwicklung und Erprobung der Methodik, die heute die Grundlage von innovation.today bildet.',
       },
       {
         period: 'Früher',
         role: 'Unternehmerische Erfahrung',
         org: 'Eigene Gründungen & operative Rollen',
-        desc: 'Mehrjährige Erfahrung als Gründer und in operativer Verantwortung – die Basis für den unternehmerischen Blick, den Vencly in jedes Projekt einbringt.',
+        desc: 'Mehrjährige Erfahrung als Gründer und in operativer Verantwortung – die Basis für den unternehmerischen Blick, den innovation.today in jedes Projekt einbringt.',
       },
     ],
     approachH2: 'Der Vencly-Ansatz',
     approachP1:
-      'Vencly ist kein klassisches Beratungshaus. Wir übernehmen operative Verantwortung, arbeiten mit unternehmerischer Haltung und liefern messbare Ergebnisse — keine weiteren Konzeptpapiere.',
+      'innovation.today ist kein klassisches Beratungshaus. Wir übernehmen operative Verantwortung, arbeiten mit unternehmerischer Haltung und liefern messbare Ergebnisse — keine weiteren Konzeptpapiere.',
     approachP2:
-      'Die Kernthese: Startups bauen neue Märkte nicht durch überlegene Ressourcen, sondern durch überlegene Lerngeschwindigkeit. Hypothesen schnell testen, schnell entscheiden, schnell skalieren — das ist die Logik, die Vencly in Konzerne und den Mittelstand überträgt.',
+      'Die Kernthese: Startups bauen neue Märkte nicht durch überlegene Ressourcen, sondern durch überlegene Lerngeschwindigkeit. Hypothesen schnell testen, schnell entscheiden, schnell skalieren — das ist die Logik, die innovation.today in Konzerne und den Mittelstand überträgt.',
     ctaPrimary: 'Erstgespräch vereinbaren',
     ctaSecondary: 'Artikel von Clemens lesen',
   },
@@ -300,7 +300,7 @@ const enPage: typeof dePage = {
       '"At the end of the day, what matters is the best solution to your challenge — not the trendiest-sounding entity."',
     uspH2: 'We search everywhere. Not just startups.',
     uspIntroPrefix:
-      'Most Venture Clienting approaches focus exclusively on startups. That\'s too narrow. Vencly searches automatically and systematically across',
+      'Most Venture Clienting approaches focus exclusively on startups. That\'s too narrow. innovation.today searches automatically and systematically across',
     uspIntroBold: 'startups, scaleups and innovative companies',
     uspIntroSuffix:
       'of all sizes — because the best partner for your challenge isn\'t necessarily found in a Berlin co-working space.',
@@ -318,7 +318,7 @@ const enPage: typeof dePage = {
         desc: 'We think like a matchmaker, not a traditional advisory firm. You need the right partner — we bring them to you.',
       },
     ],
-    processH2: 'The Vencly process: from challenge to decision.',
+    processH2: 'The innovation.today process: from challenge to decision.',
     steps: [
       {
         n: '01',
@@ -345,7 +345,7 @@ const enPage: typeof dePage = {
     deliverables: [
       'Qualified shortlist of matching providers — with evaluation, not a raw list',
       'Structured pilot framework with clear KPIs and decision criteria',
-      'Vencly accompanies your pilot phase throughout',
+      'innovation.today accompanies your pilot phase throughout',
       'Decision-ready documentation for your management after 90 days',
       'Optional: build a repeatable internal Venture Client process',
     ],
@@ -372,11 +372,11 @@ const enPage: typeof dePage = {
     h1Accent: 'new markets',
     h1Tail: ' with an entrepreneurial mindset.',
     intro:
-      'Corporations and mid-market companies seeking to enter new markets face the same challenge: internal structures were built for the existing core business — not for what comes next. Vencly brings the agility and methodology of founders into your organisation without jeopardising the stability of the core business.',
+      'Corporations and mid-market companies seeking to enter new markets face the same challenge: internal structures were built for the existing core business — not for what comes next. innovation.today brings the agility and methodology of founders into your organisation without jeopardising the stability of the core business.',
     whyH2: 'Why traditional strategy processes fall short here.',
     whyP1:
       'Strategy projects take too long, cost too much and frequently end with a document that no one implements. Startups do it differently: they build an MVP, test it in the real market, iterate and decide on the basis of data.',
-    whyP2Prefix: 'Vencly applies exactly this logic to your next market opportunity —',
+    whyP2Prefix: 'innovation.today applies exactly this logic to your next market opportunity —',
     whyP2Bold:
       'with short iteration cycles, clear decision points and measurable output in 3–6 months',
     whyP2Suffix: '.',
@@ -414,7 +414,7 @@ const enPage: typeof dePage = {
     ventureClientingHintSuffix: '— with the goal of optimising time and cost during the make-or-buy phase.',
     sectorsH2: 'A particular strength: regulated industries.',
     sectorsP:
-      'Energy, infrastructure, the public sector — industries where startup logic is often considered inapplicable. Vencly has proven this wrong. We understand the regulatory frameworks, the stakeholder structures and the specific requirements of these sectors.',
+      'Energy, infrastructure, the public sector — industries where startup logic is often considered inapplicable. innovation.today has proven this wrong. We understand the regulatory frameworks, the stakeholder structures and the specific requirements of these sectors.',
     relatedH2: 'Related Articles',
     relatedArticles: [
       { href: '/blog/geschaeftsfeldentwicklung-methoden', cat: 'New Market Development', title: 'New Market Development: Methods, Phases and Common Mistakes' },
@@ -423,7 +423,7 @@ const enPage: typeof dePage = {
       { href: '/blog/startup-zusammenarbeit-venture-client', cat: 'Venture Clienting', title: 'Startup Collaboration as an Opportunity in Economic Downturns' },
     ],
     ctaH2: 'Which market do you want to enter next?',
-    ctaP: 'In an initial conversation, we clarify whether and how Vencly can help.',
+    ctaP: 'In an initial conversation, we clarify whether and how innovation.today can help.',
     ctaButton: 'Book an Introductory Call',
   },
 
@@ -434,7 +434,7 @@ const enPage: typeof dePage = {
     h1Tail: ', not just conceptual.',
     intro1:
       'The best strategy is worthless if it isn\'t executed. Many innovation projects fail not because of the concept, but because no one internally takes operational ownership — the day-to-day dominates and the new initiative has no home.',
-    intro2Prefix: 'Vencly fills exactly this gap:',
+    intro2Prefix: 'innovation.today fills exactly this gap:',
     intro2Bold: 'We take operational ownership',
     intro2Suffix:
       'of projects that are strategically important but structurally difficult to anchor internally.',
@@ -463,7 +463,7 @@ const enPage: typeof dePage = {
       },
       {
         title: 'Stakeholder Management',
-        desc: 'Complex projects rarely fail because of the concept — they fail because of internal resistance. Vencly navigates stakeholder landscapes with experience from corporations, municipalities and public organisations.',
+        desc: 'Complex projects rarely fail because of the concept — they fail because of internal resistance. innovation.today navigates stakeholder landscapes with experience from corporations, municipalities and public organisations.',
       },
       {
         title: 'Workshop Formats & Decision Documents',
@@ -489,12 +489,12 @@ const enPage: typeof dePage = {
   },
 
   ueberUns: {
-    eyebrow: 'About Vencly',
+    eyebrow: 'About innovation.today',
     h1: 'Clemens Pompeÿ',
     intro:
-      'Founder of Vencly. Entrepreneur, Venture Clienting expert and sparring partner for companies that want to enter new markets — with method, momentum and an entrepreneurial mindset.',
+      'Founder of innovation.today. Entrepreneur, Venture Clienting expert and sparring partner for companies that want to enter new markets — with method, momentum and an entrepreneurial mindset.',
     quote:
-      '"I believe established companies don\'t need to imitate founder logic — they just need to apply it selectively. That\'s exactly what Vencly is."',
+      '"I believe established companies don\'t need to imitate founder logic — they just need to apply it selectively. That\'s exactly what innovation.today is."',
     expertiseH2: 'Expertise',
     expertise: [
       'Venture Clienting',
@@ -511,26 +511,26 @@ const enPage: typeof dePage = {
         period: '2022 – present',
         role: 'Founder & Managing Director',
         org: 'Vencly GmbH',
-        desc: 'Building Vencly as a consultancy for Venture Clienting and new market development. More than 40 completed projects in energy, infrastructure, the public sector and mid-market companies.',
+        desc: 'Building innovation.today as a consultancy for Venture Clienting and new market development. More than 40 completed projects in energy, infrastructure, the public sector and mid-market companies.',
       },
       {
         period: '2018 – 2022',
         role: 'Venture Client & Innovation',
         org: 'Corporate environment: Energy / Infrastructure',
-        desc: 'Building and operating structured Venture Client programmes. Development and testing of the methodology that forms the foundation of Vencly today.',
+        desc: 'Building and operating structured Venture Client programmes. Development and testing of the methodology that forms the foundation of innovation.today today.',
       },
       {
         period: 'Earlier',
         role: 'Entrepreneurial Experience',
         org: 'Own ventures & operational roles',
-        desc: 'Several years of experience as a founder and in operational leadership — the foundation for the entrepreneurial perspective that Vencly brings to every project.',
+        desc: 'Several years of experience as a founder and in operational leadership — the foundation for the entrepreneurial perspective that innovation.today brings to every project.',
       },
     ],
-    approachH2: 'The Vencly Approach',
+    approachH2: 'The innovation.today Approach',
     approachP1:
-      'Vencly is not a traditional consulting firm. We take operational ownership, work with an entrepreneurial mindset and deliver measurable results — no further concept papers.',
+      'innovation.today is not a traditional consulting firm. We take operational ownership, work with an entrepreneurial mindset and deliver measurable results — no further concept papers.',
     approachP2:
-      'The core thesis: startups don\'t build new markets through superior resources, but through superior learning speed. Test hypotheses fast, decide fast, scale fast — that\'s the logic Vencly transfers to corporations and mid-market companies.',
+      'The core thesis: startups don\'t build new markets through superior resources, but through superior learning speed. Test hypotheses fast, decide fast, scale fast — that\'s the logic innovation.today transfers to corporations and mid-market companies.',
     ctaPrimary: 'Book an Introductory Call',
     ctaSecondary: 'Read articles by Clemens',
   },
@@ -588,7 +588,7 @@ const frPage: typeof dePage = {
       "« Au fond, ce qui compte, c'est la meilleure solution à votre enjeu — pas l'entité la plus tendance. »",
     uspH2: 'Nous cherchons partout. Pas seulement chez les startups.',
     uspIntroPrefix:
-      "La plupart des approches de Venture Clienting se concentrent sur les startups. C'est trop restrictif. Vencly effectue une recherche automatisée et structurée parmi",
+      "La plupart des approches de Venture Clienting se concentrent sur les startups. C'est trop restrictif. innovation.today effectue une recherche automatisée et structurée parmi",
     uspIntroBold: 'les startups, les scaleups et les entreprises innovantes',
     uspIntroSuffix:
       "de toutes tailles — car le meilleur partenaire pour votre enjeu ne se trouve pas forcément dans un espace de coworking berlinois.",
@@ -606,7 +606,7 @@ const frPage: typeof dePage = {
         desc: "Nous pensons comme un intermédiaire efficace, pas comme un cabinet de conseil classique. Vous avez besoin du bon partenaire — nous vous l'amenons.",
       },
     ],
-    processH2: "Le processus Vencly : de l'enjeu à la décision.",
+    processH2: "Le processus innovation.today : de l'enjeu à la décision.",
     steps: [
       {
         n: '01',
@@ -633,7 +633,7 @@ const frPage: typeof dePage = {
     deliverables: [
       "Shortlist qualifiée de prestataires adaptés — avec une évaluation, pas une simple liste brute",
       "Cadre pilote structuré avec des KPI clairs et des critères de décision",
-      "Accompagnement de la phase pilote par Vencly",
+      "Accompagnement de la phase pilote par innovation.today",
       "Document de décision prêt à présenter à votre management après 90 jours",
       "En option : mise en place d'un processus interne de Venture Clienting reproductible",
     ],
@@ -660,11 +660,11 @@ const frPage: typeof dePage = {
     h1Accent: 'nouveaux marchés',
     h1Tail: " avec l'approche entrepreneuriale.",
     intro:
-      "Les groupes et les ETI qui souhaitent développer de nouveaux relais de croissance se heurtent au même obstacle : les structures internes ont été conçues pour le cœur de métier existant — pas pour ce qui vient ensuite. Vencly apporte l'agilité et la méthodologie des fondateurs dans votre organisation, sans fragiliser la stabilité du cœur de métier.",
+      "Les groupes et les ETI qui souhaitent développer de nouveaux relais de croissance se heurtent au même obstacle : les structures internes ont été conçues pour le cœur de métier existant — pas pour ce qui vient ensuite. innovation.today apporte l'agilité et la méthodologie des fondateurs dans votre organisation, sans fragiliser la stabilité du cœur de métier.",
     whyH2: 'Pourquoi les processus stratégiques classiques échouent ici.',
     whyP1:
       "Les projets stratégiques prennent trop de temps, coûtent trop cher et aboutissent souvent à un document que personne ne met en œuvre. Les startups font autrement : elles construisent un MVP, le testent sur le vrai marché, itèrent et décident sur la base de données.",
-    whyP2Prefix: 'Vencly transfère exactement cette logique à votre prochain relais de croissance —',
+    whyP2Prefix: 'innovation.today transfère exactement cette logique à votre prochain relais de croissance —',
     whyP2Bold:
       "avec des cycles d'itération courts, des jalons de décision clairs et un output mesurable en 3 à 6 mois",
     whyP2Suffix: '.',
@@ -702,7 +702,7 @@ const frPage: typeof dePage = {
     ventureClientingHintSuffix: "— dans l'objectif d'optimiser le temps et les coûts lors de la phase make-or-buy.",
     sectorsH2: 'Un point fort particulier : les secteurs réglementés.',
     sectorsP:
-      "Énergie, infrastructures, secteur public — des secteurs où la logique startup est souvent jugée inapplicable. Vencly a prouvé le contraire. Nous maîtrisons les cadres réglementaires, les structures de parties prenantes et les exigences spécifiques de ces secteurs.",
+      "Énergie, infrastructures, secteur public — des secteurs où la logique startup est souvent jugée inapplicable. innovation.today a prouvé le contraire. Nous maîtrisons les cadres réglementaires, les structures de parties prenantes et les exigences spécifiques de ces secteurs.",
     relatedH2: 'Articles connexes',
     relatedArticles: [
       { href: '/blog/geschaeftsfeldentwicklung-methoden', cat: 'Développement de marchés', title: 'Développement de nouveaux marchés : méthodes, phases et erreurs fréquentes' },
@@ -711,7 +711,7 @@ const frPage: typeof dePage = {
       { href: '/blog/startup-zusammenarbeit-venture-client', cat: 'Venture Clienting', title: "La collaboration avec des startups comme opportunité en temps de crise économique" },
     ],
     ctaH2: 'Quel marché souhaitez-vous développer en priorité ?',
-    ctaP: "Lors d'un premier échange, nous clarifions si et comment Vencly peut vous aider.",
+    ctaP: "Lors d'un premier échange, nous clarifions si et comment innovation.today peut vous aider.",
     ctaButton: 'Prendre rendez-vous',
   },
 
@@ -722,7 +722,7 @@ const frPage: typeof dePage = {
     h1Tail: ', pas seulement conceptuelle.',
     intro1:
       "La meilleure stratégie ne vaut rien si elle n'est pas mise en œuvre. De nombreux projets d'innovation n'échouent pas à cause du concept, mais parce que personne en interne n'assume la responsabilité opérationnelle — le quotidien prend le dessus et le nouveau projet n'a pas de porteur.",
-    intro2Prefix: 'Vencly comble précisément ce vide :',
+    intro2Prefix: 'innovation.today comble précisément ce vide :',
     intro2Bold: 'Nous assumons la responsabilité opérationnelle',
     intro2Suffix:
       "de projets qui sont stratégiquement importants mais structurellement difficiles à ancrer en interne.",
@@ -751,7 +751,7 @@ const frPage: typeof dePage = {
       },
       {
         title: 'Gestion des parties prenantes',
-        desc: "Les projets complexes échouent rarement à cause du concept — ils échouent à cause de résistances internes. Vencly navigue dans les paysages de parties prenantes avec l'expérience des grands groupes, des collectivités et des organismes publics.",
+        desc: "Les projets complexes échouent rarement à cause du concept — ils échouent à cause de résistances internes. innovation.today navigue dans les paysages de parties prenantes avec l'expérience des grands groupes, des collectivités et des organismes publics.",
       },
       {
         title: "Ateliers & documents d'arbitrage",
@@ -777,12 +777,12 @@ const frPage: typeof dePage = {
   },
 
   ueberUns: {
-    eyebrow: 'À propos de Vencly',
+    eyebrow: 'À propos de innovation.today',
     h1: 'Clemens Pompeÿ',
     intro:
-      "Fondateur de Vencly. Entrepreneur, expert en Venture Clienting et sparring partner pour les entreprises qui souhaitent développer de nouveaux relais de croissance — avec méthode, dynamisme et une posture entrepreneuriale.",
+      "Fondateur de innovation.today. Entrepreneur, expert en Venture Clienting et sparring partner pour les entreprises qui souhaitent développer de nouveaux relais de croissance — avec méthode, dynamisme et une posture entrepreneuriale.",
     quote:
-      "« Je crois que les entreprises établies n'ont pas besoin d'imiter la logique des fondateurs — elles doivent simplement l'appliquer de façon sélective. C'est précisément ce qu'est Vencly. »",
+      "« Je crois que les entreprises établies n'ont pas besoin d'imiter la logique des fondateurs — elles doivent simplement l'appliquer de façon sélective. C'est précisément ce qu'est innovation.today. »",
     expertiseH2: 'Expertise',
     expertise: [
       'Venture Clienting',
@@ -799,26 +799,26 @@ const frPage: typeof dePage = {
         period: "2022 – aujourd'hui",
         role: 'Fondateur & Directeur général',
         org: 'Vencly GmbH',
-        desc: "Construction de Vencly comme cabinet de conseil en Venture Clienting et développement de nouveaux marchés. Plus de 40 projets réalisés dans l'énergie, les infrastructures, le secteur public et les ETI.",
+        desc: "Construction de innovation.today comme cabinet de conseil en Venture Clienting et développement de nouveaux marchés. Plus de 40 projets réalisés dans l'énergie, les infrastructures, le secteur public et les ETI.",
       },
       {
         period: '2018 – 2022',
         role: 'Venture Client & Innovation',
         org: 'Environnement corporate : énergie / infrastructures',
-        desc: "Mise en place et exploitation de programmes structurés de Venture Clienting. Développement et validation de la méthodologie qui constitue aujourd'hui le socle de Vencly.",
+        desc: "Mise en place et exploitation de programmes structurés de Venture Clienting. Développement et validation de la méthodologie qui constitue aujourd'hui le socle de innovation.today.",
       },
       {
         period: 'Précédemment',
         role: 'Expérience entrepreneuriale',
         org: 'Propres créations & rôles opérationnels',
-        desc: "Plusieurs années d'expérience en tant que fondateur et en responsabilité opérationnelle — le socle du regard entrepreneurial que Vencly apporte à chaque projet.",
+        desc: "Plusieurs années d'expérience en tant que fondateur et en responsabilité opérationnelle — le socle du regard entrepreneurial que innovation.today apporte à chaque projet.",
       },
     ],
-    approachH2: "L'approche Vencly",
+    approachH2: "L'approche innovation.today",
     approachP1:
-      "Vencly n'est pas un cabinet de conseil traditionnel. Nous assumons la responsabilité opérationnelle, travaillons avec une posture entrepreneuriale et livrons des résultats mesurables — pas de nouveaux rapports conceptuels.",
+      "innovation.today n'est pas un cabinet de conseil traditionnel. Nous assumons la responsabilité opérationnelle, travaillons avec une posture entrepreneuriale et livrons des résultats mesurables — pas de nouveaux rapports conceptuels.",
     approachP2:
-      "La thèse centrale : les startups ne construisent pas de nouveaux marchés grâce à des ressources supérieures, mais grâce à une vitesse d'apprentissage supérieure. Tester vite, décider vite, passer à l'échelle vite — c'est la logique que Vencly transfère aux grands groupes et aux ETI.",
+      "La thèse centrale : les startups ne construisent pas de nouveaux marchés grâce à des ressources supérieures, mais grâce à une vitesse d'apprentissage supérieure. Tester vite, décider vite, passer à l'échelle vite — c'est la logique que innovation.today transfère aux grands groupes et aux ETI.",
     ctaPrimary: 'Prendre rendez-vous',
     ctaSecondary: "Lire les articles de Clemens",
   },
@@ -876,7 +876,7 @@ const esPage: typeof dePage = {
       '«Al final, lo que importa es la mejor solución a tu reto — no la entidad con el nombre más llamativo.»',
     uspH2: 'Buscamos en todas partes. No solo startups.',
     uspIntroPrefix:
-      'La mayoría de los enfoques de Venture Clienting se centran exclusivamente en startups. Eso es demasiado estrecho. Vencly busca de forma automatizada y estructurada entre',
+      'La mayoría de los enfoques de Venture Clienting se centran exclusivamente en startups. Eso es demasiado estrecho. innovation.today busca de forma automatizada y estructurada entre',
     uspIntroBold: 'startups, scaleups y empresas innovadoras',
     uspIntroSuffix:
       'de todos los tamaños — porque el mejor socio para tu reto no tiene por qué estar en un espacio de coworking de Berlín.',
@@ -894,7 +894,7 @@ const esPage: typeof dePage = {
         desc: 'Pensamos como un intermediario eficaz, no como una consultora clásica. Necesitas al socio adecuado — nosotros te lo traemos.',
       },
     ],
-    processH2: 'El proceso Vencly: del reto a la decisión.',
+    processH2: 'El proceso innovation.today: del reto a la decisión.',
     steps: [
       {
         n: '01',
@@ -921,7 +921,7 @@ const esPage: typeof dePage = {
     deliverables: [
       'Shortlist cualificada de proveedores adecuados — con evaluación, no una lista en bruto',
       'Marco piloto estructurado con KPIs claros y criterios de decisión',
-      'Vencly acompaña la fase piloto de principio a fin',
+      'innovation.today acompaña la fase piloto de principio a fin',
       'Documentación lista para presentar a tu dirección tras 90 días',
       'Opcional: construcción de un proceso interno de Venture Clienting replicable',
     ],
@@ -948,11 +948,11 @@ const esPage: typeof dePage = {
     h1Accent: 'nuevos mercados',
     h1Tail: ' con mentalidad emprendedora.',
     intro:
-      'Las empresas y grupos que quieren desarrollar nuevas líneas de negocio se enfrentan al mismo problema: las estructuras internas se construyeron para el negocio principal existente — no para lo que viene después. Vencly aporta la agilidad y la metodología de los fundadores a tu organización sin poner en riesgo la estabilidad del negocio principal.',
+      'Las empresas y grupos que quieren desarrollar nuevas líneas de negocio se enfrentan al mismo problema: las estructuras internas se construyeron para el negocio principal existente — no para lo que viene después. innovation.today aporta la agilidad y la metodología de los fundadores a tu organización sin poner en riesgo la estabilidad del negocio principal.',
     whyH2: 'Por qué los procesos estratégicos tradicionales fracasan aquí.',
     whyP1:
       'Los proyectos estratégicos tardan demasiado, cuestan demasiado y con frecuencia terminan en un documento que nadie implementa. Las startups lo hacen de otra manera: construyen un MVP, lo prueban en el mercado real, iteran y deciden en base a datos.',
-    whyP2Prefix: 'Vencly aplica exactamente esta lógica a tu próxima oportunidad de mercado —',
+    whyP2Prefix: 'innovation.today aplica exactamente esta lógica a tu próxima oportunidad de mercado —',
     whyP2Bold:
       'con ciclos de iteración cortos, puntos de decisión claros y output medible en 3–6 meses',
     whyP2Suffix: '.',
@@ -990,7 +990,7 @@ const esPage: typeof dePage = {
     ventureClientingHintSuffix: '— con el objetivo de optimizar tiempo y costes durante la fase make-or-buy.',
     sectorsH2: 'Un punto fuerte particular: los sectores regulados.',
     sectorsP:
-      'Energía, infraestructuras, sector público — sectores donde la lógica startup se considera con frecuencia inaplicable. Vencly ha demostrado que eso es falso. Conocemos los marcos regulatorios, las estructuras de stakeholders y los requisitos específicos de estos sectores.',
+      'Energía, infraestructuras, sector público — sectores donde la lógica startup se considera con frecuencia inaplicable. innovation.today ha demostrado que eso es falso. Conocemos los marcos regulatorios, las estructuras de stakeholders y los requisitos específicos de estos sectores.',
     relatedH2: 'Artículos relacionados',
     relatedArticles: [
       { href: '/blog/geschaeftsfeldentwicklung-methoden', cat: 'Desarrollo de mercados', title: 'Desarrollo de nuevas líneas de negocio: métodos, fases y errores frecuentes' },
@@ -999,7 +999,7 @@ const esPage: typeof dePage = {
       { href: '/blog/startup-zusammenarbeit-venture-client', cat: 'Venture Clienting', title: 'La colaboración con startups como oportunidad en tiempos de crisis económica' },
     ],
     ctaH2: '¿Qué mercado quieres desarrollar a continuación?',
-    ctaP: 'En una primera conversación, aclaramos si y cómo Vencly puede ayudarte.',
+    ctaP: 'En una primera conversación, aclaramos si y cómo innovation.today puede ayudarte.',
     ctaButton: 'Solicitar una llamada',
   },
 
@@ -1010,7 +1010,7 @@ const esPage: typeof dePage = {
     h1Tail: ', no solo conceptual.',
     intro1:
       'La mejor estrategia no vale nada si no se ejecuta. Muchos proyectos de innovación fracasan no por el concepto, sino porque nadie internamente asume la responsabilidad operativa — el día a día domina y la nueva iniciativa no tiene dueño.',
-    intro2Prefix: 'Vencly cubre exactamente este vacío:',
+    intro2Prefix: 'innovation.today cubre exactamente este vacío:',
     intro2Bold: 'Asumimos la responsabilidad operativa',
     intro2Suffix:
       'de proyectos que son estratégicamente importantes pero estructuralmente difíciles de anclar internamente.',
@@ -1039,7 +1039,7 @@ const esPage: typeof dePage = {
       },
       {
         title: 'Gestión de stakeholders',
-        desc: 'Los proyectos complejos raramente fracasan por el concepto — fracasan por las resistencias internas. Vencly navega en los paisajes de stakeholders con experiencia en grandes empresas, ayuntamientos y organismos públicos.',
+        desc: 'Los proyectos complejos raramente fracasan por el concepto — fracasan por las resistencias internas. innovation.today navega en los paisajes de stakeholders con experiencia en grandes empresas, ayuntamientos y organismos públicos.',
       },
       {
         title: 'Talleres y documentos de decisión',
@@ -1065,12 +1065,12 @@ const esPage: typeof dePage = {
   },
 
   ueberUns: {
-    eyebrow: 'Sobre Vencly',
+    eyebrow: 'Sobre innovation.today',
     h1: 'Clemens Pompeÿ',
     intro:
-      'Fundador de Vencly. Emprendedor, experto en Venture Clienting y sparring partner para empresas que quieren desarrollar nuevas líneas de negocio — con método, velocidad y una mentalidad emprendedora.',
+      'Fundador de innovation.today. Emprendedor, experto en Venture Clienting y sparring partner para empresas que quieren desarrollar nuevas líneas de negocio — con método, velocidad y una mentalidad emprendedora.',
     quote:
-      '«Creo que las empresas establecidas no necesitan imitar la lógica de los fundadores — solo necesitan aplicarla de forma selectiva. Eso es exactamente lo que es Vencly.»',
+      '«Creo que las empresas establecidas no necesitan imitar la lógica de los fundadores — solo necesitan aplicarla de forma selectiva. Eso es exactamente lo que es innovation.today.»',
     expertiseH2: 'Expertise',
     expertise: [
       'Venture Clienting',
@@ -1087,26 +1087,26 @@ const esPage: typeof dePage = {
         period: '2022 – presente',
         role: 'Fundador y Director General',
         org: 'Vencly GmbH',
-        desc: 'Creación de Vencly como consultora de Venture Clienting y desarrollo de nuevas líneas de negocio. Más de 40 proyectos realizados en energía, infraestructuras, sector público y pymes.',
+        desc: 'Creación de innovation.today como consultora de Venture Clienting y desarrollo de nuevas líneas de negocio. Más de 40 proyectos realizados en energía, infraestructuras, sector público y pymes.',
       },
       {
         period: '2018 – 2022',
         role: 'Venture Client & Innovación',
         org: 'Entorno corporativo: energía / infraestructuras',
-        desc: 'Creación y operación de programas estructurados de Venture Clienting. Desarrollo y validación de la metodología que hoy constituye la base de Vencly.',
+        desc: 'Creación y operación de programas estructurados de Venture Clienting. Desarrollo y validación de la metodología que hoy constituye la base de innovation.today.',
       },
       {
         period: 'Anteriormente',
         role: 'Experiencia emprendedora',
         org: 'Propios proyectos y roles operativos',
-        desc: 'Varios años de experiencia como fundador y en responsabilidad operativa — la base de la visión emprendedora que Vencly aporta a cada proyecto.',
+        desc: 'Varios años de experiencia como fundador y en responsabilidad operativa — la base de la visión emprendedora que innovation.today aporta a cada proyecto.',
       },
     ],
-    approachH2: 'El enfoque Vencly',
+    approachH2: 'El enfoque innovation.today',
     approachP1:
-      'Vencly no es una consultora tradicional. Asumimos la responsabilidad operativa, trabajamos con una mentalidad emprendedora y entregamos resultados medibles — sin más informes conceptuales.',
+      'innovation.today no es una consultora tradicional. Asumimos la responsabilidad operativa, trabajamos con una mentalidad emprendedora y entregamos resultados medibles — sin más informes conceptuales.',
     approachP2:
-      'La tesis central: las startups no construyen nuevos mercados gracias a recursos superiores, sino gracias a una velocidad de aprendizaje superior. Probar hipótesis rápido, decidir rápido, escalar rápido — esa es la lógica que Vencly transfiere a grandes empresas y pymes.',
+      'La tesis central: las startups no construyen nuevos mercados gracias a recursos superiores, sino gracias a una velocidad de aprendizaje superior. Probar hipótesis rápido, decidir rápido, escalar rápido — esa es la lógica que innovation.today transfiere a grandes empresas y pymes.',
     ctaPrimary: 'Solicitar una llamada',
     ctaSecondary: 'Leer artículos de Clemens',
   },

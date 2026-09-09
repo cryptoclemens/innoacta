@@ -5,7 +5,7 @@ import { useLanguage } from '@/contexts/LanguageContext'
 import { calButtonProps } from '@/components/layout/CalProvider'
 
 function LearningCurveChart() {
-  const venclyPath = 'M 30,170 C 55,148 70,125 95,112 C 130,93 165,78 210,68 C 255,57 295,46 340,38 L 395,32'
+  const innovationPath = 'M 30,170 C 55,148 70,125 95,112 C 130,93 165,78 210,68 C 255,57 295,46 340,38 L 395,32'
   const klassischPath = 'M 30,170 C 75,166 90,163 120,160 C 160,155 195,150 240,144 C 285,136 320,124 340,118 L 395,110'
 
   const milestones = [
@@ -44,12 +44,12 @@ function LearningCurveChart() {
         <path d={klassischPath} fill="none" stroke="#d97706" strokeWidth="1.5"
           strokeDasharray="6 4" opacity="0.5" />
 
-        {/* Area under Vencly */}
-        <path d={`${venclyPath} L 395,182 L 30,182 Z`}
+        {/* Area under innovation.today */}
+        <path d={`${innovationPath} L 395,182 L 30,182 Z`}
           fill="#0f766e" opacity="0.07" />
 
-        {/* Vencly curve — solid petrol */}
-        <path d={venclyPath} fill="none" stroke="#0f766e" strokeWidth="2.5"
+        {/* innovation.today curve — solid petrol */}
+        <path d={innovationPath} fill="none" stroke="#0f766e" strokeWidth="2.5"
           strokeLinecap="round" />
 
         {/* Milestone dots */}
@@ -68,7 +68,7 @@ function LearningCurveChart() {
         <g>
           <line x1="30" y1="18" x2="48" y2="18" stroke="#0f766e" strokeWidth="2.5" strokeLinecap="round" />
           <circle cx="39" cy="18" r="3" fill="#0f766e" />
-          <text x="54" y="22" fill="#475569" fontSize="10">Vencly</text>
+          <text x="54" y="22" fill="#475569" fontSize="10">innovation.today</text>
 
           <line x1="105" y1="18" x2="123" y2="18" stroke="#d97706" strokeWidth="1.5" strokeDasharray="5 3" opacity="0.7" />
           <text x="129" y="22" fill="#94a3b8" fontSize="10">Klassisch</text>
@@ -119,7 +119,7 @@ export default function Hero() {
         </p>
 
         <p className="font-display text-xl md:text-2xl font-normal text-vencly-teal mb-10">
-          Vencly steht für eines: Umsetzung von Chancen.
+          innovation.today steht für eines: Umsetzung von Chancen.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

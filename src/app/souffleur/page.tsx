@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     'Souffleur transkribiert Verhandlungen lokal per Whisper, gleicht Gesprächspunkte in Echtzeit mit Ihrem Spickzettel ab und erstellt anonymisierte Summaries – ohne Cloud, DSGVO-konform, BYOK.',
   alternates: { canonical: 'https://vencly.com/souffleur' },
   openGraph: {
-    title: 'Souffleur | Vencly',
+    title: 'Souffleur | innovation.today',
     description: 'Live-Coaching für Verhandlungen auf macOS: lokal, privat, cheat-sheet-gesteuert. Kein Cloud-Recording, BYOK, DSGVO-first.',
   },
 }
@@ -21,7 +21,7 @@ const jsonLd = {
   applicationCategory: 'BusinessApplication',
   operatingSystem: 'macOS',
   description: 'Privacy-first, BYOK Live-Verhandlungs-Coach für macOS. Lokale Transkription, Echtzeit-Spickzettel-Abgleich, DSGVO-konform.',
-  author: { '@type': 'Organization', name: 'Vencly GmbH', url: 'https://vencly.com' },
+  author: { '@type': 'Organization', name: 'innovation.today', legalName: 'Vencly GmbH', url: 'https://vencly.com' },
 }
 
 const features = [

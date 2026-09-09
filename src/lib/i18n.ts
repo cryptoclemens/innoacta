@@ -23,7 +23,7 @@ const de = {
     h1: 'Innovatives Gründer-Denken für',
     h1Highlight: 'Unternehmen mit Tradition.',
     subline:
-      'Wir bringen Startup-Logik in Ihr nächstes Geschäftsfeld. Denn Startups bauen neue Märkte, indem sie schnell testen, klug einkaufen und radikal fokussiert bleiben. Vencly überträgt genau diese Logik auf Konzerne und den Mittelstand.',
+      'Wir bringen Startup-Logik in Ihr nächstes Geschäftsfeld. Denn Startups bauen neue Märkte, indem sie schnell testen, klug einkaufen und radikal fokussiert bleiben. innovation.today überträgt genau diese Logik auf Konzerne und den Mittelstand.',
     ctaPrimary: 'Erstgespräch vereinbaren',
     ctaSecondary: 'Referenzprojekte ansehen',
     stats: [
@@ -33,11 +33,11 @@ const de = {
     ],
   },
   valueProp: {
-    label: 'Was Vencly einbringt',
+    label: 'Was innovation.today einbringt',
     h2: 'Denken wie ein Startup.',
     h2Highlight: 'Handeln wie ein Marktführer.',
     intro:
-      'Neue Geschäftsfelder bauen – so wie Gründer es tun: mit minimalem Overhead, maximaler Geschwindigkeit und dem Mut, schnell zu entscheiden. Vencly bringt diese Haltung in Ihren Konzern oder Ihr mittelständisches Unternehmen.',
+      'Neue Geschäftsfelder bauen – so wie Gründer es tun: mit minimalem Overhead, maximaler Geschwindigkeit und dem Mut, schnell zu entscheiden. innovation.today bringt diese Haltung in Ihren Konzern oder Ihr mittelständisches Unternehmen.',
     items: [
       {
         title: 'Validieren statt planen',
@@ -49,7 +49,7 @@ const de = {
       },
       {
         title: 'Von der Idee zum Markt – in Startup-Geschwindigkeit',
-        desc: 'Keine endlosen Abstimmungsschleifen. Vencly übernimmt operative Verantwortung und liefert – schnell, messbar, mit echtem Impact.',
+        desc: 'Keine endlosen Abstimmungsschleifen. innovation.today übernimmt operative Verantwortung und liefert – schnell, messbar, mit echtem Impact.',
       },
       {
         title: 'Funktioniert auch in regulierten Branchen',
@@ -79,20 +79,20 @@ const de = {
       },
       {
         title: 'Strategische Umsetzung',
-        desc: 'Nicht Strategie statt Umsetzung – sondern beides. Vencly übernimmt operative Verantwortung in Projekten, die intern keine Heimat haben: Projektsteuerung, Stakeholder-Management, Entscheidungsvorlagen.',
+        desc: 'Nicht Strategie statt Umsetzung – sondern beides. innovation.today übernimmt operative Verantwortung in Projekten, die intern keine Heimat haben: Projektsteuerung, Stakeholder-Management, Entscheidungsvorlagen.',
         points: ['Projektsteuerung & Reporting', 'Stakeholder-Management', 'Workshop-Formate'],
       },
     ],
   },
   whyUs: {
-    label: 'Warum Vencly',
+    label: 'Warum innovation.today',
     h2: 'Kein Konzept-Karussell.',
     subtext:
       'Wir sind kein Berater, der Konzepte erstellt. Wir sind das Team, das umsetzt – mit echter Umsetzungsverantwortung und unternehmerischem Blick.',
     items: [
       {
         title: 'Unternehmerische Perspektive, keine Berater-Distanz',
-        desc: 'Vencly wird von einem Gründer geführt, der selbst Unternehmen aufgebaut, Märkte erschlossen und Iterationen durchlebt hat. Das prägt den Blick auf Ihre Situation – und auf das, was wirklich umsetzbar ist.',
+        desc: 'innovation.today wird von einem Gründer geführt, der selbst Unternehmen aufgebaut, Märkte erschlossen und Iterationen durchlebt hat. Das prägt den Blick auf Ihre Situation – und auf das, was wirklich umsetzbar ist.',
       },
       {
         title: 'Methode trifft Erfahrung',
@@ -108,7 +108,7 @@ const de = {
     label: 'Referenzen',
     h2: 'Aus der Praxis.',
     subtext:
-      'Namhafte Unternehmen aus der DACH-Region vertrauen auf Vencly für strategische Geschäftsfeldentwicklung und Venture-Clienting-Projekte.',
+      'Namhafte Unternehmen aus der DACH-Region vertrauen auf innovation.today für strategische Geschäftsfeldentwicklung und Venture-Clienting-Projekte.',
     caseTag: 'ENERGIE · INFRASTRUKTUR',
     caseTitle: 'Neues Geschäftsfeld Geothermie\nfür einen deutschen Energieversorger',
     caseText:
@@ -133,7 +133,7 @@ const de = {
     ctaButton: 'Jetzt Termin vereinbaren',
   },
   factsheet: {
-    title: 'Vencly auf zwei Seiten',
+    title: 'innovation.today auf zwei Seiten',
     desc: 'Leistungsübersicht, Methodik und Referenzprojekt kompakt zusammengefasst – für die nächste interne Runde.',
     button: 'PDF herunterladen',
   },
@@ -142,7 +142,7 @@ const de = {
   },
   footer: {
     tagline:
-      'Vencly bringt Gründer-Denken in neue Geschäftsfelder – für Konzerne und den Mittelstand, die schneller handeln wollen als ihre Konkurrenz.',
+      'innovation.today bringt Gründer-Denken in neue Geschäftsfelder – für Konzerne und den Mittelstand, die schneller handeln wollen als ihre Konkurrenz.',
     navLabel: 'Navigation',
     legalLabel: 'Rechtliches',
     impressum: 'Impressum',
@@ -165,7 +165,7 @@ const en: Translations = {
     h1: 'Entrepreneurial Thinking for',
     h1Highlight: 'Your Next Market Move.',
     subline:
-      'We bring startup rigour to your next growth opportunity. Startups build new markets by testing fast, procuring smart and staying radically focused. Vencly transfers exactly this logic to corporations and mid-market companies — without the chaos.',
+      'We bring startup rigour to your next growth opportunity. Startups build new markets by testing fast, procuring smart and staying radically focused. innovation.today transfers exactly this logic to corporations and mid-market companies — without the chaos.',
     ctaPrimary: 'Book a Call',
     ctaSecondary: 'View Case Studies',
     stats: [
@@ -175,11 +175,11 @@ const en: Translations = {
     ],
   },
   valueProp: {
-    label: 'What Vencly Delivers',
+    label: 'What innovation.today Delivers',
     h2: 'Think like a startup.',
     h2Highlight: 'Execute like a market leader.',
     intro:
-      'Building new business lines the way founders do — with minimal overhead, maximum velocity and the conviction to make decisions quickly. Vencly brings this mindset to corporations and mid-market companies that need to move faster than their competition.',
+      'Building new business lines the way founders do — with minimal overhead, maximum velocity and the conviction to make decisions quickly. innovation.today brings this mindset to corporations and mid-market companies that need to move faster than their competition.',
     items: [
       {
         title: 'Validate before you scale',
@@ -191,7 +191,7 @@ const en: Translations = {
       },
       {
         title: 'From concept to market — at startup pace',
-        desc: 'No endless steering committees. Vencly takes operational ownership and delivers — quickly, measurably, with tangible impact.',
+        desc: 'No endless steering committees. innovation.today takes operational ownership and delivers — quickly, measurably, with tangible impact.',
       },
       {
         title: 'Built for regulated industries',
@@ -221,20 +221,20 @@ const en: Translations = {
       },
       {
         title: 'Strategic Execution',
-        desc: 'Strategy and execution — together. Vencly takes operational ownership of high-priority projects that lack an internal home: project management, stakeholder alignment and decision-ready documentation.',
+        desc: 'Strategy and execution — together. innovation.today takes operational ownership of high-priority projects that lack an internal home: project management, stakeholder alignment and decision-ready documentation.',
         points: ['Project management & reporting', 'Stakeholder management', 'Workshop facilitation'],
       },
     ],
   },
   whyUs: {
-    label: 'Why Vencly',
+    label: 'Why innovation.today',
     h2: 'No slide decks and goodbyes.',
     subtext:
       'We don\'t produce strategy documents and leave. We\'re the team that rolls up its sleeves and delivers — with genuine accountability and an entrepreneurial perspective that comes from having been there.',
     items: [
       {
         title: 'Entrepreneurial instinct, not consultant detachment',
-        desc: 'Vencly is led by a founder who has built companies from scratch, opened new markets and lived through the pivots. That shapes how we read your situation — and what we honestly believe is achievable.',
+        desc: 'innovation.today is led by a founder who has built companies from scratch, opened new markets and lived through the pivots. That shapes how we read your situation — and what we honestly believe is achievable.',
       },
       {
         title: 'Methodology grounded in practice',
@@ -250,7 +250,7 @@ const en: Translations = {
     label: 'Case Studies',
     h2: 'Work that speaks for itself.',
     subtext:
-      'Leading organisations trust Vencly for strategic new market development and Venture Clienting engagements.',
+      'Leading organisations trust innovation.today for strategic new market development and Venture Clienting engagements.',
     caseTag: 'ENERGY · INFRASTRUCTURE',
     caseTitle: 'New Business Line: Geothermal Energy\nfor a Major German Energy Provider',
     caseText:
@@ -275,7 +275,7 @@ const en: Translations = {
     ctaButton: 'Book a Meeting',
   },
   factsheet: {
-    title: 'Vencly in Two Pages',
+    title: 'innovation.today in Two Pages',
     desc: 'Service overview, methodology and a reference case — concisely packaged for your next internal discussion.',
     button: 'Download PDF',
   },
@@ -284,7 +284,7 @@ const en: Translations = {
   },
   footer: {
     tagline:
-      'Vencly brings entrepreneurial thinking to new market development — for corporations and mid-market companies that need to move faster than their competition.',
+      'innovation.today brings entrepreneurial thinking to new market development — for corporations and mid-market companies that need to move faster than their competition.',
     navLabel: 'Navigation',
     legalLabel: 'Legal',
     impressum: 'Legal Notice',
@@ -307,7 +307,7 @@ const fr: Translations = {
     h1: 'L\'approche entrepreneuriale pour',
     h1Highlight: 'votre prochain axe de développement.',
     subline:
-      'Nous apportons la rigueur des startups à votre prochain relais de croissance. Les startups construisent de nouveaux marchés en testant vite, en achetant intelligemment et en restant radicalement focalisées. Vencly transfère exactement cette logique aux grandes entreprises et aux ETI — sans perdre en exigence.',
+      'Nous apportons la rigueur des startups à votre prochain relais de croissance. Les startups construisent de nouveaux marchés en testant vite, en achetant intelligemment et en restant radicalement focalisées. innovation.today transfère exactement cette logique aux grandes entreprises et aux ETI — sans perdre en exigence.',
     ctaPrimary: 'Prendre rendez-vous',
     ctaSecondary: 'Voir les cas clients',
     stats: [
@@ -317,11 +317,11 @@ const fr: Translations = {
     ],
   },
   valueProp: {
-    label: 'Ce que Vencly apporte',
+    label: 'Ce que innovation.today apporte',
     h2: 'Penser comme une startup.',
     h2Highlight: 'Agir comme un leader du marché.',
     intro:
-      'Ouvrir de nouveaux axes de développement comme le font les fondateurs : avec un minimum de structure, une vitesse maximale et la conviction de décider vite. Vencly apporte ce mindset entrepreneurial à votre groupe ou votre ETI.',
+      'Ouvrir de nouveaux axes de développement comme le font les fondateurs : avec un minimum de structure, une vitesse maximale et la conviction de décider vite. innovation.today apporte ce mindset entrepreneurial à votre groupe ou votre ETI.',
     items: [
       {
         title: 'Valider avant de déployer',
@@ -333,7 +333,7 @@ const fr: Translations = {
       },
       {
         title: 'De l\'idée au marché — à la vitesse d\'une startup',
-        desc: 'Pas de comités de pilotage interminables. Vencly prend en charge la responsabilité opérationnelle et livre — rapidement, de façon mesurable, avec un impact concret.',
+        desc: 'Pas de comités de pilotage interminables. innovation.today prend en charge la responsabilité opérationnelle et livre — rapidement, de façon mesurable, avec un impact concret.',
       },
       {
         title: 'Éprouvé dans les secteurs réglementés',
@@ -363,20 +363,20 @@ const fr: Translations = {
       },
       {
         title: 'Exécution stratégique',
-        desc: 'Pas la stratégie à la place de l\'exécution — les deux ensemble. Vencly prend en charge la responsabilité opérationnelle de projets sans portage interne clair : pilotage de projet, gestion des décideurs, documents d\'arbitrage.',
+        desc: 'Pas la stratégie à la place de l\'exécution — les deux ensemble. innovation.today prend en charge la responsabilité opérationnelle de projets sans portage interne clair : pilotage de projet, gestion des décideurs, documents d\'arbitrage.',
         points: ['Pilotage de projet & reporting', 'Gestion des décideurs et équipes', 'Animation d\'ateliers stratégiques'],
       },
     ],
   },
   whyUs: {
-    label: 'Pourquoi Vencly',
+    label: 'Pourquoi innovation.today',
     h2: 'Fini les stratégies de tiroir.',
     subtext:
       'Nous ne produisons pas de livrables que personne ne lit. Nous sommes l\'équipe qui retrousse ses manches et qui livre — avec une vraie responsabilité sur les résultats et un regard d\'entrepreneur, pas de consultant.',
     items: [
       {
         title: 'Le regard d\'un entrepreneur, pas la distance d\'un conseil',
-        desc: 'Vencly est dirigé par un fondateur qui a lui-même créé des entreprises, ouvert de nouveaux marchés et traversé les itérations. Ce vécu façonne notre lecture de votre situation — et ce que nous estimons réellement atteignable.',
+        desc: 'innovation.today est dirigé par un fondateur qui a lui-même créé des entreprises, ouvert de nouveaux marchés et traversé les itérations. Ce vécu façonne notre lecture de votre situation — et ce que nous estimons réellement atteignable.',
       },
       {
         title: 'Méthode et expérience terrain réunies',
@@ -392,7 +392,7 @@ const fr: Translations = {
     label: 'Cas clients',
     h2: 'Des résultats concrets.',
     subtext:
-      'Des organisations de premier plan font confiance à Vencly pour le développement stratégique de nouveaux marchés et leurs projets de Venture Clienting.',
+      'Des organisations de premier plan font confiance à innovation.today pour le développement stratégique de nouveaux marchés et leurs projets de Venture Clienting.',
     caseTag: 'ÉNERGIE · INFRASTRUCTURE',
     caseTitle: 'Nouveau relais de croissance : géothermie\npour un grand fournisseur d\'énergie allemand',
     caseText:
@@ -417,7 +417,7 @@ const fr: Translations = {
     ctaButton: 'Prendre rendez-vous',
   },
   factsheet: {
-    title: 'Vencly en deux pages',
+    title: 'innovation.today en deux pages',
     desc: 'Présentation des services, méthodologie et cas client — condensés pour votre prochain arbitrage interne.',
     button: 'Télécharger le PDF',
   },
@@ -426,7 +426,7 @@ const fr: Translations = {
   },
   footer: {
     tagline:
-      'Vencly apporte l\'approche entrepreneuriale au développement de nouveaux marchés — pour les groupes et les ETI qui veulent agir plus vite que la concurrence.',
+      'innovation.today apporte l\'approche entrepreneuriale au développement de nouveaux marchés — pour les groupes et les ETI qui veulent agir plus vite que la concurrence.',
     navLabel: 'Navigation',
     legalLabel: 'Mentions légales',
     impressum: 'Mentions légales',
@@ -449,7 +449,7 @@ const es: Translations = {
     h1: 'Mentalidad emprendedora para',
     h1Highlight: 'tu próxima línea de negocio.',
     subline:
-      'Llevamos la lógica de las startups a tu próxima oportunidad de crecimiento. Las startups construyen nuevos mercados probando rápido, comprando con inteligencia y manteniéndose radicalmente enfocadas. Vencly transfiere exactamente esta lógica a grandes empresas y pymes — sin perder rigor.',
+      'Llevamos la lógica de las startups a tu próxima oportunidad de crecimiento. Las startups construyen nuevos mercados probando rápido, comprando con inteligencia y manteniéndose radicalmente enfocadas. innovation.today transfiere exactamente esta lógica a grandes empresas y pymes — sin perder rigor.',
     ctaPrimary: 'Solicitar una llamada',
     ctaSecondary: 'Ver casos de éxito',
     stats: [
@@ -459,11 +459,11 @@ const es: Translations = {
     ],
   },
   valueProp: {
-    label: 'Lo que aporta Vencly',
+    label: 'Lo que aporta innovation.today',
     h2: 'Pensar como una startup.',
     h2Highlight: 'Ejecutar como líder del mercado.',
     intro:
-      'Abrir nuevas líneas de negocio como lo hacen los fundadores: con la mínima estructura, la máxima velocidad y la convicción de tomar decisiones rápidas. Vencly lleva este mindset emprendedor a tu empresa o grupo.',
+      'Abrir nuevas líneas de negocio como lo hacen los fundadores: con la mínima estructura, la máxima velocidad y la convicción de tomar decisiones rápidas. innovation.today lleva este mindset emprendedor a tu empresa o grupo.',
     items: [
       {
         title: 'Validar antes de escalar',
@@ -475,7 +475,7 @@ const es: Translations = {
       },
       {
         title: 'De la idea al mercado — a velocidad startup',
-        desc: 'Sin reuniones interminables ni procesos eternos. Vencly asume la responsabilidad operativa y entrega — rápido, de forma medible, con impacto tangible.',
+        desc: 'Sin reuniones interminables ni procesos eternos. innovation.today asume la responsabilidad operativa y entrega — rápido, de forma medible, con impacto tangible.',
       },
       {
         title: 'Diseñado para sectores regulados',
@@ -505,20 +505,20 @@ const es: Translations = {
       },
       {
         title: 'Ejecución estratégica',
-        desc: 'No estrategia en lugar de ejecución — sino las dos cosas a la vez. Vencly asume la responsabilidad operativa en proyectos sin un responsable interno claro: dirección de proyecto, gestión de stakeholders y documentos de decisión.',
+        desc: 'No estrategia en lugar de ejecución — sino las dos cosas a la vez. innovation.today asume la responsabilidad operativa en proyectos sin un responsable interno claro: dirección de proyecto, gestión de stakeholders y documentos de decisión.',
         points: ['Dirección de proyecto y reporting', 'Gestión de stakeholders', 'Dinamización de talleres estratégicos'],
       },
     ],
   },
   whyUs: {
-    label: 'Por qué Vencly',
+    label: 'Por qué innovation.today',
     h2: 'Nada de estrategias de papel.',
     subtext:
       'No somos la consultora que entrega un informe y desaparece. Somos el equipo que se arremanga y ejecuta — con responsabilidad real sobre los resultados y una perspectiva de emprendedor, no de consultor.',
     items: [
       {
         title: 'Visión de emprendedor, no distancia de consultor',
-        desc: 'Vencly está liderado por un fundador que ha construido empresas desde cero, abierto nuevos mercados y vivido en primera persona las iteraciones. Eso moldea cómo leemos tu situación — y qué creemos que es realmente alcanzable.',
+        desc: 'innovation.today está liderado por un fundador que ha construido empresas desde cero, abierto nuevos mercados y vivido en primera persona las iteraciones. Eso moldea cómo leemos tu situación — y qué creemos que es realmente alcanzable.',
       },
       {
         title: 'Metodología respaldada por experiencia real',
@@ -534,7 +534,7 @@ const es: Translations = {
     label: 'Casos de éxito',
     h2: 'Resultados que hablan por sí solos.',
     subtext:
-      'Organizaciones líderes confían en Vencly para el desarrollo estratégico de nuevas líneas de negocio y sus proyectos de Venture Clienting.',
+      'Organizaciones líderes confían en innovation.today para el desarrollo estratégico de nuevas líneas de negocio y sus proyectos de Venture Clienting.',
     caseTag: 'ENERGÍA · INFRAESTRUCTURA',
     caseTitle: 'Nueva línea de negocio: geotermia\npara un gran proveedor energético alemán',
     caseText:
@@ -559,7 +559,7 @@ const es: Translations = {
     ctaButton: 'Reservar una reunión',
   },
   factsheet: {
-    title: 'Vencly en dos páginas',
+    title: 'innovation.today en dos páginas',
     desc: 'Resumen de servicios, metodología y caso de éxito — en formato compacto para tu próxima reunión interna.',
     button: 'Descargar PDF',
   },
@@ -568,7 +568,7 @@ const es: Translations = {
   },
   footer: {
     tagline:
-      'Vencly lleva el pensamiento emprendedor al desarrollo de nuevas líneas de negocio — para empresas y pymes que necesitan moverse más rápido que su competencia.',
+      'innovation.today lleva el pensamiento emprendedor al desarrollo de nuevas líneas de negocio — para empresas y pymes que necesitan moverse más rápido que su competencia.',
     navLabel: 'Navegación',
     legalLabel: 'Legal',
     impressum: 'Aviso legal',

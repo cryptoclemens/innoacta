@@ -70,7 +70,7 @@ function ValidationCheckModal({ onClose }: { onClose: () => void }) {
           <div>
             <span className="section-eyebrow text-xs">Schnell-Check</span>
             <h2 className="font-display text-lg font-normal text-gray-900 dark:text-white mt-1">
-              Passt Vencly zu Ihnen?
+              Passt innovation.today zu Ihnen?
             </h2>
             <p className="text-xs text-gray-400 mt-0.5">Haken Sie an, was auf Ihr Unternehmen zutrifft.</p>
           </div>
@@ -129,7 +129,7 @@ function ValidationCheckModal({ onClose }: { onClose: () => void }) {
           {fits && (
             <div>
               <p className="text-sm font-semibold text-vencly-teal mb-1">
-                {score} von 6 – Vencly könnte sehr gut passen.
+                {score} von 6 – innovation.today könnte sehr gut passen.
               </p>
               <p className="text-xs text-gray-600 dark:text-gray-400">
                 Das klingt nach einem Projekt, das wir gemeinsam angehen können.
@@ -312,7 +312,7 @@ export default function Navbar() {
           <Link href="/" className="flex items-center group">
             <Image
               src="/logovencly.svg"
-              alt="Vencly"
+              alt="innovation.today"
               width={120}
               height={36}
               className="h-9 w-auto dark:invert"

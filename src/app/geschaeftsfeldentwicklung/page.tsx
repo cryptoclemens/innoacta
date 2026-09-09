@@ -8,7 +8,7 @@ const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Service',
   name: 'Geschäftsfeldentwicklung',
-  provider: { '@type': 'Organization', name: 'Vencly GmbH', url: 'https://vencly.com' },
+  provider: { '@type': 'Organization', name: 'innovation.today', legalName: 'Vencly GmbH', url: 'https://vencly.com' },
   url: 'https://vencly.com/geschaeftsfeldentwicklung',
   description:
     'Neue Geschäftsfelder identifizieren, Geschäftsmodelle entwickeln und am Markt validieren – von der ersten Hypothese bis zum skalierbaren Modell. Für Konzerne und Mittelstand.',
@@ -25,7 +25,7 @@ const faqJsonLd = {
       name: 'Was versteht man unter Geschäftsfeldentwicklung?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Geschäftsfeldentwicklung bezeichnet den strukturierten Prozess, mit dem Unternehmen neue Märkte oder Geschäftsbereiche identifizieren, entwickeln und am Markt validieren. Ziel ist es, neue Umsatzquellen zu erschließen – systematisch, schnell und mit minimiertem Risiko. Vencly wendet dabei Startup-Methoden auf Konzerne und Mittelstand an.',
+        text: 'Geschäftsfeldentwicklung bezeichnet den strukturierten Prozess, mit dem Unternehmen neue Märkte oder Geschäftsbereiche identifizieren, entwickeln und am Markt validieren. Ziel ist es, neue Umsatzquellen zu erschließen – systematisch, schnell und mit minimiertem Risiko. innovation.today wendet dabei Startup-Methoden auf Konzerne und Mittelstand an.',
       },
     },
     {
@@ -41,7 +41,7 @@ const faqJsonLd = {
       name: 'Wie lange dauert eine Geschäftsfeldentwicklung?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Ein typisches Geschäftsfeldentwicklungs-Projekt bei Vencly dauert 3 bis 6 Monate. Phase 1 (Analyse & Hypothesen) dauert 4–6 Wochen, Phase 2 (Marktvalidierung) 6–10 Wochen, Phase 3 (Skalierungsvorbereitung) weitere 4–8 Wochen – je nach Komplexität und Branche.',
+        text: 'Ein typisches Geschäftsfeldentwicklungs-Projekt bei innovation.today dauert 3 bis 6 Monate. Phase 1 (Analyse & Hypothesen) dauert 4–6 Wochen, Phase 2 (Marktvalidierung) 6–10 Wochen, Phase 3 (Skalierungsvorbereitung) weitere 4–8 Wochen – je nach Komplexität und Branche.',
       },
     },
     {
@@ -49,15 +49,15 @@ const faqJsonLd = {
       name: 'Für welche Branchen eignet sich Geschäftsfeldentwicklung?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Vencly hat Geschäftsfeldentwicklung erfolgreich in regulierten Branchen wie Energie, Infrastruktur und dem öffentlichen Sektor durchgeführt. Startup-Logik kennt keine Branchengrenzen – entscheidend ist die richtige Adaption der Methoden an den jeweiligen regulatorischen und kulturellen Kontext.',
+        text: 'innovation.today hat Geschäftsfeldentwicklung erfolgreich in regulierten Branchen wie Energie, Infrastruktur und dem öffentlichen Sektor durchgeführt. Startup-Logik kennt keine Branchengrenzen – entscheidend ist die richtige Adaption der Methoden an den jeweiligen regulatorischen und kulturellen Kontext.',
       },
     },
     {
       '@type': 'Question',
-      name: 'Was kostet Geschäftsfeldentwicklung mit Vencly?',
+      name: 'Was kostet Geschäftsfeldentwicklung mit innovation.today?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Die Kosten hängen vom Umfang und der Komplexität des Projekts ab. Vencly arbeitet in der Regel auf Basis eines Begleitmandats mit monatlichen Tagessätzen. Für eine individuelle Einschätzung empfehlen wir ein unverbindliches Erstgespräch.',
+        text: 'Die Kosten hängen vom Umfang und der Komplexität des Projekts ab. innovation.today arbeitet in der Regel auf Basis eines Begleitmandats mit monatlichen Tagessätzen. Für eine individuelle Einschätzung empfehlen wir ein unverbindliches Erstgespräch.',
       },
     },
   ],

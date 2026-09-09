@@ -17,7 +17,7 @@ const articleJsonLd = {
   description:
     'Vergaberecht, lange Entscheidungsprozesse, konservative Strukturen – warum Venture Clienting trotzdem funktioniert und wie man die typischen Hindernisse überwindet.',
   author: { '@type': 'Person', name: 'Clemens Pompeÿ', url: 'https://vencly.com/ueber-uns' },
-  publisher: { '@type': 'Organization', name: 'Vencly GmbH', url: 'https://vencly.com' },
+  publisher: { '@type': 'Organization', name: 'innovation.today', legalName: 'Vencly GmbH', url: 'https://vencly.com' },
   url: 'https://vencly.com/blog/venture-clienting-regulierte-branchen',
   datePublished: '2025-04-05',
   dateModified: '2026-05-16',
@@ -175,12 +175,12 @@ export default function ArticlePage() {
               </li>
             </ul>
 
-            <h2>Vencly: Erfahrung in regulierten Märkten</h2>
+            <h2>innovation.today: Erfahrung in regulierten Märkten</h2>
             <p>
-              Vencly hat einen Schwerpunkt in genau den Branchen, die für Venture Clienting als schwierig gelten: Energie, Infrastruktur und öffentlicher Sektor. Das bedeutet: Vertrautheit mit Vergabeprozessen, belastbare Kontakte zu relevanten Anbietern und ein Prozessrahmen, der Compliance-Anforderungen von Anfang an mitdenkt.
+              innovation.today hat einen Schwerpunkt in genau den Branchen, die für Venture Clienting als schwierig gelten: Energie, Infrastruktur und öffentlicher Sektor. Das bedeutet: Vertrautheit mit Vergabeprozessen, belastbare Kontakte zu relevanten Anbietern und ein Prozessrahmen, der Compliance-Anforderungen von Anfang an mitdenkt.
             </p>
             <p>
-              Konkret übernimmt Vencly die Schnittstellenfunktion zwischen internen Entscheidern, Einkauf, Rechtsabteilung und externen Anbietern – sodass das Pilotprojekt nicht an internen Abstimmungsprozessen scheitert, bevor es begonnen hat. Der interne Champion muss das Projekt vertreten, nicht operativ führen.
+              Konkret übernimmt innovation.today die Schnittstellenfunktion zwischen internen Entscheidern, Einkauf, Rechtsabteilung und externen Anbietern – sodass das Pilotprojekt nicht an internen Abstimmungsprozessen scheitert, bevor es begonnen hat. Der interne Champion muss das Projekt vertreten, nicht operativ führen.
             </p>
 
             <h2>Fazit: Die interessantesten Anwendungsfälle sind die schwierigsten</h2>

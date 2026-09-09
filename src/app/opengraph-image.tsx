@@ -1,6 +1,6 @@
 import { ImageResponse } from 'next/og'
 
-export const alt = 'Vencly – Innovatives Gründer-Denken für Unternehmen mit Tradition.'
+export const alt = 'innovation.today – Innovatives Gründer-Denken für Unternehmen mit Tradition.'
 export const size = { width: 1200, height: 630 }
 export const contentType = 'image/png'
 
@@ -63,7 +63,7 @@ export default function Image() {
 
         {/* Logo wordmark */}
         <div style={{ display: 'flex', position: 'absolute', bottom: '48px', right: '80px', fontSize: '24px', fontWeight: 700, color: '#ffffff', letterSpacing: '-0.02em' }}>
-          vencly
+          innovation.today
         </div>
       </div>
     ),

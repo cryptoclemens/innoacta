@@ -1,12 +1,12 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Über uns – Clemens Pompeÿ & Vencly',
+  title: 'Über uns – Clemens Pompeÿ & innovation.today',
   description:
-    'Clemens Pompeÿ ist Gründer von Vencly. Mit über 40 realisierten Venture-Client-Projekten und tiefer Branchenkenntnis in Energie, Infrastruktur und öffentlichem Sektor begleitet er Konzerne und Mittelstand bei der Entwicklung neuer Geschäftsfelder.',
+    'Clemens Pompeÿ ist Gründer von innovation.today. Mit über 40 realisierten Venture-Client-Projekten und tiefer Branchenkenntnis in Energie, Infrastruktur und öffentlichem Sektor begleitet er Konzerne und Mittelstand bei der Entwicklung neuer Geschäftsfelder.',
   alternates: { canonical: 'https://vencly.com/ueber-uns' },
   openGraph: {
-    title: 'Über Clemens Pompeÿ – Vencly',
+    title: 'Über Clemens Pompeÿ – innovation.today',
     description:
       'Gründer, Unternehmer, Venture-Client-Experte. Clemens Pompeÿ überträgt Startup-Logik auf etablierte Unternehmen.',
   },

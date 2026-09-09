@@ -1,7 +1,7 @@
-export const BOOKING_URL =
-  'https://outlook.office.com/bookwithme/user/9c11749d74b349809103953c39ba26d4@vencly.com?anonymous&ep=pcard'
-
-export const LOGIN_URL = 'https://vencly.app/'
-
-export const CAL_LINK = 'vencly/gettoknow'
-export const CAL_ORIGIN = 'https://cal.eu'
+/**
+ * Re-Export aus der zentralen Markenkonfiguration.
+ *
+ * Historisch lagen diese Werte hier. Neue Importe bitte direkt aus '@/lib/brand'
+ * beziehen; diese Datei bleibt als Kompatibilitätsschicht bestehen.
+ */
+export { BOOKING_URL, LOGIN_URL, CONTACT_URL } from '@/lib/brand'

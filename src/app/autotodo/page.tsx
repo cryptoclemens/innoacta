@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     'AutoToDo automatisiert die Pflege von Maßnahmenlisten aus Meeting-Transkripten: Aufgaben per KI extrahieren, überprüfen und als Excel exportieren.',
   alternates: { canonical: 'https://vencly.com/autotodo' },
   openGraph: {
-    title: 'AutoToDo | Vencly',
+    title: 'AutoToDo | innovation.today',
     description: 'Meeting-Transkript hochladen, KI extrahiert Aufgaben und Statusänderungen, exportieren als Excel. Multi-Tenant SaaS mit BYOK.',
   },
 }
@@ -21,7 +21,7 @@ const jsonLd = {
   operatingSystem: 'Web',
   url: 'https://autotodo.vencly.com',
   description: 'KI-gestütztes LOP-Management: Meeting-Transkript hochladen, Aufgaben automatisch extrahieren, überprüfen und als Excel exportieren.',
-  author: { '@type': 'Organization', name: 'Vencly GmbH', url: 'https://vencly.com' },
+  author: { '@type': 'Organization', name: 'innovation.today', legalName: 'Vencly GmbH', url: 'https://vencly.com' },
 }
 
 const features = [

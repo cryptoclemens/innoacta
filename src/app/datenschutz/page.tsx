@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import { LEGAL_NOTICE, PRIVACY_EMAIL } from '@/lib/brand'
 
 export const metadata: Metadata = {
   title: 'Datenschutzerklärung',
@@ -26,10 +27,11 @@ export default function DatenschutzPage() {
               Vencly GmbH<br />
               Leopoldstraße 31, 80802 München<br />
               E-Mail:{' '}
-              <a href="mailto:datenschutz@vencly.com" className="text-vencly-teal hover:underline">
-                datenschutz@vencly.com
+              <a href={`mailto:${PRIVACY_EMAIL}`} className="text-vencly-teal hover:underline">
+                {PRIVACY_EMAIL}
               </a>
             </p>
+            <p className="mt-3">{LEGAL_NOTICE}</p>
             <p className="mt-3">
               <strong className="text-gray-900 dark:text-white">Datenschutzbeauftragter:</strong>{' '}
               Es ist kein Datenschutzbeauftragter bestellt (keine Verpflichtung nach Art. 37 DSGVO).

@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import { LEGAL_NOTICE } from '@/lib/brand'
 
 export const metadata: Metadata = {
   title: 'Impressum',
@@ -25,6 +26,7 @@ export default function ImpressumPage() {
             Leopoldstraße 31<br />
             80802 München<br />
             Deutschland</p>
+            <p className="mt-2">{LEGAL_NOTICE}</p>
           </section>
 
           <section>

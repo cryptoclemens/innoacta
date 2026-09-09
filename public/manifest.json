@@ -1,11 +1,11 @@
 {
-  "name": "Vencly",
-  "short_name": "Vencly",
+  "name": "innovation.today",
+  "short_name": "innovation.today",
   "description": "Gründer-Denken für Ihr nächstes Geschäftsfeld.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#F8F7F4",
-  "theme_color": "#14b8a6",
+  "theme_color": "#0F766E",
   "icons": [
     {
       "src": "/favicon.svg",

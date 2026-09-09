@@ -1,13 +1,13 @@
-# Vencly
+# innovation.today
 
-> Vencly bringt Gründer-Denken in neue Geschäftsfelder – für Konzerne und den Mittelstand.
+> innovation.today bringt Gründer-Denken in neue Geschäftsfelder – für Konzerne und den Mittelstand.
 
 Vencly GmbH ist eine strategische Umsetzungsberatung mit Sitz in München. Wir helfen Unternehmen dabei, neue Geschäftsfelder zu erschließen, externe Innovationspartner einzubinden und Strategieprojekte operativ umzusetzen – mit der Methodik und Geschwindigkeit von Startups.
 
 ## Leistungen
 
 ### Venture Clienting
-Vencly sucht automatisiert und strukturiert nach den besten externen Lösungsanbietern – darunter Startups, Scaleups und innovative Unternehmen aller Größen. Das Ziel ist immer die beste Lösung für die eigene Herausforderung, nicht die coolste Entität. Strukturierte Pilotprojekte mit Entscheidung nach 90 Tagen.
+innovation.today sucht automatisiert und strukturiert nach den besten externen Lösungsanbietern – darunter Startups, Scaleups und innovative Unternehmen aller Größen. Das Ziel ist immer die beste Lösung für die eigene Herausforderung, nicht die coolste Entität. Strukturierte Pilotprojekte mit Entscheidung nach 90 Tagen.
 
 Mehr: https://vencly.com/venture-clienting
 
@@ -34,7 +34,7 @@ Mehr: https://vencly.com/strategische-umsetzung
 - Website: https://vencly.com
 - E-Mail: hello@vencly.com
 - Standort: München, Deutschland
-- Erstgespräch: https://cal.eu/vencly/gettoknow
+- Erstgespräch: https://cal.eu/innovation.today/gettoknow
 
 ## Weiterführende Quellen
 

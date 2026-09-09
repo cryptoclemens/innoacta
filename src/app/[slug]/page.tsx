@@ -40,7 +40,7 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
     title: `${name} – ${category}`,
     description,
     alternates: { canonical: `https://vencly.com/${p.slug}` },
-    openGraph: { title: `${name} | Vencly`, description },
+    openGraph: { title: `${name} | innovation.today`, description },
   }
 }
 
@@ -57,7 +57,7 @@ export default function ProjectDetailPage({ params }: { params: { slug: string }
         '@context': 'https://schema.org', '@type': 'SoftwareApplication',
         name: p.name.de, applicationCategory: 'BusinessApplication', operatingSystem: 'Web',
         url: `https://vencly.com/${p.slug}`, description,
-        author: { '@type': 'Organization', name: 'Vencly GmbH', url: 'https://vencly.com' },
+        author: { '@type': 'Organization', name: 'innovation.today', legalName: 'Vencly GmbH', url: 'https://vencly.com' },
       }) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         '@context': 'https://schema.org', '@type': 'BreadcrumbList',

@@ -18,7 +18,7 @@ const articleJsonLd = {
   description:
     'Wie Innovation Republic mittelständische Unternehmen kuratiert mit Innovationslösungen verbindet – und was strukturierte KMU-Innovation von klassischer Beratung unterscheidet.',
   author: { '@type': 'Person', name: 'Clemens Pompeÿ', url: 'https://vencly.com/ueber-uns' },
-  publisher: { '@type': 'Organization', name: 'Vencly GmbH', url: 'https://vencly.com' },
+  publisher: { '@type': 'Organization', name: 'innovation.today', legalName: 'Vencly GmbH', url: 'https://vencly.com' },
   url: 'https://vencly.com/blog/innovation-republic-kmu-innovation',
   datePublished: '2026-05-16',
   dateModified: '2026-05-16',
@@ -183,7 +183,7 @@ export default function ArticlePage() {
 
             <h2>Wie passt Innovation Republic zum Vencly-Ansatz?</h2>
             <p>
-              Vencly hat in über 40 Projekten Venture-Clienting-Prozesse für Unternehmen begleitet – überwiegend für größere Mittelständler und Konzerne in Energie, Infrastruktur und im öffentlichen Sektor. Innovation Republic überträgt diese Methodik in eine plattformbasierte, skalierbarere Form, die auch für kleinere KMU zugänglich ist.
+              innovation.today hat in über 40 Projekten Venture-Clienting-Prozesse für Unternehmen begleitet – überwiegend für größere Mittelständler und Konzerne in Energie, Infrastruktur und im öffentlichen Sektor. Innovation Republic überträgt diese Methodik in eine plattformbasierte, skalierbarere Form, die auch für kleinere KMU zugänglich ist.
             </p>
             <p>
               Mehr zum Hintergrund und zur Methodik finden Sie in unserem Bereich <Link href="/ueber-uns">Über uns</Link>. Die zugrundeliegende Methodik beschreiben wir in der Leistungsseite <Link href="/venture-clienting">Venture Clienting</Link>.
@@ -228,7 +228,7 @@ export default function ArticlePage() {
                 Erstgespräch vereinbaren <ArrowRight size={16} />
               </button>
               <Link href="/ueber-uns" className="inline-flex items-center gap-2 text-vencly-teal hover:text-teal-400 font-medium transition-colors">
-                Mehr über Vencly <ArrowRight size={14} />
+                Mehr über innovation.today <ArrowRight size={14} />
               </Link>
             </div>
           </div>

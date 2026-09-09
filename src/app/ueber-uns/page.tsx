@@ -10,12 +10,13 @@ const jsonLd = {
   jobTitle: 'Gründer & Geschäftsführer',
   worksFor: {
     '@type': 'Organization',
-    name: 'Vencly GmbH',
+    name: 'innovation.today',
+    legalName: 'Vencly GmbH',
     url: 'https://vencly.com',
   },
   url: 'https://vencly.com/ueber-uns',
   description:
-    'Clemens Pompeÿ ist Gründer von Vencly und Experte für Venture Clienting und Geschäftsfeldentwicklung mit über 40 realisierten Projekten in Energie, Infrastruktur und öffentlichem Sektor.',
+    'Clemens Pompeÿ ist Gründer von innovation.today und Experte für Venture Clienting und Geschäftsfeldentwicklung mit über 40 realisierten Projekten in Energie, Infrastruktur und öffentlichem Sektor.',
   knowsAbout: [
     'Venture Clienting',
     'Geschäftsfeldentwicklung',

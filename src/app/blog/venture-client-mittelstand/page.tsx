@@ -22,7 +22,7 @@ const articleJsonLd = {
   description:
     'Wie mittelständische Unternehmen Venture Clienting erfolgreich einsetzen – ohne eigene Innovation-Unit, ohne DAX-Budget und mit klarem Fokus auf operative Ergebnisse.',
   author: { '@type': 'Person', name: 'Clemens Pompeÿ', url: 'https://vencly.com/ueber-uns' },
-  publisher: { '@type': 'Organization', name: 'Vencly GmbH', url: 'https://vencly.com' },
+  publisher: { '@type': 'Organization', name: 'innovation.today', legalName: 'Vencly GmbH', url: 'https://vencly.com' },
   url: 'https://vencly.com/blog/venture-client-mittelstand',
   datePublished: '2025-05-01',
   dateModified: '2026-05-16',
@@ -189,12 +189,12 @@ export default function ArticlePage() {
               <li><strong>Die Entscheider stehen dahinter.</strong> Ein Pilotprojekt ohne Rückendeckung der Geschäftsführung wird nicht die nötigen Ressourcen und Entscheidungen bekommen.</li>
             </ol>
 
-            <h2>Wie Vencly mittelständische Unternehmen konkret unterstützt</h2>
+            <h2>Wie innovation.today mittelständische Unternehmen konkret unterstützt</h2>
             <p>
-              Vencly ist auf die Situation mittelständischer Unternehmen ausgerichtet: kein Konzernbudget, keine eigene Innovations-Abteilung, aber klare Probleme und kurze Entscheidungswege. Das Leistungsmodell passt sich daran an: Vencly übernimmt das Scouting, bereitet die Pilotentscheidung vor und begleitet das Testprojekt operativ – der interne Aufwand bleibt auf ein Minimum beschränkt.
+              innovation.today ist auf die Situation mittelständischer Unternehmen ausgerichtet: kein Konzernbudget, keine eigene Innovations-Abteilung, aber klare Probleme und kurze Entscheidungswege. Das Leistungsmodell passt sich daran an: innovation.today übernimmt das Scouting, bereitet die Pilotentscheidung vor und begleitet das Testprojekt operativ – der interne Aufwand bleibt auf ein Minimum beschränkt.
             </p>
             <p>
-              Aus über 40 Projekten weiß Vencly, welche Anbieter in welchen Segmenten tatsächlich liefern – und welche gut klingen, aber nicht zu mittelständischen Strukturen passen. Diese Erfahrung verkürzt das Scouting erheblich und erhöht die Trefferquote bei der Anbieterauswahl.
+              Aus über 40 Projekten weiß innovation.today, welche Anbieter in welchen Segmenten tatsächlich liefern – und welche gut klingen, aber nicht zu mittelständischen Strukturen passen. Diese Erfahrung verkürzt das Scouting erheblich und erhöht die Trefferquote bei der Anbieterauswahl.
             </p>
 
             <h2>Fazit: Mittelstand ist kein Handicap – er ist ein Vorteil</h2>
