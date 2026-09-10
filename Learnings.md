@@ -120,3 +120,36 @@ Mehrfach zahlte sich aus, das Ergebnis statt der Absicht zu prüfen: Der
 DMARC-Freigabe-Record bei huetec.net fehlte tatsächlich, die
 Pages-Projektübersicht lieferte eine unvollständige Domainliste, und die
 angeblich fehlerhaften DKIM-Einträge lösten längst korrekt auf.
+
+---
+
+## SEO-Vorbereitung für die Search Console (09/2026)
+
+### Ein canonical im Root-Layout vererbt sich an jede Seite
+
+`alternates.canonical` im Root-Layout gilt für **jede** Seite, die kein eigenes
+canonical setzt. Client Components (`'use client'`) können kein `metadata`
+exportieren und erben es deshalb zwangsläufig. Die sechs OptAImum-Werkzeuge
+erklärten sich so als Duplikat der Startseite und wurden trotz `robots: index`
+nicht indexiert — ohne jede Warnung im Build.
+
+Regel: **kein canonical im Root-Layout.** Jede Seite setzt ihr eigenes; eine
+Client-Seite bekommt dafür ein `layout.tsx` daneben, das nur `metadata`
+exportiert.
+
+### Sitemap-URLs müssen exakt dem canonical entsprechen
+
+Mit `trailingSlash: true` antwortet jede URL ohne Schrägstrich mit 308. Eine
+Sitemap ohne Schrägstriche listet also ausschließlich Weiterleitungen — die
+Search Console meldet jede als „Seite mit Weiterleitung". Derselbe Fehlertyp
+trat vorher bereits bei der www-Form auf, nur eine Ebene höher.
+
+Prüfregel vor jeder Einreichung, im `out/`-Verzeichnis statt im Quellcode:
+jede Sitemap-URL muss wortgleich das canonical ihrer Seite sein, und jede
+indexierbare Seite muss in der Sitemap stehen.
+
+### lastmod nur ehrlich setzen
+
+Google wertet `lastmod` aus, solange die Angaben verlässlich sind. Pauschal auf
+das heutige Datum gesetzte Werte führen dazu, dass es sie für die ganze Domain
+ignoriert. `changefreq` und `priority` ignoriert Google ohnehin.
