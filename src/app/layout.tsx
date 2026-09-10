@@ -35,9 +35,10 @@ export const metadata: Metadata = {
   authors: [{ name: LEGAL_ENTITY }],
   creator: BRAND_NAME,
   metadataBase: new URL(SITE_URL),
-  alternates: {
-    canonical: SITE_URL,
-  },
+  // Bewusst KEIN canonical im Root-Layout: Es vererbt sich an jede Seite ohne
+  // eigenes canonical. Client-Seiten, die kein metadata exportieren koennen,
+  // erklaerten sich dadurch als Duplikat der Startseite. Jede Seite setzt ihr
+  // canonical selbst — im eigenen page.tsx oder in einem layout.tsx daneben.
   openGraph: {
     type: 'website',
     locale: 'de_DE',
