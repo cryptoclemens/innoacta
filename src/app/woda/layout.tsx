@@ -6,12 +6,12 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Projekt Woda – Brunnenmanagement für Wasserwerke, offline und datensouverän',
   description:
-    'Projekt Woda zeigt Wasserwerken je Brunnen und Pumpe eine Ampel – offline, aus vorhandenen Tabellen, Auswertung durch Ingenieure über verschlüsselte Dateien.',
+    'Brunnendaten aus jedem System werden zu standardisierten Experten-Analysen – offline beim Betreiber, ohne dass Betriebsdaten das Haus verlassen.',
   alternates: { canonical: 'https://www.innovation.today/woda' },
   openGraph: {
     title: 'Projekt Woda | innovation.today',
     description:
-      'Brunnenmanagement für Wasserwerke: Ampel je Brunnen und Pumpe, offline, Betriebsdaten bleiben im Haus. Auswertung durch Ingenieure über verschlüsselte Dateien.',
+      'Brunnendaten aus jedem System werden zu standardisierten Experten-Analysen. Offline beim Betreiber, Auswertung durch Ingenieure über verschlüsselte Dateien.',
   },
 }
 

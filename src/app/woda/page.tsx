@@ -2,7 +2,7 @@
 import { useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import { ArrowLeft, ArrowRight, ShieldCheck, Lock, Users, Database, FileSpreadsheet } from 'lucide-react'
+import { ArrowLeft, ArrowRight, ShieldCheck, Lock, Users, Database, FileSpreadsheet, Network, Filter, KeyRound } from 'lucide-react'
 import { calButtonProps } from '@/components/layout/CalProvider'
 import { SUPPORT_EMAIL } from '@/lib/brand'
 import { usePageTranslation } from '@/lib/hooks/usePageTranslation'
@@ -20,6 +20,7 @@ const jsonLd = {
   description:
     'Brunnenmanagement für Wasserwerke: Ampel je Brunnen und Pumpe, offline aus vorhandenen Tabellen, Auswertung durch Ingenieure über verschlüsselte Dateien. Betriebsdaten verlassen das Haus nicht.',
   author: { '@type': 'Organization', name: 'innovation.today', legalName: 'Vencly GmbH', url: 'https://www.innovation.today' },
+  publisher: { '@type': 'Organization', name: 'innovation.today', legalName: 'Vencly GmbH', url: 'https://www.innovation.today' },
 }
 
 const breadcrumbJsonLd = {
@@ -33,6 +34,7 @@ const breadcrumbJsonLd = {
 }
 
 const trustIcons = [ShieldCheck, Lock, Users, Database]
+const einordnungIcons = [Network, Filter, KeyRound]
 
 const card = 'bg-white dark:bg-brand-card border border-gray-200 dark:border-brand-border rounded'
 
@@ -177,6 +179,26 @@ export default function WodaPage() {
             </div>
           </section>
 
+          {/* Einordnung */}
+          <section className="mb-16">
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">{b.einordnungH2}</h2>
+            <p className="text-gray-600 dark:text-gray-400 mb-6 max-w-2xl">{b.einordnungIntro}</p>
+            <div className="grid gap-4 sm:grid-cols-3">
+              {b.einordnung.map((e, i) => {
+                const Icon = einordnungIcons[i] ?? ShieldCheck
+                return (
+                  <div key={e.title} className={`${card} p-6`}>
+                    <div className="w-10 h-10 bg-brand-teal/10 rounded flex items-center justify-center mb-4">
+                      <Icon size={20} className="text-brand-teal dark:text-brand-mint" />
+                    </div>
+                    <h3 className="text-gray-900 dark:text-white font-bold mb-2">{e.title}</h3>
+                    <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">{e.desc}</p>
+                  </div>
+                )
+              })}
+            </div>
+          </section>
+
           {/* Vier Stufen */}
           <section className="mb-16">
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">{b.levelsH2}</h2>
@@ -191,9 +213,8 @@ export default function WodaPage() {
             </figure>
             <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
               {b.levels.map((l) => (
-                <div key={l.code} className={`${card} p-5 flex flex-col`}>
-                  <span className="text-brand-teal dark:text-brand-mint font-mono text-sm font-bold">{l.code}</span>
-                  <span className="text-gray-900 dark:text-white font-semibold mt-1">{l.name}</span>
+                <div key={l.name} className={`${card} p-5 flex flex-col`}>
+                  <span className="text-gray-900 dark:text-white font-semibold">{l.name}</span>
                   <p className="text-gray-600 dark:text-gray-400 text-sm mt-2 flex-1">{l.gets}</p>
                   <span className="mt-3 text-xs text-gray-500 dark:text-gray-400 bg-gray-100 dark:bg-white/5 px-2 py-1 rounded self-start">{l.who}</span>
                 </div>

@@ -25,7 +25,7 @@
     <!-- kleines Schloss = offline -->
     <rect x="118" y="14" width="20" height="16" rx="3" fill="#0F766E"/>
     <path d="M122 14v-4a6 6 0 0 1 12 0v4" fill="none" stroke="#0F766E" stroke-width="2.5"/>
-    <!-- Ampelpunkte: L1 lokal -->
+    <!-- Ampelpunkte: Überblick entsteht lokal -->
     <circle cx="45" cy="140" r="6" fill="#16A34A"/><circle cx="65" cy="140" r="6" fill="#16A34A"/><circle cx="85" cy="140" r="6" fill="#EAB308"/><circle cx="105" cy="140" r="6" fill="#16A34A"/>
   </g>
   <!-- rechts: Ingenieure (zwei Personen mit Schutzhelm) -->
