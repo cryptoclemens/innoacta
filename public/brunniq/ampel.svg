@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 300" role="img" aria-label="Ampel-Übersicht, schematisch">
+  <defs>
+    <symbol id="drop" viewBox="0 0 24 24"><path d="M12 2.5c3.6 4.6 7 8.4 7 12.2A7 7 0 0 1 5 14.7C5 10.9 8.4 7.1 12 2.5z" fill="none" stroke="#14304A" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+    <symbol id="pump" viewBox="0 0 24 24"><circle cx="12" cy="12" r="2.2" fill="#14304A"/><path d="M12 9.8c0-3.5 2-6 4-6.5 0 3-1.5 5.5-4 6.5zM14.2 12c3.5 0 6 2 6.5 4-3 0-5.5-1.5-6.5-4zM12 14.2c0 3.5-2 6-4 6.5 0-3 1.5-5.5 4-6.5zM9.8 12c-3.5 0-6-2-6.5-4 3 0 5.5 1.5 6.5 4z" fill="none" stroke="#14304A" stroke-width="1.6" stroke-linejoin="round"/></symbol>
+  </defs>
+  <rect width="640" height="300" rx="12" fill="#EAF4FC"/>
+  <g font-family="Nunito, system-ui, sans-serif" font-weight="700" fill="#14304A">
+    <!-- Kopfzeile -->
+    <use href="#drop" x="220" y="20" width="22" height="22"/>
+    <use href="#pump" x="396" y="20" width="22" height="22"/>
+    <!-- Zeilen: sechs fiktive Brunnen, nur Nummern -->
+    <g id="rows" font-size="18">
+      <g transform="translate(0,56)">
+        <rect x="24" y="0" width="592" height="34" rx="8" fill="#FFFFFF"/>
+        <text x="48" y="24">01</text>
+        <circle cx="231" cy="17" r="9" fill="#16A34A"/><circle cx="407" cy="17" r="9" fill="#16A34A"/>
+      </g>
+      <g transform="translate(0,96)">
+        <rect x="24" y="0" width="592" height="34" rx="8" fill="#FFFFFF"/>
+        <text x="48" y="24">02</text>
+        <circle cx="231" cy="17" r="9" fill="#16A34A"/><circle cx="407" cy="17" r="9" fill="#EAB308"/>
+      </g>
+      <g transform="translate(0,136)">
+        <rect x="24" y="0" width="592" height="34" rx="8" fill="#FFFFFF"/>
+        <text x="48" y="24">03</text>
+        <circle cx="231" cy="17" r="9" fill="#EAB308"/><circle cx="407" cy="17" r="9" fill="#16A34A"/>
+      </g>
+      <g transform="translate(0,176)">
+        <rect x="24" y="0" width="592" height="34" rx="8" fill="#FFFFFF"/>
+        <text x="48" y="24">04</text>
+        <circle cx="231" cy="17" r="9" fill="#16A34A"/><circle cx="407" cy="17" r="9" fill="#16A34A"/>
+      </g>
+      <g transform="translate(0,216)">
+        <rect x="24" y="0" width="592" height="34" rx="8" fill="#FFFFFF"/>
+        <text x="48" y="24">05</text>
+        <circle cx="231" cy="17" r="9" fill="#DC2626"/><circle cx="407" cy="17" r="9" fill="#EAB308"/>
+      </g>
+      <g transform="translate(0,256)">
+        <rect x="24" y="0" width="592" height="34" rx="8" fill="#FFFFFF"/>
+        <text x="48" y="24">06</text>
+        <circle cx="231" cy="17" r="9" fill="#16A34A"/><circle cx="407" cy="17" r="9" fill="#16A34A"/>
+      </g>
+    </g>
+    <!-- rechte Spalte: angedeutete Verlaufslinien (Sparklines, ohne Werte) -->
+    <g fill="none" stroke="#0F766E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="500,80 520,78 540,79 560,76 580,77 600,75"/>
+      <polyline points="500,118 520,116 540,119 560,121 580,124 600,126"/>
+      <polyline points="500,160 520,157 540,158 560,154 580,155 600,153"/>
+      <polyline points="500,198 520,198 540,197 560,198 580,197 600,197"/>
+      <polyline points="500,232 520,236 540,240 560,243 580,248 600,252"/>
+      <polyline points="500,278 520,277 540,278 560,276 580,277 600,276"/>
+    </g>
+  </g>
+</svg>
