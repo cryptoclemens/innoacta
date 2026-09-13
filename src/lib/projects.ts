@@ -14,7 +14,7 @@
 
 import type { Locale } from '@/lib/i18n'
 
-export type ProjectStatus = 'Live' | 'In Entwicklung' | 'Pilot'
+export type ProjectStatus = 'Live' | 'In Entwicklung'
 
 /** `icon` is a lucide-react icon name resolved in the detail template. */
 export interface ProjectFeature {
@@ -260,8 +260,8 @@ export const projects: Project[] = [
     },
   },
   {
-    slug: 'brunniq',
-    name: { de: 'BrunnIQ', en: 'BrunnIQ', fr: 'BrunnIQ', es: 'BrunnIQ' },
+    slug: 'woda',
+    name: { de: 'Projekt Woda', en: 'Project Woda', fr: 'Projet Woda', es: 'Proyecto Woda' },
     category: {
       de: 'Brunnenmanagement für Wasserwerke',
       en: 'Well management for waterworks',
@@ -269,14 +269,14 @@ export const projects: Project[] = [
       es: 'Gestión de pozos para plantas de agua',
     },
     description: {
-      de: 'Ampel je Brunnen und Pumpe für Wasserwerke – offline, aus den Tabellen, die Sie ohnehin haben. Auswertung durch Ingenieure über verschlüsselte Dateien; Betriebsdaten verlassen das Haus nicht. KRITIS-bewusst, Cyber-Resilience-Act-bewusst.',
-      en: 'Traffic-light status per well and pump for waterworks — offline, from the spreadsheets you already have. Engineers evaluate via encrypted files; operating data never leaves your premises. Built with KRITIS and the Cyber Resilience Act in mind.',
-      fr: "Feu tricolore par puits et par pompe pour les services des eaux — hors ligne, à partir des tableaux que vous avez déjà. Analyse par des ingénieurs via des fichiers chiffrés ; les données d'exploitation ne quittent jamais vos locaux. Conçu en tenant compte des infrastructures critiques et du Cyber Resilience Act.",
-      es: 'Semáforo por pozo y bomba para plantas de agua — sin conexión, a partir de las tablas que ya tiene. Evaluación por ingenieros mediante archivos cifrados; los datos operativos nunca salen de sus instalaciones. Diseñado teniendo en cuenta las infraestructuras críticas y el Cyber Resilience Act.',
+      de: 'Ampel je Brunnen und Pumpe für Wasserwerke – offline, aus den Tabellen, die Sie ohnehin haben. Auswertung durch Ingenieure über verschlüsselte Dateien; Betriebsdaten verlassen das Haus nicht.',
+      en: 'Traffic-light status per well and pump for waterworks — offline, from the spreadsheets you already have. Engineers evaluate via encrypted files; operating data never leaves your premises.',
+      fr: "Feu tricolore par puits et par pompe pour les services des eaux — hors ligne, à partir des tableaux que vous avez déjà. Analyse par des ingénieurs via des fichiers chiffrés ; les données d'exploitation ne quittent jamais vos locaux.",
+      es: 'Semáforo por pozo y bomba para plantas de agua — sin conexión, a partir de las tablas que ya tiene. Evaluación por ingenieros mediante archivos cifrados; los datos operativos nunca salen de sus instalaciones.',
     },
-    tags: ['Wasserwirtschaft', 'Offline', 'KRITIS', 'Datenhoheit'],
-    status: 'Pilot',
-    // Eigene, viersprachige Seite (src/app/brunniq) — kein Auto-Template.
-    href: '/brunniq',
+    tags: ['Wasserwirtschaft', 'Offline', 'Datenhoheit'],
+    status: 'In Entwicklung',
+    // Eigene, viersprachige Seite (src/app/woda) — kein Auto-Template.
+    href: '/woda',
   },
 ]

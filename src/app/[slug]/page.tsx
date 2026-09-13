@@ -89,8 +89,6 @@ export default function ProjectDetailPage({ params }: { params: { slug: string }
               <span className={`text-xs px-2 py-1 rounded-full font-medium ${
                 p.status === 'Live'
                   ? 'bg-green-500/20 text-green-600 dark:text-green-400'
-                  : p.status === 'Pilot'
-                  ? 'bg-brand-teal/15 text-brand-teal dark:text-brand-mint'
                   : 'bg-yellow-500/20 text-yellow-600 dark:text-yellow-400'
               }`}>{p.status}</span>
             </div>

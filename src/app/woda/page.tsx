@@ -7,16 +7,16 @@ import { calButtonProps } from '@/components/layout/CalProvider'
 import { SUPPORT_EMAIL } from '@/lib/brand'
 import { usePageTranslation } from '@/lib/hooks/usePageTranslation'
 
-// Markenfrage offen (siehe PR): Wessen Produkt BrunnIQ ist, entscheidet über
-// author im JSON-LD, die Byline (i18n-pages → brunniq.byline) und den
-// CRA-Sicherheitskontakt. Bis zur Entscheidung: innovation.today als Entwickler.
+// Markenfrage offen (siehe PR): Wessen Produkt Projekt Woda ist, entscheidet
+// über author im JSON-LD und die Byline (i18n-pages → woda.byline). Bis zur
+// Entscheidung: innovation.today als Entwickler.
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'SoftwareApplication',
-  name: 'BrunnIQ',
+  name: 'Projekt Woda',
   applicationCategory: 'BusinessApplication',
   operatingSystem: 'Web (offline im Browser)',
-  url: 'https://www.innovation.today/brunniq',
+  url: 'https://www.innovation.today/woda',
   description:
     'Brunnenmanagement für Wasserwerke: Ampel je Brunnen und Pumpe, offline aus vorhandenen Tabellen, Auswertung durch Ingenieure über verschlüsselte Dateien. Betriebsdaten verlassen das Haus nicht.',
   author: { '@type': 'Organization', name: 'innovation.today', legalName: 'Vencly GmbH', url: 'https://www.innovation.today' },
@@ -28,7 +28,7 @@ const breadcrumbJsonLd = {
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.innovation.today' },
     { '@type': 'ListItem', position: 2, name: 'Projekte', item: 'https://www.innovation.today/projects' },
-    { '@type': 'ListItem', position: 3, name: 'BrunnIQ', item: 'https://www.innovation.today/brunniq' },
+    { '@type': 'ListItem', position: 3, name: 'Projekt Woda', item: 'https://www.innovation.today/woda' },
   ],
 }
 
@@ -36,8 +36,8 @@ const trustIcons = [ShieldCheck, Lock, Users, Database]
 
 const card = 'bg-white dark:bg-brand-card border border-gray-200 dark:border-brand-border rounded'
 
-export default function BrunnIQPage() {
-  const b = usePageTranslation().brunniq
+export default function WodaPage() {
+  const b = usePageTranslation().woda
 
   // Statischer Export liefert die deutschen Metadaten aus layout.tsx. Beim
   // Sprachwechsel werden Titel, Description und OpenGraph clientseitig
@@ -122,7 +122,7 @@ export default function BrunnIQPage() {
                 <span>{b.ampelLegend[1]}</span>
               </div>
               <div className="bg-white rounded overflow-hidden">
-                <Image src="/brunniq/ampel.svg" alt={b.ampelAlt} width={640} height={300} className="w-full h-auto" />
+                <Image src="/woda/ampel.svg" alt={b.ampelAlt} width={640} height={300} className="w-full h-auto" />
               </div>
               <figcaption className="mt-3 text-sm text-gray-500 dark:text-gray-400">{b.ampelCaption}</figcaption>
             </figure>
@@ -148,7 +148,7 @@ export default function BrunnIQPage() {
           <section className="mb-16">
             <figure className={`${card} p-4 sm:p-6`}>
               <div className="bg-white rounded overflow-hidden">
-                <Image src="/brunniq/dateiweg.svg" alt={b.dateiwegAlt} width={640} height={260} className="w-full h-auto" />
+                <Image src="/woda/dateiweg.svg" alt={b.dateiwegAlt} width={640} height={260} className="w-full h-auto" />
               </div>
               <figcaption className="mt-4 grid gap-3 sm:grid-cols-3 text-sm text-gray-600 dark:text-gray-400">
                 <span className="sm:text-left">{b.dateiwegLeft}</span>
@@ -175,11 +175,6 @@ export default function BrunnIQPage() {
                 )
               })}
             </div>
-            <p className="mt-6 text-sm text-gray-500 dark:text-gray-400">
-              {b.craNote}{' '}
-              <Link href="/contact" className="text-brand-teal dark:text-brand-mint hover:underline font-medium">{b.craLink}</Link>
-              {b.craNoteEnd.startsWith('.') ? b.craNoteEnd : ` ${b.craNoteEnd}`}
-            </p>
           </section>
 
           {/* Vier Stufen */}
@@ -187,7 +182,7 @@ export default function BrunnIQPage() {
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">{b.levelsH2}</h2>
             <figure className={`${card} p-4 sm:p-6 mb-6`}>
               <div className="bg-white rounded overflow-hidden">
-                <Image src="/brunniq/stufen.svg" alt={b.levelsAlt} width={640} height={260} className="w-full h-auto" />
+                <Image src="/woda/stufen.svg" alt={b.levelsAlt} width={640} height={260} className="w-full h-auto" />
               </div>
               <figcaption className="mt-3 flex justify-between text-xs font-mono uppercase tracking-widest text-brand-teal dark:text-brand-mint px-2">
                 <span>{b.levelsTool}</span>
@@ -220,13 +215,6 @@ export default function BrunnIQPage() {
             </div>
           </section>
 
-          {/* Zitat */}
-          <section className="mb-16">
-            <blockquote className="border-l-4 border-brand-teal pl-6 py-2 bg-gray-100 dark:bg-brand-card rounded-r-xl">
-              <p className="text-gray-900 dark:text-white text-lg font-semibold">{b.quote}</p>
-            </blockquote>
-          </section>
-
           {/* CTA */}
           <section className="bg-gradient-to-r from-brand-teal/10 to-brand-teal/5 border border-brand-teal/20 rounded p-10 text-center">
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">{b.ctaH2}</h2>
@@ -239,7 +227,7 @@ export default function BrunnIQPage() {
             </button>
             <p className="mt-5 text-sm text-gray-500 dark:text-gray-400">
               {b.ctaMail}{' '}
-              <a href={`mailto:${SUPPORT_EMAIL}?subject=BrunnIQ`} className="text-brand-teal dark:text-brand-mint hover:underline">{SUPPORT_EMAIL}</a>{' '}
+              <a href={`mailto:${SUPPORT_EMAIL}?subject=Projekt%20Woda`} className="text-brand-teal dark:text-brand-mint hover:underline">{SUPPORT_EMAIL}</a>{' '}
               {b.ctaMailSubject}
             </p>
           </section>

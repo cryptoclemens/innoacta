@@ -42,11 +42,9 @@ export default function ProjectsPage() {
                   <span className={`text-xs px-2 py-1 rounded-full font-medium ${
                     project.status === 'Live'
                       ? 'bg-green-500/20 text-green-600 dark:text-green-400'
-                      : project.status === 'Pilot'
-                      ? 'bg-brand-teal/15 text-brand-teal dark:text-brand-mint'
                       : 'bg-yellow-500/20 text-yellow-600 dark:text-yellow-400'
                   }`}>
-                    {project.status === 'Live' ? pr.statusLive : project.status === 'Pilot' ? pr.statusPilot : pr.statusInDev}
+                    {project.status === 'Live' ? pr.statusLive : pr.statusInDev}
                   </span>
                 </div>
                 <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-3 group-hover:text-brand-teal transition-colors">
