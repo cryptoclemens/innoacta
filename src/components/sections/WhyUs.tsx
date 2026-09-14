@@ -7,7 +7,7 @@ export default function WhyUs() {
 
   return (
     <section className="bg-brand-sky dark:bg-brand-night py-24 px-4">
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <span className="section-eyebrow justify-center mb-4">
             {t.whyUs.label}

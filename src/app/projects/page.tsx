@@ -14,7 +14,7 @@ export default function ProjectsPage() {
   return (
     <div className="min-h-screen bg-brand-sky dark:bg-brand-night pt-24 pb-20">
       {/* Header */}
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mb-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-16">
         <div className="text-center">
           <span className="section-eyebrow mb-4">
             {pr.eyebrow}
@@ -30,7 +30,7 @@ export default function ProjectsPage() {
       </div>
 
       {/* Project Cards */}
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {projects.map((project) => (
             <Link key={project.slug} id={project.slug} href={projectPath(project)}>

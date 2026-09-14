@@ -8,7 +8,7 @@ export default function ValueProp() {
 
   return (
     <section className="bg-brand-sky dark:bg-brand-night py-24 px-4">
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-7xl mx-auto">
         <div className="grid md:grid-cols-2 gap-16 items-center">
           {/* Left: Text */}
           <div>
@@ -17,7 +17,9 @@ export default function ValueProp() {
             </span>
             <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 dark:text-white mb-6 leading-snug mt-3">
               {t.valueProp.h2}{' '}
-              <span className="gradient-text">{t.valueProp.h2Highlight}</span>
+              {/* Zwei eigenständige Sätze: der zweite beginnt immer in neuer Zeile,
+                  sonst bricht die breitere 1280-px-Spalte mitten im Satz um. */}
+              <span className="gradient-text block">{t.valueProp.h2Highlight}</span>
             </h2>
             <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
               {t.valueProp.intro}

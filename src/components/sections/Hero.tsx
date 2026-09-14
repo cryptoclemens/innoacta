@@ -4,9 +4,25 @@ import { ChevronDown } from 'lucide-react'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { calButtonProps } from '@/components/layout/CalProvider'
 
-function LearningCurveChart() {
-  const innovationPath = 'M 30,170 C 55,148 70,125 95,112 C 130,93 165,78 210,68 C 255,57 295,46 340,38 L 395,32'
-  const klassischPath = 'M 30,170 C 75,166 90,163 120,160 C 160,155 195,150 240,144 C 285,136 320,124 340,118 L 395,110'
+const INNOVATION_PATH = 'M 30,170 C 55,148 70,125 95,112 C 130,93 165,78 210,68 C 255,57 295,46 340,38 L 395,32'
+const KLASSISCH_PATH = 'M 30,170 C 75,166 90,163 120,160 C 160,155 195,150 240,144 C 285,136 320,124 340,118 L 395,110'
+
+/**
+ * Lernkurve im Hero.
+ *
+ * `stretch` streckt nur die x-Achse der Zeichenfläche. So füllt das Diagramm
+ * ab sm den 1280-px-Rahmen der Sektionen darunter, ohne dass es proportional
+ * höher wird — Höhe, Strichstärken und Schriftgrößen bleiben praktisch gleich.
+ * Mobil läuft die ungestreckte Fassung (stretch=1): gestreckt wäre die Schrift
+ * dort unlesbar klein. Die Legende bleibt bewusst ungestreckt.
+ */
+function LearningCurveChart({ stretch }: { stretch: number }) {
+  const X = (x: number) => 30 + (x - 30) * stretch
+  const scalePath = (d: string) => d.replace(/(\d+(?:\.\d+)?),(\d+(?:\.\d+)?)/g, (_, x, y) => `${X(Number(x))},${y}`)
+  const width = X(400) + 30
+
+  const innovationPath = scalePath(INNOVATION_PATH)
+  const klassischPath = scalePath(KLASSISCH_PATH)
 
   const milestones = [
     { x: 95, y: 112, label: 'Hypothesen' },
@@ -15,16 +31,15 @@ function LearningCurveChart() {
   ]
 
   return (
-    <div className="w-full max-w-2xl mx-auto mt-12 mb-2">
-      <svg viewBox="0 0 430 210" className="w-full h-auto" aria-hidden="true">
+    <svg viewBox={`0 0 ${width} 210`} className="w-full h-auto" aria-hidden="true">
         {/* Subtle grid lines */}
         {[50, 90, 130, 170].map((y) => (
-          <line key={y} x1="30" y1={y} x2="400" y2={y}
+          <line key={y} x1="30" y1={y} x2={X(400)} y2={y}
             stroke="#0f766e" strokeWidth="0.4" opacity="0.12" strokeDasharray="4 6" />
         ))}
 
         {/* X axis */}
-        <line x1="30" y1="182" x2="400" y2="182" className="stroke-gray-400 dark:stroke-gray-600" strokeWidth="0.8" opacity="0.4" />
+        <line x1="30" y1="182" x2={X(400)} y2="182" className="stroke-gray-400 dark:stroke-gray-600" strokeWidth="0.8" opacity="0.4" />
 
         {/* X axis week labels */}
         {[
@@ -34,18 +49,18 @@ function LearningCurveChart() {
           { x: 340, label: 'W5' },
           { x: 395, label: 'W6' },
         ].map(({ x, label }) => (
-          <text key={label} x={x} y="198" textAnchor="middle"
+          <text key={label} x={X(x)} y="198" textAnchor="middle"
             className="fill-gray-500 dark:fill-gray-400" fontSize="9.5" fontFamily="monospace">
             {label}
           </text>
         ))}
 
-        {/* Klassisch curve — dashed amber */}
+        {/* Klassisch curve — dashed */}
         <path d={klassischPath} fill="none" stroke="#8A9AAB" strokeWidth="1.5"
           strokeDasharray="6 4" opacity="0.5" />
 
         {/* Area under innovation.today */}
-        <path d={`${innovationPath} L 395,182 L 30,182 Z`}
+        <path d={`${innovationPath} L ${X(395)},182 L 30,182 Z`}
           fill="#0f766e" opacity="0.07" />
 
         {/* innovation.today curve — solid petrol */}
@@ -55,9 +70,9 @@ function LearningCurveChart() {
         {/* Milestone dots */}
         {milestones.map(({ x, y, label }) => (
           <g key={label}>
-            <circle cx={x} cy={y} r="7" fill="#0f766e" opacity="0.15" />
-            <circle cx={x} cy={y} r="3.5" fill="#0f766e" />
-            <text x={x} y={y - 13} textAnchor="middle"
+            <circle cx={X(x)} cy={y} r="7" fill="#0f766e" opacity="0.15" />
+            <circle cx={X(x)} cy={y} r="3.5" fill="#0f766e" />
+            <text x={X(x)} y={y - 13} textAnchor="middle"
               className="fill-gray-500 dark:fill-gray-400" fontSize="8.5" fontFamily="monospace">
               {label}
             </text>
@@ -77,11 +92,10 @@ function LearningCurveChart() {
         </g>
 
         {/* Y axis label */}
-        <text x="398" y="11" textAnchor="end" className="fill-gray-500 dark:fill-gray-400" fontSize="8.5" fontFamily="monospace">
+        <text x={X(398)} y="11" textAnchor="end" className="fill-gray-500 dark:fill-gray-400" fontSize="8.5" fontFamily="monospace">
           Erkenntnisstand →
         </text>
       </svg>
-    </div>
   )
 }
 
@@ -104,7 +118,10 @@ export default function Hero() {
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-brand-teal/5 rounded-full blur-3xl pointer-events-none" />
 
       {/* Content */}
-      <div className="relative z-10 max-w-4xl mx-auto text-center pt-20 md:pt-24">
+      {/* Rahmen 1280 px wie die Sektionen darunter. Headline und Texte behalten
+          ihre eigene, schmale Maximalbreite — nur Diagramm und Kennzahlen
+          nutzen die volle Rahmenbreite. */}
+      <div className="relative z-10 w-full max-w-7xl mx-auto text-center pt-20 md:pt-24">
         <div className="inline-block mb-6">
           <span className="section-eyebrow">
             {t.hero.eyebrow}
@@ -140,8 +157,11 @@ export default function Hero() {
           </a>
         </div>
 
-        {/* SVG Learning Curve Chart */}
-        <LearningCurveChart />
+        {/* SVG Learning Curve Chart — mobil schmal, ab sm auf Rahmenbreite gestreckt */}
+        <div className="w-full mt-12 mb-2">
+          <div className="sm:hidden"><LearningCurveChart stretch={1} /></div>
+          <div className="hidden sm:block"><LearningCurveChart stretch={2} /></div>
+        </div>
 
         {/* Stats strip */}
         <div className="flex flex-wrap justify-center gap-10 mt-4 pt-8 border-t border-gray-200 dark:border-white/10">

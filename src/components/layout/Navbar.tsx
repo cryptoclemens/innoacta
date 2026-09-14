@@ -307,7 +307,7 @@ export default function Navbar() {
             : 'bg-transparent'
         }`}
       >
-        <nav className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+        <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center group">
             {/* Wortmarke 32 px hoch (Markenvorgabe 28–32 px). Bewusst die
@@ -378,7 +378,7 @@ export default function Navbar() {
         {/* Mobile Menu */}
         {menuOpen && (
           <div className="md:hidden bg-white dark:bg-brand-card border-b border-gray-200 dark:border-brand-border">
-            <div className="max-w-6xl mx-auto px-4 py-4 flex flex-col gap-4">
+            <div className="max-w-7xl mx-auto px-4 py-4 flex flex-col gap-4">
               <Link href="/" onClick={() => setMenuOpen(false)} className="text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white text-sm font-medium transition-colors py-1">
                 {t.nav.home}
               </Link>
