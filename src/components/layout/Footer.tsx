@@ -70,8 +70,11 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <a href={`mailto:${PRIVACY_EMAIL}`} className="text-gray-500 hover:text-brand-teal dark:hover:text-brand-mint text-sm transition-colors">
-                  {PRIVACY_EMAIL}
+                {/* Die Adresse ist seit dem Rebranding länger und sprengte zwischen 768 und
+                    ~900 px die Spalte (horizontales Scrollen). <wbr> vor dem @ gibt eine
+                    saubere Umbruchstelle; overflow-wrap:anywhere nur als Notnagel. */}
+                <a href={`mailto:${PRIVACY_EMAIL}`} className="text-gray-500 hover:text-brand-teal dark:hover:text-brand-mint text-sm transition-colors [overflow-wrap:anywhere]">
+                  {PRIVACY_EMAIL.split('@')[0]}<wbr />@{PRIVACY_EMAIL.split('@')[1]}
                 </a>
               </li>
             </ul>

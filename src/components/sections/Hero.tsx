@@ -128,13 +128,13 @@ export default function Hero() {
           </span>
         </div>
 
-        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 dark:text-white leading-tight mb-8 max-w-3xl mx-auto">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 dark:text-white leading-tight mb-8 max-w-5xl mx-auto">
           {/* Zweifarbig wie die Wortmarke: Navy, dann Teal. */}
           <span className="text-brand-navy dark:text-white">{t.hero.h1}</span>{' '}
           <span className="text-brand-teal dark:text-brand-mint">{t.hero.h1Highlight}</span>
         </h1>
 
-        <p className="text-gray-600 dark:text-gray-400 text-lg md:text-xl max-w-2xl mx-auto mb-6 leading-relaxed">
+        <p className="text-gray-600 dark:text-gray-400 text-lg md:text-xl max-w-3xl mx-auto mb-6 leading-relaxed">
           {t.hero.subline}
         </p>
 
