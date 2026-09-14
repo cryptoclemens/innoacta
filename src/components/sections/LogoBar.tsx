@@ -31,7 +31,7 @@ export default function LogoBar() {
 
   return (
     <section className="bg-white dark:bg-brand-card border-t border-b border-gray-200 dark:border-brand-border py-12 px-4">
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-7xl mx-auto">
         <p className="text-center text-gray-400 dark:text-gray-600 text-xs font-mono tracking-widest uppercase mb-8">
           {t.logoBar.label}
         </p>

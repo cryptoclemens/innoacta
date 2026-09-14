@@ -18,7 +18,7 @@ export default function References() {
 
   return (
     <section id="referenzen" className="bg-white dark:bg-brand-card border-t border-gray-200 dark:border-brand-border py-24 px-4">
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <span className="section-eyebrow justify-center mb-4">
             {t.references.label}

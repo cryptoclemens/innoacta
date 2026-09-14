@@ -44,7 +44,7 @@ export default function Features() {
 
   return (
     <section id="leistungen" className="bg-white dark:bg-brand-card py-24 px-4 border-t border-b border-gray-200 dark:border-brand-border">
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <span className="section-eyebrow justify-center mb-4">
             {t.features.label}
