@@ -75,8 +75,7 @@ export default function WodaPage() {
             </div>
             <h1 className="text-3xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6 leading-tight">
               {b.h1Lead}{' '}
-              <span className="text-brand-teal dark:text-brand-mint">{b.h1Accent}</span>{' '}
-              {b.h1Tail}
+              <span className="text-brand-teal dark:text-brand-mint">{b.h1Accent}</span>{b.h1Tail}
             </h1>
             <p className="text-gray-600 dark:text-gray-400 text-lg max-w-2xl leading-relaxed mb-4">{b.intro}</p>
             <p className="text-gray-600 dark:text-gray-400 text-lg max-w-2xl leading-relaxed mb-8">{b.intro2}</p>
