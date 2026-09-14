@@ -48,6 +48,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     page('/optaimum',            0.8, 'monthly', '2026-09-09'),
     page('/souffleur',           0.8, 'monthly', '2026-09-09'),
     page('/kitalo',              0.8, 'monthly', '2026-09-09'),
+    page('/woda',                0.8, 'monthly', '2026-09-13'),
     page('/autotodo',            0.7, 'monthly', '2026-09-09'),
 
     // OptAImum-Werkzeuge
