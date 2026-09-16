@@ -259,4 +259,24 @@ export const projects: Project[] = [
       href: '/contact',
     },
   },
+  {
+    slug: 'woda',
+    name: { de: 'Projekt Woda', en: 'Project Woda', fr: 'Projet Woda', es: 'Proyecto Woda' },
+    category: {
+      de: 'Brunnenmanagement für Wasserwerke',
+      en: 'Well management for waterworks',
+      fr: 'Gestion de puits pour les services des eaux',
+      es: 'Gestión de pozos para plantas de agua',
+    },
+    description: {
+      de: 'Brunnendaten aus jedem System werden zu standardisierten Experten-Analysen.',
+      en: 'Well data from any system becomes standardised expert analysis.',
+      fr: "Les données de puits de n’importe quel système deviennent des analyses d’experts standardisées.",
+      es: 'Los datos de pozos de cualquier sistema se convierten en análisis expertos estandarizados.',
+    },
+    tags: ['Wasserwirtschaft', 'Offline', 'Datenhoheit'],
+    status: 'In Entwicklung',
+    // Eigene, viersprachige Seite (src/app/woda) — kein Auto-Template.
+    href: '/woda',
+  },
 ]

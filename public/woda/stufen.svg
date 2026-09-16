@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 260" role="img" aria-label="Vier aufsteigende Stufen">
+  <rect width="640" height="260" rx="12" fill="#EAF4FC"/>
+  <!-- vier aufsteigende Stufen, bewusst ohne Beschriftung: die Namen stehen in den Karten darunter -->
+  <rect x="40" y="170" width="120" height="60" rx="8" fill="#14304A"/>
+  <rect x="180" y="130" width="120" height="100" rx="8" fill="#14304A"/>
+  <rect x="320" y="90" width="120" height="140" rx="8" fill="#0F766E"/>
+  <rect x="460" y="50" width="120" height="180" rx="8" fill="#0F766E"/>
+  <!-- Stufe 1: Ampel -->
+  <g transform="translate(88,120)"><rect x="0" y="0" width="24" height="40" rx="6" fill="#FFFFFF" stroke="#14304A" stroke-width="2"/><circle cx="12" cy="10" r="4" fill="#DC2626"/><circle cx="12" cy="20" r="4" fill="#EAB308"/><circle cx="12" cy="30" r="4" fill="#16A34A"/></g>
+  <!-- Stufe 2: Ampel mit Begruendungszeilen -->
+  <g transform="translate(212,80)"><rect x="0" y="0" width="24" height="40" rx="6" fill="#FFFFFF" stroke="#14304A" stroke-width="2"/><circle cx="12" cy="10" r="4" fill="#DC2626"/><circle cx="12" cy="20" r="4" fill="#EAB308"/><circle cx="12" cy="30" r="4" fill="#16A34A"/><g stroke="#14304A" stroke-width="3" stroke-linecap="round"><path d="M34 12h22"/><path d="M34 22h30"/><path d="M34 32h18"/></g></g>
+  <!-- Stufe 3: Empfehlung -->
+  <g transform="translate(346,44)"><g stroke="#0F766E" stroke-width="3" stroke-linecap="round"><path d="M0 8h26"/><path d="M0 18h34"/></g><path d="M44 4l16 9-16 9z" fill="#0F766E"/><path d="M0 34h60" stroke="#0F766E" stroke-width="3" stroke-linecap="round"/></g>
+  <!-- Stufe 4: Betriebsfuehrung -->
+  <g transform="translate(520,26)" fill="none" stroke="#0F766E" stroke-width="3"><circle cx="0" cy="0" r="8"/><g stroke-linecap="round"><path d="M0 -15v5M0 10v5M-15 0h5M10 0h5M-10.6 -10.6l3.5 3.5M7.1 7.1l3.5 3.5M-10.6 10.6l3.5 -3.5M7.1 -7.1l3.5 -3.5"/></g></g>
+  <!-- Trennlinie zwischen Werkzeug und Ingenieurleistung -->
+  <path d="M310 30V240" stroke="#14304A" stroke-width="2" stroke-dasharray="6 6"/>
+  <path d="M30 232H610" stroke="#14304A" stroke-width="2" stroke-linecap="round"/>
+</svg>
