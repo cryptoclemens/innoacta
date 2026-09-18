@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: 'Geopotatlas – Geodaten-Intelligence für strategische Entscheidungen',
   description:
     'Geopotatlas wertet Geodaten intelligent aus: strategische Standortentscheidungen, Marktanalysen und ERP-Integration für mittelständische Unternehmen.',
-  alternates: { canonical: 'https://www.innovation.today/geopotatlas' },
+  alternates: { canonical: 'https://www.innovation.today/geopotatlas/' },
   openGraph: {
     title: 'Geopotatlas | innovation.today',
     description: 'Intelligente Geodaten-Auswertung für Standortentscheidungen und Marktanalysen. Integration mit bestehenden ERP-Systemen.',
@@ -71,8 +71,8 @@ export default function GeopotatlasPage() {
         '@type': 'BreadcrumbList',
         itemListElement: [
           { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.innovation.today' },
-          { '@type': 'ListItem', position: 2, name: 'Projekte', item: 'https://www.innovation.today/projects' },
-          { '@type': 'ListItem', position: 3, name: 'Geopotatlas', item: 'https://www.innovation.today/geopotatlas' },
+          { '@type': 'ListItem', position: 2, name: 'Projekte', item: 'https://www.innovation.today/projects/' },
+          { '@type': 'ListItem', position: 3, name: 'Geopotatlas', item: 'https://www.innovation.today/geopotatlas/' },
         ],
       }) }} />
       <div className="min-h-screen bg-brand-sky dark:bg-brand-night pt-24 pb-20">

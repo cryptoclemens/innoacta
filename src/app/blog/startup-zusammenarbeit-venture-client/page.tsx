@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: 'Startup-Zusammenarbeit als Chance in Krisenzeiten: Venture Clienting erklärt',
   description:
     'Warum wirtschaftliche Krisen der beste Zeitpunkt für Venture Clienting sind – und wie etablierte Unternehmen von der Zusammenarbeit mit Startups profitieren, ohne Beteiligungen einzugehen.',
-  alternates: { canonical: 'https://www.innovation.today/blog/startup-zusammenarbeit-venture-client' },
+  alternates: { canonical: 'https://www.innovation.today/blog/startup-zusammenarbeit-venture-client/' },
   openGraph: {
     title: 'Startup-Zusammenarbeit als Chance: Venture Clienting in Krisenzeiten',
     description:
@@ -21,9 +21,9 @@ const articleJsonLd = {
   headline: 'Startup-Zusammenarbeit als Chance in wirtschaftlichen Krisenzeiten: Venture Clienting',
   description:
     'Warum wirtschaftliche Krisen der beste Zeitpunkt für Venture Clienting sind – und wie etablierte Unternehmen von der Zusammenarbeit mit Startups profitieren.',
-  author: { '@type': 'Person', name: 'Clemens Pompeÿ', url: 'https://www.innovation.today/ueber-uns' },
+  author: { '@type': 'Person', name: 'Clemens Pompeÿ', url: 'https://www.innovation.today/ueber-uns/' },
   publisher: { '@type': 'Organization', name: 'innovation.today', legalName: 'Vencly GmbH', url: 'https://www.innovation.today' },
-  url: 'https://www.innovation.today/blog/startup-zusammenarbeit-venture-client',
+  url: 'https://www.innovation.today/blog/startup-zusammenarbeit-venture-client/',
   datePublished: '2024-01-15',
   dateModified: '2026-05-16',
   inLanguage: 'de',
@@ -39,8 +39,8 @@ const breadcrumbJsonLd = {
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.innovation.today' },
-    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://www.innovation.today/blog' },
-    { '@type': 'ListItem', position: 3, name: 'Startup-Zusammenarbeit & Venture Clienting', item: 'https://www.innovation.today/blog/startup-zusammenarbeit-venture-client' },
+    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://www.innovation.today/blog/' },
+    { '@type': 'ListItem', position: 3, name: 'Startup-Zusammenarbeit & Venture Clienting', item: 'https://www.innovation.today/blog/startup-zusammenarbeit-venture-client/' },
   ],
 }
 

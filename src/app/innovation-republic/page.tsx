@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: 'Innovation Republic – Venture-Clienting-Plattform',
   description:
     'Innovation Republic: KI-gestützte Plattform zur automatisierten Startup-Identifikation und -Matching für mittelständische Unternehmen. Scouting-Aufwand um bis zu 70 % reduziert.',
-  alternates: { canonical: 'https://www.innovation.today/innovation-republic' },
+  alternates: { canonical: 'https://www.innovation.today/innovation-republic/' },
   openGraph: {
     title: 'Innovation Republic | innovation.today',
     description: 'KI-Agenten identifizieren und matchen Startups für Mittelständler – vollautomatisiert, transparent, skalierbar.',
@@ -71,8 +71,8 @@ export default function InnovationRepublicPage() {
         '@type': 'BreadcrumbList',
         itemListElement: [
           { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.innovation.today' },
-          { '@type': 'ListItem', position: 2, name: 'Projekte', item: 'https://www.innovation.today/projects' },
-          { '@type': 'ListItem', position: 3, name: 'Innovation Republic', item: 'https://www.innovation.today/innovation-republic' },
+          { '@type': 'ListItem', position: 2, name: 'Projekte', item: 'https://www.innovation.today/projects/' },
+          { '@type': 'ListItem', position: 3, name: 'Innovation Republic', item: 'https://www.innovation.today/innovation-republic/' },
         ],
       }) }} />
       <div className="min-h-screen bg-brand-sky dark:bg-brand-night pt-24 pb-20">

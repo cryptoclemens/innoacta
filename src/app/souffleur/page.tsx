@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: 'Souffleur – Privacy-first KI-Verhandlungs-Coach für macOS',
   description:
     'Souffleur transkribiert Verhandlungen lokal per Whisper, gleicht Gesprächspunkte in Echtzeit mit Ihrem Spickzettel ab und erstellt anonymisierte Summaries – ohne Cloud, DSGVO-konform, BYOK.',
-  alternates: { canonical: 'https://www.innovation.today/souffleur' },
+  alternates: { canonical: 'https://www.innovation.today/souffleur/' },
   openGraph: {
     title: 'Souffleur | innovation.today',
     description: 'Live-Coaching für Verhandlungen auf macOS: lokal, privat, cheat-sheet-gesteuert. Kein Cloud-Recording, BYOK, DSGVO-first.',
@@ -71,8 +71,8 @@ export default function SouffleurPage() {
         '@type': 'BreadcrumbList',
         itemListElement: [
           { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.innovation.today' },
-          { '@type': 'ListItem', position: 2, name: 'Projekte', item: 'https://www.innovation.today/projects' },
-          { '@type': 'ListItem', position: 3, name: 'Souffleur', item: 'https://www.innovation.today/souffleur' },
+          { '@type': 'ListItem', position: 2, name: 'Projekte', item: 'https://www.innovation.today/projects/' },
+          { '@type': 'ListItem', position: 3, name: 'Souffleur', item: 'https://www.innovation.today/souffleur/' },
         ],
       }) }} />
       <div className="min-h-screen bg-brand-sky dark:bg-brand-night pt-24 pb-20">

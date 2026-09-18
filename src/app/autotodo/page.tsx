@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: 'AutoToDo – KI-gestütztes LOP-Management',
   description:
     'AutoToDo automatisiert die Pflege von Maßnahmenlisten aus Meeting-Transkripten: Aufgaben per KI extrahieren, überprüfen und als Excel exportieren.',
-  alternates: { canonical: 'https://www.innovation.today/autotodo' },
+  alternates: { canonical: 'https://www.innovation.today/autotodo/' },
   openGraph: {
     title: 'AutoToDo | innovation.today',
     description: 'Meeting-Transkript hochladen, KI extrahiert Aufgaben und Statusänderungen, exportieren als Excel. Multi-Tenant SaaS mit BYOK.',
@@ -65,8 +65,8 @@ export default function AutoTodoPage() {
         '@type': 'BreadcrumbList',
         itemListElement: [
           { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.innovation.today' },
-          { '@type': 'ListItem', position: 2, name: 'Projekte', item: 'https://www.innovation.today/projects' },
-          { '@type': 'ListItem', position: 3, name: 'AutoToDo', item: 'https://www.innovation.today/autotodo' },
+          { '@type': 'ListItem', position: 2, name: 'Projekte', item: 'https://www.innovation.today/projects/' },
+          { '@type': 'ListItem', position: 3, name: 'AutoToDo', item: 'https://www.innovation.today/autotodo/' },
         ],
       }) }} />
       <div className="min-h-screen bg-brand-sky dark:bg-brand-night pt-24 pb-20">

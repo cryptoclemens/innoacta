@@ -9,7 +9,7 @@ const jsonLd = {
   '@type': 'Service',
   name: 'Geschäftsfeldentwicklung',
   provider: { '@type': 'Organization', name: 'innovation.today', legalName: 'Vencly GmbH', url: 'https://www.innovation.today' },
-  url: 'https://www.innovation.today/geschaeftsfeldentwicklung',
+  url: 'https://www.innovation.today/geschaeftsfeldentwicklung/',
   description:
     'Neue Geschäftsfelder identifizieren, Geschäftsmodelle entwickeln und am Markt validieren – von der ersten Hypothese bis zum skalierbaren Modell. Für Konzerne und Mittelstand.',
   areaServed: ['DE', 'AT', 'CH'],
@@ -69,7 +69,7 @@ const breadcrumbJsonLd = {
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.innovation.today' },
     { '@type': 'ListItem', position: 2, name: 'Leistungen', item: 'https://www.innovation.today/#leistungen' },
-    { '@type': 'ListItem', position: 3, name: 'Geschäftsfeldentwicklung', item: 'https://www.innovation.today/geschaeftsfeldentwicklung' },
+    { '@type': 'ListItem', position: 3, name: 'Geschäftsfeldentwicklung', item: 'https://www.innovation.today/geschaeftsfeldentwicklung/' },
   ],
 }
 
