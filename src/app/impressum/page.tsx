@@ -5,7 +5,7 @@ import { LEGAL_NOTICE, SUPPORT_EMAIL } from '@/lib/brand'
 export const metadata: Metadata = {
   title: 'Impressum',
   description: 'Impressum der Vencly GmbH – Angaben gemäß § 5 TMG.',
-  alternates: { canonical: 'https://www.innovation.today/impressum' },
+  alternates: { canonical: 'https://www.innovation.today/impressum/' },
   robots: { index: true, follow: false },
 }
 
