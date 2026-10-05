@@ -1,6 +1,6 @@
 'use client'
 import Link from 'next/link'
-import { ArrowRight, CheckCircle2, Users, FileText, PresentationIcon, TrendingUp, Building2, Target, BarChart3 } from 'lucide-react'
+import { ArrowRight, CheckCircle2, Users, FileText, PresentationIcon, TrendingUp, Building2, Target, BarChart3, RefreshCw } from 'lucide-react'
 import { calButtonProps } from '@/components/layout/CalProvider'
 import { usePageTranslation } from '@/lib/hooks/usePageTranslation'
 
@@ -47,7 +47,7 @@ const faqJsonLd = {
   ],
 }
 
-const serviceIcons = [FileText, TrendingUp, Building2, Target, BarChart3, Users, PresentationIcon]
+const serviceIcons = [FileText, TrendingUp, Building2, Target, BarChart3, Users, PresentationIcon, RefreshCw]
 
 export default function StrategischeUmsetzungPage() {
   const p = usePageTranslation()

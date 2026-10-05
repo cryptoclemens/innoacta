@@ -60,6 +60,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // Blog
     page('/blog', 0.85, 'weekly', '2026-09-09'),
+    page('/blog/wenn-ki-den-code-schreibt',                         0.75, 'monthly', '2026-10-05'),
     page('/blog/souffleur-ki-verhandlungscoach',                  0.75, 'monthly', '2026-09-09'),
     page('/blog/innovation-republic-kmu-innovation',               0.75, 'monthly', '2026-09-09'),
     page('/blog/christoph-werner-dm-wirtschaftspolitik-freiheit', 0.75, 'monthly', '2026-09-09'),

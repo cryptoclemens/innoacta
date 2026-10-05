@@ -181,6 +181,10 @@ const dePage = {
         title: 'Workshop-Formate & Entscheidungsvorlagen',
         desc: 'Vom Kick-off bis zur Go/No-Go-Entscheidung: Wir gestalten strukturierte Formate, die Klarheit schaffen und interne Entscheidungsprozesse beschleunigen.',
       },
+      {
+        title: 'Bestehende Systeme wieder beweglich machen',
+        desc: 'Wenn jede Änderung an einem gewachsenen System Wochen dauert, bremst es das Neue aus. Wir messen, wo es hakt, halten das heutige Verhalten mit Tests fest und erneuern Schritt für Schritt – mit KI-Assistenten in Wochen statt in Jahren und mit automatischen Prüfungen, die neue Wartungslast verhindern.',
+      },
     ],
     whenH2: 'Wann passt dieses Leistungsbild?',
     whenItems: [
@@ -194,6 +198,7 @@ const dePage = {
     relatedArticles: [
       { href: '/blog/geschaeftsfeldentwicklung-methoden', cat: 'Geschäftsfeldentwicklung', title: 'Geschäftsfeldentwicklung: Methoden, Phasen und häufige Fehler' },
       { href: '/blog/ki-beratung-mittelstand', cat: 'KI & Strategie', title: 'KI-Beratung im Mittelstand: Geschäftsfeldentwicklung und -validierung mit KI' },
+      { href: '/blog/wenn-ki-den-code-schreibt', cat: 'KI & Software', title: 'Wenn KI den Code schreibt: Leitplanken gegen die neue Wartungslast' },
     ],
     ctaH2: 'Welches Projekt braucht eine verlässliche operative Hand?',
     ctaP: 'Erzählen Sie uns, was liegt – wir sagen Ihnen ehrlich, wie wir helfen können.',
@@ -469,6 +474,10 @@ const enPage: typeof dePage = {
         title: 'Workshop Formats & Decision Documents',
         desc: 'From kick-off to go/no-go decision: we design structured formats that create clarity and accelerate internal decision-making processes.',
       },
+      {
+        title: 'Getting Existing Systems Moving Again',
+        desc: 'When every change to a grown system takes weeks, it holds back what is new. We measure where it sticks, capture today\'s behaviour in tests and renew step by step — with AI assistants in weeks rather than years, and with automated checks that stop new maintenance burden from building up.',
+      },
     ],
     whenH2: 'When is this the right fit?',
     whenItems: [
@@ -482,6 +491,7 @@ const enPage: typeof dePage = {
     relatedArticles: [
       { href: '/blog/geschaeftsfeldentwicklung-methoden', cat: 'New Market Development', title: 'New Market Development: Methods, Phases and Common Mistakes' },
       { href: '/blog/ki-beratung-mittelstand', cat: 'AI & Strategy', title: 'AI Consulting for Mid-Market Companies: New Market Development and Validation with AI' },
+      { href: '/blog/wenn-ki-den-code-schreibt', cat: 'AI & Software', title: 'When AI writes the code: guardrails against the new maintenance burden' },
     ],
     ctaH2: 'Which project needs a reliable operational hand?',
     ctaP: 'Tell us what\'s on the table — we\'ll give you an honest assessment of how we can help.',
@@ -757,6 +767,10 @@ const frPage: typeof dePage = {
         title: "Ateliers & documents d'arbitrage",
         desc: "Du kick-off à la décision go/no-go : nous concevons des formats structurés qui créent de la clarté et accélèrent les processus de décision internes.",
       },
+      {
+        title: "Redonner de la souplesse aux systèmes existants",
+        desc: "Quand chaque modification d'un système historique prend des semaines, il freine la nouveauté. Nous mesurons où cela bloque, figeons le comportement actuel par des tests et renouvelons étape par étape — avec des assistants d'IA, en quelques semaines plutôt qu'en années, et avec des contrôles automatiques qui empêchent l'accumulation d'une nouvelle charge de maintenance.",
+      },
     ],
     whenH2: "Quand ce profil d'intervention est-il pertinent ?",
     whenItems: [
@@ -770,6 +784,7 @@ const frPage: typeof dePage = {
     relatedArticles: [
       { href: '/blog/geschaeftsfeldentwicklung-methoden', cat: 'Développement de marchés', title: 'Développement de nouveaux marchés : méthodes, phases et erreurs fréquentes' },
       { href: '/blog/ki-beratung-mittelstand', cat: 'IA & Stratégie', title: "Conseil IA pour les ETI : développement et validation de nouveaux marchés avec l'IA" },
+      { href: '/blog/wenn-ki-den-code-schreibt', cat: 'IA & logiciel', title: "Quand l'IA écrit le code : des garde-fous contre la nouvelle charge de maintenance" },
     ],
     ctaH2: "Quel projet a besoin d'une main opérationnelle fiable ?",
     ctaP: "Parlez-nous de votre situation — nous vous dirons honnêtement comment nous pouvons vous aider.",
@@ -1045,6 +1060,10 @@ const esPage: typeof dePage = {
         title: 'Talleres y documentos de decisión',
         desc: 'Del kick-off a la decisión go/no-go: diseñamos formatos estructurados que crean claridad y aceleran los procesos de decisión internos.',
       },
+      {
+        title: 'Devolver la agilidad a los sistemas existentes',
+        desc: 'Cuando cada cambio en un sistema heredado tarda semanas, frena lo nuevo. Medimos dónde se atasca, fijamos el comportamiento actual con pruebas y renovamos paso a paso — con asistentes de IA, en semanas en lugar de años, y con controles automáticos que evitan que se acumule nueva carga de mantenimiento.',
+      },
     ],
     whenH2: '¿Cuándo encaja este perfil de servicio?',
     whenItems: [
@@ -1058,6 +1077,7 @@ const esPage: typeof dePage = {
     relatedArticles: [
       { href: '/blog/geschaeftsfeldentwicklung-methoden', cat: 'Desarrollo de mercados', title: 'Desarrollo de nuevas líneas de negocio: métodos, fases y errores frecuentes' },
       { href: '/blog/ki-beratung-mittelstand', cat: 'IA & Estrategia', title: 'Consultoría de IA para pymes: desarrollo y validación de nuevas líneas de negocio con IA' },
+      { href: '/blog/wenn-ki-den-code-schreibt', cat: 'IA y software', title: 'Cuando la IA escribe el código: barreras contra la nueva carga de mantenimiento' },
     ],
     ctaH2: '¿Qué proyecto necesita una mano operativa fiable?',
     ctaP: 'Cuéntanos qué tienes sobre la mesa — te daremos una valoración honesta de cómo podemos ayudar.',

@@ -14,6 +14,14 @@ const breadcrumbJsonLd = {
 
 const articles = [
   {
+    slug: 'wenn-ki-den-code-schreibt',
+    category: 'KI & Software',
+    title: 'Wenn KI den Code schreibt: Leitplanken gegen die neue Wartungslast',
+    excerpt: 'KI-Assistenten machen Software schneller – und erzeugen Code, den niemand mehr ganz versteht. Wie man bestehende Systeme mit KI wieder beweglich macht, ohne neue Wartungslast aufzubauen.',
+    readTime: '8 Min.',
+    date: '5. Oktober 2026',
+  },
+  {
     slug: 'souffleur-ki-verhandlungscoach',
     category: 'KI & Verhandlung',
     title: 'KI-Verhandlungscoaching für die Käuferseite – der Souffleur-Ansatz',
