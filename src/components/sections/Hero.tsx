@@ -3,6 +3,7 @@
 import { ChevronDown } from 'lucide-react'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { calButtonProps } from '@/components/layout/CalProvider'
+import Explainer from '@/components/sections/Explainer'
 
 const INNOVATION_PATH = 'M 30,170 C 55,148 70,125 95,112 C 130,93 165,78 210,68 C 255,57 295,46 340,38 L 395,32'
 const KLASSISCH_PATH = 'M 30,170 C 75,166 90,163 120,160 C 160,155 195,150 240,144 C 285,136 320,124 340,118 L 395,110'
@@ -121,7 +122,7 @@ export default function Hero() {
       {/* Rahmen 1280 px wie die Sektionen darunter. Headline und Texte behalten
           ihre eigene, schmale Maximalbreite — nur Diagramm und Kennzahlen
           nutzen die volle Rahmenbreite. */}
-      <div className="relative z-10 w-full max-w-7xl mx-auto text-center pt-20 md:pt-24">
+      <div className="relative z-10 w-full max-w-7xl mx-auto text-center pt-20 md:pt-24 pb-24">
         <div className="inline-block mb-6">
           <span className="section-eyebrow">
             {t.hero.eyebrow}
@@ -141,6 +142,11 @@ export default function Hero() {
         <p className="text-xl md:text-2xl font-normal text-brand-teal dark:text-brand-mint mb-10">
           innovation.today steht für eines: Umsetzung von Chancen.
         </p>
+
+        {/* Erklärfilm direkt über den Buttons; data-track="film" hält die GA4-Zeitreihe. */}
+        <div data-track="film" className="max-w-4xl mx-auto mb-10">
+          <Explainer />
+        </div>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <button

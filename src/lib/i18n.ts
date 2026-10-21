@@ -33,9 +33,6 @@ const de = {
     ],
   },
   explainer: {
-    label: 'Im Film',
-    h2: 'innovation.today in 100 Sekunden',
-    subtext: 'Was wir machen, welche Probleme wir lösen und was Sie davon haben – ohne Ton, einfach abspielen.',
     ariaLabel: 'Erklärfilm: Was innovation.today macht',
     // Den Film gibt es nur auf Deutsch und Englisch; FR/ES zeigen die englische Fassung.
     video: 'de',
@@ -73,12 +70,12 @@ const de = {
     label: 'Leistungen',
     h2: 'Drei Felder – eine Logik.',
     subtext:
-      'Alle unsere Leistungen folgen derselben Startup-Logik: erst verstehen, dann testen, dann skalieren – nie umgekehrt.',
+      'Alle unsere Leistungen folgen derselben Startup-Logik: erst verstehen, dann testen, dann skalieren – nie umgekehrt. KI-Beratung ist in jedem Feld dabei.',
     items: [
       {
         title: 'Geschäftsfeldentwicklung',
         desc: 'Neue Märkte identifizieren, Geschäftsmodelle entwickeln, Markterprobung begleiten – von der ersten Hypothese bis zum validierten Modell.',
-        points: ['Markt- & Technologiebewertung', 'Geschäftsmodell-Entwicklung', 'Validierung & Markterprobung'],
+        points: ['Innovation Analysis: Potenziale im Bestand finden', 'Markt- & Technologiebewertung', 'Geschäftsmodell-Entwicklung', 'Validierung & Markterprobung'],
       },
       {
         title: 'Venture Clienting',
@@ -88,7 +85,7 @@ const de = {
       {
         title: 'Strategische Umsetzung',
         desc: 'Nicht Strategie statt Umsetzung – sondern beides. innovation.today übernimmt operative Verantwortung in Projekten, die intern keine Heimat haben: Projektsteuerung, Stakeholder-Management, Entscheidungsvorlagen.',
-        points: ['Projektsteuerung & Reporting', 'Stakeholder-Management', 'Workshop-Formate'],
+        points: ['Innovation Execution: vom Pilot in den Betrieb', 'KI-Beratung & -Einführung', 'Projektsteuerung & Reporting', 'Stakeholder-Management'],
       },
     ],
   },
@@ -183,9 +180,6 @@ const en: Translations = {
     ],
   },
   explainer: {
-    label: 'The film',
-    h2: 'innovation.today in 100 seconds',
-    subtext: 'What we do, which problems we solve and what you gain – no sound needed, just press play.',
     ariaLabel: 'Explainer: what innovation.today does',
     // Den Film gibt es nur auf Deutsch und Englisch; FR/ES zeigen die englische Fassung.
     video: 'en',
@@ -223,12 +217,12 @@ const en: Translations = {
     label: 'Services',
     h2: 'Three practices. One logic.',
     subtext:
-      'Every service we offer follows the same startup-derived principle: understand first, test next, then scale — never the other way around.',
+      'Every service we offer follows the same startup-derived principle: understand first, test next, then scale — never the other way around. AI advisory is part of every practice.',
     items: [
       {
         title: 'New Market Development',
         desc: 'Identify adjacent markets, develop business models, run structured market tests — from the first hypothesis to a validated, investment-ready model.',
-        points: ['Market & technology assessment', 'Business model development', 'Validation & market testing'],
+        points: ['Innovation analysis: finding potential in what exists', 'Market & technology assessment', 'Business model development', 'Validation & market testing'],
       },
       {
         title: 'Venture Clienting',
@@ -238,7 +232,7 @@ const en: Translations = {
       {
         title: 'Strategic Execution',
         desc: 'Strategy and execution — together. innovation.today takes operational ownership of high-priority projects that lack an internal home: project management, stakeholder alignment and decision-ready documentation.',
-        points: ['Project management & reporting', 'Stakeholder management', 'Workshop facilitation'],
+        points: ['Innovation execution: from pilot to operations', 'AI advisory & implementation', 'Project management & reporting', 'Stakeholder management'],
       },
     ],
   },
@@ -333,9 +327,6 @@ const fr: Translations = {
     ],
   },
   explainer: {
-    label: 'Le film',
-    h2: 'innovation.today en 100 secondes',
-    subtext: 'Ce que nous faisons, les problèmes que nous résolvons et ce que vous y gagnez – sans son, en anglais.',
     ariaLabel: 'Film explicatif : ce que fait innovation.today',
     // Den Film gibt es nur auf Deutsch und Englisch; FR/ES zeigen die englische Fassung.
     video: 'en',
@@ -373,12 +364,12 @@ const fr: Translations = {
     label: 'Services',
     h2: 'Trois périmètres. Une seule logique.',
     subtext:
-      'Chacun de nos services suit le même principe issu de la culture startup : comprendre d\'abord, tester ensuite, puis passer à l\'échelle — jamais dans l\'ordre inverse.',
+      'Chacun de nos services suit le même principe issu de la culture startup : comprendre d\'abord, tester ensuite, puis passer à l\'échelle — jamais dans l\'ordre inverse. Le conseil en IA fait partie de chaque domaine.',
     items: [
       {
         title: 'Développement de nouveaux marchés',
         desc: 'Identifier de nouveaux marchés adjacents, développer des modèles économiques, piloter des tests de marché structurés — de la première hypothèse au modèle validé et finançable.',
-        points: ['Évaluation marché & technologie', 'Développement du modèle économique', 'Validation & tests de marché'],
+        points: ['Innovation analysis : révéler le potentiel existant', 'Évaluation marché & technologie', 'Développement du modèle économique', 'Validation & tests de marché'],
       },
       {
         title: 'Venture Clienting',
@@ -388,7 +379,7 @@ const fr: Translations = {
       {
         title: 'Exécution stratégique',
         desc: 'Pas la stratégie à la place de l\'exécution — les deux ensemble. innovation.today prend en charge la responsabilité opérationnelle de projets sans portage interne clair : pilotage de projet, gestion des décideurs, documents d\'arbitrage.',
-        points: ['Pilotage de projet & reporting', 'Gestion des décideurs et équipes', 'Animation d\'ateliers stratégiques'],
+        points: ['Innovation execution : du pilote à l\'exploitation', 'Conseil & déploiement IA', 'Pilotage de projet & reporting', 'Gestion des décideurs et équipes'],
       },
     ],
   },
@@ -483,9 +474,6 @@ const es: Translations = {
     ],
   },
   explainer: {
-    label: 'El vídeo',
-    h2: 'innovation.today en 100 segundos',
-    subtext: 'Qué hacemos, qué problemas resolvemos y qué gana usted – sin sonido, en inglés.',
     ariaLabel: 'Vídeo explicativo: qué hace innovation.today',
     // Den Film gibt es nur auf Deutsch und Englisch; FR/ES zeigen die englische Fassung.
     video: 'en',
@@ -523,12 +511,12 @@ const es: Translations = {
     label: 'Servicios',
     h2: 'Tres áreas. Una sola lógica.',
     subtext:
-      'Cada servicio que ofrecemos sigue el mismo principio de la cultura startup: entender primero, probar después, escalar al final — nunca al revés.',
+      'Cada servicio que ofrecemos sigue el mismo principio de la cultura startup: entender primero, probar después, escalar al final — nunca al revés. La consultoría en IA forma parte de cada área.',
     items: [
       {
         title: 'Desarrollo de nuevas líneas de negocio',
         desc: 'Identificar mercados adyacentes, desarrollar modelos de negocio, ejecutar pruebas de mercado estructuradas — desde la primera hipótesis hasta el modelo validado y listo para invertir.',
-        points: ['Análisis de mercado y tecnología', 'Desarrollo del modelo de negocio', 'Validación y pruebas de mercado'],
+        points: ['Innovation analysis: descubrir el potencial existente', 'Análisis de mercado y tecnología', 'Desarrollo del modelo de negocio', 'Validación y pruebas de mercado'],
       },
       {
         title: 'Venture Clienting',
@@ -538,7 +526,7 @@ const es: Translations = {
       {
         title: 'Ejecución estratégica',
         desc: 'No estrategia en lugar de ejecución — sino las dos cosas a la vez. innovation.today asume la responsabilidad operativa en proyectos sin un responsable interno claro: dirección de proyecto, gestión de stakeholders y documentos de decisión.',
-        points: ['Dirección de proyecto y reporting', 'Gestión de stakeholders', 'Dinamización de talleres estratégicos'],
+        points: ['Innovation execution: del piloto a la operación', 'Consultoría e implantación de IA', 'Dirección de proyecto y reporting', 'Gestión de stakeholders'],
       },
     ],
   },

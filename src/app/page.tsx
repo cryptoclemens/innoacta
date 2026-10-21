@@ -1,6 +1,5 @@
 import type { Metadata } from 'next'
 import Hero from '@/components/sections/Hero'
-import Explainer from '@/components/sections/Explainer'
 import SectionTracker from '@/components/layout/SectionTracker'
 import ValueProp from '@/components/sections/ValueProp'
 import Features from '@/components/sections/Features'
@@ -57,7 +56,6 @@ export default function HomePage() {
       />
       {/* data-track: Abschnittsnamen für die Messung (SectionTracker). Umbenennen bricht die GA4-Zeitreihen. */}
       <div data-track="hero"><Hero /></div>
-      <div data-track="film"><Explainer /></div>
       <div data-track="nutzen"><ValueProp /></div>
       <div data-track="leistungen"><Features /></div>
       <div data-track="warum-wir"><WhyUs /></div>

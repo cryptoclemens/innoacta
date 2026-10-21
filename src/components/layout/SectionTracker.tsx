@@ -11,7 +11,7 @@ const MINDESTDAUER = 1000
 /**
  * Misst auf der Startseite, welche Abschnitte gesehen werden und wie lange.
  *
- * Jeder Abschnitt trägt `data-track="<name>"` (siehe app/page.tsx).
+ * Jeder Abschnitt trägt `data-track="<name>"` (siehe app/page.tsx; „film“ sitzt im Hero).
  * - `section_view` einmal pro Abschnitt und Seitenaufruf → Trichter: wie weit kommen Besucher?
  * - `section_time` beim Verlassen der Seite mit den Sekunden je Abschnitt → wo verweilen sie?
  * - `page_exit_section` beim Verlassen: der zuletzt sichtbare Abschnitt → wo ist der Absprung?
