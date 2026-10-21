@@ -17,7 +17,7 @@ export default function DatenschutzPage() {
         <h1 className="text-3xl md:text-4xl font-extrabold text-gray-900 dark:text-white mt-3 mb-2">
           Datenschutzerklärung
         </h1>
-        <p className="text-xs text-gray-400 mb-10">Stand: Mai 2026</p>
+        <p className="text-xs text-gray-400 mb-10">Stand: Oktober 2026</p>
 
         <div className="space-y-10 text-sm text-gray-700 dark:text-gray-300 leading-relaxed">
 
@@ -114,24 +114,58 @@ export default function DatenschutzPage() {
           <section>
             <h2 className="text-base font-semibold text-gray-900 dark:text-white mb-3">5. Cookies und lokale Speicherung</h2>
             <p>
-              Diese Website setzt keine Tracking-Cookies und keine Analyse-Cookies. Zur Speicherung Ihrer
-              Theme-Präferenz (Hell/Dunkel-Modus) wird ausschließlich der lokale Speicher (localStorage) Ihres
-              Browsers verwendet. Diese Daten verlassen Ihr Gerät nicht und werden nicht an Dritte übermittelt.
-              Sie können den lokalen Speicher jederzeit über die Einstellungen Ihres Browsers löschen.
+              Ohne Ihre Einwilligung setzt diese Website keine Cookies. Analyse-Cookies von Google Analytics
+              werden erst gesetzt, nachdem Sie im Cookie-Banner zugestimmt haben (siehe Abschnitt 7). Im
+              lokalen Speicher (localStorage) Ihres Browsers legen wir lediglich Ihre Theme-Präferenz
+              (Hell/Dunkel-Modus), Ihre Sprachwahl, Ihre Entscheidung im Cookie-Banner und das Schließen
+              unseres Hinweises zur Umbenennung ab. Diese Daten verlassen Ihr Gerät nicht und werden nicht an
+              Dritte übermittelt. Sie können den lokalen Speicher jederzeit über die Einstellungen Ihres
+              Browsers löschen.
             </p>
           </section>
 
           <section>
-            <h2 className="text-base font-semibold text-gray-900 dark:text-white mb-3">6. Google Analytics 4</h2>
+            <h2 className="text-base font-semibold text-gray-900 dark:text-white mb-3">6. Reichweitenmessung – Cloudflare Web Analytics</h2>
+            <p>
+              Zur Messung der Reichweite nutzen wir Cloudflare Web Analytics, einen Dienst unseres Hosters
+              Cloudflare (siehe Abschnitt 2). Dabei werden keine Cookies gesetzt, keine Daten im lokalen
+              Speicher Ihres Browsers abgelegt und keine Nutzerprofile gebildet; Besucher werden nicht über
+              Seitenaufrufe hinweg wiedererkannt.
+            </p>
+            <p className="mt-2">
+              <strong className="text-gray-900 dark:text-white">Verarbeitete Daten:</strong> aufgerufene Seite,
+              verweisende Seite, Browser, Betriebssystem und Gerätetyp, Land sowie Ladezeiten der Seite. Ihre
+              IP-Adresse wird nur technisch bedingt zur Übertragung verarbeitet und nicht zur Wiedererkennung
+              genutzt. Wir erhalten ausschließlich zusammengefasste Statistiken.
+            </p>
+            <p className="mt-2">
+              <strong className="text-gray-900 dark:text-white">Zweck und Rechtsgrundlage:</strong> Wir möchten
+              wissen, wie viele Besucher welche Seiten aufrufen und ob die Website schnell lädt. Rechtsgrundlage
+              ist unser berechtigtes Interesse an einer bedarfsgerechten und technisch einwandfreien Website
+              (Art. 6 Abs. 1 lit. f DSGVO).
+            </p>
+            <p className="mt-2">
+              <strong className="text-gray-900 dark:text-white">Drittlandtransfer und Auftragsverarbeitung:</strong>{' '}
+              wie in Abschnitt 2 beschrieben (EU-US Data Privacy Framework, Auftragsverarbeitungsvertrag mit
+              Cloudflare, siehe Abschnitt 11).
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-base font-semibold text-gray-900 dark:text-white mb-3">7. Google Analytics 4</h2>
             <p>
               Diese Website nutzt Google Analytics 4 (GA4), einen Webanalysedienst der Google LLC,
               1600 Amphitheatre Parkway, Mountain View, CA 94043, USA (innerhalb der EU betrieben
               durch Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland).
-              GA4 wird nur aktiviert, wenn Sie Ihre Einwilligung über das Cookie-Banner erteilen.
+              GA4 wird nur aktiviert, wenn Sie Ihre Einwilligung über das Cookie-Banner erteilen. Erst dann
+              lädt Ihr Browser das Skript von Google; ohne Einwilligung besteht keine Verbindung zu Google.
             </p>
             <p className="mt-2">
               <strong className="text-gray-900 dark:text-white">Zweck:</strong> Analyse der Websitenutzung
               (Seitenaufrufe, Verweildauer, Einstiegs-/Ausstiegsseiten) zur Verbesserung unseres Angebots.
+              Auf der Startseite erfassen wir zusätzlich, welche Abschnitte wie lange sichtbar waren und bei
+              welchem Abschnitt Sie die Seite verlassen, ob und wie weit Sie den Erklärfilm abspielen und ob
+              Sie auf „Erstgespräch vereinbaren“ klicken.
               Es werden keine personenbezogenen Daten für Werbezwecke verarbeitet und kein Retargeting
               durchgeführt. IP-Adressen werden vor der Speicherung anonymisiert (IP-Masking).
             </p>
@@ -168,7 +202,7 @@ export default function DatenschutzPage() {
           </section>
 
           <section>
-            <h2 className="text-base font-semibold text-gray-900 dark:text-white mb-3">7. Automatisierte Entscheidungsfindung</h2>
+            <h2 className="text-base font-semibold text-gray-900 dark:text-white mb-3">8. Automatisierte Entscheidungsfindung</h2>
             <p>
               Es findet keine automatisierte Entscheidungsfindung einschließlich Profiling im Sinne von
               Art. 22 DSGVO statt.
@@ -176,7 +210,7 @@ export default function DatenschutzPage() {
           </section>
 
           <section>
-            <h2 className="text-base font-semibold text-gray-900 dark:text-white mb-3">8. Ihre Rechte</h2>
+            <h2 className="text-base font-semibold text-gray-900 dark:text-white mb-3">9. Ihre Rechte</h2>
             <p>Sie haben gegenüber uns folgende Rechte hinsichtlich Ihrer personenbezogenen Daten:</p>
             <ul className="list-disc list-inside mt-2 space-y-1">
               <li>Recht auf Auskunft (Art. 15 DSGVO)</li>
@@ -198,7 +232,7 @@ export default function DatenschutzPage() {
           </section>
 
           <section>
-            <h2 className="text-base font-semibold text-gray-900 dark:text-white mb-3">9. Beschwerderecht</h2>
+            <h2 className="text-base font-semibold text-gray-900 dark:text-white mb-3">10. Beschwerderecht</h2>
             <p>
               Sie haben das Recht, sich bei einer Datenschutz-Aufsichtsbehörde über die Verarbeitung
               Ihrer personenbezogenen Daten durch uns zu beschweren. Zuständige Aufsichtsbehörde für Bayern:
@@ -213,7 +247,7 @@ export default function DatenschutzPage() {
           </section>
 
           <section>
-            <h2 className="text-base font-semibold text-gray-900 dark:text-white mb-3">10. Auftragsverarbeitungsverträge (Art. 28 DSGVO)</h2>
+            <h2 className="text-base font-semibold text-gray-900 dark:text-white mb-3">11. Auftragsverarbeitungsverträge (Art. 28 DSGVO)</h2>
             <p>
               Mit allen Dienstleistern, die personenbezogene Daten in unserem Auftrag verarbeiten,
               haben wir Auftragsverarbeitungsverträge (AVV) gemäß Art. 28 DSGVO abgeschlossen.
