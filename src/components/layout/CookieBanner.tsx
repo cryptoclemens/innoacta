@@ -2,8 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
-
-const GA_ID = 'G-NEDCRSRHND'
+import { ladeGoogleAnalytics } from '@/lib/analytics'
 
 function updateConsent(granted: boolean) {
   if (typeof window === 'undefined') return
@@ -12,10 +11,10 @@ function updateConsent(granted: boolean) {
     dl.gtag('consent', 'update', {
       analytics_storage: granted ? 'granted' : 'denied',
     })
-    if (granted) {
-      dl.gtag('config', GA_ID)
-    }
   }
+  // Erst jetzt gtag.js holen: Es arbeitet die Warteschlange (config aus dem Layout,
+  // bereits gemessene Ereignisse) mit erteilter Einwilligung ab.
+  if (granted) ladeGoogleAnalytics()
 }
 
 export default function CookieBanner() {

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Hero from '@/components/sections/Hero'
 import Explainer from '@/components/sections/Explainer'
+import SectionTracker from '@/components/layout/SectionTracker'
 import ValueProp from '@/components/sections/ValueProp'
 import Features from '@/components/sections/Features'
 import WhyUs from '@/components/sections/WhyUs'
@@ -54,13 +55,15 @@ export default function HomePage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
-      <Hero />
-      <Explainer />
-      <ValueProp />
-      <Features />
-      <WhyUs />
-      <PullQuote />
-      <References />
+      {/* data-track: Abschnittsnamen für die Messung (SectionTracker). Umbenennen bricht die GA4-Zeitreihen. */}
+      <div data-track="hero"><Hero /></div>
+      <div data-track="film"><Explainer /></div>
+      <div data-track="nutzen"><ValueProp /></div>
+      <div data-track="leistungen"><Features /></div>
+      <div data-track="warum-wir"><WhyUs /></div>
+      <div data-track="zitat"><PullQuote /></div>
+      <div data-track="referenzen"><References /></div>
+      <SectionTracker />
     </>
   )
 }
