@@ -1,5 +1,4 @@
 import type { Metadata } from 'next'
-import Script from 'next/script'
 import './globals.css'
 import Navbar from '@/components/layout/Navbar'
 import Footer from '@/components/layout/Footer'
@@ -119,10 +118,11 @@ export default function RootLayout({
             Bewusst relativ, damit der Link den Domainwechsel unveraendert uebersteht. */}
         <script
           dangerouslySetInnerHTML={{
-            __html: `document.addEventListener('click',function(e){var el=e.target.closest('[data-booking="contact"]');if(el){window.location.href='/contact/';}});`,
+            __html: `document.addEventListener('click',function(e){var el=e.target.closest('[data-booking="contact"]');if(el){if(window.gtag){gtag('event','cta_click',{cta_text:(el.textContent||'').trim().slice(0,60),transport_type:'beacon'});}window.location.href='/contact/';}});`,
           }}
         />
-        {/* GA Consent Mode v2 defaults – must fire before gtag loads */}
+        {/* GA Consent Mode v2: Warteschlange im dataLayer. gtag.js selbst lädt erst nach
+            Zustimmung (CookieBanner → ladeGoogleAnalytics) — vorher geht nichts an Google. */}
         <script
           dangerouslySetInnerHTML={{
             __html: `
@@ -134,18 +134,12 @@ gtag('consent', 'default', {
   wait_for_update: 500
 });
 gtag('js', new Date());
+gtag('config', 'G-NEDCRSRHND', { send_page_view: true });
 `.trim(),
           }}
         />
       </head>
       <body className="bg-brand-sky dark:bg-brand-night text-gray-900 dark:text-white antialiased font-sans">
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-NEDCRSRHND"
-          strategy="afterInteractive"
-        />
-        <Script id="ga-config" strategy="afterInteractive">
-          {`gtag('config', 'G-NEDCRSRHND', { send_page_view: true });`}
-        </Script>
         <Providers>
           <Navbar />
           <main>{children}</main>

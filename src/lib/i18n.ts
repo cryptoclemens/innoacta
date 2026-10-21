@@ -32,6 +32,14 @@ const de = {
       { value: '7', label: 'Fokus-Branchen' },
     ],
   },
+  explainer: {
+    label: 'Im Film',
+    h2: 'innovation.today in 100 Sekunden',
+    subtext: 'Was wir machen, welche Probleme wir lösen und was Sie davon haben – ohne Ton, einfach abspielen.',
+    ariaLabel: 'Erklärfilm: Was innovation.today macht',
+    // Den Film gibt es nur auf Deutsch und Englisch; FR/ES zeigen die englische Fassung.
+    video: 'de',
+  },
   valueProp: {
     label: 'Was innovation.today einbringt',
     h2: 'Denken wie ein Startup.',
@@ -173,6 +181,14 @@ const en: Translations = {
       { value: '5–6 wks', label: 'Avg. Project Duration' },
       { value: '7', label: 'Focus Industries' },
     ],
+  },
+  explainer: {
+    label: 'The film',
+    h2: 'innovation.today in 100 seconds',
+    subtext: 'What we do, which problems we solve and what you gain – no sound needed, just press play.',
+    ariaLabel: 'Explainer: what innovation.today does',
+    // Den Film gibt es nur auf Deutsch und Englisch; FR/ES zeigen die englische Fassung.
+    video: 'en',
   },
   valueProp: {
     label: 'What innovation.today Delivers',
@@ -316,6 +332,14 @@ const fr: Translations = {
       { value: '7', label: 'Secteurs prioritaires' },
     ],
   },
+  explainer: {
+    label: 'Le film',
+    h2: 'innovation.today en 100 secondes',
+    subtext: 'Ce que nous faisons, les problèmes que nous résolvons et ce que vous y gagnez – sans son, en anglais.',
+    ariaLabel: 'Film explicatif : ce que fait innovation.today',
+    // Den Film gibt es nur auf Deutsch und Englisch; FR/ES zeigen die englische Fassung.
+    video: 'en',
+  },
   valueProp: {
     label: 'Ce que innovation.today apporte',
     h2: 'Penser comme une startup.',
@@ -457,6 +481,14 @@ const es: Translations = {
       { value: '5–6 sem.', label: 'Duración media' },
       { value: '7', label: 'Sectores clave' },
     ],
+  },
+  explainer: {
+    label: 'El vídeo',
+    h2: 'innovation.today en 100 segundos',
+    subtext: 'Qué hacemos, qué problemas resolvemos y qué gana usted – sin sonido, en inglés.',
+    ariaLabel: 'Vídeo explicativo: qué hace innovation.today',
+    // Den Film gibt es nur auf Deutsch und Englisch; FR/ES zeigen die englische Fassung.
+    video: 'en',
   },
   valueProp: {
     label: 'Lo que aporta innovation.today',
