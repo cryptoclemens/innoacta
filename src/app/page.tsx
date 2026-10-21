@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Hero from '@/components/sections/Hero'
+import Explainer from '@/components/sections/Explainer'
 import ValueProp from '@/components/sections/ValueProp'
 import Features from '@/components/sections/Features'
 import WhyUs from '@/components/sections/WhyUs'
@@ -54,6 +55,7 @@ export default function HomePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
       <Hero />
+      <Explainer />
       <ValueProp />
       <Features />
       <WhyUs />
