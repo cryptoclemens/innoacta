@@ -134,6 +134,20 @@ export default function StrategischeUmsetzungPage() {
             </ul>
           </section>
 
+          {/* Tempo als Prinzip: Fremdzitat mit Buchquelle */}
+          <section className="mb-20">
+            <figure className="bg-brand-night dark:bg-brand-card border border-transparent dark:border-brand-border rounded px-6 py-12 sm:px-12 text-center">
+              <div className="text-brand-mint text-3xl mb-4 select-none" aria-hidden="true">&ldquo;</div>
+              <blockquote className="text-xl sm:text-2xl md:text-3xl font-normal leading-snug text-white mb-8 text-balance">
+                {su.nilekani.text}
+              </blockquote>
+              <figcaption className="flex flex-col items-center gap-1">
+                <span className="text-brand-mint text-sm font-mono tracking-widest uppercase">{su.nilekani.person}</span>
+                <cite className="not-italic text-xs text-gray-400">{su.nilekani.quelle}</cite>
+              </figcaption>
+            </figure>
+          </section>
+
           {/* Related articles */}
           <section className="mb-16">
             <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-6">{su.relatedH2}</h2>

@@ -151,6 +151,13 @@ const dePage = {
     intro2Suffix:
       'in Projekten, die strategisch wichtig, aber intern strukturell schwierig zu verankern sind.',
     quote: '„Nicht Strategie <em>statt</em> Umsetzung – sondern beides."',
+    // Fremdzitat ohne Anführungszeichen (die setzt die Seite). Wortlaut nur nach der Buchquelle ändern;
+    // Seitenzahl in `quelle` nachtragen, sobald bekannt.
+    nilekani: {
+      text: 'Wenn man schnell handelt, gibt man der Gegenseite keine Zeit, sich zu konsolidieren.',
+      person: 'Nandan Nilekani',
+      quelle: 'zitiert nach Sebastian Matthes: Inside 2029 (Droemer, 2026)',
+    },
     servicesH2: 'Was wir konkret übernehmen.',
     services: [
       {
@@ -444,6 +451,13 @@ const enPage: typeof dePage = {
     intro2Suffix:
       'of projects that are strategically important but structurally difficult to anchor internally.',
     quote: '"Not strategy <em>instead of</em> execution — but both."',
+    // Fremdzitat ohne Anführungszeichen (die setzt die Seite). Wortlaut nur nach der Buchquelle ändern;
+    // Seitenzahl in `quelle` nachtragen, sobald bekannt.
+    nilekani: {
+      text: 'If you act fast, you don’t give the other side time to consolidate.',
+      person: 'Nandan Nilekani',
+      quelle: 'quoted in Sebastian Matthes: Inside 2029 (Droemer, 2026) · translated from German',
+    },
     servicesH2: 'What we specifically take on.',
     services: [
       {
@@ -737,6 +751,13 @@ const frPage: typeof dePage = {
     intro2Suffix:
       "de projets qui sont stratégiquement importants mais structurellement difficiles à ancrer en interne.",
     quote: "« Pas la stratégie <em>à la place de</em> l'exécution — mais les deux. »",
+    // Fremdzitat ohne Anführungszeichen (die setzt die Seite). Wortlaut nur nach der Buchquelle ändern;
+    // Seitenzahl in `quelle` nachtragen, sobald bekannt.
+    nilekani: {
+      text: 'Agir vite, c’est ne pas laisser à l’autre camp le temps de se consolider.',
+      person: 'Nandan Nilekani',
+      quelle: 'cité dans Sebastian Matthes : Inside 2029 (Droemer, 2026) · traduit de l’allemand',
+    },
     servicesH2: 'Ce que nous prenons concrètement en charge.',
     services: [
       {
@@ -1030,6 +1051,13 @@ const esPage: typeof dePage = {
     intro2Suffix:
       'de proyectos que son estratégicamente importantes pero estructuralmente difíciles de anclar internamente.',
     quote: '«No estrategia <em>en lugar de</em> ejecución — sino ambas.»',
+    // Fremdzitat ohne Anführungszeichen (die setzt die Seite). Wortlaut nur nach der Buchquelle ändern;
+    // Seitenzahl in `quelle` nachtragen, sobald bekannt.
+    nilekani: {
+      text: 'Si actúas rápido, no le das a la otra parte tiempo para consolidarse.',
+      person: 'Nandan Nilekani',
+      quelle: 'citado en Sebastian Matthes: Inside 2029 (Droemer, 2026) · traducido del alemán',
+    },
     servicesH2: 'Qué asumimos concretamente.',
     services: [
       {
