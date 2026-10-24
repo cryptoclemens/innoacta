@@ -127,6 +127,11 @@ const dePage = {
     sectorsH2: 'Besondere Stärke: regulierte Branchen.',
     sectorsP:
       'Energie, Infrastruktur, öffentliche Hand – Branchen, in denen Startup-Logik oft als nicht anwendbar gilt. innovation.today hat bewiesen, dass das falsch ist. Wir kennen die regulatorischen Rahmenbedingungen, die Stakeholder-Strukturen und die besonderen Anforderungen dieser Sektoren.',
+    // Brücke zur Vertiefung „Strategische Umsetzung“ (ein Leistungsfeld seit 24.10.2026)
+    umsetzungEyebrow: 'Bis in den Betrieb',
+    umsetzungH2: 'Geschäftsfeldentwicklung endet nicht beim Konzept.',
+    umsetzungP: 'Wenn das neue Geschäftsfeld intern keine Heimat hat, übernehmen wir die operative Verantwortung: Go-to-Market, Pilotkunden, Steuerung und Übergabe ins Unternehmen.',
+    umsetzungLink: 'Mehr zur strategischen Umsetzung',
     relatedH2: 'Weiterführende Artikel',
     relatedArticles: [
       { href: '/blog/geschaeftsfeldentwicklung-methoden', cat: 'Geschäftsfeldentwicklung', title: 'Geschäftsfeldentwicklung: Methoden, Phasen und häufige Fehler' },
@@ -259,6 +264,45 @@ const dePage = {
     ctaSecondary: 'Artikel von Clemens lesen',
   },
 
+  // KI & Sicherheit (seit 24.10.2026). Angaben zu Pentests und Sicherheits-Audit laut Clemens.
+  kiSicherheit: {
+    eyebrow: 'Leistung',
+    h1Lead: 'KI & Sicherheit –',
+    h1Accent: 'KI sicher einführen',
+    h1Tail: ', Systeme belastbar prüfen.',
+    intro1: 'KI verändert Geschäftsmodelle – und vergrößert die Angriffsfläche. innovation.today begleitet den Einsatz von KI von der ersten Use-Case-Analyse bis in den laufenden Betrieb: geregelt, datensparsam und gegen Angriffe geprüft.',
+    intro2Prefix: 'Sicherheit ist bei uns kein Zusatzmodul:',
+    intro2Bold: 'Jedes unserer Projekte durchläuft ein Sicherheits-Audit.',
+    intro2Suffix: 'Penetrationstests führen wir als Firma selbst durch – auf Kundenwunsch verstärkt durch international ausgewiesene Spezialistinnen und Spezialisten mit Branchenerfahrung, etwa in KRITIS oder mit sensiblen Gesundheits- und Bankdaten.',
+    quote: '„Erst prüfen, dann <em>produktiv</em> setzen.“',
+    servicesH2: 'Was wir konkret übernehmen.',
+    services: [
+      { title: 'KI-Audit', desc: 'Bestandsaufnahme aller KI-Systeme und -Werkzeuge im Unternehmen: Wo wird KI schon genutzt, mit welchen Daten, mit welchem Risiko und welchem Nutzen? Ergebnis ist eine priorisierte Liste mit klaren Handlungsempfehlungen.' },
+      { title: 'Use-Case-Analysen mit LLM-Matching', desc: 'Wir sammeln und bewerten Einsatzfälle und gleichen sie systematisch mit passenden Sprachmodellen und Anbietern ab – nach Leistung, Kosten, Datenschutz und Betriebsmodell (Cloud, EU-Hosting oder lokal).' },
+      { title: 'KI-Governance & EU AI Act', desc: 'Rollen, Richtlinien und Freigabeprozesse für den KI-Einsatz – inklusive Einordnung Ihrer Anwendungen in die Risikoklassen des EU AI Act und der Pflichten, die daraus folgen.' },
+      { title: 'Sichere Anbindung von KI-Systemen', desc: 'Integration in Ihre bestehenden Systeme nach dem Stand der Technik: Rechte- und Rollenkonzepte, Trennung sensibler Daten, Protokollierung und abgesicherte Schnittstellen.' },
+      { title: 'DSGVO-Konformität', desc: 'Wir prüfen Datenflüsse, Auftragsverarbeitung, Drittlandtransfers und Löschkonzepte Ihrer KI-Anwendungen und bereiten die Dokumentation für Ihre Datenschutzverantwortlichen vor.' },
+      { title: 'Angriffstests gegen KI-Anwendungen', desc: 'Wir greifen Ihre KI-Anwendungen gezielt an – mit Prompt Injection, Jailbreaks und Versuchen, vertrauliche Daten abfließen zu lassen – und zeigen, wie sich die Lücken schließen lassen.' },
+      { title: 'Penetrationstests', desc: 'Sicherheitstests für Anwendungen und Infrastruktur durch unser Team – auf Wunsch mit internationalen Spezialistinnen und Spezialisten mit Branchenerfahrung in KRITIS, Gesundheitswesen und Finanzsektor.' },
+      { title: 'Sicherheits-Audit in jedem Projekt', desc: 'Was wir für Sie bauen oder einführen, wird vor dem Go-live auf Sicherheitslücken geprüft. Das gilt für alle unsere Projekte – nicht nur für dieses Leistungsfeld.' },
+    ],
+    whenH2: 'Wann passt dieses Leistungsbild?',
+    whenItems: [
+      'Sie wollen KI einsetzen, wissen aber nicht, welche Anwendungsfälle sich lohnen',
+      'Mitarbeitende nutzen bereits KI-Werkzeuge – ohne klare Regeln',
+      'Sie müssen die Pflichten aus dem EU AI Act einordnen und umsetzen',
+      'Ihre KI-Anwendung verarbeitet personenbezogene oder vertrauliche Daten',
+      'Sie arbeiten in KRITIS, im Gesundheitswesen oder im Finanzsektor und brauchen belastbare Sicherheitsnachweise',
+    ],
+    relatedH2: 'Weiterführende Artikel',
+    relatedArticles: [
+      { href: '/blog/ki-beratung-mittelstand', cat: 'KI & Strategie', title: 'KI-Beratung im Mittelstand: Geschäftsfeldentwicklung und -validierung mit KI' },
+      { href: '/blog/wenn-ki-den-code-schreibt', cat: 'KI & Software', title: 'Wenn KI den Code schreibt: Leitplanken gegen die neue Wartungslast' },
+    ],
+    ctaH2: 'Welche KI-Anwendung soll sicher in Betrieb gehen?',
+    ctaP: 'Erzählen Sie uns, was geplant ist – wir sagen Ihnen ehrlich, wo die Risiken liegen.',
+    ctaButton: 'Erstgespräch vereinbaren',
+  },
   projects: {
     eyebrow: 'Referenzprojekte',
     h1: 'Unsere',
@@ -427,6 +471,11 @@ const enPage: typeof dePage = {
     sectorsH2: 'A particular strength: regulated industries.',
     sectorsP:
       'Energy, infrastructure, the public sector — industries where startup logic is often considered inapplicable. innovation.today has proven this wrong. We understand the regulatory frameworks, the stakeholder structures and the specific requirements of these sectors.',
+    // Brücke zur Vertiefung „Strategische Umsetzung“ (ein Leistungsfeld seit 24.10.2026)
+    umsetzungEyebrow: 'All the way into operation',
+    umsetzungH2: 'New market development does not end with a concept.',
+    umsetzungP: 'When the new business has no internal home, we take operational ownership: go-to-market, pilot customers, steering and handover into your organisation.',
+    umsetzungLink: 'More on strategic execution',
     relatedH2: 'Related Articles',
     relatedArticles: [
       { href: '/blog/geschaeftsfeldentwicklung-methoden', cat: 'New Market Development', title: 'New Market Development: Methods, Phases and Common Mistakes' },
@@ -559,6 +608,45 @@ const enPage: typeof dePage = {
     ctaSecondary: 'Read articles by Clemens',
   },
 
+  // KI & Sicherheit (seit 24.10.2026). Angaben zu Pentests und Sicherheits-Audit laut Clemens.
+  kiSicherheit: {
+    eyebrow: 'Service',
+    h1Lead: 'AI & Security –',
+    h1Accent: 'adopt AI safely',
+    h1Tail: ', test systems rigorously.',
+    intro1: 'AI changes business models – and widens the attack surface. innovation.today supports AI adoption from the first use-case analysis to day-to-day operation: governed, data-minimising and tested against attacks.',
+    intro2Prefix: 'Security is not an add-on for us:',
+    intro2Bold: 'Every one of our projects goes through a security audit.',
+    intro2Suffix: 'We carry out penetration tests ourselves as a company – on request reinforced by internationally recognised specialists with sector expertise, for example in critical infrastructure or with sensitive health and banking data.',
+    quote: '“Test first, then put it <em>into production</em>.”',
+    servicesH2: 'What we take on.',
+    services: [
+      { title: 'AI audit', desc: 'An inventory of every AI system and tool in your organisation: where is AI already in use, with which data, at what risk and with what benefit? The result is a prioritised list with clear recommendations.' },
+      { title: 'Use-case analysis with LLM matching', desc: 'We collect and assess use cases and systematically match them with suitable language models and providers – by performance, cost, data protection and operating model (cloud, EU hosting or on-premises).' },
+      { title: 'AI governance & EU AI Act', desc: 'Roles, policies and approval processes for AI use – including classifying your applications under the risk categories of the EU AI Act and the obligations that follow.' },
+      { title: 'Secure integration of AI systems', desc: 'Integration into your existing systems to the state of the art: permission and role concepts, separation of sensitive data, logging and secured interfaces.' },
+      { title: 'GDPR compliance', desc: 'We review data flows, processing agreements, third-country transfers and deletion concepts of your AI applications and prepare the documentation for your data protection officers.' },
+      { title: 'Attack testing of AI applications', desc: 'We deliberately attack your AI applications – with prompt injection, jailbreaks and attempts to exfiltrate confidential data – and show how to close the gaps.' },
+      { title: 'Penetration testing', desc: 'Security testing of applications and infrastructure by our team – on request with international specialists experienced in critical infrastructure, healthcare and financial services.' },
+      { title: 'A security audit in every project', desc: 'Whatever we build or introduce for you is checked for vulnerabilities before go-live. This applies to all our projects – not only to this practice.' },
+    ],
+    whenH2: 'When does this fit?',
+    whenItems: [
+      'You want to use AI but don’t know which use cases pay off',
+      'Employees already use AI tools – without clear rules',
+      'You need to assess and meet your obligations under the EU AI Act',
+      'Your AI application processes personal or confidential data',
+      'You operate in critical infrastructure, healthcare or financial services and need robust security evidence',
+    ],
+    relatedH2: 'Further reading',
+    relatedArticles: [
+      { href: '/blog/ki-beratung-mittelstand', cat: 'AI & Strategy', title: 'AI Consulting for Mid-Market Companies: New Market Development and Validation with AI' },
+      { href: '/blog/wenn-ki-den-code-schreibt', cat: 'AI & Software', title: 'When AI Writes the Code: Guardrails Against the New Maintenance Burden' },
+    ],
+    ctaH2: 'Which AI application should go live safely?',
+    ctaP: 'Tell us what you are planning – we will tell you honestly where the risks are.',
+    ctaButton: 'Book a call',
+  },
   projects: {
     eyebrow: 'Reference Projects',
     h1: 'Our',
@@ -727,6 +815,11 @@ const frPage: typeof dePage = {
     sectorsH2: 'Un point fort particulier : les secteurs réglementés.',
     sectorsP:
       "Énergie, infrastructures, secteur public — des secteurs où la logique startup est souvent jugée inapplicable. innovation.today a prouvé le contraire. Nous maîtrisons les cadres réglementaires, les structures de parties prenantes et les exigences spécifiques de ces secteurs.",
+    // Brücke zur Vertiefung „Strategische Umsetzung“ (ein Leistungsfeld seit 24.10.2026)
+    umsetzungEyebrow: 'Jusqu’à l’exploitation',
+    umsetzungH2: 'Le développement de nouveaux marchés ne s’arrête pas au concept.',
+    umsetzungP: 'Lorsque la nouvelle activité n’a pas de place en interne, nous prenons la responsabilité opérationnelle : go-to-market, clients pilotes, pilotage et transfert dans l’entreprise.',
+    umsetzungLink: 'En savoir plus sur la mise en œuvre stratégique',
     relatedH2: 'Articles connexes',
     relatedArticles: [
       { href: '/blog/geschaeftsfeldentwicklung-methoden', cat: 'Développement de marchés', title: 'Développement de nouveaux marchés : méthodes, phases et erreurs fréquentes' },
@@ -859,6 +952,45 @@ const frPage: typeof dePage = {
     ctaSecondary: "Lire les articles de Clemens",
   },
 
+  // KI & Sicherheit (seit 24.10.2026). Angaben zu Pentests und Sicherheits-Audit laut Clemens.
+  kiSicherheit: {
+    eyebrow: 'Prestation',
+    h1Lead: 'IA & sécurité –',
+    h1Accent: 'adopter l’IA en toute sécurité',
+    h1Tail: ', tester les systèmes avec rigueur.',
+    intro1: 'L’IA transforme les modèles économiques – et élargit la surface d’attaque. innovation.today accompagne l’adoption de l’IA de la première analyse de cas d’usage jusqu’à l’exploitation : encadrée, sobre en données et testée contre les attaques.',
+    intro2Prefix: 'Chez nous, la sécurité n’est pas une option :',
+    intro2Bold: 'chacun de nos projets fait l’objet d’un audit de sécurité.',
+    intro2Suffix: 'Nous réalisons nous-mêmes les tests d’intrusion – à la demande du client, renforcés par des spécialistes de renommée internationale dotés d’une expertise sectorielle, par exemple en infrastructures critiques ou avec des données de santé et bancaires sensibles.',
+    quote: '« D’abord tester, ensuite mettre <em>en production</em>. »',
+    servicesH2: 'Ce que nous prenons en charge.',
+    services: [
+      { title: 'Audit IA', desc: 'Un inventaire de tous les systèmes et outils d’IA de l’entreprise : où l’IA est-elle déjà utilisée, avec quelles données, quel risque et quel bénéfice ? Le résultat est une liste priorisée assortie de recommandations claires.' },
+      { title: 'Analyse de cas d’usage avec LLM-matching', desc: 'Nous recensons et évaluons les cas d’usage et les confrontons systématiquement aux modèles de langage et fournisseurs adaptés – selon la performance, le coût, la protection des données et le mode d’exploitation (cloud, hébergement UE ou local).' },
+      { title: 'Gouvernance de l’IA & AI Act européen', desc: 'Rôles, règles et processus de validation pour l’usage de l’IA – y compris la classification de vos applications selon les niveaux de risque de l’AI Act et les obligations qui en découlent.' },
+      { title: 'Intégration sécurisée des systèmes d’IA', desc: 'Intégration dans vos systèmes existants selon l’état de l’art : concepts de droits et de rôles, séparation des données sensibles, journalisation et interfaces sécurisées.' },
+      { title: 'Conformité RGPD', desc: 'Nous examinons les flux de données, la sous-traitance, les transferts hors UE et les concepts d’effacement de vos applications d’IA et préparons la documentation pour vos responsables de la protection des données.' },
+      { title: 'Tests d’attaque des applications d’IA', desc: 'Nous attaquons délibérément vos applications d’IA – par injection de prompts, jailbreaks et tentatives d’exfiltration de données confidentielles – et montrons comment combler les failles.' },
+      { title: 'Tests d’intrusion', desc: 'Tests de sécurité des applications et de l’infrastructure par notre équipe – à la demande avec des spécialistes internationaux expérimentés dans les infrastructures critiques, la santé et la finance.' },
+      { title: 'Un audit de sécurité dans chaque projet', desc: 'Tout ce que nous construisons ou déployons pour vous est contrôlé avant la mise en production. Cela vaut pour tous nos projets – pas seulement pour ce domaine.' },
+    ],
+    whenH2: 'Quand cette prestation est-elle adaptée ?',
+    whenItems: [
+      'Vous voulez utiliser l’IA sans savoir quels cas d’usage sont rentables',
+      'Vos collaborateurs utilisent déjà des outils d’IA – sans règles claires',
+      'Vous devez évaluer et remplir vos obligations au titre de l’AI Act',
+      'Votre application d’IA traite des données personnelles ou confidentielles',
+      'Vous opérez dans les infrastructures critiques, la santé ou la finance et avez besoin de preuves de sécurité solides',
+    ],
+    relatedH2: 'Pour aller plus loin',
+    relatedArticles: [
+      { href: '/blog/ki-beratung-mittelstand', cat: 'IA & stratégie', title: 'Conseil en IA pour les PME : développer et valider de nouveaux marchés avec l’IA' },
+      { href: '/blog/wenn-ki-den-code-schreibt', cat: 'IA & logiciel', title: 'Quand l’IA écrit le code : des garde-fous contre la nouvelle charge de maintenance' },
+    ],
+    ctaH2: 'Quelle application d’IA doit être mise en service en toute sécurité ?',
+    ctaP: 'Dites-nous ce que vous prévoyez – nous vous dirons honnêtement où se trouvent les risques.',
+    ctaButton: 'Prendre rendez-vous',
+  },
   projects: {
     eyebrow: 'Projets de référence',
     h1: 'Nos',
@@ -1027,6 +1159,11 @@ const esPage: typeof dePage = {
     sectorsH2: 'Un punto fuerte particular: los sectores regulados.',
     sectorsP:
       'Energía, infraestructuras, sector público — sectores donde la lógica startup se considera con frecuencia inaplicable. innovation.today ha demostrado que eso es falso. Conocemos los marcos regulatorios, las estructuras de stakeholders y los requisitos específicos de estos sectores.',
+    // Brücke zur Vertiefung „Strategische Umsetzung“ (ein Leistungsfeld seit 24.10.2026)
+    umsetzungEyebrow: 'Hasta la operación',
+    umsetzungH2: 'El desarrollo de nuevos negocios no termina en el concepto.',
+    umsetzungP: 'Cuando el nuevo negocio no tiene un lugar interno, asumimos la responsabilidad operativa: go-to-market, clientes piloto, gestión y traspaso a la empresa.',
+    umsetzungLink: 'Más sobre la ejecución estratégica',
     relatedH2: 'Artículos relacionados',
     relatedArticles: [
       { href: '/blog/geschaeftsfeldentwicklung-methoden', cat: 'Desarrollo de mercados', title: 'Desarrollo de nuevas líneas de negocio: métodos, fases y errores frecuentes' },
@@ -1159,6 +1296,45 @@ const esPage: typeof dePage = {
     ctaSecondary: 'Leer artículos de Clemens',
   },
 
+  // KI & Sicherheit (seit 24.10.2026). Angaben zu Pentests und Sicherheits-Audit laut Clemens.
+  kiSicherheit: {
+    eyebrow: 'Servicio',
+    h1Lead: 'IA y seguridad –',
+    h1Accent: 'introducir la IA con seguridad',
+    h1Tail: ', probar los sistemas a fondo.',
+    intro1: 'La IA transforma los modelos de negocio – y amplía la superficie de ataque. innovation.today acompaña la adopción de la IA desde el primer análisis de casos de uso hasta la operación diaria: gobernada, con datos mínimos y probada frente a ataques.',
+    intro2Prefix: 'Para nosotros, la seguridad no es un complemento:',
+    intro2Bold: 'cada uno de nuestros proyectos pasa por una auditoría de seguridad.',
+    intro2Suffix: 'Realizamos las pruebas de penetración nosotros mismos como empresa – a petición del cliente, reforzados por especialistas de prestigio internacional con experiencia sectorial, por ejemplo en infraestructuras críticas o con datos sanitarios y bancarios sensibles.',
+    quote: '«Primero probar, después poner <em>en producción</em>.»',
+    servicesH2: 'Lo que asumimos.',
+    services: [
+      { title: 'Auditoría de IA', desc: 'Un inventario de todos los sistemas y herramientas de IA de la empresa: ¿dónde se usa ya la IA, con qué datos, con qué riesgo y con qué beneficio? El resultado es una lista priorizada con recomendaciones claras.' },
+      { title: 'Análisis de casos de uso con LLM matching', desc: 'Recopilamos y evaluamos casos de uso y los cotejamos de forma sistemática con los modelos de lenguaje y proveedores adecuados – según rendimiento, coste, protección de datos y modelo de operación (nube, alojamiento en la UE o local).' },
+      { title: 'Gobernanza de la IA y Reglamento europeo de IA', desc: 'Roles, políticas y procesos de aprobación para el uso de la IA – incluida la clasificación de sus aplicaciones según las categorías de riesgo del Reglamento de IA y las obligaciones que se derivan.' },
+      { title: 'Integración segura de sistemas de IA', desc: 'Integración en sus sistemas existentes según el estado de la técnica: conceptos de permisos y roles, separación de datos sensibles, registro y interfaces protegidas.' },
+      { title: 'Conformidad con el RGPD', desc: 'Revisamos los flujos de datos, los encargos de tratamiento, las transferencias internacionales y los conceptos de borrado de sus aplicaciones de IA y preparamos la documentación para sus responsables de protección de datos.' },
+      { title: 'Pruebas de ataque a aplicaciones de IA', desc: 'Atacamos deliberadamente sus aplicaciones de IA – con inyección de prompts, jailbreaks e intentos de extraer datos confidenciales – y mostramos cómo cerrar las brechas.' },
+      { title: 'Pruebas de penetración', desc: 'Pruebas de seguridad de aplicaciones e infraestructura realizadas por nuestro equipo – a petición con especialistas internacionales con experiencia en infraestructuras críticas, sanidad y sector financiero.' },
+      { title: 'Auditoría de seguridad en cada proyecto', desc: 'Todo lo que construimos o implantamos para usted se revisa antes de la puesta en marcha. Esto se aplica a todos nuestros proyectos – no solo a este ámbito.' },
+    ],
+    whenH2: '¿Cuándo encaja este servicio?',
+    whenItems: [
+      'Quiere usar la IA, pero no sabe qué casos de uso compensan',
+      'Sus empleados ya usan herramientas de IA – sin reglas claras',
+      'Tiene que evaluar y cumplir sus obligaciones según el Reglamento europeo de IA',
+      'Su aplicación de IA trata datos personales o confidenciales',
+      'Opera en infraestructuras críticas, sanidad o el sector financiero y necesita pruebas de seguridad sólidas',
+    ],
+    relatedH2: 'Lecturas recomendadas',
+    relatedArticles: [
+      { href: '/blog/ki-beratung-mittelstand', cat: 'IA y estrategia', title: 'Consultoría de IA para la mediana empresa: desarrollo y validación de nuevos negocios con IA' },
+      { href: '/blog/wenn-ki-den-code-schreibt', cat: 'IA y software', title: 'Cuando la IA escribe el código: barreras frente a la nueva carga de mantenimiento' },
+    ],
+    ctaH2: '¿Qué aplicación de IA debe ponerse en marcha con seguridad?',
+    ctaP: 'Cuéntenos lo que tiene previsto – le diremos con honestidad dónde están los riesgos.',
+    ctaButton: 'Concertar una reunión',
+  },
   projects: {
     eyebrow: 'Proyectos de referencia',
     h1: 'Nuestros',

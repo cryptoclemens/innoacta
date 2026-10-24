@@ -166,6 +166,21 @@ export default function GeschaeftsfeldentwicklungPage() {
             </p>
           </section>
 
+          {/* Brücke: Geschäftsfeldentwicklung und Umsetzung sind seit 24.10.2026 ein Leistungsfeld */}
+          <section className="mb-20">
+            <Link href="/strategische-umsetzung" className="glas rounded-[26px] p-8 flex flex-col sm:flex-row sm:items-center gap-6 transition-transform hover:-translate-y-0.5 group">
+              <div className="flex-1 min-w-0">
+                <span className="section-eyebrow mb-3">{gf.umsetzungEyebrow}</span>
+                <h2 className="text-2xl font-bold text-gray-900 dark:text-white mt-2 mb-3">{gf.umsetzungH2}</h2>
+                <p className="text-gray-600 dark:text-gray-300 leading-relaxed">{gf.umsetzungP}</p>
+              </div>
+              <span className="inline-flex items-center gap-2 text-brand-teal dark:text-brand-mint font-bold whitespace-nowrap">
+                {gf.umsetzungLink}
+                <ArrowRight size={16} className="transition-transform group-hover:translate-x-0.5" />
+              </span>
+            </Link>
+          </section>
+
           {/* Related articles */}
           <section className="mb-16">
             <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-6">{gf.relatedH2}</h2>

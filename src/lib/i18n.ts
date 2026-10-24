@@ -70,12 +70,12 @@ const de = {
     label: 'Leistungen',
     h2: 'Drei Felder – eine Logik.',
     subtext:
-      'Alle unsere Leistungen folgen derselben Startup-Logik: erst verstehen, dann testen, dann skalieren – nie umgekehrt. KI-Beratung ist in jedem Feld dabei.',
+      'Alle unsere Leistungen folgen derselben Startup-Logik: erst verstehen, dann testen, dann skalieren – nie umgekehrt. Ein Sicherheits-Audit gehört zu jedem Projekt.',
     items: [
       {
-        title: 'Geschäftsfeldentwicklung',
-        desc: 'Neue Märkte identifizieren, Geschäftsmodelle entwickeln, Markterprobung begleiten – von der ersten Hypothese bis zum validierten Modell.',
-        points: ['Innovation Analysis: Potenziale im Bestand finden', 'Markt- & Technologiebewertung', 'Geschäftsmodell-Entwicklung', 'Validierung & Markterprobung'],
+        title: 'Geschäftsfeldentwicklung & Umsetzung',
+        desc: 'Von der ersten Hypothese bis in den Betrieb: neue Märkte identifizieren, Geschäftsmodelle validieren – und operative Verantwortung übernehmen, wo das Neue intern keine Heimat hat.',
+        points: ['Innovation Analysis: Potenziale im Bestand finden', 'Validierung & Markterprobung', 'Innovation Execution: vom Pilot in den Betrieb', 'Projektsteuerung & Stakeholder-Management'],
       },
       {
         title: 'Venture Clienting',
@@ -83,9 +83,9 @@ const de = {
         points: ['Startup-Scouting & Matching', 'Strukturierte Pilotprojekte', 'Lieferantenqualifizierung'],
       },
       {
-        title: 'Strategische Umsetzung',
-        desc: 'Nicht Strategie statt Umsetzung – sondern beides. innovation.today übernimmt operative Verantwortung in Projekten, die intern keine Heimat haben: Projektsteuerung, Stakeholder-Management, Entscheidungsvorlagen.',
-        points: ['Innovation Execution: vom Pilot in den Betrieb', 'KI-Beratung & -Einführung', 'Projektsteuerung & Reporting', 'Stakeholder-Management'],
+        title: 'KI & Sicherheit',
+        desc: 'KI sicher einführen: vom KI-Audit und der Use-Case-Analyse über Governance und EU AI Act bis zu Angriffstests gegen KI-Anwendungen und Penetrationstests.',
+        points: ['KI-Audit & Use-Case-Analyse mit LLM-Matching', 'KI-Governance, EU AI Act & DSGVO', 'Angriffstests & Penetrationstests'],
       },
     ],
   },
@@ -217,12 +217,12 @@ const en: Translations = {
     label: 'Services',
     h2: 'Three practices. One logic.',
     subtext:
-      'Every service we offer follows the same startup-derived principle: understand first, test next, then scale — never the other way around. AI advisory is part of every practice.',
+      'Every service we offer follows the same startup-derived principle: understand first, test next, then scale — never the other way around. A security audit is part of every project.',
     items: [
       {
-        title: 'New Market Development',
-        desc: 'Identify adjacent markets, develop business models, run structured market tests — from the first hypothesis to a validated, investment-ready model.',
-        points: ['Innovation analysis: finding potential in what exists', 'Market & technology assessment', 'Business model development', 'Validation & market testing'],
+        title: 'New Market Development & Execution',
+        desc: 'From the first hypothesis into operation: identify new markets, validate business models – and take operational ownership where the new business has no internal home.',
+        points: ['Innovation analysis: finding potential in what exists', 'Validation & market testing', 'Innovation execution: from pilot to operations', 'Project management & stakeholder alignment'],
       },
       {
         title: 'Venture Clienting',
@@ -230,9 +230,9 @@ const en: Translations = {
         points: ['Startup scouting & matching', 'Structured pilot projects', 'Supplier qualification'],
       },
       {
-        title: 'Strategic Execution',
-        desc: 'Strategy and execution — together. innovation.today takes operational ownership of high-priority projects that lack an internal home: project management, stakeholder alignment and decision-ready documentation.',
-        points: ['Innovation execution: from pilot to operations', 'AI advisory & implementation', 'Project management & reporting', 'Stakeholder management'],
+        title: 'AI & Security',
+        desc: 'Adopt AI safely: from AI audits and use-case analysis through governance and the EU AI Act to attack testing of AI applications and penetration testing.',
+        points: ['AI audit & use-case analysis with LLM matching', 'AI governance, EU AI Act & GDPR', 'Attack testing & penetration testing'],
       },
     ],
   },
@@ -364,12 +364,12 @@ const fr: Translations = {
     label: 'Services',
     h2: 'Trois périmètres. Une seule logique.',
     subtext:
-      'Chacun de nos services suit le même principe issu de la culture startup : comprendre d\'abord, tester ensuite, puis passer à l\'échelle — jamais dans l\'ordre inverse. Le conseil en IA fait partie de chaque domaine.',
+      'Chacun de nos services suit le même principe issu de la culture startup : comprendre d\'abord, tester ensuite, puis passer à l\'échelle — jamais dans l\'ordre inverse. Un audit de sécurité fait partie de chaque projet.',
     items: [
       {
-        title: 'Développement de nouveaux marchés',
-        desc: 'Identifier de nouveaux marchés adjacents, développer des modèles économiques, piloter des tests de marché structurés — de la première hypothèse au modèle validé et finançable.',
-        points: ['Innovation analysis : révéler le potentiel existant', 'Évaluation marché & technologie', 'Développement du modèle économique', 'Validation & tests de marché'],
+        title: 'Nouveaux marchés & mise en œuvre',
+        desc: 'De la première hypothèse jusqu’à l’exploitation : identifier de nouveaux marchés, valider des modèles économiques – et prendre la responsabilité opérationnelle quand la nouvelle activité n’a pas de place en interne.',
+        points: ['Innovation analysis : révéler le potentiel existant', 'Validation & tests de marché', 'Innovation execution : du pilote à l’exploitation', 'Pilotage de projet & gestion des décideurs'],
       },
       {
         title: 'Venture Clienting',
@@ -377,9 +377,9 @@ const fr: Translations = {
         points: ['Détection & mise en relation de startups', 'Projets pilotes structurés', 'Qualification des fournisseurs'],
       },
       {
-        title: 'Exécution stratégique',
-        desc: 'Pas la stratégie à la place de l\'exécution — les deux ensemble. innovation.today prend en charge la responsabilité opérationnelle de projets sans portage interne clair : pilotage de projet, gestion des décideurs, documents d\'arbitrage.',
-        points: ['Innovation execution : du pilote à l\'exploitation', 'Conseil & déploiement IA', 'Pilotage de projet & reporting', 'Gestion des décideurs et équipes'],
+        title: 'IA & sécurité',
+        desc: 'Adopter l’IA en toute sécurité : de l’audit IA et l’analyse de cas d’usage à la gouvernance et l’AI Act, jusqu’aux tests d’attaque des applications d’IA et aux tests d’intrusion.',
+        points: ['Audit IA & analyse de cas d’usage avec LLM-matching', 'Gouvernance IA, AI Act & RGPD', 'Tests d’attaque & tests d’intrusion'],
       },
     ],
   },
@@ -511,12 +511,12 @@ const es: Translations = {
     label: 'Servicios',
     h2: 'Tres áreas. Una sola lógica.',
     subtext:
-      'Cada servicio que ofrecemos sigue el mismo principio de la cultura startup: entender primero, probar después, escalar al final — nunca al revés. La consultoría en IA forma parte de cada área.',
+      'Cada servicio que ofrecemos sigue el mismo principio de la cultura startup: entender primero, probar después, escalar al final — nunca al revés. Una auditoría de seguridad forma parte de cada proyecto.',
     items: [
       {
-        title: 'Desarrollo de nuevas líneas de negocio',
-        desc: 'Identificar mercados adyacentes, desarrollar modelos de negocio, ejecutar pruebas de mercado estructuradas — desde la primera hipótesis hasta el modelo validado y listo para invertir.',
-        points: ['Innovation analysis: descubrir el potencial existente', 'Análisis de mercado y tecnología', 'Desarrollo del modelo de negocio', 'Validación y pruebas de mercado'],
+        title: 'Nuevos negocios y ejecución',
+        desc: 'Desde la primera hipótesis hasta la operación: identificar nuevos mercados, validar modelos de negocio – y asumir la responsabilidad operativa cuando el nuevo negocio no tiene un lugar interno.',
+        points: ['Innovation analysis: descubrir el potencial existente', 'Validación y pruebas de mercado', 'Innovation execution: del piloto a la operación', 'Dirección de proyecto y gestión de stakeholders'],
       },
       {
         title: 'Venture Clienting',
@@ -524,9 +524,9 @@ const es: Translations = {
         points: ['Búsqueda y selección de startups', 'Proyectos piloto estructurados', 'Homologación de proveedores'],
       },
       {
-        title: 'Ejecución estratégica',
-        desc: 'No estrategia en lugar de ejecución — sino las dos cosas a la vez. innovation.today asume la responsabilidad operativa en proyectos sin un responsable interno claro: dirección de proyecto, gestión de stakeholders y documentos de decisión.',
-        points: ['Innovation execution: del piloto a la operación', 'Consultoría e implantación de IA', 'Dirección de proyecto y reporting', 'Gestión de stakeholders'],
+        title: 'IA y seguridad',
+        desc: 'Introducir la IA con seguridad: desde la auditoría de IA y el análisis de casos de uso, pasando por la gobernanza y el Reglamento de IA, hasta pruebas de ataque a aplicaciones de IA y pruebas de penetración.',
+        points: ['Auditoría de IA y análisis de casos de uso con LLM matching', 'Gobernanza de IA, Reglamento de IA y RGPD', 'Pruebas de ataque y de penetración'],
       },
     ],
   },

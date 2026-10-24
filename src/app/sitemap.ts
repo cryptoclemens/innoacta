@@ -38,6 +38,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     page('/venture-clienting',         0.9, 'monthly', '2026-09-09'),
     page('/geschaeftsfeldentwicklung', 0.9, 'monthly', '2026-09-09'),
     page('/strategische-umsetzung',    0.9, 'monthly', '2026-09-09'),
+    page('/ki-sicherheit',             0.9, 'monthly', '2026-10-24'),
     page('/ueber-uns',                 0.8, 'monthly', '2026-09-09'),
     page('/contact',                   0.7, 'monthly', '2026-09-09'),
 
