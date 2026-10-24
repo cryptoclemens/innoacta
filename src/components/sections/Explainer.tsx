@@ -4,6 +4,10 @@ import { useEffect, useRef } from 'react'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { track } from '@/lib/analytics'
 
+/** Stand des Films — bei jedem neuen Rendern anheben, sonst liefern Cloudflare (4 h) und
+    Browser-Caches die alte Fassung unter derselben Adresse weiter aus. */
+const FILM_STAND = '2026-10-24'
+
 /** Meldepunkte für film_progress (Prozent der Laufzeit). */
 const MARKEN = [25, 50, 75]
 
@@ -55,7 +59,7 @@ export default function Explainer() {
       muted
       playsInline
       preload="metadata"
-      poster={`/video/erklaerfilm.${video}.jpg`}
+      poster={`/video/erklaerfilm.${video}.jpg?v=${FILM_STAND}`}
       aria-label={t.explainer.ariaLabel}
       onPlay={() => melde('film_start')}
       onTimeUpdate={(e) => {
@@ -66,7 +70,7 @@ export default function Explainer() {
       }}
       onEnded={() => melde('film_complete')}
     >
-      <source src={`/video/erklaerfilm.${video}.mp4`} type="video/mp4" />
+      <source src={`/video/erklaerfilm.${video}.mp4?v=${FILM_STAND}`} type="video/mp4" />
     </video>
   )
 }
