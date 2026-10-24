@@ -13,9 +13,9 @@ import { projects, projectPath } from '@/lib/projects'
 const locales: Locale[] = ['de', 'en', 'fr', 'es']
 
 const serviceLinks = [
-  { href: '/geschaeftsfeldentwicklung', label: 'Geschäftsfeldentwicklung' },
+  { href: '/geschaeftsfeldentwicklung', label: 'Geschäftsfeldentwicklung & Umsetzung' },
   { href: '/venture-clienting', label: 'Venture Clienting' },
-  { href: '/strategische-umsetzung', label: 'Strategische Umsetzung' },
+  { href: '/ki-sicherheit', label: 'KI & Sicherheit' },
 ]
 
 // Derived from the single source of truth in src/lib/projects.ts — new projects

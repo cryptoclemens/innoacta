@@ -5,9 +5,9 @@ import { ArrowRight } from 'lucide-react'
 import { useLanguage } from '@/contexts/LanguageContext'
 
 const serviceHrefs = [
-  '/geschaeftsfeldentwicklung',
+  '/geschaeftsfeldentwicklung', // Geschäftsfeldentwicklung & Umsetzung (Vertiefung: /strategische-umsetzung)
   '/venture-clienting',
-  '/strategische-umsetzung',
+  '/ki-sicherheit',
 ]
 
 const icons = [
@@ -30,11 +30,8 @@ const icons = [
   (
     <svg viewBox="0 0 48 48" fill="none" className="w-10 h-10">
       <rect width="48" height="48" rx="4" fill="#0f766e" fillOpacity="0.1" />
-      <rect x="12" y="20" width="10" height="16" rx="2" stroke="#0f766e" strokeWidth="2" />
-      <rect x="26" y="14" width="10" height="22" rx="2" stroke="#0f766e" strokeWidth="2" />
-      <path d="M12 36H36" stroke="#0f766e" strokeWidth="2" strokeLinecap="round" />
-      <path d="M17 16L17 20" stroke="#0f766e" strokeWidth="2" strokeLinecap="round" />
-      <path d="M31 10L31 14" stroke="#0f766e" strokeWidth="2" strokeLinecap="round" />
+      <path d="M24 11L35 15V23C35 30 30.5 35 24 37C17.5 35 13 30 13 23V15L24 11Z" stroke="#0f766e" strokeWidth="2" strokeLinejoin="round" />
+      <path d="M19 24L22.5 27.5L29 21" stroke="#0f766e" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
   ),
 ]
