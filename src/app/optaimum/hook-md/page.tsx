@@ -78,9 +78,9 @@ export default function HookMdPage() {
   const canNext = [true, true, !!format, true, true][step] ?? true
 
   return (
-    <div className="min-h-screen bg-brand-sky dark:bg-brand-night pt-24 pb-20">
+    <div className="min-h-screen pt-24 pb-20">
       <div className="max-w-2xl mx-auto px-4 sm:px-6">
-        <Link href="/optaimum" className="inline-flex items-center gap-2 text-gray-500 dark:text-gray-400 hover:text-brand-teal transition-colors mb-8 text-sm">
+        <Link href="/optaimum" className="inline-flex items-center gap-2 text-gray-600 dark:text-gray-300 hover:text-brand-teal transition-colors mb-8 text-sm">
           <ArrowLeft size={16} /> Zurück zu OptAImum
         </Link>
         <div className="mb-8">
@@ -95,11 +95,11 @@ export default function HookMdPage() {
           ))}
         </div>
 
-        <div className="bg-white dark:bg-brand-card border border-gray-200 dark:border-brand-border rounded p-8">
+        <div className="glas rounded-[22px] p-8">
           {step === 0 && (
             <>
               <h2 className="text-gray-900 dark:text-white font-bold text-lg mb-2">Immer-Regeln</h2>
-              <p className="text-gray-500 text-sm mb-6">Was soll die KI bei jeder Antwort tun?</p>
+              <p className="text-gray-600 dark:text-gray-300 text-sm mb-6">Was soll die KI bei jeder Antwort tun?</p>
               <ChipGroup options={alwaysOptions} selected={always} onToggle={v => toggle(always, setAlways, v)} />
               <input className="mt-4 w-full px-3 py-2 text-sm rounded border border-gray-200 dark:border-brand-border bg-transparent text-gray-900 dark:text-white placeholder-gray-400 focus:outline-none focus:border-brand-teal"
                 placeholder="Eigene Regel..." value={customAlways} onChange={e => setCustomAlways(e.target.value)} />
@@ -108,7 +108,7 @@ export default function HookMdPage() {
           {step === 1 && (
             <>
               <h2 className="text-gray-900 dark:text-white font-bold text-lg mb-2">Nie-Regeln</h2>
-              <p className="text-gray-500 text-sm mb-6">Was soll die KI niemals tun?</p>
+              <p className="text-gray-600 dark:text-gray-300 text-sm mb-6">Was soll die KI niemals tun?</p>
               <ChipGroup options={neverOptions} selected={never} onToggle={v => toggle(never, setNever, v)} />
               <input className="mt-4 w-full px-3 py-2 text-sm rounded border border-gray-200 dark:border-brand-border bg-transparent text-gray-900 dark:text-white placeholder-gray-400 focus:outline-none focus:border-brand-teal"
                 placeholder="Eigene Regel..." value={customNever} onChange={e => setCustomNever(e.target.value)} />
@@ -117,21 +117,21 @@ export default function HookMdPage() {
           {step === 2 && (
             <>
               <h2 className="text-gray-900 dark:text-white font-bold text-lg mb-2">Antwortformat</h2>
-              <p className="text-gray-500 text-sm mb-6">Wie sollen Antworten strukturiert sein?</p>
+              <p className="text-gray-600 dark:text-gray-300 text-sm mb-6">Wie sollen Antworten strukturiert sein?</p>
               <SingleSelect options={['Strukturiert mit Überschriften', 'Kompakt & direkt', 'Adaptiv – je nach Aufgabe', 'Code-first – Code vor Erklärung']} value={format} onChange={setFormat} />
             </>
           )}
           {step === 3 && (
             <>
               <h2 className="text-gray-900 dark:text-white font-bold text-lg mb-2">Bestätigungs-Trigger</h2>
-              <p className="text-gray-500 text-sm mb-6">Bei welchen Aktionen soll die KI nachfragen?</p>
+              <p className="text-gray-600 dark:text-gray-300 text-sm mb-6">Bei welchen Aktionen soll die KI nachfragen?</p>
               <ChipGroup options={triggerOptions} selected={triggers} onToggle={v => toggle(triggers, setTriggers, v)} />
             </>
           )}
           {step === 4 && (
             <>
               <h2 className="text-gray-900 dark:text-white font-bold text-lg mb-2">Automatisierungsregeln</h2>
-              <p className="text-gray-500 text-sm mb-4">Optional: Eigene Automatisierungen beschreiben.</p>
+              <p className="text-gray-600 dark:text-gray-300 text-sm mb-4">Optional: Eigene Automatisierungen beschreiben.</p>
               <textarea className="w-full px-3 py-2 text-sm rounded border border-gray-200 dark:border-brand-border bg-transparent text-gray-900 dark:text-white placeholder-gray-400 focus:outline-none focus:border-brand-teal resize-none h-28"
                 placeholder="z.B. Nach jeder Aufgabe eine kurze Zusammenfassung ausgeben. Bei Codeänderungen immer einen Test vorschlagen."
                 value={automation} onChange={e => setAutomation(e.target.value)} />
@@ -146,13 +146,13 @@ export default function HookMdPage() {
                 </button>
               </div>
               <pre className="bg-gray-50 dark:bg-brand-night rounded p-4 text-xs text-gray-800 dark:text-gray-300 whitespace-pre-wrap overflow-auto max-h-80 font-mono border border-gray-200 dark:border-brand-border">{md}</pre>
-              <p className="mt-4 text-xs text-gray-500 dark:text-gray-400">Tipp: Speichere als <code className="text-brand-teal dark:text-brand-mint">HOOKS.md</code> oder füge in deinen System-Prompt ein.</p>
+              <p className="mt-4 text-xs text-gray-600 dark:text-gray-300">Tipp: Speichere als <code className="text-brand-teal dark:text-brand-mint">HOOKS.md</code> oder füge in deinen System-Prompt ein.</p>
             </>
           )}
 
           <div className="flex justify-between mt-8">
             {step > 0 ? (
-              <button onClick={() => setStep(s => s - 1)} className="text-sm text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors">← Zurück</button>
+              <button onClick={() => setStep(s => s - 1)} className="text-sm text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors">← Zurück</button>
             ) : <span />}
             {step < STEPS ? (
               <button onClick={() => setStep(s => s + 1)} disabled={!canNext}
@@ -161,7 +161,7 @@ export default function HookMdPage() {
               </button>
             ) : (
               <button onClick={() => { setStep(0); setAlways([]); setCustomAlways(''); setNever([]); setCustomNever(''); setFormat(''); setTriggers([]); setAutomation('') }}
-                className="text-sm text-gray-500 dark:text-gray-400 hover:text-brand-teal transition-colors">Neu starten</button>
+                className="text-sm text-gray-600 dark:text-gray-300 hover:text-brand-teal transition-colors">Neu starten</button>
             )}
           </div>
         </div>

@@ -61,9 +61,9 @@ claude`
 
 export default function VmSetupPage() {
   return (
-    <div className="min-h-screen bg-brand-sky dark:bg-brand-night pt-24 pb-20">
+    <div className="min-h-screen pt-24 pb-20">
       <div className="max-w-3xl mx-auto px-4 sm:px-6">
-        <Link href="/optaimum" className="inline-flex items-center gap-2 text-gray-500 dark:text-gray-400 hover:text-brand-teal transition-colors mb-8 text-sm">
+        <Link href="/optaimum" className="inline-flex items-center gap-2 text-gray-600 dark:text-gray-300 hover:text-brand-teal transition-colors mb-8 text-sm">
           <ArrowLeft size={16} /> Zurück zu OptAImum
         </Link>
         <div className="mb-8">
@@ -75,13 +75,13 @@ export default function VmSetupPage() {
         {/* Tier comparison */}
         <section className="mb-10">
           <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-4">Welcher Tier passt zu dir?</h2>
-          <div className="bg-white dark:bg-brand-card border border-gray-200 dark:border-brand-border rounded overflow-hidden">
+          <div className="glas rounded-[22px] overflow-hidden">
             <table className="w-full text-sm">
               <thead>
                 <tr className="border-b border-gray-200 dark:border-brand-border bg-gray-50 dark:bg-brand-night">
-                  <th className="text-left px-5 py-3 text-gray-500 font-mono text-xs uppercase">Tier</th>
-                  <th className="text-left px-5 py-3 text-gray-500 font-mono text-xs uppercase">Specs</th>
-                  <th className="text-left px-5 py-3 text-gray-500 font-mono text-xs uppercase">Ideal für</th>
+                  <th className="text-left px-5 py-3 text-gray-600 dark:text-gray-300 font-mono text-xs uppercase">Tier</th>
+                  <th className="text-left px-5 py-3 text-gray-600 dark:text-gray-300 font-mono text-xs uppercase">Specs</th>
+                  <th className="text-left px-5 py-3 text-gray-600 dark:text-gray-300 font-mono text-xs uppercase">Ideal für</th>
                 </tr>
               </thead>
               <tbody>
@@ -102,10 +102,10 @@ export default function VmSetupPage() {
           <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-4">Anbietervergleich</h2>
           <div className="space-y-4">
             {providers.map(p => (
-              <div key={p.name} className={`bg-white dark:bg-brand-card rounded p-6 border ${p.highlight ? 'border-brand-teal/40' : 'border-gray-200 dark:border-brand-border'}`}>
+              <div key={p.name} className={`glas rounded-[22px] p-6 border ${p.highlight ? 'border-brand-teal/40' : 'border-gray-200 dark:border-brand-border'}`}>
                 <div className="flex items-start justify-between mb-3">
                   <div>
-                    <span className={`text-xs font-mono px-2 py-1 rounded-full ${p.highlight ? 'bg-brand-teal/10 text-brand-teal' : 'bg-gray-100 dark:bg-brand-night text-gray-500'}`}>{p.badge}</span>
+                    <span className={`text-xs font-mono px-2 py-1 rounded-full ${p.highlight ? 'bg-brand-teal/10 text-brand-teal' : 'bg-gray-100 dark:bg-brand-night text-gray-600 dark:text-gray-300'}`}>{p.badge}</span>
                     <h3 className="text-gray-900 dark:text-white font-bold text-lg mt-2">{p.name}</h3>
                   </div>
                   <span className={`font-semibold text-sm ${p.priceClass}`}>{p.price}</span>
@@ -123,9 +123,9 @@ export default function VmSetupPage() {
         {/* Setup Script */}
         <section className="mb-10">
           <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-4">Setup-Script für Ubuntu 22.04 LTS</h2>
-          <div className="bg-white dark:bg-brand-card border border-gray-200 dark:border-brand-border rounded overflow-hidden">
+          <div className="glas rounded-[22px] overflow-hidden">
             <div className="flex items-center justify-between px-5 py-3 bg-gray-50 dark:bg-brand-night border-b border-gray-200 dark:border-brand-border">
-              <span className="text-xs font-mono text-gray-500">bash</span>
+              <span className="text-xs font-mono text-gray-600 dark:text-gray-300">bash</span>
               <button
                 onClick={async () => { await navigator.clipboard.writeText(setupScript) }}
                 className="text-xs text-brand-teal dark:text-brand-mint hover:underline"
@@ -153,7 +153,7 @@ export default function VmSetupPage() {
               </li>
             ))}
           </ul>
-          <div className="mt-6 p-4 bg-brand-teal/5 border border-brand-teal/20 rounded text-sm text-gray-700 dark:text-gray-300">
+          <div className="mt-6 p-4 glas rounded-[22px] ring-1 ring-brand-teal/25 text-sm text-gray-700 dark:text-gray-300">
             Erstelle danach dein{' '}
             <Link href="/optaimum/profil-md" className="text-brand-teal dark:text-brand-mint hover:underline font-medium">Profil-Markdown</Link>
             {' '}– so ist Claude Code von Anfang an auf deinen Stil abgestimmt.

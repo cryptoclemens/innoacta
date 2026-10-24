@@ -9,7 +9,7 @@ export default function FactsheetCTA() {
   return (
     <section className="bg-brand-sky dark:bg-brand-night py-16 px-4">
       <div className="max-w-4xl mx-auto">
-        <div className="bg-gradient-to-r from-brand-teal/10 via-brand-teal/5 to-transparent border border-brand-teal/20 rounded p-8 md:p-12 flex flex-col md:flex-row items-center justify-between gap-8">
+        <div className="glas-dick rounded-[28px] p-8 md:p-12 flex flex-col md:flex-row items-center justify-between gap-8">
           <div className="flex items-start gap-4">
             <div className="w-12 h-12 bg-brand-teal/10 rounded flex items-center justify-center flex-shrink-0">
               <FileText size={24} className="text-brand-teal dark:text-brand-mint" />

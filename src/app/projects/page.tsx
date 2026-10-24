@@ -12,7 +12,7 @@ export default function ProjectsPage() {
   const { locale } = useLanguage()
 
   return (
-    <div className="min-h-screen bg-brand-sky dark:bg-brand-night pt-24 pb-20">
+    <div className="min-h-screen pt-24 pb-20">
       {/* Header */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-16">
         <div className="text-center">
@@ -34,7 +34,7 @@ export default function ProjectsPage() {
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {projects.map((project) => (
             <Link key={project.slug} id={project.slug} href={projectPath(project)}>
-              <div className="bg-white dark:bg-brand-card border border-gray-200 dark:border-brand-border rounded p-8 hover:border-brand-teal/40 transition-all duration-300 group h-full flex flex-col cursor-pointer">
+              <div className="glas rounded-[22px] p-8 hover:border-brand-teal/40 transition-all duration-300 group h-full flex flex-col cursor-pointer">
                 <div className="flex items-start justify-between mb-4">
                   <span className="text-xs font-mono text-brand-teal dark:text-brand-mint bg-brand-teal/10 px-3 py-1 rounded-full">
                     {project.category[locale]}
@@ -55,7 +55,7 @@ export default function ProjectsPage() {
                 </p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.tags.map((tag) => (
-                    <span key={tag} className="text-xs text-gray-500 dark:text-gray-500 bg-gray-100 dark:bg-white/5 px-2 py-1 rounded">
+                    <span key={tag} className="text-xs text-gray-600 dark:text-gray-300 bg-gray-100 dark:bg-white/5 px-2 py-1 rounded">
                       {tag}
                     </span>
                   ))}

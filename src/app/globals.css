@@ -197,6 +197,9 @@ html.dark {
   --fleck-sky: rgba(40, 110, 170, 0.35);
 }
 
+/* In @layer components: Tailwind-Utilities (absolute, fixed, sticky, bg-…) gehen vor.
+   Sonst überschreibt `position: relative` hier z. B. das `absolute` der Menüs. */
+@layer components {
 .glas,
 .glas-dick {
   position: relative;
@@ -280,6 +283,7 @@ html.dark .glas-grund {
   .glas-fleck {
     display: none;
   }
+}
 }
 
 /* Druckansicht */

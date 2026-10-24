@@ -34,7 +34,7 @@ const FAQ: { question: string; answer: string }[] = [
 
 export default function RebrandingPage() {
   return (
-    <div className="min-h-screen bg-brand-sky dark:bg-brand-night pt-28 pb-20 px-4 font-sans">
+    <div className="min-h-screen pt-28 pb-20 px-4 font-sans">
       <div className="max-w-2xl mx-auto">
         <div className="mb-8 flex items-center gap-4">
           <img
@@ -90,7 +90,7 @@ export default function RebrandingPage() {
           {FAQ.map((item) => (
             <div
               key={item.question}
-              className="rounded-2xl border border-brand-teal/15 dark:border-brand-border bg-white dark:bg-brand-card p-6 shadow-[0_2px_12px_rgba(15,37,64,0.05)]"
+              className="glas rounded-[22px] p-6"
             >
               <dt className="text-base font-bold text-brand-navy dark:text-white">{item.question}</dt>
               <dd className="mt-2 text-base font-normal leading-[1.6] text-brand-ink dark:text-gray-300">

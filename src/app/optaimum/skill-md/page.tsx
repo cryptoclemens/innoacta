@@ -71,9 +71,9 @@ export default function SkillMdPage() {
   const STEPS = 5
 
   return (
-    <div className="min-h-screen bg-brand-sky dark:bg-brand-night pt-24 pb-20">
+    <div className="min-h-screen pt-24 pb-20">
       <div className="max-w-2xl mx-auto px-4 sm:px-6">
-        <Link href="/optaimum" className="inline-flex items-center gap-2 text-gray-500 dark:text-gray-400 hover:text-brand-teal transition-colors mb-8 text-sm">
+        <Link href="/optaimum" className="inline-flex items-center gap-2 text-gray-600 dark:text-gray-300 hover:text-brand-teal transition-colors mb-8 text-sm">
           <ArrowLeft size={16} /> Zurück zu OptAImum
         </Link>
 
@@ -89,11 +89,11 @@ export default function SkillMdPage() {
           ))}
         </div>
 
-        <div className="bg-white dark:bg-brand-card border border-gray-200 dark:border-brand-border rounded p-8">
+        <div className="glas rounded-[22px] p-8">
           {step === 0 && (
             <>
               <h2 className="text-gray-900 dark:text-white font-bold text-lg mb-2">Für welchen Use-Case?</h2>
-              <p className="text-gray-500 text-sm mb-4">Optional: Beschreibe kurz, wofür dieser Skill-Kontext genutzt wird.</p>
+              <p className="text-gray-600 dark:text-gray-300 text-sm mb-4">Optional: Beschreibe kurz, wofür dieser Skill-Kontext genutzt wird.</p>
               <input
                 className="w-full px-3 py-2 text-sm rounded border border-gray-200 dark:border-brand-border bg-transparent text-gray-900 dark:text-white placeholder-gray-400 focus:outline-none focus:border-brand-teal"
                 placeholder="z.B. Code-Review, E-Mail-Drafting, Marktanalyse..."
@@ -105,14 +105,14 @@ export default function SkillMdPage() {
           {step === 1 && (
             <>
               <h2 className="text-gray-900 dark:text-white font-bold text-lg mb-2">Bevorzugte Output-Formate</h2>
-              <p className="text-gray-500 text-sm mb-6">Welche Formate soll die KI verwenden? (Mehrere möglich)</p>
+              <p className="text-gray-600 dark:text-gray-300 text-sm mb-6">Welche Formate soll die KI verwenden? (Mehrere möglich)</p>
               <ChipGroup options={formatOptions} selected={formats} onToggle={v => toggle(formats, setFormats, v)} />
             </>
           )}
           {step === 2 && (
             <>
               <h2 className="text-gray-900 dark:text-white font-bold text-lg mb-2">Technisches Level</h2>
-              <p className="text-gray-500 text-sm mb-6">Wie fachlich sollen die Antworten sein?</p>
+              <p className="text-gray-600 dark:text-gray-300 text-sm mb-6">Wie fachlich sollen die Antworten sein?</p>
               <SingleSelect
                 options={['Laie – einfach und verständlich', 'Technisch – Fachbegriffe erlaubt', 'Experte – gehe tief in die Materie', 'Variabel – je nach Kontext anpassen']}
                 value={level} onChange={setLevel}
@@ -122,7 +122,7 @@ export default function SkillMdPage() {
           {step === 3 && (
             <>
               <h2 className="text-gray-900 dark:text-white font-bold text-lg mb-2">Tools & Frameworks</h2>
-              <p className="text-gray-500 text-sm mb-4">Welche Tools oder Technologien sind relevant?</p>
+              <p className="text-gray-600 dark:text-gray-300 text-sm mb-4">Welche Tools oder Technologien sind relevant?</p>
               <textarea
                 className="w-full px-3 py-2 text-sm rounded border border-gray-200 dark:border-brand-border bg-transparent text-gray-900 dark:text-white placeholder-gray-400 focus:outline-none focus:border-brand-teal resize-none h-24"
                 placeholder="z.B. Python, Notion, Shopify, Next.js, Excel..."
@@ -134,7 +134,7 @@ export default function SkillMdPage() {
           {step === 4 && (
             <>
               <h2 className="text-gray-900 dark:text-white font-bold text-lg mb-2">Einschränkungen</h2>
-              <p className="text-gray-500 text-sm mb-6">Welche Regeln gelten immer?</p>
+              <p className="text-gray-600 dark:text-gray-300 text-sm mb-6">Welche Regeln gelten immer?</p>
               <ChipGroup options={constraintOptions} selected={constraints} onToggle={v => toggle(constraints, setConstraints, v)} />
               <input
                 className="mt-4 w-full px-3 py-2 text-sm rounded border border-gray-200 dark:border-brand-border bg-transparent text-gray-900 dark:text-white placeholder-gray-400 focus:outline-none focus:border-brand-teal"
@@ -153,13 +153,13 @@ export default function SkillMdPage() {
                 </button>
               </div>
               <pre className="bg-gray-50 dark:bg-brand-night rounded p-4 text-xs text-gray-800 dark:text-gray-300 whitespace-pre-wrap overflow-auto max-h-80 font-mono border border-gray-200 dark:border-brand-border">{md}</pre>
-              <p className="mt-4 text-xs text-gray-500 dark:text-gray-400">Tipp: Speichere als <code className="text-brand-teal dark:text-brand-mint">SKILL.md</code> im Projektordner oder füge den Inhalt als System-Prompt ein.</p>
+              <p className="mt-4 text-xs text-gray-600 dark:text-gray-300">Tipp: Speichere als <code className="text-brand-teal dark:text-brand-mint">SKILL.md</code> im Projektordner oder füge den Inhalt als System-Prompt ein.</p>
             </>
           )}
 
           <div className="flex justify-between mt-8">
             {step > 0 ? (
-              <button onClick={() => setStep(s => s - 1)} className="text-sm text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors">← Zurück</button>
+              <button onClick={() => setStep(s => s - 1)} className="text-sm text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors">← Zurück</button>
             ) : <span />}
             {step < STEPS ? (
               <button onClick={() => setStep(s => s + 1)} disabled={!canNext}
@@ -168,7 +168,7 @@ export default function SkillMdPage() {
               </button>
             ) : (
               <button onClick={() => { setStep(0); setUseCase(''); setFormats([]); setLevel(''); setTools(''); setConstraints([]); setCustomConstraint('') }}
-                className="text-sm text-gray-500 dark:text-gray-400 hover:text-brand-teal transition-colors">Neu starten</button>
+                className="text-sm text-gray-600 dark:text-gray-300 hover:text-brand-teal transition-colors">Neu starten</button>
             )}
           </div>
         </div>

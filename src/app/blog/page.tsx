@@ -102,7 +102,7 @@ export default function BlogPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
-      <div className="min-h-screen bg-brand-sky dark:bg-brand-night pt-24 pb-20">
+      <div className="min-h-screen pt-24 pb-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
 
           {/* Header */}
@@ -122,11 +122,11 @@ export default function BlogPage() {
               <Link
                 key={article.slug}
                 href={`/blog/${article.slug}`}
-                className="block bg-white dark:bg-brand-card border border-gray-200 dark:border-brand-border rounded p-8 hover:border-brand-teal/40 transition-colors group"
+                className="block glas rounded-[22px] p-8 transition-transform hover:-translate-y-0.5 group"
               >
                 <div className="flex items-center gap-3 mb-3">
                   <span className="text-xs font-mono text-brand-teal dark:text-brand-mint bg-brand-teal/10 px-3 py-1 rounded-full">{article.category}</span>
-                  <span className="text-xs text-gray-500 dark:text-gray-500">{article.date} · {article.readTime}</span>
+                  <span className="text-xs text-gray-600 dark:text-gray-300">{article.date} · {article.readTime}</span>
                 </div>
                 <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-3 group-hover:text-brand-teal transition-colors">{article.title}</h2>
                 <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-4">{article.excerpt}</p>

@@ -87,7 +87,7 @@ export default function ArticlePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
-      <div className="min-h-screen bg-brand-sky dark:bg-brand-night pt-24 pb-20">
+      <div className="min-h-screen pt-24 pb-20">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
 
           <Link href="/blog" className="inline-flex items-center gap-2 text-brand-teal dark:text-brand-mint hover:text-teal-400 text-sm mb-10 transition-colors">
@@ -97,7 +97,7 @@ export default function ArticlePage() {
           <div className="mb-12">
             <div className="flex items-center gap-3 mb-4">
               <span className="text-xs font-mono text-brand-teal dark:text-brand-mint bg-brand-teal/10 px-3 py-1 rounded-full">KI & Verhandlung</span>
-              <span className="text-xs text-gray-500 dark:text-gray-500">5. Juni 2026 · 8 Min. Lesezeit</span>
+              <span className="text-xs text-gray-600 dark:text-gray-300">5. Juni 2026 · 8 Min. Lesezeit</span>
             </div>
             <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white leading-tight mb-6">
               KI-Verhandlungscoaching für die Käuferseite – der Souffleur-Ansatz
@@ -268,7 +268,7 @@ export default function ArticlePage() {
                 { href: '/blog/was-ist-venture-clienting', cat: 'Venture Clienting', title: 'Was ist Venture Clienting? Definition, Prozess und Praxisbeispiele' },
                 { href: '/blog/venture-client-mittelstand', cat: 'Mittelstand', title: 'Venture Client im Mittelstand: Chancen, Hürden und wie es gelingt' },
               ].map(a => (
-                <Link key={a.href} href={a.href} className="block bg-white dark:bg-brand-card border border-gray-200 dark:border-brand-border rounded p-4 hover:border-brand-teal/40 transition-colors group">
+                <Link key={a.href} href={a.href} className="block glas rounded-[22px] p-4 transition-transform hover:-translate-y-0.5 group">
                   <span className="text-xs font-mono text-brand-teal dark:text-brand-mint">{a.cat}</span>
                   <p className="text-sm font-semibold text-gray-900 dark:text-white group-hover:text-brand-teal transition-colors mt-1 leading-snug">{a.title}</p>
                 </Link>
@@ -281,12 +281,12 @@ export default function ArticlePage() {
               <div className="w-12 h-12 rounded-full bg-brand-teal/20 flex items-center justify-center text-brand-teal dark:text-brand-mint font-bold text-lg">C</div>
               <div>
                 <div className="font-semibold text-gray-900 dark:text-white">Clemens Pompeÿ</div>
-                <div className="text-sm text-gray-500 dark:text-gray-400">Gründer, Vencly GmbH · Entwickler von Souffleur</div>
+                <div className="text-sm text-gray-600 dark:text-gray-300">Gründer, Vencly GmbH · Entwickler von Souffleur</div>
               </div>
             </div>
           </div>
 
-          <div className="mt-12 bg-white dark:bg-brand-card border border-gray-200 dark:border-brand-border rounded p-8 text-center">
+          <div className="mt-12 glas rounded-[22px] p-8 text-center">
             <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">Interesse an Souffleur?</h3>
             <p className="text-gray-600 dark:text-gray-400 mb-6">
               Wir befinden uns in der Early-Development-Phase und freuen uns über Beta-Tester und Feedback.

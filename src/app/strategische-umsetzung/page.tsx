@@ -66,7 +66,7 @@ export default function StrategischeUmsetzungPage() {
           { '@type': 'ListItem', position: 3, name: 'Strategische Umsetzung', item: 'https://www.innovation.today/strategische-umsetzung/' },
         ],
       }) }} />
-      <div className="min-h-screen bg-brand-sky dark:bg-brand-night pt-24 pb-20">
+      <div className="min-h-screen pt-24 pb-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
 
           {/* Hero */}
@@ -90,7 +90,7 @@ export default function StrategischeUmsetzungPage() {
 
           {/* Not strategy vs execution */}
           <section className="mb-16">
-            <blockquote className="border-l-4 border-brand-teal pl-6 py-2 bg-gray-100 dark:bg-brand-card rounded-r-xl">
+            <blockquote className="border-l-4 border-brand-teal pl-6 py-2 glas rounded-r-[22px]">
               <p
                 className="text-gray-900 dark:text-white text-xl font-semibold"
                 dangerouslySetInnerHTML={{ __html: su.quote }}
@@ -105,7 +105,7 @@ export default function StrategischeUmsetzungPage() {
               {su.services.map(({ title, desc }, i) => {
                 const Icon = serviceIcons[i]
                 return (
-                  <div key={title} className="bg-white dark:bg-brand-card border border-gray-200 dark:border-brand-border rounded p-8">
+                  <div key={title} className="glas rounded-[22px] p-8">
                     <div className="flex items-start gap-5">
                       <div className="w-11 h-11 bg-brand-teal/10 rounded flex items-center justify-center shrink-0">
                         <Icon size={20} className="text-brand-teal dark:text-brand-mint" />
@@ -153,7 +153,7 @@ export default function StrategischeUmsetzungPage() {
             <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-6">{su.relatedH2}</h2>
             <div className="grid gap-4 sm:grid-cols-2">
               {su.relatedArticles.map(a => (
-                <Link key={a.href} href={a.href} className="block bg-white dark:bg-brand-card border border-gray-200 dark:border-brand-border rounded p-5 hover:border-brand-teal/40 transition-colors group">
+                <Link key={a.href} href={a.href} className="block glas rounded-[22px] p-5 transition-transform hover:-translate-y-0.5 group">
                   <span className="text-xs font-mono text-brand-teal dark:text-brand-mint">{a.cat}</span>
                   <p className="text-sm font-semibold text-gray-900 dark:text-white group-hover:text-brand-teal transition-colors mt-1 leading-snug">{a.title}</p>
                 </Link>
@@ -162,7 +162,7 @@ export default function StrategischeUmsetzungPage() {
           </section>
 
           {/* CTA */}
-          <section className="bg-gradient-to-r from-brand-teal/10 to-brand-teal/5 border border-brand-teal/20 rounded p-10 text-center">
+          <section className="glas-dick rounded-[28px] p-10 text-center">
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">
               {su.ctaH2}
             </h2>
