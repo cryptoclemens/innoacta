@@ -67,11 +67,11 @@ export default function ProjectDetailPage({ params }: { params: { slug: string }
           { '@type': 'ListItem', position: 3, name: p.name.de, item: `https://www.innovation.today/${p.slug}/` },
         ],
       }) }} />
-      <div className="min-h-screen bg-brand-sky dark:bg-brand-night pt-24 pb-20">
+      <div className="min-h-screen pt-24 pb-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
 
           {/* Back */}
-          <Link href="/projects" className="inline-flex items-center gap-2 text-gray-500 dark:text-gray-400 hover:text-brand-teal transition-colors mb-8 text-sm">
+          <Link href="/projects" className="inline-flex items-center gap-2 text-gray-600 dark:text-gray-300 hover:text-brand-teal transition-colors mb-8 text-sm">
             <ArrowLeft size={16} /> Zurück zu Projekten
           </Link>
 
@@ -108,7 +108,7 @@ export default function ProjectDetailPage({ params }: { params: { slug: string }
               </Link>
             ))}
 
-            <p className="mt-6 text-sm text-gray-500 dark:text-gray-400">
+            <p className="mt-6 text-sm text-gray-600 dark:text-gray-300">
               Ein Produkt der{' '}
               <Link href="/impressum" className="text-brand-teal dark:text-brand-mint hover:underline font-medium">Vencly GmbH</Link>.
             </p>
@@ -121,7 +121,7 @@ export default function ProjectDetailPage({ params }: { params: { slug: string }
               {p.problem.intro && <p className="text-gray-600 dark:text-gray-400 mb-6 max-w-2xl">{p.problem.intro}</p>}
               <div className="grid gap-4 sm:grid-cols-2">
                 {p.problem.cards.map((c) => (
-                  <div key={c.title} className="bg-white dark:bg-brand-card border border-gray-200 dark:border-brand-border rounded p-6">
+                  <div key={c.title} className="glas rounded-[22px] p-6">
                     {c.tag && <span className="text-xs font-mono uppercase tracking-widest text-brand-teal dark:text-brand-mint">{c.tag}</span>}
                     <h3 className="text-gray-900 dark:text-white font-semibold mt-1 mb-1">{c.title}</h3>
                     <p className="text-gray-600 dark:text-gray-400 text-sm">{c.desc}</p>
@@ -137,7 +137,7 @@ export default function ProjectDetailPage({ params }: { params: { slug: string }
               <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">{p.workflowHeading ?? `So funktioniert ${p.name.de}.`}</h2>
               <div className="grid gap-4 sm:grid-cols-2">
                 {p.workflow.map((w) => (
-                  <div key={w.n} className="bg-white dark:bg-brand-card border border-gray-200 dark:border-brand-border rounded p-6 flex gap-4">
+                  <div key={w.n} className="glas rounded-[22px] p-6 flex gap-4">
                     <span className="text-brand-teal dark:text-brand-mint font-mono text-xl font-bold shrink-0">{w.n}</span>
                     <div>
                       <h3 className="text-gray-900 dark:text-white font-semibold mb-1">{w.title}</h3>
@@ -157,7 +157,7 @@ export default function ProjectDetailPage({ params }: { params: { slug: string }
                 {p.features.map((f) => {
                   const Icon = ICONS[f.icon] ?? Sparkles
                   return (
-                    <div key={f.title} className="bg-white dark:bg-brand-card border border-gray-200 dark:border-brand-border rounded p-6">
+                    <div key={f.title} className="glas rounded-[22px] p-6">
                       <div className="w-10 h-10 bg-brand-teal/10 rounded flex items-center justify-center mb-4">
                         <Icon size={20} className="text-brand-teal dark:text-brand-mint" />
                       </div>
@@ -177,10 +177,10 @@ export default function ProjectDetailPage({ params }: { params: { slug: string }
               {p.plans.intro && <p className="text-gray-600 dark:text-gray-400 mb-6 max-w-2xl">{p.plans.intro}</p>}
               <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
                 {p.plans.tiers.map((t) => (
-                  <div key={t.name} className={`rounded p-6 flex flex-col border ${t.highlight ? 'bg-brand-teal/5 border-brand-teal/30' : 'bg-white dark:bg-brand-card border-gray-200 dark:border-brand-border'}`}>
+                  <div key={t.name} className={`rounded p-6 flex flex-col border ${t.highlight ? 'bg-brand-teal/5 border-brand-teal/30' : 'glas border-transparent'}`}>
                     <span className="text-gray-900 dark:text-white font-semibold">{t.name}</span>
                     <span className="mt-1 text-2xl font-bold text-gray-900 dark:text-white">
-                      {t.price}{t.per && <span className="text-sm font-normal text-gray-500 dark:text-gray-400"> {t.per}</span>}
+                      {t.price}{t.per && <span className="text-sm font-normal text-gray-600 dark:text-gray-300"> {t.per}</span>}
                     </span>
                     <p className="mt-2 text-gray-600 dark:text-gray-400 text-sm">{t.desc}</p>
                   </div>
@@ -193,7 +193,7 @@ export default function ProjectDetailPage({ params }: { params: { slug: string }
                   ))}
                 </div>
               )}
-              {p.plans.note && <p className="mt-4 text-sm text-gray-500 dark:text-gray-400">{p.plans.note}</p>}
+              {p.plans.note && <p className="mt-4 text-sm text-gray-600 dark:text-gray-300">{p.plans.note}</p>}
             </section>
           )}
 
@@ -208,13 +208,13 @@ export default function ProjectDetailPage({ params }: { params: { slug: string }
                   </li>
                 ))}
               </ul>
-              {p.stackNote && <p className="mt-4 text-sm text-gray-500 dark:text-gray-400">{p.stackNote}</p>}
+              {p.stackNote && <p className="mt-4 text-sm text-gray-600 dark:text-gray-300">{p.stackNote}</p>}
             </section>
           )}
 
           {/* CTA bottom */}
           {cta && (
-            <section className="bg-gradient-to-r from-brand-teal/10 to-brand-teal/5 border border-brand-teal/20 rounded p-10 text-center">
+            <section className="glas-dick rounded-[28px] p-10 text-center">
               <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">{cta.heading}</h2>
               <p className="text-gray-600 dark:text-gray-400 mb-6">{cta.text}</p>
               {cta.external ? (

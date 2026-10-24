@@ -75,10 +75,10 @@ export default function InnovationRepublicPage() {
           { '@type': 'ListItem', position: 3, name: 'Innovation Republic', item: 'https://www.innovation.today/innovation-republic/' },
         ],
       }) }} />
-      <div className="min-h-screen bg-brand-sky dark:bg-brand-night pt-24 pb-20">
+      <div className="min-h-screen pt-24 pb-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
 
-          <Link href="/projects" className="inline-flex items-center gap-2 text-gray-500 dark:text-gray-400 hover:text-brand-teal transition-colors mb-8 text-sm">
+          <Link href="/projects" className="inline-flex items-center gap-2 text-gray-600 dark:text-gray-300 hover:text-brand-teal transition-colors mb-8 text-sm">
             <ArrowLeft size={16} /> Zurück zu Projekten
           </Link>
 
@@ -106,9 +106,9 @@ export default function InnovationRepublicPage() {
                 { value: '24/7', label: 'KI-Monitoring aktiv' },
                 { value: 'DSGVO', label: 'konform, EU-Hosting' },
               ].map(({ value, label }) => (
-                <div key={label} className="bg-white dark:bg-brand-card border border-gray-200 dark:border-brand-border rounded p-6 text-center">
+                <div key={label} className="glas rounded-[22px] p-6 text-center">
                   <div className="text-3xl font-bold text-brand-teal dark:text-brand-mint mb-1">{value}</div>
-                  <div className="text-sm text-gray-500 dark:text-gray-400">{label}</div>
+                  <div className="text-sm text-gray-600 dark:text-gray-300">{label}</div>
                 </div>
               ))}
             </div>
@@ -119,7 +119,7 @@ export default function InnovationRepublicPage() {
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">So funktioniert Innovation Republic.</h2>
             <div className="grid gap-4 sm:grid-cols-2">
               {workflow.map(w => (
-                <div key={w.n} className="bg-white dark:bg-brand-card border border-gray-200 dark:border-brand-border rounded p-6 flex gap-4">
+                <div key={w.n} className="glas rounded-[22px] p-6 flex gap-4">
                   <span className="text-brand-teal dark:text-brand-mint font-mono text-xl font-bold shrink-0">{w.n}</span>
                   <div>
                     <h3 className="text-gray-900 dark:text-white font-semibold mb-1">{w.title}</h3>
@@ -135,7 +135,7 @@ export default function InnovationRepublicPage() {
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">Features im Detail.</h2>
             <div className="grid gap-6 sm:grid-cols-2">
               {features.map(({ icon: Icon, title, desc }) => (
-                <div key={title} className="bg-white dark:bg-brand-card border border-gray-200 dark:border-brand-border rounded p-6">
+                <div key={title} className="glas rounded-[22px] p-6">
                   <div className="w-10 h-10 bg-brand-teal/10 rounded flex items-center justify-center mb-4">
                     <Icon size={20} className="text-brand-teal dark:text-brand-mint" />
                   </div>
@@ -160,7 +160,7 @@ export default function InnovationRepublicPage() {
           </section>
 
           {/* CTA */}
-          <section className="bg-gradient-to-r from-brand-teal/10 to-brand-teal/5 border border-brand-teal/20 rounded p-10 text-center">
+          <section className="glas-dick rounded-[28px] p-10 text-center">
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">Venture Clienting für Ihr Unternehmen?</h2>
             <p className="text-gray-600 dark:text-gray-400 mb-6">
               Wir zeigen Ihnen, wie Innovation Republic in Ihre Innovationsstrategie passt.

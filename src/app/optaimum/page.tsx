@@ -122,7 +122,7 @@ export default function OptAImumPage() {
           { '@type': 'ListItem', position: 3, name: 'OptAImum', item: 'https://www.innovation.today/optaimum/' },
         ],
       }) }} />
-      <div className="min-h-screen bg-brand-sky dark:bg-brand-night pt-24 pb-20">
+      <div className="min-h-screen pt-24 pb-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
 
           {/* Hero */}
@@ -149,7 +149,7 @@ export default function OptAImumPage() {
 
           {/* CTA quote */}
           <section className="mb-20">
-            <blockquote className="border-l-4 border-brand-teal pl-6 py-2 bg-gray-100 dark:bg-brand-card rounded-r-xl">
+            <blockquote className="border-l-4 border-brand-teal pl-6 py-2 glas rounded-r-[22px]">
               <p className="text-gray-900 dark:text-white text-xl font-semibold">
                 „Starte mit dem MD-Creator –{' '}
                 in 5 Minuten hast du dein erstes personalisiertes Profil."
@@ -162,7 +162,7 @@ export default function OptAImumPage() {
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">Warum OptAImum?</h2>
             <div className="grid gap-6 sm:grid-cols-3">
               {whyItems.map(({ icon: Icon, title, desc }) => (
-                <div key={title} className="bg-white dark:bg-brand-card border border-gray-200 dark:border-brand-border rounded p-6">
+                <div key={title} className="glas rounded-[22px] p-6">
                   <div className="w-10 h-10 bg-brand-teal/10 rounded flex items-center justify-center mb-4">
                     <Icon size={20} className="text-brand-teal dark:text-brand-mint" />
                   </div>
@@ -178,7 +178,7 @@ export default function OptAImumPage() {
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-8">Die 6 Tools im Detail.</h2>
             <div className="space-y-6">
               {features.map((f) => (
-                <Link key={f.n} href={f.href} className="block bg-white dark:bg-brand-card border border-gray-200 dark:border-brand-border rounded p-8 hover:border-brand-teal/40 transition-colors group">
+                <Link key={f.n} href={f.href} className="block glas rounded-[22px] p-8 transition-transform hover:-translate-y-0.5 group">
                   <div className="flex items-start justify-between mb-3">
                     <span className="text-brand-teal dark:text-brand-mint font-mono text-lg font-bold">{f.n}</span>
                     <span className="text-xs font-mono text-brand-teal dark:text-brand-mint bg-brand-teal/10 px-2 py-1 rounded-full">{f.badge}</span>
@@ -205,11 +205,11 @@ export default function OptAImumPage() {
           {/* LLM comparison */}
           <section className="mb-20">
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">Claude vs. ChatGPT – Quick Reference.</h2>
-            <div className="bg-white dark:bg-brand-card border border-gray-200 dark:border-brand-border rounded overflow-hidden">
+            <div className="glas rounded-[22px] overflow-hidden">
               <table className="w-full text-sm">
                 <thead>
                   <tr className="border-b border-gray-200 dark:border-brand-border">
-                    <th className="text-left px-6 py-3 text-gray-500 dark:text-gray-400 font-mono text-xs uppercase tracking-wider">Feature</th>
+                    <th className="text-left px-6 py-3 text-gray-600 dark:text-gray-300 font-mono text-xs uppercase tracking-wider">Feature</th>
                     <th className="text-left px-6 py-3 text-brand-teal dark:text-brand-mint font-semibold">Claude</th>
                     <th className="text-left px-6 py-3 text-gray-600 dark:text-gray-400 font-semibold">ChatGPT</th>
                   </tr>
@@ -229,19 +229,19 @@ export default function OptAImumPage() {
 
           {/* Open source */}
           <section className="mb-20">
-            <div className="bg-white dark:bg-brand-card border border-gray-200 dark:border-brand-border rounded p-8 text-center">
+            <div className="glas rounded-[22px] p-8 text-center">
               <span className="text-brand-teal dark:text-brand-mint text-xs font-mono tracking-widest uppercase mb-3 block">MIT License · v0.1.5</span>
               <h2 className="text-gray-900 dark:text-white font-bold text-xl mb-3">Für die KI-Community</h2>
               <p className="text-gray-600 dark:text-gray-400 text-sm max-w-lg mx-auto mb-2">
                 OptAImum ist ein Open-Source-Community-Projekt – kostenlos, ohne externe Abhängigkeiten,
                 vollständig offline-fähig. Entwickelt von Clemens Pompey, powered by Innovation Republic.
               </p>
-              <p className="text-gray-500 dark:text-gray-500 text-xs">Feedback, Ideen und Beiträge sind willkommen.</p>
+              <p className="text-gray-600 dark:text-gray-300 text-xs">Feedback, Ideen und Beiträge sind willkommen.</p>
             </div>
           </section>
 
           {/* CTA */}
-          <section className="bg-gradient-to-r from-brand-teal/10 to-brand-teal/5 border border-brand-teal/20 rounded p-10 text-center">
+          <section className="glas-dick rounded-[28px] p-10 text-center">
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">
               OptAImum für Ihr Team einführen?
             </h2>

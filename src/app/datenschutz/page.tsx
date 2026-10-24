@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 export default function DatenschutzPage() {
   return (
-    <div className="min-h-screen bg-brand-sky dark:bg-brand-night pt-28 pb-20 px-4">
+    <div className="min-h-screen pt-28 pb-20 px-4">
       <div className="max-w-2xl mx-auto">
         <span className="section-eyebrow mb-4">Rechtliches</span>
         <h1 className="text-3xl md:text-4xl font-extrabold text-gray-900 dark:text-white mt-3 mb-2">
@@ -269,7 +269,7 @@ export default function DatenschutzPage() {
                   Cloudflare, Inc. – Data Processing Addendum v6.4 (April 2026)
                 </a>
               </li>
-              <li className="text-gray-500 dark:text-gray-400">
+              <li className="text-gray-600 dark:text-gray-300">
                 Hetzner Online GmbH – AVV über Kundenportal (Robot/Cloud Console) akzeptiert
               </li>
             </ul>

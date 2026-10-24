@@ -84,9 +84,9 @@ export default function ProfilMdPage() {
   )
 
   return (
-    <div className="min-h-screen bg-brand-sky dark:bg-brand-night pt-24 pb-20">
+    <div className="min-h-screen pt-24 pb-20">
       <div className="max-w-2xl mx-auto px-4 sm:px-6">
-        <Link href="/optaimum" className="inline-flex items-center gap-2 text-gray-500 dark:text-gray-400 hover:text-brand-teal transition-colors mb-8 text-sm">
+        <Link href="/optaimum" className="inline-flex items-center gap-2 text-gray-600 dark:text-gray-300 hover:text-brand-teal transition-colors mb-8 text-sm">
           <ArrowLeft size={16} /> Zurück zu OptAImum
         </Link>
 
@@ -103,39 +103,39 @@ export default function ProfilMdPage() {
           ))}
         </div>
 
-        <div className="bg-white dark:bg-brand-card border border-gray-200 dark:border-brand-border rounded p-8">
+        <div className="glas rounded-[22px] p-8">
           {step === 0 && (
             <>
               <h2 className="text-gray-900 dark:text-white font-bold text-lg mb-2">Bevorzugte Sprache</h2>
-              <p className="text-gray-500 text-sm mb-6">In welcher Sprache soll die KI hauptsächlich antworten?</p>
+              <p className="text-gray-600 dark:text-gray-300 text-sm mb-6">In welcher Sprache soll die KI hauptsächlich antworten?</p>
               <SingleSelect options={['Deutsch', 'Englisch', 'Beides', 'Andere']} value={language} onChange={setLanguage} />
             </>
           )}
           {step === 1 && (
             <>
               <h2 className="text-gray-900 dark:text-white font-bold text-lg mb-2">Dein Erfahrungslevel</h2>
-              <p className="text-gray-500 text-sm mb-6">Wie soll die KI den Komplexitätsgrad ihrer Antworten einschätzen?</p>
+              <p className="text-gray-600 dark:text-gray-300 text-sm mb-6">Wie soll die KI den Komplexitätsgrad ihrer Antworten einschätzen?</p>
               <SingleSelect options={['Einsteiger – erkläre alles einfach', 'Fortgeschritten – normales Niveau', 'Profi – geh gerne in die Tiefe']} value={level} onChange={setLevel} />
             </>
           )}
           {step === 2 && (
             <>
               <h2 className="text-gray-900 dark:text-white font-bold text-lg mb-2">Kommunikationsstil</h2>
-              <p className="text-gray-500 text-sm mb-6">Wie soll die KI mit dir kommunizieren?</p>
+              <p className="text-gray-600 dark:text-gray-300 text-sm mb-6">Wie soll die KI mit dir kommunizieren?</p>
               <SingleSelect options={['Locker & direkt', 'Professionell & präzise', 'Detailliert & ausführlich', 'Sehr kompakt & stichpunktartig']} value={style} onChange={setStyle} />
             </>
           )}
           {step === 3 && (
             <>
               <h2 className="text-gray-900 dark:text-white font-bold text-lg mb-2">Hauptanwendungsfälle</h2>
-              <p className="text-gray-500 text-sm mb-6">Wofür nutzt du KI hauptsächlich? (Mehrere möglich)</p>
+              <p className="text-gray-600 dark:text-gray-300 text-sm mb-6">Wofür nutzt du KI hauptsächlich? (Mehrere möglich)</p>
               <ChipGroup options={useCases} selected={uses} onToggle={v => toggle(uses, setUses, v)} />
             </>
           )}
           {step === 4 && (
             <>
               <h2 className="text-gray-900 dark:text-white font-bold text-lg mb-2">Was soll die KI vermeiden?</h2>
-              <p className="text-gray-500 text-sm mb-6">Wähle aus oder schreib deine eigenen Regeln.</p>
+              <p className="text-gray-600 dark:text-gray-300 text-sm mb-6">Wähle aus oder schreib deine eigenen Regeln.</p>
               <ChipGroup options={avoidOptions} selected={avoid} onToggle={v => toggle(avoid, setAvoid, v)} />
               <input
                 className="mt-4 w-full px-3 py-2 text-sm rounded border border-gray-200 dark:border-brand-border bg-transparent text-gray-900 dark:text-white placeholder-gray-400 focus:outline-none focus:border-brand-teal"
@@ -154,7 +154,7 @@ export default function ProfilMdPage() {
                 </button>
               </div>
               <pre className="bg-gray-50 dark:bg-brand-night rounded p-4 text-xs text-gray-800 dark:text-gray-300 whitespace-pre-wrap overflow-auto max-h-80 font-mono border border-gray-200 dark:border-brand-border">{md}</pre>
-              <div className="mt-6 p-4 bg-brand-teal/5 border border-brand-teal/20 rounded">
+              <div className="mt-6 p-4 glas rounded-[22px] ring-1 ring-brand-teal/25">
                 <p className="text-sm font-semibold text-gray-900 dark:text-white mb-2">Wo einfügen?</p>
                 <ul className="text-sm text-gray-600 dark:text-gray-400 space-y-1">
                   <li>· <strong className="text-gray-900 dark:text-white">Claude.ai:</strong> Einstellungen → Personalization → Custom Instructions</li>
@@ -167,7 +167,7 @@ export default function ProfilMdPage() {
 
           <div className="flex justify-between mt-8">
             {step > 0 ? (
-              <button onClick={() => setStep(s => s - 1)} className="text-sm text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors">← Zurück</button>
+              <button onClick={() => setStep(s => s - 1)} className="text-sm text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors">← Zurück</button>
             ) : <span />}
             {step < 5 ? (
               <button onClick={() => setStep(s => s + 1)} disabled={!canNext}
@@ -176,7 +176,7 @@ export default function ProfilMdPage() {
               </button>
             ) : (
               <button onClick={() => { setStep(0); setLevel(''); setStyle(''); setUses([]); setAvoid([]); setCustomAvoid('') }}
-                className="text-sm text-gray-500 dark:text-gray-400 hover:text-brand-teal transition-colors">
+                className="text-sm text-gray-600 dark:text-gray-300 hover:text-brand-teal transition-colors">
                 Neu starten
               </button>
             )}

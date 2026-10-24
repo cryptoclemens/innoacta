@@ -84,7 +84,7 @@ export default function VentureClientingPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
-      <div className="min-h-screen bg-brand-sky dark:bg-brand-night pt-24 pb-20">
+      <div className="min-h-screen pt-24 pb-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
 
           {/* Hero */}
@@ -99,7 +99,7 @@ export default function VentureClientingPage() {
             <p className="text-gray-600 dark:text-gray-400 text-lg max-w-2xl leading-relaxed mb-8">
               {vc.intro}
             </p>
-            <blockquote className="border-l-4 border-brand-teal pl-6 py-2 my-8 bg-gray-100 dark:bg-brand-card rounded-r-xl">
+            <blockquote className="border-l-4 border-brand-teal pl-6 py-2 my-8 glas rounded-r-[22px]">
               <p className="text-gray-900 dark:text-white text-xl font-semibold leading-snug">
                 {vc.quote}
               </p>
@@ -120,7 +120,7 @@ export default function VentureClientingPage() {
               {vc.differentiators.map(({ title, desc }, i) => {
                 const Icon = differentiatorIcons[i]
                 return (
-                  <div key={title} className="bg-white dark:bg-brand-card border border-gray-200 dark:border-brand-border rounded p-6">
+                  <div key={title} className="glas rounded-[22px] p-6">
                     <div className="w-10 h-10 bg-brand-teal/10 rounded flex items-center justify-center mb-4">
                       <Icon size={20} className="text-brand-teal dark:text-brand-mint" />
                     </div>
@@ -139,7 +139,7 @@ export default function VentureClientingPage() {
             </h2>
             <div className="space-y-6">
               {vc.steps.map((s) => (
-                <div key={s.n} className="flex gap-6 bg-white dark:bg-brand-card border border-gray-200 dark:border-brand-border rounded p-6">
+                <div key={s.n} className="flex gap-6 glas rounded-[22px] p-6">
                   <span className="text-brand-teal dark:text-brand-mint font-mono text-2xl font-bold shrink-0 mt-0.5">{s.n}</span>
                   <div>
                     <h3 className="text-gray-900 dark:text-white font-semibold mb-1">{s.title}</h3>
@@ -165,7 +165,7 @@ export default function VentureClientingPage() {
 
           {/* Medium article */}
           <section className="mb-20">
-            <div className="bg-white dark:bg-brand-card border border-gray-200 dark:border-brand-border rounded p-8">
+            <div className="glas rounded-[22px] p-8">
               <span className="text-brand-teal dark:text-brand-mint text-xs font-mono tracking-widest uppercase mb-3 block">
                 {vc.articleTag}
               </span>
@@ -192,7 +192,7 @@ export default function VentureClientingPage() {
             <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-6">{vc.relatedH2}</h2>
             <div className="grid gap-4 sm:grid-cols-2">
               {vc.relatedArticles.map(a => (
-                <Link key={a.href} href={a.href} className="block bg-white dark:bg-brand-card border border-gray-200 dark:border-brand-border rounded p-5 hover:border-brand-teal/40 transition-colors group">
+                <Link key={a.href} href={a.href} className="block glas rounded-[22px] p-5 transition-transform hover:-translate-y-0.5 group">
                   <span className="text-xs font-mono text-brand-teal dark:text-brand-mint">{a.cat}</span>
                   <p className="text-sm font-semibold text-gray-900 dark:text-white group-hover:text-brand-teal transition-colors mt-1 leading-snug">{a.title}</p>
                 </Link>
@@ -201,7 +201,7 @@ export default function VentureClientingPage() {
           </section>
 
           {/* CTA */}
-          <section className="bg-gradient-to-r from-brand-teal/10 to-brand-teal/5 border border-brand-teal/20 rounded p-10 text-center">
+          <section className="glas-dick rounded-[28px] p-10 text-center">
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">
               {vc.ctaH2}
             </h2>

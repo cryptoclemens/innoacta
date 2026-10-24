@@ -63,7 +63,7 @@ function ValidationCheckModal({ onClose }: { onClose: () => void }) {
     >
       <div
         ref={ref}
-        className="bg-white dark:bg-brand-card border border-gray-200 dark:border-brand-border rounded shadow-2xl w-full max-w-lg my-auto"
+        className="glas-dick rounded-3xl w-full max-w-lg my-auto"
       >
         {/* Header */}
         <div className="flex items-start justify-between px-6 py-5 border-b border-gray-100 dark:border-brand-border">
@@ -94,13 +94,13 @@ function ValidationCheckModal({ onClose }: { onClose: () => void }) {
                 <span className="mt-0.5 flex-shrink-0">
                   {checked[i]
                     ? <CheckCircle2 size={18} className="text-brand-teal dark:text-brand-mint" />
-                    : <Circle size={18} className="text-gray-300 dark:text-gray-600 group-hover:text-brand-teal/50 transition-colors" />
+                    : <Circle size={18} className="text-gray-500 dark:text-gray-400 group-hover:text-brand-teal/50 transition-colors" />
                   }
                 </span>
                 <span className={`text-sm leading-snug transition-colors ${
                   checked[i]
                     ? 'text-gray-900 dark:text-white font-medium'
-                    : 'text-gray-500 dark:text-gray-400'
+                    : 'text-gray-600 dark:text-gray-300'
                 }`}>
                   {item}
                 </span>
@@ -175,13 +175,13 @@ function NavDropdown({ label, allHref, allLabel, links }: {
       <button
         onClick={() => setOpen((o) => !o)}
         aria-expanded={open}
-        className="flex items-center gap-1 text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white text-sm font-medium transition-colors"
+        className="flex items-center gap-1 text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white text-sm font-medium transition-colors"
       >
         {label}
         <ChevronDown size={13} className={`transition-transform ${open ? 'rotate-180' : ''}`} />
       </button>
       {open && (
-        <div className="absolute left-0 top-full mt-2 bg-white dark:bg-brand-card border border-gray-200 dark:border-brand-border rounded shadow-lg overflow-hidden z-50 min-w-[220px]">
+        <div className="absolute left-0 top-full mt-2 glas-dick !bg-white/95 dark:!bg-brand-card/95 rounded-2xl overflow-hidden z-50 min-w-[220px]">
           <Link
             href={allHref}
             onClick={() => setOpen(false)}
@@ -228,7 +228,7 @@ function ThemeToggle() {
   return (
     <button
       onClick={cycle}
-      className="w-8 h-8 flex items-center justify-center rounded text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-white/10 transition-colors"
+      className="w-8 h-8 flex items-center justify-center rounded text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-white/10 transition-colors"
       aria-label="Toggle theme"
       title={theme === 'system' ? 'System' : theme === 'dark' ? 'Dark' : 'Light'}
     >
@@ -253,13 +253,13 @@ function LanguageSwitcher() {
         onClick={() => setOpen(!open)}
         aria-expanded={open}
         aria-label="Language selector"
-        className="flex items-center gap-1 text-xs font-mono font-semibold text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors px-2 py-1.5 rounded hover:bg-gray-100 dark:hover:bg-white/10"
+        className="flex items-center gap-1 text-xs font-mono font-semibold text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors px-2 py-1.5 rounded hover:bg-gray-100 dark:hover:bg-white/10"
       >
         {localeLabels[locale]}
         <ChevronDown size={11} className={`transition-transform ${open ? 'rotate-180' : ''}`} />
       </button>
       {open && (
-        <div className="absolute right-0 top-full mt-1 bg-white dark:bg-brand-card border border-gray-200 dark:border-brand-border rounded shadow-lg overflow-hidden z-50 min-w-[72px]">
+        <div className="absolute right-0 top-full mt-1 glas-dick !bg-white/95 dark:!bg-brand-card/95 rounded-2xl overflow-hidden z-50 min-w-[72px]">
           {locales.map((l) => (
             <button
               key={l}
@@ -327,7 +327,7 @@ export default function Navbar() {
           <div className="hidden md:flex items-center gap-8">
             <Link
               href="/"
-              className="text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white text-sm font-medium transition-colors"
+              className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white text-sm font-medium transition-colors"
             >
               {t.nav.home}
             </Link>
@@ -337,7 +337,7 @@ export default function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white text-sm font-medium transition-colors"
+                className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white text-sm font-medium transition-colors"
               >
                 {link.label}
               </Link>
@@ -350,7 +350,7 @@ export default function Navbar() {
             <LanguageSwitcher />
             <button
               onClick={() => setCheckOpen(true)}
-              className="text-gray-500 dark:text-gray-400 hover:text-brand-teal dark:hover:text-brand-mint text-sm font-medium transition-colors px-3 py-1.5"
+              className="text-gray-600 dark:text-gray-300 hover:text-brand-teal dark:hover:text-brand-mint text-sm font-medium transition-colors px-3 py-1.5"
             >
               {t.nav.login}
             </button>
@@ -364,7 +364,7 @@ export default function Navbar() {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors"
+            className="md:hidden text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors"
             onClick={() => setMenuOpen(!menuOpen)}
             aria-label={menuOpen ? 'Menü schließen' : 'Menü öffnen'}
             aria-expanded={menuOpen}
@@ -377,24 +377,24 @@ export default function Navbar() {
         {menuOpen && (
           <div className="md:hidden glas-dick rounded-3xl max-w-7xl mx-auto mt-2">
             <div className="px-5 py-4 flex flex-col gap-4">
-              <Link href="/" onClick={() => setMenuOpen(false)} className="text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white text-sm font-medium transition-colors py-1">
+              <Link href="/" onClick={() => setMenuOpen(false)} className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white text-sm font-medium transition-colors py-1">
                 {t.nav.home}
               </Link>
               <div>
                 <span className="text-xs font-mono tracking-widest uppercase text-gray-400 block mb-2">{t.nav.services}</span>
                 <div className="pl-3 flex flex-col gap-2 border-l border-gray-200 dark:border-brand-border">
-                  <Link href="/#leistungen" onClick={() => setMenuOpen(false)} className="text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white text-sm transition-colors">Alle Leistungen</Link>
+                  <Link href="/#leistungen" onClick={() => setMenuOpen(false)} className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white text-sm transition-colors">Alle Leistungen</Link>
                   {serviceLinks.map((s) => (
-                    <Link key={s.href} href={s.href} onClick={() => setMenuOpen(false)} className="text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white text-sm transition-colors">{s.label}</Link>
+                    <Link key={s.href} href={s.href} onClick={() => setMenuOpen(false)} className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white text-sm transition-colors">{s.label}</Link>
                   ))}
                 </div>
               </div>
               <div>
                 <span className="text-xs font-mono tracking-widest uppercase text-gray-400 block mb-2">{t.nav.projects}</span>
                 <div className="pl-3 flex flex-col gap-2 border-l border-gray-200 dark:border-brand-border">
-                  <Link href="/projects" onClick={() => setMenuOpen(false)} className="text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white text-sm transition-colors">Alle Projekte</Link>
+                  <Link href="/projects" onClick={() => setMenuOpen(false)} className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white text-sm transition-colors">Alle Projekte</Link>
                   {projectLinks.map((s) => (
-                    <Link key={s.href} href={s.href} onClick={() => setMenuOpen(false)} className="text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white text-sm transition-colors">{s.label}</Link>
+                    <Link key={s.href} href={s.href} onClick={() => setMenuOpen(false)} className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white text-sm transition-colors">{s.label}</Link>
                   ))}
                 </div>
               </div>
@@ -403,7 +403,7 @@ export default function Navbar() {
                   key={link.href}
                   href={link.href}
                   onClick={() => setMenuOpen(false)}
-                  className="text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white text-sm font-medium transition-colors py-1"
+                  className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white text-sm font-medium transition-colors py-1"
                 >
                   {link.label}
                 </Link>

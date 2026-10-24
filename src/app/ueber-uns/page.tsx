@@ -40,7 +40,7 @@ export default function UeberUnsPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <div className="min-h-screen bg-brand-sky dark:bg-brand-night pt-28 pb-20 px-4">
+      <div className="min-h-screen pt-28 pb-20 px-4">
         <div className="max-w-3xl mx-auto">
 
           {/* Header */}
@@ -95,7 +95,7 @@ export default function UeberUnsPage() {
           </section>
 
           {/* Approach */}
-          <section className="mb-14 bg-white dark:bg-brand-card border border-gray-200 dark:border-brand-border rounded p-7">
+          <section className="mb-14 glas rounded-[22px] p-7">
             <h2 className="text-xl font-extrabold text-gray-900 dark:text-white mb-4">{uu.approachH2}</h2>
             <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed mb-3">
               {uu.approachP1}

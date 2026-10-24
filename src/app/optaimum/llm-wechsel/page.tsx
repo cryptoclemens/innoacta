@@ -75,9 +75,9 @@ export default function LlmWechselPage() {
   const displayGuide = guide ?? (from && to && from !== to ? genericGuide : null)
 
   return (
-    <div className="min-h-screen bg-brand-sky dark:bg-brand-night pt-24 pb-20">
+    <div className="min-h-screen pt-24 pb-20">
       <div className="max-w-2xl mx-auto px-4 sm:px-6">
-        <Link href="/optaimum" className="inline-flex items-center gap-2 text-gray-500 dark:text-gray-400 hover:text-brand-teal transition-colors mb-8 text-sm">
+        <Link href="/optaimum" className="inline-flex items-center gap-2 text-gray-600 dark:text-gray-300 hover:text-brand-teal transition-colors mb-8 text-sm">
           <ArrowLeft size={16} /> Zurück zu OptAImum
         </Link>
         <div className="mb-8">
@@ -86,10 +86,10 @@ export default function LlmWechselPage() {
           <p className="text-gray-600 dark:text-gray-400 text-sm mt-1">Wechsle den KI-Anbieter ohne Datenverlust.</p>
         </div>
 
-        <div className="bg-white dark:bg-brand-card border border-gray-200 dark:border-brand-border rounded p-8 mb-8">
+        <div className="glas rounded-[22px] p-8 mb-8">
           <div className="grid grid-cols-[1fr,auto,1fr] gap-4 items-end">
             <div>
-              <label className="text-xs font-mono text-gray-500 uppercase tracking-wider block mb-2">Von</label>
+              <label className="text-xs font-mono text-gray-600 dark:text-gray-300 uppercase tracking-wider block mb-2">Von</label>
               <select value={from} onChange={e => setFrom(e.target.value)}
                 className="w-full px-3 py-2.5 text-sm rounded border border-gray-200 dark:border-brand-border bg-white dark:bg-brand-night text-gray-900 dark:text-white focus:outline-none focus:border-brand-teal">
                 <option value="">Auswählen...</option>
@@ -98,7 +98,7 @@ export default function LlmWechselPage() {
             </div>
             <div className="pb-2.5 text-brand-teal dark:text-brand-mint"><ArrowRight size={20} /></div>
             <div>
-              <label className="text-xs font-mono text-gray-500 uppercase tracking-wider block mb-2">Nach</label>
+              <label className="text-xs font-mono text-gray-600 dark:text-gray-300 uppercase tracking-wider block mb-2">Nach</label>
               <select value={to} onChange={e => setTo(e.target.value)}
                 className="w-full px-3 py-2.5 text-sm rounded border border-gray-200 dark:border-brand-border bg-white dark:bg-brand-night text-gray-900 dark:text-white focus:outline-none focus:border-brand-teal">
                 <option value="">Auswählen...</option>
@@ -122,13 +122,13 @@ export default function LlmWechselPage() {
             </div>
             <div className="space-y-4">
               {displayGuide.steps.map((s, i) => (
-                <div key={i} className="bg-white dark:bg-brand-card border border-gray-200 dark:border-brand-border rounded p-5">
+                <div key={i} className="glas rounded-[22px] p-5">
                   <div className="flex items-start gap-4">
                     <div className="flex items-center justify-center w-7 h-7 rounded-full bg-brand-teal/10 text-brand-teal dark:text-brand-mint text-xs font-bold shrink-0 mt-0.5">{i + 1}</div>
                     <div className="flex-1">
                       <div className="flex items-center justify-between mb-1">
                         <h3 className="text-gray-900 dark:text-white font-semibold text-sm">{s.title}</h3>
-                        <span className="text-xs text-gray-500 dark:text-gray-400 flex items-center gap-1"><Clock size={10} />{s.duration}</span>
+                        <span className="text-xs text-gray-600 dark:text-gray-300 flex items-center gap-1"><Clock size={10} />{s.duration}</span>
                       </div>
                       <p className="text-gray-600 dark:text-gray-400 text-sm">{s.detail}</p>
                     </div>
@@ -136,7 +136,7 @@ export default function LlmWechselPage() {
                 </div>
               ))}
             </div>
-            <div className="mt-6 p-4 bg-brand-teal/5 border border-brand-teal/20 rounded flex items-center gap-3">
+            <div className="mt-6 p-4 glas rounded-[22px] ring-1 ring-brand-teal/25 flex items-center gap-3">
               <CheckCircle2 size={16} className="text-brand-teal dark:text-brand-mint shrink-0" />
               <p className="text-sm text-gray-700 dark:text-gray-300">
                 Tipp: Erstelle zuerst dein{' '}

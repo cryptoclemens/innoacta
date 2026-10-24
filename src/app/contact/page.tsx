@@ -9,7 +9,7 @@ export default function ContactPage() {
   const ct = p.contact
 
   return (
-    <div className="min-h-screen bg-brand-sky dark:bg-brand-night pt-24 pb-20">
+    <div className="min-h-screen pt-24 pb-20">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Header */}
@@ -25,14 +25,14 @@ export default function ContactPage() {
 
         {/* Contact Cards */}
         <div className="grid gap-6 md:grid-cols-2 mb-16">
-          <div className="bg-white dark:bg-brand-card border border-gray-200 dark:border-brand-border rounded p-8">
+          <div className="glas rounded-[22px] p-8">
             <div className="flex items-center gap-3 mb-4">
               <div className="w-10 h-10 bg-brand-teal/10 rounded flex items-center justify-center">
                 <Mail size={20} className="text-brand-teal dark:text-brand-mint" />
               </div>
               <h2 className="text-gray-900 dark:text-white font-semibold">{ct.emailLabel}</h2>
             </div>
-            <p className="text-gray-500 text-sm mb-3">
+            <p className="text-gray-600 dark:text-gray-300 text-sm mb-3">
               {ct.emailDesc}
             </p>
             <a
@@ -43,24 +43,24 @@ export default function ContactPage() {
             </a>
           </div>
 
-          <div className="bg-white dark:bg-brand-card border border-gray-200 dark:border-brand-border rounded p-8">
+          <div className="glas rounded-[22px] p-8">
             <div className="flex items-center gap-3 mb-4">
               <div className="w-10 h-10 bg-brand-teal/10 rounded flex items-center justify-center">
                 <MapPin size={20} className="text-brand-teal dark:text-brand-mint" />
               </div>
               <h2 className="text-gray-900 dark:text-white font-semibold">{ct.locationLabel}</h2>
             </div>
-            <p className="text-gray-500 text-sm mb-1">Vencly GmbH</p>
-            <p className="text-gray-500 text-sm">Leopoldstraße 31, 80802 München</p>
+            <p className="text-gray-600 dark:text-gray-300 text-sm mb-1">Vencly GmbH</p>
+            <p className="text-gray-600 dark:text-gray-300 text-sm">Leopoldstraße 31, 80802 München</p>
           </div>
         </div>
 
         {/* Demo CTA */}
-        <div className="bg-brand-teal/5 border border-brand-teal/20 rounded p-10 text-center mb-20">
+        <div className="glas rounded-[22px] ring-1 ring-brand-teal/25 p-10 text-center mb-20">
           <h2 className="text-2xl font-extrabold text-gray-900 dark:text-white mb-3">
             {ct.demoH2}
           </h2>
-          <p className="text-gray-500 mb-6 text-sm">
+          <p className="text-gray-600 dark:text-gray-300 mb-6 text-sm">
             {ct.demoP}
           </p>
           <a
@@ -80,7 +80,7 @@ export default function ContactPage() {
           <div className="grid gap-4 sm:grid-cols-2">
             <Link
               href="/impressum"
-              className="flex items-center gap-4 bg-white dark:bg-brand-card border border-gray-200 dark:border-brand-border rounded p-5 hover:border-brand-teal/40 transition-colors group"
+              className="flex items-center gap-4 glas rounded-[22px] p-5 transition-transform hover:-translate-y-0.5 group"
             >
               <div className="w-9 h-9 bg-brand-teal/10 rounded flex items-center justify-center flex-shrink-0">
                 <FileText size={17} className="text-brand-teal dark:text-brand-mint" />
@@ -92,7 +92,7 @@ export default function ContactPage() {
             </Link>
             <Link
               href="/datenschutz"
-              className="flex items-center gap-4 bg-white dark:bg-brand-card border border-gray-200 dark:border-brand-border rounded p-5 hover:border-brand-teal/40 transition-colors group"
+              className="flex items-center gap-4 glas rounded-[22px] p-5 transition-transform hover:-translate-y-0.5 group"
             >
               <div className="w-9 h-9 bg-brand-teal/10 rounded flex items-center justify-center flex-shrink-0">
                 <Shield size={17} className="text-brand-teal dark:text-brand-mint" />

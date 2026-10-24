@@ -59,9 +59,9 @@ export default function PromptGeneratorPage() {
   }
 
   return (
-    <div className="min-h-screen bg-brand-sky dark:bg-brand-night pt-24 pb-20">
+    <div className="min-h-screen pt-24 pb-20">
       <div className="max-w-2xl mx-auto px-4 sm:px-6">
-        <Link href="/optaimum" className="inline-flex items-center gap-2 text-gray-500 dark:text-gray-400 hover:text-brand-teal transition-colors mb-8 text-sm">
+        <Link href="/optaimum" className="inline-flex items-center gap-2 text-gray-600 dark:text-gray-300 hover:text-brand-teal transition-colors mb-8 text-sm">
           <ArrowLeft size={16} /> Zurück zu OptAImum
         </Link>
         <div className="mb-8">
@@ -72,7 +72,7 @@ export default function PromptGeneratorPage() {
 
         {/* Quick templates */}
         <div className="mb-6">
-          <p className="text-xs font-mono text-gray-500 uppercase tracking-wider mb-3">Quick-Start Templates</p>
+          <p className="text-xs font-mono text-gray-600 dark:text-gray-300 uppercase tracking-wider mb-3">Quick-Start Templates</p>
           <div className="flex flex-wrap gap-2">
             {templates.map(t => (
               <button key={t.label} onClick={() => applyTemplate(t)}
@@ -83,9 +83,9 @@ export default function PromptGeneratorPage() {
           </div>
         </div>
 
-        <div className="bg-white dark:bg-brand-card border border-gray-200 dark:border-brand-border rounded p-8 space-y-6">
+        <div className="glas rounded-[22px] p-8 space-y-6">
           <div>
-            <label className="text-xs font-mono text-gray-500 uppercase tracking-wider block mb-2">Ziel-KI (optional)</label>
+            <label className="text-xs font-mono text-gray-600 dark:text-gray-300 uppercase tracking-wider block mb-2">Ziel-KI (optional)</label>
             <select value={agent} onChange={e => setAgent(e.target.value)}
               className="w-full px-3 py-2.5 text-sm rounded border border-gray-200 dark:border-brand-border bg-white dark:bg-brand-night text-gray-900 dark:text-white focus:outline-none focus:border-brand-teal">
               <option value="">Allgemein (alle KIs)</option>
@@ -94,21 +94,21 @@ export default function PromptGeneratorPage() {
           </div>
 
           <div>
-            <label className="text-xs font-mono text-gray-500 uppercase tracking-wider block mb-2">Aufgabe *</label>
+            <label className="text-xs font-mono text-gray-600 dark:text-gray-300 uppercase tracking-wider block mb-2">Aufgabe *</label>
             <textarea value={task} onChange={e => setTask(e.target.value)}
               className="w-full px-3 py-2 text-sm rounded border border-gray-200 dark:border-brand-border bg-transparent text-gray-900 dark:text-white placeholder-gray-400 focus:outline-none focus:border-brand-teal resize-none h-24"
               placeholder="Was soll die KI tun? Beschreibe die Aufgabe..." />
           </div>
 
           <div>
-            <label className="text-xs font-mono text-gray-500 uppercase tracking-wider block mb-2">Kontext & Regeln (optional)</label>
+            <label className="text-xs font-mono text-gray-600 dark:text-gray-300 uppercase tracking-wider block mb-2">Kontext & Regeln (optional)</label>
             <textarea value={context} onChange={e => setContext(e.target.value)}
               className="w-full px-3 py-2 text-sm rounded border border-gray-200 dark:border-brand-border bg-transparent text-gray-900 dark:text-white placeholder-gray-400 focus:outline-none focus:border-brand-teal resize-none h-20"
               placeholder="Ton, Länge, Zielgruppe, Einschränkungen..." />
           </div>
 
           <div>
-            <label className="text-xs font-mono text-gray-500 uppercase tracking-wider block mb-3">Komplexitätslevel</label>
+            <label className="text-xs font-mono text-gray-600 dark:text-gray-300 uppercase tracking-wider block mb-3">Komplexitätslevel</label>
             <div className="flex gap-2">
               {['Einsteiger', 'Standard', 'Pro'].map((l, i) => (
                 <button key={l} onClick={() => setLevel(i)}
@@ -121,7 +121,7 @@ export default function PromptGeneratorPage() {
         </div>
 
         {canGenerate && (
-          <div className="mt-6 bg-white dark:bg-brand-card border border-gray-200 dark:border-brand-border rounded p-8">
+          <div className="mt-6 glas rounded-[22px] p-8">
             <div className="flex items-center justify-between mb-4">
               <div className="flex items-center gap-2">
                 <Sparkles size={16} className="text-brand-teal dark:text-brand-mint" />

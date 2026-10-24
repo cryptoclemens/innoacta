@@ -69,11 +69,11 @@ export default function AutoTodoPage() {
           { '@type': 'ListItem', position: 3, name: 'AutoToDo', item: 'https://www.innovation.today/autotodo/' },
         ],
       }) }} />
-      <div className="min-h-screen bg-brand-sky dark:bg-brand-night pt-24 pb-20">
+      <div className="min-h-screen pt-24 pb-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
 
           {/* Back */}
-          <Link href="/projects" className="inline-flex items-center gap-2 text-gray-500 dark:text-gray-400 hover:text-brand-teal transition-colors mb-8 text-sm">
+          <Link href="/projects" className="inline-flex items-center gap-2 text-gray-600 dark:text-gray-300 hover:text-brand-teal transition-colors mb-8 text-sm">
             <ArrowLeft size={16} /> Zurück zu Projekten
           </Link>
 
@@ -109,7 +109,7 @@ export default function AutoTodoPage() {
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">So funktioniert AutoToDo.</h2>
             <div className="grid gap-4 sm:grid-cols-2">
               {workflow.map(w => (
-                <div key={w.n} className="bg-white dark:bg-brand-card border border-gray-200 dark:border-brand-border rounded p-6 flex gap-4">
+                <div key={w.n} className="glas rounded-[22px] p-6 flex gap-4">
                   <span className="text-brand-teal dark:text-brand-mint font-mono text-xl font-bold shrink-0">{w.n}</span>
                   <div>
                     <h3 className="text-gray-900 dark:text-white font-semibold mb-1">{w.title}</h3>
@@ -125,7 +125,7 @@ export default function AutoTodoPage() {
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">Features im Detail.</h2>
             <div className="grid gap-6 sm:grid-cols-2">
               {features.map(({ icon: Icon, title, desc }) => (
-                <div key={title} className="bg-white dark:bg-brand-card border border-gray-200 dark:border-brand-border rounded p-6">
+                <div key={title} className="glas rounded-[22px] p-6">
                   <div className="w-10 h-10 bg-brand-teal/10 rounded flex items-center justify-center mb-4">
                     <Icon size={20} className="text-brand-teal dark:text-brand-mint" />
                   </div>
@@ -147,7 +147,7 @@ export default function AutoTodoPage() {
                 </li>
               ))}
             </ul>
-            <p className="mt-4 text-sm text-gray-500 dark:text-gray-400">
+            <p className="mt-4 text-sm text-gray-600 dark:text-gray-300">
               Self-Hosting über Docker/Coolify möglich.{' '}
               <a href="https://github.com/cryptoclemens/AutoToDo" target="_blank" rel="noopener noreferrer" className="text-brand-teal dark:text-brand-mint hover:underline inline-flex items-center gap-1">
                 GitHub Repository <ExternalLink size={12} />
@@ -156,7 +156,7 @@ export default function AutoTodoPage() {
           </section>
 
           {/* CTA bottom */}
-          <section className="bg-gradient-to-r from-brand-teal/10 to-brand-teal/5 border border-brand-teal/20 rounded p-10 text-center">
+          <section className="glas-dick rounded-[28px] p-10 text-center">
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">Jetzt ausprobieren</h2>
             <p className="text-gray-600 dark:text-gray-400 mb-6">Kostenlos starten – kein Kreditkarte erforderlich.</p>
             <a href="https://autotodo.vencly.com" target="_blank" rel="noopener noreferrer"
