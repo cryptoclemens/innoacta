@@ -300,14 +300,12 @@ export default function Navbar() {
     <>
       {checkOpen && <ValidationCheckModal onClose={() => setCheckOpen(false)} />}
 
-      <header
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          scrolled
-            ? 'bg-white/90 dark:bg-brand-night/90 backdrop-blur-md border-b border-gray-200 dark:border-brand-border shadow-sm dark:shadow-lg'
-            : 'bg-transparent'
-        }`}
-      >
-        <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      {/* Schwebende Glas-Pille (Glas-Look). Beim Scrollen dickeres Glas, damit
+          Text darunter nicht durchscheint. */}
+      <header className="fixed top-3 left-0 right-0 z-50 px-3">
+        <nav
+          className={`${scrolled ? 'glas-dick' : 'glas'} rounded-full max-w-7xl mx-auto pl-5 pr-2 sm:pl-6 h-14 flex items-center justify-between transition-[background-color] duration-300`}
+        >
           {/* Logo */}
           <Link href="/" className="flex items-center group">
             {/* Wortmarke 32 px hoch (Markenvorgabe 28–32 px). Bewusst die
@@ -358,7 +356,7 @@ export default function Navbar() {
             </button>
             <button
               {...calButtonProps}
-              className="inline-flex items-center gap-1.5 bg-brand-navy hover:bg-brand-night dark:bg-brand-mint dark:hover:bg-white text-white dark:text-brand-navy text-sm font-semibold px-4 py-2 rounded transition-colors cursor-pointer"
+              className="inline-flex items-center gap-1.5 bg-brand-navy hover:bg-brand-night dark:bg-brand-mint dark:hover:bg-white text-white dark:text-brand-navy text-sm font-semibold px-5 py-2.5 rounded-full transition-colors cursor-pointer"
             >
               {t.nav.cta}
             </button>
@@ -377,8 +375,8 @@ export default function Navbar() {
 
         {/* Mobile Menu */}
         {menuOpen && (
-          <div className="md:hidden bg-white dark:bg-brand-card border-b border-gray-200 dark:border-brand-border">
-            <div className="max-w-7xl mx-auto px-4 py-4 flex flex-col gap-4">
+          <div className="md:hidden glas-dick rounded-3xl max-w-7xl mx-auto mt-2">
+            <div className="px-5 py-4 flex flex-col gap-4">
               <Link href="/" onClick={() => setMenuOpen(false)} className="text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white text-sm font-medium transition-colors py-1">
                 {t.nav.home}
               </Link>

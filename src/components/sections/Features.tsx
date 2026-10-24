@@ -43,7 +43,7 @@ export default function Features() {
   const { t } = useLanguage()
 
   return (
-    <section id="leistungen" className="bg-white dark:bg-brand-card py-24 px-4 border-t border-b border-gray-200 dark:border-brand-border">
+    <section id="leistungen" className="py-24 px-4 scroll-mt-24">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <span className="section-eyebrow justify-center mb-4">
@@ -57,22 +57,22 @@ export default function Features() {
           </p>
         </div>
 
-        <div className="grid gap-8 md:grid-cols-3">
+        <div className="grid gap-5 md:grid-cols-3">
           {t.features.items.map((feature, i) => (
             <div
               key={feature.title}
-              className="bg-brand-sky dark:bg-brand-night border border-gray-200 dark:border-brand-border rounded p-8 hover:border-brand-teal/40 transition-all duration-300 group flex flex-col"
+              className="glas rounded-[26px] p-8 transition-transform duration-300 hover:-translate-y-0.5 group flex flex-col"
             >
               <div className="mb-6">{icons[i]}</div>
-              <h3 className="text-gray-900 dark:text-white font-bold text-lg mb-3 group-hover:text-brand-teal transition-colors">
+              <h3 className="text-gray-900 dark:text-white font-extrabold text-xl mb-3">
                 {feature.title}
               </h3>
-              <p className="text-gray-500 text-sm leading-relaxed mb-5">
+              <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed mb-5">
                 {feature.desc}
               </p>
-              <ul className="space-y-2 mb-6">
+              <ul className="flex flex-wrap gap-2 mb-6">
                 {feature.points.map((point) => (
-                  <li key={point} className="flex items-center gap-2 text-xs text-gray-500 dark:text-gray-400">
+                  <li key={point} className="glas-chip inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 text-xs font-semibold text-brand-navy dark:text-gray-100">
                     <span className="w-1.5 h-1.5 bg-brand-teal rounded-full flex-shrink-0" />
                     {point}
                   </li>
@@ -81,7 +81,7 @@ export default function Features() {
               <div className="mt-auto">
                 <Link
                   href={serviceHrefs[i]}
-                  className="inline-flex items-center gap-1.5 text-brand-teal dark:text-brand-mint hover:text-brand-mint text-sm font-medium transition-colors"
+                  className="inline-flex items-center gap-1.5 text-brand-teal dark:text-brand-mint hover:text-brand-navy dark:hover:text-white text-sm font-bold transition-colors"
                 >
                   Mehr erfahren
                   <ArrowRight size={14} />

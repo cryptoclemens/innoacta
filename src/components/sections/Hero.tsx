@@ -1,6 +1,5 @@
 'use client'
 
-import { ChevronDown } from 'lucide-react'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { calButtonProps } from '@/components/layout/CalProvider'
 import Explainer from '@/components/sections/Explainer'
@@ -104,85 +103,71 @@ export default function Hero() {
   const { t } = useLanguage()
 
   return (
-    <section className="relative min-h-screen flex flex-col items-center justify-center bg-brand-sky dark:bg-brand-night overflow-hidden px-4">
-      {/* Background grid */}
-      <div
-        className="absolute inset-0 opacity-[0.04] dark:opacity-[0.06]"
-        style={{
-          backgroundImage:
-            'linear-gradient(#0f766e 1px, transparent 1px), linear-gradient(90deg, #0f766e 1px, transparent 1px)',
-          backgroundSize: '60px 60px',
-        }}
-      />
+    <section className="relative px-4 pt-28 md:pt-32 pb-12">
+      {/* Glas-Look: kein eigener Grund, der GlasGrund (Layout) scheint durch.
+          Raster: mobil Text → Film → Buttons (Film bleibt über den Buttons),
+          ab lg Text und Buttons links, Film als dickes Glasfenster rechts. */}
+      <div className="relative w-full max-w-7xl mx-auto grid gap-8 lg:gap-x-12 lg:gap-y-8 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.08fr)] [grid-template-areas:'text'_'film'_'cta'] lg:[grid-template-areas:'text_film'_'cta_film'] text-center lg:text-left">
+        <div className="[grid-area:text] lg:self-end">
+          <div className="inline-block mb-6">
+            <span className="section-eyebrow">
+              {t.hero.eyebrow}
+            </span>
+          </div>
 
-      {/* Radial glow */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-brand-teal/5 rounded-full blur-3xl pointer-events-none" />
+          <h1 className="text-3xl sm:text-4xl md:text-5xl xl:text-6xl font-extrabold text-gray-900 dark:text-white leading-tight mb-6">
+            {/* Zweifarbig wie die Wortmarke: Navy, dann Teal. */}
+            <span className="text-brand-navy dark:text-white">{t.hero.h1}</span>{' '}
+            <span className="text-brand-teal dark:text-brand-mint">{t.hero.h1Highlight}</span>
+          </h1>
 
-      {/* Content */}
-      {/* Rahmen 1280 px wie die Sektionen darunter. Headline und Texte behalten
-          ihre eigene, schmale Maximalbreite — nur Diagramm und Kennzahlen
-          nutzen die volle Rahmenbreite. */}
-      <div className="relative z-10 w-full max-w-7xl mx-auto text-center pt-20 md:pt-24 pb-24">
-        <div className="inline-block mb-6">
-          <span className="section-eyebrow">
-            {t.hero.eyebrow}
-          </span>
+          <p className="text-gray-600 dark:text-gray-300 text-lg max-w-2xl mx-auto lg:mx-0 mb-4 leading-relaxed">
+            {t.hero.subline}
+          </p>
+
+          <p className="text-lg md:text-xl font-normal text-brand-teal dark:text-brand-mint">
+            innovation.today steht für eines: Umsetzung von Chancen.
+          </p>
         </div>
 
-        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 dark:text-white leading-tight mb-8 max-w-5xl mx-auto">
-          {/* Zweifarbig wie die Wortmarke: Navy, dann Teal. */}
-          <span className="text-brand-navy dark:text-white">{t.hero.h1}</span>{' '}
-          <span className="text-brand-teal dark:text-brand-mint">{t.hero.h1Highlight}</span>
-        </h1>
-
-        <p className="text-gray-600 dark:text-gray-400 text-lg md:text-xl max-w-3xl mx-auto mb-6 leading-relaxed">
-          {t.hero.subline}
-        </p>
-
-        <p className="text-xl md:text-2xl font-normal text-brand-teal dark:text-brand-mint mb-10">
-          innovation.today steht für eines: Umsetzung von Chancen.
-        </p>
-
-        {/* Erklärfilm direkt über den Buttons; data-track="film" hält die GA4-Zeitreihe. */}
-        <div data-track="film" className="max-w-4xl mx-auto mb-10">
-          <Explainer />
+        {/* Erklärfilm als dickes Glasfenster; data-track="film" hält die GA4-Zeitreihe. */}
+        <div data-track="film" className="[grid-area:film] w-full max-w-3xl mx-auto lg:max-w-none">
+          <div className="glas-dick rounded-[32px] p-2.5 sm:p-3">
+            <Explainer />
+          </div>
         </div>
 
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <div className="[grid-area:cta] lg:self-start flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3">
           <button
             {...calButtonProps}
-            className="inline-flex items-center gap-2 bg-brand-navy hover:bg-brand-night dark:bg-brand-mint dark:hover:bg-white text-white dark:text-brand-navy font-semibold px-8 py-3.5 rounded transition-all hover:scale-105 text-base cursor-pointer"
+            className="inline-flex items-center gap-2 bg-brand-navy hover:bg-brand-night dark:bg-brand-mint dark:hover:bg-white text-white dark:text-brand-navy font-semibold px-8 py-3.5 rounded-full transition-all hover:-translate-y-px text-base cursor-pointer"
           >
             {t.hero.ctaPrimary}
           </button>
           <a
             href="#referenzen"
-            className="inline-flex items-center gap-2 border-2 border-brand-teal/40 hover:border-brand-teal text-brand-teal dark:text-brand-mint hover:bg-brand-teal/5 font-semibold px-8 py-3.5 rounded transition-all text-base"
+            className="glas inline-flex items-center gap-2 rounded-full text-brand-navy dark:text-brand-mint font-semibold px-8 py-3.5 transition-all hover:-translate-y-px text-base"
           >
             {t.hero.ctaSecondary}
           </a>
         </div>
+      </div>
 
-        {/* SVG Learning Curve Chart — mobil schmal, ab sm auf Rahmenbreite gestreckt */}
-        <div className="w-full mt-12 mb-2">
-          <div className="sm:hidden"><LearningCurveChart stretch={1} /></div>
-          <div className="hidden sm:block"><LearningCurveChart stretch={2} /></div>
-        </div>
-
-        {/* Stats strip */}
-        <div className="flex flex-wrap justify-center gap-10 mt-4 pt-8 border-t border-gray-200 dark:border-white/10">
+      {/* Zählerleiste mit Lernkurve als Glasleiste */}
+      <div className="relative w-full max-w-7xl mx-auto mt-10 glas rounded-[28px] px-6 py-6 md:px-8 grid gap-6 lg:grid-cols-[auto_minmax(0,1fr)] lg:items-center">
+        <div className="flex flex-wrap justify-center lg:justify-start gap-x-10 gap-y-4">
           {t.hero.stats.map((stat) => (
-            <div key={stat.label} className="text-center">
-              <div className="text-3xl font-bold text-brand-teal dark:text-brand-mint tabular-nums">{stat.value}</div>
-              <div className="text-xs text-gray-500 dark:text-gray-400 mt-1 tracking-wide uppercase">{stat.label}</div>
+            <div key={stat.label} className="text-center lg:text-left">
+              <div className="text-3xl font-extrabold text-brand-navy dark:text-white tabular-nums">{stat.value}</div>
+              <div className="text-xs text-gray-600 dark:text-gray-300 mt-1 tracking-wide uppercase">{stat.label}</div>
             </div>
           ))}
         </div>
-      </div>
-
-      {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 text-gray-400 dark:text-gray-600 animate-bounce">
-        <ChevronDown size={24} />
+        {/* SVG Learning Curve Chart — mobil schmal, ab sm gestreckt */}
+        <div className="w-full">
+          <div className="sm:hidden"><LearningCurveChart stretch={1} /></div>
+          <div className="hidden sm:block"><LearningCurveChart stretch={1.6} /></div>
+        </div>
       </div>
     </section>
   )

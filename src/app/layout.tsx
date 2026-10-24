@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 import Navbar from '@/components/layout/Navbar'
 import Footer from '@/components/layout/Footer'
+import GlasGrund from '@/components/layout/GlasGrund'
 import Providers from '@/components/layout/Providers'
 import CookieBanner from '@/components/layout/CookieBanner'
 // TEMPORÄR bis 2026-12-09: Übergangs-Hinweis zur Markenumbenennung.
@@ -140,6 +141,7 @@ gtag('config', 'G-NEDCRSRHND', { send_page_view: true });
         />
       </head>
       <body className="bg-brand-sky dark:bg-brand-night text-gray-900 dark:text-white antialiased font-sans">
+        <GlasGrund />
         <Providers>
           <Navbar />
           <main>{children}</main>

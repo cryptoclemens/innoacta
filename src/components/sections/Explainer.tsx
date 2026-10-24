@@ -50,7 +50,7 @@ export default function Explainer() {
     <video
       ref={ref}
       key={video}
-      className="w-full aspect-video rounded border border-gray-200 dark:border-brand-border bg-brand-sky shadow-sm"
+      className="block w-full aspect-video rounded-[22px] bg-brand-sky"
       controls
       muted
       playsInline

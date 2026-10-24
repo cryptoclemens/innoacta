@@ -113,6 +113,13 @@ p, li {
   background-clip: text;
 }
 
+/* Auf Nachtblau trägt der Teal-Verlauf nicht (2,8:1) — dort Mint. */
+html.dark .gradient-text {
+  background: none;
+  -webkit-text-fill-color: var(--color-mint);
+  color: var(--color-mint);
+}
+
 .teal-glow {
   box-shadow: 0 0 24px rgba(15, 118, 110, 0.35);
 }
@@ -144,6 +151,135 @@ html.dark .section-eyebrow {
   height: 1px;
   background: currentColor;
   opacity: 0.6;
+}
+
+/* ── Glas-Look („Liquid Glass“, seit 24.10.2026) ─────────
+   Rezept aus dem IR-Cockpit (directionA/glas.css), Farben aus der
+   innovation.today-Palette. Mockup: https://claude.ai/artifact/B23c38uDEFwz3dnZzrogda
+   Dünnes Glas (.glas) für Karten und Leisten, dickes (.glas-dick) für
+   Film, Abschluss und Menüs. Randlicht als Verlaufskante (::before),
+   Glanz als ruhender Lichtfleck oben links (::after). */
+:root {
+  --glas: rgba(255, 255, 255, 0.52);
+  --glas-dick: rgba(250, 252, 255, 0.8);
+  --glas-chip: rgba(255, 255, 255, 0.66);
+  --glas-rand-a: rgba(255, 255, 255, 0.95);
+  --glas-rand-b: rgba(255, 255, 255, 0.55);
+  --glas-rand-mitte: rgba(255, 255, 255, 0.1);
+  --glas-licht-oben: rgba(255, 255, 255, 0.85);
+  --glas-licht-unten: rgba(20, 48, 74, 0.06);
+  --glas-glanz: rgba(255, 255, 255, 0.55);
+  --glas-schatten-nah: rgba(20, 48, 74, 0.07);
+  --glas-schatten-fern: rgba(15, 60, 90, 0.18);
+  --grund-punkt: rgba(20, 48, 74, 0.1);
+  --fleck-teal: rgba(15, 118, 110, 0.3);
+  --fleck-mint: rgba(94, 234, 212, 0.55);
+  --fleck-navy: rgba(20, 48, 74, 0.14);
+  --fleck-sky: rgba(125, 186, 232, 0.45);
+}
+
+html.dark {
+  --glas: rgba(16, 40, 64, 0.52);
+  --glas-dick: rgba(14, 34, 56, 0.8);
+  --glas-chip: rgba(30, 58, 86, 0.62);
+  --glas-rand-a: rgba(255, 255, 255, 0.4);
+  --glas-rand-b: rgba(255, 255, 255, 0.14);
+  --glas-rand-mitte: rgba(255, 255, 255, 0.02);
+  --glas-licht-oben: rgba(255, 255, 255, 0.2);
+  --glas-licht-unten: rgba(0, 0, 0, 0.35);
+  --glas-glanz: rgba(255, 255, 255, 0.12);
+  --glas-schatten-nah: rgba(0, 0, 0, 0.35);
+  --glas-schatten-fern: rgba(0, 0, 0, 0.55);
+  --grund-punkt: rgba(255, 255, 255, 0.07);
+  --fleck-teal: rgba(15, 118, 110, 0.55);
+  --fleck-mint: rgba(94, 234, 212, 0.22);
+  --fleck-navy: rgba(60, 90, 160, 0.45);
+  --fleck-sky: rgba(40, 110, 170, 0.35);
+}
+
+.glas,
+.glas-dick {
+  position: relative;
+  isolation: isolate;
+  background: var(--glas);
+  -webkit-backdrop-filter: blur(22px) saturate(180%);
+  backdrop-filter: blur(22px) saturate(180%);
+  box-shadow:
+    0 1px 2px var(--glas-schatten-nah),
+    0 22px 48px -18px var(--glas-schatten-fern),
+    inset 0 1px 0 var(--glas-licht-oben),
+    inset 0 -1px 0 var(--glas-licht-unten);
+}
+
+.glas-dick {
+  background: var(--glas-dick);
+  -webkit-backdrop-filter: blur(36px) saturate(190%);
+  backdrop-filter: blur(36px) saturate(190%);
+}
+
+.glas::before,
+.glas-dick::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: inherit;
+  padding: 1px;
+  pointer-events: none;
+  background: linear-gradient(135deg, var(--glas-rand-a), var(--glas-rand-mitte) 45%, var(--glas-rand-b));
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+.glas::after,
+.glas-dick::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: inherit;
+  pointer-events: none;
+  background: radial-gradient(120% 70% at 0% 0%, var(--glas-glanz), transparent 55%);
+}
+
+/* Glasfläche ohne Glanzfleck — für dunkel eingefärbtes Glas (Zitat) */
+.glas-ohne-glanz::after {
+  display: none;
+}
+
+/* Kleine Kennzeichen-Pillen auf Glas */
+.glas-chip {
+  background: var(--glas-chip);
+}
+
+/* Hintergrund hinter allen Seiten: Punktraster und weiche Farbflächen */
+.glas-grund {
+  background-color: var(--color-sky);
+  background-image: radial-gradient(circle, var(--grund-punkt) 1.4px, transparent 1.8px);
+  background-size: 28px 28px;
+}
+html.dark .glas-grund {
+  background-color: var(--color-night);
+}
+.glas-fleck {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(90px);
+}
+
+/* Lesbarkeit vor Effekt: wer weniger Transparenz oder mehr Kontrast
+   eingestellt hat, bekommt undurchsichtige Flächen. */
+@media (prefers-reduced-transparency: reduce), (prefers-contrast: more) {
+  .glas,
+  .glas-dick {
+    background: var(--color-card);
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+  }
+  .glas-fleck {
+    display: none;
+  }
 }
 
 /* Druckansicht */

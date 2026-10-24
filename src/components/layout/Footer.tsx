@@ -9,8 +9,9 @@ export default function Footer() {
   const { t } = useLanguage()
 
   return (
-    <footer className="bg-white dark:bg-brand-night border-t border-gray-200 dark:border-brand-border">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <footer className="px-3 pb-3 pt-8">
+      {/* Glas-Look: Fußleiste als Glasfläche über dem GlasGrund */}
+      <div className="glas rounded-[28px] max-w-7xl mx-auto px-6 sm:px-8 lg:px-10 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
           {/* Brand */}
           <div className="md:col-span-2">
@@ -23,7 +24,7 @@ export default function Footer() {
                 className="h-8 w-auto dark:brightness-0 dark:invert"
               />
             </div>
-            <p className="text-gray-500 text-sm leading-relaxed max-w-xs">
+            <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed max-w-xs">
               {t.footer.tagline}
             </p>
           </div>
@@ -44,7 +45,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-gray-500 hover:text-brand-teal dark:hover:text-brand-mint text-sm transition-colors"
+                    className="text-gray-600 dark:text-gray-300 hover:text-brand-teal dark:hover:text-brand-mint text-sm transition-colors"
                   >
                     {link.label}
                   </Link>
@@ -60,12 +61,12 @@ export default function Footer() {
             </h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/impressum" className="text-gray-500 hover:text-brand-teal dark:hover:text-brand-mint text-sm transition-colors">
+                <Link href="/impressum" className="text-gray-600 dark:text-gray-300 hover:text-brand-teal dark:hover:text-brand-mint text-sm transition-colors">
                   {t.footer.impressum}
                 </Link>
               </li>
               <li>
-                <Link href="/datenschutz" className="text-gray-500 hover:text-brand-teal dark:hover:text-brand-mint text-sm transition-colors">
+                <Link href="/datenschutz" className="text-gray-600 dark:text-gray-300 hover:text-brand-teal dark:hover:text-brand-mint text-sm transition-colors">
                   {t.footer.datenschutz}
                 </Link>
               </li>
@@ -73,7 +74,7 @@ export default function Footer() {
                 {/* Die Adresse ist seit dem Rebranding länger und sprengte zwischen 768 und
                     ~900 px die Spalte (horizontales Scrollen). <wbr> vor dem @ gibt eine
                     saubere Umbruchstelle; overflow-wrap:anywhere nur als Notnagel. */}
-                <a href={`mailto:${PRIVACY_EMAIL}`} className="text-gray-500 hover:text-brand-teal dark:hover:text-brand-mint text-sm transition-colors [overflow-wrap:anywhere]">
+                <a href={`mailto:${PRIVACY_EMAIL}`} className="text-gray-600 dark:text-gray-300 hover:text-brand-teal dark:hover:text-brand-mint text-sm transition-colors [overflow-wrap:anywhere]">
                   {PRIVACY_EMAIL.split('@')[0]}<wbr />@{PRIVACY_EMAIL.split('@')[1]}
                 </a>
               </li>

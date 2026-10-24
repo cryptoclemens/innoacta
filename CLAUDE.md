@@ -78,6 +78,19 @@ Abgeleitet für Flächen und Rahmen: `brand-teal-dark`, `brand-card`, `brand-bor
 auf dunklem Grund gehört deshalb immer `dark:*-brand-mint` bzw. eine
 Mint-Fläche mit Navy-Text. Kontraste vor dem Commit nachrechnen (WCAG AA, 4,5:1).
 
+## Glas-Look („Liquid Glass“, seit 24.10.2026)
+
+- Material in `globals.css`: `.glas` (dünn: Karten, Leisten), `.glas-dick` (Film, Abschluss,
+  Menüs), `.glas-chip` (Pillen auf Glas), `.glas-ohne-glanz` (dunkel eingefärbtes Glas).
+  Rezept aus dem IR-Cockpit (`/opt/innovation-republic/directionA/glas.css`), Farben nur aus
+  der Palette oben. Mockup: https://claude.ai/artifact/B23c38uDEFwz3dnZzrogda
+- Hintergrund `GlasGrund` (Layout, fixed): Punktraster + Farbflächen. Er scheint nur durch
+  Abschnitte ohne eigenen deckenden Grund — Startseite umgestellt, Unterseiten noch nicht.
+- Glas-Karten 22–28 px Radius, Fenster 32 px; auf Glas sind Knöpfe und Kennzeichen Pillen
+  (`rounded-full`) — die 8-px-Regel gilt für Bedienelemente außerhalb des Glas-Looks.
+- Grau auf Glas mindestens `text-gray-600 dark:text-gray-300` (gray-500 fällt im Dunkeln unter AA).
+- „Transparenz reduzieren“ / „mehr Kontrast“ → undurchsichtige Flächen (Media-Query in `globals.css`).
+
 ## Typografie
 
 - Headlines h1–h3: 800, h4–h6 und Buttons/Navigation: 700, Fließtext: 400

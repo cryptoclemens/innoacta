@@ -6,7 +6,7 @@ export default function WhyUs() {
   const { t } = useLanguage()
 
   return (
-    <section className="bg-brand-sky dark:bg-brand-night py-24 px-4">
+    <section className="py-24 px-4">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <span className="section-eyebrow justify-center mb-4">
@@ -15,24 +15,24 @@ export default function WhyUs() {
           <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 dark:text-white mb-4 mt-3">
             {t.whyUs.h2}
           </h2>
-          <p className="text-gray-500 max-w-xl mx-auto text-sm">
+          <p className="text-gray-600 dark:text-gray-300 max-w-xl mx-auto">
             {t.whyUs.subtext}
           </p>
         </div>
 
-        <div className="grid gap-8 md:grid-cols-3">
+        <div className="grid gap-5 md:grid-cols-3">
           {t.whyUs.items.map((point, i) => (
             <div
               key={point.title}
-              className="bg-white dark:bg-brand-card border border-gray-200 dark:border-brand-border rounded p-8"
+              className="glas rounded-[26px] p-8"
             >
-              <span className="font-mono text-brand-teal dark:text-brand-mint/50 text-4xl font-bold block mb-4">
+              <span className="text-brand-teal dark:text-brand-mint text-4xl font-extrabold tabular-nums block mb-4">
                 {String(i + 1).padStart(2, '0')}
               </span>
               <h3 className="text-gray-900 dark:text-white font-bold text-lg mb-3">
                 {point.title}
               </h3>
-              <p className="text-gray-500 text-sm leading-relaxed">
+              <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
                 {point.desc}
               </p>
             </div>
